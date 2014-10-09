@@ -1,0 +1,12 @@
+# Site settings
+title: Maiatoday Github repos
+email: maiatoday@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Code activity and github repos for maiatoday.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://maiatoday.github.io" # the base hostname & protocol for your site
+twitter_username: maiatoday
+github_username:  maiatoday
+
+# Build settings
+markdown: kramdown
