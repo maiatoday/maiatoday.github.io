@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/maiatoday
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.maiatoday.net
+  * I am maiatoday (https://keybase.io/maiatoday) on keybase.
+  * I have a public key with fingerprint 0911 58E2 03B1 2CBA 7534  C9CA D4FE 1C84 9718 E27F
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "091158e203b12cba7534c9cad4fe1c849718e27f",
+            "host": "keybase.io",
+            "key_id": "d4fe1c849718e27f",
+            "kid": "01015fd19092a8598eeb59d5f249a82e5ae7a18470951b94a8169960e8cc3ed4b9b60a",
+            "uid": "8228b36bc7321e79bdbff19cd3155819",
+            "username": "maiatoday"
+        },
+        "service": {
+            "hostname": "www.maiatoday.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1430831977,
+    "expire_in": 157680000,
+    "prev": "98d9dda9cf8a5b1f67a0e75c80487a110973f5388c18ea37df5f6c2180424b75",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMM5AnicbZJ7UFRVHMd3hVIZH+QfYFtIXiSSNrrPvfeghpo2Thho8TJr1nPvPRdu
+C3fX3bs8xR2IFQGHEczx0bAFhTTNjgQEYijlIyGU8lmCFRO1RhYmBSMw49Jdxvqr
+88+Z8/t+f59zft855xcG6UL01/1Plh1aOuzSXzzzklOXuumcXITxVrEAiy/CLGh2
+k2QlE9ltdllRsXgMBwTBcIjEKZ4gBR6yDEULQIAiLSFC4GjAEprKSpgRy7I6Ah0a
+hocOFCdbtZp2MMuiVv0fv2VWwAmcYCSRADggIccADiGeASIjkTSAHIkYiFhIcDSL
+A4bgAQ05wgSACUecIFBIpHnAm3Co4ZyzOI4kOZ4y8QJLkQRiAS/ykkQAQaQIhuEI
+EDA6kF2BOUhz50AZqlYRFmDFRkwr58oCCmQQGOWhJS8vL+4/W5yCVI1gs1tVq2DN
+1uQsVbXFB7rVAtusHfHmhyAzLyuiFqbWkIvsDtmqYPGE5hRUOUAmaArnKAKwrBFD
++TbZjsxywMGwJg7XVuAalKshAScCUYRAkDjI8IRkYiGOWEbgcJrToiFwwFISQ3Gc
+oEULKVaUGMkkkISmkzTPMlhgtJ2KFYtntGfCTA3pkDMVqDrtCCs+e+aNYJ0+RPfo
+I3MC30EXMj/030+yMWnxjLDEMDpTPS+4lQ56zCUPZpdc3JaEV8YE4cdb3N1toc6E
+LZfhr2nV236v+XzHklrTF409nS9IK+v9trSqE3Wd73Wtaxstim1sMN303TCe4jb9
+7ct6nP8tJ3WXx7dqQ85TFwxzP9w9qZ9qShzYs7X90tYLdfqzeyveXzB2I7VXyFgr
+vBzbndZzjo8wf20sbCpPKenIN2QNd31zM9txzVd3qSVk+enLtSvWTxpshre3n/IK
+WNv5T574KTZ/X/uJiu4N+MJjXy5IDLtdWbtZ1x4NmsMzQpOGP8pIz40Z6G8ciZrc
+/9lY4leEb+LdQ3uuJtQwQz9Wyx7X81sOTLct3dX7oNnybP1Izci6WwVl6ctHs/sq
+dIuPB39as7p1vNjdZC58TnWu7h+8Q79y1I01d+DTq7yuVDXC0luWHek/puwvXhEG
+n6n3eLw9b94/8m3flUXuIz/7ybcGv9uY702/bo1uL7xWWv50qupqMDZEqrsjvdMi
+46xMjjod0+qfsQ2GpzjrKJd8ELx4Mur7fPuyW5142JCnI3nuyvKwNQkl8x68Gq63
+VC0LccwZhlXRa+p/MRhH+1I+Xt/+Qdc793aeTMd2/LF2fGg6LWK7ZyKSczfe/mFq
+UUvjnZKD8496sat/3p1k/sLHrvSXjxkP++8foKcG7r4WlmXJuZc8gUr3FZT69o67
+X09SlPJc9h/R27GU
+=Cgl1
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/maiatoday
+
+==================================================================
