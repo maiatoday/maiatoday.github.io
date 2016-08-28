@@ -1,12 +1,22 @@
-# Site settings
-title: maiatoday Github repos
-email: maiatoday@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Code activity and github repos for maiatoday.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://maiatoday.github.io" # the base hostname & protocol for your site
-twitter_username: maiatoday
-github_username:  maiatoday
+title:            maiatoday
+description:      summary of my GitHub repos
+url:              # Site url, without a slash at the end.
+signoff:          "maia"
+disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
-# Build settings
-markdown: kramdown
+links:
+  - name:         About
+    url:          /about
+  - name:         Art
+    url:          http://www.maiatoday.co.za
+    external:     true
+  - name:         GitHub
+    url:          http://github.com/maiatoday
+    external:     true
+permalink:        pretty
+markdown:         kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
