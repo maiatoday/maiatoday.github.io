@@ -1,6 +1,6 @@
 title:            maiatoday
 description:      summary of my GitHub repos
-url:              # Site url, without a slash at the end.
+url:              #"http://www.maiatoday.net"
 signoff:          "maia"
 disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
