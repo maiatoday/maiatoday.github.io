@@ -18,5 +18,7 @@ links:
 permalink:        pretty
 markdown:         kramdown
 highlighter:      rouge
+gems:
+  - jekyll-gist
 kramdown:
   input: GFM
