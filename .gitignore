@@ -1,3 +1,6 @@
 _site
 .sass-cache
 *.sublime-workspace
+.idea
+.jekyll-cache
+.DS_Store
