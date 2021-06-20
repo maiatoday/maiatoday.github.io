@@ -4,3 +4,7 @@ _site
 .idea
 .jekyll-cache
 .DS_Store
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
