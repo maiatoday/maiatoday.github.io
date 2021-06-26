@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://www.maiatoday.net/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.maiatoday.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Random Animating Pie Button</title><link>https://www.maiatoday.net/p/random-animating-pie-button/</link><pubDate>Wed, 16 Jun 2021 21:36:11 +0000</pubDate><guid>https://www.maiatoday.net/p/random-animating-pie-button/</guid><description>&lt;img src="https://www.maiatoday.net/p/random-animating-pie-button/randomPieBanner.png" alt="Featured image of post Random Animating Pie Button" />&lt;p>I am exploring animations with small sampler functions using Jetpack Compose. This one is a custom component that draws a &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/PieStatus.kt" target="_blank" rel="noopener"
+>little pie chart&lt;/a>. It will animate a random pie value on the click of the &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/RandomPieButton.kt" target="_blank" rel="noopener"
+>button&lt;/a>.&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 134; flex-basis: 321px">
+&lt;a href="https://www.maiatoday.net/p/random-animating-pie-button/randomPieClick.gif" data-size="252x188">&lt;img src="https://www.maiatoday.net/p/random-animating-pie-button/randomPieClick.gif"
+srcset="https://www.maiatoday.net/p/random-animating-pie-button/randomPieClick_hue87a2dd35b7d2dcf39402d15fcef185b_464915_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/random-animating-pie-button/randomPieClick_hue87a2dd35b7d2dcf39402d15fcef185b_464915_1024x0_resize_box.gif 1024w"
+width="252"
+height="188"
+loading="lazy"
+alt="click and animate">
+&lt;/a>
+&lt;figcaption>click and animate&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/ComposeSampler" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>Hello8Ball</title><link>https://www.maiatoday.net/p/hello8ball/</link><pubDate>Sat, 23 Nov 2019 21:36:11 +0000</pubDate><guid>https://www.maiatoday.net/p/hello8ball/</guid><description>&lt;img src="https://www.maiatoday.net/p/hello8ball/Screenshot_1566145786.png" alt="Featured image of post Hello8Ball" />&lt;p>A sampler app to explore Coroutine testing. This is a toy app that simulates an 8 Ball. It can answer questions, find synonmyms, generate a password or check if a number is prime. It was created to make a situation where it makes sense to use coroutines to e.g. go on the network or make a calculation. Then I added tests for all the pieces using &lt;a class="link" href="https://github.com/Kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-test" target="_blank" rel="noopener"
+>kotlinx-coroutine-test&lt;/a>.&lt;/p>
+&lt;p>As a bonus the repo is set up to run the tests on CircleCi. It has detekt setup and jacoco code coverage. There is also a branch where all the tests are converted to junit5.&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=E-1n_AmlVjE" target="_blank" rel="noopener"
+>Devfest 2019 video&lt;/a>&lt;/p>
+&lt;p>This is the companion repo to the &lt;a class="link" href="" >KotlinEveryWhereZA 2019&lt;/a> and &lt;a class="link" href="https://devfest.co.za/" target="_blank" rel="noopener"
+>DevFestZa 2019&lt;/a> talk. &lt;a class="link" href="https://github.com/maiatoday/Hello8Ball/blob/master/slides/TestingKotlinCoroutines.pdf" target="_blank" rel="noopener"
+>Slides&lt;/a> are in the repo.&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/Hello8Ball" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>HelloTrain</title><link>https://www.maiatoday.net/p/hellotrain/</link><pubDate>Fri, 08 Feb 2019 21:36:13 +0000</pubDate><guid>https://www.maiatoday.net/p/hellotrain/</guid><description>&lt;img src="https://www.maiatoday.net/p/hellotrain/errorTrain.png" alt="Featured image of post HelloTrain" />&lt;p>Exploring &lt;a class="link" href="https://www.slideshare.net/ScottWlaschin/railway-oriented-programming" target="_blank" rel="noopener"
+>railroad error handling&lt;/a> in Kotlin. Pure Kotlin.&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/HelloTrain" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>Note to Future me — add jacoco and coverage limits</title><link>https://www.maiatoday.net/p/note-to-future-me-add-jacoco-and-coverage-limits/</link><pubDate>Sat, 13 Oct 2018 13:55:25 +0000</pubDate><guid>https://www.maiatoday.net/p/note-to-future-me-add-jacoco-and-coverage-limits/</guid><description>&lt;img src="https://www.maiatoday.net/p/note-to-future-me-add-jacoco-and-coverage-limits/blocks.png" alt="Featured image of post Note to Future me — add jacoco and coverage limits" />&lt;p>I have found myself adding jacoco and coverage limits to more than one Android project. Enough times for me to extract the gradle bits in to a little nugget of grooviness to just drop into a project as needed. For a while now I have been reading about &lt;a class="link" href="https://jeroenmols.com/blog/2017/11/28/coveragproblem/" target="_blank" rel="noopener"
+>test coverage numbers&lt;/a> and working with my intuition about what is the most valuable thing for me to spend my time on when building something. Also Kotlin. In the light of this my gradle build file snippet contains the following:&lt;/p>
+&lt;ul>
+&lt;li>Jacoco for test coverage&lt;/li>
+&lt;li>Kotlin support&lt;/li>
+&lt;li>A way to choose important classes and only set coverage limits on those&lt;/li>
+&lt;/ul>
+&lt;p>Do this,&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Put the gist in a file &lt;code>jacoco.gradle&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Modify the &lt;code>jacoco.gradle&lt;/code> file to add limits for your important packages.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add this line to your &lt;code>build.gradle&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>apply from: 'jacoco.gradle'&lt;/code>&lt;/p>
+&lt;ol start="4">
+&lt;li>And then run the command&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>./gradlew tasks&lt;/code>&lt;/p>
+&lt;p>to see what new tasks are there to run. e.g. in the reporting section find something similar to&lt;/p>
+&lt;p>&lt;code>./gradlew/testDevDebugUnitTestCoverageVerification&lt;/code>&lt;/p>
+&lt;p>which will run the tests, make coverage reports and apply limits.&lt;/p>
+&lt;ol start="5">
+&lt;li>Find the reports in a path similar to this&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>~/your\_project/your\_module/build/reports/jacoco/testDevDebugUnitTestCoverage/html/index.html&lt;/code>&lt;/p>
+&lt;p>Without further ado, the gist:&lt;/p>
+&lt;p>The code in the gist was taken from so many blogposts. I can’t even remember them all. Thanks to the original authors.&lt;/p>
+&lt;p>Also note there is a small piece of cargo cult code that kept sneaking in from sundry blogposts that I don’t need because I don’t have Robolectric tests. As it turns out this code &lt;a class="link" href="https://groups.google.com/forum/#!topic/jacoco/KMBScnGiKeI" target="_blank" rel="noopener"
+>crashes unit tests on Java &amp;gt; 8&lt;/a>. So remove this code if you have it and if it fits your usecase.&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-groovy" data-lang="groovy">&lt;span class="n">tasks&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">withType&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">Test&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;span class="n">jacoco&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">includeNoLocationClasses&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;span class="o">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Note to future me — Adding GraphQL to an app</title><link>https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/</link><pubDate>Sun, 08 Apr 2018 21:36:13 +0000</pubDate><guid>https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/</guid><description>&lt;img src="https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie.png" alt="Featured image of post Note to future me — Adding GraphQL to an app" />&lt;p>Adding the &lt;a class="link" href="https://github.com/apollographql/apollo-android" target="_blank" rel="noopener"
+>library&lt;/a> to the app see commit 03bd7a7534f7a23276fc47c4f7c94d7ac153bc0b&lt;/p>
+&lt;ul>
+&lt;li>plugin&lt;/li>
+&lt;li>dependencies&lt;/li>
+&lt;/ul>
+&lt;p>Making a service&lt;/p>
+&lt;ul>
+&lt;li>wrapping and existing endpoint &lt;a class="link" href="https://github.com/joakin/wikimedia-graphql" target="_blank" rel="noopener"
+>https://github.com/joakin/wikimedia-graphql&lt;/a>&lt;/li>
+&lt;li>install node if you don’t have it. node — version&lt;/li>
+&lt;li>running the service `node index.js` &lt;/li>
+&lt;li>&lt;a class="link" href="http://localhost:3002/graphiql" target="_blank" rel="noopener"
+>play with the service&lt;/a> &lt;/li>
+&lt;/ul>
+&lt;p>&lt;a class="link" href="https://gist.github.com/maiatoday/578aebcee3bd9decb6e3c6833c73a4ba#file-wikipage-graphql" target="_blank" rel="noopener"
+>https://gist.github.com/maiatoday/578aebcee3bd9decb6e3c6833c73a4ba#file-wikipage-graphql&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>getting the json.schema &lt;a class="link" href="https://github.com/apollographql/apollo-codegen" target="_blank" rel="noopener"
+>https://github.com/apollographql/apollo-codegen&lt;/a>&lt;/li>
+&lt;li>cd app/src/main/graphql/net/maiatoday/helloblondie&lt;/li>
+&lt;li>apollo-codegen download-schema &lt;a class="link" href="http://localhost:3002/graphql" target="_blank" rel="noopener"
+>http://localhost:3002/graphql&lt;/a> — output schema.json&lt;/li>
+&lt;/ul>
+&lt;p>Adding the service to the app&lt;/p>
+&lt;ul>
+&lt;li>adding a query&lt;/li>
+&lt;li>adding the schema a5a47f0ff45f6bc5d5a3aa6f1fee50af363f7893&lt;/li>
+&lt;li>getting access to the service&lt;/li>
+&lt;li>calling the service&lt;/li>
+&lt;/ul>
+&lt;p>&lt;figure style="flex-grow: 56; flex-basis: 135px">
+&lt;a href="https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie.png" data-size="800x1422">&lt;img src="https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie.png"
+srcset="https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_480x0_resize_box_2.png 480w, https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_1024x0_resize_box_2.png 1024w"
+width="800"
+height="1422"
+loading="lazy"
+>
+&lt;/a>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/mugli/learning-graphql/blob/master/2.%20Basic%20Query%20Syntax.md" target="_blank" rel="noopener"
+>Some pointers on query syntax&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/HelloBlondie/tree/graphql" target="_blank" rel="noopener"
+>Gitrepo&lt;/a>&lt;/p>
+&lt;p>`sudo apollo-codegen introspect-schema &lt;a class="link" href="https://api-dev.nomanini.com/transaction-gateway/graphql" target="_blank" rel="noopener"
+>https://api.blargh.com/graphql&lt;/a> — header “Authorization: Bearer xxxx” — output schema.json`&lt;/p></description></item><item><title>Note to Future Me — Testing Intents with Matchers</title><link>https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/</link><pubDate>Fri, 26 Jan 2018 14:54:45 +0000</pubDate><guid>https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/</guid><description>&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults.png" alt="Featured image of post Note to Future Me — Testing Intents with Matchers" />&lt;p>I want to make my little experiments public and save them as a reminder for future me. So here is yet another post on Matchers and Espresso testing.&lt;/p>
+&lt;p>I want to test this:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>First activity starts another activity at a button click.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>First activity passes a parcelable object to the second activity.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Test that the intent that starts the second activity contains the object with the correct properties.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>I built a contrived example, MainActivity collects some info and passes this to StarActivity in a parcelable called ContrivedParams. See the sample code &lt;a class="link" href="https://github.com/maiatoday/HelloIntentMatcher" target="_blank" rel="noopener"
+>on GitHub&lt;/a>.&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 56; flex-basis: 135px">
+&lt;a href="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1.png" data-size="480x853">&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1.png"
+srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_480x0_resize_box_2.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_1024x0_resize_box_2.png 1024w"
+width="480"
+height="853"
+loading="lazy"
+>
+&lt;/a>
+&lt;/figure>
+&lt;figure style="flex-grow: 56; flex-basis: 135px">
+&lt;a href="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars.png" data-size="480x853">&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars.png"
+srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_480x0_resize_box_2.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_1024x0_resize_box_2.png 1024w"
+width="480"
+height="853"
+loading="lazy"
+>
+&lt;/a>
+&lt;/figure>&lt;/p>
+&lt;p>To write the tests I brushed up on &lt;a class="link" href="https://en.wikipedia.org/wiki/Hamcrest" target="_blank" rel="noopener"
+>Hamcrest&lt;/a>&lt;a class="link" href="http://hamcrest.org/JavaHamcrest/javadoc/1.3/overview-summary.html" target="_blank" rel="noopener"
+>[1]&lt;/a>&lt;a class="link" href="https://www.planetgeek.ch/2012/03/07/create-your-own-matcher/" target="_blank" rel="noopener"
+>[2]&lt;/a>&lt;a class="link" href="http://www.vogella.com/tutorials/Hamcrest/article.html" target="_blank" rel="noopener"
+>[3]&lt;/a>: a library that makes it easier to write readable tests. Instead of&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>you can write almost-english&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>which is a sugar coated version of&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">equalto&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Sadly though &lt;em>is&lt;/em> is a &lt;a class="link" href="https://kotlinlang.org/docs/reference/keyword-reference.html" target="_blank" rel="noopener"
+>hard keyword in Kotlin&lt;/a> so I ended up using the &lt;em>isA()&lt;/em> and &lt;em>equalTo()&lt;/em> varieties of calls rather than escaping &lt;em>is&lt;/em> with backticks.&lt;/p>
+&lt;p>Another reason to use Hamcrest — better error messages. Compare these two messages.&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>
+&lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">37&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>with the message given by a custom matcher&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;span class="n">Expected&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">title&lt;/span> &lt;span class="n">should&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="err">“&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="err">”&lt;/span>
+&lt;span class="n">but&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">was&lt;/span> &lt;span class="err">“&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">!&lt;/span>&lt;span class="err">”&lt;/span>
+&lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">42&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>or the error message given by an object matcher&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;span class="n">Expected&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">ContrivedParams&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">starCount&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="m">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="m">00&lt;/span>&lt;span class="n">b0ff&lt;/span>&lt;span class="p">)&amp;gt;&lt;/span>
+&lt;span class="n">but&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">was&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">ContrivedParams&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">!,&lt;/span> &lt;span class="n">starCount&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="m">00&lt;/span>&lt;span class="n">b0fff&lt;/span>&lt;span class="p">)&amp;gt;&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">47&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The parameters for the second activity is passed in a parcelable data class.&lt;/p>
+&lt;p>I used the &lt;a class="link" href="https://developer.android.com/training/testing/espresso/intents.html" target="_blank" rel="noopener"
+>Espresso-intents library&lt;/a> . Start the activity with an &lt;code>IntentsTestRule&lt;/code>. The IntentsTestRule initialises the Espresso intents before each test and releases them again after the test completes. I used the &lt;code>intended&lt;/code> method to test the intent and the &lt;code>hasEntry&lt;/code> method to check for the extra. I compared the extra with an expected object. As a bonus I wrote a custom matcher to check the properties of the object that was in the intent. Custom matchers are useful if you do not need to check all of the properties in the data object.&lt;/p>
+&lt;p>The intent test:&lt;/p>
+&lt;p>One of the custom matchers:&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 691; flex-basis: 1659px">
+&lt;a href="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults.png" data-size="1480x214">&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults.png"
+srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_480x0_resize_box_2.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_1024x0_resize_box_2.png 1024w"
+width="1480"
+height="214"
+loading="lazy"
+alt="All green">
+&lt;/a>
+&lt;figcaption>All green&lt;/figcaption>
+&lt;/figure>
+All green&lt;/p></description></item><item><title>HelloKeystore</title><link>https://www.maiatoday.net/p/hellokeystore/</link><pubDate>Sun, 12 Nov 2017 21:36:13 +0000</pubDate><guid>https://www.maiatoday.net/p/hellokeystore/</guid><description>&lt;img src="https://www.maiatoday.net/p/hellokeystore/keystore.png" alt="Featured image of post HelloKeystore" />&lt;p>Curious Keystore experiments. A small simple project that saves something in the keystore and gets it out again. Tricksiness happens across versions of Android.&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/HelloKeystore" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>Neotaur-Geotaur</title><link>https://www.maiatoday.net/p/neotaur-geotaur/</link><pubDate>Mon, 29 Aug 2016 14:04:46 +0200</pubDate><guid>https://www.maiatoday.net/p/neotaur-geotaur/</guid><description>&lt;img src="https://www.maiatoday.net/p/neotaur-geotaur/neotaur.png" alt="Featured image of post Neotaur-Geotaur" />&lt;p>I like to make sampler apps to explore new things to learn. I was wondering how the &lt;a class="link" href="https://developer.android.com/training/location/index.html" target="_blank" rel="noopener"
+>google location apis&lt;/a> differed from the new &lt;a class="link" href="https://developers.google.com/awareness/" target="_blank" rel="noopener"
+>awereness apis&lt;/a>. The &lt;a class="link" href="https://github.com/maiatoday/Geotaur" target="_blank" rel="noopener"
+>Geotaur repo&lt;/a> has an app that can use either of these two interfaces. Since it builds two flavours you can run the apps side by side with the same geofences to see how they differ. While I was at it I tried my hand at some other tech too, firebase remote logging and db access, dependency injection.&lt;/p>
+&lt;p>Install from play:&lt;/p>
+&lt;p>&lt;a class="link" href="https://play.google.com/store/apps/details?id=net.maiatoday.neotaur" target="_blank" rel="noopener"
+>Neotaur&lt;/a>{:target=&amp;quot;_blank&amp;quot;}
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>&lt;a class="link" href="https://play.google.com/store/apps/details?id=net.maiatoday.geotaur" target="_blank" rel="noopener"
+>Geotaur&lt;/a>{:target=&amp;quot;_blank&amp;quot;}
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->&lt;/p></description></item><item><title>autoselfie 2013</title><link>https://www.maiatoday.net/p/autoselfie-2013/</link><pubDate>Thu, 09 Oct 2014 21:36:13 +0000</pubDate><guid>https://www.maiatoday.net/p/autoselfie-2013/</guid><description>&lt;img src="https://www.maiatoday.net/p/autoselfie-2013/feature.png" alt="Featured image of post autoselfie 2013" />&lt;p>An android app to &lt;a class="link" href="http://www.maiatoday.co.za/technical" target="_blank" rel="noopener"
+>explore how apps can modify images&lt;/a> and detect faces. The code is &lt;a class="link" href="https://github.com/maiatoday/autoSelfie" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p></description></item><item><title>seed spark 2013</title><link>https://www.maiatoday.net/p/seed-spark-2013/</link><pubDate>Thu, 09 Oct 2014 21:26:46 +0000</pubDate><guid>https://www.maiatoday.net/p/seed-spark-2013/</guid><description>&lt;img src="https://www.maiatoday.net/p/seed-spark-2013/snapshot_000.png" alt="Featured image of post seed spark 2013" />&lt;p>In 2013 I made a variation of an older kinect piece called &lt;a class="link" href="http://maiatoday.blogspot.com/2013/06/modified-seedspark-v11.html" target="_blank" rel="noopener"
+>seedSpark&lt;/a>. There were some improvements in the &lt;a class="link" href="https://github.com/maiatoday/seedSpark" target="_blank" rel="noopener"
+>code&lt;/a> which now used Frame buffers.&lt;/p></description></item><item><title>Masters 2012</title><link>https://www.maiatoday.net/p/masters-2012/</link><pubDate>Thu, 09 Oct 2014 20:54:30 +0000</pubDate><guid>https://www.maiatoday.net/p/masters-2012/</guid><description>&lt;img src="https://www.maiatoday.net/p/masters-2012/IMG_8522.JPG" alt="Featured image of post Masters 2012" />&lt;p>In 2012 I made my Masters &lt;a class="link" href="http://www.maiatoday.co.za/summary-3" target="_blank" rel="noopener"
+>exhibition&lt;/a> using openframeworks and the Kinect. It consisted of 4 interactive works which explored concepts around human ideas and machine execution. The repo &lt;a class="link" href="https://github.com/maiatoday/veloPeople" target="_blank" rel="noopener"
+>veloPeople&lt;/a> contains all four works each in their own branch. Each work was built on a &lt;a class="link" href="http://maiatoday.blogspot.com/2011/07/standalone-flash-disk-install.html" target="_blank" rel="noopener"
+>custom ubuntu live disk&lt;/a>. So the installation works existed on flash disk. Given the right hardware you could boot from the flash disk and run one of the works.&lt;/p></description></item></channel></rss>
