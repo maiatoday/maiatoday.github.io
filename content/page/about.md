@@ -15,4 +15,7 @@ menu:
 My projects on Github and elsewhere
 maiatoday@gmail.com
 
- [GitHub](https://github.com/maiatoday).
+ [GitHub](https://github.com/maiatoday)
+ [Twitter](https://twitter.com/maiatoday)
+ [LinkedIn](https://www.linkedin.com/in/maiagrotepass/)
+ [Polywork](https://poly.work/maiatoday)

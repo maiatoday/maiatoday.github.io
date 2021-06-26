@@ -1,11 +1,11 @@
-baseurl: https://example.com
+baseurl: https://www.maiatoday.net
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
 title: maiatoday
 
 # Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+disqusShortname: 
 
 # GA Tracking ID
 googleAnalytics:
@@ -23,10 +23,10 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: assets/favicon
 
     footer:
-        since: 2020
+        since: 2012
         customText:
 
     dateFormat:
@@ -38,7 +38,7 @@ params:
         subtitle: Android dev ❤️Kotlin 🐶
         avatar:
             local: true
-            src: img/maia.png
+            src: img/maiaSquare.jpeg
 
     article:
         math: false

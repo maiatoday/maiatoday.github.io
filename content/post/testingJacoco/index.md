@@ -15,27 +15,27 @@ I have found myself adding jacoco and coverage limits to more than one Android p
 
 Do this,
 
-1\. Put the gist in a file `jacoco.gradle`
+1. Put the gist in a file `jacoco.gradle`
 
-2\. Modify the `jacoco.gradle` file to add limits for your important packages.
+2. Modify the `jacoco.gradle` file to add limits for your important packages.
 
-3\. Add this line to your `build.gradle`
+3. Add this line to your `build.gradle`
 
-apply from: 'jacoco.gradle'
+`apply from: 'jacoco.gradle'`
 
-4\. And then run the command
+4. And then run the command
 
-./gradlew tasks
+`./gradlew tasks`
 
 to see what new tasks are there to run. e.g. in the reporting section find something similar to
 
-./gradlew/testDevDebugUnitTestCoverageVerification
+`./gradlew/testDevDebugUnitTestCoverageVerification`
 
 which will run the tests, make coverage reports and apply limits.
 
-5\. Find the reports in a path similar to this
+5. Find the reports in a path similar to this
 
-~/your\_project/your\_module/build/reports/jacoco/testDevDebugUnitTestCoverage/html/index.html
+`~/your\_project/your\_module/build/reports/jacoco/testDevDebugUnitTestCoverage/html/index.html`
 
 Without further ado, the gist:
 
@@ -43,6 +43,8 @@ The code in the gist was taken from so many blogposts. I can’t even remember t
 
 Also note there is a small piece of cargo cult code that kept sneaking in from sundry blogposts that I don’t need because I don’t have Robolectric tests. As it turns out this code [crashes unit tests on Java > 8](https://groups.google.com/forum/#!topic/jacoco/KMBScnGiKeI). So remove this code if you have it and if it fits your usecase.
 
+```groovy
 tasks.withType(Test) {  
     jacoco.includeNoLocationClasses = true  
 }
+```
