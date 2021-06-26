@@ -35,7 +35,7 @@ Adding the service to the app
 *   getting access to the service
 *   calling the service
 
-![]({{site.baseurl}}/assets/img/helloBlondie.png)
+![](helloBlondie.png)
 
 [Some pointers on query syntax](https://github.com/mugli/learning-graphql/blob/master/2.%20Basic%20Query%20Syntax.md)
 

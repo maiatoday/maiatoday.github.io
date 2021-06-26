@@ -22,8 +22,8 @@ I want to test this:
 
 I built a contrived example, MainActivity collects some info and passes this to StarActivity in a parcelable called ContrivedParams. See the sample code [on GitHub](https://github.com/maiatoday/HelloIntentMatcher).
 
-![]({{site.baseurl}}/assets/img/helloIntentMatcher/screen1.png)
-![]({{site.baseurl}}/assets/img/helloIntentMatcher/greenStars.png)
+![](screen1.png)
+![](greenStars.png)
 
 To write the tests I brushed up on [Hamcrest](https://en.wikipedia.org/wiki/Hamcrest)[\[1\]](http://hamcrest.org/JavaHamcrest/javadoc/1.3/overview-summary.html)[\[2\]](https://www.planetgeek.ch/2012/03/07/create-your-own-matcher/)[\[3\]](http://www.vogella.com/tutorials/Hamcrest/article.html): a library that makes it easier to write readable tests. Instead of
 
@@ -65,5 +65,5 @@ The intent test:
 
 One of the custom matchers:
 
-![All green]({{site.baseurl}}/assets/img/testResults.png)
+![All green](testResults.png)
 All green

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Random Animating Pie Button
-images: randomPieBanner.png
+image: randomPieBanner.png
 categories: [code]
 tags: [code, compose, animate]
 date: 2021-06-16 21:36:11
