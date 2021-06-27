@@ -196,7 +196,47 @@ alt="click and animate">
 &lt;/a>
 &lt;figcaption>click and animate&lt;/figcaption>
 &lt;/figure>&lt;/p>
-&lt;p>&lt;a class="link" href="https://github.com/maiatoday/ComposeSampler" target="_blank" rel="noopener"
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="k">data&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">PieData&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">foreground&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">White&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">strokeWidth&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Dp&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">4.&lt;/span>&lt;span class="n">dp&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">percentage&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="nd">@Composable&lt;/span>
+&lt;span class="k">fun&lt;/span> &lt;span class="nf">PieStatus&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">pieData&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">PieData&lt;/span>
+&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">var&lt;/span> &lt;span class="py">animationPlayed&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">remember&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">mutableStateOf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">false&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">currentPercentage&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">animateFloatAsState&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">animationPlayed&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">percentage&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">1000&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="n">LaunchedEffect&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">key1&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">animationPlayed&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">true&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="n">Canvas&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>
+&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">canvasWidth&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">width&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">canvasHeight&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">height&lt;/span>
+&lt;span class="n">drawCircle&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">foreground&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">center&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Offset&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">canvasWidth&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">canvasHeight&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;span class="n">radius&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">canvasWidth&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">strokeWidth&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toPx&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Stroke&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">strokeWidth&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toPx&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">arcPadding&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">strokeWidth&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toPx&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="m">2&lt;/span>
+&lt;span class="n">drawArc&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">foreground&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">startAngle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="m">90f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">sweepAngle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">currentPercentage&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">value&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="m">360&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">useCenter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">topLeft&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Offset&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">arcPadding&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">arcPadding&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;span class="n">size&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Size&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">arcPadding&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="m">2f&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">arcPadding&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="m">2f&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a class="link" href="https://github.com/maiatoday/ComposeSampler" target="_blank" rel="noopener"
 >code&lt;/a>&lt;/p></description></item><item><title>Hello8Ball</title><link>https://maiatoday.github.io/p/hello8ball/</link><pubDate>Sat, 23 Nov 2019 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/hello8ball/</guid><description>&lt;img src="https://maiatoday.github.io/p/hello8ball/Screenshot_1566145786.png" alt="Featured image of post Hello8Ball" />&lt;p>A sampler app to explore Coroutine testing. This is a toy app that simulates an 8 Ball. It can answer questions, find synonmyms, generate a password or check if a number is prime. It was created to make a situation where it makes sense to use coroutines to e.g. go on the network or make a calculation. Then I added tests for all the pieces using &lt;a class="link" href="https://github.com/Kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-test" target="_blank" rel="noopener"
 >kotlinx-coroutine-test&lt;/a>.&lt;/p>
 &lt;p>As a bonus the repo is set up to run the tests on CircleCi. It has detekt setup and jacoco code coverage. There is also a branch where all the tests are converted to junit5.&lt;/p>
