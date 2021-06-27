@@ -1,6 +1,6 @@
 ---
 title: About
-description: Maia  Grotepass  code experiments
+description: Maia Grotepass code experiments
 date: '2021-06-20'
 aliases:
   - about-us
@@ -12,10 +12,12 @@ menu:
         weight: -90
         pre: user
 ---
-My projects on Github and elsewhere
-maiatoday@gmail.com
+This site documents my projects, code snippets, notes to myself so I won't forget and other random explorations.
 
  [GitHub](https://github.com/maiatoday)
+
  [Twitter](https://twitter.com/maiatoday)
+
  [LinkedIn](https://www.linkedin.com/in/maiagrotepass/)
+
  [Polywork](https://poly.work/maiatoday)
