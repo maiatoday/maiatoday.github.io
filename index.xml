@@ -1,4 +1,130 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://maiatoday.github.io/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 27 Jun 2021 00:13:10 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Animating Rainbow Text</title><link>https://maiatoday.github.io/p/animating-rainbow-text/</link><pubDate>Sun, 27 Jun 2021 00:13:10 +0200</pubDate><guid>https://maiatoday.github.io/p/animating-rainbow-text/</guid><description>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/noDisco.png" alt="Featured image of post Animating Rainbow Text" />&lt;p>&lt;a class="link" href="https://www.wonder-tonic.com/geocitiesizer/" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://maiatoday.github.io/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 03 Jul 2021 17:27:21 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>&lt;blink> like it's 1999</title><link>https://maiatoday.github.io/p/blink-like-its-1999/</link><pubDate>Sat, 03 Jul 2021 17:27:21 +0200</pubDate><guid>https://maiatoday.github.io/p/blink-like-its-1999/</guid><description>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blinktag.png" alt="Featured image of post &lt;blink> like it's 1999" />&lt;p>Another small experiment to explore Jetpack Compose animations. I came to the conclusion that any value that is passed as a parameter could be animated, including anything in the modifier. So I set out to build a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> tag.&lt;/p>
+&lt;p>My first attempt creates a composable function that takes the modifier, animates it and passes it back to the content lambda. Like this:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;span class="k">fun&lt;/span> &lt;span class="nf">BlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">durationMillis&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
+&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">alpha&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>When you use it you get a modifier back which you then pass to your content.&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">BlinkTag&lt;/span>
+&lt;span class="n">Row&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">Icon&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">it&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// &amp;lt;- like so
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="n">tint&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RainbowRed&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">painter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">painterResource&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">drawable&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ic_android_black_24dp&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;span class="n">contentDescription&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">null&lt;/span> &lt;span class="c1">// decorative element
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;blinky&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RainbowRed&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">it&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">padding&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">8.&lt;/span>&lt;span class="n">dp&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// &amp;lt;- and here too
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;figure style="flex-grow: 80; flex-basis: 193px">
+&lt;a href="https://maiatoday.github.io/p/blink-like-its-1999/ghosts.gif" data-size="234x290">&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/ghosts.gif"
+srcset="https://maiatoday.github.io/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_1024x0_resize_box.gif 1024w"
+width="234"
+height="290"
+loading="lazy"
+alt="animated text and icons - click me to see the animation">
+&lt;/a>
+&lt;figcaption>animated text and icons - click me to see the animation&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>The animation for this was a linear &lt;code>tween()&lt;/code> between invisible and visible. However anyone who &lt;a class="link" href="https://www.google.com/search?q=blink&amp;#43;tag" target="_blank" rel="noopener"
+>knows the blink tag&lt;/a> will realise that it stays on longer than off. It blips off and then comes back on again staying visible for longer.&lt;/p>
+&lt;p>To do this I replaced the &lt;code>tween()&lt;/code> with &lt;code>keyframes&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;span class="k">fun&lt;/span> &lt;span class="nf">BlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">duration&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
+&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">alpha&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">keyframes&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">duration&lt;/span>
+&lt;span class="m">1f&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">duration&lt;/span>&lt;span class="p">*&lt;/span>&lt;span class="m">0.8&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">toInt&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">// we started at 1 and stay here for 80% of the time
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="m">0f&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="n">duration&lt;/span> &lt;span class="c1">// then drop down to 0 in the last 20% of the time
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;figure style="flex-grow: 194; flex-basis: 465px">
+&lt;a href="https://maiatoday.github.io/p/blink-like-its-1999/blinkLong.gif" data-size="260x134">&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blinkLong.gif"
+srcset="https://maiatoday.github.io/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_1024x0_resize_box.gif 1024w"
+width="260"
+height="134"
+loading="lazy"
+alt="more relistic blink - click me to see the animation">
+&lt;/a>
+&lt;figcaption>more relistic blink - click me to see the animation&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Reading the &lt;a class="link" href="https://developer.android.com/jetpack/compose/themes#emphasis" target="_blank" rel="noopener"
+>material theme docs&lt;/a> I found out there was another way to share alpha values to a children in the composable tree using a &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#LocalContentAlpha" target="_blank" rel="noopener"
+>LocalContentAlpha&lt;/a>. This mechanims is used for emphasis using alpha and I am pretty sure the intention isn&amp;rsquo;t for this to be used to make layouts blink. I am doing this for science.&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;span class="k">fun&lt;/span> &lt;span class="nf">LocalContentBlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">durationMillis&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
+&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="k">val&lt;/span> &lt;span class="py">alpha&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="n">CompositionLocalProvider&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">LocalContentAlpha&lt;/span> &lt;span class="n">provides&lt;/span> &lt;span class="n">alpha&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">content&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>When using this blink tag you no longer need to pass down the modifier since the changing alpha value is available to the children in a &lt;code>CompositionLocal&lt;/code>&lt;/p>
+&lt;p>Use it like this:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">LocalContentBlinkTag&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">Row&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">Icon&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">painter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">painterResource&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">drawable&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ic_android_black_24dp&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;span class="n">contentDescription&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">null&lt;/span> &lt;span class="c1">// decorative element
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;blink&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;figure style="flex-grow: 238; flex-basis: 571px">
+&lt;a href="https://maiatoday.github.io/p/blink-like-its-1999/blink.gif" data-size="238x100">&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blink.gif"
+srcset="https://maiatoday.github.io/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_1024x0_resize_box.gif 1024w"
+width="238"
+height="100"
+loading="lazy"
+alt="local content blink - click me to see the animation">
+&lt;/a>
+&lt;figcaption>local content blink - click me to see the animation&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Although I defintely don&amp;rsquo;t support the irresponsible use of the blink tag, no investigation of reproducing retro website animations would be complete without a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> I realised again how powerful yet simple the animation system in Jetpack Compose can be. Be warned.&lt;/p>
+&lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
+>this repo&lt;/a>&lt;/p>
+&lt;p>Also in this series:
+&lt;a class="link" href="https://maiatoday.github.io/p/animating-rainbow-text/" title="Rainbow Text"
+>RainbowText&lt;/a>&lt;/p></description></item><item><title>Animating Rainbow Text</title><link>https://maiatoday.github.io/p/animating-rainbow-text/</link><pubDate>Sun, 27 Jun 2021 00:13:10 +0200</pubDate><guid>https://maiatoday.github.io/p/animating-rainbow-text/</guid><description>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/noDisco.png" alt="Featured image of post Animating Rainbow Text" />&lt;p>&lt;a class="link" href="https://www.wonder-tonic.com/geocitiesizer/" target="_blank" rel="noopener"
 >Do you remember web pages in the nineties?&lt;/a> Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.&lt;/p>
 &lt;p>First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.&lt;/p>
 &lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowRed&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFDA034E&lt;/span>&lt;span class="p">)&lt;/span>
@@ -183,7 +309,10 @@ alt="smooth rainbow test">
 &lt;p>Until then&amp;hellip; &lt;a class="link" href="https://youtu.be/_NywTcGOUkE?t=44" target="_blank" rel="noopener"
 >this ain&amp;rsquo;t not disco&lt;/a>&lt;/p>
 &lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
->this repo&lt;/a>&lt;/p></description></item><item><title>Random Animating Pie Button</title><link>https://maiatoday.github.io/p/random-animating-pie-button/</link><pubDate>Wed, 16 Jun 2021 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/random-animating-pie-button/</guid><description>&lt;img src="https://maiatoday.github.io/p/random-animating-pie-button/randomPieBanner.png" alt="Featured image of post Random Animating Pie Button" />&lt;p>I am exploring animations with small sampler functions using Jetpack Compose. This one is a custom component that draws a &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/PieStatus.kt" target="_blank" rel="noopener"
+>this repo&lt;/a>&lt;/p>
+&lt;p>Also in this series:
+&lt;a class="link" href="https://maiatoday.github.io/p/blink-like-its-1999/" title="Blink Tag"
+>BlinkTag&lt;/a>&lt;/p></description></item><item><title>Random Animating Pie Button</title><link>https://maiatoday.github.io/p/random-animating-pie-button/</link><pubDate>Wed, 16 Jun 2021 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/random-animating-pie-button/</guid><description>&lt;img src="https://maiatoday.github.io/p/random-animating-pie-button/randomPieBanner.png" alt="Featured image of post Random Animating Pie Button" />&lt;p>I am exploring animations with small sampler functions using Jetpack Compose. This one is a custom component that draws a &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/PieStatus.kt" target="_blank" rel="noopener"
 >little pie chart&lt;/a>. It will animate a random pie value on the click of the &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/RandomPieButton.kt" target="_blank" rel="noopener"
 >button&lt;/a>.&lt;/p>
 &lt;p>&lt;figure style="flex-grow: 134; flex-basis: 321px">
