@@ -2,7 +2,7 @@
 layout: post
 title: Animating Rainbow Text
 image: noDisco.png
-categories: [code, sampler]
+categories: [code, jetpack compose]
 tags: [code, compose, animate, rainbow, 90s website]
 date: 2021-06-27T00:13:10+02:00
 ---
@@ -188,3 +188,6 @@ Next I'll tackle some more retro 90s web page inspired animations, visitor count
 Until then... [this ain't not disco](https://youtu.be/_NywTcGOUkE?t=44)
 
 Find all the source in [this repo](https://github.com/maiatoday/MagicSprinkles)
+
+Also in this series:
+[BlinkTag]({{< ref "post/BlinkTag" >}} "Blink Tag")
