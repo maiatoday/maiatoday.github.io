@@ -12,7 +12,7 @@ Another step forward in recreating the icon 90s website look is the [hit counter
 
 I was inspired by a recent episode of [Code with Italians](https://youtu.be/zoq1n_0Lkp8?t=5919) where they animated a time field. I wanted to change the counter component to animate each number individually to get that odometer look.
 
-Before doing this though there was a question of ***state***. I wanted to make a counter that would auto increment in a coroutine. It had to change direction up or down if you tapped it. To do this decided to store the state and the counting direction in a view model. This allowed me to keep the components as stateless as possible. The components are re-usable because the logic that makes the numbers go up or down is held outside of the composable functions.
+Before doing this though there was a question of ***state***. I wanted to make a counter that would auto increment in a coroutine. It had to change direction up or down if you tapped it. To do this I decided to store the state and the counting direction in a view model. This allowed me to keep the components as stateless as possible. The components are re-usable because the logic that makes the numbers go up or down is held outside of the composable functions.
 
 The [recommendation from Google](https://youtu.be/0z_dwBGQQWQ?t=451) is when you use a view model to hold state, keep it close to the root screen. I made a screen for my visitor counter and added it to my navigation code. Since I already had Hilt enabled in the project it was pretty easy to get hold of the viewmodel. The code snippet in the Navigation looks like this:
 
@@ -30,7 +30,7 @@ NavHost(navController, startDestination = "overview") {
     }
 ```
 
-The `CounterScreen` is stateles and gets the value of the counter and the event handler as parameters. The `CounterScreen` has a `Counter` composable. The role of the `Counter` composable is to create a row of individual odometer numbers from the passed values. Also it should intercept a click and call the click handler.
+The `CounterScreen` is stateless and gets the value of the counter and the event handler as parameters. The `CounterScreen` has a `Counter` composable. The role of the `Counter` composable is to create a row of individual odometer numbers from the passed values. Also it should intercept a click and call the click handler.
 
 ```kotlin
 @Composable
