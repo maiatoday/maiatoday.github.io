@@ -127,4 +127,7 @@ Although I defintely don't support the irresponsible use of the blink tag, no in
 Find all the source in [this repo](https://github.com/maiatoday/MagicSprinkles)
 
 Also in this series:
+
 [RainbowText]({{< ref "post/RainbowText" >}} "Rainbow Text")
+
+[VisitorCounter]({{< ref "post/VisitorCounter" >}} "Visitor Counter")

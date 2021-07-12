@@ -190,4 +190,7 @@ Until then... [this ain't not disco](https://youtu.be/_NywTcGOUkE?t=44)
 Find all the source in [this repo](https://github.com/maiatoday/MagicSprinkles)
 
 Also in this series:
+
 [BlinkTag]({{< ref "post/BlinkTag" >}} "Blink Tag")
+
+[VisitorCounter]({{< ref "post/VisitorCounter" >}} "Visitor Counter")
