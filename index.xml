@@ -560,7 +560,27 @@ alt="click and animate">
 &lt;span class="p">}&lt;/span>
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a class="link" href="https://github.com/maiatoday/ComposeSampler" target="_blank" rel="noopener"
->code&lt;/a>&lt;/p></description></item><item><title>Hello8Ball</title><link>https://maiatoday.github.io/p/hello8ball/</link><pubDate>Sat, 23 Nov 2019 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/hello8ball/</guid><description>&lt;img src="https://maiatoday.github.io/p/hello8ball/Screenshot_1566145786.png" alt="Featured image of post Hello8Ball" />&lt;p>A sampler app to explore Coroutine testing. This is a toy app that simulates an 8 Ball. It can answer questions, find synonmyms, generate a password or check if a number is prime. It was created to make a situation where it makes sense to use coroutines to e.g. go on the network or make a calculation. Then I added tests for all the pieces using &lt;a class="link" href="https://github.com/Kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-test" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>Dagger, Hilt, Koin - a comparison</title><link>https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/</link><pubDate>Wed, 05 Aug 2020 15:02:01 +0200</pubDate><guid>https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/</guid><description>&lt;img src="https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/dagger_hilt_koin.png" alt="Featured image of post Dagger, Hilt, Koin - a comparison" />&lt;p>Talk presented for GDG Johannesburg comparing dependency injection technologies.&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 177; flex-basis: 426px">
+&lt;a href="https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/which_one.png" data-size="2268x1276">&lt;img src="https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/which_one.png"
+srcset="https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/which_one_huc0ae47b8b6cac47e7628ec8f169caf81_1018563_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/which_one_huc0ae47b8b6cac47e7628ec8f169caf81_1018563_1024x0_resize_box_3.png 1024w"
+width="2268"
+height="1276"
+loading="lazy"
+alt="which one to choose">
+&lt;/a>
+&lt;figcaption>which one to choose&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/-MJm4UGoh5I"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/137QItxqOKWpACPdrx-pOc2ry7sVNi0kXnZCjZsmmfiI/edit?usp=sharing" target="_blank" rel="noopener"
+>slides&lt;/a>&lt;/p></description></item><item><title>Hello8Ball</title><link>https://maiatoday.github.io/p/hello8ball/</link><pubDate>Sat, 23 Nov 2019 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/hello8ball/</guid><description>&lt;img src="https://maiatoday.github.io/p/hello8ball/Screenshot_1566145786.png" alt="Featured image of post Hello8Ball" />&lt;p>A sampler app to explore Coroutine testing. This is a toy app that simulates an 8 Ball. It can answer questions, find synonmyms, generate a password or check if a number is prime. It was created to make a situation where it makes sense to use coroutines to e.g. go on the network or make a calculation. Then I added tests for all the pieces using &lt;a class="link" href="https://github.com/Kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-test" target="_blank" rel="noopener"
 >kotlinx-coroutine-test&lt;/a>.&lt;/p>
 &lt;p>As a bonus the repo is set up to run the tests on CircleCi. It has detekt setup and jacoco code coverage. There is also a branch where all the tests are converted to junit5.&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=E-1n_AmlVjE" target="_blank" rel="noopener"
