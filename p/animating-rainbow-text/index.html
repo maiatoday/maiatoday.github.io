@@ -1,10 +1,97 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Do you remember web pages in the nineties? Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.
-First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow."><title>Animating Rainbow Text</title><link rel=canonical href=https://maiatoday.github.io/p/animating-rainbow-text/><link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="Animating Rainbow Text"><meta property="og:description" content="Do you remember web pages in the nineties? Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.
-First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow."><meta property="og:url" content="https://maiatoday.github.io/p/animating-rainbow-text/"><meta property="og:site_name" content="maiatoday"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="code"><meta property="article:tag" content="compose"><meta property="article:tag" content="animate"><meta property="article:tag" content="rainbow"><meta property="article:tag" content="90s website"><meta property="article:published_time" content="2021-06-27T00:13:10+02:00"><meta property="article:modified_time" content="2021-06-27T00:13:10+02:00"><meta property="og:image" content="https://maiatoday.github.io/p/animating-rainbow-text/noDisco.png"><meta name=twitter:site content="@maiatoday"><meta name=twitter:creator content="@maiatoday"><meta name=twitter:title content="Animating Rainbow Text"><meta name=twitter:description content="Do you remember web pages in the nineties? Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.
-First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow."><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://maiatoday.github.io/p/animating-rainbow-text/noDisco.png"><link rel="shortcut icon" href=assets/favicon></head><body><script>(function(){const a='StackColorScheme';localStorage.getItem(a)||localStorage.setItem(a,"auto")})()</script><script>(function(){const b='StackColorScheme',a=localStorage.getItem(b),c=window.matchMedia('(prefers-color-scheme: dark)').matches===!0;a=='dark'||a==='auto'&&c?document.documentElement.dataset.scheme='dark':document.documentElement.dataset.scheme='light'})()</script><div class="container main-container flex on-phone--column extended article-page with-toolbar hide-sidebar-sm"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
-<span class=hamburger-box><span class=hamburger-inner></span></span></button><header class=site-info><figure class=site-avatar><img src=/img/maiaSquare_hu1362d4a75947cef5a07d81758df5613b_195332_300x0_resize_q75_box.jpeg width=300 height=300 class=site-logo loading=lazy alt=Avatar>
-<span class=emoji>🐶</span></figure><h1 class=site-name><a href=https://maiatoday.github.io>maiatoday</a></h1><h2 class=site-description>Android dev ❤️Kotlin 🐶</h2></header><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>Home</span></a></li><li><a href=/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>About</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Archives</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Search</span></a></li><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>Dark Mode</span></li></ol></aside><main class="main full-width"><div id=article-toolbar><a href=https://maiatoday.github.io class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg><span>Back</span></a></div><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/animating-rainbow-text/><img src=/p/animating-rainbow-text/noDisco_hua68bcb7d3448fc4e606dd0d887f39cde_62022_800x0_resize_box_2.png srcset="/p/animating-rainbow-text/noDisco_hua68bcb7d3448fc4e606dd0d887f39cde_62022_800x0_resize_box_2.png 800w, /p/animating-rainbow-text/noDisco_hua68bcb7d3448fc4e606dd0d887f39cde_62022_1600x0_resize_box_2.png 1600w" width=800 height=385 loading=lazy alt="Featured image of post Animating Rainbow Text"></a></div><div class=article-details><header class=article-category><a href=/categories/code/>code</a>
-<a href=/categories/jetpack-compose/>jetpack compose</a></header><h2 class=article-title><a href=/p/animating-rainbow-text/>Animating Rainbow Text</a></h2><footer class=article-time><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--published>Jun 27, 2021</time></footer></div></header><section class=article-content><p><a class=link href=https://www.wonder-tonic.com/geocitiesizer/ target=_blank rel=noopener>Do you remember web pages in the nineties?</a> Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.</p><p>First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.</p><div class=highlight><pre class=chroma><code class=language-kotlin data-lang=kotlin><span class=k>val</span> <span class=py>RainbowRed</span> <span class=p>=</span> <span class=n>Color</span><span class=p>(</span><span class=m>0xFFDA034E</span><span class=p>)</span>
+<!doctype html><html lang=en-us>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Do you remember web pages in the nineties? Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.
+First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow."><title>Animating Rainbow Text</title>
+<link rel=canonical href=https://maiatoday.github.io/p/animating-rainbow-text/>
+<link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="Animating Rainbow Text">
+<meta property="og:description" content="Do you remember web pages in the nineties? Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.
+First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.">
+<meta property="og:url" content="https://maiatoday.github.io/p/animating-rainbow-text/">
+<meta property="og:site_name" content="maiatoday">
+<meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="code"><meta property="article:tag" content="compose"><meta property="article:tag" content="animate"><meta property="article:tag" content="rainbow"><meta property="article:tag" content="90s website"><meta property="article:published_time" content="2021-06-27T00:13:10+02:00"><meta property="article:modified_time" content="2021-06-27T00:13:10+02:00"><meta property="og:image" content="https://maiatoday.github.io/p/animating-rainbow-text/noDisco.png">
+<meta name=twitter:site content="@maiatoday">
+<meta name=twitter:creator content="@maiatoday"><meta name=twitter:title content="Animating Rainbow Text">
+<meta name=twitter:description content="Do you remember web pages in the nineties? Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.
+First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow."><meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://maiatoday.github.io/p/animating-rainbow-text/noDisco.png">
+<link rel="shortcut icon" href=assets/favicon>
+</head>
+<body>
+<script>(function(){const a='StackColorScheme';localStorage.getItem(a)||localStorage.setItem(a,"auto")})()</script><script>(function(){const b='StackColorScheme',a=localStorage.getItem(b),c=window.matchMedia('(prefers-color-scheme: dark)').matches===!0;a=='dark'||a==='auto'&&c?document.documentElement.dataset.scheme='dark':document.documentElement.dataset.scheme='light'})()</script>
+<div class="container main-container flex on-phone--column extended article-page with-toolbar hide-sidebar-sm">
+<aside class="sidebar left-sidebar sticky">
+<button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
+<span class=hamburger-box>
+<span class=hamburger-inner></span>
+</span>
+</button>
+<header class=site-info>
+<figure class=site-avatar>
+<img src=/img/maiaSquare_hu1362d4a75947cef5a07d81758df5613b_195332_300x0_resize_q75_box.jpeg width=300 height=300 class=site-logo loading=lazy alt=Avatar>
+<span class=emoji>🐶</span>
+</figure>
+<h1 class=site-name><a href=https://maiatoday.github.io>maiatoday</a></h1>
+<h2 class=site-description>Android dev ❤️Kotlin 🐶</h2>
+</header>
+<ol class=menu id=main-menu>
+<li>
+<a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>Home</span>
+</a>
+</li>
+<li>
+<a href=/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>About</span>
+</a>
+</li>
+<li>
+<a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>Archives</span>
+</a>
+</li>
+<li>
+<a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>Search</span>
+</a>
+</li>
+<li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>Dark Mode</span>
+</li>
+</ol>
+</aside>
+<main class="main full-width">
+<div id=article-toolbar>
+<a href=https://maiatoday.github.io class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg>
+<span>Back</span>
+</a>
+</div>
+<article class="has-image main-article">
+<header class=article-header>
+<div class=article-image>
+<a href=/p/animating-rainbow-text/>
+<img src=/p/animating-rainbow-text/noDisco_hua68bcb7d3448fc4e606dd0d887f39cde_62022_800x0_resize_box_3.png srcset="/p/animating-rainbow-text/noDisco_hua68bcb7d3448fc4e606dd0d887f39cde_62022_800x0_resize_box_3.png 800w, /p/animating-rainbow-text/noDisco_hua68bcb7d3448fc4e606dd0d887f39cde_62022_1600x0_resize_box_3.png 1600w" width=800 height=385 loading=lazy alt="Featured image of post Animating Rainbow Text">
+</a>
+</div>
+<div class=article-details>
+<header class=article-category>
+<a href=/categories/code/>
+code
+</a>
+<a href=/categories/jetpack-compose/>
+jetpack compose
+</a>
+</header>
+<h2 class=article-title>
+<a href=/p/animating-rainbow-text/>Animating Rainbow Text</a>
+</h2>
+<footer class=article-time><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--published>Jun 27, 2021</time>
+</footer></div>
+</header>
+<section class=article-content>
+<p><a class=link href=https://www.wonder-tonic.com/geocitiesizer/ target=_blank rel=noopener>Do you remember web pages in the nineties?</a> Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.</p>
+<p>First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-kotlin data-lang=kotlin><span class=k>val</span> <span class=py>RainbowRed</span> <span class=p>=</span> <span class=n>Color</span><span class=p>(</span><span class=m>0xFFDA034E</span><span class=p>)</span>
 <span class=k>val</span> <span class=py>RainbowOrange</span> <span class=p>=</span> <span class=n>Color</span><span class=p>(</span><span class=m>0xFFFF9800</span><span class=p>)</span>
 <span class=k>val</span> <span class=py>RainbowYellow</span> <span class=p>=</span> <span class=n>Color</span><span class=p>(</span><span class=m>0xFFFFEB3B</span><span class=p>)</span>
 <span class=k>val</span> <span class=py>RainbowGreen</span> <span class=p>=</span> <span class=n>Color</span><span class=p>(</span><span class=m>0xFF4CAF50</span><span class=p>)</span>
@@ -21,7 +108,13 @@ First I need a rainbow. It needs to be flexible enough for me to be able to swap
     <span class=n>RainbowIndigo</span><span class=p>,</span>
     <span class=n>RainbowViolet</span>
 <span class=p>)</span>
-</code></pre></div><p>Since web pages in the nineties used Times New Roman and Helvetica, I added a free version of a serif font. I chose <a class=link href="https://fonts.google.com/specimen/Source+Serif+Pro?query=source+serif" target=_blank rel=noopener>Source Serif</a>. I included the ttf files in the project and made a FontFamily and hooked this into the theme.</p><p><figure style=flex-grow:132;flex-basis:317px><a href=/p/animating-rainbow-text/ttfInProject.png data-size=630x476><img src=/p/animating-rainbow-text/ttfInProject.png srcset="/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_480x0_resize_box_2.png 480w, /p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_1024x0_resize_box_2.png 1024w" width=630 height=476 loading=lazy alt="ttf files in projext"></a><figcaption>ttf files in projext</figcaption></figure></p><div class=highlight><pre class=chroma><code class=language-kotlin data-lang=kotlin><span class=k>val</span> <span class=py>SourceSerif</span> <span class=p>=</span> <span class=n>FontFamily</span><span class=p>(</span>
+</code></pre></div><p>Since web pages in the nineties used Times New Roman and Helvetica, I added a free version of a serif font. I chose <a class=link href="https://fonts.google.com/specimen/Source+Serif+Pro?query=source+serif" target=_blank rel=noopener>Source Serif</a>. I included the ttf files in the project and made a FontFamily and hooked this into the theme.</p>
+<p><figure style=flex-grow:132;flex-basis:317px>
+<a href=/p/animating-rainbow-text/ttfInProject.png data-size=630x476><img src=/p/animating-rainbow-text/ttfInProject.png srcset="/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_480x0_resize_box_3.png 480w, /p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_1024x0_resize_box_3.png 1024w" width=630 height=476 loading=lazy alt="ttf files in projext">
+</a>
+<figcaption>ttf files in projext</figcaption>
+</figure></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-kotlin data-lang=kotlin><span class=k>val</span> <span class=py>SourceSerif</span> <span class=p>=</span> <span class=n>FontFamily</span><span class=p>(</span>
     <span class=n>Font</span><span class=p>(</span><span class=n>R</span><span class=p>.</span><span class=n>font</span><span class=p>.</span><span class=n>source_serif_pro_regular</span><span class=p>),</span>
     <span class=n>Font</span><span class=p>(</span><span class=n>R</span><span class=p>.</span><span class=n>font</span><span class=p>.</span><span class=n>source_serif_pro_bold</span><span class=p>,</span> <span class=n>FontWeight</span><span class=p>.</span><span class=n>Bold</span><span class=p>),</span>
     <span class=n>Font</span><span class=p>(</span><span class=n>R</span><span class=p>.</span><span class=n>font</span><span class=p>.</span><span class=n>source_serif_pro_light</span><span class=p>,</span> <span class=n>FontWeight</span><span class=p>.</span><span class=n>Light</span><span class=p>),</span>
@@ -36,7 +129,8 @@ First I need a rainbow. It needs to be flexible enough for me to be able to swap
         <span class=n>shapes</span> <span class=p>=</span> <span class=n>Shapes</span><span class=p>,</span>
         <span class=n>content</span> <span class=p>=</span> <span class=n>content</span>
     <span class=p>)</span>
-</code></pre></div><p>Next I made a composable that would colour each letter of a string. This simple composable took as many text parameters in and then split the string colouring each character to the colour of the rainbow in the parameter. The <code>startColor</code> index is used to pick which colour the first letter will be.</p><div class=highlight><pre class=chroma><code class=language-kotlin data-lang=kotlin><span class=nd>@Composable</span>
+</code></pre></div><p>Next I made a composable that would colour each letter of a string. This simple composable took as many text parameters in and then split the string colouring each character to the colour of the rainbow in the parameter. The <code>startColor</code> index is used to pick which colour the first letter will be.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-kotlin data-lang=kotlin><span class=nd>@Composable</span>
 <span class=k>fun</span> <span class=nf>MultiColorText</span><span class=p>(</span>
     <span class=n>modifier</span><span class=p>:</span> <span class=n>Modifier</span> <span class=p>=</span> <span class=n>Modifier</span><span class=p>,</span>
     <span class=n>text</span><span class=p>:</span> <span class=n>String</span><span class=p>,</span>
@@ -53,7 +147,8 @@ First I need a rainbow. It needs to be flexible enough for me to be able to swap
         <span class=p>}</span>
     <span class=p>}</span>
 <span class=p>}</span>
-</code></pre></div><p>This allowed me to create a second composable which used an infinite transition to animate continouously. I animate the <code>startColor</code> integer and this will recompose the nested <code>MultiColorText</code> composable. The <code>animateValue</code> will change the value of <code>colorIndex</code> over time and will use the <code>Int.VectorConverter</code> to get a value between 0 and the size of the rainbow. In this way it creates an endless loop of changing integer values. The animation spec is a simple <code>tween()</code> which just changes be<em>tween</em> the <code>initalvalue</code> and the <code>targetValue</code> in alinear way. Different effects can be created by fiddling with the <code>repeatMode</code> or the other parameters in the <code>animationSpec</code> or adjusting the duration in the <code>tween()</code>.</p><div class=highlight><pre class=chroma><code class=language-kotlin data-lang=kotlin><span class=nd>@Composable</span>
+</code></pre></div><p>This allowed me to create a second composable which used an infinite transition to animate continouously. I animate the <code>startColor</code> integer and this will recompose the nested <code>MultiColorText</code> composable. The <code>animateValue</code> will change the value of <code>colorIndex</code> over time and will use the <code>Int.VectorConverter</code> to get a value between 0 and the size of the rainbow. In this way it creates an endless loop of changing integer values. The animation spec is a simple <code>tween()</code> which just changes be<em>tween</em> the <code>initalvalue</code> and the <code>targetValue</code> in alinear way. Different effects can be created by fiddling with the <code>repeatMode</code> or the other parameters in the <code>animationSpec</code> or adjusting the duration in the <code>tween()</code>.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-kotlin data-lang=kotlin><span class=nd>@Composable</span>
 <span class=k>fun</span> <span class=nf>SnappyRainbowText</span><span class=p>(</span>
     <span class=n>modifier</span><span class=p>:</span> <span class=n>Modifier</span> <span class=p>=</span> <span class=n>Modifier</span><span class=p>,</span>
     <span class=n>text</span><span class=p>:</span> <span class=n>String</span><span class=p>,</span>
@@ -79,7 +174,16 @@ First I need a rainbow. It needs to be flexible enough for me to be able to swap
         <span class=n>rainbow</span> <span class=p>=</span> <span class=n>rainbow</span>
     <span class=p>)</span>
 <span class=p>}</span>
-</code></pre></div><p>I made a simple test screen with an edit text field so I could try it out.</p><p><figure style=flex-grow:154;flex-basis:369px><a href=/p/animating-rainbow-text/snappyDisco.gif data-size=672x436><img src=/p/animating-rainbow-text/snappyDisco.gif srcset="/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_480x0_resize_box.gif 480w, /p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_1024x0_resize_box.gif 1024w" width=672 height=436 loading=lazy alt="snappy rainbow click me to see the animation"></a><figcaption>snappy rainbow click me to see the animation</figcaption></figure></p><p>As you can see the animation is uhm &mldr; snappy. If you can&rsquo;t see it, click on the image.</p><p>Is it possible to change from one colour to the next smoothly and still have all the letters different colours?</p><p>The first step is to create a composable that will cycle through a rainbow of colours. This is done by creating a keyframes animation. The keyframe points are the colours of the rainbow.</p><div class=highlight><pre class=chroma><code class=language-kotlin data-lang=kotlin><span class=nd>@Composable</span>
+</code></pre></div><p>I made a simple test screen with an edit text field so I could try it out.</p>
+<p><figure style=flex-grow:154;flex-basis:369px>
+<a href=/p/animating-rainbow-text/snappyDisco.gif data-size=672x436><img src=/p/animating-rainbow-text/snappyDisco.gif srcset="/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_480x0_resize_box.gif 480w, /p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_1024x0_resize_box.gif 1024w" width=672 height=436 loading=lazy alt="snappy rainbow click me to see the animation">
+</a>
+<figcaption>snappy rainbow click me to see the animation</figcaption>
+</figure></p>
+<p>As you can see the animation is uhm &mldr; snappy. If you can&rsquo;t see it, click on the image.</p>
+<p>Is it possible to change from one colour to the next smoothly and still have all the letters different colours?</p>
+<p>The first step is to create a composable that will cycle through a rainbow of colours. This is done by creating a keyframes animation. The keyframe points are the colours of the rainbow.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-kotlin data-lang=kotlin><span class=nd>@Composable</span>
 <span class=k>fun</span> <span class=nf>MultiColorSmoothText</span><span class=p>(</span>
     <span class=n>modifier</span><span class=p>:</span> <span class=n>Modifier</span> <span class=p>=</span> <span class=n>Modifier</span><span class=p>,</span>
     <span class=n>text</span><span class=p>:</span> <span class=n>String</span><span class=p>,</span>
@@ -109,7 +213,14 @@ First I need a rainbow. It needs to be flexible enough for me to be able to swap
     <span class=p>)</span>
     <span class=n>Text</span><span class=p>(</span><span class=n>text</span> <span class=p>=</span> <span class=n>text</span><span class=p>,</span> <span class=n>color</span> <span class=p>=</span> <span class=n>color</span><span class=p>,</span> <span class=n>style</span> <span class=p>=</span> <span class=n>style</span><span class=p>,</span> <span class=n>modifier</span> <span class=p>=</span> <span class=n>modifier</span><span class=p>)</span>
 <span class=p>}</span>
-</code></pre></div><p>This composable can be used to loop through colours of the rainbow on a Text composable.</p><p><figure style=flex-grow:466;flex-basis:1120px><a href=/p/animating-rainbow-text/smoothOneDisco.gif data-size=644x138><img src=/p/animating-rainbow-text/smoothOneDisco.gif srcset="/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_480x0_resize_box.gif 480w, /p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_1024x0_resize_box.gif 1024w" width=644 height=138 loading=lazy alt="smooth coloured text"></a><figcaption>smooth coloured text</figcaption></figure></p><p>Finally I built a composable that split the string again and made each letter a <code>MultiColorSmoothText</code>. It uses the <code>startIndex</code> to delay the animation. The effect is that each letter is a different colour.</p><div class=highlight><pre class=chroma><code class=language-kotlin data-lang=kotlin><span class=nd>@Composable</span>
+</code></pre></div><p>This composable can be used to loop through colours of the rainbow on a Text composable.</p>
+<p><figure style=flex-grow:466;flex-basis:1120px>
+<a href=/p/animating-rainbow-text/smoothOneDisco.gif data-size=644x138><img src=/p/animating-rainbow-text/smoothOneDisco.gif srcset="/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_480x0_resize_box.gif 480w, /p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_1024x0_resize_box.gif 1024w" width=644 height=138 loading=lazy alt="smooth coloured text">
+</a>
+<figcaption>smooth coloured text</figcaption>
+</figure></p>
+<p>Finally I built a composable that split the string again and made each letter a <code>MultiColorSmoothText</code>. It uses the <code>startIndex</code> to delay the animation. The effect is that each letter is a different colour.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-kotlin data-lang=kotlin><span class=nd>@Composable</span>
 <span class=k>fun</span> <span class=nf>SmoothRainbowText</span><span class=p>(</span>
     <span class=n>modifier</span><span class=p>:</span> <span class=n>Modifier</span> <span class=p>=</span> <span class=n>Modifier</span><span class=p>,</span>
     <span class=n>text</span><span class=p>:</span> <span class=n>String</span><span class=p>,</span>
@@ -133,14 +244,139 @@ First I need a rainbow. It needs to be flexible enough for me to be able to swap
         <span class=p>}</span>
     <span class=p>}</span>
 <span class=p>}</span>
-</code></pre></div><p>And the final smooth animating rainbow text using a pastel rainbow.</p><p><figure style=flex-grow:154;flex-basis:369px><a href=/p/animating-rainbow-text/smoothDisco.gif data-size=672x436><img src=/p/animating-rainbow-text/smoothDisco.gif srcset="/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_480x0_resize_box.gif 480w, /p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_1024x0_resize_box.gif 1024w" width=672 height=436 loading=lazy alt="smooth rainbow test"></a><figcaption>smooth rainbow test</figcaption></figure></p><p>Next I&rsquo;ll tackle some more retro 90s web page inspired animations, visitor counters, flames, rotating images, shifting tiled backgrounds and walls of text that change size.</p><p>Until then&mldr; <a class=link href="https://youtu.be/_NywTcGOUkE?t=44" target=_blank rel=noopener>this ain&rsquo;t not disco</a></p><p>Find all the source in <a class=link href=https://github.com/maiatoday/MagicSprinkles target=_blank rel=noopener>this repo</a></p><p>Also in this series:</p><p><a class=link href=https://maiatoday.github.io/p/blink-like-its-1999/ title="Blink Tag">BlinkTag</a></p><p><a class=link href=https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/ title="Visitor Counter">VisitorCounter</a></p></section><footer class=article-footer><section class=article-tags><a href=/tags/code/>code</a>
+</code></pre></div><p>And the final smooth animating rainbow text using a pastel rainbow.</p>
+<p><figure style=flex-grow:154;flex-basis:369px>
+<a href=/p/animating-rainbow-text/smoothDisco.gif data-size=672x436><img src=/p/animating-rainbow-text/smoothDisco.gif srcset="/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_480x0_resize_box.gif 480w, /p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_1024x0_resize_box.gif 1024w" width=672 height=436 loading=lazy alt="smooth rainbow test">
+</a>
+<figcaption>smooth rainbow test</figcaption>
+</figure></p>
+<p>Next I&rsquo;ll tackle some more retro 90s web page inspired animations, visitor counters, flames, rotating images, shifting tiled backgrounds and walls of text that change size.</p>
+<p>Until then&mldr; <a class=link href="https://youtu.be/_NywTcGOUkE?t=44" target=_blank rel=noopener>this ain&rsquo;t not disco</a></p>
+<p>Find all the source in <a class=link href=https://github.com/maiatoday/MagicSprinkles target=_blank rel=noopener>this repo</a></p>
+<p>Also in this series:</p>
+<p><a class=link href=https://maiatoday.github.io/p/blink-like-its-1999/ title="Blink Tag">BlinkTag</a></p>
+<p><a class=link href=https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/ title="Visitor Counter">VisitorCounter</a></p>
+</section>
+<footer class=article-footer>
+<section class=article-tags>
+<a href=/tags/code/>code</a>
 <a href=/tags/compose/>compose</a>
 <a href=/tags/animate/>animate</a>
 <a href=/tags/rainbow/>rainbow</a>
-<a href=/tags/90s-website/>90s website</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-contents--wrapper><h2 class=section-title>Related contents</h2><div class=related-contents><div class="flex article-list--tile"><article class=has-image><a href=/p/welcome-you-are-visitor-number-12345/><div class=article-image><img src=/p/welcome-you-are-visitor-number-12345/visitorCounter.3d2d9bd34ee276e593bfbd8bac20b717_hu9d445d78dd9da3a596374f2fa2fb4085_20893_250x150_fill_box_smart1_2.png width=250 height=150 loading=lazy data-key data-hash="md5-PS2b007iduWTv72LrCC3Fw=="></div><div class=article-details><h2 class=article-title>Welcome you are visitor number 12345</h2></div></a></article><article class=has-image><a href=/p/blink-like-its-1999/><div class=article-image><img src=/p/blink-like-its-1999/blinktag.1c48967e8fa7dc5db40905e9a2ad4fb6_hu911b4b0ed820cc14ee3b4798ba6cf98f_12657_250x150_fill_box_smart1_2.png width=250 height=150 loading=lazy data-key data-hash="md5-HEiWfo+n3F20CQXpoq1Ptg=="></div><div class=article-details><h2 class=article-title>&lt;blink> like it's 1999</h2></div></a></article><article class=has-image><a href=/p/random-animating-pie-button/><div class=article-image><img src=/p/random-animating-pie-button/randomPieBanner.29fe95f7221eace9f8cc95d555c09027_hu76771219303a90c57653dfce99bbed18_102409_250x150_fill_box_smart1_2.png width=250 height=150 loading=lazy data-key data-hash="md5-Kf6V9yIerOn4zJXVVcCQJw=="></div><div class=article-details><h2 class=article-title>Random Animating Pie Button</h2></div></a></article><article class=has-image><a href=/p/hello8ball/><div class=article-image><img src=/p/hello8ball/Screenshot_1566145786.cd13379cd6981ced4531a306d9983947_hu9195e699ef81636f1d4bdadf0d3d2a3d_107429_250x150_fill_box_smart1_2.png width=250 height=150 loading=lazy data-key data-hash="md5-zRM3nNaYHO1FMaMG2Zg5Rw=="></div><div class=article-details><h2 class=article-title>Hello8Ball</h2></div></a></article><article class=has-image><a href=/p/hellotrain/><div class=article-image><img src=/p/hellotrain/errorTrain.03b329e9db82683c13d83bebd2db95c9_hue47b273e844289ff9d9ad3e40db469b6_213705_250x150_fill_box_smart1_2.png width=250 height=150 loading=lazy data-key data-hash="md5-A7Mp6duCaDwT2Dvr0tuVyQ=="></div><div class=article-details><h2 class=article-title>HelloTrain</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
+<a href=/tags/90s-website/>90s website</a>
+</section>
+<section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under CC BY-NC-SA 4.0</span>
+</section>
+</footer>
+</article>
+<aside class=related-contents--wrapper>
+<h2 class=section-title>Related contents</h2>
+<div class=related-contents>
+<div class="flex article-list--tile">
+<article class=has-image>
+<a href=/p/welcome-you-are-visitor-number-12345/>
+<div class=article-image>
+<img src=/p/welcome-you-are-visitor-number-12345/visitorCounter.3d2d9bd34ee276e593bfbd8bac20b717_hu9d445d78dd9da3a596374f2fa2fb4085_20893_250x150_fill_box_smart1_3.png width=250 height=150 loading=lazy data-key data-hash="md5-PS2b007iduWTv72LrCC3Fw==">
+</div>
+<div class=article-details>
+<h2 class=article-title>Welcome you are visitor number 12345</h2>
+</div>
+</a>
+</article>
+<article class=has-image>
+<a href=/p/blink-like-its-1999/>
+<div class=article-image>
+<img src=/p/blink-like-its-1999/blinktag.1c48967e8fa7dc5db40905e9a2ad4fb6_hu911b4b0ed820cc14ee3b4798ba6cf98f_12657_250x150_fill_box_smart1_3.png width=250 height=150 loading=lazy data-key data-hash="md5-HEiWfo+n3F20CQXpoq1Ptg==">
+</div>
+<div class=article-details>
+<h2 class=article-title>&lt;blink> like it's 1999</h2>
+</div>
+</a>
+</article>
+<article class=has-image>
+<a href=/p/confetti-cleanup/>
+<div class=article-image>
+<img src=/p/confetti-cleanup/confetti_doge.f986c7861cf2b9155e9e6f8435f76723_hua96701f229dcdbb6d8818d2e1e5ed2c2_156508_250x150_fill_box_smart1_3.png width=250 height=150 loading=lazy data-key data-hash="md5-+YbHhhzyuRVenm+ENfdnIw==">
+</div>
+<div class=article-details>
+<h2 class=article-title>Confetti Cleanup</h2>
+</div>
+</a>
+</article>
+<article class=has-image>
+<a href=/p/random-animating-pie-button/>
+<div class=article-image>
+<img src=/p/random-animating-pie-button/randomPieBanner.29fe95f7221eace9f8cc95d555c09027_hu76771219303a90c57653dfce99bbed18_102409_250x150_fill_box_smart1_3.png width=250 height=150 loading=lazy data-key data-hash="md5-Kf6V9yIerOn4zJXVVcCQJw==">
+</div>
+<div class=article-details>
+<h2 class=article-title>Random Animating Pie Button</h2>
+</div>
+</a>
+</article>
+<article class=has-image>
+<a href=/p/hello8ball/>
+<div class=article-image>
+<img src=/p/hello8ball/Screenshot_1566145786.cd13379cd6981ced4531a306d9983947_hu9195e699ef81636f1d4bdadf0d3d2a3d_107429_250x150_fill_box_smart1_3.png width=250 height=150 loading=lazy data-key data-hash="md5-zRM3nNaYHO1FMaMG2Zg5Rw==">
+</div>
+<div class=article-details>
+<h2 class=article-title>Hello8Ball</h2>
+</div>
+</a>
+</article>
+</div>
+</div>
+</aside>
+<footer class=site-footer>
+<section class=copyright>
+&copy;
 2012 -
-2021 maiatoday</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=2.3.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+2021 maiatoday
+</section>
+<section class=powerby>
+Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> <br>
+Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=2.3.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a>
+</section>
+</footer>
+<div class=pswp tabindex=-1 role=dialog aria-hidden=true>
+<div class=pswp__bg></div>
+<div class=pswp__scroll-wrap>
+<div class=pswp__container>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class=pswp__top-bar>
+<div class=pswp__counter></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 <button class="pswp__button pswp__button--share" title=Share></button>
 <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=" crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous defer></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const a=document.createElement('link');a.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",a.type="text/css",a.rel="stylesheet",document.head.appendChild(a)})()</script></body></html>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class=pswp__preloader>
+<div class=pswp__preloader__icn>
+<div class=pswp__preloader__cut>
+<div class=pswp__preloader__donut></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class=pswp__share-tooltip></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class=pswp__caption>
+<div class=pswp__caption__center></div>
+</div>
+</div>
+</div>
+</div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=" crossorigin=anonymous>
+</main>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous defer></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const a=document.createElement('link');a.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",a.type="text/css",a.rel="stylesheet",document.head.appendChild(a)})()</script>
+</body>
+</html>

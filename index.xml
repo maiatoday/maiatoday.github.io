@@ -1,8 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://maiatoday.github.io/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 12 Jul 2021 21:44:03 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome you are visitor number 12345</title><link>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</link><pubDate>Mon, 12 Jul 2021 21:44:03 +0200</pubDate><guid>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</guid><description>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter.png" alt="Featured image of post Welcome you are visitor number 12345" />&lt;p>Another step forward in recreating the icon 90s website look is the &lt;a class="link" href="https://www.awwwards.com/5-old-school-web-design-trends-nobody-misses.html" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://maiatoday.github.io/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 31 Dec 2021 07:37:42 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Confetti Cleanup</title><link>https://maiatoday.github.io/p/confetti-cleanup/</link><pubDate>Fri, 31 Dec 2021 07:37:42 +0200</pubDate><guid>https://maiatoday.github.io/p/confetti-cleanup/</guid><description>&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_doge.png" alt="Featured image of post Confetti Cleanup" />&lt;p>In my exploration of animation in Jetpack Compose I built a Confetti modifier that could be applied to any composable. I first showed the modifier in my &lt;a class="link" href="https://vimeo.com/627636211?embedded=true&amp;amp;source=video_title&amp;amp;owner=18175981" target="_blank" rel="noopener"
+>presentation for Chicago Roboto&lt;/a> but since I made it something was bothering me. The way that I can get the state in Compose to register change is by making copies of objects or making new objects. For a modifier that uses particles this can be many objects.&lt;/p>
+&lt;p>I profiled my original modifier and sure enough I see the object allocation and also the garbage collectore cleaning up when the confetti modifier is visible.&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 139; flex-basis: 334px">
+&lt;a href="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_gc.png" data-size="790x566">&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_gc.png"
+srcset="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_1024x0_resize_box_3.png 1024w"
+width="790"
+height="566"
+loading="lazy"
+alt="Confetto in the bin">
+&lt;/a>
+&lt;figcaption>Confetto in the bin&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 809; flex-basis: 1942px">
+&lt;a href="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_objects.png" data-size="1910x236">&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_objects.png"
+srcset="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_1024x0_resize_box_3.png 1024w"
+width="1910"
+height="236"
+loading="lazy"
+alt="Allocated Confetto objects">
+&lt;/a>
+&lt;figcaption>Allocated Confetto objects&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Fast forward to Dec 2021 and my friends over at Code with Italians built a similar &lt;a class="link" href="https://www.youtube.com/watch?v=FgZvs1BsAxE&amp;amp;t=1776s" target="_blank" rel="noopener"
+>snow modifier&lt;/a>. Revisiting my modifier, I cleaned it up. I managed to get rid of some of the object allocation. However since it is a particle system and each of the particles change position, it needs some form of state that changes as the position of the particles change. I used the &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/ui/geometry/Offset" target="_blank" rel="noopener"
+>Offset class&lt;/a> as this is the object that a Circle needs to draw and the object has been optimised to pack the x and y floats. It also has some other useful functions and operators. Offset is immutable so if the particle changes position a new object is made. It is smaller than my original implementation. It isn&amp;rsquo;t really fair to compare the screenshot below with the one above as the time over which the heap capture ran is is not the same. The shallow size of Offset is 16 and the shallow size of the original Confetto objects is 24 and the point inside the Confetto object also has a shallow size of 16. The improvements eliminated the allocation of the extra Confetto object.&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 953; flex-basis: 2288px">
+&lt;a href="https://maiatoday.github.io/p/confetti-cleanup/confetti_offset.png" data-size="2002x210">&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_offset.png"
+srcset="https://maiatoday.github.io/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_1024x0_resize_box_3.png 1024w"
+width="2002"
+height="210"
+loading="lazy"
+alt="Confetti using offset">
+&lt;/a>
+&lt;figcaption>Confetti using offset&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>My intuition says it is preferable to sprinkle the memory with fewer smaller pieces of confetti rather than many larger ones. Still there isn&amp;rsquo;t really a way around it since Offset is immutable and Compose is built around tracking unidirectional state flow. Mutable State holder classes won&amp;rsquo;t register a change if the object that holds the state doesn&amp;rsquo;t change. This means if I keep an object that holds the position of the particle and I simply change the x and y values in he mutable state holder will not register a change. &lt;a class="link" href="https://dev.to/zachklipp/two-mutables-dont-make-a-right-2kgp" target="_blank" rel="noopener"
+>Here&lt;/a> is a detail discussion on mutable state.&lt;/p>
+&lt;h3 id="how-to-build-your-own-drawing-modifier">How to build your own drawing modifier&lt;/h3>
+&lt;p>You need a extension function on modifier like so-&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="k">fun&lt;/span> &lt;span class="nf">Modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">confetti&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="c1">// all your parameters to set up the modifier
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">composed&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// the composed function gives you a composition on each composable where this modifier is used
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="c1">// remeber any state you need here
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="k">var&lt;/span> &lt;span class="py">confettiState&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">remember&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">mutableStateOf&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">ConfettiState&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="c1">// parameters to setup the state
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="n">LaunchedEffect&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">isVisible&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">while&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">isVisible&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">isActive&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">withFrameMillis&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">newTick&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span>
+&lt;span class="c1">// this side effect will return a tick every frame giving
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="c1">// the elapsed time since the previous frame
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="c1">// This would be the place where you move the particles
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="n">onSizeChanged&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="c1">// do what you need to do if the size changes
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">}.&lt;/span>&lt;span class="n">drawBehind&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="c1">// this is where you can draw behind what ever composable content.
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="c1">// It proveds a drawScope with a canvas which you can use
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="c1">// e.g. loop through the particles and draw them
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then it is as simple as adding the modifier to any composable, e.g. here is a black box with red &lt;code>Hello World&lt;/code> and confetti behind.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">Box&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>
+&lt;span class="p">.&lt;/span>&lt;span class="n">background&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Black&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">.&lt;/span>&lt;span class="n">fillMaxSize&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">.&lt;/span>&lt;span class="n">confetti&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Red&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;figure style="flex-grow: 118; flex-basis: 285px">
+&lt;a href="https://maiatoday.github.io/p/confetti-cleanup/confetti_preview.png" data-size="706x594">&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_preview.png"
+srcset="https://maiatoday.github.io/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_1024x0_resize_box_3.png 1024w"
+width="706"
+height="594"
+loading="lazy"
+alt="Confetti preview">
+&lt;/a>
+&lt;figcaption>Confetti preview&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>The &lt;a class="link" href="https://gitlab.com/maiatoday/esw/-/blob/main/app/src/main/java/net/maiatoday/esw/ui/modifiers/ConfettiModifier.kt" target="_blank" rel="noopener"
+>code for the cleaned up confetti modifier&lt;/a>&lt;/p></description></item><item><title>Welcome you are visitor number 12345</title><link>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</link><pubDate>Mon, 12 Jul 2021 21:44:03 +0200</pubDate><guid>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</guid><description>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter.png" alt="Featured image of post Welcome you are visitor number 12345" />&lt;p>Another step forward in recreating the icon 90s website look is the &lt;a class="link" href="https://www.awwwards.com/5-old-school-web-design-trends-nobody-misses.html" target="_blank" rel="noopener"
 >hit counter, visitor counter or web counter&lt;/a> in classic squemorphic odometer style.&lt;/p>
 &lt;p>&lt;figure style="flex-grow: 358; flex-basis: 861px">
 &lt;a href="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters.png" data-size="768x214">&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters.png"
-srcset="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_480x0_resize_box_2.png 480w, https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_1024x0_resize_box_2.png 1024w"
+srcset="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_1024x0_resize_box_3.png 1024w"
 width="768"
 height="214"
 loading="lazy"
@@ -15,7 +102,7 @@ alt="hit counters">
 &lt;p>Before doing this though there was a question of &lt;em>&lt;strong>state&lt;/strong>&lt;/em>. I wanted to make a counter that would auto increment in a coroutine. It had to change direction up or down if you tapped it. To do this I decided to store the state and the counting direction in a view model. This allowed me to keep the components as stateless as possible. The components are re-usable because the logic that makes the numbers go up or down is held outside of the composable functions.&lt;/p>
 &lt;p>The &lt;a class="link" href="https://youtu.be/0z_dwBGQQWQ?t=451" target="_blank" rel="noopener"
 >recommendation from Google&lt;/a> is when you use a view model to hold state, keep it close to the root screen. I made a screen for my visitor counter and added it to my navigation code. Since I already had Hilt enabled in the project it was pretty easy to get hold of the viewmodel. The code snippet in the Navigation looks like this:&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">NavHost&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">navController&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">startDestination&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;overview&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">NavHost&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">navController&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">startDestination&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;overview&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;span class="c1">//... other routes go here
 &lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="n">composable&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">route&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;counter&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;span class="k">val&lt;/span> &lt;span class="py">viewModel&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">CounterViewModel&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">hiltViewModel&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">//&amp;lt;--- get the viewmodel from Hilt
@@ -27,7 +114,7 @@ alt="hit counters">
 &lt;span class="p">}&lt;/span>
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>CounterScreen&lt;/code> is stateless and gets the value of the counter and the event handler as parameters. The &lt;code>CounterScreen&lt;/code> has a &lt;code>Counter&lt;/code> composable. The role of the &lt;code>Counter&lt;/code> composable is to create a row of individual odometer numbers from the passed values. Also it should intercept a click and call the click handler.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
 &lt;span class="k">fun&lt;/span> &lt;span class="nf">Counter&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">onClick&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="n">count&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>&lt;span class="p">,&lt;/span>
@@ -50,7 +137,7 @@ alt="hit counters">
 &lt;span class="p">}&lt;/span>
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>The actual animation happens in each &lt;code>CounterCell&lt;/code>. It uses &lt;code>AnimatedContent&lt;/code> to slide from the top if the new number is more than the previous one and slide from the bottom if the new number is lower than the first.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
 &lt;span class="k">fun&lt;/span> &lt;span class="nf">CounterCell&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">count&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="n">width&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>
@@ -103,7 +190,7 @@ alt="visitor counter going down - click me to see the animation">
 &lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/blink-like-its-1999/" title="Blink Tag"
 >BlinkTag&lt;/a>&lt;/p></description></item><item><title>&lt;blink> like it's 1999</title><link>https://maiatoday.github.io/p/blink-like-its-1999/</link><pubDate>Sat, 03 Jul 2021 17:27:21 +0200</pubDate><guid>https://maiatoday.github.io/p/blink-like-its-1999/</guid><description>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blinktag.png" alt="Featured image of post &lt;blink> like it's 1999" />&lt;p>Another small experiment to explore Jetpack Compose animations. I came to the conclusion that any value that is passed as a parameter could be animated, including anything in the modifier. So I set out to build a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> tag.&lt;/p>
 &lt;p>My first attempt creates a composable function that takes the modifier, animates it and passes it back to the content lambda. Like this:&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
 &lt;span class="k">fun&lt;/span> &lt;span class="nf">BlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
@@ -121,7 +208,7 @@ alt="visitor counter going down - click me to see the animation">
 &lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>When you use it you get a modifier back which you then pass to your content.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">BlinkTag&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">BlinkTag&lt;/span>
 &lt;span class="n">Row&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;span class="n">Icon&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">it&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// &amp;lt;- like so
@@ -149,7 +236,7 @@ alt="animated text and icons - click me to see the animation">
 &lt;p>The animation for this was a linear &lt;code>tween()&lt;/code> between invisible and visible. However anyone who &lt;a class="link" href="https://www.google.com/search?q=blink&amp;#43;tag" target="_blank" rel="noopener"
 >knows the blink tag&lt;/a> will realise that it stays on longer than off. It blips off and then comes back on again staying visible for longer.&lt;/p>
 &lt;p>To do this I replaced the &lt;code>tween()&lt;/code> with &lt;code>keyframes&lt;/code>:&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
 &lt;span class="k">fun&lt;/span> &lt;span class="nf">BlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="n">duration&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
@@ -183,7 +270,7 @@ alt="more relistic blink - click me to see the animation">
 &lt;p>Reading the &lt;a class="link" href="https://developer.android.com/jetpack/compose/themes#emphasis" target="_blank" rel="noopener"
 >material theme docs&lt;/a> I found out there was another way to share alpha values to a children in the composable tree using a &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#LocalContentAlpha" target="_blank" rel="noopener"
 >LocalContentAlpha&lt;/a>. This mechanims is used for emphasis using alpha and I am pretty sure the intention isn&amp;rsquo;t for this to be used to make layouts blink. I am doing this for science.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
 &lt;span class="k">fun&lt;/span> &lt;span class="nf">LocalContentBlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
@@ -203,7 +290,7 @@ alt="more relistic blink - click me to see the animation">
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>When using this blink tag you no longer need to pass down the modifier since the changing alpha value is available to the children in a &lt;code>CompositionLocal&lt;/code>&lt;/p>
 &lt;p>Use it like this:&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">LocalContentBlinkTag&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">LocalContentBlinkTag&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;span class="n">Row&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;span class="n">Icon&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">painter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">painterResource&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">drawable&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ic_android_black_24dp&lt;/span>&lt;span class="p">),&lt;/span>
@@ -232,7 +319,7 @@ alt="local content blink - click me to see the animation">
 >VisitorCounter&lt;/a>&lt;/p></description></item><item><title>Animating Rainbow Text</title><link>https://maiatoday.github.io/p/animating-rainbow-text/</link><pubDate>Sun, 27 Jun 2021 00:13:10 +0200</pubDate><guid>https://maiatoday.github.io/p/animating-rainbow-text/</guid><description>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/noDisco.png" alt="Featured image of post Animating Rainbow Text" />&lt;p>&lt;a class="link" href="https://www.wonder-tonic.com/geocitiesizer/" target="_blank" rel="noopener"
 >Do you remember web pages in the nineties?&lt;/a> Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.&lt;/p>
 &lt;p>First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowRed&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFDA034E&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowRed&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFDA034E&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;span class="k">val&lt;/span> &lt;span class="py">RainbowOrange&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFFF9800&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;span class="k">val&lt;/span> &lt;span class="py">RainbowYellow&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFFFEB3B&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;span class="k">val&lt;/span> &lt;span class="py">RainbowGreen&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF4CAF50&lt;/span>&lt;span class="p">)&lt;/span>
@@ -252,7 +339,7 @@ alt="local content blink - click me to see the animation">
 >Source Serif&lt;/a>. I included the ttf files in the project and made a FontFamily and hooked this into the theme.&lt;/p>
 &lt;p>&lt;figure style="flex-grow: 132; flex-basis: 317px">
 &lt;a href="https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject.png" data-size="630x476">&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject.png"
-srcset="https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_480x0_resize_box_2.png 480w, https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_1024x0_resize_box_2.png 1024w"
+srcset="https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_1024x0_resize_box_3.png 1024w"
 width="630"
 height="476"
 loading="lazy"
@@ -260,7 +347,7 @@ alt="ttf files in projext">
 &lt;/a>
 &lt;figcaption>ttf files in projext&lt;/figcaption>
 &lt;/figure>&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="k">val&lt;/span> &lt;span class="py">SourceSerif&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">FontFamily&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="k">val&lt;/span> &lt;span class="py">SourceSerif&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">FontFamily&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_regular&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_bold&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Bold&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_light&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Light&lt;/span>&lt;span class="p">),&lt;/span>
@@ -275,7 +362,7 @@ alt="ttf files in projext">
 &lt;span class="n">content&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">content&lt;/span>
 &lt;span class="p">)&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Next I made a composable that would colour each letter of a string. This simple composable took as many text parameters in and then split the string colouring each character to the colour of the rainbow in the parameter. The &lt;code>startColor&lt;/code> index is used to pick which colour the first letter will be.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
 &lt;span class="k">fun&lt;/span> &lt;span class="nf">MultiColorText&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
@@ -293,7 +380,7 @@ alt="ttf files in projext">
 &lt;span class="p">}&lt;/span>
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>This allowed me to create a second composable which used an infinite transition to animate continouously. I animate the &lt;code>startColor&lt;/code> integer and this will recompose the nested &lt;code>MultiColorText&lt;/code> composable. The &lt;code>animateValue&lt;/code> will change the value of &lt;code>colorIndex&lt;/code> over time and will use the &lt;code>Int.VectorConverter&lt;/code> to get a value between 0 and the size of the rainbow. In this way it creates an endless loop of changing integer values. The animation spec is a simple &lt;code>tween()&lt;/code> which just changes be&lt;em>tween&lt;/em> the &lt;code>initalvalue&lt;/code> and the &lt;code>targetValue&lt;/code> in alinear way. Different effects can be created by fiddling with the &lt;code>repeatMode&lt;/code> or the other parameters in the &lt;code>animationSpec&lt;/code> or adjusting the duration in the &lt;code>tween()&lt;/code>.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
 &lt;span class="k">fun&lt;/span> &lt;span class="nf">SnappyRainbowText&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
@@ -333,7 +420,7 @@ alt="snappy rainbow click me to see the animation">
 &lt;p>As you can see the animation is uhm &amp;hellip; snappy. If you can&amp;rsquo;t see it, click on the image.&lt;/p>
 &lt;p>Is it possible to change from one colour to the next smoothly and still have all the letters different colours?&lt;/p>
 &lt;p>The first step is to create a composable that will cycle through a rainbow of colours. This is done by creating a keyframes animation. The keyframe points are the colours of the rainbow.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
 &lt;span class="k">fun&lt;/span> &lt;span class="nf">MultiColorSmoothText&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
@@ -375,7 +462,7 @@ alt="smooth coloured text">
 &lt;figcaption>smooth coloured text&lt;/figcaption>
 &lt;/figure>&lt;/p>
 &lt;p>Finally I built a composable that split the string again and made each letter a &lt;code>MultiColorSmoothText&lt;/code>. It uses the &lt;code>startIndex&lt;/code> to delay the animation. The effect is that each letter is a different colour.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="nd">@Composable&lt;/span>
 &lt;span class="k">fun&lt;/span> &lt;span class="nf">SmoothRainbowText&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
@@ -432,7 +519,7 @@ alt="click and animate">
 &lt;/a>
 &lt;figcaption>click and animate&lt;/figcaption>
 &lt;/figure>&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="k">data&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">PieData&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="k">data&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">PieData&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;span class="k">val&lt;/span> &lt;span class="py">foreground&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">White&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="k">val&lt;/span> &lt;span class="py">strokeWidth&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Dp&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">4.&lt;/span>&lt;span class="n">dp&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;span class="k">val&lt;/span> &lt;span class="py">percentage&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span>
@@ -520,7 +607,7 @@ alt="click and animate">
 &lt;p>The code in the gist was taken from so many blogposts. I can’t even remember them all. Thanks to the original authors.&lt;/p>
 &lt;p>Also note there is a small piece of cargo cult code that kept sneaking in from sundry blogposts that I don’t need because I don’t have Robolectric tests. As it turns out this code &lt;a class="link" href="https://groups.google.com/forum/#!topic/jacoco/KMBScnGiKeI" target="_blank" rel="noopener"
 >crashes unit tests on Java &amp;gt; 8&lt;/a>. So remove this code if you have it and if it fits your usecase.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-groovy" data-lang="groovy">&lt;span class="n">tasks&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">withType&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">Test&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-groovy" data-lang="groovy">&lt;span class="n">tasks&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">withType&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">Test&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
 &lt;span class="n">jacoco&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">includeNoLocationClasses&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">true&lt;/span>
 &lt;span class="o">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Note to future me — Adding GraphQL to an app</title><link>https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/</link><pubDate>Sun, 08 Apr 2018 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/</guid><description>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie.png" alt="Featured image of post Note to future me — Adding GraphQL to an app" />&lt;p>Adding the &lt;a class="link" href="https://github.com/apollographql/apollo-android" target="_blank" rel="noopener"
@@ -556,7 +643,7 @@ alt="click and animate">
 &lt;/ul>
 &lt;p>&lt;figure style="flex-grow: 56; flex-basis: 135px">
 &lt;a href="https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie.png" data-size="800x1422">&lt;img src="https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie.png"
-srcset="https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_480x0_resize_box_2.png 480w, https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_1024x0_resize_box_2.png 1024w"
+srcset="https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_1024x0_resize_box_3.png 1024w"
 width="800"
 height="1422"
 loading="lazy"
@@ -585,7 +672,7 @@ loading="lazy"
 >on GitHub&lt;/a>.&lt;/p>
 &lt;p>&lt;figure style="flex-grow: 56; flex-basis: 135px">
 &lt;a href="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1.png" data-size="480x853">&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1.png"
-srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_480x0_resize_box_2.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_1024x0_resize_box_2.png 1024w"
+srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_1024x0_resize_box_3.png 1024w"
 width="480"
 height="853"
 loading="lazy"
@@ -594,7 +681,7 @@ loading="lazy"
 &lt;/figure>
 &lt;figure style="flex-grow: 56; flex-basis: 135px">
 &lt;a href="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars.png" data-size="480x853">&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars.png"
-srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_480x0_resize_box_2.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_1024x0_resize_box_2.png 1024w"
+srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_1024x0_resize_box_3.png 1024w"
 width="480"
 height="853"
 loading="lazy"
@@ -606,23 +693,23 @@ loading="lazy"
 >[1]&lt;/a>&lt;a class="link" href="https://www.planetgeek.ch/2012/03/07/create-your-own-matcher/" target="_blank" rel="noopener"
 >[2]&lt;/a>&lt;a class="link" href="http://www.vogella.com/tutorials/Hamcrest/article.html" target="_blank" rel="noopener"
 >[3]&lt;/a>: a library that makes it easier to write readable tests. Instead of&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>you can write almost-english&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>which is a sugar coated version of&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">equalto&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">equalto&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">)))&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Sadly though &lt;em>is&lt;/em> is a &lt;a class="link" href="https://kotlinlang.org/docs/reference/keyword-reference.html" target="_blank" rel="noopener"
 >hard keyword in Kotlin&lt;/a> so I ended up using the &lt;em>isA()&lt;/em> and &lt;em>equalTo()&lt;/em> varieties of calls rather than escaping &lt;em>is&lt;/em> with backticks.&lt;/p>
 &lt;p>Another reason to use Hamcrest — better error messages. Compare these two messages.&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>
 &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">37&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>with the message given by a custom matcher&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
 &lt;span class="n">Expected&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">title&lt;/span> &lt;span class="n">should&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="err">“&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="err">”&lt;/span>
 &lt;span class="n">but&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">was&lt;/span> &lt;span class="err">“&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">!&lt;/span>&lt;span class="err">”&lt;/span>
 &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">42&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>or the error message given by an object matcher&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
 &lt;span class="n">Expected&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">ContrivedParams&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">starCount&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="m">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="m">00&lt;/span>&lt;span class="n">b0ff&lt;/span>&lt;span class="p">)&amp;gt;&lt;/span>
 &lt;span class="n">but&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">was&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">ContrivedParams&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">!,&lt;/span> &lt;span class="n">starCount&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="m">00&lt;/span>&lt;span class="n">b0fff&lt;/span>&lt;span class="p">)&amp;gt;&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">47&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>The parameters for the second activity is passed in a parcelable data class.&lt;/p>
@@ -632,7 +719,7 @@ loading="lazy"
 &lt;p>One of the custom matchers:&lt;/p>
 &lt;p>&lt;figure style="flex-grow: 691; flex-basis: 1659px">
 &lt;a href="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults.png" data-size="1480x214">&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults.png"
-srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_480x0_resize_box_2.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_1024x0_resize_box_2.png 1024w"
+srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_1024x0_resize_box_3.png 1024w"
 width="1480"
 height="214"
 loading="lazy"
