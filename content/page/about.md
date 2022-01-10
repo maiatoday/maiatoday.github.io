@@ -14,6 +14,8 @@ menu:
 ---
 This site documents my projects, code snippets, notes to myself so I won't forget and other random explorations.
 
+ [GitLab](https://gitlab.com/maiatoday)
+ 
  [GitHub](https://github.com/maiatoday)
 
  [Twitter](https://twitter.com/maiatoday)
