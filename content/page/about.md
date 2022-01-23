@@ -14,6 +14,8 @@ menu:
 ---
 This site documents my projects, code snippets, notes to myself so I won't forget and other random explorations.
 
+ [Contact me for collaboration](https://www.polywork.com/maiatoday/contact)
+
  [GitLab](https://gitlab.com/maiatoday)
  
  [GitHub](https://github.com/maiatoday)
@@ -22,4 +24,4 @@ This site documents my projects, code snippets, notes to myself so I won't forge
 
  [LinkedIn](https://www.linkedin.com/in/maiagrotepass/)
 
- [Polywork](https://poly.work/maiatoday)
+ [Time line showing recent activity](https://www.maiatoday.co.za)
