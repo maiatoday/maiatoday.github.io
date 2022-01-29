@@ -25,3 +25,7 @@ This site documents my projects, code snippets, notes to myself so I won't forge
  [LinkedIn](https://www.linkedin.com/in/maiagrotepass/)
 
  [Time line showing recent activity](https://www.maiatoday.co.za)
+
+ [Papercall profile](https://www.papercall.io/speakers/maiatoday)
+
+ [Sessionize profile](https://sessionize.com/maia-grotepass/)
