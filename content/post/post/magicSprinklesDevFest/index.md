@@ -25,4 +25,4 @@ At the end of this talk you will:
 
 [Slides](https://docs.google.com/presentation/d/1KFfMNqm6GhorZxzhd-n_URsTHq_bOEApWTgOfJoc_to/edit?usp=sharing)
 
-Video
+[Video](https://youtu.be/MmrFEo-3acs?t=8157)
