@@ -1,6 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://maiatoday.github.io/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 02 Mar 2022 21:38:36 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Kibeth Codes twitch highlights 1</title><link>https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/</link><pubDate>Wed, 02 Mar 2022 21:38:36 +0200</pubDate><guid>https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/</guid><description>&lt;img src="https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/blank.jpeg" alt="Featured image of post Kibeth Codes twitch highlights 1" />&lt;p>To practise for live speaking and to explore how to add Jetpack Compose to an existing open source app, Habitica, I start a twitch stream as &lt;a class="link" href="https://twitch.com/kibethcodes" target="_blank" rel="noopener"
->kibethcodes&lt;/a>
-Here are a selection of highlights.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://maiatoday.github.io/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 02 Mar 2022 21:38:36 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Kibeth Codes twitch highlights 1</title><link>https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/</link><pubDate>Wed, 02 Mar 2022 21:38:36 +0200</pubDate><guid>https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/</guid><description>&lt;img src="https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/blank.jpeg" alt="Featured image of post Kibeth Codes twitch highlights 1" />&lt;p>To practise for live speaking and to explore how to add Jetpack Compose to an existing open source app, I start a twitch stream as &lt;a class="link" href="https://twitch.com/kibethcodes" target="_blank" rel="noopener"
+>kibethcodes&lt;/a>. The app I chose to work on is &lt;a class="link" href="https://github.com/HabitRPG/habitica" target="_blank" rel="noopener"
+>Habitica&lt;/a>, a habit tracking/ToDo app that saw it&amp;rsquo;s first commit in 2015.&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 303; flex-basis: 727px">
+&lt;a href="https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/kibethLevel6.png" data-size="1000x330">&lt;img src="https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/kibethLevel6.png"
+srcset="https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/kibethLevel6_huf61aa24ab4ef9aff45bfc2cd7e2c12b3_46853_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/kibethLevel6_huf61aa24ab4ef9aff45bfc2cd7e2c12b3_46853_1024x0_resize_box_3.png 1024w"
+width="1000"
+height="330"
+loading="lazy"
+alt="KibethCodes level 6">
+&lt;/a>
+&lt;figcaption>KibethCodes level 6&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Streaming Tuesdays at 19:00 UTC+2&lt;/p>
+&lt;p>Here are a selection of highlights of the twitch stream.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/PeB7da1jUKE"
@@ -24,7 +36,8 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>Links to Learn Compose</title><link>https://maiatoday.github.io/p/links-to-learn-compose/</link><pubDate>Mon, 28 Feb 2022 21:43:48 +0200</pubDate><guid>https://maiatoday.github.io/p/links-to-learn-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/links-to-learn-compose/resources.png" alt="Featured image of post Links to Learn Compose" />&lt;h2 id="official-docs">Official docs&lt;/h2>
+&lt;/div></description></item><item><title>Links to Learn Compose</title><link>https://maiatoday.github.io/p/links-to-learn-compose/</link><pubDate>Mon, 28 Feb 2022 21:43:48 +0200</pubDate><guid>https://maiatoday.github.io/p/links-to-learn-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/links-to-learn-compose/resources.png" alt="Featured image of post Links to Learn Compose" />&lt;p>At the moment people often ask me where to go start learning Jetpack Compose. Here is a a hand picked selection of my favourite Compose resources. These may change as I find new ones. There should be something for everyone, Official, Community, Videos, Books, Streams.&lt;/p>
+&lt;h2 id="official-docs">Official docs&lt;/h2>
 &lt;p>&lt;a class="link" href="https://developer.android.com/jetpack/compose/documentation" target="_blank" rel="noopener"
 >Official Docs&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://developer.android.com/courses/pathways/compose" target="_blank" rel="noopener"
@@ -41,7 +54,7 @@ title="YouTube Video"
 >compose.academy&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://foso.github.io/Jetpack-Compose-Playground" target="_blank" rel="noopener"
 >Jetpack Compose Playground&lt;/a>&lt;/p>
-&lt;h2 id="video">Video&lt;/h2>
+&lt;h2 id="videos">Videos&lt;/h2>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC" target="_blank" rel="noopener"
 >Philip Lackner Compose playist&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/c/CodinginFlow" target="_blank" rel="noopener"
@@ -61,7 +74,8 @@ title="YouTube Video"
 &lt;p>&lt;a class="link" href="https://www.twitch.tv/adammc331" target="_blank" rel="noopener"
 >Adam McNeilly&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://twitch.tv/florianwalther" target="_blank" rel="noopener"
->Florian Walther&lt;/a>&lt;/p></description></item><item><title>Lightning Demo of Compose animation</title><link>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://maiatoday.github.io/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for JoziJub demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
+>Florian Walther&lt;/a>&lt;/p></description></item><item><title>Lightning Demo of Compose animation</title><link>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://maiatoday.github.io/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
+>Jozi-JUG&lt;/a> demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/Vo3iIWJvu5k"
@@ -71,15 +85,16 @@ title="YouTube Video"
 &lt;/iframe>
 &lt;/div>
 &lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/132iJ50ZoMZJwaFzmHWiEk6YsEMrS0rb0TTZ7KeM7MI4/edit?usp=sharing" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item><item><title>Panel talk on Deep dive into compose</title><link>https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;p>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p>
+>slides&lt;/a>&lt;/p></description></item><item><title>Panel talk on Deep dive into compose</title><link>https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" />&lt;p>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/dYiRQePW1_M"
+src="https://www.youtube.com/embed/ued3Zb2YbCo"
 allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/</guid><description>&lt;img src="https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/animateCompare.png" alt="Featured image of post Comparing Declarative Animation frameworks" />&lt;p>A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter.&lt;/p>
+&lt;/div></description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/</guid><description>&lt;img src="https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/animateCompare.png" alt="Featured image of post Comparing Declarative Animation frameworks" />&lt;p>A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter. Hosted by &lt;a class="link" href="https://gdg.community.dev/gdg-nuremberg/" target="_blank" rel="noopener"
+>GDG Nuremberg&lt;/a> We discovered many similarites, all the systems have some way to control the animation graph, with somewhat confusing differences in naming. A tween in compose is not the same as a tween in Flutter. Flutter &lt;code>Tween&lt;/code> is an &lt;code>animationSpec&lt;/code> in Compose. Compose &lt;code>tween&lt;/code> is a specific kind of &lt;code>Curve&lt;/code> in Flutter that does a linear interpolation. Oh and its a function in Compose and an object in Flutter.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/-OByq0ob_P4"
@@ -89,7 +104,9 @@ title="YouTube Video"
 &lt;/iframe>
 &lt;/div>
 &lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/18oxYA3cj31nYBfDStghSDwMC3s-5uNHy8-ItBihXTGI/edit?usp=sharing" target="_blank" rel="noopener"
->Slides&lt;/a>&lt;/p></description></item><item><title>Intro to Compose Live code Mobile</title><link>https://maiatoday.github.io/p/intro-to-compose-live-code-mobile/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://maiatoday.github.io/p/intro-to-compose-live-code-mobile/</guid><description>&lt;img src="https://maiatoday.github.io/p/intro-to-compose-live-code-mobile/introBroadStrokes.png" alt="Featured image of post Intro to Compose Live code Mobile" />&lt;p>A speedrun through intro to Jetpack Compose with an Code lab&lt;/p>
+>Slides&lt;/a>&lt;/p></description></item><item><title>Intro to Compose - Live code</title><link>https://maiatoday.github.io/p/intro-to-compose-live-code/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://maiatoday.github.io/p/intro-to-compose-live-code/</guid><description>&lt;img src="https://maiatoday.github.io/p/intro-to-compose-live-code/introBroadStrokes.png" alt="Featured image of post Intro to Compose - Live code" />&lt;p>A broad strokes intro to Jetpack Compose followed by a live code demo taster of what it is like to use this framework. The demo ranges from basic use, a bit of Material components and one small animation. Hosted by &lt;a class="link" href="https://www.meetup.com/DeveloperUG/" target="_blank" rel="noopener"
+>DevUG&lt;/a>. In the second part of the event, &lt;a class="link" href="https://twitter.com/tkuenneth" target="_blank" rel="noopener"
+>Thomas&lt;/a> gives us a summary of what&amp;rsquo;s new in Jetpack Compose 1.1&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/EsA5FSmN_3Q"
@@ -213,7 +230,8 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>Copy Paste Compose</title><link>https://maiatoday.github.io/p/copy-paste-compose/</link><pubDate>Sun, 14 Nov 2021 16:27:39 +0200</pubDate><guid>https://maiatoday.github.io/p/copy-paste-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/copy-paste-compose/scissor.png" alt="Featured image of post Copy Paste Compose" />&lt;p>Devfest 2021 West Sweden talk about Copy Paste Jetpack Compose&lt;/p>
+&lt;/div></description></item><item><title>Copy Paste Compose</title><link>https://maiatoday.github.io/p/copy-paste-compose/</link><pubDate>Sun, 14 Nov 2021 16:27:39 +0200</pubDate><guid>https://maiatoday.github.io/p/copy-paste-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/copy-paste-compose/scissor.png" alt="Featured image of post Copy Paste Compose" />&lt;p>Devfest 2021 West Sweden lighting talk about Copy Paste Jetpack Compose. CopyPaste is often the first attempt at re-using code, but it has its pitfalls. Some musing on why it seemed easier to copy and paste snippets of code in a Jetpack Compose project. It seems to relate to the composable architecture. Composables can be transplanted easily and modifiers can be grafted from one Composeable to another.&lt;/p>
+&lt;p>Some pitfalls and things to watch out for and some good places to find code snippets.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/iIO2HaGcLpI"
@@ -252,7 +270,7 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>Compose meets CameraX</title><link>https://maiatoday.github.io/p/compose-meets-camerax/</link><pubDate>Thu, 29 Jul 2021 15:57:58 +0200</pubDate><guid>https://maiatoday.github.io/p/compose-meets-camerax/</guid><description>&lt;img src="https://maiatoday.github.io/p/compose-meets-camerax/compose_meets_camerax.png" alt="Featured image of post Compose meets CameraX" />&lt;p>Co presented a talk about CameraX and integration with Jetpack Compose for GDG Cape Town.&lt;/p>
+&lt;/div></description></item><item><title>Compose meets CameraX</title><link>https://maiatoday.github.io/p/compose-meets-camerax/</link><pubDate>Thu, 29 Jul 2021 15:57:58 +0200</pubDate><guid>https://maiatoday.github.io/p/compose-meets-camerax/</guid><description>&lt;img src="https://maiatoday.github.io/p/compose-meets-camerax/compose_meets_camerax.png" alt="Featured image of post Compose meets CameraX" />&lt;p>Co presented a talk with Ishmael about CameraX and integration with Jetpack Compose for GDG Cape Town.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/oykdnh7oSiw"
@@ -746,7 +764,7 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>International Womens Day Codelab - Getting started with Compose</title><link>https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/</link><pubDate>Sat, 27 Mar 2021 15:44:02 +0200</pubDate><guid>https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/iwd_compose.png" alt="Featured image of post International Womens Day Codelab - Getting started with Compose" />&lt;p>Getting started with Jetpack compose Codelab and talk for International Womens Day event with Women Techmakers and GDGs in Southern Africa&lt;/p>
+&lt;/div></description></item><item><title>International Womens Day Codelab - Getting started with Compose</title><link>https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/</link><pubDate>Sat, 27 Mar 2021 15:44:02 +0200</pubDate><guid>https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/iwd_compose.png" alt="Featured image of post International Womens Day Codelab - Getting started with Compose" />&lt;p>Getting started with Jetpack compose Codelab and talk for International Women&amp;rsquo;s Day event with Women Techmakers and GDGs in Southern Africa&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/RKVh45KYd94"
@@ -754,7 +772,7 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>Jetpack Compose - As good as the hype?</title><link>https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/</link><pubDate>Thu, 04 Mar 2021 15:36:17 +0200</pubDate><guid>https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/</guid><description>&lt;img src="https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/compose_hype.png" alt="Featured image of post Jetpack Compose - As good as the hype?" />&lt;p>Co present with Charles Okot&lt;/p>
+&lt;/div></description></item><item><title>Jetpack Compose - As good as the hype?</title><link>https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/</link><pubDate>Thu, 04 Mar 2021 15:36:17 +0200</pubDate><guid>https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/</guid><description>&lt;img src="https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/compose_hype.png" alt="Featured image of post Jetpack Compose - As good as the hype?" />&lt;p>Co presented with Charles Okot an first look at Jetpack and how we could use it.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/q8H_YFxVI_0"
@@ -795,7 +813,15 @@ title="YouTube Video"
 &lt;/iframe>
 &lt;/div>
 &lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/137QItxqOKWpACPdrx-pOc2ry7sVNi0kXnZCjZsmmfiI/edit?usp=sharing" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item><item><title>Hello8Ball</title><link>https://maiatoday.github.io/p/hello8ball/</link><pubDate>Sat, 23 Nov 2019 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/hello8ball/</guid><description>&lt;img src="https://maiatoday.github.io/p/hello8ball/Screenshot_1566145786.png" alt="Featured image of post Hello8Ball" />&lt;p>A sampler app to explore Coroutine testing. This is a toy app that simulates an 8 Ball. It can answer questions, find synonmyms, generate a password or check if a number is prime. It was created to make a situation where it makes sense to use coroutines to e.g. go on the network or make a calculation. Then I added tests for all the pieces using &lt;a class="link" href="https://github.com/Kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-test" target="_blank" rel="noopener"
+>slides&lt;/a>&lt;/p></description></item><item><title>Testing Kotlin Coroutines</title><link>https://maiatoday.github.io/p/testing-kotlin-coroutines/</link><pubDate>Sun, 08 Dec 2019 06:47:30 +0200</pubDate><guid>https://maiatoday.github.io/p/testing-kotlin-coroutines/</guid><description>&lt;img src="https://maiatoday.github.io/p/testing-kotlin-coroutines/timeMachine.png" alt="Featured image of post Testing Kotlin Coroutines" />&lt;p>How to test kotlin coroutines by injecting dispatchers and using the testing apis. No one wants flakey tests and I want a time machine.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/E-1n_AmlVjE"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Hello8Ball</title><link>https://maiatoday.github.io/p/hello8ball/</link><pubDate>Sat, 23 Nov 2019 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/hello8ball/</guid><description>&lt;img src="https://maiatoday.github.io/p/hello8ball/Screenshot_1566145786.png" alt="Featured image of post Hello8Ball" />&lt;p>A sampler app to explore Coroutine testing. This is a toy app that simulates an 8 Ball. It can answer questions, find synonmyms, generate a password or check if a number is prime. It was created to make a situation where it makes sense to use coroutines to e.g. go on the network or make a calculation. Then I added tests for all the pieces using &lt;a class="link" href="https://github.com/Kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-test" target="_blank" rel="noopener"
 >kotlinx-coroutine-test&lt;/a>.&lt;/p>
 &lt;p>As a bonus the repo is set up to run the tests on CircleCi. It has detekt setup and jacoco code coverage. There is also a branch where all the tests are converted to junit5.&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=E-1n_AmlVjE" target="_blank" rel="noopener"
@@ -804,7 +830,15 @@ title="YouTube Video"
 >DevFestZa 2019&lt;/a> talk. &lt;a class="link" href="https://github.com/maiatoday/Hello8Ball/blob/master/slides/TestingKotlinCoroutines.pdf" target="_blank" rel="noopener"
 >Slides&lt;/a> are in the repo.&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/maiatoday/Hello8Ball" target="_blank" rel="noopener"
->code&lt;/a>&lt;/p></description></item><item><title>HelloTrain</title><link>https://maiatoday.github.io/p/hellotrain/</link><pubDate>Fri, 08 Feb 2019 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/hellotrain/</guid><description>&lt;img src="https://maiatoday.github.io/p/hellotrain/errorTrain.png" alt="Featured image of post HelloTrain" />&lt;p>Exploring &lt;a class="link" href="https://www.slideshare.net/ScottWlaschin/railway-oriented-programming" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>Future of Work Panel</title><link>https://maiatoday.github.io/p/future-of-work-panel/</link><pubDate>Wed, 03 Apr 2019 06:56:27 +0200</pubDate><guid>https://maiatoday.github.io/p/future-of-work-panel/</guid><description>&lt;img src="https://maiatoday.github.io/p/future-of-work-panel/futureOfWork2019.png" alt="Featured image of post Future of Work Panel" />&lt;p>Pre pandemic Offerzen hosted a live panel on the future of work. Some thoughts on freelancing and remote work. All this has changed now, if only we knew&amp;hellip;&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/cyV6NbPtyDo"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>HelloTrain</title><link>https://maiatoday.github.io/p/hellotrain/</link><pubDate>Fri, 08 Feb 2019 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/hellotrain/</guid><description>&lt;img src="https://maiatoday.github.io/p/hellotrain/errorTrain.png" alt="Featured image of post HelloTrain" />&lt;p>Exploring &lt;a class="link" href="https://www.slideshare.net/ScottWlaschin/railway-oriented-programming" target="_blank" rel="noopener"
 >railroad error handling&lt;/a> in Kotlin. Pure Kotlin.&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/maiatoday/HelloTrain" target="_blank" rel="noopener"
 >code&lt;/a>&lt;/p></description></item><item><title>Note to Future me — add jacoco and coverage limits</title><link>https://maiatoday.github.io/p/note-to-future-me-add-jacoco-and-coverage-limits/</link><pubDate>Sat, 13 Oct 2018 13:55:25 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-add-jacoco-and-coverage-limits/</guid><description>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-add-jacoco-and-coverage-limits/blocks.png" alt="Featured image of post Note to Future me — add jacoco and coverage limits" />&lt;p>I have found myself adding jacoco and coverage limits to more than one Android project. Enough times for me to extract the gradle bits in to a little nugget of grooviness to just drop into a project as needed. For a while now I have been reading about &lt;a class="link" href="https://jeroenmols.com/blog/2017/11/28/coveragproblem/" target="_blank" rel="noopener"

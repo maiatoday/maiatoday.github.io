@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>compose on maiatoday</title><link>https://maiatoday.github.io/categories/compose/</link><description>Recent content in compose on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 21:43:48 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/categories/compose/index.xml" rel="self" type="application/rss+xml"/><item><title>Links to Learn Compose</title><link>https://maiatoday.github.io/p/links-to-learn-compose/</link><pubDate>Mon, 28 Feb 2022 21:43:48 +0200</pubDate><guid>https://maiatoday.github.io/p/links-to-learn-compose/</guid><description>Official docs Official Docs
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>compose on maiatoday</title><link>https://maiatoday.github.io/categories/compose/</link><description>Recent content in compose on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 21:43:48 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/categories/compose/index.xml" rel="self" type="application/rss+xml"/><item><title>Links to Learn Compose</title><link>https://maiatoday.github.io/p/links-to-learn-compose/</link><pubDate>Mon, 28 Feb 2022 21:43:48 +0200</pubDate><guid>https://maiatoday.github.io/p/links-to-learn-compose/</guid><description>At the moment people often ask me where to go start learning Jetpack Compose. Here is a a hand picked selection of my favourite Compose resources. These may change as I find new ones. There should be something for everyone, Official, Community, Videos, Books, Streams.
+Official docs Official Docs
 Pathway
 Official apps Jetpack Compose Samples
 Material Catalog
 Community websites Jetpackcompose.app
 compose.academy
 Jetpack Compose Playground
-Video Philip Lackner Compose playist
-Coding in Flow
-Books Android UI Development with Jetpack Compose - Thomas Künneth
-Practical Jetpack Compose - Joe Birch
-Compose Internals - Jorge Castillo
-Twitch Coding with the Italians
-Kibeth Codes
-Adam McNeilly
-Florian Walther</description></item></channel></rss>
+Videos Philip Lackner Compose playist
+Coding in Flow</description></item></channel></rss>
