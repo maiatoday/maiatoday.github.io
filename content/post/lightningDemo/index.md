@@ -8,7 +8,7 @@ date: 2022-02-28T21:13:06+02:00
 draft: false
 ---
 
-A lighting talk for JoziJub demonstrating Compose animation and demo on mobile and desktop.
+A lighting talk for [Jozi-JUG](https://twitter.com/jozijug) demonstrating Compose animation and demo on mobile and desktop.
 
 {{< youtube Vo3iIWJvu5k >}}
 

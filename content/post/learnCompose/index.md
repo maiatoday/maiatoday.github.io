@@ -8,6 +8,8 @@ date: 2022-02-28T21:43:48+02:00
 draft: false
 ---
 
+At the moment people often ask me where to go start learning Jetpack Compose. Here is a a hand picked selection of my favourite Compose resources. These may change as I find new ones. There should be something for everyone, Official, Community, Videos, Books, Streams. 
+
 ## Official docs
 
 [Official Docs](https://developer.android.com/jetpack/compose/documentation)
@@ -28,7 +30,7 @@ draft: false
 
 [Jetpack Compose Playground](https://foso.github.io/Jetpack-Compose-Playground)
 
-## Video
+## Videos
 
 [Philip Lackner Compose playist](https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC)
 
