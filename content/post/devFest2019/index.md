@@ -2,7 +2,7 @@
 layout: post
 title: "Testing Kotlin Coroutines"
 image: timeMachine.png
-categories: [talk, kotlin, coroutines]
+categories: [talk]
 tags: [code, kotlin, testing, coroutines, devfest]
 date: 2019-12-08T06:47:30+02:00
 draft: false

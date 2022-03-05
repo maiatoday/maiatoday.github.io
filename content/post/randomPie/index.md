@@ -2,7 +2,7 @@
 layout: post
 title: Random Animating Pie Button
 image: randomPieBanner.png
-categories: [code, jetpack compose]
+categories: [code, sample]
 tags: [code, compose, animate]
 date: 2021-06-16 21:36:11
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Hello8Ball
 image: Screenshot_1566145786.png
-categories: [code]
+categories: [code, sample]
 tags: [code, coroutines, testing]
 date: 2019-11-23 21:36:11
 ---

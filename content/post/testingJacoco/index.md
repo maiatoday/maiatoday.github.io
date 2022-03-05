@@ -3,8 +3,8 @@ layout: post
 title: Note to Future me — add jacoco and coverage limits
 date: 2018-10-13 13:55:25
 image: blocks.png
-categories: [code]
-keywords: [code]
+categories: [code, sample]
+keywords: [code, jacoco, gradle]
 ---
 
 I have found myself adding jacoco and coverage limits to more than one Android project. Enough times for me to extract the gradle bits in to a little nugget of grooviness to just drop into a project as needed. For a while now I have been reading about [test coverage numbers](https://jeroenmols.com/blog/2017/11/28/coveragproblem/) and working with my intuition about what is the most valuable thing for me to spend my time on when building something. Also Kotlin. In the light of this my gradle build file snippet contains the following:

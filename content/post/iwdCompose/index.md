@@ -2,8 +2,8 @@
 layout: post
 title: "International Womens Day Codelab - Getting started with Compose"
 image: iwd_compose.png
-categories: [talk, codelab, jetpack compose]
-tags: [talk, codelab, compose, code, iwd]
+categories: [talk, live code]
+tags: [talk, compose, code, iwd]
 date: 2021-03-27T15:44:02+02:00
 draft: false
 ---

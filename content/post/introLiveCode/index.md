@@ -2,8 +2,8 @@
 layout: post
 title: "Intro to Compose - Live code"
 image: introBroadStrokes.png
-categories: [talk, live code, jetpack compose]
-tags: [code, compose, live code]
+categories: [talk, live code]
+tags: [code, compose, live code, animation]
 date: 2022-02-16T20:51:01+02:00
 draft: false
 ---

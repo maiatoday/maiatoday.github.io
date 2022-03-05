@@ -2,8 +2,8 @@
 layout: post
 title: "Magic Sprinkles at DevFest UK Ireland"
 image: devfestBanner.jpg
-categories: [talk, jetpack compose]
-tags: [talk, compose, animate]
+categories: [talk]
+tags: [talk, compose, animate, devfest]
 date: 2022-01-29T12:53:10+02:00
 draft: false
 ---

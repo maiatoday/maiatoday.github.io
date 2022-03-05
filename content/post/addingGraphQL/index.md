@@ -6,8 +6,8 @@ description: >-
   Adding the library to the app see commit
   03bd7a7534f7a23276fc47c4f7c94d7ac153bc0b
 date: 2018-04-08 21:36:13
-categories: []
-keywords: []
+categories: [code]
+keywords: [GraphQL, sample]
 ---
 
 Adding the [library](https://github.com/apollographql/apollo-android) to the app see commit 03bd7a7534f7a23276fc47c4f7c94d7ac153bc0b

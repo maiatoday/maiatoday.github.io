@@ -3,7 +3,7 @@ layout: post
 title: "Refresh, Renew, Refactor - modernising a large Android app with many users"
 image: droidcon2020.png
 categories: [talk]
-tags: [talk, refactor]
+tags: [talk, refactor, droidcon]
 date: 2020-10-09T15:19:42+02:00
 draft: false
 ---

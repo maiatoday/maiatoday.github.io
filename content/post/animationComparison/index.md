@@ -2,8 +2,8 @@
 layout: post
 title: "Comparing Declarative Animation frameworks"
 image: animateCompare.png
-categories: [talk, jetpack compose]
-tags: [talk, compose, animate]
+categories: [talk, panel]
+tags: [talk, compose, animation, GDG]
 date: 2022-02-22T20:41:06+02:00
 draft: false
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Panel talk on Deep dive into compose"
 image: bannerPanel.png
 categories: [talk, panel]
-tags: [talk, compose]
+tags: [talk, compose, GDG]
 date: 2022-02-24T20:34:09+02:00
 draft: false
 ---

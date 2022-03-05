@@ -2,7 +2,7 @@
 layout: post
 title: "Kibeth Codes twitch highlights 1"
 image: blank.jpeg
-categories: [live code, twitch, talk]
+categories: [live code, stream, talk]
 tags: [code, compose, twitch, talk]
 date: 2022-03-02T21:38:36+02:00
 draft: false

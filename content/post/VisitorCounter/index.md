@@ -2,7 +2,7 @@
 layout: post
 title: "Welcome you are visitor number 12345"
 image: visitorCounter.png
-categories: [code, jetpack compose]
+categories: [code, sample]
 tags: [code, compose, animate, 90s website, visitor counter]
 date: 2021-07-12T21:44:03+02:00
 ---

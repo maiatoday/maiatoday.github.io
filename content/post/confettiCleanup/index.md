@@ -2,7 +2,7 @@
 layout: post
 title: "Confetti Cleanup"
 image: confetti_doge.png
-categories: [code, jetpack compose]
+categories: [code, sample]
 tags: [code, compose, animate]
 date: 2021-12-31T07:37:42+02:00
 draft: false

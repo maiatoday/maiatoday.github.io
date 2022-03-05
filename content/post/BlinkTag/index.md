@@ -2,7 +2,7 @@
 layout: post
 title: "<blink> like it's 1999"
 image: blinktag.png
-categories: [code, jetpack compose]
+categories: [code, sample]
 tags: [code, compose, animate, 90s website]
 date: 2021-07-03T17:27:21+02:00
 draft: false

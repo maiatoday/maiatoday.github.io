@@ -2,8 +2,8 @@
 layout: post
 title: "Links to Learn Compose"
 image: resources.png
-categories: [compose]
-tags: [code, links, resources]
+categories: [resources]
+tags: [code, links, resources, compose]
 date: 2022-02-28T21:43:48+02:00
 draft: false
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Dagger, Hilt, Koin - a comparison"
 image: dagger_hilt_koin.png
 categories: [talk]
-tags: [talk, di, hilt, koin]
+tags: [talk, di, hilt, koin, GDG]
 date: 2020-08-05T15:02:01+02:00
 draft: false
 ---

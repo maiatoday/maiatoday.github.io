@@ -2,7 +2,7 @@
 layout: post
 title: "Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app"
 image: magic_sprinkles.png
-categories: [talk, jetpack compose]
+categories: [talk]
 tags: [talk, compose, animate]
 date: 2021-09-28T16:10:24+02:00
 draft: false

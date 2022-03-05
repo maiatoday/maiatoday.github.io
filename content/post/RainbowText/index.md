@@ -2,7 +2,7 @@
 layout: post
 title: Animating Rainbow Text
 image: noDisco.png
-categories: [code, jetpack compose]
+categories: [code, sample]
 tags: [code, compose, animate, rainbow, 90s website]
 date: 2021-06-27T00:13:10+02:00
 ---

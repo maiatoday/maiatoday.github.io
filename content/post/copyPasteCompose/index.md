@@ -2,7 +2,7 @@
 layout: post
 title: "Copy Paste Compose"
 image: scissor.png
-categories: [talk, jetpack compose]
+categories: [talk]
 tags: [talk, compose, devfest]
 date: 2021-11-14T16:27:39+02:00
 draft: false

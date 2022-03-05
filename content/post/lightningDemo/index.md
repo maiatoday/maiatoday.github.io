@@ -2,8 +2,8 @@
 layout: post
 title: "Lightning Demo of Compose animation"
 image: introBunny.png
-categories: [talk, lightning, compose desktop, jetpack compose]
-tags: [talk, compose, animate]
+categories: [talk, live code]
+tags: [talk, compose, animate, lightning]
 date: 2022-02-28T21:13:06+02:00
 draft: false
 ---

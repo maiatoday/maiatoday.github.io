@@ -2,8 +2,8 @@
 layout: post
 title: "Intro to Jetpack Compose"
 #image: image.png
-categories: [talk, jetpack compose, code lab]
-tags: [talk, compose, code lab]
+categories: [talk, live code]
+tags: [talk, compose]
 date: 2021-11-30T16:36:23+02:00
 draft: false
 ---

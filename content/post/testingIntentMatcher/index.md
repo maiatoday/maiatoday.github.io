@@ -6,8 +6,8 @@ description: >-
   future me. So here is yet another post on Matchers and Espresso…
 date: '2018-01-26T14:54:45.273Z'
 image: testResults.png
-categories: [code]
-tags: [code, testing]
+categories: [code, sample]
+tags: [code, testing. matchers]
 ---
 
 I want to make my little experiments public and save them as a reminder for future me. So here is yet another post on Matchers and Espresso testing.
