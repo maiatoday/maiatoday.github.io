@@ -1,46 +1,1022 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on maiatoday</title><link>https://maiatoday.github.io/post/</link><description>Recent content in Posts on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 02 Mar 2022 21:38:36 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Kibeth Codes twitch highlights 1</title><link>https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/</link><pubDate>Wed, 02 Mar 2022 21:38:36 +0200</pubDate><guid>https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/</guid><description>To practise for live speaking and to explore how to add Jetpack Compose to an existing open source app, I start a twitch stream as kibethcodes. The app I chose to work on is Habitica, a habit tracking/ToDo app that saw it&amp;rsquo;s first commit in 2015.
-KibethCodes level 6
-Streaming Tuesdays at 19:00 UTC+2
-Here are a selection of highlights of the twitch stream.</description></item><item><title>Links to Learn Compose</title><link>https://maiatoday.github.io/p/links-to-learn-compose/</link><pubDate>Mon, 28 Feb 2022 21:43:48 +0200</pubDate><guid>https://maiatoday.github.io/p/links-to-learn-compose/</guid><description>At the moment people often ask me where to go start learning Jetpack Compose. Here is a a hand picked selection of my favourite Compose resources. These may change as I find new ones. There should be something for everyone, Official, Community, Videos, Books, Streams.
-Official docs Official Docs
-Pathway
-Official apps Jetpack Compose Samples
-Material Catalog
-Community websites Jetpackcompose.app
-compose.academy
-Jetpack Compose Playground
-Videos Philip Lackner Compose playist
-Coding in Flow</description></item><item><title>Lightning Demo of Compose animation</title><link>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</guid><description>A lighting talk for Jozi-JUG demonstrating Compose animation and demo on mobile and desktop.
-slides</description></item><item><title>Panel talk on Deep dive into compose</title><link>https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/</guid><description>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.</description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/</guid><description>A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter. Hosted by GDG Nuremberg We discovered many similarites, all the systems have some way to control the animation graph, with somewhat confusing differences in naming. A tween in compose is not the same as a tween in Flutter. Flutter Tween is an animationSpec in Compose. Compose tween is a specific kind of Curve in Flutter that does a linear interpolation.</description></item><item><title>Intro to Compose - Live code</title><link>https://maiatoday.github.io/p/intro-to-compose-live-code/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://maiatoday.github.io/p/intro-to-compose-live-code/</guid><description>A broad strokes intro to Jetpack Compose followed by a live code demo taster of what it is like to use this framework. The demo ranges from basic use, a bit of Material components and one small animation. Hosted by DevUG. In the second part of the event, Thomas gives us a summary of what&amp;rsquo;s new in Jetpack Compose 1.1
-Slides</description></item><item><title>Magic Sprinkles at DevFest UK Ireland</title><link>https://maiatoday.github.io/p/magic-sprinkles-at-devfest-uk-ireland/</link><pubDate>Sat, 29 Jan 2022 12:53:10 +0200</pubDate><guid>https://maiatoday.github.io/p/magic-sprinkles-at-devfest-uk-ireland/</guid><description>A shorter version of my Magic Sprinkles talk presented at DevFest UK Ireland
-Magic Sprinkles: Adding animations to your app with Jetpack Compose
-I have some Jetpack Compose UI components in my app and now I want to add animations, where do I start? In this presentation I will look briefly at the Jetpack Compose animation api to get an overview of the animation system. Then I will look at a few quick win simple animations that can add some magic to your app.</description></item><item><title>Confetti Cleanup</title><link>https://maiatoday.github.io/p/confetti-cleanup/</link><pubDate>Fri, 31 Dec 2021 07:37:42 +0200</pubDate><guid>https://maiatoday.github.io/p/confetti-cleanup/</guid><description>In my exploration of animation in Jetpack Compose I built a Confetti modifier that could be applied to any composable. I first showed the modifier in my presentation for Chicago Roboto but since I made it something was bothering me. The way that I can get the state in Compose to register change is by making copies of objects or making new objects. For a modifier that uses particles this can be many objects.</description></item><item><title>Intro to Jetpack Compose</title><link>https://maiatoday.github.io/p/intro-to-jetpack-compose/</link><pubDate>Tue, 30 Nov 2021 16:36:23 +0200</pubDate><guid>https://maiatoday.github.io/p/intro-to-jetpack-compose/</guid><description>Introduction to Jetpack Compose technical talk to embeded, mobile and flutter developers. This talk gives an intro to Jetpack Compose and shows how to get started with a simple code lab.</description></item><item><title>Copy Paste Compose</title><link>https://maiatoday.github.io/p/copy-paste-compose/</link><pubDate>Sun, 14 Nov 2021 16:27:39 +0200</pubDate><guid>https://maiatoday.github.io/p/copy-paste-compose/</guid><description>Devfest 2021 West Sweden lighting talk about Copy Paste Jetpack Compose. CopyPaste is often the first attempt at re-using code, but it has its pitfalls. Some musing on why it seemed easier to copy and paste snippets of code in a Jetpack Compose project. It seems to relate to the composable architecture. Composables can be transplanted easily and modifiers can be grafted from one Composeable to another.
-Some pitfalls and things to watch out for and some good places to find code snippets.</description></item><item><title>Rust vs Kotlin panel discussion</title><link>https://maiatoday.github.io/p/rust-vs-kotlin-panel-discussion/</link><pubDate>Thu, 28 Oct 2021 16:21:43 +0200</pubDate><guid>https://maiatoday.github.io/p/rust-vs-kotlin-panel-discussion/</guid><description>Panel discussion on Rust and Kotlin for GDG Cape Town</description></item><item><title>Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app</title><link>https://maiatoday.github.io/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</link><pubDate>Tue, 28 Sep 2021 16:10:24 +0200</pubDate><guid>https://maiatoday.github.io/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</guid><description>I presented a talk for Chicago Roboto 2021 and for GDG Cape Town titled Magic Sprinkles: Adding animations to and existing app. Below are the videos of both talks and the slides
-Chicago Roboto
-Slides
-Chicago Robot video
-GDG Cape Town video</description></item><item><title>Compose meets CameraX</title><link>https://maiatoday.github.io/p/compose-meets-camerax/</link><pubDate>Thu, 29 Jul 2021 15:57:58 +0200</pubDate><guid>https://maiatoday.github.io/p/compose-meets-camerax/</guid><description>Co presented a talk with Ishmael about CameraX and integration with Jetpack Compose for GDG Cape Town.</description></item><item><title>Welcome you are visitor number 12345</title><link>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</link><pubDate>Mon, 12 Jul 2021 21:44:03 +0200</pubDate><guid>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</guid><description>Another step forward in recreating the icon 90s website look is the hit counter, visitor counter or web counter in classic squemorphic odometer style.
-hit counters
-I was inspired by a recent episode of Code with Italians where they animated a time field. I wanted to change the counter component to animate each number individually to get that odometer look.
-Before doing this though there was a question of state.</description></item><item><title>&lt;blink> like it's 1999</title><link>https://maiatoday.github.io/p/blink-like-its-1999/</link><pubDate>Sat, 03 Jul 2021 17:27:21 +0200</pubDate><guid>https://maiatoday.github.io/p/blink-like-its-1999/</guid><description>Another small experiment to explore Jetpack Compose animations. I came to the conclusion that any value that is passed as a parameter could be animated, including anything in the modifier. So I set out to build a &amp;lt;blink&amp;gt; tag.
-My first attempt creates a composable function that takes the modifier, animates it and passes it back to the content lambda. Like this:
-@Composable fun BlinkTag( modifier: Modifier = Modifier, durationMillis: Int = 500, content: @Composable (modifier: Modifier) -&amp;gt; Unit ) { val infiniteTransition = rememberInfiniteTransition() val alpha: Float by infiniteTransition.</description></item><item><title>Animating Rainbow Text</title><link>https://maiatoday.github.io/p/animating-rainbow-text/</link><pubDate>Sun, 27 Jun 2021 00:13:10 +0200</pubDate><guid>https://maiatoday.github.io/p/animating-rainbow-text/</guid><description>Do you remember web pages in the nineties? Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.
-First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.</description></item><item><title>Random Animating Pie Button</title><link>https://maiatoday.github.io/p/random-animating-pie-button/</link><pubDate>Wed, 16 Jun 2021 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/random-animating-pie-button/</guid><description>I am exploring animations with small sampler functions using Jetpack Compose. This one is a custom component that draws a little pie chart. It will animate a random pie value on the click of the button.
-click and animate
-data class PieData( val foreground: Color = Color.White, val strokeWidth: Dp = 4.dp, val percentage: Float ) @Composable fun PieStatus( modifier: Modifier = Modifier, pieData: PieData ) { var animationPlayed by remember { mutableStateOf(false) } val currentPercentage = animateFloatAsState( targetValue = if (animationPlayed) pieData.</description></item><item><title>She Can Do Panel discussion: Collaboration between designers and developers</title><link>https://maiatoday.github.io/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</link><pubDate>Wed, 02 Jun 2021 15:51:17 +0200</pubDate><guid>https://maiatoday.github.io/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</guid><description>Panel discussion with GDG Johannesburg and She Can Do</description></item><item><title>International Womens Day Codelab - Getting started with Compose</title><link>https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/</link><pubDate>Sat, 27 Mar 2021 15:44:02 +0200</pubDate><guid>https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/</guid><description>Getting started with Jetpack compose Codelab and talk for International Women&amp;rsquo;s Day event with Women Techmakers and GDGs in Southern Africa</description></item><item><title>Jetpack Compose - As good as the hype?</title><link>https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/</link><pubDate>Thu, 04 Mar 2021 15:36:17 +0200</pubDate><guid>https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/</guid><description>Co presented with Charles Okot an first look at Jetpack and how we could use it.</description></item><item><title>Refresh, Renew, Refactor - modernising a large Android app with many users</title><link>https://maiatoday.github.io/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/</link><pubDate>Fri, 09 Oct 2020 15:19:42 +0200</pubDate><guid>https://maiatoday.github.io/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/</guid><description>Co presenting a talk at Droidcon EMEA 2020
-old vs new
-video
-slides</description></item><item><title>Dagger, Hilt, Koin - a comparison</title><link>https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/</link><pubDate>Wed, 05 Aug 2020 15:02:01 +0200</pubDate><guid>https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/</guid><description>Talk presented for GDG Johannesburg comparing dependency injection technologies.
-which one to choose
-slides</description></item><item><title>Testing Kotlin Coroutines</title><link>https://maiatoday.github.io/p/testing-kotlin-coroutines/</link><pubDate>Sun, 08 Dec 2019 06:47:30 +0200</pubDate><guid>https://maiatoday.github.io/p/testing-kotlin-coroutines/</guid><description>How to test kotlin coroutines by injecting dispatchers and using the testing apis. No one wants flakey tests and I want a time machine.</description></item><item><title>Hello8Ball</title><link>https://maiatoday.github.io/p/hello8ball/</link><pubDate>Sat, 23 Nov 2019 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/hello8ball/</guid><description>A sampler app to explore Coroutine testing. This is a toy app that simulates an 8 Ball. It can answer questions, find synonmyms, generate a password or check if a number is prime. It was created to make a situation where it makes sense to use coroutines to e.g. go on the network or make a calculation. Then I added tests for all the pieces using kotlinx-coroutine-test.
-As a bonus the repo is set up to run the tests on CircleCi.</description></item><item><title>Future of Work Panel</title><link>https://maiatoday.github.io/p/future-of-work-panel/</link><pubDate>Wed, 03 Apr 2019 06:56:27 +0200</pubDate><guid>https://maiatoday.github.io/p/future-of-work-panel/</guid><description>Pre pandemic Offerzen hosted a live panel on the future of work. Some thoughts on freelancing and remote work. All this has changed now, if only we knew&amp;hellip;</description></item><item><title>HelloTrain</title><link>https://maiatoday.github.io/p/hellotrain/</link><pubDate>Fri, 08 Feb 2019 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/hellotrain/</guid><description>Exploring railroad error handling in Kotlin. Pure Kotlin.
-code</description></item><item><title>Note to Future me — add jacoco and coverage limits</title><link>https://maiatoday.github.io/p/note-to-future-me-add-jacoco-and-coverage-limits/</link><pubDate>Sat, 13 Oct 2018 13:55:25 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-add-jacoco-and-coverage-limits/</guid><description>I have found myself adding jacoco and coverage limits to more than one Android project. Enough times for me to extract the gradle bits in to a little nugget of grooviness to just drop into a project as needed. For a while now I have been reading about test coverage numbers and working with my intuition about what is the most valuable thing for me to spend my time on when building something.</description></item><item><title>Note to future me — Adding GraphQL to an app</title><link>https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/</link><pubDate>Sun, 08 Apr 2018 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/</guid><description>Adding the library to the app see commit 03bd7a7534f7a23276fc47c4f7c94d7ac153bc0b
-plugin dependencies Making a service
-wrapping and existing endpoint https://github.com/joakin/wikimedia-graphql install node if you don’t have it. node — version running the service `node index.js`  play with the service  https://gist.github.com/maiatoday/578aebcee3bd9decb6e3c6833c73a4ba#file-wikipage-graphql
-getting the json.schema https://github.com/apollographql/apollo-codegen cd app/src/main/graphql/net/maiatoday/helloblondie apollo-codegen download-schema http://localhost:3002/graphql — output schema.json Adding the service to the app
-adding a query adding the schema a5a47f0ff45f6bc5d5a3aa6f1fee50af363f7893 getting access to the service calling the service</description></item><item><title>Note to Future Me — Testing Intents with Matchers</title><link>https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/</link><pubDate>Fri, 26 Jan 2018 14:54:45 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/</guid><description>I want to make my little experiments public and save them as a reminder for future me. So here is yet another post on Matchers and Espresso testing.
-I want to test this:
-First activity starts another activity at a button click.
-First activity passes a parcelable object to the second activity.
-Test that the intent that starts the second activity contains the object with the correct properties.</description></item><item><title>HelloKeystore</title><link>https://maiatoday.github.io/p/hellokeystore/</link><pubDate>Sun, 12 Nov 2017 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/hellokeystore/</guid><description>Curious Keystore experiments. A small simple project that saves something in the keystore and gets it out again. Tricksiness happens across versions of Android.
-code</description></item><item><title>Neotaur-Geotaur</title><link>https://maiatoday.github.io/p/neotaur-geotaur/</link><pubDate>Mon, 29 Aug 2016 14:04:46 +0200</pubDate><guid>https://maiatoday.github.io/p/neotaur-geotaur/</guid><description>I like to make sampler apps to explore new things to learn. I was wondering how the google location apis differed from the new awereness apis. The Geotaur repo has an app that can use either of these two interfaces. Since it builds two flavours you can run the apps side by side with the same geofences to see how they differ. While I was at it I tried my hand at some other tech too, firebase remote logging and db access, dependency injection.</description></item><item><title>autoselfie 2013</title><link>https://maiatoday.github.io/p/autoselfie-2013/</link><pubDate>Thu, 09 Oct 2014 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/autoselfie-2013/</guid><description>An android app to explore how apps can modify images and detect faces. The code is here.</description></item><item><title>seed spark 2013</title><link>https://maiatoday.github.io/p/seed-spark-2013/</link><pubDate>Thu, 09 Oct 2014 21:26:46 +0000</pubDate><guid>https://maiatoday.github.io/p/seed-spark-2013/</guid><description>In 2013 I made a variation of an older kinect piece called seedSpark. There were some improvements in the code which now used Frame buffers.</description></item><item><title>Masters 2012</title><link>https://maiatoday.github.io/p/masters-2012/</link><pubDate>Thu, 09 Oct 2014 20:54:30 +0000</pubDate><guid>https://maiatoday.github.io/p/masters-2012/</guid><description>In 2012 I made my Masters exhibition using openframeworks and the Kinect. It consisted of 4 interactive works which explored concepts around human ideas and machine execution. The repo veloPeople contains all four works each in their own branch. Each work was built on a custom ubuntu live disk. So the installation works existed on flash disk. Given the right hardware you could boot from the flash disk and run one of the works.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on maiatoday</title><link>https://maiatoday.github.io/post/</link><description>Recent content in Posts on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 02 Mar 2022 21:38:36 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Kibeth Codes twitch highlights 1</title><link>https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/</link><pubDate>Wed, 02 Mar 2022 21:38:36 +0200</pubDate><guid>https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/</guid><description>&lt;img src="https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/blank.jpeg" alt="Featured image of post Kibeth Codes twitch highlights 1" />&lt;p>To practise for live speaking and to explore how to add Jetpack Compose to an existing open source app, I start a twitch stream as &lt;a class="link" href="https://twitch.com/kibethcodes" target="_blank" rel="noopener"
+>kibethcodes&lt;/a>. The app I chose to work on is &lt;a class="link" href="https://github.com/HabitRPG/habitica" target="_blank" rel="noopener"
+>Habitica&lt;/a>, a habit tracking/ToDo app that saw it&amp;rsquo;s first commit in 2015.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/kibethLevel6.png"
+width="1000"
+height="330"
+srcset="https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/kibethLevel6_huf61aa24ab4ef9aff45bfc2cd7e2c12b3_46853_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/kibeth-codes-twitch-highlights-1/kibethLevel6_huf61aa24ab4ef9aff45bfc2cd7e2c12b3_46853_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="KibethCodes level 6"
+class="gallery-image"
+data-flex-grow="303"
+data-flex-basis="727px"
+>&lt;/p>
+&lt;p>Streaming Tuesdays at 19:00 UTC+2&lt;/p>
+&lt;p>Here are a selection of highlights of the twitch stream.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/PeB7da1jUKE"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/o5LO-kl71Ck"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/sb5wkStL9FM"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Links to Learn Compose</title><link>https://maiatoday.github.io/p/links-to-learn-compose/</link><pubDate>Mon, 28 Feb 2022 21:43:48 +0200</pubDate><guid>https://maiatoday.github.io/p/links-to-learn-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/links-to-learn-compose/resources.png" alt="Featured image of post Links to Learn Compose" />&lt;p>At the moment people often ask me where to go start learning Jetpack Compose. Here is a a hand picked selection of my favourite Compose resources. These may change as I find new ones. There should be something for everyone, Official, Community, Videos, Books, Streams.&lt;/p>
+&lt;h2 id="official-docs">Official docs&lt;/h2>
+&lt;p>&lt;a class="link" href="https://developer.android.com/jetpack/compose/documentation" target="_blank" rel="noopener"
+>Official Docs&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://developer.android.com/courses/pathways/compose" target="_blank" rel="noopener"
+>Pathway&lt;/a>&lt;/p>
+&lt;h2 id="official-apps">Official apps&lt;/h2>
+&lt;p>&lt;a class="link" href="https://cs.android.com/androidx/compose-samples" target="_blank" rel="noopener"
+>Jetpack Compose Samples&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://cs.android.com/androidx/platform/frameworks/support/&amp;#43;/androidx-main:compose/material/material/samples/src/main/java/androidx/compose/material/samples/TabSamples.kt" target="_blank" rel="noopener"
+>Material Catalog&lt;/a>&lt;/p>
+&lt;h2 id="community-websites">Community websites&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.jetpackcompose.app/" target="_blank" rel="noopener"
+>Jetpackcompose.app&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://compose.academy/" target="_blank" rel="noopener"
+>compose.academy&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://foso.github.io/Jetpack-Compose-Playground" target="_blank" rel="noopener"
+>Jetpack Compose Playground&lt;/a>&lt;/p>
+&lt;h2 id="videos">Videos&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC" target="_blank" rel="noopener"
+>Philip Lackner Compose playist&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/c/CodinginFlow" target="_blank" rel="noopener"
+>Coding in Flow&lt;/a>&lt;/p>
+&lt;h2 id="books">Books&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.packtpub.com/product/android-ui-development-with-jetpack-compose/9781801812160" target="_blank" rel="noopener"
+>Android UI Development with Jetpack Compose - Thomas Künneth&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://practicaljetpackcompose.com/" target="_blank" rel="noopener"
+>Practical Jetpack Compose - Joe Birch&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://leanpub.com/composeinternals" target="_blank" rel="noopener"
+>Compose Internals - Jorge Castillo&lt;/a>&lt;/p>
+&lt;h2 id="twitch">Twitch&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.twitch.tv/codewiththeitalians" target="_blank" rel="noopener"
+>Coding with the Italians&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.twitch.tv/kibethcodes" target="_blank" rel="noopener"
+>Kibeth Codes&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.twitch.tv/adammc331" target="_blank" rel="noopener"
+>Adam McNeilly&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://twitch.tv/florianwalther" target="_blank" rel="noopener"
+>Florian Walther&lt;/a>&lt;/p></description></item><item><title>Lightning Demo of Compose animation</title><link>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://maiatoday.github.io/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
+>Jozi-JUG&lt;/a> demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/Vo3iIWJvu5k"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/132iJ50ZoMZJwaFzmHWiEk6YsEMrS0rb0TTZ7KeM7MI4/edit?usp=sharing" target="_blank" rel="noopener"
+>slides&lt;/a>&lt;/p></description></item><item><title>Panel talk on Deep dive into compose</title><link>https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" />&lt;p>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/ued3Zb2YbCo"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/</guid><description>&lt;img src="https://maiatoday.github.io/p/comparing-declarative-animation-frameworks/animateCompare.png" alt="Featured image of post Comparing Declarative Animation frameworks" />&lt;p>A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter. Hosted by &lt;a class="link" href="https://gdg.community.dev/gdg-nuremberg/" target="_blank" rel="noopener"
+>GDG Nuremberg&lt;/a> We discovered many similarites, all the systems have some way to control the animation graph, with somewhat confusing differences in naming. A tween in compose is not the same as a tween in Flutter. Flutter &lt;code>Tween&lt;/code> is an &lt;code>animationSpec&lt;/code> in Compose. Compose &lt;code>tween&lt;/code> is a specific kind of &lt;code>Curve&lt;/code> in Flutter that does a linear interpolation. Oh and its a function in Compose and an object in Flutter.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/-OByq0ob_P4"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/18oxYA3cj31nYBfDStghSDwMC3s-5uNHy8-ItBihXTGI/edit?usp=sharing" target="_blank" rel="noopener"
+>Slides&lt;/a>&lt;/p></description></item><item><title>Intro to Compose - Live code</title><link>https://maiatoday.github.io/p/intro-to-compose-live-code/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://maiatoday.github.io/p/intro-to-compose-live-code/</guid><description>&lt;img src="https://maiatoday.github.io/p/intro-to-compose-live-code/introBroadStrokes.png" alt="Featured image of post Intro to Compose - Live code" />&lt;p>A broad strokes intro to Jetpack Compose followed by a live code demo taster of what it is like to use this framework. The demo ranges from basic use, a bit of Material components and one small animation. Hosted by &lt;a class="link" href="https://www.meetup.com/DeveloperUG/" target="_blank" rel="noopener"
+>DevUG&lt;/a>. In the second part of the event, &lt;a class="link" href="https://twitter.com/tkuenneth" target="_blank" rel="noopener"
+>Thomas&lt;/a> gives us a summary of what&amp;rsquo;s new in Jetpack Compose 1.1&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/EsA5FSmN_3Q"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/1QfDTnRArUA1lW_13DNZyn7T4HV53FQjWStU6ygw_Zqk/edit?usp=sharing" target="_blank" rel="noopener"
+>Slides&lt;/a>&lt;/p></description></item><item><title>Magic Sprinkles at DevFest UK Ireland</title><link>https://maiatoday.github.io/p/magic-sprinkles-at-devfest-uk-ireland/</link><pubDate>Sat, 29 Jan 2022 12:53:10 +0200</pubDate><guid>https://maiatoday.github.io/p/magic-sprinkles-at-devfest-uk-ireland/</guid><description>&lt;img src="https://maiatoday.github.io/p/magic-sprinkles-at-devfest-uk-ireland/devfestBanner.jpg" alt="Featured image of post Magic Sprinkles at DevFest UK Ireland" />&lt;p>A shorter version of my Magic Sprinkles talk presented at &lt;a class="link" href="https://www.devfest-uki.com/schedule" target="_blank" rel="noopener"
+>DevFest UK Ireland&lt;/a>&lt;/p>
+&lt;p>Magic Sprinkles: Adding animations to your app with Jetpack Compose&lt;/p>
+&lt;p>I have some Jetpack Compose UI components in my app and now I want to add animations, where do I start?
+In this presentation I will look briefly at the Jetpack Compose animation api to get an overview of the animation system. Then I will look at a few quick win simple animations that can add some magic to your app. I will dive into more complex and custom animations to see what is possible. All of these experiments will be illustrated in a sample app provided in a companion repo.
+At the end of this talk you will:&lt;/p>
+&lt;ul>
+&lt;li>have an overview of how animation works in Jetpack Compose&lt;/li>
+&lt;li>have some practical animation examples that you can add to your app immediately&lt;/li>
+&lt;li>have an idea of what is possible with complex and custom animations&lt;/li>
+&lt;li>have a code repo of examples&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a class="link" href="https://gitlab.com/maiatoday/esw" target="_blank" rel="noopener"
+>Repo&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/1KFfMNqm6GhorZxzhd-n_URsTHq_bOEApWTgOfJoc_to/edit?usp=sharing" target="_blank" rel="noopener"
+>Slides&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://youtu.be/MmrFEo-3acs?t=8157" target="_blank" rel="noopener"
+>Video&lt;/a>&lt;/p></description></item><item><title>Confetti Cleanup</title><link>https://maiatoday.github.io/p/confetti-cleanup/</link><pubDate>Fri, 31 Dec 2021 07:37:42 +0200</pubDate><guid>https://maiatoday.github.io/p/confetti-cleanup/</guid><description>&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_doge.png" alt="Featured image of post Confetti Cleanup" />&lt;p>In my exploration of animation in Jetpack Compose I built a Confetti modifier that could be applied to any composable. I first showed the modifier in my &lt;a class="link" href="https://vimeo.com/627636211?embedded=true&amp;amp;source=video_title&amp;amp;owner=18175981" target="_blank" rel="noopener"
+>presentation for Chicago Roboto&lt;/a> but since I made it something was bothering me. The way that I can get the state in Compose to register change is by making copies of objects or making new objects. For a modifier that uses particles this can be many objects.&lt;/p>
+&lt;p>I profiled my original modifier and sure enough I see the object allocation and also the garbage collectore cleaning up when the confetti modifier is visible.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_gc.png"
+width="790"
+height="566"
+srcset="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Confetto in the bin"
+class="gallery-image"
+data-flex-grow="139"
+data-flex-basis="334px"
+>&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_objects.png"
+width="1910"
+height="236"
+srcset="https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Allocated Confetto objects"
+class="gallery-image"
+data-flex-grow="809"
+data-flex-basis="1942px"
+>&lt;/p>
+&lt;p>Fast forward to Dec 2021 and my friends over at Code with Italians built a similar &lt;a class="link" href="https://www.youtube.com/watch?v=FgZvs1BsAxE&amp;amp;t=1776s" target="_blank" rel="noopener"
+>snow modifier&lt;/a>. Revisiting my modifier, I cleaned it up. I managed to get rid of some of the object allocation. However since it is a particle system and each of the particles change position, it needs some form of state that changes as the position of the particles change. I used the &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/ui/geometry/Offset" target="_blank" rel="noopener"
+>Offset class&lt;/a> as this is the object that a Circle needs to draw and the object has been optimised to pack the x and y floats. It also has some other useful functions and operators. Offset is immutable so if the particle changes position a new object is made. It is smaller than my original implementation. It isn&amp;rsquo;t really fair to compare the screenshot below with the one above as the time over which the heap capture ran is is not the same. The shallow size of Offset is 16 and the shallow size of the original Confetto objects is 24 and the point inside the Confetto object also has a shallow size of 16. The improvements eliminated the allocation of the extra Confetto object.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_offset.png"
+width="2002"
+height="210"
+srcset="https://maiatoday.github.io/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Confetti using offset"
+class="gallery-image"
+data-flex-grow="953"
+data-flex-basis="2288px"
+>&lt;/p>
+&lt;p>My intuition says it is preferable to sprinkle the memory with fewer smaller pieces of confetti rather than many larger ones. Still there isn&amp;rsquo;t really a way around it since Offset is immutable and Compose is built around tracking unidirectional state flow. Mutable State holder classes won&amp;rsquo;t register a change if the object that holds the state doesn&amp;rsquo;t change. This means if I keep an object that holds the position of the particle and I simply change the x and y values in he mutable state holder will not register a change. &lt;a class="link" href="https://dev.to/zachklipp/two-mutables-dont-make-a-right-2kgp" target="_blank" rel="noopener"
+>Here&lt;/a> is a detail discussion on mutable state.&lt;/p>
+&lt;h3 id="how-to-build-your-own-drawing-modifier">How to build your own drawing modifier&lt;/h3>
+&lt;p>You need a extension function on modifier like so-&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">Modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">confetti&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// all your parameters to set up the modifier
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">composed&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// the composed function gives you a composition on each composable where this modifier is used
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// remeber any state you need here
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">var&lt;/span> &lt;span class="py">confettiState&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">remember&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mutableStateOf&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ConfettiState&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// parameters to setup the state
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">LaunchedEffect&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">isVisible&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">isVisible&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">isActive&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">withFrameMillis&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">newTick&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// this side effect will return a tick every frame giving
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// the elapsed time since the previous frame
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// This would be the place where you move the particles
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">onSizeChanged&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// do what you need to do if the size changes
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}.&lt;/span>&lt;span class="n">drawBehind&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// this is where you can draw behind what ever composable content.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// It proveds a drawScope with a canvas which you can use
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// e.g. loop through the particles and draw them
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then it is as simple as adding the modifier to any composable, e.g. here is a black box with red &lt;code>Hello World&lt;/code> and confetti behind.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Box&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="n">background&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Black&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="n">fillMaxSize&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="n">confetti&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Red&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.github.io/p/confetti-cleanup/confetti_preview.png"
+width="706"
+height="594"
+srcset="https://maiatoday.github.io/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Confetti preview"
+class="gallery-image"
+data-flex-grow="118"
+data-flex-basis="285px"
+>&lt;/p>
+&lt;p>The &lt;a class="link" href="https://gitlab.com/maiatoday/esw/-/blob/main/app/src/main/java/net/maiatoday/esw/ui/modifiers/ConfettiModifier.kt" target="_blank" rel="noopener"
+>code for the cleaned up confetti modifier&lt;/a>&lt;/p></description></item><item><title>Intro to Jetpack Compose</title><link>https://maiatoday.github.io/p/intro-to-jetpack-compose/</link><pubDate>Tue, 30 Nov 2021 16:36:23 +0200</pubDate><guid>https://maiatoday.github.io/p/intro-to-jetpack-compose/</guid><description>&lt;p>Introduction to Jetpack Compose technical talk to embeded, mobile and flutter developers. This talk gives an intro to Jetpack Compose and shows how to get started with a simple code lab.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/mIYecX389Ck"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Copy Paste Compose</title><link>https://maiatoday.github.io/p/copy-paste-compose/</link><pubDate>Sun, 14 Nov 2021 16:27:39 +0200</pubDate><guid>https://maiatoday.github.io/p/copy-paste-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/copy-paste-compose/scissor.png" alt="Featured image of post Copy Paste Compose" />&lt;p>Devfest 2021 West Sweden lighting talk about Copy Paste Jetpack Compose. CopyPaste is often the first attempt at re-using code, but it has its pitfalls. Some musing on why it seemed easier to copy and paste snippets of code in a Jetpack Compose project. It seems to relate to the composable architecture. Composables can be transplanted easily and modifiers can be grafted from one Composeable to another.&lt;/p>
+&lt;p>Some pitfalls and things to watch out for and some good places to find code snippets.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/iIO2HaGcLpI"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Rust vs Kotlin panel discussion</title><link>https://maiatoday.github.io/p/rust-vs-kotlin-panel-discussion/</link><pubDate>Thu, 28 Oct 2021 16:21:43 +0200</pubDate><guid>https://maiatoday.github.io/p/rust-vs-kotlin-panel-discussion/</guid><description>&lt;p>Panel discussion on Rust and Kotlin for GDG Cape Town&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/Xr1TtmUxcOI"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app</title><link>https://maiatoday.github.io/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</link><pubDate>Tue, 28 Sep 2021 16:10:24 +0200</pubDate><guid>https://maiatoday.github.io/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</guid><description>&lt;img src="https://maiatoday.github.io/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/magic_sprinkles.png" alt="Featured image of post Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app" />&lt;p>I presented a talk for Chicago Roboto 2021 and for GDG Cape Town titled Magic Sprinkles: Adding animations to and existing app. Below are the videos of both talks and the slides&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021.png"
+width="1300"
+height="738"
+srcset="https://maiatoday.github.io/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu74de83909c619652ed12fb7839e74841_1063439_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu74de83909c619652ed12fb7839e74841_1063439_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Chicago Roboto"
+class="gallery-image"
+data-flex-grow="176"
+data-flex-basis="422px"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/1wEeHTF5JRftnaMAf4_xARfA5zIKCn5Vfy9W4JVtfggY/edit#slide=id.p" target="_blank" rel="noopener"
+>Slides&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://chicagoroboto.com/session-videos/?vimeography_gallery=5&amp;amp;vimeography_video=627636211" target="_blank" rel="noopener"
+>Chicago Robot video&lt;/a>&lt;/p>
+&lt;p>GDG Cape Town video&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/oYcNVGTmI-k"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Compose meets CameraX</title><link>https://maiatoday.github.io/p/compose-meets-camerax/</link><pubDate>Thu, 29 Jul 2021 15:57:58 +0200</pubDate><guid>https://maiatoday.github.io/p/compose-meets-camerax/</guid><description>&lt;img src="https://maiatoday.github.io/p/compose-meets-camerax/compose_meets_camerax.png" alt="Featured image of post Compose meets CameraX" />&lt;p>Co presented a talk with Ishmael about CameraX and integration with Jetpack Compose for GDG Cape Town.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/oykdnh7oSiw"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Welcome you are visitor number 12345</title><link>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</link><pubDate>Mon, 12 Jul 2021 21:44:03 +0200</pubDate><guid>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</guid><description>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter.png" alt="Featured image of post Welcome you are visitor number 12345" />&lt;p>Another step forward in recreating the icon 90s website look is the &lt;a class="link" href="https://www.awwwards.com/5-old-school-web-design-trends-nobody-misses.html" target="_blank" rel="noopener"
+>hit counter, visitor counter or web counter&lt;/a> in classic squemorphic odometer style.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters.png"
+width="768"
+height="214"
+srcset="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="hit counters"
+class="gallery-image"
+data-flex-grow="358"
+data-flex-basis="861px"
+>&lt;/p>
+&lt;p>I was inspired by a recent episode of &lt;a class="link" href="https://youtu.be/zoq1n_0Lkp8?t=5919" target="_blank" rel="noopener"
+>Code with Italians&lt;/a> where they animated a time field. I wanted to change the counter component to animate each number individually to get that odometer look.&lt;/p>
+&lt;p>Before doing this though there was a question of &lt;em>&lt;strong>state&lt;/strong>&lt;/em>. I wanted to make a counter that would auto increment in a coroutine. It had to change direction up or down if you tapped it. To do this I decided to store the state and the counting direction in a view model. This allowed me to keep the components as stateless as possible. The components are re-usable because the logic that makes the numbers go up or down is held outside of the composable functions.&lt;/p>
+&lt;p>The &lt;a class="link" href="https://youtu.be/0z_dwBGQQWQ?t=451" target="_blank" rel="noopener"
+>recommendation from Google&lt;/a> is when you use a view model to hold state, keep it close to the root screen. I made a screen for my visitor counter and added it to my navigation code. Since I already had Hilt enabled in the project it was pretty easy to get hold of the viewmodel. The code snippet in the Navigation looks like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">NavHost&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">navController&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">startDestination&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;overview&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//... other routes go here
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">composable&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">route&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;counter&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">viewModel&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">CounterViewModel&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">hiltViewModel&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">//&amp;lt;--- get the viewmodel from Hilt
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">count&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">viewModel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">counter&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">collectAsState&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">//&amp;lt;--- the viewmodel exposes the counter as a StateFlow
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">CounterScreen&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">onClick&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">viewModel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">onClick&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="c1">// &amp;lt;--- the viewmodel provides a method for when the element is clicked
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>CounterScreen&lt;/code> is stateless and gets the value of the counter and the event handler as parameters. The &lt;code>CounterScreen&lt;/code> has a &lt;code>Counter&lt;/code> composable. The role of the &lt;code>Counter&lt;/code> composable is to create a row of individual odometer numbers from the passed values. Also it should intercept a click and call the click handler.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">Counter&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">onClick&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">width&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">displayWidth&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">maxOf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">width&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">clickable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">interactionSource&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">remember&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">MutableInteractionSource&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">indication&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">null&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">onClick&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">onClick&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">displayWidth&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="m">1&lt;/span> &lt;span class="n">downTo&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">//&amp;lt;--- this loop builds the row based on the number
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">CounterCell&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toDouble&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">10.0&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">pow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">%&lt;/span> &lt;span class="m">10&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">toInt&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="c1">//&amp;lt;--- split the number in to units, tens, hundreds etc
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">width&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1&lt;/span> &lt;span class="c1">//&amp;lt;--- set each cell to only be one digit wide
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The actual animation happens in each &lt;code>CounterCell&lt;/code>. It uses &lt;code>AnimatedContent&lt;/code> to slide from the top if the new number is more than the previous one and slide from the bottom if the new number is lower than the first.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">CounterCell&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">width&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">numbersSlidingAnimation&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">AnimatedContentScope&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Int&lt;/span>&lt;span class="p">&amp;gt;.()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">ContentTransform&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">initialState&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> &lt;span class="n">targetState&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">slideInVertically&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">initialOffsetY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">it&lt;/span> &lt;span class="p">})&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">fadeIn&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="n">with&lt;/span> &lt;span class="n">slideOutVertically&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetOffsetY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="k">it&lt;/span> &lt;span class="p">})&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">fadeOut&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">slideInVertically&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">initialOffsetY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="k">it&lt;/span> &lt;span class="p">})&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">fadeIn&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="n">with&lt;/span> &lt;span class="n">slideOutVertically&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetOffsetY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">it&lt;/span> &lt;span class="p">})&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">fadeOut&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">AnimatedContent&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetState&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">transitionSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">numbersSlidingAnimation&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">number&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">number&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toString&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">padStart&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">width&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="sc">&amp;#39;0&amp;#39;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can see what this looks like in the gifs below.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter.gif"
+width="672"
+height="270"
+srcset="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="visitor counter going up - click me to see the animation"
+class="gallery-image"
+data-flex-grow="248"
+data-flex-basis="597px"
+>&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounterDown.gif"
+width="672"
+height="270"
+srcset="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="visitor counter going down - click me to see the animation"
+class="gallery-image"
+data-flex-grow="248"
+data-flex-basis="597px"
+>&lt;/p>
+&lt;p>All that is left to complete this example is the &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles/blob/main/app/src/main/java/net/maiatoday/magicsprinkles/CounterViewModel.kt" target="_blank" rel="noopener"
+>view model&lt;/a>.&lt;/p>
+&lt;p>As you can see from the code by making the composable functions simple and stateless, it is possible to separate the UI requirements from the logic that drives it. This is a useful pattern because it allows the view model to be tested properly. It makes the composables themselves re-usable for different situations. Who knows, you could animate click counts or visitors or changing crypto wallet values all with the same re-usable component.&lt;/p>
+&lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
+>this repo&lt;/a>&lt;/p>
+&lt;p>Also in this series:&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/animating-rainbow-text/" title="Rainbow Text"
+>RainbowText&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/blink-like-its-1999/" title="Blink Tag"
+>BlinkTag&lt;/a>&lt;/p></description></item><item><title>&lt;blink> like it's 1999</title><link>https://maiatoday.github.io/p/blink-like-its-1999/</link><pubDate>Sat, 03 Jul 2021 17:27:21 +0200</pubDate><guid>https://maiatoday.github.io/p/blink-like-its-1999/</guid><description>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blinktag.png" alt="Featured image of post &lt;blink> like it's 1999" />&lt;p>Another small experiment to explore Jetpack Compose animations. I came to the conclusion that any value that is passed as a parameter could be animated, including anything in the modifier. So I set out to build a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> tag.&lt;/p>
+&lt;p>My first attempt creates a composable function that takes the modifier, animates it and passes it back to the content lambda. Like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">BlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">alpha&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>When you use it you get a modifier back which you then pass to your content.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">BlinkTag&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Icon&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">it&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// &amp;lt;- like so
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">tint&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RainbowRed&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">painter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">painterResource&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">drawable&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ic_android_black_24dp&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">contentDescription&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">null&lt;/span> &lt;span class="c1">// decorative element
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;blinky&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RainbowRed&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">it&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">padding&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">8.&lt;/span>&lt;span class="n">dp&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// &amp;lt;- and here too
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/ghosts.gif"
+width="234"
+height="290"
+srcset="https://maiatoday.github.io/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="animated text and icons - click me to see the animation"
+class="gallery-image"
+data-flex-grow="80"
+data-flex-basis="193px"
+>&lt;/p>
+&lt;p>The animation for this was a linear &lt;code>tween()&lt;/code> between invisible and visible. However anyone who &lt;a class="link" href="https://www.google.com/search?q=blink&amp;#43;tag" target="_blank" rel="noopener"
+>knows the blink tag&lt;/a> will realise that it stays on longer than off. It blips off and then comes back on again staying visible for longer.&lt;/p>
+&lt;p>To do this I replaced the &lt;code>tween()&lt;/code> with &lt;code>keyframes&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">BlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">duration&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">alpha&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">keyframes&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">duration&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1f&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">duration&lt;/span>&lt;span class="p">*&lt;/span>&lt;span class="m">0.8&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">toInt&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">// we started at 1 and stay here for 80% of the time
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="m">0f&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="n">duration&lt;/span> &lt;span class="c1">// then drop down to 0 in the last 20% of the time
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blinkLong.gif"
+width="260"
+height="134"
+srcset="https://maiatoday.github.io/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="more relistic blink - click me to see the animation"
+class="gallery-image"
+data-flex-grow="194"
+data-flex-basis="465px"
+>&lt;/p>
+&lt;p>Reading the &lt;a class="link" href="https://developer.android.com/jetpack/compose/themes#emphasis" target="_blank" rel="noopener"
+>material theme docs&lt;/a> I found out there was another way to share alpha values to a children in the composable tree using a &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#LocalContentAlpha" target="_blank" rel="noopener"
+>LocalContentAlpha&lt;/a>. This mechanims is used for emphasis using alpha and I am pretty sure the intention isn&amp;rsquo;t for this to be used to make layouts blink. I am doing this for science.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">LocalContentBlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">alpha&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">CompositionLocalProvider&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">LocalContentAlpha&lt;/span> &lt;span class="n">provides&lt;/span> &lt;span class="n">alpha&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>When using this blink tag you no longer need to pass down the modifier since the changing alpha value is available to the children in a &lt;code>CompositionLocal&lt;/code>&lt;/p>
+&lt;p>Use it like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">LocalContentBlinkTag&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Icon&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">painter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">painterResource&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">drawable&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ic_android_black_24dp&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">contentDescription&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">null&lt;/span> &lt;span class="c1">// decorative element
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;blink&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blink.gif"
+width="238"
+height="100"
+srcset="https://maiatoday.github.io/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="local content blink - click me to see the animation"
+class="gallery-image"
+data-flex-grow="238"
+data-flex-basis="571px"
+>&lt;/p>
+&lt;p>Although I defintely don&amp;rsquo;t support the irresponsible use of the blink tag, no investigation of reproducing retro website animations would be complete without a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> I realised again how powerful yet simple the animation system in Jetpack Compose can be. Be warned.&lt;/p>
+&lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
+>this repo&lt;/a>&lt;/p>
+&lt;p>Also in this series:&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/animating-rainbow-text/" title="Rainbow Text"
+>RainbowText&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/" title="Visitor Counter"
+>VisitorCounter&lt;/a>&lt;/p></description></item><item><title>Animating Rainbow Text</title><link>https://maiatoday.github.io/p/animating-rainbow-text/</link><pubDate>Sun, 27 Jun 2021 00:13:10 +0200</pubDate><guid>https://maiatoday.github.io/p/animating-rainbow-text/</guid><description>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/noDisco.png" alt="Featured image of post Animating Rainbow Text" />&lt;p>&lt;a class="link" href="https://www.wonder-tonic.com/geocitiesizer/" target="_blank" rel="noopener"
+>Do you remember web pages in the nineties?&lt;/a> Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.&lt;/p>
+&lt;p>First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowRed&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFDA034E&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowOrange&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFFF9800&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowYellow&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFFFEB3B&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowGreen&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF4CAF50&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowBlue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF2196F3&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowIndigo&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF3F51B5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowViolet&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF9C27B0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">SkittlesRainbow&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">listOf&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowRed&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowOrange&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowYellow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowGreen&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowBlue&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowIndigo&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowViolet&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Since web pages in the nineties used Times New Roman and Helvetica, I added a free version of a serif font. I chose &lt;a class="link" href="https://fonts.google.com/specimen/Source&amp;#43;Serif&amp;#43;Pro?query=source&amp;#43;serif" target="_blank" rel="noopener"
+>Source Serif&lt;/a>. I included the ttf files in the project and made a FontFamily and hooked this into the theme.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject.png"
+width="630"
+height="476"
+srcset="https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="ttf files in projext"
+class="gallery-image"
+data-flex-grow="132"
+data-flex-basis="317px"
+>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">SourceSerif&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">FontFamily&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_regular&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_bold&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Bold&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_light&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Light&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_black&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Black&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_extra_light&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ExtraLight&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">Typography&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Typography&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">defaultFontFamily&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">SourceSerif&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">MaterialTheme&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">colors&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">colors&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">typography&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Typography&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">shapes&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Shapes&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">content&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Next I made a composable that would colour each letter of a string. This simple composable took as many text parameters in and then split the string colouring each character to the colour of the rainbow in the parameter. The &lt;code>startColor&lt;/code> index is used to pick which colour the first letter will be.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">MultiColorText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TextStyle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">LocalTextStyle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">current&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">SkittlesRainbow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startColor&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">var&lt;/span> &lt;span class="py">index&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">startColor&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">letter&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">letter&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toString&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="k">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">index&lt;/span>&lt;span class="o">++&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">index&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">index&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This allowed me to create a second composable which used an infinite transition to animate continouously. I animate the &lt;code>startColor&lt;/code> integer and this will recompose the nested &lt;code>MultiColorText&lt;/code> composable. The &lt;code>animateValue&lt;/code> will change the value of &lt;code>colorIndex&lt;/code> over time and will use the &lt;code>Int.VectorConverter&lt;/code> to get a value between 0 and the size of the rainbow. In this way it creates an endless loop of changing integer values. The animation spec is a simple &lt;code>tween()&lt;/code> which just changes be&lt;em>tween&lt;/em> the &lt;code>initalvalue&lt;/code> and the &lt;code>targetValue&lt;/code> in alinear way. Different effects can be created by fiddling with the &lt;code>repeatMode&lt;/code> or the other parameters in the &lt;code>animationSpec&lt;/code> or adjusting the duration in the &lt;code>tween()&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">SnappyRainbowText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TextStyle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">LocalTextStyle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">current&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">SkittlesRainbow&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">colorIndex&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateValue&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="m">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">typeConverter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Int&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">VectorConverter&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">MultiColorText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startColor&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">colorIndex&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I made a simple test screen with an edit text field so I could try it out.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/snappyDisco.gif"
+width="672"
+height="436"
+srcset="https://maiatoday.github.io/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="snappy rainbow click me to see the animation"
+class="gallery-image"
+data-flex-grow="154"
+data-flex-basis="369px"
+>&lt;/p>
+&lt;p>As you can see the animation is uhm &amp;hellip; snappy. If you can&amp;rsquo;t see it, click on the image.&lt;/p>
+&lt;p>Is it possible to change from one colour to the next smoothly and still have all the letters different colours?&lt;/p>
+&lt;p>The first step is to create a composable that will cycle through a rainbow of colours. This is done by creating a keyframes animation. The keyframe points are the colours of the rainbow.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">MultiColorSmoothText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TextStyle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">LocalTextStyle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">current&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">PastelRainbow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startIndex&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">duration&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">interval&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">duration&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">color&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateColor&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">keyframes&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">duration&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">delayMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">startIndex&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="n">interval&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">var&lt;/span> &lt;span class="py">i&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// set the keyframes from the rainbow with code
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">color&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// this is the crux of setting the keyframes
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="c1">// at is an infix method in the KeyframesSpec class
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">interval&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">color&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This composable can be used to loop through colours of the rainbow on a Text composable.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/smoothOneDisco.gif"
+width="644"
+height="138"
+srcset="https://maiatoday.github.io/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="smooth coloured text"
+class="gallery-image"
+data-flex-grow="466"
+data-flex-basis="1120px"
+>&lt;/p>
+&lt;p>Finally I built a composable that split the string again and made each letter a &lt;code>MultiColorSmoothText&lt;/code>. It uses the &lt;code>startIndex&lt;/code> to delay the animation. The effect is that each letter is a different colour.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">SmoothRainbowText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TextStyle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">LocalTextStyle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">current&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">PastelRainbow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startColor&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">duration&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1200&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">var&lt;/span> &lt;span class="py">index&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">startColor&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">letter&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">MultiColorSmoothText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">letter&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toString&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startIndex&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">index&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">duration&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">duration&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">index&lt;/span>&lt;span class="o">++&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">index&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">index&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And the final smooth animating rainbow text using a pastel rainbow.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/smoothDisco.gif"
+width="672"
+height="436"
+srcset="https://maiatoday.github.io/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="smooth rainbow test"
+class="gallery-image"
+data-flex-grow="154"
+data-flex-basis="369px"
+>&lt;/p>
+&lt;p>Next I&amp;rsquo;ll tackle some more retro 90s web page inspired animations, visitor counters, flames, rotating images, shifting tiled backgrounds and walls of text that change size.&lt;/p>
+&lt;p>Until then&amp;hellip; &lt;a class="link" href="https://youtu.be/_NywTcGOUkE?t=44" target="_blank" rel="noopener"
+>this ain&amp;rsquo;t not disco&lt;/a>&lt;/p>
+&lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
+>this repo&lt;/a>&lt;/p>
+&lt;p>Also in this series:&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/blink-like-its-1999/" title="Blink Tag"
+>BlinkTag&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/" title="Visitor Counter"
+>VisitorCounter&lt;/a>&lt;/p></description></item><item><title>Random Animating Pie Button</title><link>https://maiatoday.github.io/p/random-animating-pie-button/</link><pubDate>Wed, 16 Jun 2021 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/random-animating-pie-button/</guid><description>&lt;img src="https://maiatoday.github.io/p/random-animating-pie-button/randomPieBanner.png" alt="Featured image of post Random Animating Pie Button" />&lt;p>I am exploring animations with small sampler functions using Jetpack Compose. This one is a custom component that draws a &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/PieStatus.kt" target="_blank" rel="noopener"
+>little pie chart&lt;/a>. It will animate a random pie value on the click of the &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/RandomPieButton.kt" target="_blank" rel="noopener"
+>button&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/random-animating-pie-button/randomPieClick.gif"
+width="252"
+height="188"
+srcset="https://maiatoday.github.io/p/random-animating-pie-button/randomPieClick_hue87a2dd35b7d2dcf39402d15fcef185b_464915_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/random-animating-pie-button/randomPieClick_hue87a2dd35b7d2dcf39402d15fcef185b_464915_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="click and animate"
+class="gallery-image"
+data-flex-grow="134"
+data-flex-basis="321px"
+>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">data&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">PieData&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">foreground&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">White&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">strokeWidth&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Dp&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">4.&lt;/span>&lt;span class="n">dp&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">percentage&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">PieStatus&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pieData&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">PieData&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">var&lt;/span> &lt;span class="py">animationPlayed&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">remember&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">mutableStateOf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">false&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">currentPercentage&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">animateFloatAsState&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">animationPlayed&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">percentage&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">1000&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">LaunchedEffect&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">key1&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">true&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationPlayed&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Canvas&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">canvasWidth&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">width&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">canvasHeight&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">height&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">drawCircle&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">foreground&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">center&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Offset&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">canvasWidth&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">canvasHeight&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">radius&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">canvasWidth&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">strokeWidth&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toPx&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Stroke&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">strokeWidth&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toPx&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">arcPadding&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">strokeWidth&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toPx&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="m">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">drawArc&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">pieData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">foreground&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startAngle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="m">90f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sweepAngle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">currentPercentage&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">value&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="m">360&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">useCenter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">topLeft&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Offset&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">arcPadding&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">arcPadding&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">size&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Size&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">arcPadding&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="m">2f&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">arcPadding&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="m">2f&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a class="link" href="https://github.com/maiatoday/ComposeSampler" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>She Can Do Panel discussion: Collaboration between designers and developers</title><link>https://maiatoday.github.io/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</link><pubDate>Wed, 02 Jun 2021 15:51:17 +0200</pubDate><guid>https://maiatoday.github.io/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</guid><description>&lt;p>Panel discussion with GDG Johannesburg and She Can Do&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/viEIn7y1Meo"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>International Womens Day Codelab - Getting started with Compose</title><link>https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/</link><pubDate>Sat, 27 Mar 2021 15:44:02 +0200</pubDate><guid>https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/</guid><description>&lt;img src="https://maiatoday.github.io/p/international-womens-day-codelab-getting-started-with-compose/iwd_compose.png" alt="Featured image of post International Womens Day Codelab - Getting started with Compose" />&lt;p>Getting started with Jetpack compose Codelab and talk for International Women&amp;rsquo;s Day event with Women Techmakers and GDGs in Southern Africa&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/RKVh45KYd94"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Jetpack Compose - As good as the hype?</title><link>https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/</link><pubDate>Thu, 04 Mar 2021 15:36:17 +0200</pubDate><guid>https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/</guid><description>&lt;img src="https://maiatoday.github.io/p/jetpack-compose-as-good-as-the-hype/compose_hype.png" alt="Featured image of post Jetpack Compose - As good as the hype?" />&lt;p>Co presented with Charles Okot an first look at Jetpack and how we could use it.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/q8H_YFxVI_0"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Refresh, Renew, Refactor - modernising a large Android app with many users</title><link>https://maiatoday.github.io/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/</link><pubDate>Fri, 09 Oct 2020 15:19:42 +0200</pubDate><guid>https://maiatoday.github.io/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/</guid><description>&lt;img src="https://maiatoday.github.io/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/droidcon2020.png" alt="Featured image of post Refresh, Renew, Refactor - modernising a large Android app with many users" />&lt;p>Co presenting a talk at Droidcon EMEA 2020&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new.png"
+width="2272"
+height="1278"
+srcset="https://maiatoday.github.io/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hudf170813e91e91c23077ff341deb461a_288888_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hudf170813e91e91c23077ff341deb461a_288888_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="old vs new"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.droidcon.com/2020/10/09/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/?video=470196512" target="_blank" rel="noopener"
+>video&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="Refresh,%20renew,%20refactor.pdf" >slides&lt;/a>&lt;/p></description></item><item><title>Dagger, Hilt, Koin - a comparison</title><link>https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/</link><pubDate>Wed, 05 Aug 2020 15:02:01 +0200</pubDate><guid>https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/</guid><description>&lt;img src="https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/dagger_hilt_koin.png" alt="Featured image of post Dagger, Hilt, Koin - a comparison" />&lt;p>Talk presented for GDG Johannesburg comparing dependency injection technologies.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/which_one.png"
+width="2268"
+height="1276"
+srcset="https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/which_one_huc0ae47b8b6cac47e7628ec8f169caf81_1018563_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/dagger-hilt-koin-a-comparison/which_one_huc0ae47b8b6cac47e7628ec8f169caf81_1018563_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="which one to choose"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/-MJm4UGoh5I"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/137QItxqOKWpACPdrx-pOc2ry7sVNi0kXnZCjZsmmfiI/edit?usp=sharing" target="_blank" rel="noopener"
+>slides&lt;/a>&lt;/p></description></item><item><title>Testing Kotlin Coroutines</title><link>https://maiatoday.github.io/p/testing-kotlin-coroutines/</link><pubDate>Sun, 08 Dec 2019 06:47:30 +0200</pubDate><guid>https://maiatoday.github.io/p/testing-kotlin-coroutines/</guid><description>&lt;img src="https://maiatoday.github.io/p/testing-kotlin-coroutines/timeMachine.png" alt="Featured image of post Testing Kotlin Coroutines" />&lt;p>How to test kotlin coroutines by injecting dispatchers and using the testing apis. No one wants flakey tests and I want a time machine.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/E-1n_AmlVjE"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Hello8Ball</title><link>https://maiatoday.github.io/p/hello8ball/</link><pubDate>Sat, 23 Nov 2019 21:36:11 +0000</pubDate><guid>https://maiatoday.github.io/p/hello8ball/</guid><description>&lt;img src="https://maiatoday.github.io/p/hello8ball/Screenshot_1566145786.png" alt="Featured image of post Hello8Ball" />&lt;p>A sampler app to explore Coroutine testing. This is a toy app that simulates an 8 Ball. It can answer questions, find synonmyms, generate a password or check if a number is prime. It was created to make a situation where it makes sense to use coroutines to e.g. go on the network or make a calculation. Then I added tests for all the pieces using &lt;a class="link" href="https://github.com/Kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-test" target="_blank" rel="noopener"
+>kotlinx-coroutine-test&lt;/a>.&lt;/p>
+&lt;p>As a bonus the repo is set up to run the tests on CircleCi. It has detekt setup and jacoco code coverage. There is also a branch where all the tests are converted to junit5.&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=E-1n_AmlVjE" target="_blank" rel="noopener"
+>Devfest 2019 video&lt;/a>&lt;/p>
+&lt;p>This is the companion repo to the &lt;a class="link" href="" >KotlinEveryWhereZA 2019&lt;/a> and &lt;a class="link" href="https://devfest.co.za/" target="_blank" rel="noopener"
+>DevFestZa 2019&lt;/a> talk. &lt;a class="link" href="https://github.com/maiatoday/Hello8Ball/blob/master/slides/TestingKotlinCoroutines.pdf" target="_blank" rel="noopener"
+>Slides&lt;/a> are in the repo.&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/Hello8Ball" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>Future of Work Panel</title><link>https://maiatoday.github.io/p/future-of-work-panel/</link><pubDate>Wed, 03 Apr 2019 06:56:27 +0200</pubDate><guid>https://maiatoday.github.io/p/future-of-work-panel/</guid><description>&lt;img src="https://maiatoday.github.io/p/future-of-work-panel/futureOfWork2019.png" alt="Featured image of post Future of Work Panel" />&lt;p>Pre pandemic Offerzen hosted a live panel on the future of work. Some thoughts on freelancing and remote work. All this has changed now, if only we knew&amp;hellip;&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/cyV6NbPtyDo"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>HelloTrain</title><link>https://maiatoday.github.io/p/hellotrain/</link><pubDate>Fri, 08 Feb 2019 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/hellotrain/</guid><description>&lt;img src="https://maiatoday.github.io/p/hellotrain/errorTrain.png" alt="Featured image of post HelloTrain" />&lt;p>Exploring &lt;a class="link" href="https://www.slideshare.net/ScottWlaschin/railway-oriented-programming" target="_blank" rel="noopener"
+>railroad error handling&lt;/a> in Kotlin. Pure Kotlin.&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/HelloTrain" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>Note to Future me — add jacoco and coverage limits</title><link>https://maiatoday.github.io/p/note-to-future-me-add-jacoco-and-coverage-limits/</link><pubDate>Sat, 13 Oct 2018 13:55:25 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-add-jacoco-and-coverage-limits/</guid><description>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-add-jacoco-and-coverage-limits/blocks.png" alt="Featured image of post Note to Future me — add jacoco and coverage limits" />&lt;p>I have found myself adding jacoco and coverage limits to more than one Android project. Enough times for me to extract the gradle bits in to a little nugget of grooviness to just drop into a project as needed. For a while now I have been reading about &lt;a class="link" href="https://jeroenmols.com/blog/2017/11/28/coveragproblem/" target="_blank" rel="noopener"
+>test coverage numbers&lt;/a> and working with my intuition about what is the most valuable thing for me to spend my time on when building something. Also Kotlin. In the light of this my gradle build file snippet contains the following:&lt;/p>
+&lt;ul>
+&lt;li>Jacoco for test coverage&lt;/li>
+&lt;li>Kotlin support&lt;/li>
+&lt;li>A way to choose important classes and only set coverage limits on those&lt;/li>
+&lt;/ul>
+&lt;p>Do this,&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Put the gist in a file &lt;code>jacoco.gradle&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Modify the &lt;code>jacoco.gradle&lt;/code> file to add limits for your important packages.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add this line to your &lt;code>build.gradle&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>apply from: 'jacoco.gradle'&lt;/code>&lt;/p>
+&lt;ol start="4">
+&lt;li>And then run the command&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>./gradlew tasks&lt;/code>&lt;/p>
+&lt;p>to see what new tasks are there to run. e.g. in the reporting section find something similar to&lt;/p>
+&lt;p>&lt;code>./gradlew/testDevDebugUnitTestCoverageVerification&lt;/code>&lt;/p>
+&lt;p>which will run the tests, make coverage reports and apply limits.&lt;/p>
+&lt;ol start="5">
+&lt;li>Find the reports in a path similar to this&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>~/your\_project/your\_module/build/reports/jacoco/testDevDebugUnitTestCoverage/html/index.html&lt;/code>&lt;/p>
+&lt;p>Without further ado, the gist:&lt;/p>
+&lt;p>The code in the gist was taken from so many blogposts. I can’t even remember them all. Thanks to the original authors.&lt;/p>
+&lt;p>Also note there is a small piece of cargo cult code that kept sneaking in from sundry blogposts that I don’t need because I don’t have Robolectric tests. As it turns out this code &lt;a class="link" href="https://groups.google.com/forum/#!topic/jacoco/KMBScnGiKeI" target="_blank" rel="noopener"
+>crashes unit tests on Java &amp;gt; 8&lt;/a>. So remove this code if you have it and if it fits your usecase.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-groovy" data-lang="groovy">&lt;span class="line">&lt;span class="cl">&lt;span class="n">tasks&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">withType&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">Test&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">jacoco&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">includeNoLocationClasses&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Note to future me — Adding GraphQL to an app</title><link>https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/</link><pubDate>Sun, 08 Apr 2018 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/</guid><description>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie.png" alt="Featured image of post Note to future me — Adding GraphQL to an app" />&lt;p>Adding the &lt;a class="link" href="https://github.com/apollographql/apollo-android" target="_blank" rel="noopener"
+>library&lt;/a> to the app see commit 03bd7a7534f7a23276fc47c4f7c94d7ac153bc0b&lt;/p>
+&lt;ul>
+&lt;li>plugin&lt;/li>
+&lt;li>dependencies&lt;/li>
+&lt;/ul>
+&lt;p>Making a service&lt;/p>
+&lt;ul>
+&lt;li>wrapping and existing endpoint &lt;a class="link" href="https://github.com/joakin/wikimedia-graphql" target="_blank" rel="noopener"
+>https://github.com/joakin/wikimedia-graphql&lt;/a>&lt;/li>
+&lt;li>install node if you don’t have it. node — version&lt;/li>
+&lt;li>running the service `node index.js` &lt;/li>
+&lt;li>&lt;a class="link" href="http://localhost:3002/graphiql" target="_blank" rel="noopener"
+>play with the service&lt;/a> &lt;/li>
+&lt;/ul>
+&lt;p>&lt;a class="link" href="https://gist.github.com/maiatoday/578aebcee3bd9decb6e3c6833c73a4ba#file-wikipage-graphql" target="_blank" rel="noopener"
+>https://gist.github.com/maiatoday/578aebcee3bd9decb6e3c6833c73a4ba#file-wikipage-graphql&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>getting the json.schema &lt;a class="link" href="https://github.com/apollographql/apollo-codegen" target="_blank" rel="noopener"
+>https://github.com/apollographql/apollo-codegen&lt;/a>&lt;/li>
+&lt;li>cd app/src/main/graphql/net/maiatoday/helloblondie&lt;/li>
+&lt;li>apollo-codegen download-schema &lt;a class="link" href="http://localhost:3002/graphql" target="_blank" rel="noopener"
+>http://localhost:3002/graphql&lt;/a> — output schema.json&lt;/li>
+&lt;/ul>
+&lt;p>Adding the service to the app&lt;/p>
+&lt;ul>
+&lt;li>adding a query&lt;/li>
+&lt;li>adding the schema a5a47f0ff45f6bc5d5a3aa6f1fee50af363f7893&lt;/li>
+&lt;li>getting access to the service&lt;/li>
+&lt;li>calling the service&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie.png"
+width="800"
+height="1422"
+srcset="https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/mugli/learning-graphql/blob/master/2.%20Basic%20Query%20Syntax.md" target="_blank" rel="noopener"
+>Some pointers on query syntax&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/HelloBlondie/tree/graphql" target="_blank" rel="noopener"
+>Gitrepo&lt;/a>&lt;/p>
+&lt;p>`sudo apollo-codegen introspect-schema &lt;a class="link" href="https://api-dev.nomanini.com/transaction-gateway/graphql" target="_blank" rel="noopener"
+>https://api.blargh.com/graphql&lt;/a> — header “Authorization: Bearer xxxx” — output schema.json`&lt;/p></description></item><item><title>Note to Future Me — Testing Intents with Matchers</title><link>https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/</link><pubDate>Fri, 26 Jan 2018 14:54:45 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/</guid><description>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults.png" alt="Featured image of post Note to Future Me — Testing Intents with Matchers" />&lt;p>I want to make my little experiments public and save them as a reminder for future me. So here is yet another post on Matchers and Espresso testing.&lt;/p>
+&lt;p>I want to test this:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>First activity starts another activity at a button click.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>First activity passes a parcelable object to the second activity.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Test that the intent that starts the second activity contains the object with the correct properties.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>I built a contrived example, MainActivity collects some info and passes this to StarActivity in a parcelable called ContrivedParams. See the sample code &lt;a class="link" href="https://github.com/maiatoday/HelloIntentMatcher" target="_blank" rel="noopener"
+>on GitHub&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1.png"
+width="480"
+height="853"
+srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>
+&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars.png"
+width="480"
+height="853"
+srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>&lt;/p>
+&lt;p>To write the tests I brushed up on &lt;a class="link" href="https://en.wikipedia.org/wiki/Hamcrest" target="_blank" rel="noopener"
+>Hamcrest&lt;/a>&lt;a class="link" href="http://hamcrest.org/JavaHamcrest/javadoc/1.3/overview-summary.html" target="_blank" rel="noopener"
+>[1]&lt;/a>&lt;a class="link" href="https://www.planetgeek.ch/2012/03/07/create-your-own-matcher/" target="_blank" rel="noopener"
+>[2]&lt;/a>&lt;a class="link" href="http://www.vogella.com/tutorials/Hamcrest/article.html" target="_blank" rel="noopener"
+>[3]&lt;/a>: a library that makes it easier to write readable tests. Instead of&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>you can write almost-english&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>which is a sugar coated version of&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">equalto&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Sadly though &lt;em>is&lt;/em> is a &lt;a class="link" href="https://kotlinlang.org/docs/reference/keyword-reference.html" target="_blank" rel="noopener"
+>hard keyword in Kotlin&lt;/a> so I ended up using the &lt;em>isA()&lt;/em> and &lt;em>equalTo()&lt;/em> varieties of calls rather than escaping &lt;em>is&lt;/em> with backticks.&lt;/p>
+&lt;p>Another reason to use Hamcrest — better error messages. Compare these two messages.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">37&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>with the message given by a custom matcher&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Expected&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">title&lt;/span> &lt;span class="n">should&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="err">“&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="err">”&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">but&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">was&lt;/span> &lt;span class="err">“&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">!&lt;/span>&lt;span class="err">”&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">42&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>or the error message given by an object matcher&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Expected&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">ContrivedParams&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">starCount&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="m">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="m">00&lt;/span>&lt;span class="n">b0ff&lt;/span>&lt;span class="p">)&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">but&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">was&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">ContrivedParams&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">!,&lt;/span> &lt;span class="n">starCount&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="m">00&lt;/span>&lt;span class="n">b0fff&lt;/span>&lt;span class="p">)&amp;gt;&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">47&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The parameters for the second activity is passed in a parcelable data class.&lt;/p>
+&lt;p>I used the &lt;a class="link" href="https://developer.android.com/training/testing/espresso/intents.html" target="_blank" rel="noopener"
+>Espresso-intents library&lt;/a> . Start the activity with an &lt;code>IntentsTestRule&lt;/code>. The IntentsTestRule initialises the Espresso intents before each test and releases them again after the test completes. I used the &lt;code>intended&lt;/code> method to test the intent and the &lt;code>hasEntry&lt;/code> method to check for the extra. I compared the extra with an expected object. As a bonus I wrote a custom matcher to check the properties of the object that was in the intent. Custom matchers are useful if you do not need to check all of the properties in the data object.&lt;/p>
+&lt;p>The intent test:&lt;/p>
+&lt;p>One of the custom matchers:&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults.png"
+width="1480"
+height="214"
+srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="All green"
+class="gallery-image"
+data-flex-grow="691"
+data-flex-basis="1659px"
+>
+All green&lt;/p></description></item><item><title>HelloKeystore</title><link>https://maiatoday.github.io/p/hellokeystore/</link><pubDate>Sun, 12 Nov 2017 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/hellokeystore/</guid><description>&lt;img src="https://maiatoday.github.io/p/hellokeystore/keystore.png" alt="Featured image of post HelloKeystore" />&lt;p>Curious Keystore experiments. A small simple project that saves something in the keystore and gets it out again. Tricksiness happens across versions of Android.&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/HelloKeystore" target="_blank" rel="noopener"
+>code&lt;/a>&lt;/p></description></item><item><title>Neotaur-Geotaur</title><link>https://maiatoday.github.io/p/neotaur-geotaur/</link><pubDate>Mon, 29 Aug 2016 14:04:46 +0200</pubDate><guid>https://maiatoday.github.io/p/neotaur-geotaur/</guid><description>&lt;img src="https://maiatoday.github.io/p/neotaur-geotaur/neotaur.png" alt="Featured image of post Neotaur-Geotaur" />&lt;p>I like to make sampler apps to explore new things to learn. I was wondering how the &lt;a class="link" href="https://developer.android.com/training/location/index.html" target="_blank" rel="noopener"
+>google location apis&lt;/a> differed from the new &lt;a class="link" href="https://developers.google.com/awareness/" target="_blank" rel="noopener"
+>awereness apis&lt;/a>. The &lt;a class="link" href="https://github.com/maiatoday/Geotaur" target="_blank" rel="noopener"
+>Geotaur repo&lt;/a> has an app that can use either of these two interfaces. Since it builds two flavours you can run the apps side by side with the same geofences to see how they differ. While I was at it I tried my hand at some other tech too, firebase remote logging and db access, dependency injection.&lt;/p>
+&lt;p>Install from play:&lt;/p>
+&lt;p>&lt;a class="link" href="https://play.google.com/store/apps/details?id=net.maiatoday.neotaur" target="_blank" rel="noopener"
+>Neotaur&lt;/a>{:target=&amp;quot;_blank&amp;quot;}
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>&lt;a class="link" href="https://play.google.com/store/apps/details?id=net.maiatoday.geotaur" target="_blank" rel="noopener"
+>Geotaur&lt;/a>{:target=&amp;quot;_blank&amp;quot;}
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->&lt;/p></description></item><item><title>autoselfie 2013</title><link>https://maiatoday.github.io/p/autoselfie-2013/</link><pubDate>Thu, 09 Oct 2014 21:36:13 +0000</pubDate><guid>https://maiatoday.github.io/p/autoselfie-2013/</guid><description>&lt;img src="https://maiatoday.github.io/p/autoselfie-2013/feature.png" alt="Featured image of post autoselfie 2013" />&lt;p>An android app to &lt;a class="link" href="http://www.maiatoday.co.za/technical" target="_blank" rel="noopener"
+>explore how apps can modify images&lt;/a> and detect faces. The code is &lt;a class="link" href="https://github.com/maiatoday/autoSelfie" target="_blank" rel="noopener"
+>here&lt;/a>.&lt;/p></description></item><item><title>seed spark 2013</title><link>https://maiatoday.github.io/p/seed-spark-2013/</link><pubDate>Thu, 09 Oct 2014 21:26:46 +0000</pubDate><guid>https://maiatoday.github.io/p/seed-spark-2013/</guid><description>&lt;img src="https://maiatoday.github.io/p/seed-spark-2013/snapshot_000.png" alt="Featured image of post seed spark 2013" />&lt;p>In 2013 I made a variation of an older kinect piece called &lt;a class="link" href="http://maiatoday.blogspot.com/2013/06/modified-seedspark-v11.html" target="_blank" rel="noopener"
+>seedSpark&lt;/a>. There were some improvements in the &lt;a class="link" href="https://github.com/maiatoday/seedSpark" target="_blank" rel="noopener"
+>code&lt;/a> which now used Frame buffers.&lt;/p></description></item><item><title>Masters 2012</title><link>https://maiatoday.github.io/p/masters-2012/</link><pubDate>Thu, 09 Oct 2014 20:54:30 +0000</pubDate><guid>https://maiatoday.github.io/p/masters-2012/</guid><description>&lt;img src="https://maiatoday.github.io/p/masters-2012/IMG_8522.JPG" alt="Featured image of post Masters 2012" />&lt;p>In 2012 I made my Masters &lt;a class="link" href="http://www.maiatoday.co.za/summary-3" target="_blank" rel="noopener"
+>exhibition&lt;/a> using openframeworks and the Kinect. It consisted of 4 interactive works which explored concepts around human ideas and machine execution. The repo &lt;a class="link" href="https://github.com/maiatoday/veloPeople" target="_blank" rel="noopener"
+>veloPeople&lt;/a> contains all four works each in their own branch. Each work was built on a &lt;a class="link" href="http://maiatoday.blogspot.com/2011/07/standalone-flash-disk-install.html" target="_blank" rel="noopener"
+>custom ubuntu live disk&lt;/a>. So the installation works existed on flash disk. Given the right hardware you could boot from the flash disk and run one of the works.&lt;/p></description></item></channel></rss>

@@ -1,5 +1,73 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>testing. matchers on maiatoday</title><link>https://maiatoday.github.io/tags/testing.-matchers/</link><description>Recent content in testing. matchers on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Jan 2018 14:54:45 +0000</lastBuildDate><atom:link href="https://maiatoday.github.io/tags/testing.-matchers/index.xml" rel="self" type="application/rss+xml"/><item><title>Note to Future Me — Testing Intents with Matchers</title><link>https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/</link><pubDate>Fri, 26 Jan 2018 14:54:45 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/</guid><description>I want to make my little experiments public and save them as a reminder for future me. So here is yet another post on Matchers and Espresso testing.
-I want to test this:
-First activity starts another activity at a button click.
-First activity passes a parcelable object to the second activity.
-Test that the intent that starts the second activity contains the object with the correct properties.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>testing. matchers on maiatoday</title><link>https://maiatoday.github.io/tags/testing.-matchers/</link><description>Recent content in testing. matchers on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Jan 2018 14:54:45 +0000</lastBuildDate><atom:link href="https://maiatoday.github.io/tags/testing.-matchers/index.xml" rel="self" type="application/rss+xml"/><item><title>Note to Future Me — Testing Intents with Matchers</title><link>https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/</link><pubDate>Fri, 26 Jan 2018 14:54:45 +0000</pubDate><guid>https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/</guid><description>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults.png" alt="Featured image of post Note to Future Me — Testing Intents with Matchers" />&lt;p>I want to make my little experiments public and save them as a reminder for future me. So here is yet another post on Matchers and Espresso testing.&lt;/p>
+&lt;p>I want to test this:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>First activity starts another activity at a button click.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>First activity passes a parcelable object to the second activity.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Test that the intent that starts the second activity contains the object with the correct properties.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>I built a contrived example, MainActivity collects some info and passes this to StarActivity in a parcelable called ContrivedParams. See the sample code &lt;a class="link" href="https://github.com/maiatoday/HelloIntentMatcher" target="_blank" rel="noopener"
+>on GitHub&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1.png"
+width="480"
+height="853"
+srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>
+&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars.png"
+width="480"
+height="853"
+srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>&lt;/p>
+&lt;p>To write the tests I brushed up on &lt;a class="link" href="https://en.wikipedia.org/wiki/Hamcrest" target="_blank" rel="noopener"
+>Hamcrest&lt;/a>&lt;a class="link" href="http://hamcrest.org/JavaHamcrest/javadoc/1.3/overview-summary.html" target="_blank" rel="noopener"
+>[1]&lt;/a>&lt;a class="link" href="https://www.planetgeek.ch/2012/03/07/create-your-own-matcher/" target="_blank" rel="noopener"
+>[2]&lt;/a>&lt;a class="link" href="http://www.vogella.com/tutorials/Hamcrest/article.html" target="_blank" rel="noopener"
+>[3]&lt;/a>: a library that makes it easier to write readable tests. Instead of&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>you can write almost-english&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>which is a sugar coated version of&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">assertThat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">actual&lt;/span> &lt;span class="k">is&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">equalto&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">expected&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Sadly though &lt;em>is&lt;/em> is a &lt;a class="link" href="https://kotlinlang.org/docs/reference/keyword-reference.html" target="_blank" rel="noopener"
+>hard keyword in Kotlin&lt;/a> so I ended up using the &lt;em>isA()&lt;/em> and &lt;em>equalTo()&lt;/em> varieties of calls rather than escaping &lt;em>is&lt;/em> with backticks.&lt;/p>
+&lt;p>Another reason to use Hamcrest — better error messages. Compare these two messages.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">37&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>with the message given by a custom matcher&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Expected&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">title&lt;/span> &lt;span class="n">should&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="err">“&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="err">”&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">but&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">was&lt;/span> &lt;span class="err">“&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">!&lt;/span>&lt;span class="err">”&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">42&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>or the error message given by an object matcher&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lang&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AssertionError&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Expected&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">ContrivedParams&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">starCount&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="m">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="m">00&lt;/span>&lt;span class="n">b0ff&lt;/span>&lt;span class="p">)&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">but&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">was&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">ContrivedParams&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="p">!,&lt;/span> &lt;span class="n">starCount&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">#&lt;/span>&lt;span class="m">00&lt;/span>&lt;span class="n">b0fff&lt;/span>&lt;span class="p">)&amp;gt;&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="n">net&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">maiatoday&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">hellointentmatcher&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">showErroMessagesTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ContrivedParamsTest&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">kt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">47&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The parameters for the second activity is passed in a parcelable data class.&lt;/p>
+&lt;p>I used the &lt;a class="link" href="https://developer.android.com/training/testing/espresso/intents.html" target="_blank" rel="noopener"
+>Espresso-intents library&lt;/a> . Start the activity with an &lt;code>IntentsTestRule&lt;/code>. The IntentsTestRule initialises the Espresso intents before each test and releases them again after the test completes. I used the &lt;code>intended&lt;/code> method to test the intent and the &lt;code>hasEntry&lt;/code> method to check for the extra. I compared the extra with an expected object. As a bonus I wrote a custom matcher to check the properties of the object that was in the intent. Custom matchers are useful if you do not need to check all of the properties in the data object.&lt;/p>
+&lt;p>The intent test:&lt;/p>
+&lt;p>One of the custom matchers:&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults.png"
+width="1480"
+height="214"
+srcset="https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="All green"
+class="gallery-image"
+data-flex-grow="691"
+data-flex-basis="1659px"
+>
+All green&lt;/p></description></item></channel></rss>

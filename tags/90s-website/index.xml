@@ -1,7 +1,424 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>90s website on maiatoday</title><link>https://maiatoday.github.io/tags/90s-website/</link><description>Recent content in 90s website on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 12 Jul 2021 21:44:03 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/tags/90s-website/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome you are visitor number 12345</title><link>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</link><pubDate>Mon, 12 Jul 2021 21:44:03 +0200</pubDate><guid>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</guid><description>Another step forward in recreating the icon 90s website look is the hit counter, visitor counter or web counter in classic squemorphic odometer style.
-hit counters
-I was inspired by a recent episode of Code with Italians where they animated a time field. I wanted to change the counter component to animate each number individually to get that odometer look.
-Before doing this though there was a question of state.</description></item><item><title>&lt;blink> like it's 1999</title><link>https://maiatoday.github.io/p/blink-like-its-1999/</link><pubDate>Sat, 03 Jul 2021 17:27:21 +0200</pubDate><guid>https://maiatoday.github.io/p/blink-like-its-1999/</guid><description>Another small experiment to explore Jetpack Compose animations. I came to the conclusion that any value that is passed as a parameter could be animated, including anything in the modifier. So I set out to build a &amp;lt;blink&amp;gt; tag.
-My first attempt creates a composable function that takes the modifier, animates it and passes it back to the content lambda. Like this:
-@Composable fun BlinkTag( modifier: Modifier = Modifier, durationMillis: Int = 500, content: @Composable (modifier: Modifier) -&amp;gt; Unit ) { val infiniteTransition = rememberInfiniteTransition() val alpha: Float by infiniteTransition.</description></item><item><title>Animating Rainbow Text</title><link>https://maiatoday.github.io/p/animating-rainbow-text/</link><pubDate>Sun, 27 Jun 2021 00:13:10 +0200</pubDate><guid>https://maiatoday.github.io/p/animating-rainbow-text/</guid><description>Do you remember web pages in the nineties? Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.
-First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>90s website on maiatoday</title><link>https://maiatoday.github.io/tags/90s-website/</link><description>Recent content in 90s website on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 12 Jul 2021 21:44:03 +0200</lastBuildDate><atom:link href="https://maiatoday.github.io/tags/90s-website/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome you are visitor number 12345</title><link>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</link><pubDate>Mon, 12 Jul 2021 21:44:03 +0200</pubDate><guid>https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/</guid><description>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter.png" alt="Featured image of post Welcome you are visitor number 12345" />&lt;p>Another step forward in recreating the icon 90s website look is the &lt;a class="link" href="https://www.awwwards.com/5-old-school-web-design-trends-nobody-misses.html" target="_blank" rel="noopener"
+>hit counter, visitor counter or web counter&lt;/a> in classic squemorphic odometer style.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters.png"
+width="768"
+height="214"
+srcset="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="hit counters"
+class="gallery-image"
+data-flex-grow="358"
+data-flex-basis="861px"
+>&lt;/p>
+&lt;p>I was inspired by a recent episode of &lt;a class="link" href="https://youtu.be/zoq1n_0Lkp8?t=5919" target="_blank" rel="noopener"
+>Code with Italians&lt;/a> where they animated a time field. I wanted to change the counter component to animate each number individually to get that odometer look.&lt;/p>
+&lt;p>Before doing this though there was a question of &lt;em>&lt;strong>state&lt;/strong>&lt;/em>. I wanted to make a counter that would auto increment in a coroutine. It had to change direction up or down if you tapped it. To do this I decided to store the state and the counting direction in a view model. This allowed me to keep the components as stateless as possible. The components are re-usable because the logic that makes the numbers go up or down is held outside of the composable functions.&lt;/p>
+&lt;p>The &lt;a class="link" href="https://youtu.be/0z_dwBGQQWQ?t=451" target="_blank" rel="noopener"
+>recommendation from Google&lt;/a> is when you use a view model to hold state, keep it close to the root screen. I made a screen for my visitor counter and added it to my navigation code. Since I already had Hilt enabled in the project it was pretty easy to get hold of the viewmodel. The code snippet in the Navigation looks like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">NavHost&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">navController&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">startDestination&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;overview&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//... other routes go here
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">composable&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">route&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;counter&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">viewModel&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">CounterViewModel&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">hiltViewModel&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">//&amp;lt;--- get the viewmodel from Hilt
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">count&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">viewModel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">counter&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">collectAsState&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">//&amp;lt;--- the viewmodel exposes the counter as a StateFlow
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">CounterScreen&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">onClick&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">viewModel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">onClick&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="c1">// &amp;lt;--- the viewmodel provides a method for when the element is clicked
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>CounterScreen&lt;/code> is stateless and gets the value of the counter and the event handler as parameters. The &lt;code>CounterScreen&lt;/code> has a &lt;code>Counter&lt;/code> composable. The role of the &lt;code>Counter&lt;/code> composable is to create a row of individual odometer numbers from the passed values. Also it should intercept a click and call the click handler.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">Counter&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">onClick&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">width&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">displayWidth&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">maxOf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">width&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">clickable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">interactionSource&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">remember&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">MutableInteractionSource&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">indication&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">null&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">onClick&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">onClick&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">displayWidth&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="m">1&lt;/span> &lt;span class="n">downTo&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">//&amp;lt;--- this loop builds the row based on the number
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">CounterCell&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toDouble&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">10.0&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">pow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">%&lt;/span> &lt;span class="m">10&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">toInt&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="c1">//&amp;lt;--- split the number in to units, tens, hundreds etc
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">width&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1&lt;/span> &lt;span class="c1">//&amp;lt;--- set each cell to only be one digit wide
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The actual animation happens in each &lt;code>CounterCell&lt;/code>. It uses &lt;code>AnimatedContent&lt;/code> to slide from the top if the new number is more than the previous one and slide from the bottom if the new number is lower than the first.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">CounterCell&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">count&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">width&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">numbersSlidingAnimation&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">AnimatedContentScope&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Int&lt;/span>&lt;span class="p">&amp;gt;.()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">ContentTransform&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">initialState&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> &lt;span class="n">targetState&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">slideInVertically&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">initialOffsetY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">it&lt;/span> &lt;span class="p">})&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">fadeIn&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="n">with&lt;/span> &lt;span class="n">slideOutVertically&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetOffsetY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="k">it&lt;/span> &lt;span class="p">})&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">fadeOut&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">slideInVertically&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">initialOffsetY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="k">it&lt;/span> &lt;span class="p">})&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">fadeIn&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="n">with&lt;/span> &lt;span class="n">slideOutVertically&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetOffsetY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">it&lt;/span> &lt;span class="p">})&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">fadeOut&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">AnimatedContent&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetState&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">transitionSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">numbersSlidingAnimation&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">number&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">number&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toString&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">padStart&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">width&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="sc">&amp;#39;0&amp;#39;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can see what this looks like in the gifs below.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter.gif"
+width="672"
+height="270"
+srcset="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="visitor counter going up - click me to see the animation"
+class="gallery-image"
+data-flex-grow="248"
+data-flex-basis="597px"
+>&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounterDown.gif"
+width="672"
+height="270"
+srcset="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="visitor counter going down - click me to see the animation"
+class="gallery-image"
+data-flex-grow="248"
+data-flex-basis="597px"
+>&lt;/p>
+&lt;p>All that is left to complete this example is the &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles/blob/main/app/src/main/java/net/maiatoday/magicsprinkles/CounterViewModel.kt" target="_blank" rel="noopener"
+>view model&lt;/a>.&lt;/p>
+&lt;p>As you can see from the code by making the composable functions simple and stateless, it is possible to separate the UI requirements from the logic that drives it. This is a useful pattern because it allows the view model to be tested properly. It makes the composables themselves re-usable for different situations. Who knows, you could animate click counts or visitors or changing crypto wallet values all with the same re-usable component.&lt;/p>
+&lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
+>this repo&lt;/a>&lt;/p>
+&lt;p>Also in this series:&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/animating-rainbow-text/" title="Rainbow Text"
+>RainbowText&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/blink-like-its-1999/" title="Blink Tag"
+>BlinkTag&lt;/a>&lt;/p></description></item><item><title>&lt;blink> like it's 1999</title><link>https://maiatoday.github.io/p/blink-like-its-1999/</link><pubDate>Sat, 03 Jul 2021 17:27:21 +0200</pubDate><guid>https://maiatoday.github.io/p/blink-like-its-1999/</guid><description>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blinktag.png" alt="Featured image of post &lt;blink> like it's 1999" />&lt;p>Another small experiment to explore Jetpack Compose animations. I came to the conclusion that any value that is passed as a parameter could be animated, including anything in the modifier. So I set out to build a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> tag.&lt;/p>
+&lt;p>My first attempt creates a composable function that takes the modifier, animates it and passes it back to the content lambda. Like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">BlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">alpha&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>When you use it you get a modifier back which you then pass to your content.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">BlinkTag&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Icon&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">it&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// &amp;lt;- like so
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">tint&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RainbowRed&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">painter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">painterResource&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">drawable&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ic_android_black_24dp&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">contentDescription&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">null&lt;/span> &lt;span class="c1">// decorative element
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;blinky&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RainbowRed&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">it&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">padding&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">8.&lt;/span>&lt;span class="n">dp&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// &amp;lt;- and here too
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/ghosts.gif"
+width="234"
+height="290"
+srcset="https://maiatoday.github.io/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="animated text and icons - click me to see the animation"
+class="gallery-image"
+data-flex-grow="80"
+data-flex-basis="193px"
+>&lt;/p>
+&lt;p>The animation for this was a linear &lt;code>tween()&lt;/code> between invisible and visible. However anyone who &lt;a class="link" href="https://www.google.com/search?q=blink&amp;#43;tag" target="_blank" rel="noopener"
+>knows the blink tag&lt;/a> will realise that it stays on longer than off. It blips off and then comes back on again staying visible for longer.&lt;/p>
+&lt;p>To do this I replaced the &lt;code>tween()&lt;/code> with &lt;code>keyframes&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">BlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">duration&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">alpha&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">keyframes&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">duration&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1f&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">duration&lt;/span>&lt;span class="p">*&lt;/span>&lt;span class="m">0.8&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">toInt&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1">// we started at 1 and stay here for 80% of the time
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="m">0f&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="n">duration&lt;/span> &lt;span class="c1">// then drop down to 0 in the last 20% of the time
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blinkLong.gif"
+width="260"
+height="134"
+srcset="https://maiatoday.github.io/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="more relistic blink - click me to see the animation"
+class="gallery-image"
+data-flex-grow="194"
+data-flex-basis="465px"
+>&lt;/p>
+&lt;p>Reading the &lt;a class="link" href="https://developer.android.com/jetpack/compose/themes#emphasis" target="_blank" rel="noopener"
+>material theme docs&lt;/a> I found out there was another way to share alpha values to a children in the composable tree using a &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#LocalContentAlpha" target="_blank" rel="noopener"
+>LocalContentAlpha&lt;/a>. This mechanims is used for emphasis using alpha and I am pretty sure the intention isn&amp;rsquo;t for this to be used to make layouts blink. I am doing this for science.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">LocalContentBlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">500&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">alpha&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">durationMillis&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">CompositionLocalProvider&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">LocalContentAlpha&lt;/span> &lt;span class="n">provides&lt;/span> &lt;span class="n">alpha&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>When using this blink tag you no longer need to pass down the modifier since the changing alpha value is available to the children in a &lt;code>CompositionLocal&lt;/code>&lt;/p>
+&lt;p>Use it like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">LocalContentBlinkTag&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Icon&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">painter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">painterResource&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">id&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">drawable&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ic_android_black_24dp&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">contentDescription&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">null&lt;/span> &lt;span class="c1">// decorative element
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;blink&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.github.io/p/blink-like-its-1999/blink.gif"
+width="238"
+height="100"
+srcset="https://maiatoday.github.io/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="local content blink - click me to see the animation"
+class="gallery-image"
+data-flex-grow="238"
+data-flex-basis="571px"
+>&lt;/p>
+&lt;p>Although I defintely don&amp;rsquo;t support the irresponsible use of the blink tag, no investigation of reproducing retro website animations would be complete without a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> I realised again how powerful yet simple the animation system in Jetpack Compose can be. Be warned.&lt;/p>
+&lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
+>this repo&lt;/a>&lt;/p>
+&lt;p>Also in this series:&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/animating-rainbow-text/" title="Rainbow Text"
+>RainbowText&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/" title="Visitor Counter"
+>VisitorCounter&lt;/a>&lt;/p></description></item><item><title>Animating Rainbow Text</title><link>https://maiatoday.github.io/p/animating-rainbow-text/</link><pubDate>Sun, 27 Jun 2021 00:13:10 +0200</pubDate><guid>https://maiatoday.github.io/p/animating-rainbow-text/</guid><description>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/noDisco.png" alt="Featured image of post Animating Rainbow Text" />&lt;p>&lt;a class="link" href="https://www.wonder-tonic.com/geocitiesizer/" target="_blank" rel="noopener"
+>Do you remember web pages in the nineties?&lt;/a> Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.&lt;/p>
+&lt;p>First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowRed&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFDA034E&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowOrange&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFFF9800&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowYellow&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFFFEB3B&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowGreen&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF4CAF50&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowBlue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF2196F3&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowIndigo&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF3F51B5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowViolet&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF9C27B0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">SkittlesRainbow&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">listOf&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowRed&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowOrange&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowYellow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowGreen&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowBlue&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowIndigo&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RainbowViolet&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Since web pages in the nineties used Times New Roman and Helvetica, I added a free version of a serif font. I chose &lt;a class="link" href="https://fonts.google.com/specimen/Source&amp;#43;Serif&amp;#43;Pro?query=source&amp;#43;serif" target="_blank" rel="noopener"
+>Source Serif&lt;/a>. I included the ttf files in the project and made a FontFamily and hooked this into the theme.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject.png"
+width="630"
+height="476"
+srcset="https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_480x0_resize_box_3.png 480w, https://maiatoday.github.io/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="ttf files in projext"
+class="gallery-image"
+data-flex-grow="132"
+data-flex-basis="317px"
+>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">SourceSerif&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">FontFamily&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_regular&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_bold&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Bold&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_light&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Light&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_black&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Black&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Font&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">source_serif_pro_extra_light&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FontWeight&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ExtraLight&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">Typography&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Typography&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">defaultFontFamily&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">SourceSerif&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">MaterialTheme&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">colors&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">colors&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">typography&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Typography&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">shapes&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Shapes&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">content&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Next I made a composable that would colour each letter of a string. This simple composable took as many text parameters in and then split the string colouring each character to the colour of the rainbow in the parameter. The &lt;code>startColor&lt;/code> index is used to pick which colour the first letter will be.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">MultiColorText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TextStyle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">LocalTextStyle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">current&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">SkittlesRainbow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startColor&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">var&lt;/span> &lt;span class="py">index&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">startColor&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">letter&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">letter&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toString&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="k">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">index&lt;/span>&lt;span class="o">++&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">index&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">index&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This allowed me to create a second composable which used an infinite transition to animate continouously. I animate the &lt;code>startColor&lt;/code> integer and this will recompose the nested &lt;code>MultiColorText&lt;/code> composable. The &lt;code>animateValue&lt;/code> will change the value of &lt;code>colorIndex&lt;/code> over time and will use the &lt;code>Int.VectorConverter&lt;/code> to get a value between 0 and the size of the rainbow. In this way it creates an endless loop of changing integer values. The animation spec is a simple &lt;code>tween()&lt;/code> which just changes be&lt;em>tween&lt;/em> the &lt;code>initalvalue&lt;/code> and the &lt;code>targetValue&lt;/code> in alinear way. Different effects can be created by fiddling with the &lt;code>repeatMode&lt;/code> or the other parameters in the &lt;code>animationSpec&lt;/code> or adjusting the duration in the &lt;code>tween()&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">SnappyRainbowText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TextStyle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">LocalTextStyle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">current&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">SkittlesRainbow&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">colorIndex&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateValue&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="m">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">typeConverter&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Int&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">VectorConverter&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">MultiColorText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startColor&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">colorIndex&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I made a simple test screen with an edit text field so I could try it out.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/snappyDisco.gif"
+width="672"
+height="436"
+srcset="https://maiatoday.github.io/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="snappy rainbow click me to see the animation"
+class="gallery-image"
+data-flex-grow="154"
+data-flex-basis="369px"
+>&lt;/p>
+&lt;p>As you can see the animation is uhm &amp;hellip; snappy. If you can&amp;rsquo;t see it, click on the image.&lt;/p>
+&lt;p>Is it possible to change from one colour to the next smoothly and still have all the letters different colours?&lt;/p>
+&lt;p>The first step is to create a composable that will cycle through a rainbow of colours. This is done by creating a keyframes animation. The keyframe points are the colours of the rainbow.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">MultiColorSmoothText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TextStyle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">LocalTextStyle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">current&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">PastelRainbow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startIndex&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">duration&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">infiniteTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">interval&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">duration&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">color&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">infiniteTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateColor&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">keyframes&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">durationMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">duration&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">delayMillis&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">startIndex&lt;/span> &lt;span class="p">*&lt;/span> &lt;span class="n">interval&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">var&lt;/span> &lt;span class="py">i&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// set the keyframes from the rainbow with code
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">color&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// this is the crux of setting the keyframes
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="c1">// at is an infix method in the KeyframesSpec class
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">interval&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Restart&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">color&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This composable can be used to loop through colours of the rainbow on a Text composable.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/smoothOneDisco.gif"
+width="644"
+height="138"
+srcset="https://maiatoday.github.io/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="smooth coloured text"
+class="gallery-image"
+data-flex-grow="466"
+data-flex-basis="1120px"
+>&lt;/p>
+&lt;p>Finally I built a composable that split the string again and made each letter a &lt;code>MultiColorSmoothText&lt;/code>. It uses the &lt;code>startIndex&lt;/code> to delay the animation. The effect is that each letter is a different colour.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">SmoothRainbowText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">TextStyle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">LocalTextStyle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">current&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">PastelRainbow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startColor&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">duration&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">1200&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Row&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">var&lt;/span> &lt;span class="py">index&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">startColor&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">letter&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">MultiColorSmoothText&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">letter&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">toString&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rainbow&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startIndex&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">index&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">duration&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">duration&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">index&lt;/span>&lt;span class="o">++&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">index&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">rainbow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">index&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And the final smooth animating rainbow text using a pastel rainbow.&lt;/p>
+&lt;p>&lt;img src="https://maiatoday.github.io/p/animating-rainbow-text/smoothDisco.gif"
+width="672"
+height="436"
+srcset="https://maiatoday.github.io/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_480x0_resize_box.gif 480w, https://maiatoday.github.io/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_1024x0_resize_box.gif 1024w"
+loading="lazy"
+alt="smooth rainbow test"
+class="gallery-image"
+data-flex-grow="154"
+data-flex-basis="369px"
+>&lt;/p>
+&lt;p>Next I&amp;rsquo;ll tackle some more retro 90s web page inspired animations, visitor counters, flames, rotating images, shifting tiled backgrounds and walls of text that change size.&lt;/p>
+&lt;p>Until then&amp;hellip; &lt;a class="link" href="https://youtu.be/_NywTcGOUkE?t=44" target="_blank" rel="noopener"
+>this ain&amp;rsquo;t not disco&lt;/a>&lt;/p>
+&lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
+>this repo&lt;/a>&lt;/p>
+&lt;p>Also in this series:&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/blink-like-its-1999/" title="Blink Tag"
+>BlinkTag&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://maiatoday.github.io/p/welcome-you-are-visitor-number-12345/" title="Visitor Counter"
+>VisitorCounter&lt;/a>&lt;/p></description></item></channel></rss>
