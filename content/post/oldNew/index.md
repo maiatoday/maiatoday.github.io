@@ -12,4 +12,6 @@ Wow my first in real life conference in two years with [DevConf 2022](https://ww
 
 ![presenting the Habitica rep](habiticaRepo.png)
 
-Find the [slides here](Something%20old,%20Something%20new.pdf):
+Find the [slides here](Something%20old,%20Something%20new.pdf)
+
+{{< slideshare id="KvzfN25TSKaE5" >}}
