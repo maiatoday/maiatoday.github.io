@@ -10,4 +10,15 @@ class="gallery-image"
 data-flex-grow="179"
 data-flex-basis="431px"
 >&lt;/p>
-&lt;p>Find the &lt;a class="link" href="Something%20old,%20Something%20new.pdf" >slides here&lt;/a>:&lt;/p></description></item></channel></rss>
+&lt;p>Find the &lt;a class="link" href="Something%20old,%20Something%20new.pdf" >slides here&lt;/a>&lt;/p>
+&lt;iframe
+src="//www.slideshare.net/slideshow/embed_code/key/KvzfN25TSKaE5"
+title="SlideShare Presentation"
+height="400"
+frameborder="0"
+marginwidth="0"
+marginheight="0"
+scrolling="no"
+style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 20px; width: 100%;"
+allowfullscreen="true">
+&lt;/iframe></description></item></channel></rss>
