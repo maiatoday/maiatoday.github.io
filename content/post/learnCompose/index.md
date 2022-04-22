@@ -53,3 +53,13 @@ At the moment people often ask me where to go start learning Jetpack Compose. He
 [Adam McNeilly](https://www.twitch.tv/adammc331)
 
 [Florian Walther](https://twitch.tv/florianwalther)
+
+## Specialised areas
+
+### Modifiers
+
+[how it works](https://jorgecastillo.dev/composed-modifiers-in-jetpack-compose?utm_campaign=onCreate%20Digest&utm_medium=email&utm_source=Revue%20newsletter)
+
+### State
+
+### Animation
