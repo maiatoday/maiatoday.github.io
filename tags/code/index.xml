@@ -74,7 +74,13 @@ title="YouTube Video"
 &lt;p>&lt;a class="link" href="https://www.twitch.tv/adammc331" target="_blank" rel="noopener"
 >Adam McNeilly&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://twitch.tv/florianwalther" target="_blank" rel="noopener"
->Florian Walther&lt;/a>&lt;/p></description></item><item><title>Intro to Compose - Live code</title><link>https://maiatoday.github.io/p/intro-to-compose-live-code/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://maiatoday.github.io/p/intro-to-compose-live-code/</guid><description>&lt;img src="https://maiatoday.github.io/p/intro-to-compose-live-code/introBroadStrokes.png" alt="Featured image of post Intro to Compose - Live code" />&lt;p>A broad strokes intro to Jetpack Compose followed by a live code demo taster of what it is like to use this framework. The demo ranges from basic use, a bit of Material components and one small animation. Hosted by &lt;a class="link" href="https://www.meetup.com/DeveloperUG/" target="_blank" rel="noopener"
+>Florian Walther&lt;/a>&lt;/p>
+&lt;h2 id="specialised-areas">Specialised areas&lt;/h2>
+&lt;h3 id="modifiers">Modifiers&lt;/h3>
+&lt;p>&lt;a class="link" href="https://jorgecastillo.dev/composed-modifiers-in-jetpack-compose?utm_campaign=onCreate%20Digest&amp;amp;utm_medium=email&amp;amp;utm_source=Revue%20newsletter" target="_blank" rel="noopener"
+>how it works&lt;/a>&lt;/p>
+&lt;h3 id="state">State&lt;/h3>
+&lt;h3 id="animation">Animation&lt;/h3></description></item><item><title>Intro to Compose - Live code</title><link>https://maiatoday.github.io/p/intro-to-compose-live-code/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://maiatoday.github.io/p/intro-to-compose-live-code/</guid><description>&lt;img src="https://maiatoday.github.io/p/intro-to-compose-live-code/introBroadStrokes.png" alt="Featured image of post Intro to Compose - Live code" />&lt;p>A broad strokes intro to Jetpack Compose followed by a live code demo taster of what it is like to use this framework. The demo ranges from basic use, a bit of Material components and one small animation. Hosted by &lt;a class="link" href="https://www.meetup.com/DeveloperUG/" target="_blank" rel="noopener"
 >DevUG&lt;/a>. In the second part of the event, &lt;a class="link" href="https://twitter.com/tkuenneth" target="_blank" rel="noopener"
 >Thomas&lt;/a> gives us a summary of what&amp;rsquo;s new in Jetpack Compose 1.1&lt;/p>
 &lt;div class="video-wrapper">

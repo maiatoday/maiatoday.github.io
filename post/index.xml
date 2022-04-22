@@ -97,7 +97,13 @@ title="YouTube Video"
 &lt;p>&lt;a class="link" href="https://www.twitch.tv/adammc331" target="_blank" rel="noopener"
 >Adam McNeilly&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://twitch.tv/florianwalther" target="_blank" rel="noopener"
->Florian Walther&lt;/a>&lt;/p></description></item><item><title>Lightning Demo of Compose animation</title><link>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://maiatoday.github.io/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
+>Florian Walther&lt;/a>&lt;/p>
+&lt;h2 id="specialised-areas">Specialised areas&lt;/h2>
+&lt;h3 id="modifiers">Modifiers&lt;/h3>
+&lt;p>&lt;a class="link" href="https://jorgecastillo.dev/composed-modifiers-in-jetpack-compose?utm_campaign=onCreate%20Digest&amp;amp;utm_medium=email&amp;amp;utm_source=Revue%20newsletter" target="_blank" rel="noopener"
+>how it works&lt;/a>&lt;/p>
+&lt;h3 id="state">State&lt;/h3>
+&lt;h3 id="animation">Animation&lt;/h3></description></item><item><title>Lightning Demo of Compose animation</title><link>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://maiatoday.github.io/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://maiatoday.github.io/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
 >Jozi-JUG&lt;/a> demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
