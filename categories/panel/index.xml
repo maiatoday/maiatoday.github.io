@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>panel on maiatoday</title><link>https://maiatoday.net/categories/panel/</link><description>Recent content in panel on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 24 Feb 2022 20:34:09 +0200</lastBuildDate><atom:link href="https://maiatoday.net/categories/panel/index.xml" rel="self" type="application/rss+xml"/><item><title>Panel talk on Deep dive into compose</title><link>https://maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://maiatoday.net/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" />&lt;p>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>panel on maiatoday</title><link>https://www.maiatoday.net/categories/panel/</link><description>Recent content in panel on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 24 Feb 2022 20:34:09 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/panel/index.xml" rel="self" type="application/rss+xml"/><item><title>Panel talk on Deep dive into compose</title><link>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" />&lt;p>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/ued3Zb2YbCo"
@@ -6,7 +6,7 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://maiatoday.net/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://maiatoday.net/p/comparing-declarative-animation-frameworks/</guid><description>&lt;img src="https://maiatoday.net/p/comparing-declarative-animation-frameworks/animateCompare.png" alt="Featured image of post Comparing Declarative Animation frameworks" />&lt;p>A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter. Hosted by &lt;a class="link" href="https://gdg.community.dev/gdg-nuremberg/" target="_blank" rel="noopener"
+&lt;/div></description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</guid><description>&lt;img src="https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/animateCompare.png" alt="Featured image of post Comparing Declarative Animation frameworks" />&lt;p>A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter. Hosted by &lt;a class="link" href="https://gdg.community.dev/gdg-nuremberg/" target="_blank" rel="noopener"
 >GDG Nuremberg&lt;/a> We discovered many similarites, all the systems have some way to control the animation graph, with somewhat confusing differences in naming. A tween in compose is not the same as a tween in Flutter. Flutter &lt;code>Tween&lt;/code> is an &lt;code>animationSpec&lt;/code> in Compose. Compose &lt;code>tween&lt;/code> is a specific kind of &lt;code>Curve&lt;/code> in Flutter that does a linear interpolation. Oh and its a function in Compose and an object in Flutter.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
@@ -17,7 +17,7 @@ title="YouTube Video"
 &lt;/iframe>
 &lt;/div>
 &lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/18oxYA3cj31nYBfDStghSDwMC3s-5uNHy8-ItBihXTGI/edit?usp=sharing" target="_blank" rel="noopener"
->Slides&lt;/a>&lt;/p></description></item><item><title>Rust vs Kotlin panel discussion</title><link>https://maiatoday.net/p/rust-vs-kotlin-panel-discussion/</link><pubDate>Thu, 28 Oct 2021 16:21:43 +0200</pubDate><guid>https://maiatoday.net/p/rust-vs-kotlin-panel-discussion/</guid><description>&lt;p>Panel discussion on Rust and Kotlin for GDG Cape Town&lt;/p>
+>Slides&lt;/a>&lt;/p></description></item><item><title>Rust vs Kotlin panel discussion</title><link>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</link><pubDate>Thu, 28 Oct 2021 16:21:43 +0200</pubDate><guid>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</guid><description>&lt;p>Panel discussion on Rust and Kotlin for GDG Cape Town&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/Xr1TtmUxcOI"
@@ -25,7 +25,7 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>She Can Do Panel discussion: Collaboration between designers and developers</title><link>https://maiatoday.net/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</link><pubDate>Wed, 02 Jun 2021 15:51:17 +0200</pubDate><guid>https://maiatoday.net/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</guid><description>&lt;p>Panel discussion with GDG Johannesburg and She Can Do&lt;/p>
+&lt;/div></description></item><item><title>She Can Do Panel discussion: Collaboration between designers and developers</title><link>https://www.maiatoday.net/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</link><pubDate>Wed, 02 Jun 2021 15:51:17 +0200</pubDate><guid>https://www.maiatoday.net/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</guid><description>&lt;p>Panel discussion with GDG Johannesburg and She Can Do&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/viEIn7y1Meo"
@@ -33,7 +33,7 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>Future of Work Panel</title><link>https://maiatoday.net/p/future-of-work-panel/</link><pubDate>Wed, 03 Apr 2019 06:56:27 +0200</pubDate><guid>https://maiatoday.net/p/future-of-work-panel/</guid><description>&lt;img src="https://maiatoday.net/p/future-of-work-panel/futureOfWork2019.png" alt="Featured image of post Future of Work Panel" />&lt;p>Pre pandemic Offerzen hosted a live panel on the future of work. Some thoughts on freelancing and remote work. All this has changed now, if only we knew&amp;hellip;&lt;/p>
+&lt;/div></description></item><item><title>Future of Work Panel</title><link>https://www.maiatoday.net/p/future-of-work-panel/</link><pubDate>Wed, 03 Apr 2019 06:56:27 +0200</pubDate><guid>https://www.maiatoday.net/p/future-of-work-panel/</guid><description>&lt;img src="https://www.maiatoday.net/p/future-of-work-panel/futureOfWork2019.png" alt="Featured image of post Future of Work Panel" />&lt;p>Pre pandemic Offerzen hosted a live panel on the future of work. Some thoughts on freelancing and remote work. All this has changed now, if only we knew&amp;hellip;&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/cyV6NbPtyDo"

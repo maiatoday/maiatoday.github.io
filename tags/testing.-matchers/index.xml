@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>testing. matchers on maiatoday</title><link>https://maiatoday.net/tags/testing.-matchers/</link><description>Recent content in testing. matchers on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Jan 2018 14:54:45 +0000</lastBuildDate><atom:link href="https://maiatoday.net/tags/testing.-matchers/index.xml" rel="self" type="application/rss+xml"/><item><title>Note to Future Me — Testing Intents with Matchers</title><link>https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/</link><pubDate>Fri, 26 Jan 2018 14:54:45 +0000</pubDate><guid>https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/</guid><description>&lt;img src="https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults.png" alt="Featured image of post Note to Future Me — Testing Intents with Matchers" />&lt;p>I want to make my little experiments public and save them as a reminder for future me. So here is yet another post on Matchers and Espresso testing.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>testing. matchers on maiatoday</title><link>https://www.maiatoday.net/tags/testing.-matchers/</link><description>Recent content in testing. matchers on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Jan 2018 14:54:45 +0000</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/testing.-matchers/index.xml" rel="self" type="application/rss+xml"/><item><title>Note to Future Me — Testing Intents with Matchers</title><link>https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/</link><pubDate>Fri, 26 Jan 2018 14:54:45 +0000</pubDate><guid>https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/</guid><description>&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults.png" alt="Featured image of post Note to Future Me — Testing Intents with Matchers" />&lt;p>I want to make my little experiments public and save them as a reminder for future me. So here is yet another post on Matchers and Espresso testing.&lt;/p>
 &lt;p>I want to test this:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -13,19 +13,19 @@
 &lt;/ol>
 &lt;p>I built a contrived example, MainActivity collects some info and passes this to StarActivity in a parcelable called ContrivedParams. See the sample code &lt;a class="link" href="https://github.com/maiatoday/HelloIntentMatcher" target="_blank" rel="noopener"
 >on GitHub&lt;/a>.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1.png"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1.png"
 width="480"
 height="853"
-srcset="https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_480x0_resize_box_3.png 480w, https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="56"
 data-flex-basis="135px"
 >
-&lt;img src="https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars.png"
+&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars.png"
 width="480"
 height="853"
-srcset="https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_480x0_resize_box_3.png 480w, https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="56"
@@ -60,10 +60,10 @@ data-flex-basis="135px"
 >Espresso-intents library&lt;/a> . Start the activity with an &lt;code>IntentsTestRule&lt;/code>. The IntentsTestRule initialises the Espresso intents before each test and releases them again after the test completes. I used the &lt;code>intended&lt;/code> method to test the intent and the &lt;code>hasEntry&lt;/code> method to check for the extra. I compared the extra with an expected object. As a bonus I wrote a custom matcher to check the properties of the object that was in the intent. Custom matchers are useful if you do not need to check all of the properties in the data object.&lt;/p>
 &lt;p>The intent test:&lt;/p>
 &lt;p>One of the custom matchers:&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults.png"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults.png"
 width="1480"
 height="214"
-srcset="https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_480x0_resize_box_3.png 480w, https://maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="All green"
 class="gallery-image"

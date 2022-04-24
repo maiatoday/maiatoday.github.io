@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>animate on maiatoday</title><link>https://maiatoday.net/tags/animate/</link><description>Recent content in animate on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 21:13:06 +0200</lastBuildDate><atom:link href="https://maiatoday.net/tags/animate/index.xml" rel="self" type="application/rss+xml"/><item><title>Lightning Demo of Compose animation</title><link>https://maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>animate on maiatoday</title><link>https://www.maiatoday.net/tags/animate/</link><description>Recent content in animate on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 21:13:06 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/animate/index.xml" rel="self" type="application/rss+xml"/><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
 >Jozi-JUG&lt;/a> demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
@@ -9,7 +9,7 @@ title="YouTube Video"
 &lt;/iframe>
 &lt;/div>
 &lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/132iJ50ZoMZJwaFzmHWiEk6YsEMrS0rb0TTZ7KeM7MI4/edit?usp=sharing" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item><item><title>Magic Sprinkles at DevFest UK Ireland</title><link>https://maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</link><pubDate>Sat, 29 Jan 2022 12:53:10 +0200</pubDate><guid>https://maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</guid><description>&lt;img src="https://maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/devfestBanner.jpg" alt="Featured image of post Magic Sprinkles at DevFest UK Ireland" />&lt;p>A shorter version of my Magic Sprinkles talk presented at &lt;a class="link" href="https://www.devfest-uki.com/schedule" target="_blank" rel="noopener"
+>slides&lt;/a>&lt;/p></description></item><item><title>Magic Sprinkles at DevFest UK Ireland</title><link>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</link><pubDate>Sat, 29 Jan 2022 12:53:10 +0200</pubDate><guid>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</guid><description>&lt;img src="https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/devfestBanner.jpg" alt="Featured image of post Magic Sprinkles at DevFest UK Ireland" />&lt;p>A shorter version of my Magic Sprinkles talk presented at &lt;a class="link" href="https://www.devfest-uki.com/schedule" target="_blank" rel="noopener"
 >DevFest UK Ireland&lt;/a>&lt;/p>
 &lt;p>Magic Sprinkles: Adding animations to your app with Jetpack Compose&lt;/p>
 &lt;p>I have some Jetpack Compose UI components in my app and now I want to add animations, where do I start?
@@ -26,23 +26,23 @@ At the end of this talk you will:&lt;/p>
 &lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/1KFfMNqm6GhorZxzhd-n_URsTHq_bOEApWTgOfJoc_to/edit?usp=sharing" target="_blank" rel="noopener"
 >Slides&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://youtu.be/MmrFEo-3acs?t=8157" target="_blank" rel="noopener"
->Video&lt;/a>&lt;/p></description></item><item><title>Confetti Cleanup</title><link>https://maiatoday.net/p/confetti-cleanup/</link><pubDate>Fri, 31 Dec 2021 07:37:42 +0200</pubDate><guid>https://maiatoday.net/p/confetti-cleanup/</guid><description>&lt;img src="https://maiatoday.net/p/confetti-cleanup/confetti_doge.png" alt="Featured image of post Confetti Cleanup" />&lt;p>In my exploration of animation in Jetpack Compose I built a Confetti modifier that could be applied to any composable. I first showed the modifier in my &lt;a class="link" href="https://vimeo.com/627636211?embedded=true&amp;amp;source=video_title&amp;amp;owner=18175981" target="_blank" rel="noopener"
+>Video&lt;/a>&lt;/p></description></item><item><title>Confetti Cleanup</title><link>https://www.maiatoday.net/p/confetti-cleanup/</link><pubDate>Fri, 31 Dec 2021 07:37:42 +0200</pubDate><guid>https://www.maiatoday.net/p/confetti-cleanup/</guid><description>&lt;img src="https://www.maiatoday.net/p/confetti-cleanup/confetti_doge.png" alt="Featured image of post Confetti Cleanup" />&lt;p>In my exploration of animation in Jetpack Compose I built a Confetti modifier that could be applied to any composable. I first showed the modifier in my &lt;a class="link" href="https://vimeo.com/627636211?embedded=true&amp;amp;source=video_title&amp;amp;owner=18175981" target="_blank" rel="noopener"
 >presentation for Chicago Roboto&lt;/a> but since I made it something was bothering me. The way that I can get the state in Compose to register change is by making copies of objects or making new objects. For a modifier that uses particles this can be many objects.&lt;/p>
 &lt;p>I profiled my original modifier and sure enough I see the object allocation and also the garbage collectore cleaning up when the confetti modifier is visible.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/confetti-cleanup/confetti_orig_gc.png"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_gc.png"
 width="790"
 height="566"
-srcset="https://maiatoday.net/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_480x0_resize_box_3.png 480w, https://maiatoday.net/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Confetto in the bin"
 class="gallery-image"
 data-flex-grow="139"
 data-flex-basis="334px"
 >&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/confetti-cleanup/confetti_orig_objects.png"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_objects.png"
 width="1910"
 height="236"
-srcset="https://maiatoday.net/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_480x0_resize_box_3.png 480w, https://maiatoday.net/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Allocated Confetto objects"
 class="gallery-image"
@@ -52,10 +52,10 @@ data-flex-basis="1942px"
 &lt;p>Fast forward to Dec 2021 and my friends over at Code with Italians built a similar &lt;a class="link" href="https://www.youtube.com/watch?v=FgZvs1BsAxE&amp;amp;t=1776s" target="_blank" rel="noopener"
 >snow modifier&lt;/a>. Revisiting my modifier, I cleaned it up. I managed to get rid of some of the object allocation. However since it is a particle system and each of the particles change position, it needs some form of state that changes as the position of the particles change. I used the &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/ui/geometry/Offset" target="_blank" rel="noopener"
 >Offset class&lt;/a> as this is the object that a Circle needs to draw and the object has been optimised to pack the x and y floats. It also has some other useful functions and operators. Offset is immutable so if the particle changes position a new object is made. It is smaller than my original implementation. It isn&amp;rsquo;t really fair to compare the screenshot below with the one above as the time over which the heap capture ran is is not the same. The shallow size of Offset is 16 and the shallow size of the original Confetto objects is 24 and the point inside the Confetto object also has a shallow size of 16. The improvements eliminated the allocation of the extra Confetto object.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/confetti-cleanup/confetti_offset.png"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/confetti-cleanup/confetti_offset.png"
 width="2002"
 height="210"
-srcset="https://maiatoday.net/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_480x0_resize_box_3.png 480w, https://maiatoday.net/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Confetti using offset"
 class="gallery-image"
@@ -104,10 +104,10 @@ data-flex-basis="2288px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Red&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.net/p/confetti-cleanup/confetti_preview.png"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://www.maiatoday.net/p/confetti-cleanup/confetti_preview.png"
 width="706"
 height="594"
-srcset="https://maiatoday.net/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_480x0_resize_box_3.png 480w, https://maiatoday.net/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Confetti preview"
 class="gallery-image"
@@ -115,11 +115,11 @@ data-flex-grow="118"
 data-flex-basis="285px"
 >&lt;/p>
 &lt;p>The &lt;a class="link" href="https://gitlab.com/maiatoday/esw/-/blob/main/app/src/main/java/net/maiatoday/esw/ui/modifiers/ConfettiModifier.kt" target="_blank" rel="noopener"
->code for the cleaned up confetti modifier&lt;/a>&lt;/p></description></item><item><title>Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app</title><link>https://maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</link><pubDate>Tue, 28 Sep 2021 16:10:24 +0200</pubDate><guid>https://maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</guid><description>&lt;img src="https://maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/magic_sprinkles.png" alt="Featured image of post Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app" />&lt;p>I presented a talk for Chicago Roboto 2021 and for GDG Cape Town titled Magic Sprinkles: Adding animations to and existing app. Below are the videos of both talks and the slides&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021.png"
+>code for the cleaned up confetti modifier&lt;/a>&lt;/p></description></item><item><title>Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app</title><link>https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</link><pubDate>Tue, 28 Sep 2021 16:10:24 +0200</pubDate><guid>https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</guid><description>&lt;img src="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/magic_sprinkles.png" alt="Featured image of post Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app" />&lt;p>I presented a talk for Chicago Roboto 2021 and for GDG Cape Town titled Magic Sprinkles: Adding animations to and existing app. Below are the videos of both talks and the slides&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021.png"
 width="1300"
 height="738"
-srcset="https://maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu74de83909c619652ed12fb7839e74841_1063439_480x0_resize_box_3.png 480w, https://maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu74de83909c619652ed12fb7839e74841_1063439_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu74de83909c619652ed12fb7839e74841_1063439_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu74de83909c619652ed12fb7839e74841_1063439_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Chicago Roboto"
 class="gallery-image"
@@ -138,12 +138,12 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>Welcome you are visitor number 12345</title><link>https://maiatoday.net/p/welcome-you-are-visitor-number-12345/</link><pubDate>Mon, 12 Jul 2021 21:44:03 +0200</pubDate><guid>https://maiatoday.net/p/welcome-you-are-visitor-number-12345/</guid><description>&lt;img src="https://maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter.png" alt="Featured image of post Welcome you are visitor number 12345" />&lt;p>Another step forward in recreating the icon 90s website look is the &lt;a class="link" href="https://www.awwwards.com/5-old-school-web-design-trends-nobody-misses.html" target="_blank" rel="noopener"
+&lt;/div></description></item><item><title>Welcome you are visitor number 12345</title><link>https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/</link><pubDate>Mon, 12 Jul 2021 21:44:03 +0200</pubDate><guid>https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/</guid><description>&lt;img src="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter.png" alt="Featured image of post Welcome you are visitor number 12345" />&lt;p>Another step forward in recreating the icon 90s website look is the &lt;a class="link" href="https://www.awwwards.com/5-old-school-web-design-trends-nobody-misses.html" target="_blank" rel="noopener"
 >hit counter, visitor counter or web counter&lt;/a> in classic squemorphic odometer style.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters.png"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters.png"
 width="768"
 height="214"
-srcset="https://maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_480x0_resize_box_3.png 480w, https://maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="hit counters"
 class="gallery-image"
@@ -212,20 +212,20 @@ data-flex-basis="861px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can see what this looks like in the gifs below.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter.gif"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter.gif"
 width="672"
 height="270"
-srcset="https://maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_480x0_resize_box.gif 480w, https://maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_1024x0_resize_box.gif 1024w"
+srcset="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_1024x0_resize_box.gif 1024w"
 loading="lazy"
 alt="visitor counter going up - click me to see the animation"
 class="gallery-image"
 data-flex-grow="248"
 data-flex-basis="597px"
 >&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown.gif"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown.gif"
 width="672"
 height="270"
-srcset="https://maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_480x0_resize_box.gif 480w, https://maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_1024x0_resize_box.gif 1024w"
+srcset="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_1024x0_resize_box.gif 1024w"
 loading="lazy"
 alt="visitor counter going down - click me to see the animation"
 class="gallery-image"
@@ -238,10 +238,10 @@ data-flex-basis="597px"
 &lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
 >this repo&lt;/a>&lt;/p>
 &lt;p>Also in this series:&lt;/p>
-&lt;p>&lt;a class="link" href="https://maiatoday.net/p/animating-rainbow-text/" title="Rainbow Text"
+&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/animating-rainbow-text/" title="Rainbow Text"
 >RainbowText&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://maiatoday.net/p/blink-like-its-1999/" title="Blink Tag"
->BlinkTag&lt;/a>&lt;/p></description></item><item><title>&lt;blink> like it's 1999</title><link>https://maiatoday.net/p/blink-like-its-1999/</link><pubDate>Sat, 03 Jul 2021 17:27:21 +0200</pubDate><guid>https://maiatoday.net/p/blink-like-its-1999/</guid><description>&lt;img src="https://maiatoday.net/p/blink-like-its-1999/blinktag.png" alt="Featured image of post &lt;blink> like it's 1999" />&lt;p>Another small experiment to explore Jetpack Compose animations. I came to the conclusion that any value that is passed as a parameter could be animated, including anything in the modifier. So I set out to build a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> tag.&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/blink-like-its-1999/" title="Blink Tag"
+>BlinkTag&lt;/a>&lt;/p></description></item><item><title>&lt;blink> like it's 1999</title><link>https://www.maiatoday.net/p/blink-like-its-1999/</link><pubDate>Sat, 03 Jul 2021 17:27:21 +0200</pubDate><guid>https://www.maiatoday.net/p/blink-like-its-1999/</guid><description>&lt;img src="https://www.maiatoday.net/p/blink-like-its-1999/blinktag.png" alt="Featured image of post &lt;blink> like it's 1999" />&lt;p>Another small experiment to explore Jetpack Compose animations. I came to the conclusion that any value that is passed as a parameter could be animated, including anything in the modifier. So I set out to build a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> tag.&lt;/p>
 &lt;p>My first attempt creates a composable function that takes the modifier, animates it and passes it back to the content lambda. Like this:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">BlinkTag&lt;/span>&lt;span class="p">(&lt;/span>
@@ -276,10 +276,10 @@ data-flex-basis="597px"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.net/p/blink-like-its-1999/ghosts.gif"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://www.maiatoday.net/p/blink-like-its-1999/ghosts.gif"
 width="234"
 height="290"
-srcset="https://maiatoday.net/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_480x0_resize_box.gif 480w, https://maiatoday.net/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_1024x0_resize_box.gif 1024w"
+srcset="https://www.maiatoday.net/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/blink-like-its-1999/ghosts_hua1cd420c32a70cce331e22fc4c80b837_765510_1024x0_resize_box.gif 1024w"
 loading="lazy"
 alt="animated text and icons - click me to see the animation"
 class="gallery-image"
@@ -310,10 +310,10 @@ data-flex-basis="193px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.net/p/blink-like-its-1999/blinkLong.gif"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://www.maiatoday.net/p/blink-like-its-1999/blinkLong.gif"
 width="260"
 height="134"
-srcset="https://maiatoday.net/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_480x0_resize_box.gif 480w, https://maiatoday.net/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_1024x0_resize_box.gif 1024w"
+srcset="https://www.maiatoday.net/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/blink-like-its-1999/blinkLong_hub935aebf6e9ab4ddf6a3300a561bc939_204477_1024x0_resize_box.gif 1024w"
 loading="lazy"
 alt="more relistic blink - click me to see the animation"
 class="gallery-image"
@@ -352,10 +352,10 @@ data-flex-basis="465px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;blink&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://maiatoday.net/p/blink-like-its-1999/blink.gif"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://www.maiatoday.net/p/blink-like-its-1999/blink.gif"
 width="238"
 height="100"
-srcset="https://maiatoday.net/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_480x0_resize_box.gif 480w, https://maiatoday.net/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_1024x0_resize_box.gif 1024w"
+srcset="https://www.maiatoday.net/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/blink-like-its-1999/blink_hucb031d25f8e26dc45bc51bdc7849af53_578479_1024x0_resize_box.gif 1024w"
 loading="lazy"
 alt="local content blink - click me to see the animation"
 class="gallery-image"
@@ -366,10 +366,10 @@ data-flex-basis="571px"
 &lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
 >this repo&lt;/a>&lt;/p>
 &lt;p>Also in this series:&lt;/p>
-&lt;p>&lt;a class="link" href="https://maiatoday.net/p/animating-rainbow-text/" title="Rainbow Text"
+&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/animating-rainbow-text/" title="Rainbow Text"
 >RainbowText&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://maiatoday.net/p/welcome-you-are-visitor-number-12345/" title="Visitor Counter"
->VisitorCounter&lt;/a>&lt;/p></description></item><item><title>Animating Rainbow Text</title><link>https://maiatoday.net/p/animating-rainbow-text/</link><pubDate>Sun, 27 Jun 2021 00:13:10 +0200</pubDate><guid>https://maiatoday.net/p/animating-rainbow-text/</guid><description>&lt;img src="https://maiatoday.net/p/animating-rainbow-text/noDisco.png" alt="Featured image of post Animating Rainbow Text" />&lt;p>&lt;a class="link" href="https://www.wonder-tonic.com/geocitiesizer/" target="_blank" rel="noopener"
+&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/" title="Visitor Counter"
+>VisitorCounter&lt;/a>&lt;/p></description></item><item><title>Animating Rainbow Text</title><link>https://www.maiatoday.net/p/animating-rainbow-text/</link><pubDate>Sun, 27 Jun 2021 00:13:10 +0200</pubDate><guid>https://www.maiatoday.net/p/animating-rainbow-text/</guid><description>&lt;img src="https://www.maiatoday.net/p/animating-rainbow-text/noDisco.png" alt="Featured image of post Animating Rainbow Text" />&lt;p>&lt;a class="link" href="https://www.wonder-tonic.com/geocitiesizer/" target="_blank" rel="noopener"
 >Do you remember web pages in the nineties?&lt;/a> Everything was pulsing, rotating and animating. I am exploring Jetpack Compose animations and I figured if I can reproduce a 90s web page look, I can do anything. Also June is the month of Rainbows. So to kick off this series I am building animating rainbow text.&lt;/p>
 &lt;p>First I need a rainbow. It needs to be flexible enough for me to be able to swap in any rainbow.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">RainbowRed&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFDA034E&lt;/span>&lt;span class="p">)&lt;/span>
@@ -391,10 +391,10 @@ data-flex-basis="571px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Since web pages in the nineties used Times New Roman and Helvetica, I added a free version of a serif font. I chose &lt;a class="link" href="https://fonts.google.com/specimen/Source&amp;#43;Serif&amp;#43;Pro?query=source&amp;#43;serif" target="_blank" rel="noopener"
 >Source Serif&lt;/a>. I included the ttf files in the project and made a FontFamily and hooked this into the theme.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/animating-rainbow-text/ttfInProject.png"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/animating-rainbow-text/ttfInProject.png"
 width="630"
 height="476"
-srcset="https://maiatoday.net/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_480x0_resize_box_3.png 480w, https://maiatoday.net/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="ttf files in projext"
 class="gallery-image"
@@ -462,10 +462,10 @@ data-flex-basis="317px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I made a simple test screen with an edit text field so I could try it out.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/animating-rainbow-text/snappyDisco.gif"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/animating-rainbow-text/snappyDisco.gif"
 width="672"
 height="436"
-srcset="https://maiatoday.net/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_480x0_resize_box.gif 480w, https://maiatoday.net/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_1024x0_resize_box.gif 1024w"
+srcset="https://www.maiatoday.net/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/animating-rainbow-text/snappyDisco_hu09aeae492282d5b27b0ee347c6549494_786979_1024x0_resize_box.gif 1024w"
 loading="lazy"
 alt="snappy rainbow click me to see the animation"
 class="gallery-image"
@@ -506,10 +506,10 @@ data-flex-basis="369px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">color&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This composable can be used to loop through colours of the rainbow on a Text composable.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/animating-rainbow-text/smoothOneDisco.gif"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/animating-rainbow-text/smoothOneDisco.gif"
 width="644"
 height="138"
-srcset="https://maiatoday.net/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_480x0_resize_box.gif 480w, https://maiatoday.net/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_1024x0_resize_box.gif 1024w"
+srcset="https://www.maiatoday.net/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/animating-rainbow-text/smoothOneDisco_huc13e5c07c6d94ff93e827fb89e228bb0_790396_1024x0_resize_box.gif 1024w"
 loading="lazy"
 alt="smooth coloured text"
 class="gallery-image"
@@ -542,10 +542,10 @@ data-flex-basis="1120px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And the final smooth animating rainbow text using a pastel rainbow.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/animating-rainbow-text/smoothDisco.gif"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/animating-rainbow-text/smoothDisco.gif"
 width="672"
 height="436"
-srcset="https://maiatoday.net/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_480x0_resize_box.gif 480w, https://maiatoday.net/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_1024x0_resize_box.gif 1024w"
+srcset="https://www.maiatoday.net/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/animating-rainbow-text/smoothDisco_hu2b1457449e931d2edcf3f88abdb0b613_5643028_1024x0_resize_box.gif 1024w"
 loading="lazy"
 alt="smooth rainbow test"
 class="gallery-image"
@@ -558,16 +558,16 @@ data-flex-basis="369px"
 &lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
 >this repo&lt;/a>&lt;/p>
 &lt;p>Also in this series:&lt;/p>
-&lt;p>&lt;a class="link" href="https://maiatoday.net/p/blink-like-its-1999/" title="Blink Tag"
+&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/blink-like-its-1999/" title="Blink Tag"
 >BlinkTag&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://maiatoday.net/p/welcome-you-are-visitor-number-12345/" title="Visitor Counter"
->VisitorCounter&lt;/a>&lt;/p></description></item><item><title>Random Animating Pie Button</title><link>https://maiatoday.net/p/random-animating-pie-button/</link><pubDate>Wed, 16 Jun 2021 21:36:11 +0000</pubDate><guid>https://maiatoday.net/p/random-animating-pie-button/</guid><description>&lt;img src="https://maiatoday.net/p/random-animating-pie-button/randomPieBanner.png" alt="Featured image of post Random Animating Pie Button" />&lt;p>I am exploring animations with small sampler functions using Jetpack Compose. This one is a custom component that draws a &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/PieStatus.kt" target="_blank" rel="noopener"
+&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/" title="Visitor Counter"
+>VisitorCounter&lt;/a>&lt;/p></description></item><item><title>Random Animating Pie Button</title><link>https://www.maiatoday.net/p/random-animating-pie-button/</link><pubDate>Wed, 16 Jun 2021 21:36:11 +0000</pubDate><guid>https://www.maiatoday.net/p/random-animating-pie-button/</guid><description>&lt;img src="https://www.maiatoday.net/p/random-animating-pie-button/randomPieBanner.png" alt="Featured image of post Random Animating Pie Button" />&lt;p>I am exploring animations with small sampler functions using Jetpack Compose. This one is a custom component that draws a &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/PieStatus.kt" target="_blank" rel="noopener"
 >little pie chart&lt;/a>. It will animate a random pie value on the click of the &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/RandomPieButton.kt" target="_blank" rel="noopener"
 >button&lt;/a>.&lt;/p>
-&lt;p>&lt;img src="https://maiatoday.net/p/random-animating-pie-button/randomPieClick.gif"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/random-animating-pie-button/randomPieClick.gif"
 width="252"
 height="188"
-srcset="https://maiatoday.net/p/random-animating-pie-button/randomPieClick_hue87a2dd35b7d2dcf39402d15fcef185b_464915_480x0_resize_box.gif 480w, https://maiatoday.net/p/random-animating-pie-button/randomPieClick_hue87a2dd35b7d2dcf39402d15fcef185b_464915_1024x0_resize_box.gif 1024w"
+srcset="https://www.maiatoday.net/p/random-animating-pie-button/randomPieClick_hue87a2dd35b7d2dcf39402d15fcef185b_464915_480x0_resize_box.gif 480w, https://www.maiatoday.net/p/random-animating-pie-button/randomPieClick_hue87a2dd35b7d2dcf39402d15fcef185b_464915_1024x0_resize_box.gif 1024w"
 loading="lazy"
 alt="click and animate"
 class="gallery-image"
