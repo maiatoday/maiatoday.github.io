@@ -1,4 +1,4 @@
-baseurl: https://maiatoday.github.io
+baseurl: https://maiatoday.net
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
