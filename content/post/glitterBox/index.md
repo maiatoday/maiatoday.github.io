@@ -10,16 +10,16 @@ draft: false
 
 Another installment of the 90s web aesthetic experiments. In the 9Os [animated cursors](https://tholman.com/cursor-effects/) were all the rage. On a mobile device of course we don't have the concept of a cursor. There are gestures that can be detected: touches and drags. So for this project I split up the following pieces to code:
 
-The benefits of this approach is the animating composables can be reused as progress indicators or other elements that appear or disappear to reward customers on their actions.
+The benefits of this approach are the animating composables can be reused as progress indicators or other elements that appear or disappear to reward customers on their actions.
 
-1. Detect gestures and draw a composable lambda on screen based on the gestures - CursorVisible
+1. Detect gestures and draw a composable lambda on screen based on the gestures - `CursorVisible`
 2. Build a few animating composables
-    1. An animating lifesaver candy /Sweet
-    2. A pulsing pink and red heart
-3. Build a screen where I can switch the different animating composables in the CursorVisible composable
+    * An animating lifesaver candy /Sweet
+    * A pulsing pink and red heart
+3. Build a screen where I can switch the different animating composables in the `CursorVisible` composable
 4. Build pixie dust animation by repurposing my confitti code
 
-First of all I needed a Composeable which would take a context but could allow me to drag another composable around. Here's the code for this. It makes the content visible and invisible on a tap and lets you drag the content.
+First of all I needed a Composeable which would take a `content` and could allow me to drag another composable around. Here's the code for this. It makes the `content` visible and invisible on a tap and lets you drag the `content`.
 
 ```kotlin
 @Composable
@@ -214,11 +214,11 @@ fun HeartPulse(modifier: Modifier = Modifier) {
 }
 ```
 
-Last but not least the fairy/pixie dust. For this one I made a GlitterBox which would be the container for the glitter flecks. The state of the glitter and the glitter fleck code is a particle system similar to what I used in the confetti modifier. You can see that in action in the github repo or read the description in an older blog post.
+Last but not least the fairy/pixie dust. For this one I made a GlitterBox which would be the container for the glitter flecks. The state of the glitter and the glitter fleck code is a particle system similar to what I used in the confetti modifier. You can see that in action in the [github repo]((https://github.com/maiatoday/MagicSprinkles)) or read the description in an [older blog post](https://www.maiatoday.net/p/confetti-cleanup/).
 
 ![pixie dust - click me to see the animation](glitterBox.gif)
 
-Putting it all together I have a simple box with a little magenta box that can be dragged around on the screen. The position of the magenta box is fed into the particle system on the `onDrag` calls and the glitter flecks are generated.
+Putting it all together I have a simple outside box with a little magenta cursor box that can be dragged around on the screen. The position of the magenta box is fed into the particle system on the `onDrag` calls and the glitter flecks are generated.
 
 Here's the glitter box:
 ```kotlin
