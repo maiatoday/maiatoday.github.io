@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>code on maiatoday</title><link>https://www.maiatoday.net/tags/code/</link><description>Recent content in code on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 24 May 2022 22:11:19 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/code/index.xml" rel="self" type="application/rss+xml"/><item><title>Animated Pixie Dust Cursor and more</title><link>https://www.maiatoday.net/p/animated-pixie-dust-cursor-and-more/</link><pubDate>Tue, 24 May 2022 22:11:19 +0200</pubDate><guid>https://www.maiatoday.net/p/animated-pixie-dust-cursor-and-more/</guid><description>&lt;img src="https://www.maiatoday.net/p/animated-pixie-dust-cursor-and-more/glitterBox.png" alt="Featured image of post Animated Pixie Dust Cursor and more" />&lt;p>Another installment of the 90s web aesthetic experiments. In the 9Os &lt;a class="link" href="https://tholman.com/cursor-effects/" target="_blank" rel="noopener"
 >animated cursors&lt;/a> were all the rage. On a mobile device of course we don&amp;rsquo;t have the concept of a cursor. There are gestures that can be detected: touches and drags. So for this project I split up the following pieces to code:&lt;/p>
-&lt;p>The benefits of this approach is the animating composables can be reused as progress indicators or other elements that appear or disappear to reward customers on their actions.&lt;/p>
+&lt;p>The benefits of this approach are the animating composables can be reused as progress indicators or other elements that appear or disappear to reward customers on their actions.&lt;/p>
 &lt;ol>
-&lt;li>Detect gestures and draw a composable lambda on screen based on the gestures - CursorVisible&lt;/li>
+&lt;li>Detect gestures and draw a composable lambda on screen based on the gestures - &lt;code>CursorVisible&lt;/code>&lt;/li>
 &lt;li>Build a few animating composables
-&lt;ol>
+&lt;ul>
 &lt;li>An animating lifesaver candy /Sweet&lt;/li>
 &lt;li>A pulsing pink and red heart&lt;/li>
-&lt;/ol>
+&lt;/ul>
 &lt;/li>
-&lt;li>Build a screen where I can switch the different animating composables in the CursorVisible composable&lt;/li>
+&lt;li>Build a screen where I can switch the different animating composables in the &lt;code>CursorVisible&lt;/code> composable&lt;/li>
 &lt;li>Build pixie dust animation by repurposing my confitti code&lt;/li>
 &lt;/ol>
-&lt;p>First of all I needed a Composeable which would take a context but could allow me to drag another composable around. Here&amp;rsquo;s the code for this. It makes the content visible and invisible on a tap and lets you drag the content.&lt;/p>
+&lt;p>First of all I needed a Composeable which would take a &lt;code>content&lt;/code> and could allow me to drag another composable around. Here&amp;rsquo;s the code for this. It makes the &lt;code>content&lt;/code> visible and invisible on a tap and lets you drag the &lt;code>content&lt;/code>.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">CursorVisible&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nd">@Composable&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="n">Unit&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">boxSize&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">100.&lt;/span>&lt;span class="n">dp&lt;/span>
@@ -199,7 +199,8 @@ data-flex-basis="363px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Heart&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">scale&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">heartSize&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">heartColor&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Last but not least the fairy/pixie dust. For this one I made a GlitterBox which would be the container for the glitter flecks. The state of the glitter and the glitter fleck code is a particle system similar to what I used in the confetti modifier. You can see that in action in the github repo or read the description in an older blog post.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Last but not least the fairy/pixie dust. For this one I made a GlitterBox which would be the container for the glitter flecks. The state of the glitter and the glitter fleck code is a particle system similar to what I used in the confetti modifier. You can see that in action in the &lt;a class="link" href="%28https://github.com/maiatoday/MagicSprinkles%29" >github repo&lt;/a> or read the description in an &lt;a class="link" href="https://www.maiatoday.net/p/confetti-cleanup/" target="_blank" rel="noopener"
+>older blog post&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://www.maiatoday.net/p/animated-pixie-dust-cursor-and-more/glitterBox.gif"
 width="760"
 height="502"
@@ -210,7 +211,7 @@ class="gallery-image"
 data-flex-grow="151"
 data-flex-basis="363px"
 >&lt;/p>
-&lt;p>Putting it all together I have a simple box with a little magenta box that can be dragged around on the screen. The position of the magenta box is fed into the particle system on the &lt;code>onDrag&lt;/code> calls and the glitter flecks are generated.&lt;/p>
+&lt;p>Putting it all together I have a simple outside box with a little magenta cursor box that can be dragged around on the screen. The position of the magenta box is fed into the particle system on the &lt;code>onDrag&lt;/code> calls and the glitter flecks are generated.&lt;/p>
 &lt;p>Here&amp;rsquo;s the glitter box:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">GlitterBox&lt;/span>&lt;span class="p">(&lt;/span>
