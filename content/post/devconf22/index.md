@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Something old, something new - Adding Jetpack Compose to Habitica"
+title: "Devconf 22"
 image: oldNew.png
 categories: [talk]
 tags: [compose, devconf 2022]
