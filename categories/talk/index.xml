@@ -1,9 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talk on maiatoday</title><link>https://www.maiatoday.net/categories/talk/</link><description>Recent content in talk on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 07 Apr 2022 16:26:46 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/talk/index.xml" rel="self" type="application/rss+xml"/><item><title>Something old, something new - Adding Jetpack Compose to Habitica</title><link>https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/</link><pubDate>Thu, 07 Apr 2022 16:26:46 +0200</pubDate><guid>https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/</guid><description>&lt;img src="https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/oldNew.png" alt="Featured image of post Something old, something new - Adding Jetpack Compose to Habitica" />&lt;p>Wow my first in real life conference in two years with &lt;a class="link" href="https://www.devconf.co.za/" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talk on maiatoday</title><link>https://www.maiatoday.net/categories/talk/</link><description>Recent content in talk on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 02 Jun 2022 15:07:56 -0500</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/talk/index.xml" rel="self" type="application/rss+xml"/><item><title>Droidcon SF 22</title><link>https://www.maiatoday.net/p/droidcon-sf-22/</link><pubDate>Thu, 02 Jun 2022 15:07:56 -0500</pubDate><guid>https://www.maiatoday.net/p/droidcon-sf-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/droidconSF2022.jpg" alt="Featured image of post Droidcon SF 22" />&lt;p>&lt;a class="link" href="https://www.sf.droidcon.com/" target="_blank" rel="noopener"
+>Droidcon SF 2022&lt;/a>, first conference outside of South Africa after the lockdown years. I was so happy to be part of the speakers for my talk titled &lt;code>Something old, something new - adding Jetpack Compose to a large open source app&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia.jpg"
+width="2048"
+height="1536"
+srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu89132f5cb031f8f78ce86b92690141df_340990_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu89132f5cb031f8f78ce86b92690141df_340990_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="On stage"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>Here&amp;rsquo;s the abstract:&lt;/p>
+&lt;p>Jetpack Compose is the new UI framework for Android from Google. Can I take an existing large open source Android app and get the benefit of what compose offers? This talk is a practical report of adding the new UI framework to an existing consumer app. The app I have chosen is Habitica the very popular habit tracking app.&lt;/p>
+&lt;p>I am presenting this exploration as a travel diary of sorts. It will include:&lt;/p>
+&lt;ul>
+&lt;li>Lay of the land: looking at the existing code architecture and assessing where best to add the new framework&lt;/li>
+&lt;li>A map and a plan: opinions on architectural choices that make migration easier&lt;/li>
+&lt;li>Lists and Columns: a practical demonstration of how to port existing UI&lt;/li>
+&lt;li>Here be monsters: recounts of trials and tribulations of working with the existing code and the new framework&lt;/li>
+&lt;li>Home again: a demo&lt;/li>
+&lt;/ul>
+&lt;p>I made some lovely new friends, thanks Tasha for the photo.&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends.jpg"
+width="2048"
+height="1277"
+srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu1e8b6aa66d0ebbf14dff760de9b17583_522826_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu1e8b6aa66d0ebbf14dff760de9b17583_522826_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Friends"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p></description></item><item><title>Devconf 22</title><link>https://www.maiatoday.net/p/devconf-22/</link><pubDate>Thu, 07 Apr 2022 16:26:46 +0200</pubDate><guid>https://www.maiatoday.net/p/devconf-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/devconf-22/oldNew.png" alt="Featured image of post Devconf 22" />&lt;p>Wow my first in real life conference in two years with &lt;a class="link" href="https://www.devconf.co.za/" target="_blank" rel="noopener"
 >DevConf 2022&lt;/a> Presenting on Jetpack Compose and how it interoperates with an existing opensource Android app.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/habiticaRepo.png"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/devconf-22/habiticaRepo.png"
 width="2552"
 height="1418"
-srcset="https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/habiticaRepo_hu93fdcb6fc43b2ffe74b62719b4d86913_1152167_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/habiticaRepo_hu93fdcb6fc43b2ffe74b62719b4d86913_1152167_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/devconf-22/habiticaRepo_hu93fdcb6fc43b2ffe74b62719b4d86913_1152167_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/devconf-22/habiticaRepo_hu93fdcb6fc43b2ffe74b62719b4d86913_1152167_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="presenting the Habitica repo"
 class="gallery-image"
@@ -22,20 +54,20 @@ scrolling="no"
 style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 20px; width: 100%;"
 allowfullscreen="true">
 &lt;/iframe>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/Devconf272.jpg"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/devconf-22/Devconf272.jpg"
 width="5228"
 height="3490"
-srcset="https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/Devconf272_hue7428c51e1757f4352b16d91fea6f2a2_11034631_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/Devconf272_hue7428c51e1757f4352b16d91fea6f2a2_11034631_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/devconf-22/Devconf272_hue7428c51e1757f4352b16d91fea6f2a2_11034631_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/devconf-22/Devconf272_hue7428c51e1757f4352b16d91fea6f2a2_11034631_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="presenting in Cape Town"
 class="gallery-image"
 data-flex-grow="149"
 data-flex-basis="359px"
 >&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/SOY07992.jpg"
+&lt;p>&lt;img src="https://www.maiatoday.net/p/devconf-22/SOY07992.jpg"
 width="4159"
 height="3847"
-srcset="https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/SOY07992_hubcc413f55ea67801dba29287ad91afaf_8584981_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/something-old-something-new-adding-jetpack-compose-to-habitica/SOY07992_hubcc413f55ea67801dba29287ad91afaf_8584981_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/devconf-22/SOY07992_hubcc413f55ea67801dba29287ad91afaf_8584981_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/devconf-22/SOY07992_hubcc413f55ea67801dba29287ad91afaf_8584981_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="presenting in Johannesburg"
 class="gallery-image"
