@@ -58,7 +58,9 @@ fun CursorVisible(content: @Composable () -> Unit) {
 
 This `CursorVisible` can have content of anything. So I made a lifesaver sweet/candy that changes colour and a pulsing red and magenta heart.
 
-![animated lifesaver sweet - click me to see the animation](lifesaver.gif)
+{{ with .Resources.GetMatch "lifesaver.gif" }}
+  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+{{ end }}
 
 The lifesaver is just circles and arcs drawn on the canvas and then some parameters such as angle and colour animated. 
 
@@ -152,7 +154,9 @@ fun rainbowState(
 
 The pulsing heart is a heart shape which uses a looping animation that adjust the colour and the scale to get the pulsing effect.
 
-![animated sweet heart - click me to see the animation](heartPulse.gif)
+{{ with .Resources.GetMatch "heartPulse.gif" }}
+  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+{{ end }}
 
 The heart shape:
 ```kotlin
@@ -216,7 +220,9 @@ fun HeartPulse(modifier: Modifier = Modifier) {
 
 Last but not least the fairy/pixie dust. For this one I made a GlitterBox which would be the container for the glitter flecks. The state of the glitter and the glitter fleck code is a particle system similar to what I used in the confetti modifier. You can see that in action in the [github repo]((https://github.com/maiatoday/MagicSprinkles)) or read the description in an [older blog post](https://www.maiatoday.net/p/confetti-cleanup/).
 
-![pixie dust - click me to see the animation](glitterBox.gif)
+{{ with .Resources.GetMatch "glitterBox.gif" }}
+  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+{{ end }}
 
 Putting it all together I have a simple outside box with a little magenta cursor box that can be dragged around on the screen. The position of the magenta box is fed into the particle system on the `onDrag` calls and the glitter flecks are generated.
 
