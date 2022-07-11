@@ -25,3 +25,5 @@ I am presenting this exploration as a travel diary of sorts. It will include:
 I made some lovely new friends, thanks Tasha for the photo.
 
 ![Friends](dcsf22_newfriends.jpg)
+
+Also the [video](https://www.droidcon.com/2022/06/28/something-old-something-new-adding-jetpack-compose-to-a-large-open-source-android-app/) and the [slides](https://www.slideshare.net/MaiaGrotepass1/something-old-something-newpdf-251915366)
