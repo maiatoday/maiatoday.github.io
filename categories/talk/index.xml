@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talk on maiatoday</title><link>https://www.maiatoday.net/categories/talk/</link><description>Recent content in talk on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 02 Jun 2022 15:07:56 -0500</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/talk/index.xml" rel="self" type="application/rss+xml"/><item><title>Droidcon SF 22</title><link>https://www.maiatoday.net/p/droidcon-sf-22/</link><pubDate>Thu, 02 Jun 2022 15:07:56 -0500</pubDate><guid>https://www.maiatoday.net/p/droidcon-sf-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/droidconSF2022.jpg" alt="Featured image of post Droidcon SF 22" />&lt;p>&lt;a class="link" href="https://www.sf.droidcon.com/" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talk on maiatoday</title><link>https://www.maiatoday.net/categories/talk/</link><description>Recent content in talk on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 06 Jul 2022 19:38:47 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/talk/index.xml" rel="self" type="application/rss+xml"/><item><title>Droidcon Berlin 22</title><link>https://www.maiatoday.net/p/droidcon-berlin-22/</link><pubDate>Wed, 06 Jul 2022 19:38:47 +0200</pubDate><guid>https://www.maiatoday.net/p/droidcon-berlin-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/droidcon-berlin-22/dcbln22.png" alt="Featured image of post Droidcon Berlin 22" />&lt;img src="dcbln22arrive.jpg" alt="drawing" width="400"/>
+&lt;p>Droidcon Berlin 22 what a blast!&lt;/p>
+&lt;p>I presented a talk on Compose. I spoke on a panel and made fantastic new friends and caught up with old/online ones.&lt;/p>
+&lt;p>&lt;img src="SFMaia.jpg" alt="Meeting Segun" width="400"/>&lt;img src="MattMadonaMaia.jpg" alt="Matt and Madona" width="400"/>&lt;/p>
+&lt;img src="dcbln22gdes.jpg" alt="Meeting Segun" width="600"/>
+&lt;p>The panel discussion was about &lt;code>Android at Scale&lt;/code>&lt;/p>
+&lt;p>The talk title was &lt;code>Something old, something new: adding Jetpack Compose to a large open source app&lt;/code>.&lt;/p>
+&lt;img src="dcbln22panel.jpg" alt="Android at Scale" width="400"/>
+&lt;img src="dcbln22talk.jpg" alt="Something old, something new" width="400"/>
+&lt;p>Slides and video links to follow as they are published&lt;/p></description></item><item><title>Droidcon SF 22</title><link>https://www.maiatoday.net/p/droidcon-sf-22/</link><pubDate>Thu, 02 Jun 2022 15:07:56 -0500</pubDate><guid>https://www.maiatoday.net/p/droidcon-sf-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/droidconSF2022.jpg" alt="Featured image of post Droidcon SF 22" />&lt;p>&lt;a class="link" href="https://www.sf.droidcon.com/" target="_blank" rel="noopener"
 >Droidcon SF 2022&lt;/a>, first conference outside of South Africa after the lockdown years. I was so happy to be part of the speakers for my talk titled &lt;code>Something old, something new - adding Jetpack Compose to a large open source app&lt;/code>&lt;/p>
 &lt;p>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia.jpg"
 width="2048"
@@ -30,7 +39,10 @@ alt="Friends"
 class="gallery-image"
 data-flex-grow="160"
 data-flex-basis="384px"
->&lt;/p></description></item><item><title>Devconf 22</title><link>https://www.maiatoday.net/p/devconf-22/</link><pubDate>Thu, 07 Apr 2022 16:26:46 +0200</pubDate><guid>https://www.maiatoday.net/p/devconf-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/devconf-22/oldNew.png" alt="Featured image of post Devconf 22" />&lt;p>Wow my first in real life conference in two years with &lt;a class="link" href="https://www.devconf.co.za/" target="_blank" rel="noopener"
+>&lt;/p>
+&lt;p>Also the &lt;a class="link" href="https://www.droidcon.com/2022/06/28/something-old-something-new-adding-jetpack-compose-to-a-large-open-source-android-app/" target="_blank" rel="noopener"
+>video&lt;/a> and the &lt;a class="link" href="https://www.slideshare.net/MaiaGrotepass1/something-old-something-newpdf-251915366" target="_blank" rel="noopener"
+>slides&lt;/a>&lt;/p></description></item><item><title>Devconf 22</title><link>https://www.maiatoday.net/p/devconf-22/</link><pubDate>Thu, 07 Apr 2022 16:26:46 +0200</pubDate><guid>https://www.maiatoday.net/p/devconf-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/devconf-22/oldNew.png" alt="Featured image of post Devconf 22" />&lt;p>Wow my first in real life conference in two years with &lt;a class="link" href="https://www.devconf.co.za/" target="_blank" rel="noopener"
 >DevConf 2022&lt;/a> Presenting on Jetpack Compose and how it interoperates with an existing opensource Android app.&lt;/p>
 &lt;p>&lt;img src="https://www.maiatoday.net/p/devconf-22/habiticaRepo.png"
 width="2552"
