@@ -5,11 +5,13 @@
 &lt;p>Install from play:&lt;/p>
 &lt;p>&lt;a class="link" href="https://play.google.com/store/apps/details?id=net.maiatoday.neotaur" target="_blank" rel="noopener"
 >Neotaur&lt;/a>{:target=&amp;quot;_blank&amp;quot;}
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;a href="https://play.google.com/store/apps/details?id=net.maiatoday.neotaur">
+&lt;img alt="Get it on Google Play"
+src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://play.google.com/store/apps/details?id=net.maiatoday.geotaur" target="_blank" rel="noopener"
 >Geotaur&lt;/a>{:target=&amp;quot;_blank&amp;quot;}
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->&lt;/p></description></item></channel></rss>
+&lt;a href="https://play.google.com/store/apps/details?id=net.maiatoday.geotaur">
+&lt;img alt="Get it on Google Play"
+src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+&lt;/a>&lt;/p></description></item></channel></rss>

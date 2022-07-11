@@ -41,6 +41,7 @@ My first attempt creates a composable function that takes the modifier, animates
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>{{ with .Resources.GetMatch &ldquo;ghosts.gif&rdquo; }}
+<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}</p><p>The animation for this was a linear <code>tween()</code> between invisible and visible. However anyone who <a class=link href="https://www.google.com/search?q=blink+tag" target=_blank rel=noopener>knows the blink tag</a> will realise that it stays on longer than off. It blips off and then comes back on again staying visible for longer.</p><p>To do this I replaced the <code>tween()</code> with <code>keyframes</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-kotlin data-lang=kotlin><span class=line><span class=cl><span class=nd>@Composable</span>
 </span></span><span class=line><span class=cl><span class=k>fun</span> <span class=nf>BlinkTag</span><span class=p>(</span>
 </span></span><span class=line><span class=cl>    <span class=n>modifier</span><span class=p>:</span> <span class=n>Modifier</span> <span class=p>=</span> <span class=n>Modifier</span><span class=p>,</span>
@@ -63,6 +64,7 @@ My first attempt creates a composable function that takes the modifier, animates
 </span></span><span class=line><span class=cl>    <span class=n>content</span><span class=p>(</span><span class=n>modifier</span> <span class=p>=</span> <span class=n>modifier</span><span class=p>.</span><span class=n>alpha</span><span class=p>(</span><span class=n>alpha</span><span class=p>))</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>{{ with .Resources.GetMatch &ldquo;blinkLong.gif&rdquo; }}
+<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}</p><p>Reading the <a class=link href=https://developer.android.com/jetpack/compose/themes#emphasis target=_blank rel=noopener>material theme docs</a> I found out there was another way to share alpha values to a children in the composable tree using a <a class=link href=https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#LocalContentAlpha target=_blank rel=noopener>LocalContentAlpha</a>. This mechanims is used for emphasis using alpha and I am pretty sure the intention isn&rsquo;t for this to be used to make layouts blink. I am doing this for science.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-kotlin data-lang=kotlin><span class=line><span class=cl><span class=nd>@Composable</span>
 </span></span><span class=line><span class=cl><span class=k>fun</span> <span class=nf>LocalContentBlinkTag</span><span class=p>(</span>
 </span></span><span class=line><span class=cl>    <span class=n>durationMillis</span><span class=p>:</span> <span class=n>Int</span> <span class=p>=</span> <span class=m>500</span><span class=p>,</span>
@@ -91,6 +93,7 @@ My first attempt creates a composable function that takes the modifier, animates
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><p>{{ with .Resources.GetMatch &ldquo;blink.gif&rdquo; }}
+<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}</p><p>Although I defintely don&rsquo;t support the irresponsible use of the blink tag, no investigation of reproducing retro website animations would be complete without a <code>&lt;blink></code> I realised again how powerful yet simple the animation system in Jetpack Compose can be. Be warned.</p><p>Find all the source in <a class=link href=https://github.com/maiatoday/MagicSprinkles target=_blank rel=noopener>this repo</a></p><p>Also in this series:</p><p><a class=link href=https://www.maiatoday.net/p/animating-rainbow-text/ title="Rainbow Text">RainbowText</a></p><p><a class=link href=https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/ title="Visitor Counter">VisitorCounter</a></p></section><footer class=article-footer><section class=article-tags><a href=/tags/code/>code</a>
 <a href=/tags/compose/>compose</a>
 <a href=/tags/animate/>animate</a>

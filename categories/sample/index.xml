@@ -226,7 +226,7 @@ data-flex-basis="597px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{ with .Resources.GetMatch &amp;ldquo;ghosts.gif&amp;rdquo; }}
-&lt;!-- raw HTML omitted -->
+&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}&lt;/p>
 &lt;p>The animation for this was a linear &lt;code>tween()&lt;/code> between invisible and visible. However anyone who &lt;a class="link" href="https://www.google.com/search?q=blink&amp;#43;tag" target="_blank" rel="noopener"
 >knows the blink tag&lt;/a> will realise that it stays on longer than off. It blips off and then comes back on again staying visible for longer.&lt;/p>
@@ -253,7 +253,7 @@ data-flex-basis="597px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{ with .Resources.GetMatch &amp;ldquo;blinkLong.gif&amp;rdquo; }}
-&lt;!-- raw HTML omitted -->
+&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}&lt;/p>
 &lt;p>Reading the &lt;a class="link" href="https://developer.android.com/jetpack/compose/themes#emphasis" target="_blank" rel="noopener"
 >material theme docs&lt;/a> I found out there was another way to share alpha values to a children in the composable tree using a &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#LocalContentAlpha" target="_blank" rel="noopener"
@@ -288,7 +288,7 @@ data-flex-basis="597px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{ with .Resources.GetMatch &amp;ldquo;blink.gif&amp;rdquo; }}
-&lt;!-- raw HTML omitted -->
+&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}&lt;/p>
 &lt;p>Although I defintely don&amp;rsquo;t support the irresponsible use of the blink tag, no investigation of reproducing retro website animations would be complete without a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> I realised again how powerful yet simple the animation system in Jetpack Compose can be. Be warned.&lt;/p>
 &lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
@@ -391,7 +391,7 @@ data-flex-basis="317px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I made a simple test screen with an edit text field so I could try it out.&lt;/p>
 &lt;p>{{ with .Resources.GetMatch &amp;ldquo;snappyDisco.gif&amp;rdquo; }}
-&lt;!-- raw HTML omitted -->
+&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}&lt;/p>
 &lt;p>As you can see the animation is uhm &amp;hellip; snappy. If you can&amp;rsquo;t see it, click on the image.&lt;/p>
 &lt;p>Is it possible to change from one colour to the next smoothly and still have all the letters different colours?&lt;/p>
@@ -428,7 +428,7 @@ data-flex-basis="317px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This composable can be used to loop through colours of the rainbow on a Text composable.&lt;/p>
 &lt;p>{{ with .Resources.GetMatch &amp;ldquo;smoothOneDisco.gif&amp;rdquo; }}
-&lt;!-- raw HTML omitted -->
+&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}&lt;/p>
 &lt;p>Finally I built a composable that split the string again and made each letter a &lt;code>MultiColorSmoothText&lt;/code>. It uses the &lt;code>startIndex&lt;/code> to delay the animation. The effect is that each letter is a different colour.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
@@ -457,7 +457,7 @@ data-flex-basis="317px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And the final smooth animating rainbow text using a pastel rainbow.&lt;/p>
 &lt;p>{{ with .Resources.GetMatch &amp;ldquo;smoothDisco.gif&amp;rdquo; }}
-&lt;!-- raw HTML omitted -->
+&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}&lt;/p>
 &lt;p>Next I&amp;rsquo;ll tackle some more retro 90s web page inspired animations, visitor counters, flames, rotating images, shifting tiled backgrounds and walls of text that change size.&lt;/p>
 &lt;p>Until then&amp;hellip; &lt;a class="link" href="https://youtu.be/_NywTcGOUkE?t=44" target="_blank" rel="noopener"
@@ -472,7 +472,7 @@ data-flex-basis="317px"
 >little pie chart&lt;/a>. It will animate a random pie value on the click of the &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/RandomPieButton.kt" target="_blank" rel="noopener"
 >button&lt;/a>.&lt;/p>
 &lt;p>{{ with .Resources.GetMatch &amp;ldquo;randomPieClick.gif&amp;rdquo; }}
-&lt;!-- raw HTML omitted -->
+&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">data&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">PieData&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">foreground&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">White&lt;/span>&lt;span class="p">,&lt;/span>
@@ -642,11 +642,13 @@ All green&lt;/p></description></item><item><title>Neotaur-Geotaur</title><link>h
 &lt;p>Install from play:&lt;/p>
 &lt;p>&lt;a class="link" href="https://play.google.com/store/apps/details?id=net.maiatoday.neotaur" target="_blank" rel="noopener"
 >Neotaur&lt;/a>{:target=&amp;quot;_blank&amp;quot;}
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;a href="https://play.google.com/store/apps/details?id=net.maiatoday.neotaur">
+&lt;img alt="Get it on Google Play"
+src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://play.google.com/store/apps/details?id=net.maiatoday.geotaur" target="_blank" rel="noopener"
 >Geotaur&lt;/a>{:target=&amp;quot;_blank&amp;quot;}
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->&lt;/p></description></item></channel></rss>
+&lt;a href="https://play.google.com/store/apps/details?id=net.maiatoday.geotaur">
+&lt;img alt="Get it on Google Play"
+src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+&lt;/a>&lt;/p></description></item></channel></rss>
