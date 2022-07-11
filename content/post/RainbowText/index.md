@@ -105,7 +105,9 @@ fun SnappyRainbowText(
 
 I made a simple test screen with an edit text field so I could try it out.
 
-![snappy rainbow click me to see the animation](snappyDisco.gif)
+{{ with .Resources.GetMatch "snappyDisco.gif" }}
+  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+{{ end }}
 
 As you can see the animation is uhm ... snappy. If you can't see it, click on the image.
 
@@ -148,7 +150,9 @@ fun MultiColorSmoothText(
 
 This composable can be used to loop through colours of the rainbow on a Text composable. 
 
-![smooth coloured text](smoothOneDisco.gif)
+{{ with .Resources.GetMatch "smoothOneDisco.gif" }}
+  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+{{ end }}
 
 Finally I built a composable that split the string again and made each letter a `MultiColorSmoothText`. It uses the `startIndex` to delay the animation. The effect is that each letter is a different colour.
 
@@ -181,7 +185,9 @@ fun SmoothRainbowText(
 
 And the final smooth animating rainbow text using a pastel rainbow.
 
-![smooth rainbow test](smoothDisco.gif)
+{{ with .Resources.GetMatch "smoothDisco.gif" }}
+  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+{{ end }}
 
 Next I'll tackle some more retro 90s web page inspired animations, visitor counters, flames, rotating images, shifting tiled backgrounds and walls of text that change size.
 
