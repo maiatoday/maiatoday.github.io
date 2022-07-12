@@ -55,9 +55,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This &lt;code>CursorVisible&lt;/code> can have content of anything. So I made a lifesaver sweet/candy that changes colour and a pulsing red and magenta heart.&lt;/p>
-&lt;p>{{ with .Resources.GetMatch &amp;ldquo;lifesaver.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;img src="lifesaver.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>The lifesaver is just circles and arcs drawn on the canvas and then some parameters such as angle and colour animated.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">LifeSaver&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">rainbow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">List&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Color&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">SkittlesRainbow&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
@@ -141,9 +139,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The pulsing heart is a heart shape which uses a looping animation that adjust the colour and the scale to get the pulsing effect.&lt;/p>
-&lt;p>{{ with .Resources.GetMatch &amp;ldquo;heartPulse.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;img src="heartPulse.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>The heart shape:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Thank You https://mahendranv.github.io/posts/compose-shapes-gists/
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">val&lt;/span> &lt;span class="py">HeartShape&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">GenericShape&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span>
@@ -196,9 +192,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Last but not least the fairy/pixie dust. For this one I made a GlitterBox which would be the container for the glitter flecks. The state of the glitter and the glitter fleck code is a particle system similar to what I used in the confetti modifier. You can see that in action in the &lt;a class="link" href="%28https://github.com/maiatoday/MagicSprinkles%29" >github repo&lt;/a> or read the description in an &lt;a class="link" href="https://www.maiatoday.net/p/confetti-cleanup/" target="_blank" rel="noopener"
 >older blog post&lt;/a>.&lt;/p>
-&lt;p>{{ with .Resources.GetMatch &amp;ldquo;glitterBox.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;img src="glitterBox.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Putting it all together I have a simple outside box with a little magenta cursor box that can be dragged around on the screen. The position of the magenta box is fed into the particle system on the &lt;code>onDrag&lt;/code> calls and the glitter flecks are generated.&lt;/p>
 &lt;p>Here&amp;rsquo;s the glitter box:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
@@ -723,9 +717,7 @@ data-flex-basis="597px"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{ with .Resources.GetMatch &amp;ldquo;ghosts.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div> &lt;img src="ghosts.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>The animation for this was a linear &lt;code>tween()&lt;/code> between invisible and visible. However anyone who &lt;a class="link" href="https://www.google.com/search?q=blink&amp;#43;tag" target="_blank" rel="noopener"
 >knows the blink tag&lt;/a> will realise that it stays on longer than off. It blips off and then comes back on again staying visible for longer.&lt;/p>
 &lt;p>To do this I replaced the &lt;code>tween()&lt;/code> with &lt;code>keyframes&lt;/code>:&lt;/p>
@@ -750,9 +742,7 @@ data-flex-basis="597px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">alpha&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{ with .Resources.GetMatch &amp;ldquo;blinkLong.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div> &lt;img src="blinkLong.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Reading the &lt;a class="link" href="https://developer.android.com/jetpack/compose/themes#emphasis" target="_blank" rel="noopener"
 >material theme docs&lt;/a> I found out there was another way to share alpha values to a children in the composable tree using a &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#LocalContentAlpha" target="_blank" rel="noopener"
 >LocalContentAlpha&lt;/a>. This mechanims is used for emphasis using alpha and I am pretty sure the intention isn&amp;rsquo;t for this to be used to make layouts blink. I am doing this for science.&lt;/p>
@@ -785,9 +775,7 @@ data-flex-basis="597px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;blink&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>{{ with .Resources.GetMatch &amp;ldquo;blink.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;img src="blink.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Although I defintely don&amp;rsquo;t support the irresponsible use of the blink tag, no investigation of reproducing retro website animations would be complete without a &lt;code>&amp;lt;blink&amp;gt;&lt;/code> I realised again how powerful yet simple the animation system in Jetpack Compose can be. Be warned.&lt;/p>
 &lt;p>Find all the source in &lt;a class="link" href="https://github.com/maiatoday/MagicSprinkles" target="_blank" rel="noopener"
 >this repo&lt;/a>&lt;/p>
@@ -888,9 +876,7 @@ data-flex-basis="317px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I made a simple test screen with an edit text field so I could try it out.&lt;/p>
-&lt;p>{{ with .Resources.GetMatch &amp;ldquo;snappyDisco.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;img src="snappyDisco.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>As you can see the animation is uhm &amp;hellip; snappy. If you can&amp;rsquo;t see it, click on the image.&lt;/p>
 &lt;p>Is it possible to change from one colour to the next smoothly and still have all the letters different colours?&lt;/p>
 &lt;p>The first step is to create a composable that will cycle through a rainbow of colours. This is done by creating a keyframes animation. The keyframe points are the colours of the rainbow.&lt;/p>
@@ -925,9 +911,7 @@ data-flex-basis="317px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">text&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">color&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">style&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">style&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">modifier&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This composable can be used to loop through colours of the rainbow on a Text composable.&lt;/p>
-&lt;p>{{ with .Resources.GetMatch &amp;ldquo;smoothOneDisco.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;img src="smoothOneDisco.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Finally I built a composable that split the string again and made each letter a &lt;code>MultiColorSmoothText&lt;/code>. It uses the &lt;code>startIndex&lt;/code> to delay the animation. The effect is that each letter is a different colour.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">SmoothRainbowText&lt;/span>&lt;span class="p">(&lt;/span>
@@ -954,9 +938,7 @@ data-flex-basis="317px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And the final smooth animating rainbow text using a pastel rainbow.&lt;/p>
-&lt;p>{{ with .Resources.GetMatch &amp;ldquo;smoothDisco.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;img src="smoothDisco.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Next I&amp;rsquo;ll tackle some more retro 90s web page inspired animations, visitor counters, flames, rotating images, shifting tiled backgrounds and walls of text that change size.&lt;/p>
 &lt;p>Until then&amp;hellip; &lt;a class="link" href="https://youtu.be/_NywTcGOUkE?t=44" target="_blank" rel="noopener"
 >this ain&amp;rsquo;t not disco&lt;/a>&lt;/p>
@@ -969,9 +951,7 @@ data-flex-basis="317px"
 >VisitorCounter&lt;/a>&lt;/p></description></item><item><title>Random Animating Pie Button</title><link>https://www.maiatoday.net/p/random-animating-pie-button/</link><pubDate>Wed, 16 Jun 2021 21:36:11 +0000</pubDate><guid>https://www.maiatoday.net/p/random-animating-pie-button/</guid><description>&lt;img src="https://www.maiatoday.net/p/random-animating-pie-button/randomPieBanner.png" alt="Featured image of post Random Animating Pie Button" />&lt;p>I am exploring animations with small sampler functions using Jetpack Compose. This one is a custom component that draws a &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/PieStatus.kt" target="_blank" rel="noopener"
 >little pie chart&lt;/a>. It will animate a random pie value on the click of the &lt;a class="link" href="https://github.com/maiatoday/ComposeSampler/blob/main/app/src/main/java/net/maiatoday/composesampler/ui/components/RandomPieButton.kt" target="_blank" rel="noopener"
 >button&lt;/a>.&lt;/p>
-&lt;p>{{ with .Resources.GetMatch &amp;ldquo;randomPieClick.gif&amp;rdquo; }}
-&lt;img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}&lt;/p>
+&lt;img src="randomPieClick.gif" width="{{ .Width }}" height="{{ .Height }}">
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">data&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">PieData&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">foreground&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Color&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">White&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">strokeWidth&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Dp&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">4.&lt;/span>&lt;span class="n">dp&lt;/span>&lt;span class="p">,&lt;/span>
