@@ -50,9 +50,7 @@ BlinkTag
 }
 ```
 
-{{ with .Resources.GetMatch "ghosts.gif" }}
-  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}
+  <img src="ghosts.gif" width="{{ .Width }}" height="{{ .Height }}">
 
 The animation for this was a linear `tween()` between invisible and visible. However anyone who [knows the blink tag](https://www.google.com/search?q=blink+tag) will realise that it stays on longer than off. It blips off and then comes back on again staying visible for longer. 
 
@@ -81,9 +79,7 @@ fun BlinkTag(
 }
 ```
 
-{{ with .Resources.GetMatch "blinkLong.gif" }}
-  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}
+  <img src="blinkLong.gif" width="{{ .Width }}" height="{{ .Height }}">
 
 Reading the [material theme docs](https://developer.android.com/jetpack/compose/themes#emphasis) I found out there was another way to share alpha values to a children in the composable tree using a [LocalContentAlpha](https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#LocalContentAlpha). This mechanims is used for emphasis using alpha and I am pretty sure the intention isn't for this to be used to make layouts blink. I am doing this for science.
 
@@ -123,9 +119,7 @@ LocalContentBlinkTag {
 }
 ```
 
-{{ with .Resources.GetMatch "blink.gif" }}
-  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}
+<img src="blink.gif" width="{{ .Width }}" height="{{ .Height }}">
 
 Although I defintely don't support the irresponsible use of the blink tag, no investigation of reproducing retro website animations would be complete without a `<blink>` I realised again how powerful yet simple the animation system in Jetpack Compose can be. Be warned.
 
