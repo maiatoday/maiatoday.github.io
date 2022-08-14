@@ -25,8 +25,8 @@ The talk title was `Something old, something new: adding Jetpack Compose to a la
 
 <img src="dcbln22panel.jpg" alt="Android at Scale" width="400"/>
 
-(Video)[https://www.droidcon.com/2022/08/01/something-old-something-new-adding-jetpack-compose-to-a-large-open-source-android-app-2/]
+[Video](https://www.droidcon.com/2022/08/01/something-old-something-new-adding-jetpack-compose-to-a-large-open-source-android-app-2/)
 
 <img src="dcbln22talk.jpg" alt="Something old, something new" width="400"/>
 
-(video)[https://www.droidcon.com/2022/08/01/android-at-scale/]
+[video](https://www.droidcon.com/2022/08/01/android-at-scale/)
