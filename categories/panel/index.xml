@@ -6,9 +6,11 @@
 &lt;p>The panel discussion was about &lt;code>Android at Scale&lt;/code>&lt;/p>
 &lt;p>The talk title was &lt;code>Something old, something new: adding Jetpack Compose to a large open source app&lt;/code>.&lt;/p>
 &lt;img src="dcbln22panel.jpg" alt="Android at Scale" width="400"/>
-&lt;p>(Video)[https://www.droidcon.com/2022/08/01/something-old-something-new-adding-jetpack-compose-to-a-large-open-source-android-app-2/]&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.droidcon.com/2022/08/01/something-old-something-new-adding-jetpack-compose-to-a-large-open-source-android-app-2/" target="_blank" rel="noopener"
+>Video&lt;/a>&lt;/p>
 &lt;img src="dcbln22talk.jpg" alt="Something old, something new" width="400"/>
-&lt;p>(video)[https://www.droidcon.com/2022/08/01/android-at-scale/]&lt;/p></description></item><item><title>Panel talk on Deep dive into compose</title><link>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" />&lt;p>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.droidcon.com/2022/08/01/android-at-scale/" target="_blank" rel="noopener"
+>video&lt;/a>&lt;/p></description></item><item><title>Panel talk on Deep dive into compose</title><link>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" />&lt;p>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/ued3Zb2YbCo"
