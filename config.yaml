@@ -38,7 +38,7 @@ params:
         subtitle: Android dev ❤️Kotlin 🐶
         avatar:
             local: true
-            src: img/maiaSquare.jpeg
+            src: img/MaiaGDE-Badge2022.png
 
     article:
         math: false
