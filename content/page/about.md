@@ -22,6 +22,8 @@ This site documents my projects, code snippets, notes to myself so I won't forge
 
  [Twitter](https://twitter.com/maiatoday)
 
+<a rel="me" href="https://mas.to/@maiatoday">Mastodon</a>
+
  [LinkedIn](https://www.linkedin.com/in/maiagrotepass/)
 
  [Time line showing recent activity](https://www.maiatoday.co.za)
