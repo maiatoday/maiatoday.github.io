@@ -22,7 +22,7 @@ This site documents my projects, code snippets, notes to myself so I won't forge
 
  [Twitter](https://twitter.com/maiatoday)
 
-<a rel="me" href="https://mas.to/@maiatoday">Mastodon</a>
+ <a rel="me" href="https://androiddev.social/@maiatoday">Mastodon</a>
 
  [LinkedIn](https://www.linkedin.com/in/maiagrotepass/)
 
