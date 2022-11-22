@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talk on maiatoday</title><link>https://www.maiatoday.net/categories/talk/</link><description>Recent content in talk on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 06 Jul 2022 19:38:47 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/talk/index.xml" rel="self" type="application/rss+xml"/><item><title>Droidcon Berlin 22</title><link>https://www.maiatoday.net/p/droidcon-berlin-22/</link><pubDate>Wed, 06 Jul 2022 19:38:47 +0200</pubDate><guid>https://www.maiatoday.net/p/droidcon-berlin-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/droidcon-berlin-22/dcbln22.png" alt="Featured image of post Droidcon Berlin 22" />&lt;img src="dcbln22arrive.jpg" alt="drawing" width="400"/>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>talk on maiatoday</title><link>https://www.maiatoday.net/categories/talk/</link><description>Recent content in talk on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 14 Oct 2022 10:30:41 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/talk/index.xml" rel="self" type="application/rss+xml"/><item><title>Four of a Kotlin Kind at I code Java 2022 conference</title><link>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</link><pubDate>Fri, 14 Oct 2022 10:30:41 +0200</pubDate><guid>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</guid><description>&lt;img src="https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/icj2022.jpg" alt="Featured image of post Four of a Kotlin Kind at I code Java 2022 conference" />&lt;p>I shared my talk titled Imperative, Declarative, Object oriented, functional: Four of a Kotlin Kind at the &lt;a class="link" href="https://j-sa.co/schedule-java/" target="_blank" rel="noopener"
+>I code Java conference&lt;/a>.&lt;/p>
+&lt;p>The abstract:
+Is Kotlin a functional language? Yes, but&amp;hellip; Is it object oriented? Yes, but&amp;hellip;
+Looking at four concepts: imperative, declarative, functional and object oriented
+How does Kotlin make it easy to use either or all at the same time. This talk contains: Some useful Kotlin tips, some guidelines and pitfalls for the four concepts, traces of definitions and software history. After listening to this talk you will understand what these concepts are, what each is good for and how they are supported by the Kotlin language.&lt;/p>
+&lt;p>You can see the talk here&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/GY3ImFPfaRI"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Droidcon Berlin 22</title><link>https://www.maiatoday.net/p/droidcon-berlin-22/</link><pubDate>Wed, 06 Jul 2022 19:38:47 +0200</pubDate><guid>https://www.maiatoday.net/p/droidcon-berlin-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/droidcon-berlin-22/dcbln22.png" alt="Featured image of post Droidcon Berlin 22" />&lt;img src="dcbln22arrive.jpg" alt="drawing" width="400"/>
 &lt;p>Droidcon Berlin 22 what a blast!&lt;/p>
 &lt;p>I presented a talk on Compose. I spoke on a panel and made fantastic new friends and caught up with old/online ones.&lt;/p>
 &lt;p>&lt;img src="SFMaia.jpg" alt="Meeting Segun" width="400"/>&lt;img src="MattMadonaMaia.jpg" alt="Matt and Madona" width="400"/>&lt;/p>
