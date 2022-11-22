@@ -14,7 +14,7 @@ Droidcon Berlin 22 what a blast!
 
 I presented a talk  on Compose. I spoke on a panel and made fantastic new friends and caught up with old/online ones.
 
-<img src="SFMaia.jpg" alt="Meeting Segun" width="400"/><img src="MattMadonaMaia.jpg" alt="Matt and Madona" width="400"/>
+<img src="SFMaia.jpg" alt="Meeting Mat and Madona" width="400"/><img src="MattMadonaMaia.jpg" alt="Matt and Madona" width="400"/>
 
 <img src="dcbln22gdes.jpg" alt="Meeting Segun" width="600"/>
 
@@ -30,3 +30,9 @@ The talk title was `Something old, something new: adding Jetpack Compose to a la
 <img src="dcbln22talk.jpg" alt="Something old, something new" width="400"/>
 
 [video](https://www.droidcon.com/2022/08/01/android-at-scale/)
+
+<img src="dcbln22-droid-conversations.png" alt="Droid conversations with Matt and Madona" width="400"/>
+
+I also  had a great time [chatting to Matt and Madona](https://www.droidcon.com/2022/09/21/maia-grotepass/) about all sorts of Android and public speaking things.
+
+
