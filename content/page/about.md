@@ -20,9 +20,9 @@ This site documents my projects, code snippets, notes to myself so I won't forge
  
  [GitHub](https://github.com/maiatoday)
 
- [Twitter](https://twitter.com/maiatoday)
+ [Google Developer](https://g.dev/maiatoday)
 
- <a rel="me" href="https://androiddev.social/@maiatoday">Mastodon</a>
+ [Mastodon][1]
 
  [LinkedIn](https://www.linkedin.com/in/maiagrotepass/)
 
@@ -33,3 +33,5 @@ This site documents my projects, code snippets, notes to myself so I won't forge
  [Sessionize profile](https://sessionize.com/maia-grotepass/)
 
 ![GDE 2022 Android badge](experts-digital-badge-logos-2022_android.png)
+
+[1]: <https://androiddev.social/@maiatoday> 
