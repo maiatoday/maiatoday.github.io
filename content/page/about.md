@@ -32,6 +32,6 @@ This site documents my projects, code snippets, notes to myself so I won't forge
 
  [Sessionize profile](https://sessionize.com/maia-grotepass/)
 
-![GDE 2022 Android badge](experts-digital-badge-logos-2022_android.png)
+![GDE 2023 Android badge](experts-digital-badge-logos-2023_android.png)
 
 [1]: <https://androiddev.social/@maiatoday> 
