@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>code on maiatoday</title><link>https://www.maiatoday.net/categories/code/</link><description>Recent content in code on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Jun 2023 15:12:44 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/code/index.xml" rel="self" type="application/rss+xml"/><item><title>The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?</title><link>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</link><pubDate>Sat, 10 Jun 2023 15:12:44 +0200</pubDate><guid>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</guid><description>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/mock_and_me.jpg" alt="Featured image of post The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?" />&lt;h1 id="once-upon-a-time">Once upon a time&lt;/h1>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches.png"
+width="620"
+height="370"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu80b3a240cb75e4f32f892faf1d1fca41_32511_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu80b3a240cb75e4f32f892faf1d1fca41_32511_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="branches"
+class="gallery-image"
+data-flex-grow="167"
+data-flex-basis="402px"
+>&lt;/p>
 &lt;p>I admit. I have a penchant for word games and weird &lt;a class="link" href="https://www.merriam-webster.com/dictionary/segue" target="_blank" rel="noopener"
 >segues&lt;/a>. So I will tell you what this post is about &lt;a class="link" href="https://dictionary.cambridge.org/dictionary/english/right-off-the-bat" target="_blank" rel="noopener"
 >off the bat&lt;/a>. You can &lt;a class="link" href="#code-starts-here" >skip to the code&lt;/a>, I won&amp;rsquo;t be offended. &lt;a class="link" href="https://blog.jetbrains.com/fleet/2023/06/fleet-1-19-ai-powered-features-and-easier-configuration-for-rust-analyzer-python-interpreters-and-npm/" target="_blank" rel="noopener"
 >Fleet 1.19 was released this week&lt;/a> with an integrated AI assistant. I took it for a spin and used it to convert Kotlin code from imperative style to functional and back again. I used some Kotlin code, which solves the &lt;a class="link" href="https://adventofcode.com/2022/day/10" target="_blank" rel="noopener"
->Advent of Code 2022 Day 10 puzzle&lt;/a>. I had written the solution in two styles and I had the assistant do the same conversion and compared the code. And then I played around and generated some poetry. Follow links at your peril, there are rabbit holes, it might make you &lt;a class="link" href="https://youtu.be/ZOLpCWlsCjw?t=21" target="_blank" rel="noopener"
+>Advent of Code 2022 Day 10 puzzle&lt;/a>. I had written the solution in two styles and I had the AI assistant do the same conversion and compared the code. And then I played around and generated some poetry. Follow links at your peril, there are rabbit holes, it might make you &lt;a class="link" href="https://youtu.be/ZOLpCWlsCjw?t=21" target="_blank" rel="noopener"
 >late&lt;/a> or &lt;a class="link" href="https://www.youtube.com/watch?v=pnJM_jC7j_4" target="_blank" rel="noopener"
 >change the size&lt;/a> of your free time.&lt;/p>
 &lt;h2 id="segue-the-first-of-many">Segue the first of many&lt;/h2>
@@ -54,7 +64,8 @@ Steps guide its progress. (5)&lt;/p>
 &lt;/blockquote>
 &lt;h1 id="code-starts-here">Code starts here&lt;/h1>
 &lt;h2 id="imperative-all-the-way---hand-crafted-by-me">Imperative all the way - hand crafted by me&lt;/h2>
-&lt;p>Here is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many &lt;a class="link" href="https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd" target="_blank" rel="noopener"
+&lt;p>&lt;a class="link" href="https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt" target="_blank" rel="noopener"
+>Here&lt;/a> is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many &lt;a class="link" href="https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd" target="_blank" rel="noopener"
 >succinct&lt;/a> and &lt;a class="link" href="https://todd.ginsberg.com/post/advent-of-code/2021/day10/" target="_blank" rel="noopener"
 >elegant&lt;/a> &lt;a class="link" href="https://github.com/topics/aoc-2022-in-kotlin" target="_blank" rel="noopener"
 >solutions&lt;/a> by other people out there. For this exploration, though, the shape of my code is more interesting to me. Also to know if the solution is good it needs to have the same output on my input set.
