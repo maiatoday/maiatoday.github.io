@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?"
-#image: imitationTortoiseAndMe.png
+image: mock_and_me.jpg
 categories: [code, kotlin]
 tags: [code, kotlin, imperative, functional, ai, fleet, word games, advent of code, doggerel]
 date: 2023-06-10T15:12:44+02:00
