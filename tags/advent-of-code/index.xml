@@ -68,7 +68,7 @@ Steps guide its progress. (5)&lt;/p>
 >Here&lt;/a> is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many &lt;a class="link" href="https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd" target="_blank" rel="noopener"
 >succinct&lt;/a> and &lt;a class="link" href="https://todd.ginsberg.com/post/advent-of-code/2021/day10/" target="_blank" rel="noopener"
 >elegant&lt;/a> &lt;a class="link" href="https://github.com/topics/aoc-2022-in-kotlin" target="_blank" rel="noopener"
->solutions&lt;/a> by other people out there. For this exploration, though, the shape of my code is more interesting to me. Also to know if the solution is good it needs to have the same output on my input set.
+>solutions&lt;/a> by other people out there. For this exploration, the changing shape of the code is what interests me. Also to know if the solution is good it needs to have the same output on my input set.
 &lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl.png"
 width="1098"
 height="364"
