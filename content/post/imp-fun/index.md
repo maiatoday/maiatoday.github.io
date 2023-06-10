@@ -135,10 +135,10 @@ You can see my conversion steps in the git repo. The recipe is:
 * tests to taste
 
 **Method:**
-1. Separate the variables that change from the code that does something.
-1. Separate the side effect code from the code that does something.
-1. Chop the doing code, identified in the previous steps, into bite sized chunkes and wrap in small pure functions.
-1. Replace loops with composed calls such as _map_, _filter_,  _reduce_ calling the pure functions as higher order functions as needed to obtain the same result as the original.
+1. _Separate_ the variables that **change** from the code that does something.
+1. _Separate_ the **side effect** code from the code that does something.
+1. _Chop_ the doing code, identified in the previous steps, into bite sized chunks and wrap in small **pure functions**.
+1. _Replace loops_ with composed calls such as _map_, _filter_,  _reduce_ calling the pure functions as higher order functions as needed to obtain the same result as the original.
 
 **Build** gently for a few seconds in a preheated **gradle** command, until **BUILD SUCCESSFUL** and serve immediately.
 
@@ -167,32 +167,31 @@ fun main(args: Array<String>) {
             this.add(this@expandInstruction.inc)
         }
 
-        fun Int.toPixel(index: Int): String = if (index % crtW in this - 1..this + 1) "🔴" else "⚫️"
+    fun Int.toPixel(index: Int, width: Int = crtW): String = if (index % width in this - 1..this + 1) "🔴" else "⚫️"
 
-        fun crtScan(input: List<String>): List<String> =
+    fun crtScan(input: List<String>): List<String> =
             input.map { it.toInstruction() }// converts input to instruction
             .flatMap { i -> i.expandInstruction() } // expands multi tick instructions
             .runningFold(1) { x, i -> x + i } // runs through the instructions accumulating x
             .mapIndexed { index, x -> x.toPixel(index) } // converts index and x register to a pixel
             .chunked(40).map { it.joinToString("") } // spilt into lines for the screen
 
+    fun List<String>.display() { // side effect method
+        this.forEach {
+              println(it)
+           }
+    }
 
-            fun List<String>.display() { // side effect method
-                this.forEach {
-                    println(it)
-                }
-            }
+    val testInput = readInput("Day_test")
+    println(" ============== test input =============")
+    crtScan(testInput).display()
+    println("============== real input ==============")
+    val input = readInput("Day")
+    crtScan(input).display()
+    println("\n\n")
+}
 
-            val testInput = readInput("Day_test")
-            println(" ============== test input =============")
-            crtScan(testInput).display()
-            println("============== real input ==============")
-            val input = readInput("Day")
-            crtScan(input).display()
-            println("\n\n")
-        }
-
-        fun readInput(name: String) = File("src/main/resources/", "$name.txt").readLines()
+ fun readInput(name: String) = File("src/main/resources/", "$name.txt").readLines()
 
 ```
 
@@ -277,45 +276,45 @@ fun main(args: Array<String>) {
 
     fun buildXRegisterAtTick(instructions: List<Instruction>): MutableList<Int> {
         val xRegisterAtTick = mutableListOf<Int>()
-            var x = 1 // needs a running x register value
-            for (instruction in instructions) {
-                for (i in 0 until instruction.ticks) {
-                    xRegisterAtTick.add(x)
-                }
-                x += instruction.inc
+        var x = 1 // needs a running x register value
+        for (instruction in instructions) {
+            for (i in 0 until instruction.ticks) {
+                xRegisterAtTick.add(x)
             }
-            xRegisterAtTick.add(x)
-            return xRegisterAtTick
+            x += instruction.inc
         }
+        xRegisterAtTick.add(x)
+        return xRegisterAtTick
+     }
 
-        fun printCRT(input: List<String>) {
-            val instructions: MutableList<Instruction> = mutableListOf()
-                for (s in input) {
-                    instructions.add(parseInstruction(s))
-                }
-                val xRegisterAtTick = buildXRegisterAtTick(instructions)
+    fun printCRT(input: List<String>) {
+        val instructions: MutableList<Instruction> = mutableListOf()
+        for (s in input) {
+            instructions.add(parseInstruction(s))
+        }
+        val xRegisterAtTick = buildXRegisterAtTick(instructions)
 
-                for (i in 0 until (crtW * crtH)) {
-                    if (i % crtW == 0) print("\n")
-                    if (i % crtW in xRegisterAtTick[i] - 1..xRegisterAtTick[i] + 1) {
-                        print("🔴") 
-                    } else {
-                        print("⚫️")
-                    }
-                }
+        for (i in 0 until (crtW * crtH)) {
+            if (i % crtW == 0) print("\n")
+            if (i % crtW in xRegisterAtTick[i] - 1..xRegisterAtTick[i] + 1) {
+                print("🔴")
+            } else {
+                print("⚫️")
             }
-
-            val testInput = readInput("Day_test")
-            println(" ============== test input =============")
-            printCRT(testInput)
-            println("\n\n")
-            println("============== real input ==============")
-            val input = readInput("Day")
-            printCRT(input)
-            println("\n\n")
         }
+    }
 
-        fun readInput(name: String) = File("src/main/resources/", "$name.txt").readLines()
+     val testInput = readInput("Day_test")
+     println(" ============== test input =============")
+     printCRT(testInput)
+     println("\n\n")
+     println("============== real input ==============")
+     val input = readInput("Day")
+     printCRT(input)
+     println("\n\n")
+}
+
+fun readInput(name: String) = File("src/main/resources/", "$name.txt").readLines()
 
 ```
 
