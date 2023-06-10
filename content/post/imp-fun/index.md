@@ -171,12 +171,12 @@ fun main(args: Array<String>) {
 
     fun Int.toPixel(index: Int, width: Int = crtW): String = if (index % width in this - 1..this + 1) "🔴" else "⚫️"
 
-    fun crtScan(input: List<String>): List<String> =
+    fun crtScan(input: List<String>,  width: Int = crtW): List<String> =
             input.map { it.toInstruction() }// converts input to instruction
             .flatMap { i -> i.expandInstruction() } // expands multi tick instructions
             .runningFold(1) { x, i -> x + i } // runs through the instructions accumulating x
             .mapIndexed { index, x -> x.toPixel(index) } // converts index and x register to a pixel
-            .chunked(40).map { it.joinToString("") } // spilt into lines for the screen
+            .chunked(width).map { it.joinToString("") } // spilt into lines for the screen
 
     fun List<String>.display() { // side effect method
         this.forEach {
@@ -199,7 +199,7 @@ fun main(args: Array<String>) {
 
 ## AI converts to functional
 
-Convert my imperative version to functional  
+AI Assistant converts my imperative version to functional
 ```kotlin
 mport java.io.File
 
@@ -256,7 +256,7 @@ Some issue with the loop not using a downTo and getting the ranges wrong. I like
 
 ## AI converts back to imperative
 
-Convert to imperative from my functional version  
+AI assistant converts my functional version to imperative
 
 ```kotlin
 import java.io.File
