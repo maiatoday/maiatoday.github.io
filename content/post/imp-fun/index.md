@@ -9,7 +9,9 @@ draft: false
 ---
 # Once upon a time
 
-I admit. I have a penchant for word games and weird [segues](https://www.merriam-webster.com/dictionary/segue). So I will tell you what this post is about [off the bat](https://dictionary.cambridge.org/dictionary/english/right-off-the-bat). You can [skip to the code](#code-starts-here), I won't be offended. [Fleet 1.19 was released this week](https://blog.jetbrains.com/fleet/2023/06/fleet-1-19-ai-powered-features-and-easier-configuration-for-rust-analyzer-python-interpreters-and-npm/) with an integrated AI assistant. I took it for a spin and used it to convert Kotlin code from imperative style to functional and back again. I used some Kotlin code, which solves the [Advent of Code 2022 Day 10 puzzle](https://adventofcode.com/2022/day/10). I had written the solution in two styles and I had the assistant do the same conversion and compared the code. And then I played around and generated some poetry. Follow links at your peril, there are rabbit holes, it might make you [late](https://youtu.be/ZOLpCWlsCjw?t=21) or [change the size](https://www.youtube.com/watch?v=pnJM_jC7j_4) of your free time.
+![branches](branches.png "branches")
+
+I admit. I have a penchant for word games and weird [segues](https://www.merriam-webster.com/dictionary/segue). So I will tell you what this post is about [off the bat](https://dictionary.cambridge.org/dictionary/english/right-off-the-bat). You can [skip to the code](#code-starts-here), I won't be offended. [Fleet 1.19 was released this week](https://blog.jetbrains.com/fleet/2023/06/fleet-1-19-ai-powered-features-and-easier-configuration-for-rust-analyzer-python-interpreters-and-npm/) with an integrated AI assistant. I took it for a spin and used it to convert Kotlin code from imperative style to functional and back again. I used some Kotlin code, which solves the [Advent of Code 2022 Day 10 puzzle](https://adventofcode.com/2022/day/10). I had written the solution in two styles and I had the AI assistant do the same conversion and compared the code. And then I played around and generated some poetry. Follow links at your peril, there are rabbit holes, it might make you [late](https://youtu.be/ZOLpCWlsCjw?t=21) or [change the size](https://www.youtube.com/watch?v=pnJM_jC7j_4) of your free time.
 
 ## Segue the first of many
 
@@ -65,7 +67,7 @@ Compare this with the **imperative** version:
 
 ## Imperative all the way - hand crafted by me
 
-Here is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many [succinct](https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd) and [elegant](https://todd.ginsberg.com/post/advent-of-code/2021/day10/) [solutions](https://github.com/topics/aoc-2022-in-kotlin) by other people out there. For this exploration, though,  the shape of my code is more interesting to me. Also to know if the solution is good it needs to have the same output on my input set.
+[Here](https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt) is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many [succinct](https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd) and [elegant](https://todd.ginsberg.com/post/advent-of-code/2021/day10/) [solutions](https://github.com/topics/aoc-2022-in-kotlin) by other people out there. For this exploration, though,  the shape of my code is more interesting to me. Also to know if the solution is good it needs to have the same output on my input set.
 ![ELPLZGZL](elplzgzl.png "The right answer")
 
 ```kotlin
