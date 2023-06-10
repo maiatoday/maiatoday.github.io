@@ -67,7 +67,7 @@ Compare this with the **imperative** version:
 
 ## Imperative all the way - hand crafted by me
 
-[Here](https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt) is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many [succinct](https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd) and [elegant](https://todd.ginsberg.com/post/advent-of-code/2021/day10/) [solutions](https://github.com/topics/aoc-2022-in-kotlin) by other people out there. For this exploration, though,  the shape of my code is more interesting to me. Also to know if the solution is good it needs to have the same output on my input set.
+[Here](https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt) is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many [succinct](https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd) and [elegant](https://todd.ginsberg.com/post/advent-of-code/2021/day10/) [solutions](https://github.com/topics/aoc-2022-in-kotlin) by other people out there. For this exploration, the changing shape of the code is what interests me. Also to know if the solution is good it needs to have the same output on my input set.
 ![ELPLZGZL](elplzgzl.png "The right answer")
 
 ```kotlin
