@@ -336,7 +336,23 @@ More maintainable code, you&amp;rsquo;ll build.&lt;/p>
 &amp;#34;Keep in mind that functional programming may not always be the best choice
 for every problem or coding style, but understanding and
 incorporating functional concepts can help create cleaner, more maintainable code.&amp;#34;
-&lt;/code>&lt;/pre></description></item><item><title>Four of a Kotlin Kind at I code Java 2022 conference</title><link>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</link><pubDate>Fri, 14 Oct 2022 10:30:41 +0200</pubDate><guid>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</guid><description>&lt;img src="https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/icj2022.jpg" alt="Featured image of post Four of a Kotlin Kind at I code Java 2022 conference" />&lt;p>I shared my talk titled Imperative, Declarative, Object oriented, functional: Four of a Kotlin Kind at the &lt;a class="link" href="https://j-sa.co/schedule-java/" target="_blank" rel="noopener"
+&lt;/code>&lt;/pre></description></item><item><title>AMxDC23</title><link>https://www.maiatoday.net/p/amxdc23/</link><pubDate>Thu, 27 Apr 2023 21:46:32 +0200</pubDate><guid>https://www.maiatoday.net/p/amxdc23/</guid><description>&lt;img src="https://www.maiatoday.net/p/amxdc23/amxdc23.jpeg" alt="Featured image of post AMxDC23" />&lt;p>Android Makers by droidcon 2023 was a lovely well sized conference. Big enough to hear some interesting talks and small enough to make new friends. Here is my talk and also the stream of the app clinic session.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/yF8Z0tK3CFE"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/DTR8M46tD5Y"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Four of a Kotlin Kind at I code Java 2022 conference</title><link>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</link><pubDate>Fri, 14 Oct 2022 10:30:41 +0200</pubDate><guid>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</guid><description>&lt;img src="https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/icj2022.jpg" alt="Featured image of post Four of a Kotlin Kind at I code Java 2022 conference" />&lt;p>I shared my talk titled Imperative, Declarative, Object oriented, functional: Four of a Kotlin Kind at the &lt;a class="link" href="https://j-sa.co/schedule-java/" target="_blank" rel="noopener"
 >I code Java conference&lt;/a>.&lt;/p>
 &lt;p>The abstract:
 Is Kotlin a functional language? Yes, but&amp;hellip; Is it object oriented? Yes, but&amp;hellip;
