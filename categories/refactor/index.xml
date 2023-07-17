@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>refactor on maiatoday</title><link>https://www.maiatoday.net/categories/refactor/</link><description>Recent content in refactor on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 17 Jul 2023 19:18:36 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/refactor/index.xml" rel="self" type="application/rss+xml"/><item><title>Swampy Refactor: Converting Otto Bus to Flows</title><link>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</link><pubDate>Mon, 17 Jul 2023 19:18:36 +0200</pubDate><guid>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</guid><description>&lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/swampyBus.png" alt="Featured image of post Swampy Refactor: Converting Otto Bus to Flows" />&lt;h2 id="the-story-starts">The story starts&lt;/h2>
+&lt;p>I was wandering around my day job&amp;rsquo;s code base and I happened on a time capsule - a pristine Java Activity studded with semi-colons, a snapshot of how we built things in 2014. All the member variables started with &lt;code>m&lt;/code> and there was plenty of logic to update the screen and dictate actions. Despite being old, it&amp;rsquo;s still used every day by users. Why would I change it?&lt;/p>
+&lt;h2 id="the-bus-disappears">The Bus disappears&lt;/h2>
+&lt;p>Well, it got its data from a subscription to the Otto Bus. Otto Bus was deprecated in 2016.
+&lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus.png"
+width="2282"
+height="588"
+srcset="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus_hu9057e51fe939aab19a768d0710b7353e_248493_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus_hu9057e51fe939aab19a768d0710b7353e_248493_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Deprecated Otto Bus"
+class="gallery-image"
+data-flex-grow="388"
+data-flex-basis="931px"
+>
+A blog post suggested migrating to RxJava, but since our code base standard now involves coroutines, Flows, and in some cases, LiveData, I decided to remove deprecated libraries and complete the partial migrations we started some time ago.&lt;/p>
+&lt;p>This blog post summarizes how to migrate from Otto Bus to Flow.&lt;/p>
+&lt;p>I&amp;rsquo;ve also created a &lt;a class="link" href="https://github.com/maiatoday/Pocket8Ball" target="_blank" rel="noopener"
+>Git repo&lt;/a> with a simplified example that uses Otto Bus, with a conversion to Flow in the commit history. Check out the &lt;code>otto-bus&lt;/code> tag for the working Otto Bus version and the &lt;code>flow&lt;/code> tag for the converted Flow version. I am sparing you the Java to Kotlin conversions. This toy app lets you tap on the 8 ball for a message. It uses Otto Bus to notify the 8 Ball that a new message is needed as well as when a new message is availble.&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/eightball.png"
+width="300"
+height="633"
+srcset="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/eightball_hu7aa8f8e31919029b25b3982f4a9014b9_57421_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/eightball_hu7aa8f8e31919029b25b3982f4a9014b9_57421_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Pocket 8 Ball"
+class="gallery-image"
+data-flex-grow="47"
+data-flex-basis="113px"
+>&lt;/p>
+&lt;h2 id="how-to-tackle-the-migration---step-by-step">How to tackle the migration - step by step&lt;/h2>
+&lt;p>Here are the basic steps for this kind of migration:&lt;/p>
+&lt;ol>
+&lt;li>Pick one &lt;strong>event&lt;/strong>&lt;/li>
+&lt;li>Find All the &lt;strong>producers&lt;/strong> of this event (hopefully, there is only one but don&amp;rsquo;t count on it)&lt;/li>
+&lt;li>Replace with compatible &lt;strong>functionality&lt;/strong>. We&amp;rsquo;ll look at how to choose compatible functionality in the next section. Things will be broken.&lt;/li>
+&lt;li>Find all &lt;strong>subscribers&lt;/strong> of this event by looking for &lt;code>@Subscribe&lt;/code> annotations. Replace with a matching access mechanism. Things should work at this point.&lt;/li>
+&lt;li>&lt;strong>Test&lt;/strong> that everything that used this one event still works&lt;/li>
+&lt;li>&lt;strong>Repeat&lt;/strong> with the next event until there are no events left to migrate&lt;/li>
+&lt;li>&lt;strong>Remove&lt;/strong> the Otto bus and it&amp;rsquo;s dependencies&lt;/li>
+&lt;li>&lt;strong>Celebrate!&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>Of course this looks deceptively simple. As simple as it is to add otto bus to a code base. It may require some architectural refactors and modifications of how the dependency injection works in your app. Also if you were using otto bus to drive navigation, a Flow is not the right solution. I suspect the swamp you find yourself in is larger, deaper and much much more tangled. To this I would say, I hold you in my thoughts and I hope you have tests.&lt;/p>
+&lt;h2 id="why-is-the-bus-in-the-app">Why is the bus in the app&lt;/h2>
+&lt;p>I do have some advice on choosing an alternative implementation. It depends on why the otto bus was introduced in the app in the first place. The thing to understand is that the event bus pattern allows multiple producers to drop events into the bus from all over the app. On the other side of the bus any number of subscribers can wait for a particular event without knowing the origin of the event. This &lt;em>extreme loose coupling&lt;/em> is handy however it means&lt;/p>
+&lt;ul>
+&lt;li>nothing is stopping you from coding up something unmaintainable&lt;/li>
+&lt;li>in large projects it is difficult to follow the logic&lt;/li>
+&lt;li>it is difficult to write tests&lt;/li>
+&lt;/ul>
+&lt;p>For each of the events in your case ask yourself these questions.&lt;/p>
+&lt;h3 id="async-observable-state">Async observable state&lt;/h3>
+&lt;p>Was the bus used to observe a state in an asynchronous way? If this is the case, you can replace the bus with an observer pattern using a StateFlow. The producer and subscriber will be more tightly coupled but you will get cognitive support from clearer architecture. You will also get some IDE support and autocomplete to help you. You will need to look at the architecture or the dependency injection to make sure the subscriber has access to the producer so it can collect the StateFlow.&lt;/p>
+&lt;h3 id="synchronous-notification">Synchronous notification&lt;/h3>
+&lt;p>Was the bus to notify one area in the code that something happened elsewhere? If this is synchronous then a simple method call may suffice. Again you will need to look at the architecture or the dependency injection to make sure the subscriber state has access to the producer so it can collect the StateFlow. Wrapping producer classes in interfaces will make testing this code easier.&lt;/p>
+&lt;h3 id="i-really-really-really-need-a-bus">I really really really need a bus&lt;/h3>
+&lt;p>If the bus was legitimately used because you have many places in the app that need to respond to an event, you can recreate the bus functionality with a singleton and a SharedFlow. Inject the Bus into all the classes that need it and provide the SharedFlow from the injected class. Then subscribers can &lt;code>collectLatest&lt;/code> on the &lt;code>SharedFlow&lt;/code> and filter for the events they are interested in. Provide a method to emit something on the bus. There is a &lt;a class="link" href="https://github.com/maiatoday/Pocket8Ball/blob/flow-bus/app/src/main/java/net/maiatoday/pocket8ball/di/BusModule.kt" target="_blank" rel="noopener"
+>branch in the sample repo&lt;/a> with a simple implementation of this.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">interface&lt;/span> &lt;span class="nc">FlowBus&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">bus&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">SharedFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">BusEvent&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">suspend&lt;/span> &lt;span class="k">fun&lt;/span> &lt;span class="nf">post&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">event&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">BusEvent&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">object&lt;/span> &lt;span class="nc">BusModule&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">FlowBus&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">private&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">_bus&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">MutableSharedFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">BusEvent&lt;/span>&lt;span class="p">&amp;gt;(&lt;/span>&lt;span class="n">replay&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">override&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">bus&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">SharedFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">BusEvent&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">get&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">_bus&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">override&lt;/span> &lt;span class="k">suspend&lt;/span> &lt;span class="k">fun&lt;/span> &lt;span class="nf">post&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">event&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">BusEvent&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">_bus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">emit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">event&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The BusEvent is a sealed class.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">sealed&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">BusEvent&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">data&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">MessageFromTheAether&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">val&lt;/span> &lt;span class="py">answer&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">BusEvent&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">object&lt;/span> &lt;span class="nc">ShakeItUp&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">BusEvent&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="none-of-this-will-work-for-me">None of this will work for me&lt;/h3>
+&lt;p>You can always resort to using a &lt;a class="link" href="https://developer.android.com/guide/components/broadcasts" target="_blank" rel="noopener"
+>Broadcast receiver&lt;/a> to send a message from one part of your app to another. One thing to note if you go this route is that you will only be able to use this solution in the Android app and not in shared Kotlin only modules.&lt;/p>
+&lt;h2 id="example-in-the-repo---easy-swap-to-stateflow">Example in the repo - Easy swap to StateFlow&lt;/h2>
+&lt;p>For my toy example the producer that emits data is the Magic8Ball. Instead of posting an event on the bus, make the data available in a StateFlow.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nc">BusModule&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">bus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">post&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">MessageFromeTheAether&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">latestMessage&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>is replaced with&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">_answer&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">MutableStateFlow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">answer&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">StateFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">get&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">_answer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">asStateFlow&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// and then later when a new message is needed
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">_answer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="k">value&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">latestMessage&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In my example the subscriber of the data is the ViewModel.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Subscribe&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">revealAnswer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">message&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">MessageFromeTheAether&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">_uiState&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="k">value&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Reveal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">message&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">answer&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>is replaced with this snippet in typically the init block of the view model&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">viewModelScope&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">launch&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">eightBall&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">answer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">collect&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">answer&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">_uiState&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="k">value&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Reveal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">answer&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Here is the matching video showing all the code changes.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/E-1n_AmlVjE"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item></channel></rss>
