@@ -20,7 +20,7 @@ A blog post suggested migrating to RxJava, but since our code base standard now 
 
 This blog post summarizes how to migrate from Otto Bus to Flow.
 
-I've also created a [Git repo](https://github.com/maiatoday/Pocket8Ball) with a simplified example that uses Otto Bus, with a conversion to Flow in the commit history. Check out the `otto-bus` tag for the working Otto Bus version and the `flow` tag for the converted Flow version. I am sparing you the Java to Kotlin conversions. This toy app lets you tap on the 8 ball for a message. It uses Otto Bus to notify the 8 Ball that a new message is needed as well as when a new message is availble.
+I've also created a [Git repo](https://github.com/maiatoday/Pocket8Ball) with a simplified example that uses Otto Bus, with a conversion to Flow in the commit history. Check out the `otto-bus` tag for the working Otto Bus version and the `flow` tag for the converted Flow version. I am sparing you the Java to Kotlin conversions. This toy app lets you tap on the 8 ball for a message. It uses Otto Bus to notify the 8 Ball that a new message is needed as well as when a new message is available.
 
 ![Pocket 8 Ball](eightball.png)
 
@@ -53,7 +53,7 @@ Was the bus used to observe a state in an asynchronous way? If this is the case,
 
 ### Synchronous notification
 
-Was the bus to notify one area in the code that something happened elsewhere? If this is synchronous then a simple method call may suffice. Again you will need to look at the architecture or the dependency injection to make sure the subscriber state has access to the producer so it can collect the StateFlow. Wrapping producer classes in interfaces will make testing this code easier.
+Was the bus to notify one area in the code that something happened elsewhere? If this is synchronous then a simple method call may suffice. Again you will need to look at the architecture or the dependency injection to make sure the class notifying has access to the class that provides the method. Wrapping class that receives the notifigation in an interfaces will make testing this code easier.
 
 ### I really really really need a bus
 
