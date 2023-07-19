@@ -53,7 +53,7 @@ Was the bus used to observe a state in an asynchronous way? If this is the case,
 
 ### Synchronous notification
 
-Was the bus to notify one area in the code that something happened elsewhere? If this is synchronous then a simple method call may suffice. Again you will need to look at the architecture or the dependency injection to make sure the class notifying has access to the class that provides the method. Wrapping class that receives the notification in an interfaces will make testing this code easier.
+Was the bus used to notify one area in the code that something happened elsewhere? If this is synchronous then a simple method call may suffice. Again you will need to look at the architecture and the dependency injection to make sure the class notifying has access to the class that provides the method. Wrapping the class that receives the notification in an interface will make testing this code easier.
 
 ### I really really really need a bus
 
