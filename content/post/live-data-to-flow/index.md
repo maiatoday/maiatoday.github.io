@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I still LiveData - where are the Flows?"
+title: "I still see LiveData - where are the Flows?"
 image: hammer.png
 categories: [code, refactor]
 tags: [code, refactor, live data, flow]
