@@ -26,6 +26,7 @@ Here are some resources to give and receive feedback:
 * [How to master the art of feedback](https://play.acast.com/s/amazingif/howtomastertheartoffeedback) podcast 22min
 * [Thanks for the Feedback](https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00F10Z4GO?crid=GXZKMY77YQOJ&keywords=Thanks+for+the+feedback+book&qid=1699585336&sprefix=thanks+for+the+feedback+book,aps,319&sr=8-1) book
 * [Giving Feedback](https://www.mindtools.com/a18a0wu/giving-feedback) article with pointers
+* [The Psychology of Feedback](https://buffer.com/resources/how-to-give-receive-feedback-work/#:~:text=And%20when%20we%20receive%20criticism,%2C%E2%80%9D%20says%20psychologist%20Daniel%20Goleman.) aritcle
 
 We will add more in the resources slack channel
 
