@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on maiatoday</title><link>https://www.maiatoday.net/page/</link><description>Recent content in Pages on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.maiatoday.net/page/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://www.maiatoday.net/about/</link><pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate><guid>https://www.maiatoday.net/about/</guid><description>&lt;p>This site documents my projects, code snippets, notes to myself so I won&amp;rsquo;t forget and other random explorations. It also records my activities as Android GDE.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on maiatoday</title><link>https://www.maiatoday.net/page/</link><description>Recent content in Pages on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.maiatoday.net/page/index.xml" rel="self" type="application/rss+xml"/><item><title>tfc</title><link>https://www.maiatoday.net/tfc/</link><pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate><guid>https://www.maiatoday.net/tfc/</guid><description>&lt;p>Delivering a good Tech talk is hard. There are many things to consider. Most tech talk speakers I meet are not professional speakers. They do this as a hobby. The basic process to improve is to keep doing the tech talks and watching how audiences respond and trying again. Sometimes we get feedback mostly this feedback is after the talk or not very useful. There is another skill we could practise. This is the skill of &lt;em>giving&lt;/em> feedback and also the skill of &lt;em>receiving&lt;/em> feedback. If we all practise our feedback skills we can help each other give better tech talks.&lt;/p>
+&lt;p>To crowd source a place where we can practise our feedback skills I am starting the &lt;strong>The Tech Talk Feedback Club&lt;/strong> or just &lt;strong>The Feedback Club&lt;/strong> for short. This is a safe space to ask for feedback and to practise giving feedback. Here are some rules of engagement:&lt;/p>
+&lt;ul>
+&lt;li>you do not need to be an experienced speaker to give feedback, all you need to do is pay attention and give your honest opinion on how you understand what the speaker is communicating&lt;/li>
+&lt;li>the more you give the more you get, so engage&lt;/li>
+&lt;li>give feedback on the topic, the talk, the delivery NOT the person&lt;/li>
+&lt;li>giving feedback is a gift of time, we are grateful for the input&lt;/li>
+&lt;li>if someone gives feedback, the speaker/author can choose to ignore the feedback&lt;/li>
+&lt;li>The Feedback Club is a safe space&lt;/li>
+&lt;li>Use the appropriate channels to ask&lt;/li>
+&lt;li>Say clearly if you have a deadline, but remember we are all volunteers&lt;/li>
+&lt;/ul>
+&lt;p>Here are some resources to give and receive feedback:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://play.acast.com/s/amazingif/howtomastertheartoffeedback" target="_blank" rel="noopener"
+>How to master the art of feedback&lt;/a> podcast 22min&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00F10Z4GO?crid=GXZKMY77YQOJ&amp;amp;keywords=Thanks&amp;#43;for&amp;#43;the&amp;#43;feedback&amp;#43;book&amp;amp;qid=1699585336&amp;amp;sprefix=thanks&amp;#43;for&amp;#43;the&amp;#43;feedback&amp;#43;book,aps,319&amp;amp;sr=8-1" target="_blank" rel="noopener"
+>Thanks for the Feedback&lt;/a> book&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.mindtools.com/a18a0wu/giving-feedback" target="_blank" rel="noopener"
+>Giving Feedback&lt;/a> article with pointers&lt;/li>
+&lt;/ul>
+&lt;p>We will add more in the resources slack channel&lt;/p>
+&lt;p>The Tech Talk Feedback Club is a slack community. If you would like to join in, contact the person who told you about the club to give you the invite link.&lt;/p>
+&lt;p>Welcome to The Tech Talk Feedback Club.&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/the_feedback_club_round.png"
+loading="lazy"
+>&lt;/p></description></item><item><title>About</title><link>https://www.maiatoday.net/about/</link><pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate><guid>https://www.maiatoday.net/about/</guid><description>&lt;p>This site documents my projects, code snippets, notes to myself so I won&amp;rsquo;t forget and other random explorations. It also records my activities as Android GDE.&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.polywork.com/maiatoday/contact" target="_blank" rel="noopener"
 >Contact me for collaboration&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://gitlab.com/maiatoday" target="_blank" rel="noopener"
