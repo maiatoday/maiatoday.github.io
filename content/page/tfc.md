@@ -34,4 +34,4 @@ The Tech Talk Feedback Club is a slack community. If you would like to join in, 
 
 Welcome to The Tech Talk Feedback Club.
 
-![](the_feedback_club_round.png)
+![](/the_feedback_club_round.png)
