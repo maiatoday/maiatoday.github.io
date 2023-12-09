@@ -64,7 +64,21 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">matrix&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This matrix can be used to transform the RoundedPolygon into the hosting view. When we draw this polygon we need to first transform it with the matrix and then convert it to a compose path. The transformation happens in the &lt;code>drawWithCache&lt;/code> modifier so that it is cached.&lt;/p>
-&lt;p>It is coloured with a radial gradient with stops so that the colours make more distinct bands. Full &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/main/app/src/main/java/net/maiatoday/turbogiggle/SpikySplash.kt" target="_blank" rel="noopener"
+&lt;p>Here is just the &lt;code>drawWithCache&lt;/code> modifier:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="n">drawWithCache&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">matrix&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">fromBoundsToView&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">width&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">height&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">height&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">sizedSpikySplash&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">RoundedPolygon&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">spikySplash&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">apply&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">transform&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">matrix&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">spikyBrush&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nc">Brush&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">radialGradient&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">colorStops&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">colorStops&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">onDrawBehind&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">drawPath&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">path&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">sizedSpikySplash&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="n">toPath&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="n">asComposePath&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">brush&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">spikyBrush&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It is coloured with a radial gradient with stops so that the colours make more distinct bands. Full &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/main/app/src/main/java/net/maiatoday/turbogiggle/SpikySplash.kt" target="_blank" rel="noopener"
 >spiky splash source here&lt;/a>&lt;/p>
 &lt;img src="spikyStar.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;h2 id="scribble-drawing---path-matrix-transform-flattened-path">Scribble drawing - path, matrix transform, flattened path&lt;/h2>
@@ -75,7 +89,7 @@
 &lt;img src="pathInSvg.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Copy everything in the &lt;code>d=&amp;quot;...&lt;/code> section as a string and paste it into your code.&lt;/p>
 &lt;img src="stringInAndroidStudio.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
-&lt;h3 id="transforming-the-path-with-matrix">Transforming the path with matrix&lt;/h3>
+&lt;h3 id="transforming-the-path-with-the-matrix">Transforming the path with the matrix&lt;/h3>
 &lt;p>The matrix transformation is &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/2849314e0e2fb1e4670e500759c4fe7ff994a87b/app/src/main/java/net/maiatoday/turbogiggle/ScribblePath.kt#L164" target="_blank" rel="noopener"
 >very similar&lt;/a> to the RoundedPolygon one, but&amp;hellip; we now need the Compose &lt;code>Matrix&lt;/code> not the Android view one. Also the bounds of the path are no longer -1,1 for both x and y. We can get the bounds of the path and use it to make a matrix to size the scribble to fit the view.&lt;/p>
 &lt;h3 id="drawing-the-path">Drawing the path&lt;/h3>
@@ -134,6 +148,7 @@ Your browser does not support the video tag.
 &lt;li>Make &lt;strong>sliding in blinds&lt;/strong> effect&lt;/li>
 &lt;li>&lt;strong>Get real data&lt;/strong> from the Spotify API and expand the animations&lt;/li>
 &lt;/ul>
+&lt;p>But hey there is always more to learn and explore.&lt;/p>
 &lt;h2 id="references">References&lt;/h2>
 &lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/brushing-up-on-compose-text-coloring-84d7d70dd8fa" target="_blank" rel="noopener"
 >Alejandra&amp;rsquo;s Medium article on animating linear gradient brush&lt;/a>&lt;/p>
