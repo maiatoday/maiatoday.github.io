@@ -59,6 +59,8 @@ Spacer(modifier
 
 ## Spiky Splash - rotating RoundedPolygon with drawWithCache modifier
 
+<img src="spikyStar.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
+
 The Spiky Splash shape is created with a RoundedPolygon with 14 vertices.
 
 ```kotlin
@@ -108,8 +110,6 @@ Here is just the `drawWithCache` modifier:
 ```
 
 It is coloured with a radial gradient with stops so that the colours make more distinct bands. Full [spiky splash source here](https://github.com/maiatoday/turbo-giggle/blob/main/app/src/main/java/net/maiatoday/turbogiggle/SpikySplash.kt)
-
-<img src="spikyStar.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 
 ## Scribble drawing - path, matrix transform, flattened path
 
