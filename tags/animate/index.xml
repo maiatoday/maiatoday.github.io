@@ -41,6 +41,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">})&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="spiky-splash---rotating-roundedpolygon-with-drawwithcache-modifier">Spiky Splash - rotating RoundedPolygon with drawWithCache modifier&lt;/h2>
+&lt;img src="spikyStar.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>The Spiky Splash shape is created with a RoundedPolygon with 14 vertices.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">spikySplash&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nc">RoundedPolygon&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">star&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">numVerticesPerRadius&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">14&lt;/span>&lt;span class="p">,&lt;/span>
@@ -80,7 +81,6 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It is coloured with a radial gradient with stops so that the colours make more distinct bands. Full &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/main/app/src/main/java/net/maiatoday/turbogiggle/SpikySplash.kt" target="_blank" rel="noopener"
 >spiky splash source here&lt;/a>&lt;/p>
-&lt;img src="spikyStar.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;h2 id="scribble-drawing---path-matrix-transform-flattened-path">Scribble drawing - path, matrix transform, flattened path&lt;/h2>
 &lt;h3 id="how-to-get-a-path-from-svg">How to get a path from svg&lt;/h3>
 &lt;img src="spikyscribble.svg" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
