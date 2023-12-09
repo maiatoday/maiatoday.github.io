@@ -87,7 +87,25 @@ height: Float
     return matrix
 }
 ```
-This matrix can be used to transform the RoundedPolygon into the hosting view. When we draw this polygon we need to first transform it with the matrix and then convert it to a compose path. The transformation happens in the `drawWithCache` modifier so that it is cached. 
+This matrix can be used to transform the RoundedPolygon into the hosting view. When we draw this polygon we need to first transform it with the matrix and then convert it to a compose path. The transformation happens in the `drawWithCache` modifier so that it is cached.
+
+Here is just the `drawWithCache` modifier:
+
+```kotlin
+.drawWithCache {
+    val matrix = fromBoundsToView(width = size.width, height = size.height)
+    val sizedSpikySplash = RoundedPolygon(spikySplash).apply { transform(matrix) }
+    val spikyBrush = Brush.radialGradient(colorStops = colorStops)
+    onDrawBehind {
+        drawPath(
+        path = sizedSpikySplash
+        .toPath()
+        .asComposePath(),
+        brush = spikyBrush
+        )
+    }
+}
+```
 
 It is coloured with a radial gradient with stops so that the colours make more distinct bands. Full [spiky splash source here](https://github.com/maiatoday/turbo-giggle/blob/main/app/src/main/java/net/maiatoday/turbogiggle/SpikySplash.kt)
 
@@ -107,7 +125,7 @@ Copy everything in the `d="...` section as a string and paste it into your code.
 
 <img src="stringInAndroidStudio.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 
-### Transforming the path with matrix
+### Transforming the path with the matrix
 
 The matrix transformation is [very similar](https://github.com/maiatoday/turbo-giggle/blob/2849314e0e2fb1e4670e500759c4fe7ff994a87b/app/src/main/java/net/maiatoday/turbogiggle/ScribblePath.kt#L164) to the RoundedPolygon one, but... we now need the Compose `Matrix` not the Android view one. Also the bounds of the path are no longer -1,1 for both x and y. We can get the bounds of the path and use it to make a matrix to size the scribble to fit the view. 
 
@@ -124,6 +142,8 @@ val lines = path.asAndroidPath().flatten(0.5f)
 ```
 The 0.5f paramter in the flatten call is the error that the flatten call allows, 0.5 is half a pixel. You can also see we need to convert again to an `AndroidPath` because the `flatten` method is only available on Android paths. We animate a progress variable so we can loop from say 0% to 10% and so on up to 100% and then start again. Then in the modifier `onDrawBehind` function lambde we loop through the `lines` and draw only those lines up to a the progress variable. The animation is caused by only some of the path subsections being drawn and more and more of them being drawn as the progerss increases.
 
+
+
 <img src="scribble.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 
 ## Combining everything
@@ -138,24 +158,24 @@ fun Giggle(modifier: Modifier = Modifier) {
     Box(modifier.background(Sherbet)) {
 
         ShimmerPane(
-        Modifier
-        .height(280.dp)
-        .width(250.dp)
+          Modifier
+            .height(280.dp)
+            .width(250.dp)
         )
         Daisy(colors = listOf(SwimmingCap, Licorice))
         SpikyScribble(
-        colors = listOf(Cherry, Licorice),
-        modifier = Modifier
-        .offset(-150.dp, 400.dp)
+          colors = listOf(Cherry, Licorice),
+          modifier = Modifier
+            .offset(-150.dp, 400.dp)
         )
         Bean(colors = listOf(Custard, OrangeSquash),
-        modifier = Modifier
-        .fillMaxSize()
+          modifier = Modifier
+            .fillMaxSize()
         )
         SpikySplash(
-        Modifier
-        .size(500.dp)
-        .offset(100.dp, 400.dp)
+          Modifier
+            .size(500.dp)
+            .offset(100.dp, 400.dp)
         )
     }
 }
@@ -187,6 +207,8 @@ This experiment is by no means complete. This is what I could try out next:
 * Make a **circular calendar** with a bezier or RoundedPolygon animating graph
 * Make **sliding in blinds** effect
 * **Get real data** from the Spotify API and expand the animations
+
+But hey there is always more to learn and explore.
 
 ## References
 
