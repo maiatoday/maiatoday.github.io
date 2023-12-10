@@ -162,7 +162,7 @@ The clue is we split the whole path up into short sections, little lines, which 
 ```kotlin
 val lines = path.asAndroidPath().flatten(0.5f)
 ```
-The 0.5f paramter in the flatten call is the error that the flatten call allows, 0.5 is half a pixel. You can also see we need to convert again to an `AndroidPath` because the `flatten` method is only available on Android paths. We animate a progress variable so we can loop from say 0% to 10% and so on up to 100% and then start again. Then in the modifier `onDrawBehind` function lambde we loop through the `lines` and draw only those lines up to a the progress variable. The animation is caused by only some of the path subsections being drawn and more and more of them being drawn as the progerss increases.
+The 0.5f parameter in the flatten call is the error that the flatten call allows, 0.5 is half a pixel. You can also see we need to convert again to an `AndroidPath` because the `flatten` method is only available on Android paths. We animate a progress variable so we can loop from say 0% to 10% and so on up to 100% and then start again. Then in the modifier `onDrawBehind` function lambde we loop through the `lines` and draw only those lines up to a the progress variable. The animation is caused by only some of the path subsections being drawn and more and more of them being drawn as the progerss increases.
 
 
 
