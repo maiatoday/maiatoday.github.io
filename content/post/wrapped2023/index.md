@@ -111,6 +111,28 @@ Here is just the `drawWithCache` modifier:
 
 It is coloured with a radial gradient with stops so that the colours make more distinct bands. Full [spiky splash source here](https://github.com/maiatoday/turbo-giggle/blob/main/app/src/main/java/net/maiatoday/turbogiggle/SpikySplash.kt)
 
+The animation is pretty standard, `infiniteTransition` changing then rotation angle.
+```kotlin
+val spikyTransition = rememberInfiniteTransition(label = "spiky transition")
+val rotate by spikyTransition.animateFloat(
+    initialValue = 45f,
+    targetValue = -45f,
+    animationSpec = infiniteRepeatable(
+        animation = tween(4_000, easing = FastOutSlowInEasing),
+        repeatMode = RepeatMode.Reverse
+    ),
+    label = "Spiky rotate "
+)
+```
+We use the rotation angle in a `graphicsLayer` modifier because we don't need to redraw the spiky splash, we only need to rotate it. We also change the shape to be more oval in this snippet by scaling it to half the size in the y axis.
+
+```kotlin
+.graphicsLayer {
+  scaleY = 0.5f
+  rotationZ = rotate
+}
+```
+
 ## Scribble drawing - path, matrix transform, flattened path
 
 ### How to get a path from svg
@@ -208,7 +230,9 @@ This experiment is by no means complete. This is what I could try out next:
 * Make **sliding in blinds** effect
 * **Get real data** from the Spotify API and expand the animations
 
-But hey there is always more to learn and explore.
+But hey, there is always more to learn and explore.
+
+If you want to get a step by step walkthrough of concepts such as these with some theory discussions and a practise repo, check out my droidcon academy coffee break codelab titled [Draw and Animate on Canvas with Jetpack Compose in Android](https://academy.droidcon.com/course/draw-and-animate-on-canvas-with-jetpack-compose-in-android)
 
 ## References
 
