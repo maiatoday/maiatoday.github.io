@@ -81,7 +81,23 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It is coloured with a radial gradient with stops so that the colours make more distinct bands. Full &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/main/app/src/main/java/net/maiatoday/turbogiggle/SpikySplash.kt" target="_blank" rel="noopener"
 >spiky splash source here&lt;/a>&lt;/p>
-&lt;h2 id="scribble-drawing---path-matrix-transform-flattened-path">Scribble drawing - path, matrix transform, flattened path&lt;/h2>
+&lt;p>The animation is pretty standard, &lt;code>infiniteTransition&lt;/code> changing then rotation angle.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">spikyTransition&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rememberInfiniteTransition&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">label&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;spiky transition&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">rotate&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">spikyTransition&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">animateFloat&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">45f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">targetValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="m">45f&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animationSpec&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">infiniteRepeatable&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">animation&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">tween&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="n">_000&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">easing&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">FastOutSlowInEasing&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatMode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nc">RepeatMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Reverse&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">label&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Spiky rotate &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We use the rotation angle in a &lt;code>graphicsLayer&lt;/code> modifier because we don&amp;rsquo;t need to redraw the spiky splash, we only need to rotate it. We also change the shape to be more oval in this snippet by scaling it to half the size in the y axis.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="n">graphicsLayer&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">scaleY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0.5f&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rotationZ&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rotate&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="scribble-drawing---path-matrix-transform-flattened-path">Scribble drawing - path, matrix transform, flattened path&lt;/h2>
 &lt;h3 id="how-to-get-a-path-from-svg">How to get a path from svg&lt;/h3>
 &lt;img src="spikyscribble.svg" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Create some scribbles in a package like inkscape or any drawing package that will let you save an svg. Don&amp;rsquo;t make it complicated, literally just draw a line with the pencil. Then open the svg with a text editor. You can &lt;a class="link" href="http://maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/spikyscribble.svg" target="_blank" rel="noopener"
@@ -148,7 +164,9 @@ Your browser does not support the video tag.
 &lt;li>Make &lt;strong>sliding in blinds&lt;/strong> effect&lt;/li>
 &lt;li>&lt;strong>Get real data&lt;/strong> from the Spotify API and expand the animations&lt;/li>
 &lt;/ul>
-&lt;p>But hey there is always more to learn and explore.&lt;/p>
+&lt;p>But hey, there is always more to learn and explore.&lt;/p>
+&lt;p>If you want to get a step by step walkthrough of concepts such as these with some theory discussions and a practise repo, check out my droidcon academy coffee break codelab titled &lt;a class="link" href="https://academy.droidcon.com/course/draw-and-animate-on-canvas-with-jetpack-compose-in-android" target="_blank" rel="noopener"
+>Draw and Animate on Canvas with Jetpack Compose in Android&lt;/a>&lt;/p>
 &lt;h2 id="references">References&lt;/h2>
 &lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/brushing-up-on-compose-text-coloring-84d7d70dd8fa" target="_blank" rel="noopener"
 >Alejandra&amp;rsquo;s Medium article on animating linear gradient brush&lt;/a>&lt;/p>
