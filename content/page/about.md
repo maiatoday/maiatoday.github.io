@@ -34,6 +34,6 @@ This site documents my projects, code snippets, notes to myself so I won't forge
 
  [Threads profile](https://www.threads.net/@maiatoday)
 
-![GDE 2024 Android badge](experts-digital-badge-logos-2024_android.png)
+![GDE 2024 Android badge](experts-digital-badge-logos-2024-android.png)
 
 [1]: <https://androiddev.social/@maiatoday> 
