@@ -1,4 +1,389 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on maiatoday</title><link>https://www.maiatoday.net/post/</link><description>Recent content in Posts on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 09 Dec 2023 17:18:17 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>How to build Wrapped 2023 in Compose Animation</title><link>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</link><pubDate>Sat, 09 Dec 2023 17:18:17 +0200</pubDate><guid>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/wrappedBanner.png" alt="Featured image of post How to build Wrapped 2023 in Compose Animation" />&lt;h1 id="how-to-build-wrapped-2023-in-compose-animation">How to build Wrapped 2023 in Compose Animation&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on maiatoday</title><link>https://www.maiatoday.net/post/</link><description>Recent content in Posts on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 11 Aug 2024 13:47:49 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>50 ways to run some Kotlin code</title><link>https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/</link><pubDate>Sun, 11 Aug 2024 13:47:49 +0200</pubDate><guid>https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/</guid><description>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/runKodee.png" alt="Featured image of post 50 ways to run some Kotlin code" />&lt;p>Here&amp;rsquo;s the situation. You find a snippet of Kotlin code somewhere on the Internet or in a book. You want to try it out. What is the quickest path to messing with the code? Here are some recipes for some options. I sorted them from the quickest no tools and no project all the way through to all the tools and all the projects. I&amp;rsquo;ll provide info on how to add a library as dependencies if possible in each of the solutions.&lt;/p>
+&lt;p>All of the options are free except the Intelij Enterprise IDE one.&lt;/p>
+&lt;p>&lt;em>Disclaimers:&lt;/em>&lt;/p>
+&lt;ol>
+&lt;li>This is not a complete guide, it is opinionated and it is a snapshot of the current state of the tools. Things always change and your favourite may not be listed.&lt;/li>
+&lt;li>I tested most of these on my Mac so the solutions are Mac-centric. If you want to try them on another OS, you may need to fiddle and research a bit more.&lt;/li>
+&lt;li>I usually code for myself or for mobile so no serverside or web code or docker containers.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited.png"
+width="250"
+height="250"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu7492807376612341061.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu429942084425830077.png 1024w"
+loading="lazy"
+alt="Let&amp;rsquo;s Go!"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+>&lt;/p>
+&lt;h1 id="quicklinks">Quicklinks&lt;/h1>
+&lt;p>Here is an overview with links so you can jump directly to what suits your needs&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Tools&lt;/th>
+&lt;th>No project&lt;/th>
+&lt;th>with project&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Browser&lt;/td>
+&lt;td>&lt;a class="link" href="#playground" >Playground&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="#datalore" >Datalore&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CLI&lt;/td>
+&lt;td>&lt;a class="link" href="#compile-and-run" >Compile and run&lt;/a> &lt;a class="link" href="#repl" >REPL&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Fleet&lt;/td>
+&lt;td>👆 See CLI section&lt;/td>
+&lt;td>👆 &lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Intellij Community/Android Studio&lt;/td>
+&lt;td>&lt;a class="link" href="#scratch-file" >Scratch file&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="#wizard" >Wizard&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>IDE Intellij Enterprise (not free)&lt;/td>
+&lt;td>&lt;a class="link" href="#intellij-enterprise-and-notebook" >Notebook&lt;/a>&lt;/td>
+&lt;td>See Intellij Community section&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;a class="link" href="#what-next" >Resources&lt;/a>&lt;/p>
+&lt;h1 id="browser">Browser&lt;/h1>
+&lt;p>This recipe is for when you don&amp;rsquo;t have a computer where you can install things. Maybe you are on a tablet or you are in an internet cafe in an unknown place or borrowing your neighbours laptop. It is good for code snippets that use standard java or kotlin libraries and output text.&lt;/p>
+&lt;h2 id="playground">Playground&lt;/h2>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground.png"
+width="1218"
+height="614"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu17619968913386725222.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu10623720097698865015.png 1024w"
+loading="lazy"
+alt="Playground"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="476px"
+>&lt;/p>
+&lt;h3 id="you-need">You need&lt;/h3>
+&lt;ul>
+&lt;li>A browser&lt;/li>
+&lt;li>A website that can run code e.g. &lt;a class="link" href="https://play.kotlinlang.org" target="_blank" rel="noopener"
+>Kotlin playground&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="recipe">Recipe&lt;/h3>
+&lt;ol>
+&lt;li>open &lt;a class="link" href="htps://play.kotlinlang.org" >this&lt;/a> website&lt;/li>
+&lt;li>paste or type some code&lt;/li>
+&lt;li>run &lt;code>Ctrl + R&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h3 id="adding-dependencies">Adding dependencies&lt;/h3>
+&lt;p>A good way to see what you can add is to autocomplete an &lt;code>import&lt;/code> statement. You have access to kotlin, kotlinx, java and javax. If you want to add other libraries you need to run your own instance of the kotlin playground with the libraries you need or you need to find an instance where this is supported. Not really recommended. I would just use an &lt;a class="link" href="#amper" >Amper&lt;/a> project if you need dependencies.&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import.png"
+width="1042"
+height="516"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu8026927144904049083.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu9635977428203814149.png 1024w"
+loading="lazy"
+alt="Playground import"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;h2 id="datalore">Datalore&lt;/h2>
+&lt;p>This solution is still Browser based. It is useful if you want to collect a few pieces of Kotlin code and you like a Notebook interface and the supported tools. There is a free tier of Datalore available.&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore.png"
+width="1324"
+height="844"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu15528936108520992446.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu12923918088485773730.png 1024w"
+loading="lazy"
+alt="Datalore"
+class="gallery-image"
+data-flex-grow="156"
+data-flex-basis="376px"
+>&lt;/p>
+&lt;h3 id="you-need-1">You need&lt;/h3>
+&lt;ul>
+&lt;li>A browser&lt;/li>
+&lt;li>A Datalore login&lt;/li>
+&lt;/ul>
+&lt;h3 id="recipe-1">Recipe&lt;/h3>
+&lt;ol>
+&lt;li>open &lt;a class="link" href="https://datalore.jetbrains.com" target="_blank" rel="noopener"
+>this&lt;/a> website and log in&lt;/li>
+&lt;li>Open a new kotlin notebook and paste or type some code in a code cell&lt;/li>
+&lt;li>click the run button&lt;/li>
+&lt;/ol>
+&lt;h3 id="adding-dependencies-1">Adding dependencies&lt;/h3>
+&lt;p>The trick with the autocomplete on import works here too. You have access to kotlin, kotlinx, java and javax. You can also add some select libraries like &lt;a class="link" href="https://kotlin.github.io/kandy/welcome.html" target="_blank" rel="noopener"
+>kandy&lt;/a> with the &lt;code>%use&lt;/code> magic word.&lt;/p>
+&lt;h1 id="cli">CLI&lt;/h1>
+&lt;p>This is for people who are happy to run things on the command line. It doesn&amp;rsquo;t matter where the code is created, it could be vim or an echo command. Read more at the &lt;a class="link" href="https://kotlinlang.org/docs/command-line.html" target="_blank" rel="noopener"
+>official kotlin docs&lt;/a>.&lt;/p>
+&lt;h2 id="compile-and-run">Compile and run&lt;/h2>
+&lt;p>The bare bones approach but it becomes a pain if you want to use libraries other than the standard ones or you want to split your code in more than one file.&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run.png"
+width="1392"
+height="406"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu16916617382231688584.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu9684844319567453495.png 1024w"
+loading="lazy"
+alt="Compile and Run"
+class="gallery-image"
+data-flex-grow="342"
+data-flex-basis="822px"
+>&lt;/p>
+&lt;h3 id="you-need-2">You need&lt;/h3>
+&lt;ul>
+&lt;li>A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
+>terminal&lt;/a>&lt;/li>
+&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
+>Java installation&lt;/a>&lt;/li>
+&lt;li>The &lt;a class="link" href="https://formulae.brew.sh/formula/kotlin" target="_blank" rel="noopener"
+>kotlin compiler&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="recipe-2">Recipe&lt;/h3>
+&lt;ol>
+&lt;li>&lt;code>echo 'fun main() { println(&amp;quot;Hello, World&amp;quot;)}' &amp;gt; hello.kt&lt;/code>&lt;/li>
+&lt;li>&lt;code>kotlinc hello.kt -include-runtime -d hello.jar&lt;/code> # compile the code and package it in a jar with a runtime&lt;/li>
+&lt;li>&lt;code>java -jar hello.jar&lt;/code> # run the jar with java&lt;/li>
+&lt;/ol>
+&lt;h3 id="adding-dependencies-2">Adding dependencies&lt;/h3>
+&lt;p>You need to add dependencies on the command line, this may be a pain as you probably need the jars to include them. (not recommended)&lt;/p>
+&lt;h2 id="repl">REPL&lt;/h2>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl.png"
+width="1384"
+height="434"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu389958759780755462.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu4937500661031583832.png 1024w"
+loading="lazy"
+alt="REPL"
+class="gallery-image"
+data-flex-grow="318"
+data-flex-basis="765px"
+>&lt;/p>
+&lt;p>REPL stands for &lt;strong>r&lt;/strong>ead-&lt;strong>e&lt;/strong>val-&lt;strong>p&lt;/strong>rint-&lt;strong>l&lt;/strong>oop. It is an interactive environment to run code. If you have the kotlin compiler installed you can simply run &lt;code>kotlinc&lt;/code> and you will be in the REPL. &lt;code>^C&lt;/code> to kill it and exit. Use only for very transient experiments.&lt;/p>
+&lt;h2 id="gradle">Gradle&lt;/h2>
+&lt;p>This recipe uses gradle to generate a template project. You can then add all the files and dependencies to the project.&lt;/p>
+&lt;h3 id="you-need-3">You need&lt;/h3>
+&lt;ul>
+&lt;li>A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
+>terminal&lt;/a>&lt;/li>
+&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
+>Java installation&lt;/a>&lt;/li>
+&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/gradle" target="_blank" rel="noopener"
+>gradle installation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="recipe-3">Recipe&lt;/h3>
+&lt;ol>
+&lt;li>&lt;code>mkdir myNewProject; cd myNewProject&lt;/code>&lt;/li>
+&lt;li>&lt;code>gradle init&lt;/code> # follow the prompts choosing application and kotlin and mostly defaults. See the screenshot for my choices. Every thing should be setup with the files in the &lt;code>app/src&lt;/code> folder and &lt;code>gradlew&lt;/code> script in the root of the project&lt;/li>
+&lt;li>&lt;code>./gradlew run&lt;/code> # runs the project - on Mac/Linux or &lt;code>./gradlew test&lt;/code> to run tests&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle.png"
+width="1942"
+height="1486"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu8640306167332687155.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu14004515015913868128.png 1024w"
+loading="lazy"
+alt="Gradle init"
+class="gallery-image"
+data-flex-grow="130"
+data-flex-basis="313px"
+>&lt;/p>
+&lt;h3 id="adding-dependencies-3">Adding dependencies&lt;/h3>
+&lt;p>You can add dependencies in the &lt;code>app/build.gradle.kts&lt;/code> file in the dependencies section. You need to explicitly add a dependency for stdlib and kotlinx libraries&lt;/p>
+&lt;h2 id="amper">Amper&lt;/h2>
+&lt;p>Same as the gradle solution but using Amper. It gives a simpler more streamlined project. It can use gradle under the hood.&lt;/p>
+&lt;h3 id="you-need-4">You need&lt;/h3>
+&lt;ul>
+&lt;li>A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
+>terminal&lt;/a>&lt;/li>
+&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
+>Java installation&lt;/a>&lt;/li>
+&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/gradle" target="_blank" rel="noopener"
+>gradle installation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="recipe-4">Recipe&lt;/h3>
+&lt;ol>
+&lt;li>&lt;code>mkdir myNewProject; cd myNewProject&lt;/code>&lt;/li>
+&lt;li>Pull a version of the &lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/Usage.md#using-the-standalone-amper-version-from-the-command-line" target="_blank" rel="noopener"
+>amper cli&lt;/a> with this command. Note the version number may change if you read this in the future.
+&lt;code>curl -fsSL -o amper &amp;quot;https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/cli/0.4.0/cli-0.4.0-wrapper?download=true&amp;quot; &amp;amp;&amp;amp; chmod +x amper&lt;/code>&lt;/li>
+&lt;li>&lt;code>./amper init jvm-cli&lt;/code> # to create a fresh jvm command line project&lt;/li>
+&lt;li>&lt;code>./amper run&lt;/code> # to run the project&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper.png"
+width="1248"
+height="1136"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu7645449443718543720.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu666382034358010998.png 1024w"
+loading="lazy"
+alt="Amper init"
+class="gallery-image"
+data-flex-grow="109"
+data-flex-basis="263px"
+>&lt;/p>
+&lt;p>The source is in src directly. It is a much shallower project structure.&lt;/p>
+&lt;h3 id="adding-dependencies-4">Adding dependencies&lt;/h3>
+&lt;p>You can add dependencies in the &lt;code>module.yaml&lt;/code> file in the &lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/DSLReference.md#dependencies-and-test-dependencies" target="_blank" rel="noopener"
+>dependencies&lt;/a> section. The syntax is like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">dependencies&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">groupId:artifactId:version&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You need to explicitly add a dependency for stdlib and kotlinx libraries&lt;/p>
+&lt;h1 id="ide-with-a-project-or-without">IDE with a project or without&lt;/h1>
+&lt;p>This solution is for when you have the luxury of a computer where you can install tools such as Intellij, Fleet or Android Studio. These tools will come with prepackaged JDKs and wizards to get you going. You can of course use these tools with the CLI projects you created. They do offer a way to run code without having a project.&lt;/p>
+&lt;h2 id="fleet">Fleet&lt;/h2>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet.png"
+width="1702"
+height="1180"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu2271168381830310600.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu9079989743599176805.png 1024w"
+loading="lazy"
+alt="Fleet run"
+class="gallery-image"
+data-flex-grow="144"
+data-flex-basis="346px"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/Usage.md#using-amper-in-fleet" target="_blank" rel="noopener"
+>Fleet supports Amper and Gradle&lt;/a>. Making new projects are still simplest with the command line instructions above. Then you can open the project in Fleet. The Fleet integration gives convenient run buttons in the gutter so you don&amp;rsquo;t need to any run configuration setup.&lt;/p>
+&lt;h3 id="you-need-5">You need&lt;/h3>
+&lt;ul>
+&lt;li>A project created on the CLI as in the &lt;a class="link" href="#Amper" >previous step for Amper&lt;/a> or &lt;a class="link" href="#Gradle" >Gradle&lt;/a>&lt;/li>
+&lt;li>A Fleet installation from Jetbrains Toolbox&lt;/li>
+&lt;/ul>
+&lt;h3 id="recipe-5">Recipe&lt;/h3>
+&lt;ol>
+&lt;li>Open the root folder of the project in Fleet&lt;/li>
+&lt;li>Navigate to the &lt;code>main&lt;/code> method and use the gutter icon to run&lt;/li>
+&lt;/ol>
+&lt;h3 id="adding-dependencies-5">Adding dependencies&lt;/h3>
+&lt;p>Add libraries in the same way as the CLI projects.&lt;/p>
+&lt;h2 id="scratch-file">Scratch file&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html" target="_blank" rel="noopener"
+>Scratch files&lt;/a> are usefull for transient code. They live in a folder that is independent of the project that you are in and so can be seen from any project you open. They are only supported in Intellij and Android studio.&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch.png"
+width="1326"
+height="452"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu3292109826613980561.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu17000288150861323621.png 1024w"
+loading="lazy"
+alt="Scratch"
+class="gallery-image"
+data-flex-grow="293"
+data-flex-basis="704px"
+>&lt;/p>
+&lt;h3 id="you-need-6">You need&lt;/h3>
+&lt;ul>
+&lt;li>Intellij Community/Android Studio, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
+>Jetbrains toolbox app&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="recipe-6">Recipe&lt;/h3>
+&lt;ol>
+&lt;li>Open the IDE and open any project or create a new kotlin one, this will setup a project but we won&amp;rsquo;t use it.&lt;/li>
+&lt;li>Press &lt;code>Shift-Cmd-N&lt;/code> to open a new scratch file, choose Kotlin&lt;/li>
+&lt;li>Paste the code press &lt;code>Ctrl + R&lt;/code> or the run button. See the screenshot.&lt;/li>
+&lt;/ol>
+&lt;h3 id="adding-dependencies-6">Adding dependencies&lt;/h3>
+&lt;p>It is &lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html#use-dependency-in-scratch-file" target="_blank" rel="noopener"
+>possible to add dependencies&lt;/a> but you need to add it to the module in the project and then update the run configuration of the scratch file. This is probably more useful if you have a project setup.&lt;/p>
+&lt;h2 id="intellij-enterprise-and-notebook">Intellij Enterprise and Notebook&lt;/h2>
+&lt;p>Intellij Enterprise supports the Kotlin Notebook plugin. It is a similar experience as the &lt;a class="link" href="#Datalore" >Datalore&lt;/a> experience. The useful thing about a Notebook in Intellij is that you can also access code you may have in the project.&lt;/p>
+&lt;h3 id="you-need-7">You need&lt;/h3>
+&lt;ul>
+&lt;li>Intellij Enterprise, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
+>Jetbrains toolbox app&lt;/a>&lt;/li>
+&lt;li>The &lt;a class="link" href="https://plugins.jetbrains.com/plugin/16340-kotlin-notebook" target="_blank" rel="noopener"
+>Kotlin Notebook plugin&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="recipe-7">Recipe&lt;/h3>
+&lt;ol>
+&lt;li>Open the IDE and open any project or create a new kotlin one, this will setup a project but we won&amp;rsquo;t use it.&lt;/li>
+&lt;li>Press &lt;code>Cmd Shift A&lt;/code> and choose &lt;code>Kotlin Notebook&lt;/code>&lt;/li>
+&lt;li>Paste the code in a new code cell&lt;/li>
+&lt;li>press &lt;code>Shift +Enter&lt;/code> or the run button. See the screenshot.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook.png"
+width="1672"
+height="838"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu7643369559708669452.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu16508639288678114028.png 1024w"
+loading="lazy"
+alt="Notebook"
+class="gallery-image"
+data-flex-grow="199"
+data-flex-basis="478px"
+>&lt;/p>
+&lt;h3 id="adding-dependencies-7">Adding dependencies&lt;/h3>
+&lt;p>You can add &lt;a class="link" href="https://github.com/Kotlin/kotlin-jupyter#dependencies-resolving" target="_blank" rel="noopener"
+>dependencies&lt;/a> like this:
+&lt;code>@file:DependsOn(&amp;quot;groupId:artifactId:version&amp;quot;)&lt;/code>&lt;/p>
+&lt;p>You can use your own project files in the Notebook by adding the project files to the notebook.&lt;/p>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module.png"
+width="978"
+height="360"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu16855636725915719873.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu17896661954298364981.png 1024w"
+loading="lazy"
+alt="Notebook module"
+class="gallery-image"
+data-flex-grow="271"
+data-flex-basis="652px"
+>&lt;/p>
+&lt;p>You can include some dependencies like &lt;a class="link" href="https://kotlin.github.io/kandy/welcome.html" target="_blank" rel="noopener"
+>kandy&lt;/a> by using the &lt;code>%use&lt;/code> magic keyword.&lt;/p>
+&lt;h1 id="ide-all-the-way">IDE all the way&lt;/h1>
+&lt;p>This is the gui-est and most complete solution. Also the solution if you want to build a project that you want to work on. Of course you can use the CLI options but you can let the wizard create a template for you.&lt;/p>
+&lt;h2 id="wizard">Wizard&lt;/h2>
+&lt;p>The recipe is deceptively simple but I refer to the &lt;a class="link" href="https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html#create-project" target="_blank" rel="noopener"
+>official docs for finer details&lt;/a>. I suspect no-one reads this far anyway.&lt;/p>
+&lt;h3 id="you-need-8">You need&lt;/h3>
+&lt;ul>
+&lt;li>Intellij /Android Studio, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
+>Jetbrains toolbox app&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="recipe-8">Recipe&lt;/h3>
+&lt;ol>
+&lt;li>Open the IDE and open any project or create a new kotlin one&lt;/li>
+&lt;li>Code and run&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard.png"
+width="1592"
+height="846"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu278655075275580216.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu9272542551474998889.png 1024w"
+loading="lazy"
+alt="Wizard"
+class="gallery-image"
+data-flex-grow="188"
+data-flex-basis="451px"
+>&lt;/p>
+&lt;h1 id="what-next">What next?&lt;/h1>
+&lt;p>Hmm I hear you say &amp;ldquo;But I want to draw pictures or graphs - no more ascii for me&amp;rdquo;&lt;/p>
+&lt;p>You&amp;rsquo;ll have to wait for another blog post for more on that. This one is far too long already.&lt;/p>
+&lt;p>In the meantime you have all these places to run your code. Now you can can go learn more Kotlin at these resources:&lt;/p>
+&lt;h2 id="official-documentation">Official documentation&lt;/h2>
+&lt;p>&lt;a class="link" href="https://kotlinlang.org/docs/home.html" target="_blank" rel="noopener"
+>kotlinlang.org&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/c/kotlin" target="_blank" rel="noopener"
+>kotlin youtube&lt;/a>&lt;/p>
+&lt;h2 id="books">Books&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
+>Kotlin In Action, second edition&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.atomickotlin.com/atomickotlin/" target="_blank" rel="noopener"
+>Atomic Kotlin&lt;/a> with matching &lt;a class="link" href="https://plugins.jetbrains.com/plugin/17654-atomickotlin?_gl=1*kliojt*_gcl_au*MTc2MDkwMjU0MC4xNzE5NjcwMzI3*_ga*MTk0MzI1MDcwOS4xNjk0OTgzMDA4*_ga_9J976DJZ68*MTcyMzM4Mzc3Ni45Mi4xLjE3MjMzODU0NzIuNTguMC4w" target="_blank" rel="noopener"
+>training in the IDE&lt;/a>&lt;/p>
+&lt;h2 id="free-courses">Free courses&lt;/h2>
+&lt;p>&lt;a class="link" href="https://developer.android.com/codelabs/kotlin-bootcamp-welcome#0" target="_blank" rel="noopener"
+>Kotlin Bootcamp&lt;/a>&lt;/p>
+&lt;h2 id="practise-puzzles-koans-and-katas">Practise: Puzzles, Koans and Katas&lt;/h2>
+&lt;p>&lt;a class="link" href="https://exercism.org/tracks/kotlin" target="_blank" rel="noopener"
+>Exercism Kotlin track&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://adventofcode.com/" target="_blank" rel="noopener"
+>Advent of code&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://kotlinlang.org/docs/koans.html" target="_blank" rel="noopener"
+>Kotlin Koans&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/Kotlin" target="_blank" rel="noopener"
+>Gilded Rose in Kotlin&lt;/a>&lt;/p>
+&lt;h2 id="newsletters">Newsletters&lt;/h2>
+&lt;p>&lt;a class="link" href="https://kotlinweekly.net/#latest" target="_blank" rel="noopener"
+>Kotlin Weekly&lt;/a>&lt;/p>
+&lt;h2 id="more-on-notebooks">More on Notebooks&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=WdeCsUzv0c8&amp;amp;t=1026s" target="_blank" rel="noopener"
+>Notebook Demo&lt;/a>&lt;/p></description></item><item><title>How to build Wrapped 2023 in Compose Animation</title><link>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</link><pubDate>Sat, 09 Dec 2023 17:18:17 +0200</pubDate><guid>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/wrappedBanner.png" alt="Featured image of post How to build Wrapped 2023 in Compose Animation" />&lt;h1 id="how-to-build-wrapped-2023-in-compose-animation">How to build Wrapped 2023 in Compose Animation&lt;/h1>
 &lt;p>If I had to build the &lt;a class="link" href="https://open.spotify.com/wrapped/share/share-991bdbcda37a462bac4c6d6c80b17ef0-1080x1920?lang=en&amp;amp;destination=datastories&amp;amp;si=MDUyMGY4ZTAtYmRmMS00ZjJhLWE3OGItNjFhNzBmMzAwYzBk" target="_blank" rel="noopener"
 >Spotify Wrapped 2023&lt;/a> animations in Compose, this is how I would do it. This blog post doesn&amp;rsquo;t reproduce the effects identically, but it shows some of the basic Compose animation techniques you could use. It uses &lt;code>Canvas&lt;/code> drawing and especially the &lt;code>drawWithCache&lt;/code> modifier. It also uses &lt;code>RoundedPolygon&lt;/code>, various matrix transformations and looping animation techniques using &lt;code>infiniteRepeatable&lt;/code>. There is a section about how to get a path from an svg file as well.&lt;/p>
 &lt;p>I created three different techniques. The first is a simple box with an animating linear gradient and an animating offset. The second is a spiky star using a &lt;code>RoundedPolygon&lt;/code> with colour stop gradient and some animations in a &lt;code>graphicsLayer&lt;/code>. The last is a progressivly drawing line. As a bonus we&amp;rsquo;ll make a palette using &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
@@ -298,7 +683,7 @@ Your browser does not support the video tag.
 &lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus.png"
 width="2282"
 height="588"
-srcset="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus_hu9057e51fe939aab19a768d0710b7353e_248493_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus_hu9057e51fe939aab19a768d0710b7353e_248493_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus_hu6733925861690609065.png 480w, https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus_hu1571754699189194542.png 1024w"
 loading="lazy"
 alt="Deprecated Otto Bus"
 class="gallery-image"
@@ -312,7 +697,7 @@ A blog post suggested migrating to RxJava, but since our code base standard now 
 &lt;p>&lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/eightball.png"
 width="300"
 height="633"
-srcset="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/eightball_hu7aa8f8e31919029b25b3982f4a9014b9_57421_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/eightball_hu7aa8f8e31919029b25b3982f4a9014b9_57421_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/eightball_hu14029414473280887154.png 480w, https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/eightball_hu13206581448058811046.png 1024w"
 loading="lazy"
 alt="Pocket 8 Ball"
 class="gallery-image"
@@ -403,7 +788,7 @@ title="YouTube Video"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches.png"
 width="620"
 height="370"
-srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu80b3a240cb75e4f32f892faf1d1fca41_32511_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu80b3a240cb75e4f32f892faf1d1fca41_32511_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu16196109654360759182.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu15098751720921809370.png 1024w"
 loading="lazy"
 alt="branches"
 class="gallery-image"
@@ -473,7 +858,7 @@ Steps guide its progress. (5)&lt;/p>
 &lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl.png"
 width="1098"
 height="364"
-srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu7ace7c2f220b00ef72a0ec50840172c1_38611_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu7ace7c2f220b00ef72a0ec50840172c1_38611_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu16646297295889542392.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu6346563232570383285.png 1024w"
 loading="lazy"
 alt="ELPLZGZL"
 class="gallery-image"
@@ -653,7 +1038,7 @@ data-flex-basis="723px"
 &lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops.png"
 width="1596"
 height="308"
-srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hufe009114c30336c44f51145727829f20_75160_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hufe009114c30336c44f51145727829f20_75160_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu7189020701187576033.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu13531548384970467157.png 1024w"
 loading="lazy"
 alt="Oops"
 class="gallery-image"
@@ -787,7 +1172,7 @@ title="YouTube Video"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia.jpg"
 width="2048"
 height="1536"
-srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu89132f5cb031f8f78ce86b92690141df_340990_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu89132f5cb031f8f78ce86b92690141df_340990_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu15939961657879812828.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu11890948880860571792.jpg 1024w"
 loading="lazy"
 alt="On stage"
 class="gallery-image"
@@ -808,7 +1193,7 @@ data-flex-basis="320px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends.jpg"
 width="2048"
 height="1277"
-srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu1e8b6aa66d0ebbf14dff760de9b17583_522826_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu1e8b6aa66d0ebbf14dff760de9b17583_522826_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu10079608699423809224.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu825464820940452546.jpg 1024w"
 loading="lazy"
 alt="Friends"
 class="gallery-image"
@@ -1080,7 +1465,7 @@ data-flex-basis="384px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/suspend.jpg"
 width="1200"
 height="2000"
-srcset="https://www.maiatoday.net/p/flow-notes/suspend_hu1185bcefcf5096a6d884c061039b1c27_174873_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/flow-notes/suspend_hu1185bcefcf5096a6d884c061039b1c27_174873_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/suspend_hu7957604341174390346.jpg 480w, https://www.maiatoday.net/p/flow-notes/suspend_hu2319832879706403354.jpg 1024w"
 loading="lazy"
 alt="Coroutines suspend"
 class="gallery-image"
@@ -1091,7 +1476,7 @@ data-flex-basis="144px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/produceConsume.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/produceConsume_hu75aacf23d10378baf8dc80c592464e56_299469_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/flow-notes/produceConsume_hu75aacf23d10378baf8dc80c592464e56_299469_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/produceConsume_hu3497648439206979897.jpg 480w, https://www.maiatoday.net/p/flow-notes/produceConsume_hu17228715032926589746.jpg 1024w"
 loading="lazy"
 alt="Producers and Consumers"
 class="gallery-image"
@@ -1102,7 +1487,7 @@ data-flex-basis="400px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/romanSaysSuspend.png"
 width="2194"
 height="1048"
-srcset="https://www.maiatoday.net/p/flow-notes/romanSaysSuspend_hub60c17c57278bce1abfe720fee73fa6b_598979_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/flow-notes/romanSaysSuspend_hub60c17c57278bce1abfe720fee73fa6b_598979_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/romanSaysSuspend_hu1855607441677069834.png 480w, https://www.maiatoday.net/p/flow-notes/romanSaysSuspend_hu9182046552652000141.png 1024w"
 loading="lazy"
 alt="Flow Interface: Roman says no magic only suspend functions"
 class="gallery-image"
@@ -1113,7 +1498,7 @@ data-flex-basis="502px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/terminal.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/terminal_hu899f59d0b470481501d36733cfd16c9d_155013_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/flow-notes/terminal_hu899f59d0b470481501d36733cfd16c9d_155013_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/terminal_hu4059867668119152576.jpg 480w, https://www.maiatoday.net/p/flow-notes/terminal_hu12279081485842194367.jpg 1024w"
 loading="lazy"
 alt="Terminal operators"
 class="gallery-image"
@@ -1124,7 +1509,7 @@ data-flex-basis="400px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/transform.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/transform_hu1ea9766f6792fef7fdb174fb86fc15ae_242239_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/flow-notes/transform_hu1ea9766f6792fef7fdb174fb86fc15ae_242239_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/transform_hu3656134498058123542.jpg 480w, https://www.maiatoday.net/p/flow-notes/transform_hu15976408374616828270.jpg 1024w"
 loading="lazy"
 alt="Transform operators"
 class="gallery-image"
@@ -1135,7 +1520,7 @@ data-flex-basis="400px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/context.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/context_hu100fa2a990b1914ffcb611f6eb4b86d7_246218_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/flow-notes/context_hu100fa2a990b1914ffcb611f6eb4b86d7_246218_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/context_hu3225285815857100609.jpg 480w, https://www.maiatoday.net/p/flow-notes/context_hu11199155927848418767.jpg 1024w"
 loading="lazy"
 alt="Context preserve"
 class="gallery-image"
@@ -1146,7 +1531,7 @@ data-flex-basis="400px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/coldHot.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/coldHot_huea9bedfa3f89e91ebac399342b429cbb_159678_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/flow-notes/coldHot_huea9bedfa3f89e91ebac399342b429cbb_159678_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/coldHot_hu1960847647827436027.jpg 480w, https://www.maiatoday.net/p/flow-notes/coldHot_hu17981783918701874240.jpg 1024w"
 loading="lazy"
 alt="Hot and Cold flows"
 class="gallery-image"
@@ -1157,7 +1542,7 @@ data-flex-basis="400px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/hotFlow.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/hotFlow_hu5041d04a1459973c49c0a7d3e3955aac_184124_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/flow-notes/hotFlow_hu5041d04a1459973c49c0a7d3e3955aac_184124_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/hotFlow_hu13264067548212010462.jpg 480w, https://www.maiatoday.net/p/flow-notes/hotFlow_hu15610272181304939158.jpg 1024w"
 loading="lazy"
 alt="state and shared flows"
 class="gallery-image"
@@ -1168,7 +1553,7 @@ data-flex-basis="400px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/slowAndroid.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/slowAndroid_hu8bb6f4a18fa7d746a66783dd72b4fedd_183234_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/flow-notes/slowAndroid_hu8bb6f4a18fa7d746a66783dd72b4fedd_183234_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/slowAndroid_hu1034935570902009115.jpg 480w, https://www.maiatoday.net/p/flow-notes/slowAndroid_hu961083441910380574.jpg 1024w"
 loading="lazy"
 alt="flows on Android"
 class="gallery-image"
@@ -1200,7 +1585,7 @@ data-flex-basis="400px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/android.jpg"
 width="724"
 height="857"
-srcset="https://www.maiatoday.net/p/flow-notes/android_hu6329e6160bea524cd6bae62eeb951566_56502_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/flow-notes/android_hu6329e6160bea524cd6bae62eeb951566_56502_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/android_hu6224555629479402456.jpg 480w, https://www.maiatoday.net/p/flow-notes/android_hu2038410948359545963.jpg 1024w"
 loading="lazy"
 alt="Android"
 class="gallery-image"
@@ -1211,7 +1596,7 @@ data-flex-basis="202px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/devconf-22/habiticaRepo.png"
 width="2552"
 height="1418"
-srcset="https://www.maiatoday.net/p/devconf-22/habiticaRepo_hu93fdcb6fc43b2ffe74b62719b4d86913_1152167_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/devconf-22/habiticaRepo_hu93fdcb6fc43b2ffe74b62719b4d86913_1152167_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/devconf-22/habiticaRepo_hu7978711589865451351.png 480w, https://www.maiatoday.net/p/devconf-22/habiticaRepo_hu6577779287319342144.png 1024w"
 loading="lazy"
 alt="presenting the Habitica repo"
 class="gallery-image"
@@ -1233,7 +1618,7 @@ allowfullscreen="true">
 &lt;p>&lt;img src="https://www.maiatoday.net/p/devconf-22/Devconf272.jpg"
 width="5228"
 height="3490"
-srcset="https://www.maiatoday.net/p/devconf-22/Devconf272_hue7428c51e1757f4352b16d91fea6f2a2_11034631_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/devconf-22/Devconf272_hue7428c51e1757f4352b16d91fea6f2a2_11034631_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/devconf-22/Devconf272_hu16250194506136129187.jpg 480w, https://www.maiatoday.net/p/devconf-22/Devconf272_hu13579944809451394115.jpg 1024w"
 loading="lazy"
 alt="presenting in Cape Town"
 class="gallery-image"
@@ -1243,7 +1628,7 @@ data-flex-basis="359px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/devconf-22/SOY07992.jpg"
 width="4159"
 height="3847"
-srcset="https://www.maiatoday.net/p/devconf-22/SOY07992_hubcc413f55ea67801dba29287ad91afaf_8584981_480x0_resize_q75_box.jpg 480w, https://www.maiatoday.net/p/devconf-22/SOY07992_hubcc413f55ea67801dba29287ad91afaf_8584981_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://www.maiatoday.net/p/devconf-22/SOY07992_hu11912201427047165293.jpg 480w, https://www.maiatoday.net/p/devconf-22/SOY07992_hu9907181876266169515.jpg 1024w"
 loading="lazy"
 alt="presenting in Johannesburg"
 class="gallery-image"
@@ -1255,7 +1640,7 @@ data-flex-basis="259px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6.png"
 width="1000"
 height="330"
-srcset="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_huf61aa24ab4ef9aff45bfc2cd7e2c12b3_46853_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_huf61aa24ab4ef9aff45bfc2cd7e2c12b3_46853_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu7513205457832712475.png 480w, https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu7523776482935811443.png 1024w"
 loading="lazy"
 alt="KibethCodes level 6"
 class="gallery-image"
@@ -1396,7 +1781,7 @@ At the end of this talk you will:&lt;/p>
 &lt;p>&lt;img src="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_gc.png"
 width="790"
 height="566"
-srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_gc_hud211dff1d456a7054d131c8d9ab2734a_68537_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_gc_hu7101767472452538992.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_gc_hu9111822863208117043.png 1024w"
 loading="lazy"
 alt="Confetto in the bin"
 class="gallery-image"
@@ -1406,7 +1791,7 @@ data-flex-basis="334px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_objects.png"
 width="1910"
 height="236"
-srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_objects_huc420aac9d5439e1ac074bb1a0d41fd43_89673_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_objects_hu5536351181056488573.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_orig_objects_hu3762920900111718695.png 1024w"
 loading="lazy"
 alt="Allocated Confetto objects"
 class="gallery-image"
@@ -1419,7 +1804,7 @@ data-flex-basis="1942px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/confetti-cleanup/confetti_offset.png"
 width="2002"
 height="210"
-srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_offset_hu1e94efaa125524bba702a210d1a78a62_80170_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_offset_hu18297822819879197246.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_offset_hu2695881940116339515.png 1024w"
 loading="lazy"
 alt="Confetti using offset"
 class="gallery-image"
@@ -1471,7 +1856,7 @@ data-flex-basis="2288px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://www.maiatoday.net/p/confetti-cleanup/confetti_preview.png"
 width="706"
 height="594"
-srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_preview_huc6db0be8f95ea1daf120b863c44a916a_27496_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/confetti-cleanup/confetti_preview_hu2199831125079590702.png 480w, https://www.maiatoday.net/p/confetti-cleanup/confetti_preview_hu14491221507136885271.png 1024w"
 loading="lazy"
 alt="Confetti preview"
 class="gallery-image"
@@ -1508,7 +1893,7 @@ title="YouTube Video"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021.png"
 width="1300"
 height="738"
-srcset="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu74de83909c619652ed12fb7839e74841_1063439_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu74de83909c619652ed12fb7839e74841_1063439_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu4815739667327300139.png 480w, https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu7841182091619652321.png 1024w"
 loading="lazy"
 alt="Chicago Roboto"
 class="gallery-image"
@@ -1540,7 +1925,7 @@ title="YouTube Video"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters.png"
 width="768"
 height="214"
-srcset="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters_hu5c5cec9900eca89d0f5a61f53d9cab60_71371_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters_hu12660522468338282026.png 480w, https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/hitCounters_hu486734028350342330.png 1024w"
 loading="lazy"
 alt="hit counters"
 class="gallery-image"
@@ -1612,7 +1997,7 @@ data-flex-basis="861px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter.gif"
 width="672"
 height="270"
-srcset="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_480x0_resize_box_1.gif 480w, https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter_hud1383be69d4e3bbabe7e176c5f30cbc1_578250_1024x0_resize_box_1.gif 1024w"
+srcset="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter_hu4283573437972902758.gif 480w, https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounter_hu12476357294006198485.gif 1024w"
 loading="lazy"
 alt="visitor counter going up - click me to see the animation"
 class="gallery-image"
@@ -1622,7 +2007,7 @@ data-flex-basis="597px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown.gif"
 width="672"
 height="270"
-srcset="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_480x0_resize_box_1.gif 480w, https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hua6eea1e5b0d6481e809da3b014a0b8ad_724759_1024x0_resize_box_1.gif 1024w"
+srcset="https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hu10772373664789136563.gif 480w, https://www.maiatoday.net/p/welcome-you-are-visitor-number-12345/visitorCounterDown_hu11250750801282474146.gif 1024w"
 loading="lazy"
 alt="visitor counter going down - click me to see the animation"
 class="gallery-image"
@@ -1764,7 +2149,7 @@ data-flex-basis="597px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/animating-rainbow-text/ttfInProject.png"
 width="630"
 height="476"
-srcset="https://www.maiatoday.net/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/animating-rainbow-text/ttfInProject_huf1c52a8be8fc26c31a0eabe7696438f9_58357_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/animating-rainbow-text/ttfInProject_hu16491519451156101984.png 480w, https://www.maiatoday.net/p/animating-rainbow-text/ttfInProject_hu4666442112087195598.png 1024w"
 loading="lazy"
 alt="ttf files in projext"
 class="gallery-image"
@@ -1978,7 +2363,7 @@ title="YouTube Video"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new.png"
 width="2272"
 height="1278"
-srcset="https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hudf170813e91e91c23077ff341deb461a_288888_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hudf170813e91e91c23077ff341deb461a_288888_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hu7669370850566516532.png 480w, https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hu1379659759538771069.png 1024w"
 loading="lazy"
 alt="old vs new"
 class="gallery-image"
@@ -1991,7 +2376,7 @@ data-flex-basis="426px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one.png"
 width="2268"
 height="1276"
-srcset="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_huc0ae47b8b6cac47e7628ec8f169caf81_1018563_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_huc0ae47b8b6cac47e7628ec8f169caf81_1018563_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu7047736480789345227.png 480w, https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu2340246882762982646.png 1024w"
 loading="lazy"
 alt="which one to choose"
 class="gallery-image"
@@ -2107,7 +2492,7 @@ title="YouTube Video"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie.png"
 width="800"
 height="1422"
-srcset="https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hub6b0760f108213d99a0f4e0d458697f9_171067_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hu17562959244211796279.png 480w, https://www.maiatoday.net/p/note-to-future-me-adding-graphql-to-an-app/helloBlondie_hu11463945033608197489.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="56"
@@ -2136,7 +2521,7 @@ data-flex-basis="135px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1.png"
 width="480"
 height="853"
-srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu8c9d133dfe83cf16a1c77927a1149ad5_35659_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu3718552681013003084.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/screen1_hu2106594815948693955.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="56"
@@ -2145,7 +2530,7 @@ data-flex-basis="135px"
 &lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars.png"
 width="480"
 height="853"
-srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hue6646487b30fde1dc555d7c499b0ab8f_17319_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hu2764945996479269620.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/greenStars_hu9341617037669339728.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="56"
@@ -2183,7 +2568,7 @@ data-flex-basis="135px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults.png"
 width="1480"
 height="214"
-srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_480x0_resize_box_3.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu1ffbce21a844d54d5e824864182148d0_47423_1024x0_resize_box_3.png 1024w"
+srcset="https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu15882801010072545127.png 480w, https://www.maiatoday.net/p/note-to-future-me-testing-intents-with-matchers/testResults_hu4184945425884195258.png 1024w"
 loading="lazy"
 alt="All green"
 class="gallery-image"
