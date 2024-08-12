@@ -159,7 +159,7 @@ You can add dependencies in the `module.yaml` file in the [dependencies](https:/
 dependencies:
     - groupId:artifactId:version
 ```
-You need to explicitly add a dependency for stdlib and kotlinx libraries
+You need to explicitly add a dependency but you have access to stdlib and kotlinx libraries.
 
 # IDE with a project or without
 
@@ -239,7 +239,7 @@ This is the gui-est and most complete solution. Also the solution if you want to
 
 ## Wizard
 
-The recipe is deceptively simple but I refer to the [official docs for finer details](https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html#create-project). I suspect no-one reads this far anyway.
+The recipe is deceptively simple but I refer to the [official docs for finer details](https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html#create-project). I suspect no-one reads this far anyway. The wizard makes a gradle project and but if you would like to use Amper you need a plugin.
 
 ### You need
 
@@ -251,6 +251,8 @@ The recipe is deceptively simple but I refer to the [official docs for finer det
 2. Code and run
 
 ![Wizard](screenshot-wizard.png "Wizard")
+
+Dependencies work the same way as the CLI projects. There is also a project view to add them
 
 # What next?
 
