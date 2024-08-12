@@ -228,7 +228,7 @@ data-flex-basis="263px"
 >dependencies&lt;/a> section. The syntax is like this:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">dependencies&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">groupId:artifactId:version&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You need to explicitly add a dependency for stdlib and kotlinx libraries&lt;/p>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You need to explicitly add a dependency but you have access to stdlib and kotlinx libraries.&lt;/p>
 &lt;h1 id="ide-with-a-project-or-without">IDE with a project or without&lt;/h1>
 &lt;p>This solution is for when you have the luxury of a computer where you can install tools such as Intellij, Fleet or Android Studio. These tools will come with prepackaged JDKs and wizards to get you going. You can of course use these tools with the CLI projects you created. They do offer a way to run code without having a project.&lt;/p>
 &lt;h2 id="fleet">Fleet&lt;/h2>
@@ -330,7 +330,7 @@ data-flex-basis="652px"
 &lt;p>This is the gui-est and most complete solution. Also the solution if you want to build a project that you want to work on. Of course you can use the CLI options but you can let the wizard create a template for you.&lt;/p>
 &lt;h2 id="wizard">Wizard&lt;/h2>
 &lt;p>The recipe is deceptively simple but I refer to the &lt;a class="link" href="https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html#create-project" target="_blank" rel="noopener"
->official docs for finer details&lt;/a>. I suspect no-one reads this far anyway.&lt;/p>
+>official docs for finer details&lt;/a>. I suspect no-one reads this far anyway. The wizard makes a gradle project and but if you would like to use Amper you need a plugin.&lt;/p>
 &lt;h3 id="you-need-8">You need&lt;/h3>
 &lt;ul>
 &lt;li>Intellij /Android Studio, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
@@ -351,6 +351,7 @@ class="gallery-image"
 data-flex-grow="188"
 data-flex-basis="451px"
 >&lt;/p>
+&lt;p>Dependencies work the same way as the CLI projects. There is also a project view to add them&lt;/p>
 &lt;h1 id="what-next">What next?&lt;/h1>
 &lt;p>Hmm I hear you say &amp;ldquo;But I want to draw pictures or graphs - no more ascii for me&amp;rdquo;&lt;/p>
 &lt;p>You&amp;rsquo;ll have to wait for another blog post for more on that. This one is far too long already.&lt;/p>
