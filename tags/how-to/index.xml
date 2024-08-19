@@ -76,7 +76,8 @@ data-flex-basis="476px"
 &lt;/ul>
 &lt;h3 id="recipe">Recipe&lt;/h3>
 &lt;ol>
-&lt;li>open &lt;a class="link" href="htps://play.kotlinlang.org" >this&lt;/a> website&lt;/li>
+&lt;li>open &lt;a class="link" href="https://play.kotlinlang.org" target="_blank" rel="noopener"
+>this&lt;/a> website&lt;/li>
 &lt;li>paste or type some code&lt;/li>
 &lt;li>run &lt;code>Ctrl + R&lt;/code>&lt;/li>
 &lt;/ol>
