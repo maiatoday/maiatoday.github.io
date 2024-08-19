@@ -46,7 +46,7 @@ This recipe is for when you don't have a computer where you can install things. 
 
 ### Recipe
 
-1. open [this](htps://play.kotlinlang.org) website 
+1. open [this](https://play.kotlinlang.org) website 
 2. paste or type some code 
 3. run `Ctrl + R`
 
