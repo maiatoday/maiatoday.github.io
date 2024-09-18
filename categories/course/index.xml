@@ -17,7 +17,7 @@
 &lt;h2 id="strategies-to-get-the-best-out-of-the-course">Strategies to get the best out of the course?
 &lt;/h2>&lt;ol>
 &lt;li>
-&lt;p>&lt;strong>Repeat at regular intervals&lt;/strong> - Memories are built up if you &lt;strong>repeat&lt;/strong> the flash cards at &lt;strong>regular intervals&lt;/strong>. It is better to a few lessons more often than to do many lessons in one sitting. You can do the course many times or choose which areas to practise.&lt;/p>
+&lt;p>&lt;strong>Repeat at regular intervals&lt;/strong> - Memories are built up if you &lt;strong>repeat&lt;/strong> the flash cards at &lt;strong>regular intervals&lt;/strong>. It is better to do a few lessons more often than to do many lessons in one sitting. You can do the course many times or choose which areas to practise.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Recall the answer before peeking&lt;/strong> - It is important to try to recall the syntax first before looking at the hints or letting the IDE help you. This means you practise your &lt;strong>recall&lt;/strong> of the memory.&lt;/p>
@@ -35,7 +35,7 @@
 &lt;/ul>
 &lt;p>Then do the following:&lt;/p>
 &lt;ol>
-&lt;li>Before opening a project click on the Learn menu&lt;/li>
+&lt;li>Before opening a project click on the Learn menu item on the left&lt;/li>
 &lt;li>Click on New course&lt;/li>
 &lt;li>In the &lt;code>Marketplace&lt;/code> search for &lt;code>KotlinFlashKards&lt;/code> and start the course. This will make a local instance of the course&lt;/li>
 &lt;li>Have fun and explore, try figuring out the answers to the questions and don&amp;rsquo;t peek before you have thought a bit.&lt;/li>
