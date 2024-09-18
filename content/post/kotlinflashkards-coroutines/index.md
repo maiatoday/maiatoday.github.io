@@ -28,7 +28,7 @@ You can explore the sections in order or dip in and try tasks at random.
 
 ## Strategies to get the best out of the course?
 
-1. **Repeat at regular intervals** -  Memories are built up if you **repeat** the flash cards at **regular intervals**. It is better to a few lessons more often than to do many lessons in one sitting. You can do the course many times or choose which areas to practise.
+1. **Repeat at regular intervals** -  Memories are built up if you **repeat** the flash cards at **regular intervals**. It is better to do a few lessons more often than to do many lessons in one sitting. You can do the course many times or choose which areas to practise.
 
 2. **Recall the answer before peeking** -  It is important to try to recall the syntax first before looking at the hints or letting the IDE help you. This means you practise your **recall** of the memory.
 
@@ -41,7 +41,7 @@ You need:
 * the [JetBrains Acadamy plugin](https://plugins.jetbrains.com/plugin/10081-jetbrains-academy) installed
 
 Then do the following:
-1. Before opening a project click on the Learn menu
+1. Before opening a project click on the Learn menu item on the left
 2. Click on New course
 3. In the `Marketplace` search for `KotlinFlashKards` and start the course. This will make a local instance of the course
 4. Have fun and explore, try figuring out the answers to the questions and don't peek before you have thought a bit.
