@@ -37,8 +37,8 @@ You can explore the sections in order or dip in and try tasks at random.
 ## How do I get it?
 
 You need:
-* a Jetbrains IDE like Android Studio or Intellij Community edition
-* the [Jetbrains Acadamy plugin](https://plugins.jetbrains.com/plugin/10081-jetbrains-academy) installed
+* a JetBrains IDE like Android Studio or Intellij Community edition
+* the [JetBrains Acadamy plugin](https://plugins.jetbrains.com/plugin/10081-jetbrains-academy) installed
 
 Then do the following:
 1. Before opening a project click on the Learn menu
