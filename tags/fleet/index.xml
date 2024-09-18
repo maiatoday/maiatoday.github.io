@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fleet on maiatoday</title><link>https://www.maiatoday.net/tags/fleet/</link><description>Recent content in Fleet on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Jun 2023 15:12:44 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/fleet/index.xml" rel="self" type="application/rss+xml"/><item><title>The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?</title><link>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</link><pubDate>Sat, 10 Jun 2023 15:12:44 +0200</pubDate><guid>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</guid><description>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/mock_and_me.jpg" alt="Featured image of post The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?" />&lt;h1 id="once-upon-a-time">Once upon a time&lt;/h1>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fleet on maiatoday</title><link>https://www.maiatoday.net/tags/fleet/</link><description>Recent content in Fleet on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Jun 2023 15:12:44 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/fleet/index.xml" rel="self" type="application/rss+xml"/><item><title>The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?</title><link>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</link><pubDate>Sat, 10 Jun 2023 15:12:44 +0200</pubDate><guid>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</guid><description>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/mock_and_me.jpg" alt="Featured image of post The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?" />&lt;h1 id="once-upon-a-time">Once upon a time
+&lt;/h1>&lt;p>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches.png"
 width="620"
 height="370"
 srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu16196109654360759182.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu15098751720921809370.png 1024w"
@@ -16,14 +16,14 @@ data-flex-basis="402px"
 >Advent of Code 2022 Day 10 puzzle&lt;/a>. I had written the solution in two styles and I had the AI assistant do the same conversion and compared the code. And then I played around and generated some poetry. Follow links at your peril, there are rabbit holes, it might make you &lt;a class="link" href="https://youtu.be/ZOLpCWlsCjw?t=21" target="_blank" rel="noopener"
 >late&lt;/a> or &lt;a class="link" href="https://www.youtube.com/watch?v=pnJM_jC7j_4" target="_blank" rel="noopener"
 >change the size&lt;/a> of your free time.&lt;/p>
-&lt;h2 id="segue-the-first-of-many">Segue the first of many&lt;/h2>
-&lt;p>Oh you are still here! You didn&amp;rsquo;t jump to the &lt;a class="link" href="#code-starts-here" >&lt;strong>code starts here&lt;/strong>&lt;/a> section? Why am I doing this? A long time ago, I read a lot of Lewis Caroll, Alice in Wonderland. In one scene Alice talks to the Mock Turtle. He sings a &lt;a class="link" href="https://en.wikipedia.org/wiki/The_Mock_Turtle%27s_Song" target="_blank" rel="noopener"
+&lt;h2 id="segue-the-first-of-many">Segue the first of many
+&lt;/h2>&lt;p>Oh you are still here! You didn&amp;rsquo;t jump to the &lt;a class="link" href="#code-starts-here" >&lt;strong>code starts here&lt;/strong>&lt;/a> section? Why am I doing this? A long time ago, I read a lot of Lewis Caroll, Alice in Wonderland. In one scene Alice talks to the Mock Turtle. He sings a &lt;a class="link" href="https://en.wikipedia.org/wiki/The_Mock_Turtle%27s_Song" target="_blank" rel="noopener"
 >song about sea creatures dancing&lt;/a>. When the first language translators appeared on the scene, &lt;a class="link" href="https://www.babelfish.com" target="_blank" rel="noopener"
 >Altavisa babelfish&lt;/a> or perhaps it was the &lt;a class="link" href="https://en.wikipedia.org/wiki/Google_Translate" target="_blank" rel="noopener"
 >early Google Translate&lt;/a>, I converted passages from Alice in Wonderland to French and then back again to see what the machines could do. The &lt;em>Mock Turtle&lt;/em> was transformed into an &lt;em>Imitation Tortoise&lt;/em>. In this way the reference to the original &lt;a class="link" href="https://en.wikipedia.org/wiki/Mock_turtle_soup" target="_blank" rel="noopener"
 >mock turtle soup&lt;/a> was lost in translation. In a roundabout way I was wondering what would be uncovered or lost if I used the AI assistant for some translations in coding style.&lt;/p>
-&lt;h2 id="couplets-of-doggerel">Couplets of doggerel&lt;/h2>
-&lt;p>My trusty and non emotional assistant had no opinion on Lewis Caroll but it made this for me. A definition of &lt;strong>functional programming&lt;/strong> style in &lt;strong>rhyming couplets&lt;/strong>:&lt;/p>
+&lt;h2 id="couplets-of-doggerel">Couplets of doggerel
+&lt;/h2>&lt;p>My trusty and non emotional assistant had no opinion on Lewis Caroll but it made this for me. A definition of &lt;strong>functional programming&lt;/strong> style in &lt;strong>rhyming couplets&lt;/strong>:&lt;/p>
 &lt;blockquote>
 &lt;p>Functional programming&amp;rsquo;s way,&lt;br>
 treats functions as the play.&lt;/p>
@@ -49,8 +49,8 @@ It&amp;rsquo;s the classic style, for codes that speak.&lt;/p>
 >Pshaw!&lt;/a> verbose &lt;a class="link" href="https://www.merriam-webster.com/dictionary/doggerel" target="_blank" rel="noopener"
 >doggerel&lt;/a> you respond, ok here&amp;rsquo;s &amp;hellip; a &lt;a class="link" href="https://www.readpoetry.com/10-vivid-haikus-to-leave-you-breathless/" target="_blank" rel="noopener"
 >&lt;strong>haiku&lt;/strong>&lt;/a>&lt;/p>
-&lt;h2 id="5-7-5">5-7-5&lt;/h2>
-&lt;blockquote>
+&lt;h2 id="5-7-5">5-7-5
+&lt;/h2>&lt;blockquote>
 &lt;p>&lt;strong>Functional&lt;/strong>&lt;/p>
 &lt;p>Functions pure, combined, (5)&lt;br>
 Immutable state and grace, (7)&lt;br>
@@ -62,9 +62,9 @@ Elegance defined. (5)&lt;/p>
 Changing state and execution, (8! or is it 7?)&lt;br>
 Steps guide its progress. (5)&lt;/p>
 &lt;/blockquote>
-&lt;h1 id="code-starts-here">Code starts here&lt;/h1>
-&lt;h2 id="imperative-all-the-way---hand-crafted-by-me">Imperative all the way - hand crafted by me&lt;/h2>
-&lt;p>&lt;a class="link" href="https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt" target="_blank" rel="noopener"
+&lt;h1 id="code-starts-here">Code starts here
+&lt;/h1>&lt;h2 id="imperative-all-the-way---hand-crafted-by-me">Imperative all the way - hand crafted by me
+&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt" target="_blank" rel="noopener"
 >Here&lt;/a> is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many &lt;a class="link" href="https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd" target="_blank" rel="noopener"
 >succinct&lt;/a> and &lt;a class="link" href="https://todd.ginsberg.com/post/advent-of-code/2021/day10/" target="_blank" rel="noopener"
 >elegant&lt;/a> &lt;a class="link" href="https://github.com/topics/aoc-2022-in-kotlin" target="_blank" rel="noopener"
@@ -134,8 +134,8 @@ data-flex-basis="723px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">readInput&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">File&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;src/main/resources/&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">$name&lt;/span>&lt;span class="s2">.txt&amp;#34;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">readLines&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="the-recipe">The recipe&lt;/h2>
-&lt;p>You can see my conversion steps in the git repo. The recipe is:&lt;br>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="the-recipe">The recipe
+&lt;/h2>&lt;p>You can see my conversion steps in the git repo. The recipe is:&lt;br>
 &lt;strong>Ingredients:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>1 problem&lt;/li>
@@ -152,8 +152,8 @@ data-flex-basis="723px"
 &lt;p>&lt;strong>Build&lt;/strong> gently for a few seconds in a preheated &lt;strong>gradle&lt;/strong> command, until &lt;strong>BUILD SUCCESSFUL&lt;/strong> and serve immediately.&lt;/p>
 &lt;p>Of course this recipe is an over simplification and build times may vary depending on how big the code is and if you are doing this on a &lt;a class="link" href="https://forums.raspberrypi.com/viewtopic.php?t=183665" target="_blank" rel="noopener"
 >Rasberry PI model B&lt;/a>.&lt;/p>
-&lt;h2 id="heres-one-i-prepared-earlier---hand-written-and-functional">Here&amp;rsquo;s one I prepared earlier - hand written and functional&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">import&lt;/span> &lt;span class="nn">java.io.File&lt;/span>
+&lt;h2 id="heres-one-i-prepared-earlier---hand-written-and-functional">Here&amp;rsquo;s one I prepared earlier - hand written and functional
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">import&lt;/span> &lt;span class="nn">java.io.File&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">args&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Array&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">&amp;gt;)&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
@@ -198,8 +198,8 @@ data-flex-basis="723px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fun&lt;/span> &lt;span class="nf">readInput&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">File&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;src/main/resources/&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">$name&lt;/span>&lt;span class="s2">.txt&amp;#34;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">readLines&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ai-converts-to-functional">AI converts to functional&lt;/h2>
-&lt;p>AI Assistant converts my imperative version to functional&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ai-converts-to-functional">AI converts to functional
+&lt;/h2>&lt;p>AI Assistant converts my imperative version to functional&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">mport&lt;/span> &lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">io&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">File&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">args&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Array&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">&amp;gt;)&lt;/span> &lt;span class="p">{&lt;/span>
@@ -260,8 +260,8 @@ data-flex-grow="518"
 data-flex-basis="1243px"
 >
 Some issue with the loop not using a downTo and getting the ranges wrong. I like the separate functions but it is mixing in some side effects.&lt;/p>
-&lt;h2 id="ai-converts-back-to-imperative">AI converts back to imperative&lt;/h2>
-&lt;p>AI assistant converts my functional version to imperative&lt;/p>
+&lt;h2 id="ai-converts-back-to-imperative">AI converts back to imperative
+&lt;/h2>&lt;p>AI assistant converts my functional version to imperative&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">import&lt;/span> &lt;span class="nn">java.io.File&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">args&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Array&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">&amp;gt;)&lt;/span> &lt;span class="p">{&lt;/span>
@@ -320,8 +320,8 @@ Some issue with the loop not using a downTo and getting the ranges wrong. I like
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">readInput&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">File&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;src/main/resources/&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">$name&lt;/span>&lt;span class="s2">.txt&amp;#34;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">readLines&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="the-end">The end&lt;/h1>
-&lt;p>To close I leave you with a &lt;a class="link" href="https://github.com/maiatoday/imp-fun/branches" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="the-end">The end
+&lt;/h1>&lt;p>To close I leave you with a &lt;a class="link" href="https://github.com/maiatoday/imp-fun/branches" target="_blank" rel="noopener"
 >git repo&lt;/a> and these lines of sage advice in doggerel format from the AI assistant. What can I say, I am amused!&lt;/p>
 &lt;blockquote>
 &lt;p>Functional&amp;rsquo;s not a cure-all,&lt;br>

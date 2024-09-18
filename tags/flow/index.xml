@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flow on maiatoday</title><link>https://www.maiatoday.net/tags/flow/</link><description>Recent content in Flow on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 30 Jul 2023 21:38:36 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/flow/index.xml" rel="self" type="application/rss+xml"/><item><title>I still see LiveData - where are the Flows?</title><link>https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/</link><pubDate>Sun, 30 Jul 2023 21:38:36 +0200</pubDate><guid>https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/</guid><description>&lt;img src="https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/hammer.png" alt="Featured image of post I still see LiveData - where are the Flows?" />&lt;h2 id="hammer-and-nail">Hammer and nail&lt;/h2>
-&lt;p>There is no doubt &lt;code>LiveData&lt;/code> is an easy, lifecycle safe way to observe some state which needs to be displayed on the UI. It is just so easy to create and easy to update. It is easy to observe. I think that may be why people use it everywhere where they need a simple observation. This ok, no guilt, no harm &amp;hellip;. for the UI layers &amp;hellip;. but there are better solutions for domain and data layers. This is &lt;a class="link" href="https://proandroiddev.com/dont-use-livedata-in-repositories-f3bebe502ed3" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flow on maiatoday</title><link>https://www.maiatoday.net/tags/flow/</link><description>Recent content in Flow on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 30 Jul 2023 21:38:36 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/flow/index.xml" rel="self" type="application/rss+xml"/><item><title>I still see LiveData - where are the Flows?</title><link>https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/</link><pubDate>Sun, 30 Jul 2023 21:38:36 +0200</pubDate><guid>https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/</guid><description>&lt;img src="https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/hammer.png" alt="Featured image of post I still see LiveData - where are the Flows?" />&lt;h2 id="hammer-and-nail">Hammer and nail
+&lt;/h2>&lt;p>There is no doubt &lt;code>LiveData&lt;/code> is an easy, lifecycle safe way to observe some state which needs to be displayed on the UI. It is just so easy to create and easy to update. It is easy to observe. I think that may be why people use it everywhere where they need a simple observation. This ok, no guilt, no harm &amp;hellip;. for the UI layers &amp;hellip;. but there are better solutions for domain and data layers. This is &lt;a class="link" href="https://proandroiddev.com/dont-use-livedata-in-repositories-f3bebe502ed3" target="_blank" rel="noopener"
 >not the first time this topic has come up&lt;/a> yet I still see Live Data in a repository offered as a good solution from time to time, in blog posts, samples and in books. I think it is a case of people think they &lt;a class="link" href="https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail" target="_blank" rel="noopener"
 >only have a LiveData hammer&lt;/a>.&lt;/p>
 &lt;p>There are infact pitfalls if you use &lt;code>LiveData&lt;/code> in a repository. I think it&amp;rsquo;s an anti-pattern.&lt;/p>
-&lt;h2 id="but-why-not">But why not&lt;/h2>
-&lt;ul>
+&lt;h2 id="but-why-not">But why not
+&lt;/h2>&lt;ul>
 &lt;li>
 &lt;p>&lt;code>LiveData&lt;/code> is lifecycle aware - do we need this in our repository? Repostitories are typically provided by dependency injection, they could be singletons and they &lt;em>don&amp;rsquo;t need to know about the Android lifecycle&lt;/em>.&lt;/p>
 &lt;/li>
@@ -18,21 +18,21 @@
 &lt;p>Lastly, one of the biggest reasons after the main thread argument, why I would advocate for converting all of the &lt;code>LiveData&lt;/code> use to flows: &lt;em>flows are part of the Kotlin coroutines library&lt;/em>. This means they run on any platform where Kotlin coroutines run. You can use them in a multiplatform project. Or to put it differently, if you use flows in your repository instead of &lt;code>LiveData&lt;/code> it is one less Android library that you have to remove and replace when you want to use the repository on another platform.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="conversion">Conversion&lt;/h2>
-&lt;p>Replace &lt;code>LiveData&lt;/code> with &lt;code>StateFlow&lt;/code> and &lt;code>MutableLiveData&lt;/code> with &lt;code>MutableStateFlow&lt;/code>&lt;/p>
+&lt;h2 id="conversion">Conversion
+&lt;/h2>&lt;p>Replace &lt;code>LiveData&lt;/code> with &lt;code>StateFlow&lt;/code> and &lt;code>MutableLiveData&lt;/code> with &lt;code>MutableStateFlow&lt;/code>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">_error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">MutableLiveData&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">?&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">MutableLiveData&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">null&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">LiveData&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">?&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">_error&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>becomes&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">_error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">MutableStateFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">?&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">MutableStateFlow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">null&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">override&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">StateFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">?&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">_error&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">asStateFlow&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and then fix the pieces that don&amp;rsquo;t compile. It may be some header imports and some changes in the places where the &lt;code>LiveData&lt;/code> was observed but the compiler will help you.&lt;/p>
-&lt;h2 id="putting-a-value-into-the-stateflow">Putting a value into the StateFlow&lt;/h2>
-&lt;p>&lt;code>StateFlow&lt;/code> always needs an initial value. So you will need to do that when you declare the &lt;code>StateFlow&lt;/code>. Then to change the value you simply set it.&lt;/p>
+&lt;h2 id="putting-a-value-into-the-stateflow">Putting a value into the StateFlow
+&lt;/h2>&lt;p>&lt;code>StateFlow&lt;/code> always needs an initial value. So you will need to do that when you declare the &lt;code>StateFlow&lt;/code>. Then to change the value you simply set it.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">_error&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="k">value&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Ooops!!!&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="collecting-flows">Collecting flows&lt;/h2>
-&lt;p>To get the values out of the &lt;code>LiveData&lt;/code> you need to collect the StateFlow. Depending over which architecture layer you are observing the data it may look slightly different.&lt;/p>
-&lt;h3 id="in-a-view-model">In a view model&lt;/h3>
-&lt;p>If you simply need to collect the flow from a repository you can do it like this:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="collecting-flows">Collecting flows
+&lt;/h2>&lt;p>To get the values out of the &lt;code>LiveData&lt;/code> you need to collect the StateFlow. Depending over which architecture layer you are observing the data it may look slightly different.&lt;/p>
+&lt;h3 id="in-a-view-model">In a view model
+&lt;/h3>&lt;p>If you simply need to collect the flow from a repository you can do it like this:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">onRefresh&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">viewModelScope&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">launch&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repository&lt;/span>
@@ -42,8 +42,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="combining-flows">Combining flows&lt;/h3>
-&lt;p>If you had a situation where you were using &lt;code>MediatorLiveData&lt;/code>, there are many flow intermediate operators to choose from which you can use to convert and combine flows. I will show an example of where two observables were combined. In the &lt;code>LiveData&lt;/code> world you would have achieved this by using &lt;code>addSource()&lt;/code> on the &lt;code>MediatorLiveData&lt;/code>. Here is the flow solution:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="combining-flows">Combining flows
+&lt;/h3>&lt;p>If you had a situation where you were using &lt;code>MediatorLiveData&lt;/code>, there are many flow intermediate operators to choose from which you can use to convert and combine flows. I will show an example of where two observables were combined. In the &lt;code>LiveData&lt;/code> world you would have achieved this by using &lt;code>addSource()&lt;/code> on the &lt;code>MediatorLiveData&lt;/code>. Here is the flow solution:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">uiState&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">flow1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">combine&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">flow2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">value1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">value2&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// this block is called if either flow1 or flow2 emits
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// it then emits a new value in a flow
@@ -55,11 +55,11 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">started&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">WhileSubscribed&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">5000&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="c1">// controls when the sharing is started, in this case starts when there is a subscriber and stops 5 seconds after the last one is no longer subscribed
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">UiState&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ui---compose">UI - Compose&lt;/h3>
-&lt;p>Use the handy &lt;code>collectAsStateWithLifecycle()&lt;/code> function.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ui---compose">UI - Compose
+&lt;/h3>&lt;p>Use the handy &lt;code>collectAsStateWithLifecycle()&lt;/code> function.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">error&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">viewModel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">error&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">collectAsStateWithLifecycle&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ui---xml">UI - XML&lt;/h3>
-&lt;p>There is a good writeup on how to do that &lt;a class="link" href="https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ui---xml">UI - XML
+&lt;/h3>&lt;p>There is a good writeup on how to do that &lt;a class="link" href="https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda" target="_blank" rel="noopener"
 >here&lt;/a> but the code snippet is this:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">lifecycleScope&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">launch&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatOnLifecycle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nc">Lifecycle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nc">State&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">STARTED&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
@@ -70,14 +70,14 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="testing">Testing&lt;/h2>
-&lt;p>Testing &lt;code>StateFlow&lt;/code> can sometimes feel tricky because they use coroutines to do their magic especially if you are doing something with the dispatchers in your repositories. The kotlinx coroutines test library has good support to help with the testing scenarios you may encounter. Here are some scenarios I encountered.&lt;/p>
-&lt;h3 id="my-test-doesnt-pass">My test doesn&amp;rsquo;t pass&lt;/h3>
-&lt;p>Everything looks fine but the test fails because the value in the &lt;code>StateFlow&lt;/code> isn&amp;rsquo;t what you expect it to be. Writing a test that does something on a coroutine means that you might find yourself in a position where you try to check the value of the &lt;code>StateFlow&lt;/code> before the coroutine completes. The solution to this is to call &lt;code>advanceUntilIdle()&lt;/code> which will make sure the coroutines get a chance to complete before you assert the value of the StateFlow.&lt;/p>
-&lt;h3 id="my-test-wont-stop-running">My test won&amp;rsquo;t stop running&lt;/h3>
-&lt;p>&lt;code>StateFlow&lt;/code> is a hot flow. Depending on how it was created, e.g. using a stateIn gives a parameter to prevent the StateFlow from being started until someone subscribes. You need to subscribe/collect the StateFlow to get any data from it. Now the hot flow is well, hot. This will stop the test from completing. My initial instinct was to get the job on which the StateFlow was collected and kill it at the end of the tests. Luckily there is an easier solution. The kotlinx coroutines test libraries provide a &lt;code>backgroundScope&lt;/code>. If you kick off the flow collection on this scope, it will be cleared at the end of the test and the test will complete.&lt;/p>
-&lt;h3 id="show-me-the-code">Show me the code&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Test&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="testing">Testing
+&lt;/h2>&lt;p>Testing &lt;code>StateFlow&lt;/code> can sometimes feel tricky because they use coroutines to do their magic especially if you are doing something with the dispatchers in your repositories. The kotlinx coroutines test library has good support to help with the testing scenarios you may encounter. Here are some scenarios I encountered.&lt;/p>
+&lt;h3 id="my-test-doesnt-pass">My test doesn&amp;rsquo;t pass
+&lt;/h3>&lt;p>Everything looks fine but the test fails because the value in the &lt;code>StateFlow&lt;/code> isn&amp;rsquo;t what you expect it to be. Writing a test that does something on a coroutine means that you might find yourself in a position where you try to check the value of the &lt;code>StateFlow&lt;/code> before the coroutine completes. The solution to this is to call &lt;code>advanceUntilIdle()&lt;/code> which will make sure the coroutines get a chance to complete before you assert the value of the StateFlow.&lt;/p>
+&lt;h3 id="my-test-wont-stop-running">My test won&amp;rsquo;t stop running
+&lt;/h3>&lt;p>&lt;code>StateFlow&lt;/code> is a hot flow. Depending on how it was created, e.g. using a stateIn gives a parameter to prevent the StateFlow from being started until someone subscribes. You need to subscribe/collect the StateFlow to get any data from it. Now the hot flow is well, hot. This will stop the test from completing. My initial instinct was to get the job on which the StateFlow was collected and kill it at the end of the tests. Luckily there is an easier solution. The kotlinx coroutines test libraries provide a &lt;code>backgroundScope&lt;/code>. If you kick off the flow collection on this scope, it will be cleared at the end of the test and the test will complete.&lt;/p>
+&lt;h3 id="show-me-the-code">Show me the code
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Test&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">`GIVEN a uiState WHEN the state is collected THEN it should have the right value`&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">runTest&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">backgroundScope&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">launch&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UnconfinedTestDispatcher&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">testScheduler&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// this will use the backgroundScope
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">viewModel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">uiState&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">collect&lt;/span> &lt;span class="p">{}&lt;/span>
@@ -90,34 +90,34 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Or you can use the test library &lt;a class="link" href="https://github.com/cashapp/turbine" target="_blank" rel="noopener"
 >Turbine&lt;/a>&lt;/p>
-&lt;h2 id="put-down-the-hammer-and-try-another-tool">Put down the hammer and try another tool&lt;/h2>
-&lt;p>At the &lt;a class="link" href="https://youtu.be/B8ppnjGPAGE?t=626" target="_blank" rel="noopener"
+&lt;h2 id="put-down-the-hammer-and-try-another-tool">Put down the hammer and try another tool
+&lt;/h2>&lt;p>At the &lt;a class="link" href="https://youtu.be/B8ppnjGPAGE?t=626" target="_blank" rel="noopener"
 >2019 Android Dev Summit&lt;/a> Jose Alcérreca said “LiveData was never designed as a fully fledged reactive streams builder”. Since &lt;code>StateFlow&lt;/code> is almost a drop in replacement, there is really nothing to stop people from migrating or just not using LiveData in Repositories.&lt;/p>
 &lt;p>The Android &lt;a class="link" href="https://developer.android.com/topic/libraries/architecture/livedata#livedata-in-architecture" target="_blank" rel="noopener"
 >documentation also says&lt;/a> don&amp;rsquo;t put LiveData in the repositories.&lt;/p>
 &lt;p>Ah but you say you use databinding&amp;hellip; My condolences&amp;hellip; but it&amp;rsquo;s ok, databinding &lt;a class="link" href="https://developer.android.com/topic/libraries/data-binding/observability#stateflow" target="_blank" rel="noopener"
 >supports StateFlow&lt;/a>.&lt;/p>
 &lt;p>Your project is in Java&amp;hellip; sob&amp;hellip; my condolences. Use &lt;code>LiveData&lt;/code> or &lt;code>RxJava&lt;/code> or convert to Kotlin.&lt;/p>
-&lt;h2 id="more-info">More info&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/flow-notes/" target="_blank" rel="noopener"
+&lt;h2 id="more-info">More info
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/flow-notes/" target="_blank" rel="noopener"
 >Sketch note overview of how flows work&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://academy.droidcon.com/course/migrating-livedata-to-kotlin-flow-with-tests-in-android" target="_blank" rel="noopener"
 >droidcon academy course on how to do the migration with a sample project&lt;/a>&lt;/p>
-&lt;h3 id="official-documentation">Official documentation&lt;/h3>
-&lt;p>&lt;a class="link" href="https://developer.android.com/kotlin/flow/stateflow-and-sharedflow" target="_blank" rel="noopener"
+&lt;h3 id="official-documentation">Official documentation
+&lt;/h3>&lt;p>&lt;a class="link" href="https://developer.android.com/kotlin/flow/stateflow-and-sharedflow" target="_blank" rel="noopener"
 >StateFlow and SharedFlow&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://developer.android.com/kotlin/flow/test" target="_blank" rel="noopener"
 >Testing flows&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/migrating-from-livedata-to-kotlins-flow-379292f419fb" target="_blank" rel="noopener"
 >Detailed writeup of more migration techniques&lt;/a>&lt;/p>
-&lt;h3 id="videos">Videos&lt;/h3>
-&lt;p>&lt;a class="link" href="https://youtu.be/6hNXFs1fYaY" target="_blank" rel="noopener"
+&lt;h3 id="videos">Videos
+&lt;/h3>&lt;p>&lt;a class="link" href="https://youtu.be/6hNXFs1fYaY" target="_blank" rel="noopener"
 >Collecting flows in a lifecycle aware manner&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=nKCsIHWircA" target="_blank" rel="noopener"
->Untangling coroutine testing&lt;/a>&lt;/p></description></item><item><title>Swampy Refactor: Converting Otto Bus to Flows</title><link>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</link><pubDate>Mon, 17 Jul 2023 19:18:36 +0200</pubDate><guid>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</guid><description>&lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/swampyBus.png" alt="Featured image of post Swampy Refactor: Converting Otto Bus to Flows" />&lt;h2 id="the-story-starts">The story starts&lt;/h2>
-&lt;p>I was wandering around my day job&amp;rsquo;s code base and I happened on a time capsule - a pristine Java Activity studded with semi-colons, a snapshot of how we built things in 2014. All the member variables started with &lt;code>m&lt;/code> and there was plenty of logic to update the screen and dictate actions. Despite being old, it&amp;rsquo;s still used every day by users. Why would I change it?&lt;/p>
-&lt;h2 id="the-bus-disappears">The Bus disappears&lt;/h2>
-&lt;p>Well, it got its data from a subscription to the Otto Bus. Otto Bus was deprecated in 2016.
+>Untangling coroutine testing&lt;/a>&lt;/p></description></item><item><title>Swampy Refactor: Converting Otto Bus to Flows</title><link>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</link><pubDate>Mon, 17 Jul 2023 19:18:36 +0200</pubDate><guid>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</guid><description>&lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/swampyBus.png" alt="Featured image of post Swampy Refactor: Converting Otto Bus to Flows" />&lt;h2 id="the-story-starts">The story starts
+&lt;/h2>&lt;p>I was wandering around my day job&amp;rsquo;s code base and I happened on a time capsule - a pristine Java Activity studded with semi-colons, a snapshot of how we built things in 2014. All the member variables started with &lt;code>m&lt;/code> and there was plenty of logic to update the screen and dictate actions. Despite being old, it&amp;rsquo;s still used every day by users. Why would I change it?&lt;/p>
+&lt;h2 id="the-bus-disappears">The Bus disappears
+&lt;/h2>&lt;p>Well, it got its data from a subscription to the Otto Bus. Otto Bus was deprecated in 2016.
 &lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus.png"
 width="2282"
 height="588"
@@ -142,8 +142,8 @@ class="gallery-image"
 data-flex-grow="47"
 data-flex-basis="113px"
 >&lt;/p>
-&lt;h2 id="how-to-tackle-the-migration---step-by-step">How to tackle the migration - step by step&lt;/h2>
-&lt;p>Here are the basic steps for this kind of migration:&lt;/p>
+&lt;h2 id="how-to-tackle-the-migration---step-by-step">How to tackle the migration - step by step
+&lt;/h2>&lt;p>Here are the basic steps for this kind of migration:&lt;/p>
 &lt;ol>
 &lt;li>Pick one &lt;strong>event&lt;/strong>&lt;/li>
 &lt;li>Find All the &lt;strong>producers&lt;/strong> of this event (hopefully, there is only one but don&amp;rsquo;t count on it)&lt;/li>
@@ -155,20 +155,20 @@ data-flex-basis="113px"
 &lt;li>&lt;strong>Celebrate!&lt;/strong>&lt;/li>
 &lt;/ol>
 &lt;p>Of course this looks deceptively simple. As simple as it is to add otto bus to a code base. It may require some architectural refactors and modifications of how the dependency injection works in your app. Also if you were using otto bus to drive navigation, a Flow is not the right solution. I suspect the swamp you find yourself in is larger, deaper and much much more tangled. To this I would say, I hold you in my thoughts and I hope you have tests.&lt;/p>
-&lt;h2 id="why-is-the-bus-in-the-app">Why is the bus in the app&lt;/h2>
-&lt;p>I do have some advice on choosing an alternative implementation. It depends on why the otto bus was introduced in the app in the first place. The thing to understand is that the event bus pattern allows multiple producers to drop events into the bus from all over the app. On the other side of the bus any number of subscribers can wait for a particular event without knowing the origin of the event. This &lt;em>extreme loose coupling&lt;/em> is handy however it means&lt;/p>
+&lt;h2 id="why-is-the-bus-in-the-app">Why is the bus in the app
+&lt;/h2>&lt;p>I do have some advice on choosing an alternative implementation. It depends on why the otto bus was introduced in the app in the first place. The thing to understand is that the event bus pattern allows multiple producers to drop events into the bus from all over the app. On the other side of the bus any number of subscribers can wait for a particular event without knowing the origin of the event. This &lt;em>extreme loose coupling&lt;/em> is handy however it means&lt;/p>
 &lt;ul>
 &lt;li>nothing is stopping you from coding up something unmaintainable&lt;/li>
 &lt;li>in large projects it is difficult to follow the logic&lt;/li>
 &lt;li>it is difficult to write tests&lt;/li>
 &lt;/ul>
 &lt;p>For each of the events in your case ask yourself these questions.&lt;/p>
-&lt;h3 id="async-observable-state">Async observable state&lt;/h3>
-&lt;p>Was the bus used to observe a state in an asynchronous way? If this is the case, you can replace the bus with an observer pattern using a StateFlow. The producer and subscriber will be more tightly coupled but you will get cognitive support from clearer architecture. You will also get some IDE support and autocomplete to help you. You will need to look at the architecture or the dependency injection to make sure the subscriber has access to the producer so it can collect the StateFlow.&lt;/p>
-&lt;h3 id="synchronous-notification">Synchronous notification&lt;/h3>
-&lt;p>Was the bus used to notify one area in the code that something happened elsewhere? If this is synchronous then a simple method call may suffice. Again you will need to look at the architecture and the dependency injection to make sure the class notifying has access to the class that provides the method. Wrapping the class that receives the notification in an interface will make testing this code easier.&lt;/p>
-&lt;h3 id="i-really-really-really-need-a-bus">I really really really need a bus&lt;/h3>
-&lt;p>If the bus was legitimately used because you have many places in the app that need to respond to an event, you can recreate the bus functionality with a singleton and a SharedFlow. Inject the Bus into all the classes that need it and provide the SharedFlow from the injected class. Then subscribers can &lt;code>collectLatest&lt;/code> on the &lt;code>SharedFlow&lt;/code> and filter for the events they are interested in. Provide a method to emit something on the bus. There is a &lt;a class="link" href="https://github.com/maiatoday/Pocket8Ball/blob/flow-bus/app/src/main/java/net/maiatoday/pocket8ball/di/BusModule.kt" target="_blank" rel="noopener"
+&lt;h3 id="async-observable-state">Async observable state
+&lt;/h3>&lt;p>Was the bus used to observe a state in an asynchronous way? If this is the case, you can replace the bus with an observer pattern using a StateFlow. The producer and subscriber will be more tightly coupled but you will get cognitive support from clearer architecture. You will also get some IDE support and autocomplete to help you. You will need to look at the architecture or the dependency injection to make sure the subscriber has access to the producer so it can collect the StateFlow.&lt;/p>
+&lt;h3 id="synchronous-notification">Synchronous notification
+&lt;/h3>&lt;p>Was the bus used to notify one area in the code that something happened elsewhere? If this is synchronous then a simple method call may suffice. Again you will need to look at the architecture and the dependency injection to make sure the class notifying has access to the class that provides the method. Wrapping the class that receives the notification in an interface will make testing this code easier.&lt;/p>
+&lt;h3 id="i-really-really-really-need-a-bus">I really really really need a bus
+&lt;/h3>&lt;p>If the bus was legitimately used because you have many places in the app that need to respond to an event, you can recreate the bus functionality with a singleton and a SharedFlow. Inject the Bus into all the classes that need it and provide the SharedFlow from the injected class. Then subscribers can &lt;code>collectLatest&lt;/code> on the &lt;code>SharedFlow&lt;/code> and filter for the events they are interested in. Provide a method to emit something on the bus. There is a &lt;a class="link" href="https://github.com/maiatoday/Pocket8Ball/blob/flow-bus/app/src/main/java/net/maiatoday/pocket8ball/di/BusModule.kt" target="_blank" rel="noopener"
 >branch in the sample repo&lt;/a> with a simple implementation of this.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">interface&lt;/span> &lt;span class="nc">FlowBus&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">bus&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">SharedFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">BusEvent&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
@@ -190,11 +190,11 @@ data-flex-basis="113px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">data&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">MessageFromTheAether&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">val&lt;/span> &lt;span class="py">answer&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">BusEvent&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">object&lt;/span> &lt;span class="nc">ShakeItUp&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">BusEvent&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="none-of-this-will-work-for-me">None of this will work for me&lt;/h3>
-&lt;p>You can always resort to using a &lt;a class="link" href="https://developer.android.com/guide/components/broadcasts" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="none-of-this-will-work-for-me">None of this will work for me
+&lt;/h3>&lt;p>You can always resort to using a &lt;a class="link" href="https://developer.android.com/guide/components/broadcasts" target="_blank" rel="noopener"
 >Broadcast receiver&lt;/a> to send a message from one part of your app to another. One thing to note if you go this route is that you will only be able to use this solution in the Android app and not in shared Kotlin only modules.&lt;/p>
-&lt;h2 id="example-in-the-repo---easy-swap-to-stateflow">Example in the repo - Easy swap to StateFlow&lt;/h2>
-&lt;p>For my toy example the producer that emits data is the Magic8Ball. Instead of posting an event on the bus, make the data available in a StateFlow.&lt;/p>
+&lt;h2 id="example-in-the-repo---easy-swap-to-stateflow">Example in the repo - Easy swap to StateFlow
+&lt;/h2>&lt;p>For my toy example the producer that emits data is the Magic8Ball. Instead of posting an event on the bus, make the data available in a StateFlow.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nc">BusModule&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">bus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">post&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">MessageFromeTheAether&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">latestMessage&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>is replaced with&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">_answer&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">MutableStateFlow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
@@ -324,8 +324,8 @@ class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
 >&lt;/p>
-&lt;h1 id="references">References&lt;/h1>
-&lt;p>&lt;a class="link" href="https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7" target="_blank" rel="noopener"
+&lt;h1 id="references">References
+&lt;/h1>&lt;p>&lt;a class="link" href="https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7" target="_blank" rel="noopener"
 >Kotlin Coroutines Flow in a nutshell&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://rvbsoftdev.medium.com/kotlin-flows-an-android-cheat-sheet-d71ae772030d" target="_blank" rel="noopener"
 >Kotlin Flows ~ an Android cheat sheet&lt;/a>&lt;/p>

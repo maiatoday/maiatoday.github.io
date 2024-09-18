@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flash Cards on maiatoday</title><link>https://www.maiatoday.net/tags/flash-cards/</link><description>Recent content in Flash Cards on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 18 Sep 2024 19:50:02 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/flash-cards/index.xml" rel="self" type="application/rss+xml"/><item><title>Flash cards for Coroutines - KotlinFlashKards</title><link>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</link><pubDate>Wed, 18 Sep 2024 19:50:02 +0200</pubDate><guid>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</guid><description>&lt;img src="https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/banner.jpg" alt="Featured image of post Flash cards for Coroutines - KotlinFlashKards" />&lt;p>I made something. I made &lt;a class="link" href="https://plugins.jetbrains.com/plugin/25329-kotlinflashkards--coroutines?noRedirect=true" target="_blank" rel="noopener"
 >a set of flash cards to practise and learn Kotlin coroutines&lt;/a>. I call them KotlinFlashKards (with a K of course). Here is my first set. It helps to learn coroutines&lt;/p>
-&lt;h2 id="why-create-flash-cards">Why create flash cards?&lt;/h2>
-&lt;p>Does this happen to you? You are writing some code, you know something is possible but you can&amp;rsquo;t remember exactly how to do it. By the time you have asked an AI or researched you have forgotten what it was you wanted to do in the first place.&lt;/p>
+&lt;h2 id="why-create-flash-cards">Why create flash cards?
+&lt;/h2>&lt;p>Does this happen to you? You are writing some code, you know something is possible but you can&amp;rsquo;t remember exactly how to do it. By the time you have asked an AI or researched you have forgotten what it was you wanted to do in the first place.&lt;/p>
 &lt;p>There is a way to fix this. Learn and remember the key concepts you use often. One way to do this is to use flash cards. I learnt this from the book &lt;a class="link" href="https://www.manning.com/books/the-programmers-brain" target="_blank" rel="noopener"
 >The Programmers Brain by Felienne Hermans&lt;/a>&lt;/p>
-&lt;h2 id="how-does-it-work">How does it work?&lt;/h2>
-&lt;p>The deck doesn&amp;rsquo;t replace the &lt;a class="link" href="kotlinlang.org" >docs&lt;/a> or a &lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
+&lt;h2 id="how-does-it-work">How does it work?
+&lt;/h2>&lt;p>The deck doesn&amp;rsquo;t replace the &lt;a class="link" href="kotlinlang.org" >docs&lt;/a> or a &lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
 >good book&lt;/a>.It is an in IDE course in the form of a question, a hint that hides the answer and a code snippet with a test to explain the concept. It has four sections&lt;/p>
 &lt;ul>
 &lt;li>Basics - 18 cards&lt;/li>
@@ -14,8 +14,8 @@
 &lt;li>Testing - 6 cards&lt;/li>
 &lt;/ul>
 &lt;p>You can explore the sections in order or dip in and try tasks at random.&lt;/p>
-&lt;h2 id="strategies-to-get-the-best-out-of-the-course">Strategies to get the best out of the course?&lt;/h2>
-&lt;ol>
+&lt;h2 id="strategies-to-get-the-best-out-of-the-course">Strategies to get the best out of the course?
+&lt;/h2>&lt;ol>
 &lt;li>
 &lt;p>&lt;strong>Repeat at regular intervals&lt;/strong> - Memories are built up if you &lt;strong>repeat&lt;/strong> the flash cards at &lt;strong>regular intervals&lt;/strong>. It is better to a few lessons more often than to do many lessons in one sitting. You can do the course many times or choose which areas to practise.&lt;/p>
 &lt;/li>
@@ -26,8 +26,8 @@
 &lt;p>&lt;strong>Think about the solution&lt;/strong> - For each question and answer you will remember it better too if you think of a practical place where you could use similar code.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="how-do-i-get-it">How do I get it?&lt;/h2>
-&lt;p>You need:&lt;/p>
+&lt;h2 id="how-do-i-get-it">How do I get it?
+&lt;/h2>&lt;p>You need:&lt;/p>
 &lt;ul>
 &lt;li>a Jetbrains IDE like Android Studio or Intellij Community edition&lt;/li>
 &lt;li>the &lt;a class="link" href="https://plugins.jetbrains.com/plugin/10081-jetbrains-academy" target="_blank" rel="noopener"
@@ -44,8 +44,8 @@
 &lt;/ol>
 &lt;img src="marketplace.png" alt="Getting the flash cards" width="600"/>
 &lt;img src="kard-2.png" alt="Course interface" width="600"/>
-&lt;h2 id="what-else-can-i-do">What else can I do?&lt;/h2>
-&lt;ul>
+&lt;h2 id="what-else-can-i-do">What else can I do?
+&lt;/h2>&lt;ul>
 &lt;li>Rate the course&lt;/li>
 &lt;li>Give feedback&lt;/li>
 &lt;li>Tell me if there are other topics you want flash cards on, I have a flows one coming out soon&lt;/li>

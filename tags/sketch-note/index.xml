@@ -100,8 +100,8 @@ class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
 >&lt;/p>
-&lt;h1 id="references">References&lt;/h1>
-&lt;p>&lt;a class="link" href="https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7" target="_blank" rel="noopener"
+&lt;h1 id="references">References
+&lt;/h1>&lt;p>&lt;a class="link" href="https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7" target="_blank" rel="noopener"
 >Kotlin Coroutines Flow in a nutshell&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://rvbsoftdev.medium.com/kotlin-flows-an-android-cheat-sheet-d71ae772030d" target="_blank" rel="noopener"
 >Kotlin Flows ~ an Android cheat sheet&lt;/a>&lt;/p>

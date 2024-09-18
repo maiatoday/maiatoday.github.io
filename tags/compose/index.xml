@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Compose on maiatoday</title><link>https://www.maiatoday.net/tags/compose/</link><description>Recent content in Compose on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 09 Dec 2023 17:18:17 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/compose/index.xml" rel="self" type="application/rss+xml"/><item><title>How to build Wrapped 2023 in Compose Animation</title><link>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</link><pubDate>Sat, 09 Dec 2023 17:18:17 +0200</pubDate><guid>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/wrappedBanner.png" alt="Featured image of post How to build Wrapped 2023 in Compose Animation" />&lt;h1 id="how-to-build-wrapped-2023-in-compose-animation">How to build Wrapped 2023 in Compose Animation&lt;/h1>
-&lt;p>If I had to build the &lt;a class="link" href="https://open.spotify.com/wrapped/share/share-991bdbcda37a462bac4c6d6c80b17ef0-1080x1920?lang=en&amp;amp;destination=datastories&amp;amp;si=MDUyMGY4ZTAtYmRmMS00ZjJhLWE3OGItNjFhNzBmMzAwYzBk" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Compose on maiatoday</title><link>https://www.maiatoday.net/tags/compose/</link><description>Recent content in Compose on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 09 Dec 2023 17:18:17 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/compose/index.xml" rel="self" type="application/rss+xml"/><item><title>How to build Wrapped 2023 in Compose Animation</title><link>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</link><pubDate>Sat, 09 Dec 2023 17:18:17 +0200</pubDate><guid>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/wrappedBanner.png" alt="Featured image of post How to build Wrapped 2023 in Compose Animation" />&lt;h1 id="how-to-build-wrapped-2023-in-compose-animation">How to build Wrapped 2023 in Compose Animation
+&lt;/h1>&lt;p>If I had to build the &lt;a class="link" href="https://open.spotify.com/wrapped/share/share-991bdbcda37a462bac4c6d6c80b17ef0-1080x1920?lang=en&amp;amp;destination=datastories&amp;amp;si=MDUyMGY4ZTAtYmRmMS00ZjJhLWE3OGItNjFhNzBmMzAwYzBk" target="_blank" rel="noopener"
 >Spotify Wrapped 2023&lt;/a> animations in Compose, this is how I would do it. This blog post doesn&amp;rsquo;t reproduce the effects identically, but it shows some of the basic Compose animation techniques you could use. It uses &lt;code>Canvas&lt;/code> drawing and especially the &lt;code>drawWithCache&lt;/code> modifier. It also uses &lt;code>RoundedPolygon&lt;/code>, various matrix transformations and looping animation techniques using &lt;code>infiniteRepeatable&lt;/code>. There is a section about how to get a path from an svg file as well.&lt;/p>
 &lt;p>I created three different techniques. The first is a simple box with an animating linear gradient and an animating offset. The second is a spiky star using a &lt;code>RoundedPolygon&lt;/code> with colour stop gradient and some animations in a &lt;code>graphicsLayer&lt;/code>. The last is a progressivly drawing line. As a bonus we&amp;rsquo;ll make a palette using &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
 >unsplash.com&lt;/a> and &lt;a class="link" href="https://coolors.co/palettes/popular" target="_blank" rel="noopener"
 >coolors.co&lt;/a> Let&amp;rsquo;s start with the palette.&lt;/p>
-&lt;h2 id="pick-a-palette">Pick a palette&lt;/h2>
-&lt;img src="snipUnsplash.png" width="{{ .Width }}" height="{{ .Height }}">
+&lt;h2 id="pick-a-palette">Pick a palette
+&lt;/h2>&lt;img src="snipUnsplash.png" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Pick an image from unsplash and pull some colours from the image. &lt;a class="link" href="https://unsplash.com/photos/multicolored-hallway-RnCPiXixooY" target="_blank" rel="noopener"
 >Here&amp;rsquo;s one&lt;/a> I got. I then loaded it into &lt;a class="link" href="https://coolors.co/palettes/popular" target="_blank" rel="noopener"
 >coolors.co&lt;/a> and picked some palette colours from the image.&lt;/p>
@@ -20,8 +20,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">Licorice&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF35192B&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">Custard&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFFEC05D&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We can now use these everywhere as gradients or backgrounds and our animation will have a consistent look that matches the mood from the image.&lt;/p>
-&lt;h2 id="shimer-pane---animating-linear-gradient">Shimer pane - animating Linear Gradient&lt;/h2>
-&lt;img src="pane.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
+&lt;h2 id="shimer-pane---animating-linear-gradient">Shimer pane - animating Linear Gradient
+&lt;/h2>&lt;img src="pane.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>For this sliding box we animate the offset with an &lt;code>infiniteRepeatable&lt;/code> and we animate the offset of the &lt;code>LinearGradient&lt;/code>. The colors of the gradient are chosen from the colors of our newly created palette. The linear gradient changes colour from corner to corner. By changeing the offset of the gradient it moves the gradient in the shape. If we then animate this offset it will make the colours move across the shape. The second animation is simply an x offset to slide the box in and out. You can look at the complete &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/main/app/src/main/java/net/maiatoday/turbogiggle/ShimmerPane.kt" target="_blank" rel="noopener"
 >ShimmerPane function&lt;/a> in the repo. This linear gradient trick is explained in detail in &lt;a class="link" href="https://medium.com/androiddevelopers/brushing-up-on-compose-text-coloring-84d7d70dd8fa" target="_blank" rel="noopener"
 >this blog post&lt;/a>.&lt;/p>
@@ -40,8 +40,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">})&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="spiky-splash---rotating-roundedpolygon-with-drawwithcache-modifier">Spiky Splash - rotating RoundedPolygon with drawWithCache modifier&lt;/h2>
-&lt;img src="spikyStar.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="spiky-splash---rotating-roundedpolygon-with-drawwithcache-modifier">Spiky Splash - rotating RoundedPolygon with drawWithCache modifier
+&lt;/h2>&lt;img src="spikyStar.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>The Spiky Splash shape is created with a RoundedPolygon with 14 vertices.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">spikySplash&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nc">RoundedPolygon&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">star&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">numVerticesPerRadius&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">14&lt;/span>&lt;span class="p">,&lt;/span>
@@ -97,27 +97,27 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">scaleY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0.5f&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rotationZ&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rotate&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="scribble-drawing---path-matrix-transform-flattened-path">Scribble drawing - path, matrix transform, flattened path&lt;/h2>
-&lt;h3 id="how-to-get-a-path-from-svg">How to get a path from svg&lt;/h3>
-&lt;img src="spikyscribble.svg" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="scribble-drawing---path-matrix-transform-flattened-path">Scribble drawing - path, matrix transform, flattened path
+&lt;/h2>&lt;h3 id="how-to-get-a-path-from-svg">How to get a path from svg
+&lt;/h3>&lt;img src="spikyscribble.svg" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Create some scribbles in a package like inkscape or any drawing package that will let you save an svg. Don&amp;rsquo;t make it complicated, literally just draw a line with the pencil. Then open the svg with a text editor. You can &lt;a class="link" href="http://maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/spikyscribble.svg" target="_blank" rel="noopener"
 >open&lt;/a> the svg displayed here and see what it looks like. You are looking for a line that starts with something like &lt;code>&amp;lt;path style=&amp;quot;fill:none;...&lt;/code>&lt;/p>
 &lt;img src="pathInSvg.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Copy everything in the &lt;code>d=&amp;quot;...&lt;/code> section as a string and paste it into your code.&lt;/p>
 &lt;img src="stringInAndroidStudio.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
-&lt;h3 id="transforming-the-path-with-the-matrix">Transforming the path with the matrix&lt;/h3>
-&lt;p>The matrix transformation is &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/2849314e0e2fb1e4670e500759c4fe7ff994a87b/app/src/main/java/net/maiatoday/turbogiggle/ScribblePath.kt#L164" target="_blank" rel="noopener"
+&lt;h3 id="transforming-the-path-with-the-matrix">Transforming the path with the matrix
+&lt;/h3>&lt;p>The matrix transformation is &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/2849314e0e2fb1e4670e500759c4fe7ff994a87b/app/src/main/java/net/maiatoday/turbogiggle/ScribblePath.kt#L164" target="_blank" rel="noopener"
 >very similar&lt;/a> to the RoundedPolygon one, but&amp;hellip; we now need the Compose &lt;code>Matrix&lt;/code> not the Android view one. Also the bounds of the path are no longer -1,1 for both x and y. We can get the bounds of the path and use it to make a matrix to size the scribble to fit the view.&lt;/p>
-&lt;h3 id="drawing-the-path">Drawing the path&lt;/h3>
-&lt;p>If we just draw the path as is, it will draw the whole path and not progressively draw it. There is a neat trick as shown in &lt;a class="link" href="https://youtu.be/2zVBnJ15C6M?si=GWK1N7W9waBtchKM&amp;amp;t=1884" target="_blank" rel="noopener"
+&lt;h3 id="drawing-the-path">Drawing the path
+&lt;/h3>&lt;p>If we just draw the path as is, it will draw the whole path and not progressively draw it. There is a neat trick as shown in &lt;a class="link" href="https://youtu.be/2zVBnJ15C6M?si=GWK1N7W9waBtchKM&amp;amp;t=1884" target="_blank" rel="noopener"
 >this video at timestamp 31:36&lt;/a>.&lt;/p>
-&lt;h3 id="scribble-draw-the-path-with-flattened-lines">Scribble draw the path with flattened lines&lt;/h3>
-&lt;p>The clue is we split the whole path up into short sections, little lines, which we draw one after the other. The line of code where this happens is&lt;/p>
+&lt;h3 id="scribble-draw-the-path-with-flattened-lines">Scribble draw the path with flattened lines
+&lt;/h3>&lt;p>The clue is we split the whole path up into short sections, little lines, which we draw one after the other. The line of code where this happens is&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">lines&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">path&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">asAndroidPath&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">flatten&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0.5f&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The 0.5f parameter in the flatten call is the error that the flatten call allows, 0.5 is half a pixel. You can also see we need to convert again to an &lt;code>AndroidPath&lt;/code> because the &lt;code>flatten&lt;/code> method is only available on Android paths. We animate a progress variable so we can loop from say 0% to 10% and so on up to 100% and then start again. Then in the modifier &lt;code>onDrawBehind&lt;/code> function lambde we loop through the &lt;code>lines&lt;/code> and draw only those lines up to a the progress variable. The animation is caused by only some of the path subsections being drawn and more and more of them being drawn as the progerss increases.&lt;/p>
 &lt;img src="scribble.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
-&lt;h2 id="combining-everything">Combining everything&lt;/h2>
-&lt;img src="giggle.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
+&lt;h2 id="combining-everything">Combining everything
+&lt;/h2>&lt;img src="giggle.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Since these different elements are all built in their own composable. We can put them all together remembering that the &lt;code>Composables&lt;/code> that are drawn first will be at the bottom.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">Giggle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
@@ -145,16 +145,16 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="thats-a-wrap">That&amp;rsquo;s a wrap&lt;/h2>
-&lt;p>Here&amp;rsquo;s &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="thats-a-wrap">That&amp;rsquo;s a wrap
+&lt;/h2>&lt;p>Here&amp;rsquo;s &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle" target="_blank" rel="noopener"
 >the repo&lt;/a>&lt;/p>
 &lt;p>and here&amp;rsquo;s the demo&lt;/p>
 &lt;video width=25% controls autoplay>
 &lt;source src="wrapped.webm" type="video/webm">
 Your browser does not support the video tag.
 &lt;/video>
-&lt;h2 id="whats-next">What&amp;rsquo;s next&lt;/h2>
-&lt;p>This experiment is by no means complete. This is what I could try out next:&lt;/p>
+&lt;h2 id="whats-next">What&amp;rsquo;s next
+&lt;/h2>&lt;p>This experiment is by no means complete. This is what I could try out next:&lt;/p>
 &lt;ul>
 &lt;li>Figure out &lt;strong>what is up with the scribble line transform&lt;/strong> that makes it sometimes cut off at the bottom&lt;/li>
 &lt;li>Make the scribble lines more like the real thing by figuring out how to &lt;strong>make the gradient draw along the line&lt;/strong>&lt;/li>
@@ -167,8 +167,8 @@ Your browser does not support the video tag.
 &lt;p>But hey, there is always more to learn and explore.&lt;/p>
 &lt;p>If you want to get a step by step walkthrough of concepts such as these with some theory discussions and a practise repo, check out my droidcon academy coffee break codelab titled &lt;a class="link" href="https://academy.droidcon.com/course/draw-and-animate-on-canvas-with-jetpack-compose-in-android" target="_blank" rel="noopener"
 >Draw and Animate on Canvas with Jetpack Compose in Android&lt;/a>&lt;/p>
-&lt;h2 id="references">References&lt;/h2>
-&lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/brushing-up-on-compose-text-coloring-84d7d70dd8fa" target="_blank" rel="noopener"
+&lt;h2 id="references">References
+&lt;/h2>&lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/brushing-up-on-compose-text-coloring-84d7d70dd8fa" target="_blank" rel="noopener"
 >Alejandra&amp;rsquo;s Medium article on animating linear gradient brush&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/the-shape-of-things-to-come-1c7663d9dbc0" target="_blank" rel="noopener"
 >Chet&amp;rsquo;s article on Rounded Polygons&lt;/a>&lt;/p>
@@ -579,37 +579,37 @@ title="YouTube Video"
 >
 &lt;/iframe>
 &lt;/div></description></item><item><title>Links to Learn Compose</title><link>https://www.maiatoday.net/p/links-to-learn-compose/</link><pubDate>Mon, 28 Feb 2022 21:43:48 +0200</pubDate><guid>https://www.maiatoday.net/p/links-to-learn-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/links-to-learn-compose/resources.png" alt="Featured image of post Links to Learn Compose" />&lt;p>At the moment people often ask me where to go start learning Jetpack Compose. Here is a a hand picked selection of my favourite Compose resources. These may change as I find new ones. There should be something for everyone, Official, Community, Videos, Books, Streams.&lt;/p>
-&lt;h2 id="official-docs">Official docs&lt;/h2>
-&lt;p>&lt;a class="link" href="https://developer.android.com/jetpack/compose/documentation" target="_blank" rel="noopener"
+&lt;h2 id="official-docs">Official docs
+&lt;/h2>&lt;p>&lt;a class="link" href="https://developer.android.com/jetpack/compose/documentation" target="_blank" rel="noopener"
 >Official Docs&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://developer.android.com/courses/pathways/compose" target="_blank" rel="noopener"
 >Pathway&lt;/a>&lt;/p>
-&lt;h2 id="official-apps">Official apps&lt;/h2>
-&lt;p>&lt;a class="link" href="https://cs.android.com/androidx/compose-samples" target="_blank" rel="noopener"
+&lt;h2 id="official-apps">Official apps
+&lt;/h2>&lt;p>&lt;a class="link" href="https://cs.android.com/androidx/compose-samples" target="_blank" rel="noopener"
 >Jetpack Compose Samples&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://cs.android.com/androidx/platform/frameworks/support/&amp;#43;/androidx-main:compose/material/material/samples/src/main/java/androidx/compose/material/samples/TabSamples.kt" target="_blank" rel="noopener"
 >Material Catalog&lt;/a>&lt;/p>
-&lt;h2 id="community-websites">Community websites&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.jetpackcompose.app/" target="_blank" rel="noopener"
+&lt;h2 id="community-websites">Community websites
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.jetpackcompose.app/" target="_blank" rel="noopener"
 >Jetpackcompose.app&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://compose.academy/" target="_blank" rel="noopener"
 >compose.academy&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://foso.github.io/Jetpack-Compose-Playground" target="_blank" rel="noopener"
 >Jetpack Compose Playground&lt;/a>&lt;/p>
-&lt;h2 id="videos">Videos&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC" target="_blank" rel="noopener"
+&lt;h2 id="videos">Videos
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC" target="_blank" rel="noopener"
 >Philip Lackner Compose playist&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/c/CodinginFlow" target="_blank" rel="noopener"
 >Coding in Flow&lt;/a>&lt;/p>
-&lt;h2 id="books">Books&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.packtpub.com/product/android-ui-development-with-jetpack-compose/9781801812160" target="_blank" rel="noopener"
+&lt;h2 id="books">Books
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.packtpub.com/product/android-ui-development-with-jetpack-compose/9781801812160" target="_blank" rel="noopener"
 >Android UI Development with Jetpack Compose - Thomas Künneth&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://practicaljetpackcompose.com/" target="_blank" rel="noopener"
 >Practical Jetpack Compose - Joe Birch&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://leanpub.com/composeinternals" target="_blank" rel="noopener"
 >Compose Internals - Jorge Castillo&lt;/a>&lt;/p>
-&lt;h2 id="twitch">Twitch&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.twitch.tv/codewiththeitalians" target="_blank" rel="noopener"
+&lt;h2 id="twitch">Twitch
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.twitch.tv/codewiththeitalians" target="_blank" rel="noopener"
 >Coding with the Italians&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.twitch.tv/kibethcodes" target="_blank" rel="noopener"
 >Kibeth Codes&lt;/a>&lt;/p>
@@ -617,12 +617,13 @@ title="YouTube Video"
 >Adam McNeilly&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://twitch.tv/florianwalther" target="_blank" rel="noopener"
 >Florian Walther&lt;/a>&lt;/p>
-&lt;h2 id="specialised-areas">Specialised areas&lt;/h2>
-&lt;h3 id="modifiers">Modifiers&lt;/h3>
-&lt;p>&lt;a class="link" href="https://jorgecastillo.dev/composed-modifiers-in-jetpack-compose?utm_campaign=onCreate%20Digest&amp;amp;utm_medium=email&amp;amp;utm_source=Revue%20newsletter" target="_blank" rel="noopener"
+&lt;h2 id="specialised-areas">Specialised areas
+&lt;/h2>&lt;h3 id="modifiers">Modifiers
+&lt;/h3>&lt;p>&lt;a class="link" href="https://jorgecastillo.dev/composed-modifiers-in-jetpack-compose?utm_campaign=onCreate%20Digest&amp;amp;utm_medium=email&amp;amp;utm_source=Revue%20newsletter" target="_blank" rel="noopener"
 >how it works&lt;/a>&lt;/p>
-&lt;h3 id="state">State&lt;/h3>
-&lt;h3 id="animation">Animation&lt;/h3></description></item><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
+&lt;h3 id="state">State
+&lt;/h3>&lt;h3 id="animation">Animation
+&lt;/h3></description></item><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
 >Jozi-JUG&lt;/a> demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
@@ -719,8 +720,8 @@ data-flex-basis="2288px"
 >&lt;/p>
 &lt;p>My intuition says it is preferable to sprinkle the memory with fewer smaller pieces of confetti rather than many larger ones. Still there isn&amp;rsquo;t really a way around it since Offset is immutable and Compose is built around tracking unidirectional state flow. Mutable State holder classes won&amp;rsquo;t register a change if the object that holds the state doesn&amp;rsquo;t change. This means if I keep an object that holds the position of the particle and I simply change the x and y values in he mutable state holder will not register a change. &lt;a class="link" href="https://dev.to/zachklipp/two-mutables-dont-make-a-right-2kgp" target="_blank" rel="noopener"
 >Here&lt;/a> is a detail discussion on mutable state.&lt;/p>
-&lt;h3 id="how-to-build-your-own-drawing-modifier">How to build your own drawing modifier&lt;/h3>
-&lt;p>You need a extension function on modifier like so-&lt;/p>
+&lt;h3 id="how-to-build-your-own-drawing-modifier">How to build your own drawing modifier
+&lt;/h3>&lt;p>You need a extension function on modifier like so-&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">Modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">confetti&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// all your parameters to set up the modifier
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">composed&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// the composed function gives you a composition on each composable where this modifier is used

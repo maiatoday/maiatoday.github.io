@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://www.maiatoday.net/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 18 Sep 2024 19:50:02 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Flash cards for Coroutines - KotlinFlashKards</title><link>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</link><pubDate>Wed, 18 Sep 2024 19:50:02 +0200</pubDate><guid>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</guid><description>&lt;img src="https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/banner.jpg" alt="Featured image of post Flash cards for Coroutines - KotlinFlashKards" />&lt;p>I made something. I made &lt;a class="link" href="https://plugins.jetbrains.com/plugin/25329-kotlinflashkards--coroutines?noRedirect=true" target="_blank" rel="noopener"
 >a set of flash cards to practise and learn Kotlin coroutines&lt;/a>. I call them KotlinFlashKards (with a K of course). Here is my first set. It helps to learn coroutines&lt;/p>
-&lt;h2 id="why-create-flash-cards">Why create flash cards?&lt;/h2>
-&lt;p>Does this happen to you? You are writing some code, you know something is possible but you can&amp;rsquo;t remember exactly how to do it. By the time you have asked an AI or researched you have forgotten what it was you wanted to do in the first place.&lt;/p>
+&lt;h2 id="why-create-flash-cards">Why create flash cards?
+&lt;/h2>&lt;p>Does this happen to you? You are writing some code, you know something is possible but you can&amp;rsquo;t remember exactly how to do it. By the time you have asked an AI or researched you have forgotten what it was you wanted to do in the first place.&lt;/p>
 &lt;p>There is a way to fix this. Learn and remember the key concepts you use often. One way to do this is to use flash cards. I learnt this from the book &lt;a class="link" href="https://www.manning.com/books/the-programmers-brain" target="_blank" rel="noopener"
 >The Programmers Brain by Felienne Hermans&lt;/a>&lt;/p>
-&lt;h2 id="how-does-it-work">How does it work?&lt;/h2>
-&lt;p>The deck doesn&amp;rsquo;t replace the &lt;a class="link" href="kotlinlang.org" >docs&lt;/a> or a &lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
+&lt;h2 id="how-does-it-work">How does it work?
+&lt;/h2>&lt;p>The deck doesn&amp;rsquo;t replace the &lt;a class="link" href="kotlinlang.org" >docs&lt;/a> or a &lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
 >good book&lt;/a>.It is an in IDE course in the form of a question, a hint that hides the answer and a code snippet with a test to explain the concept. It has four sections&lt;/p>
 &lt;ul>
 &lt;li>Basics - 18 cards&lt;/li>
@@ -14,8 +14,8 @@
 &lt;li>Testing - 6 cards&lt;/li>
 &lt;/ul>
 &lt;p>You can explore the sections in order or dip in and try tasks at random.&lt;/p>
-&lt;h2 id="strategies-to-get-the-best-out-of-the-course">Strategies to get the best out of the course?&lt;/h2>
-&lt;ol>
+&lt;h2 id="strategies-to-get-the-best-out-of-the-course">Strategies to get the best out of the course?
+&lt;/h2>&lt;ol>
 &lt;li>
 &lt;p>&lt;strong>Repeat at regular intervals&lt;/strong> - Memories are built up if you &lt;strong>repeat&lt;/strong> the flash cards at &lt;strong>regular intervals&lt;/strong>. It is better to a few lessons more often than to do many lessons in one sitting. You can do the course many times or choose which areas to practise.&lt;/p>
 &lt;/li>
@@ -26,8 +26,8 @@
 &lt;p>&lt;strong>Think about the solution&lt;/strong> - For each question and answer you will remember it better too if you think of a practical place where you could use similar code.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="how-do-i-get-it">How do I get it?&lt;/h2>
-&lt;p>You need:&lt;/p>
+&lt;h2 id="how-do-i-get-it">How do I get it?
+&lt;/h2>&lt;p>You need:&lt;/p>
 &lt;ul>
 &lt;li>a Jetbrains IDE like Android Studio or Intellij Community edition&lt;/li>
 &lt;li>the &lt;a class="link" href="https://plugins.jetbrains.com/plugin/10081-jetbrains-academy" target="_blank" rel="noopener"
@@ -44,8 +44,8 @@
 &lt;/ol>
 &lt;img src="marketplace.png" alt="Getting the flash cards" width="600"/>
 &lt;img src="kard-2.png" alt="Course interface" width="600"/>
-&lt;h2 id="what-else-can-i-do">What else can I do?&lt;/h2>
-&lt;ul>
+&lt;h2 id="what-else-can-i-do">What else can I do?
+&lt;/h2>&lt;ul>
 &lt;li>Rate the course&lt;/li>
 &lt;li>Give feedback&lt;/li>
 &lt;li>Tell me if there are other topics you want flash cards on, I have a flows one coming out soon&lt;/li>
@@ -67,8 +67,8 @@ class="gallery-image"
 data-flex-grow="100"
 data-flex-basis="240px"
 >&lt;/p>
-&lt;h1 id="quicklinks">Quicklinks&lt;/h1>
-&lt;p>Here is an overview with links so you can jump directly to what suits your needs&lt;/p>
+&lt;h1 id="quicklinks">Quicklinks
+&lt;/h1>&lt;p>Here is an overview with links so you can jump directly to what suits your needs&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -106,10 +106,10 @@ data-flex-basis="240px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>&lt;a class="link" href="#what-next" >Resources&lt;/a>&lt;/p>
-&lt;h1 id="browser">Browser&lt;/h1>
-&lt;p>This recipe is for when you don&amp;rsquo;t have a computer where you can install things. Maybe you are on a tablet or you are in an internet cafe in an unknown place or borrowing your neighbours laptop. It is good for code snippets that use standard java or kotlin libraries and output text.&lt;/p>
-&lt;h2 id="playground">Playground&lt;/h2>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground.png"
+&lt;h1 id="browser">Browser
+&lt;/h1>&lt;p>This recipe is for when you don&amp;rsquo;t have a computer where you can install things. Maybe you are on a tablet or you are in an internet cafe in an unknown place or borrowing your neighbours laptop. It is good for code snippets that use standard java or kotlin libraries and output text.&lt;/p>
+&lt;h2 id="playground">Playground
+&lt;/h2>&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground.png"
 width="1218"
 height="614"
 srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu17619968913386725222.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu10623720097698865015.png 1024w"
@@ -119,21 +119,21 @@ class="gallery-image"
 data-flex-grow="198"
 data-flex-basis="476px"
 >&lt;/p>
-&lt;h3 id="you-need">You need&lt;/h3>
-&lt;ul>
+&lt;h3 id="you-need">You need
+&lt;/h3>&lt;ul>
 &lt;li>A browser&lt;/li>
 &lt;li>A website that can run code e.g. &lt;a class="link" href="https://play.kotlinlang.org" target="_blank" rel="noopener"
 >Kotlin playground&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="recipe">Recipe&lt;/h3>
-&lt;ol>
+&lt;h3 id="recipe">Recipe
+&lt;/h3>&lt;ol>
 &lt;li>open &lt;a class="link" href="https://play.kotlinlang.org" target="_blank" rel="noopener"
 >this&lt;/a> website&lt;/li>
 &lt;li>paste or type some code&lt;/li>
 &lt;li>run &lt;code>Ctrl + R&lt;/code>&lt;/li>
 &lt;/ol>
-&lt;h3 id="adding-dependencies">Adding dependencies&lt;/h3>
-&lt;p>A good way to see what you can add is to autocomplete an &lt;code>import&lt;/code> statement. You have access to kotlin, kotlinx, java and javax. If you want to add other libraries you need to run your own instance of the kotlin playground with the libraries you need or you need to find an instance where this is supported. Not really recommended. I would just use an &lt;a class="link" href="#amper" >Amper&lt;/a> project if you need dependencies.&lt;/p>
+&lt;h3 id="adding-dependencies">Adding dependencies
+&lt;/h3>&lt;p>A good way to see what you can add is to autocomplete an &lt;code>import&lt;/code> statement. You have access to kotlin, kotlinx, java and javax. If you want to add other libraries you need to run your own instance of the kotlin playground with the libraries you need or you need to find an instance where this is supported. Not really recommended. I would just use an &lt;a class="link" href="#amper" >Amper&lt;/a> project if you need dependencies.&lt;/p>
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import.png"
 width="1042"
 height="516"
@@ -144,8 +144,8 @@ class="gallery-image"
 data-flex-grow="201"
 data-flex-basis="484px"
 >&lt;/p>
-&lt;h2 id="datalore">Datalore&lt;/h2>
-&lt;p>This solution is still Browser based. It is useful if you want to collect a few pieces of Kotlin code and you like a Notebook interface and the supported tools. There is a free tier of Datalore available.&lt;/p>
+&lt;h2 id="datalore">Datalore
+&lt;/h2>&lt;p>This solution is still Browser based. It is useful if you want to collect a few pieces of Kotlin code and you like a Notebook interface and the supported tools. There is a free tier of Datalore available.&lt;/p>
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore.png"
 width="1324"
 height="844"
@@ -156,26 +156,26 @@ class="gallery-image"
 data-flex-grow="156"
 data-flex-basis="376px"
 >&lt;/p>
-&lt;h3 id="you-need-1">You need&lt;/h3>
-&lt;ul>
+&lt;h3 id="you-need-1">You need
+&lt;/h3>&lt;ul>
 &lt;li>A browser&lt;/li>
 &lt;li>A Datalore login&lt;/li>
 &lt;/ul>
-&lt;h3 id="recipe-1">Recipe&lt;/h3>
-&lt;ol>
+&lt;h3 id="recipe-1">Recipe
+&lt;/h3>&lt;ol>
 &lt;li>open &lt;a class="link" href="https://datalore.jetbrains.com" target="_blank" rel="noopener"
 >this&lt;/a> website and log in&lt;/li>
 &lt;li>Open a new kotlin notebook and paste or type some code in a code cell&lt;/li>
 &lt;li>click the run button&lt;/li>
 &lt;/ol>
-&lt;h3 id="adding-dependencies-1">Adding dependencies&lt;/h3>
-&lt;p>The trick with the autocomplete on import works here too. You have access to kotlin, kotlinx, java and javax. You can also add some select libraries like &lt;a class="link" href="https://kotlin.github.io/kandy/welcome.html" target="_blank" rel="noopener"
+&lt;h3 id="adding-dependencies-1">Adding dependencies
+&lt;/h3>&lt;p>The trick with the autocomplete on import works here too. You have access to kotlin, kotlinx, java and javax. You can also add some select libraries like &lt;a class="link" href="https://kotlin.github.io/kandy/welcome.html" target="_blank" rel="noopener"
 >kandy&lt;/a> with the &lt;code>%use&lt;/code> magic word.&lt;/p>
-&lt;h1 id="cli">CLI&lt;/h1>
-&lt;p>This is for people who are happy to run things on the command line. It doesn&amp;rsquo;t matter where the code is created, it could be vim or an echo command. Read more at the &lt;a class="link" href="https://kotlinlang.org/docs/command-line.html" target="_blank" rel="noopener"
+&lt;h1 id="cli">CLI
+&lt;/h1>&lt;p>This is for people who are happy to run things on the command line. It doesn&amp;rsquo;t matter where the code is created, it could be vim or an echo command. Read more at the &lt;a class="link" href="https://kotlinlang.org/docs/command-line.html" target="_blank" rel="noopener"
 >official kotlin docs&lt;/a>.&lt;/p>
-&lt;h2 id="compile-and-run">Compile and run&lt;/h2>
-&lt;p>The bare bones approach but it becomes a pain if you want to use libraries other than the standard ones or you want to split your code in more than one file.&lt;/p>
+&lt;h2 id="compile-and-run">Compile and run
+&lt;/h2>&lt;p>The bare bones approach but it becomes a pain if you want to use libraries other than the standard ones or you want to split your code in more than one file.&lt;/p>
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run.png"
 width="1392"
 height="406"
@@ -186,8 +186,8 @@ class="gallery-image"
 data-flex-grow="342"
 data-flex-basis="822px"
 >&lt;/p>
-&lt;h3 id="you-need-2">You need&lt;/h3>
-&lt;ul>
+&lt;h3 id="you-need-2">You need
+&lt;/h3>&lt;ul>
 &lt;li>A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
 >terminal&lt;/a>&lt;/li>
 &lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
@@ -195,16 +195,16 @@ data-flex-basis="822px"
 &lt;li>The &lt;a class="link" href="https://formulae.brew.sh/formula/kotlin" target="_blank" rel="noopener"
 >kotlin compiler&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="recipe-2">Recipe&lt;/h3>
-&lt;ol>
+&lt;h3 id="recipe-2">Recipe
+&lt;/h3>&lt;ol>
 &lt;li>&lt;code>echo 'fun main() { println(&amp;quot;Hello, World&amp;quot;)}' &amp;gt; hello.kt&lt;/code>&lt;/li>
 &lt;li>&lt;code>kotlinc hello.kt -include-runtime -d hello.jar&lt;/code> # compile the code and package it in a jar with a runtime&lt;/li>
 &lt;li>&lt;code>java -jar hello.jar&lt;/code> # run the jar with java&lt;/li>
 &lt;/ol>
-&lt;h3 id="adding-dependencies-2">Adding dependencies&lt;/h3>
-&lt;p>You need to add dependencies on the command line, this may be a pain as you probably need the jars to include them. (not recommended)&lt;/p>
-&lt;h2 id="repl">REPL&lt;/h2>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl.png"
+&lt;h3 id="adding-dependencies-2">Adding dependencies
+&lt;/h3>&lt;p>You need to add dependencies on the command line, this may be a pain as you probably need the jars to include them. (not recommended)&lt;/p>
+&lt;h2 id="repl">REPL
+&lt;/h2>&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl.png"
 width="1384"
 height="434"
 srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu389958759780755462.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu4937500661031583832.png 1024w"
@@ -215,10 +215,10 @@ data-flex-grow="318"
 data-flex-basis="765px"
 >&lt;/p>
 &lt;p>REPL stands for &lt;strong>r&lt;/strong>ead-&lt;strong>e&lt;/strong>val-&lt;strong>p&lt;/strong>rint-&lt;strong>l&lt;/strong>oop. It is an interactive environment to run code. If you have the kotlin compiler installed you can simply run &lt;code>kotlinc&lt;/code> and you will be in the REPL. &lt;code>^C&lt;/code> to kill it and exit. Use only for very transient experiments.&lt;/p>
-&lt;h2 id="gradle">Gradle&lt;/h2>
-&lt;p>This recipe uses gradle to generate a template project. You can then add all the files and dependencies to the project.&lt;/p>
-&lt;h3 id="you-need-3">You need&lt;/h3>
-&lt;ul>
+&lt;h2 id="gradle">Gradle
+&lt;/h2>&lt;p>This recipe uses gradle to generate a template project. You can then add all the files and dependencies to the project.&lt;/p>
+&lt;h3 id="you-need-3">You need
+&lt;/h3>&lt;ul>
 &lt;li>A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
 >terminal&lt;/a>&lt;/li>
 &lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
@@ -226,8 +226,8 @@ data-flex-basis="765px"
 &lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/gradle" target="_blank" rel="noopener"
 >gradle installation&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="recipe-3">Recipe&lt;/h3>
-&lt;ol>
+&lt;h3 id="recipe-3">Recipe
+&lt;/h3>&lt;ol>
 &lt;li>&lt;code>mkdir myNewProject; cd myNewProject&lt;/code>&lt;/li>
 &lt;li>&lt;code>gradle init&lt;/code> # follow the prompts choosing application and kotlin and mostly defaults. See the screenshot for my choices. Every thing should be setup with the files in the &lt;code>app/src&lt;/code> folder and &lt;code>gradlew&lt;/code> script in the root of the project&lt;/li>
 &lt;li>&lt;code>./gradlew run&lt;/code> # runs the project - on Mac/Linux or &lt;code>./gradlew test&lt;/code> to run tests&lt;/li>
@@ -242,12 +242,12 @@ class="gallery-image"
 data-flex-grow="130"
 data-flex-basis="313px"
 >&lt;/p>
-&lt;h3 id="adding-dependencies-3">Adding dependencies&lt;/h3>
-&lt;p>You can add dependencies in the &lt;code>app/build.gradle.kts&lt;/code> file in the dependencies section. You need to explicitly add a dependency for stdlib and kotlinx libraries&lt;/p>
-&lt;h2 id="amper">Amper&lt;/h2>
-&lt;p>Same as the gradle solution but using Amper. It gives a simpler more streamlined project. It can use gradle under the hood.&lt;/p>
-&lt;h3 id="you-need-4">You need&lt;/h3>
-&lt;ul>
+&lt;h3 id="adding-dependencies-3">Adding dependencies
+&lt;/h3>&lt;p>You can add dependencies in the &lt;code>app/build.gradle.kts&lt;/code> file in the dependencies section. You need to explicitly add a dependency for stdlib and kotlinx libraries&lt;/p>
+&lt;h2 id="amper">Amper
+&lt;/h2>&lt;p>Same as the gradle solution but using Amper. It gives a simpler more streamlined project. It can use gradle under the hood.&lt;/p>
+&lt;h3 id="you-need-4">You need
+&lt;/h3>&lt;ul>
 &lt;li>A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
 >terminal&lt;/a>&lt;/li>
 &lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
@@ -255,8 +255,8 @@ data-flex-basis="313px"
 &lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/gradle" target="_blank" rel="noopener"
 >gradle installation&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="recipe-4">Recipe&lt;/h3>
-&lt;ol>
+&lt;h3 id="recipe-4">Recipe
+&lt;/h3>&lt;ol>
 &lt;li>&lt;code>mkdir myNewProject; cd myNewProject&lt;/code>&lt;/li>
 &lt;li>Pull a version of the &lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/Usage.md#using-the-standalone-amper-version-from-the-command-line" target="_blank" rel="noopener"
 >amper cli&lt;/a> with this command. Note the version number may change if you read this in the future.
@@ -275,16 +275,16 @@ data-flex-grow="109"
 data-flex-basis="263px"
 >&lt;/p>
 &lt;p>The source is in src directly. It is a much shallower project structure.&lt;/p>
-&lt;h3 id="adding-dependencies-4">Adding dependencies&lt;/h3>
-&lt;p>You can add dependencies in the &lt;code>module.yaml&lt;/code> file in the &lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/DSLReference.md#dependencies-and-test-dependencies" target="_blank" rel="noopener"
+&lt;h3 id="adding-dependencies-4">Adding dependencies
+&lt;/h3>&lt;p>You can add dependencies in the &lt;code>module.yaml&lt;/code> file in the &lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/DSLReference.md#dependencies-and-test-dependencies" target="_blank" rel="noopener"
 >dependencies&lt;/a> section. The syntax is like this:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">dependencies&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">groupId:artifactId:version&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You need to explicitly add a dependency but you have access to stdlib and kotlinx libraries.&lt;/p>
-&lt;h1 id="ide-with-a-project-or-without">IDE with a project or without&lt;/h1>
-&lt;p>This solution is for when you have the luxury of a computer where you can install tools such as Intellij, Fleet or Android Studio. These tools will come with prepackaged JDKs and wizards to get you going. You can of course use these tools with the CLI projects you created. They do offer a way to run code without having a project.&lt;/p>
-&lt;h2 id="fleet">Fleet&lt;/h2>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet.png"
+&lt;h1 id="ide-with-a-project-or-without">IDE with a project or without
+&lt;/h1>&lt;p>This solution is for when you have the luxury of a computer where you can install tools such as Intellij, Fleet or Android Studio. These tools will come with prepackaged JDKs and wizards to get you going. You can of course use these tools with the CLI projects you created. They do offer a way to run code without having a project.&lt;/p>
+&lt;h2 id="fleet">Fleet
+&lt;/h2>&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet.png"
 width="1702"
 height="1180"
 srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu2271168381830310600.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu9079989743599176805.png 1024w"
@@ -296,20 +296,20 @@ data-flex-basis="346px"
 >&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/Usage.md#using-amper-in-fleet" target="_blank" rel="noopener"
 >Fleet supports Amper and Gradle&lt;/a>. Making new projects are still simplest with the command line instructions above. Then you can open the project in Fleet. The Fleet integration gives convenient run buttons in the gutter so you don&amp;rsquo;t need to any run configuration setup.&lt;/p>
-&lt;h3 id="you-need-5">You need&lt;/h3>
-&lt;ul>
+&lt;h3 id="you-need-5">You need
+&lt;/h3>&lt;ul>
 &lt;li>A project created on the CLI as in the &lt;a class="link" href="#Amper" >previous step for Amper&lt;/a> or &lt;a class="link" href="#Gradle" >Gradle&lt;/a>&lt;/li>
 &lt;li>A Fleet installation from Jetbrains Toolbox&lt;/li>
 &lt;/ul>
-&lt;h3 id="recipe-5">Recipe&lt;/h3>
-&lt;ol>
+&lt;h3 id="recipe-5">Recipe
+&lt;/h3>&lt;ol>
 &lt;li>Open the root folder of the project in Fleet&lt;/li>
 &lt;li>Navigate to the &lt;code>main&lt;/code> method and use the gutter icon to run&lt;/li>
 &lt;/ol>
-&lt;h3 id="adding-dependencies-5">Adding dependencies&lt;/h3>
-&lt;p>Add libraries in the same way as the CLI projects.&lt;/p>
-&lt;h2 id="scratch-file">Scratch file&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html" target="_blank" rel="noopener"
+&lt;h3 id="adding-dependencies-5">Adding dependencies
+&lt;/h3>&lt;p>Add libraries in the same way as the CLI projects.&lt;/p>
+&lt;h2 id="scratch-file">Scratch file
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html" target="_blank" rel="noopener"
 >Scratch files&lt;/a> are usefull for transient code. They live in a folder that is independent of the project that you are in and so can be seen from any project you open. They are only supported in Intellij and Android studio.&lt;/p>
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch.png"
 width="1326"
@@ -321,31 +321,31 @@ class="gallery-image"
 data-flex-grow="293"
 data-flex-basis="704px"
 >&lt;/p>
-&lt;h3 id="you-need-6">You need&lt;/h3>
-&lt;ul>
+&lt;h3 id="you-need-6">You need
+&lt;/h3>&lt;ul>
 &lt;li>Intellij Community/Android Studio, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
 >Jetbrains toolbox app&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="recipe-6">Recipe&lt;/h3>
-&lt;ol>
+&lt;h3 id="recipe-6">Recipe
+&lt;/h3>&lt;ol>
 &lt;li>Open the IDE and open any project or create a new kotlin one, this will setup a project but we won&amp;rsquo;t use it.&lt;/li>
 &lt;li>Press &lt;code>Shift-Cmd-N&lt;/code> to open a new scratch file, choose Kotlin&lt;/li>
 &lt;li>Paste the code press &lt;code>Ctrl + R&lt;/code> or the run button. See the screenshot.&lt;/li>
 &lt;/ol>
-&lt;h3 id="adding-dependencies-6">Adding dependencies&lt;/h3>
-&lt;p>It is &lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html#use-dependency-in-scratch-file" target="_blank" rel="noopener"
+&lt;h3 id="adding-dependencies-6">Adding dependencies
+&lt;/h3>&lt;p>It is &lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html#use-dependency-in-scratch-file" target="_blank" rel="noopener"
 >possible to add dependencies&lt;/a> but you need to add it to the module in the project and then update the run configuration of the scratch file. This is probably more useful if you have a project setup.&lt;/p>
-&lt;h2 id="intellij-enterprise-and-notebook">Intellij Enterprise and Notebook&lt;/h2>
-&lt;p>Intellij Enterprise supports the Kotlin Notebook plugin. It is a similar experience as the &lt;a class="link" href="#Datalore" >Datalore&lt;/a> experience. The useful thing about a Notebook in Intellij is that you can also access code you may have in the project.&lt;/p>
-&lt;h3 id="you-need-7">You need&lt;/h3>
-&lt;ul>
+&lt;h2 id="intellij-enterprise-and-notebook">Intellij Enterprise and Notebook
+&lt;/h2>&lt;p>Intellij Enterprise supports the Kotlin Notebook plugin. It is a similar experience as the &lt;a class="link" href="#Datalore" >Datalore&lt;/a> experience. The useful thing about a Notebook in Intellij is that you can also access code you may have in the project.&lt;/p>
+&lt;h3 id="you-need-7">You need
+&lt;/h3>&lt;ul>
 &lt;li>Intellij Enterprise, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
 >Jetbrains toolbox app&lt;/a>&lt;/li>
 &lt;li>The &lt;a class="link" href="https://plugins.jetbrains.com/plugin/16340-kotlin-notebook" target="_blank" rel="noopener"
 >Kotlin Notebook plugin&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="recipe-7">Recipe&lt;/h3>
-&lt;ol>
+&lt;h3 id="recipe-7">Recipe
+&lt;/h3>&lt;ol>
 &lt;li>Open the IDE and open any project or create a new kotlin one, this will setup a project but we won&amp;rsquo;t use it.&lt;/li>
 &lt;li>Press &lt;code>Cmd Shift A&lt;/code> and choose &lt;code>Kotlin Notebook&lt;/code>&lt;/li>
 &lt;li>Paste the code in a new code cell&lt;/li>
@@ -361,8 +361,8 @@ class="gallery-image"
 data-flex-grow="199"
 data-flex-basis="478px"
 >&lt;/p>
-&lt;h3 id="adding-dependencies-7">Adding dependencies&lt;/h3>
-&lt;p>You can add &lt;a class="link" href="https://github.com/Kotlin/kotlin-jupyter#dependencies-resolving" target="_blank" rel="noopener"
+&lt;h3 id="adding-dependencies-7">Adding dependencies
+&lt;/h3>&lt;p>You can add &lt;a class="link" href="https://github.com/Kotlin/kotlin-jupyter#dependencies-resolving" target="_blank" rel="noopener"
 >dependencies&lt;/a> like this:
 &lt;code>@file:DependsOn(&amp;quot;groupId:artifactId:version&amp;quot;)&lt;/code>&lt;/p>
 &lt;p>You can use your own project files in the Notebook by adding the project files to the notebook.&lt;/p>
@@ -378,18 +378,18 @@ data-flex-basis="652px"
 >&lt;/p>
 &lt;p>You can include some dependencies like &lt;a class="link" href="https://kotlin.github.io/kandy/welcome.html" target="_blank" rel="noopener"
 >kandy&lt;/a> by using the &lt;code>%use&lt;/code> magic keyword.&lt;/p>
-&lt;h1 id="ide-all-the-way">IDE all the way&lt;/h1>
-&lt;p>This is the gui-est and most complete solution. Also the solution if you want to build a project that you want to work on. Of course you can use the CLI options but you can let the wizard create a template for you.&lt;/p>
-&lt;h2 id="wizard">Wizard&lt;/h2>
-&lt;p>The recipe is deceptively simple but I refer to the &lt;a class="link" href="https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html#create-project" target="_blank" rel="noopener"
+&lt;h1 id="ide-all-the-way">IDE all the way
+&lt;/h1>&lt;p>This is the gui-est and most complete solution. Also the solution if you want to build a project that you want to work on. Of course you can use the CLI options but you can let the wizard create a template for you.&lt;/p>
+&lt;h2 id="wizard">Wizard
+&lt;/h2>&lt;p>The recipe is deceptively simple but I refer to the &lt;a class="link" href="https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html#create-project" target="_blank" rel="noopener"
 >official docs for finer details&lt;/a>. I suspect no-one reads this far anyway. The wizard makes a gradle project and but if you would like to use Amper you need a plugin.&lt;/p>
-&lt;h3 id="you-need-8">You need&lt;/h3>
-&lt;ul>
+&lt;h3 id="you-need-8">You need
+&lt;/h3>&lt;ul>
 &lt;li>Intellij /Android Studio, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
 >Jetbrains toolbox app&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="recipe-8">Recipe&lt;/h3>
-&lt;ol>
+&lt;h3 id="recipe-8">Recipe
+&lt;/h3>&lt;ol>
 &lt;li>Open the IDE and open any project or create a new kotlin one&lt;/li>
 &lt;li>Code and run&lt;/li>
 &lt;/ol>
@@ -404,26 +404,26 @@ data-flex-grow="188"
 data-flex-basis="451px"
 >&lt;/p>
 &lt;p>Dependencies work the same way as the CLI projects. There is also a project view to add them&lt;/p>
-&lt;h1 id="what-next">What next?&lt;/h1>
-&lt;p>Hmm I hear you say &amp;ldquo;But I want to draw pictures or graphs - no more ascii for me&amp;rdquo;&lt;/p>
+&lt;h1 id="what-next">What next?
+&lt;/h1>&lt;p>Hmm I hear you say &amp;ldquo;But I want to draw pictures or graphs - no more ascii for me&amp;rdquo;&lt;/p>
 &lt;p>You&amp;rsquo;ll have to wait for another blog post for more on that. This one is far too long already.&lt;/p>
 &lt;p>In the meantime you have all these places to run your code. Now you can can go learn more Kotlin at these resources:&lt;/p>
-&lt;h2 id="official-documentation">Official documentation&lt;/h2>
-&lt;p>&lt;a class="link" href="https://kotlinlang.org/docs/home.html" target="_blank" rel="noopener"
+&lt;h2 id="official-documentation">Official documentation
+&lt;/h2>&lt;p>&lt;a class="link" href="https://kotlinlang.org/docs/home.html" target="_blank" rel="noopener"
 >kotlinlang.org&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/c/kotlin" target="_blank" rel="noopener"
 >kotlin youtube&lt;/a>&lt;/p>
-&lt;h2 id="books">Books&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
+&lt;h2 id="books">Books
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
 >Kotlin In Action, second edition&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.atomickotlin.com/atomickotlin/" target="_blank" rel="noopener"
 >Atomic Kotlin&lt;/a> with matching &lt;a class="link" href="https://plugins.jetbrains.com/plugin/17654-atomickotlin?_gl=1*kliojt*_gcl_au*MTc2MDkwMjU0MC4xNzE5NjcwMzI3*_ga*MTk0MzI1MDcwOS4xNjk0OTgzMDA4*_ga_9J976DJZ68*MTcyMzM4Mzc3Ni45Mi4xLjE3MjMzODU0NzIuNTguMC4w" target="_blank" rel="noopener"
 >training in the IDE&lt;/a>&lt;/p>
-&lt;h2 id="free-courses">Free courses&lt;/h2>
-&lt;p>&lt;a class="link" href="https://developer.android.com/codelabs/kotlin-bootcamp-welcome#0" target="_blank" rel="noopener"
+&lt;h2 id="free-courses">Free courses
+&lt;/h2>&lt;p>&lt;a class="link" href="https://developer.android.com/codelabs/kotlin-bootcamp-welcome#0" target="_blank" rel="noopener"
 >Kotlin Bootcamp&lt;/a>&lt;/p>
-&lt;h2 id="practise-puzzles-koans-and-katas">Practise: Puzzles, Koans and Katas&lt;/h2>
-&lt;p>&lt;a class="link" href="https://exercism.org/tracks/kotlin" target="_blank" rel="noopener"
+&lt;h2 id="practise-puzzles-koans-and-katas">Practise: Puzzles, Koans and Katas
+&lt;/h2>&lt;p>&lt;a class="link" href="https://exercism.org/tracks/kotlin" target="_blank" rel="noopener"
 >Exercism Kotlin track&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://adventofcode.com/" target="_blank" rel="noopener"
 >Advent of code&lt;/a>&lt;/p>
@@ -431,19 +431,19 @@ data-flex-basis="451px"
 >Kotlin Koans&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/Kotlin" target="_blank" rel="noopener"
 >Gilded Rose in Kotlin&lt;/a>&lt;/p>
-&lt;h2 id="newsletters">Newsletters&lt;/h2>
-&lt;p>&lt;a class="link" href="https://kotlinweekly.net/#latest" target="_blank" rel="noopener"
+&lt;h2 id="newsletters">Newsletters
+&lt;/h2>&lt;p>&lt;a class="link" href="https://kotlinweekly.net/#latest" target="_blank" rel="noopener"
 >Kotlin Weekly&lt;/a>&lt;/p>
-&lt;h2 id="more-on-notebooks">More on Notebooks&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=WdeCsUzv0c8&amp;amp;t=1026s" target="_blank" rel="noopener"
->Notebook Demo&lt;/a>&lt;/p></description></item><item><title>How to build Wrapped 2023 in Compose Animation</title><link>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</link><pubDate>Sat, 09 Dec 2023 17:18:17 +0200</pubDate><guid>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/wrappedBanner.png" alt="Featured image of post How to build Wrapped 2023 in Compose Animation" />&lt;h1 id="how-to-build-wrapped-2023-in-compose-animation">How to build Wrapped 2023 in Compose Animation&lt;/h1>
-&lt;p>If I had to build the &lt;a class="link" href="https://open.spotify.com/wrapped/share/share-991bdbcda37a462bac4c6d6c80b17ef0-1080x1920?lang=en&amp;amp;destination=datastories&amp;amp;si=MDUyMGY4ZTAtYmRmMS00ZjJhLWE3OGItNjFhNzBmMzAwYzBk" target="_blank" rel="noopener"
+&lt;h2 id="more-on-notebooks">More on Notebooks
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=WdeCsUzv0c8&amp;amp;t=1026s" target="_blank" rel="noopener"
+>Notebook Demo&lt;/a>&lt;/p></description></item><item><title>How to build Wrapped 2023 in Compose Animation</title><link>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</link><pubDate>Sat, 09 Dec 2023 17:18:17 +0200</pubDate><guid>https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/wrappedBanner.png" alt="Featured image of post How to build Wrapped 2023 in Compose Animation" />&lt;h1 id="how-to-build-wrapped-2023-in-compose-animation">How to build Wrapped 2023 in Compose Animation
+&lt;/h1>&lt;p>If I had to build the &lt;a class="link" href="https://open.spotify.com/wrapped/share/share-991bdbcda37a462bac4c6d6c80b17ef0-1080x1920?lang=en&amp;amp;destination=datastories&amp;amp;si=MDUyMGY4ZTAtYmRmMS00ZjJhLWE3OGItNjFhNzBmMzAwYzBk" target="_blank" rel="noopener"
 >Spotify Wrapped 2023&lt;/a> animations in Compose, this is how I would do it. This blog post doesn&amp;rsquo;t reproduce the effects identically, but it shows some of the basic Compose animation techniques you could use. It uses &lt;code>Canvas&lt;/code> drawing and especially the &lt;code>drawWithCache&lt;/code> modifier. It also uses &lt;code>RoundedPolygon&lt;/code>, various matrix transformations and looping animation techniques using &lt;code>infiniteRepeatable&lt;/code>. There is a section about how to get a path from an svg file as well.&lt;/p>
 &lt;p>I created three different techniques. The first is a simple box with an animating linear gradient and an animating offset. The second is a spiky star using a &lt;code>RoundedPolygon&lt;/code> with colour stop gradient and some animations in a &lt;code>graphicsLayer&lt;/code>. The last is a progressivly drawing line. As a bonus we&amp;rsquo;ll make a palette using &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
 >unsplash.com&lt;/a> and &lt;a class="link" href="https://coolors.co/palettes/popular" target="_blank" rel="noopener"
 >coolors.co&lt;/a> Let&amp;rsquo;s start with the palette.&lt;/p>
-&lt;h2 id="pick-a-palette">Pick a palette&lt;/h2>
-&lt;img src="snipUnsplash.png" width="{{ .Width }}" height="{{ .Height }}">
+&lt;h2 id="pick-a-palette">Pick a palette
+&lt;/h2>&lt;img src="snipUnsplash.png" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Pick an image from unsplash and pull some colours from the image. &lt;a class="link" href="https://unsplash.com/photos/multicolored-hallway-RnCPiXixooY" target="_blank" rel="noopener"
 >Here&amp;rsquo;s one&lt;/a> I got. I then loaded it into &lt;a class="link" href="https://coolors.co/palettes/popular" target="_blank" rel="noopener"
 >coolors.co&lt;/a> and picked some palette colours from the image.&lt;/p>
@@ -458,8 +458,8 @@ data-flex-basis="451px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">Licorice&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFF35192B&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">Custard&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Color&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0xFFFEC05D&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We can now use these everywhere as gradients or backgrounds and our animation will have a consistent look that matches the mood from the image.&lt;/p>
-&lt;h2 id="shimer-pane---animating-linear-gradient">Shimer pane - animating Linear Gradient&lt;/h2>
-&lt;img src="pane.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
+&lt;h2 id="shimer-pane---animating-linear-gradient">Shimer pane - animating Linear Gradient
+&lt;/h2>&lt;img src="pane.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>For this sliding box we animate the offset with an &lt;code>infiniteRepeatable&lt;/code> and we animate the offset of the &lt;code>LinearGradient&lt;/code>. The colors of the gradient are chosen from the colors of our newly created palette. The linear gradient changes colour from corner to corner. By changeing the offset of the gradient it moves the gradient in the shape. If we then animate this offset it will make the colours move across the shape. The second animation is simply an x offset to slide the box in and out. You can look at the complete &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/main/app/src/main/java/net/maiatoday/turbogiggle/ShimmerPane.kt" target="_blank" rel="noopener"
 >ShimmerPane function&lt;/a> in the repo. This linear gradient trick is explained in detail in &lt;a class="link" href="https://medium.com/androiddevelopers/brushing-up-on-compose-text-coloring-84d7d70dd8fa" target="_blank" rel="noopener"
 >this blog post&lt;/a>.&lt;/p>
@@ -478,8 +478,8 @@ data-flex-basis="451px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">})&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="spiky-splash---rotating-roundedpolygon-with-drawwithcache-modifier">Spiky Splash - rotating RoundedPolygon with drawWithCache modifier&lt;/h2>
-&lt;img src="spikyStar.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="spiky-splash---rotating-roundedpolygon-with-drawwithcache-modifier">Spiky Splash - rotating RoundedPolygon with drawWithCache modifier
+&lt;/h2>&lt;img src="spikyStar.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>The Spiky Splash shape is created with a RoundedPolygon with 14 vertices.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">spikySplash&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nc">RoundedPolygon&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">star&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">numVerticesPerRadius&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">14&lt;/span>&lt;span class="p">,&lt;/span>
@@ -535,27 +535,27 @@ data-flex-basis="451px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">scaleY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0.5f&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rotationZ&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">rotate&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="scribble-drawing---path-matrix-transform-flattened-path">Scribble drawing - path, matrix transform, flattened path&lt;/h2>
-&lt;h3 id="how-to-get-a-path-from-svg">How to get a path from svg&lt;/h3>
-&lt;img src="spikyscribble.svg" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="scribble-drawing---path-matrix-transform-flattened-path">Scribble drawing - path, matrix transform, flattened path
+&lt;/h2>&lt;h3 id="how-to-get-a-path-from-svg">How to get a path from svg
+&lt;/h3>&lt;img src="spikyscribble.svg" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Create some scribbles in a package like inkscape or any drawing package that will let you save an svg. Don&amp;rsquo;t make it complicated, literally just draw a line with the pencil. Then open the svg with a text editor. You can &lt;a class="link" href="http://maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/spikyscribble.svg" target="_blank" rel="noopener"
 >open&lt;/a> the svg displayed here and see what it looks like. You are looking for a line that starts with something like &lt;code>&amp;lt;path style=&amp;quot;fill:none;...&lt;/code>&lt;/p>
 &lt;img src="pathInSvg.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Copy everything in the &lt;code>d=&amp;quot;...&lt;/code> section as a string and paste it into your code.&lt;/p>
 &lt;img src="stringInAndroidStudio.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
-&lt;h3 id="transforming-the-path-with-the-matrix">Transforming the path with the matrix&lt;/h3>
-&lt;p>The matrix transformation is &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/2849314e0e2fb1e4670e500759c4fe7ff994a87b/app/src/main/java/net/maiatoday/turbogiggle/ScribblePath.kt#L164" target="_blank" rel="noopener"
+&lt;h3 id="transforming-the-path-with-the-matrix">Transforming the path with the matrix
+&lt;/h3>&lt;p>The matrix transformation is &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle/blob/2849314e0e2fb1e4670e500759c4fe7ff994a87b/app/src/main/java/net/maiatoday/turbogiggle/ScribblePath.kt#L164" target="_blank" rel="noopener"
 >very similar&lt;/a> to the RoundedPolygon one, but&amp;hellip; we now need the Compose &lt;code>Matrix&lt;/code> not the Android view one. Also the bounds of the path are no longer -1,1 for both x and y. We can get the bounds of the path and use it to make a matrix to size the scribble to fit the view.&lt;/p>
-&lt;h3 id="drawing-the-path">Drawing the path&lt;/h3>
-&lt;p>If we just draw the path as is, it will draw the whole path and not progressively draw it. There is a neat trick as shown in &lt;a class="link" href="https://youtu.be/2zVBnJ15C6M?si=GWK1N7W9waBtchKM&amp;amp;t=1884" target="_blank" rel="noopener"
+&lt;h3 id="drawing-the-path">Drawing the path
+&lt;/h3>&lt;p>If we just draw the path as is, it will draw the whole path and not progressively draw it. There is a neat trick as shown in &lt;a class="link" href="https://youtu.be/2zVBnJ15C6M?si=GWK1N7W9waBtchKM&amp;amp;t=1884" target="_blank" rel="noopener"
 >this video at timestamp 31:36&lt;/a>.&lt;/p>
-&lt;h3 id="scribble-draw-the-path-with-flattened-lines">Scribble draw the path with flattened lines&lt;/h3>
-&lt;p>The clue is we split the whole path up into short sections, little lines, which we draw one after the other. The line of code where this happens is&lt;/p>
+&lt;h3 id="scribble-draw-the-path-with-flattened-lines">Scribble draw the path with flattened lines
+&lt;/h3>&lt;p>The clue is we split the whole path up into short sections, little lines, which we draw one after the other. The line of code where this happens is&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">lines&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">path&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">asAndroidPath&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">flatten&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">0.5f&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The 0.5f parameter in the flatten call is the error that the flatten call allows, 0.5 is half a pixel. You can also see we need to convert again to an &lt;code>AndroidPath&lt;/code> because the &lt;code>flatten&lt;/code> method is only available on Android paths. We animate a progress variable so we can loop from say 0% to 10% and so on up to 100% and then start again. Then in the modifier &lt;code>onDrawBehind&lt;/code> function lambde we loop through the &lt;code>lines&lt;/code> and draw only those lines up to a the progress variable. The animation is caused by only some of the path subsections being drawn and more and more of them being drawn as the progerss increases.&lt;/p>
 &lt;img src="scribble.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
-&lt;h2 id="combining-everything">Combining everything&lt;/h2>
-&lt;img src="giggle.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
+&lt;h2 id="combining-everything">Combining everything
+&lt;/h2>&lt;img src="giggle.png" style="width:33%" width="{{ .Width }}" height="{{ .Height }}">
 &lt;p>Since these different elements are all built in their own composable. We can put them all together remembering that the &lt;code>Composables&lt;/code> that are drawn first will be at the bottom.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Composable&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">Giggle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Modifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Modifier&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
@@ -583,16 +583,16 @@ data-flex-basis="451px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="thats-a-wrap">That&amp;rsquo;s a wrap&lt;/h2>
-&lt;p>Here&amp;rsquo;s &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="thats-a-wrap">That&amp;rsquo;s a wrap
+&lt;/h2>&lt;p>Here&amp;rsquo;s &lt;a class="link" href="https://github.com/maiatoday/turbo-giggle" target="_blank" rel="noopener"
 >the repo&lt;/a>&lt;/p>
 &lt;p>and here&amp;rsquo;s the demo&lt;/p>
 &lt;video width=25% controls autoplay>
 &lt;source src="wrapped.webm" type="video/webm">
 Your browser does not support the video tag.
 &lt;/video>
-&lt;h2 id="whats-next">What&amp;rsquo;s next&lt;/h2>
-&lt;p>This experiment is by no means complete. This is what I could try out next:&lt;/p>
+&lt;h2 id="whats-next">What&amp;rsquo;s next
+&lt;/h2>&lt;p>This experiment is by no means complete. This is what I could try out next:&lt;/p>
 &lt;ul>
 &lt;li>Figure out &lt;strong>what is up with the scribble line transform&lt;/strong> that makes it sometimes cut off at the bottom&lt;/li>
 &lt;li>Make the scribble lines more like the real thing by figuring out how to &lt;strong>make the gradient draw along the line&lt;/strong>&lt;/li>
@@ -605,8 +605,8 @@ Your browser does not support the video tag.
 &lt;p>But hey, there is always more to learn and explore.&lt;/p>
 &lt;p>If you want to get a step by step walkthrough of concepts such as these with some theory discussions and a practise repo, check out my droidcon academy coffee break codelab titled &lt;a class="link" href="https://academy.droidcon.com/course/draw-and-animate-on-canvas-with-jetpack-compose-in-android" target="_blank" rel="noopener"
 >Draw and Animate on Canvas with Jetpack Compose in Android&lt;/a>&lt;/p>
-&lt;h2 id="references">References&lt;/h2>
-&lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/brushing-up-on-compose-text-coloring-84d7d70dd8fa" target="_blank" rel="noopener"
+&lt;h2 id="references">References
+&lt;/h2>&lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/brushing-up-on-compose-text-coloring-84d7d70dd8fa" target="_blank" rel="noopener"
 >Alejandra&amp;rsquo;s Medium article on animating linear gradient brush&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/the-shape-of-things-to-come-1c7663d9dbc0" target="_blank" rel="noopener"
 >Chet&amp;rsquo;s article on Rounded Polygons&lt;/a>&lt;/p>
@@ -641,13 +641,13 @@ Your browser does not support the video tag.
 &lt;p>Welcome to The Tech Talk Feedback Club.&lt;/p>
 &lt;p>&lt;img src="https://www.maiatoday.net/the_feedback_club_round.png"
 loading="lazy"
->&lt;/p></description></item><item><title>I still see LiveData - where are the Flows?</title><link>https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/</link><pubDate>Sun, 30 Jul 2023 21:38:36 +0200</pubDate><guid>https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/</guid><description>&lt;img src="https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/hammer.png" alt="Featured image of post I still see LiveData - where are the Flows?" />&lt;h2 id="hammer-and-nail">Hammer and nail&lt;/h2>
-&lt;p>There is no doubt &lt;code>LiveData&lt;/code> is an easy, lifecycle safe way to observe some state which needs to be displayed on the UI. It is just so easy to create and easy to update. It is easy to observe. I think that may be why people use it everywhere where they need a simple observation. This ok, no guilt, no harm &amp;hellip;. for the UI layers &amp;hellip;. but there are better solutions for domain and data layers. This is &lt;a class="link" href="https://proandroiddev.com/dont-use-livedata-in-repositories-f3bebe502ed3" target="_blank" rel="noopener"
+>&lt;/p></description></item><item><title>I still see LiveData - where are the Flows?</title><link>https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/</link><pubDate>Sun, 30 Jul 2023 21:38:36 +0200</pubDate><guid>https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/</guid><description>&lt;img src="https://www.maiatoday.net/p/i-still-see-livedata-where-are-the-flows/hammer.png" alt="Featured image of post I still see LiveData - where are the Flows?" />&lt;h2 id="hammer-and-nail">Hammer and nail
+&lt;/h2>&lt;p>There is no doubt &lt;code>LiveData&lt;/code> is an easy, lifecycle safe way to observe some state which needs to be displayed on the UI. It is just so easy to create and easy to update. It is easy to observe. I think that may be why people use it everywhere where they need a simple observation. This ok, no guilt, no harm &amp;hellip;. for the UI layers &amp;hellip;. but there are better solutions for domain and data layers. This is &lt;a class="link" href="https://proandroiddev.com/dont-use-livedata-in-repositories-f3bebe502ed3" target="_blank" rel="noopener"
 >not the first time this topic has come up&lt;/a> yet I still see Live Data in a repository offered as a good solution from time to time, in blog posts, samples and in books. I think it is a case of people think they &lt;a class="link" href="https://en.wiktionary.org/wiki/if_all_you_have_is_a_hammer,_everything_looks_like_a_nail" target="_blank" rel="noopener"
 >only have a LiveData hammer&lt;/a>.&lt;/p>
 &lt;p>There are infact pitfalls if you use &lt;code>LiveData&lt;/code> in a repository. I think it&amp;rsquo;s an anti-pattern.&lt;/p>
-&lt;h2 id="but-why-not">But why not&lt;/h2>
-&lt;ul>
+&lt;h2 id="but-why-not">But why not
+&lt;/h2>&lt;ul>
 &lt;li>
 &lt;p>&lt;code>LiveData&lt;/code> is lifecycle aware - do we need this in our repository? Repostitories are typically provided by dependency injection, they could be singletons and they &lt;em>don&amp;rsquo;t need to know about the Android lifecycle&lt;/em>.&lt;/p>
 &lt;/li>
@@ -661,21 +661,21 @@ loading="lazy"
 &lt;p>Lastly, one of the biggest reasons after the main thread argument, why I would advocate for converting all of the &lt;code>LiveData&lt;/code> use to flows: &lt;em>flows are part of the Kotlin coroutines library&lt;/em>. This means they run on any platform where Kotlin coroutines run. You can use them in a multiplatform project. Or to put it differently, if you use flows in your repository instead of &lt;code>LiveData&lt;/code> it is one less Android library that you have to remove and replace when you want to use the repository on another platform.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="conversion">Conversion&lt;/h2>
-&lt;p>Replace &lt;code>LiveData&lt;/code> with &lt;code>StateFlow&lt;/code> and &lt;code>MutableLiveData&lt;/code> with &lt;code>MutableStateFlow&lt;/code>&lt;/p>
+&lt;h2 id="conversion">Conversion
+&lt;/h2>&lt;p>Replace &lt;code>LiveData&lt;/code> with &lt;code>StateFlow&lt;/code> and &lt;code>MutableLiveData&lt;/code> with &lt;code>MutableStateFlow&lt;/code>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">_error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">MutableLiveData&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">?&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">MutableLiveData&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">null&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">LiveData&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">?&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">_error&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>becomes&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">_error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">MutableStateFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">?&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">MutableStateFlow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">null&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">override&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">StateFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">?&amp;gt;&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">_error&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">asStateFlow&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and then fix the pieces that don&amp;rsquo;t compile. It may be some header imports and some changes in the places where the &lt;code>LiveData&lt;/code> was observed but the compiler will help you.&lt;/p>
-&lt;h2 id="putting-a-value-into-the-stateflow">Putting a value into the StateFlow&lt;/h2>
-&lt;p>&lt;code>StateFlow&lt;/code> always needs an initial value. So you will need to do that when you declare the &lt;code>StateFlow&lt;/code>. Then to change the value you simply set it.&lt;/p>
+&lt;h2 id="putting-a-value-into-the-stateflow">Putting a value into the StateFlow
+&lt;/h2>&lt;p>&lt;code>StateFlow&lt;/code> always needs an initial value. So you will need to do that when you declare the &lt;code>StateFlow&lt;/code>. Then to change the value you simply set it.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">_error&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="k">value&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Ooops!!!&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="collecting-flows">Collecting flows&lt;/h2>
-&lt;p>To get the values out of the &lt;code>LiveData&lt;/code> you need to collect the StateFlow. Depending over which architecture layer you are observing the data it may look slightly different.&lt;/p>
-&lt;h3 id="in-a-view-model">In a view model&lt;/h3>
-&lt;p>If you simply need to collect the flow from a repository you can do it like this:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="collecting-flows">Collecting flows
+&lt;/h2>&lt;p>To get the values out of the &lt;code>LiveData&lt;/code> you need to collect the StateFlow. Depending over which architecture layer you are observing the data it may look slightly different.&lt;/p>
+&lt;h3 id="in-a-view-model">In a view model
+&lt;/h3>&lt;p>If you simply need to collect the flow from a repository you can do it like this:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">onRefresh&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">viewModelScope&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">launch&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repository&lt;/span>
@@ -685,8 +685,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="combining-flows">Combining flows&lt;/h3>
-&lt;p>If you had a situation where you were using &lt;code>MediatorLiveData&lt;/code>, there are many flow intermediate operators to choose from which you can use to convert and combine flows. I will show an example of where two observables were combined. In the &lt;code>LiveData&lt;/code> world you would have achieved this by using &lt;code>addSource()&lt;/code> on the &lt;code>MediatorLiveData&lt;/code>. Here is the flow solution:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="combining-flows">Combining flows
+&lt;/h3>&lt;p>If you had a situation where you were using &lt;code>MediatorLiveData&lt;/code>, there are many flow intermediate operators to choose from which you can use to convert and combine flows. I will show an example of where two observables were combined. In the &lt;code>LiveData&lt;/code> world you would have achieved this by using &lt;code>addSource()&lt;/code> on the &lt;code>MediatorLiveData&lt;/code>. Here is the flow solution:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">uiState&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">flow1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">combine&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">flow2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="n">value1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">value2&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// this block is called if either flow1 or flow2 emits
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// it then emits a new value in a flow
@@ -698,11 +698,11 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">started&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">WhileSubscribed&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">5000&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="c1">// controls when the sharing is started, in this case starts when there is a subscriber and stops 5 seconds after the last one is no longer subscribed
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">initialValue&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">UiState&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ui---compose">UI - Compose&lt;/h3>
-&lt;p>Use the handy &lt;code>collectAsStateWithLifecycle()&lt;/code> function.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ui---compose">UI - Compose
+&lt;/h3>&lt;p>Use the handy &lt;code>collectAsStateWithLifecycle()&lt;/code> function.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">error&lt;/span> &lt;span class="k">by&lt;/span> &lt;span class="n">viewModel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">error&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">collectAsStateWithLifecycle&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ui---xml">UI - XML&lt;/h3>
-&lt;p>There is a good writeup on how to do that &lt;a class="link" href="https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="ui---xml">UI - XML
+&lt;/h3>&lt;p>There is a good writeup on how to do that &lt;a class="link" href="https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda" target="_blank" rel="noopener"
 >here&lt;/a> but the code snippet is this:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">lifecycleScope&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">launch&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repeatOnLifecycle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nc">Lifecycle&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nc">State&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">STARTED&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
@@ -713,14 +713,14 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="testing">Testing&lt;/h2>
-&lt;p>Testing &lt;code>StateFlow&lt;/code> can sometimes feel tricky because they use coroutines to do their magic especially if you are doing something with the dispatchers in your repositories. The kotlinx coroutines test library has good support to help with the testing scenarios you may encounter. Here are some scenarios I encountered.&lt;/p>
-&lt;h3 id="my-test-doesnt-pass">My test doesn&amp;rsquo;t pass&lt;/h3>
-&lt;p>Everything looks fine but the test fails because the value in the &lt;code>StateFlow&lt;/code> isn&amp;rsquo;t what you expect it to be. Writing a test that does something on a coroutine means that you might find yourself in a position where you try to check the value of the &lt;code>StateFlow&lt;/code> before the coroutine completes. The solution to this is to call &lt;code>advanceUntilIdle()&lt;/code> which will make sure the coroutines get a chance to complete before you assert the value of the StateFlow.&lt;/p>
-&lt;h3 id="my-test-wont-stop-running">My test won&amp;rsquo;t stop running&lt;/h3>
-&lt;p>&lt;code>StateFlow&lt;/code> is a hot flow. Depending on how it was created, e.g. using a stateIn gives a parameter to prevent the StateFlow from being started until someone subscribes. You need to subscribe/collect the StateFlow to get any data from it. Now the hot flow is well, hot. This will stop the test from completing. My initial instinct was to get the job on which the StateFlow was collected and kill it at the end of the tests. Luckily there is an easier solution. The kotlinx coroutines test libraries provide a &lt;code>backgroundScope&lt;/code>. If you kick off the flow collection on this scope, it will be cleared at the end of the test and the test will complete.&lt;/p>
-&lt;h3 id="show-me-the-code">Show me the code&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Test&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="testing">Testing
+&lt;/h2>&lt;p>Testing &lt;code>StateFlow&lt;/code> can sometimes feel tricky because they use coroutines to do their magic especially if you are doing something with the dispatchers in your repositories. The kotlinx coroutines test library has good support to help with the testing scenarios you may encounter. Here are some scenarios I encountered.&lt;/p>
+&lt;h3 id="my-test-doesnt-pass">My test doesn&amp;rsquo;t pass
+&lt;/h3>&lt;p>Everything looks fine but the test fails because the value in the &lt;code>StateFlow&lt;/code> isn&amp;rsquo;t what you expect it to be. Writing a test that does something on a coroutine means that you might find yourself in a position where you try to check the value of the &lt;code>StateFlow&lt;/code> before the coroutine completes. The solution to this is to call &lt;code>advanceUntilIdle()&lt;/code> which will make sure the coroutines get a chance to complete before you assert the value of the StateFlow.&lt;/p>
+&lt;h3 id="my-test-wont-stop-running">My test won&amp;rsquo;t stop running
+&lt;/h3>&lt;p>&lt;code>StateFlow&lt;/code> is a hot flow. Depending on how it was created, e.g. using a stateIn gives a parameter to prevent the StateFlow from being started until someone subscribes. You need to subscribe/collect the StateFlow to get any data from it. Now the hot flow is well, hot. This will stop the test from completing. My initial instinct was to get the job on which the StateFlow was collected and kill it at the end of the tests. Luckily there is an easier solution. The kotlinx coroutines test libraries provide a &lt;code>backgroundScope&lt;/code>. If you kick off the flow collection on this scope, it will be cleared at the end of the test and the test will complete.&lt;/p>
+&lt;h3 id="show-me-the-code">Show me the code
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@Test&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">`GIVEN a uiState WHEN the state is collected THEN it should have the right value`&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">runTest&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">backgroundScope&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">launch&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UnconfinedTestDispatcher&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">testScheduler&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// this will use the backgroundScope
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">viewModel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">uiState&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">collect&lt;/span> &lt;span class="p">{}&lt;/span>
@@ -733,34 +733,34 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Or you can use the test library &lt;a class="link" href="https://github.com/cashapp/turbine" target="_blank" rel="noopener"
 >Turbine&lt;/a>&lt;/p>
-&lt;h2 id="put-down-the-hammer-and-try-another-tool">Put down the hammer and try another tool&lt;/h2>
-&lt;p>At the &lt;a class="link" href="https://youtu.be/B8ppnjGPAGE?t=626" target="_blank" rel="noopener"
+&lt;h2 id="put-down-the-hammer-and-try-another-tool">Put down the hammer and try another tool
+&lt;/h2>&lt;p>At the &lt;a class="link" href="https://youtu.be/B8ppnjGPAGE?t=626" target="_blank" rel="noopener"
 >2019 Android Dev Summit&lt;/a> Jose Alcérreca said “LiveData was never designed as a fully fledged reactive streams builder”. Since &lt;code>StateFlow&lt;/code> is almost a drop in replacement, there is really nothing to stop people from migrating or just not using LiveData in Repositories.&lt;/p>
 &lt;p>The Android &lt;a class="link" href="https://developer.android.com/topic/libraries/architecture/livedata#livedata-in-architecture" target="_blank" rel="noopener"
 >documentation also says&lt;/a> don&amp;rsquo;t put LiveData in the repositories.&lt;/p>
 &lt;p>Ah but you say you use databinding&amp;hellip; My condolences&amp;hellip; but it&amp;rsquo;s ok, databinding &lt;a class="link" href="https://developer.android.com/topic/libraries/data-binding/observability#stateflow" target="_blank" rel="noopener"
 >supports StateFlow&lt;/a>.&lt;/p>
 &lt;p>Your project is in Java&amp;hellip; sob&amp;hellip; my condolences. Use &lt;code>LiveData&lt;/code> or &lt;code>RxJava&lt;/code> or convert to Kotlin.&lt;/p>
-&lt;h2 id="more-info">More info&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/flow-notes/" target="_blank" rel="noopener"
+&lt;h2 id="more-info">More info
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.maiatoday.net/p/flow-notes/" target="_blank" rel="noopener"
 >Sketch note overview of how flows work&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://academy.droidcon.com/course/migrating-livedata-to-kotlin-flow-with-tests-in-android" target="_blank" rel="noopener"
 >droidcon academy course on how to do the migration with a sample project&lt;/a>&lt;/p>
-&lt;h3 id="official-documentation">Official documentation&lt;/h3>
-&lt;p>&lt;a class="link" href="https://developer.android.com/kotlin/flow/stateflow-and-sharedflow" target="_blank" rel="noopener"
+&lt;h3 id="official-documentation">Official documentation
+&lt;/h3>&lt;p>&lt;a class="link" href="https://developer.android.com/kotlin/flow/stateflow-and-sharedflow" target="_blank" rel="noopener"
 >StateFlow and SharedFlow&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://developer.android.com/kotlin/flow/test" target="_blank" rel="noopener"
 >Testing flows&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://medium.com/androiddevelopers/migrating-from-livedata-to-kotlins-flow-379292f419fb" target="_blank" rel="noopener"
 >Detailed writeup of more migration techniques&lt;/a>&lt;/p>
-&lt;h3 id="videos">Videos&lt;/h3>
-&lt;p>&lt;a class="link" href="https://youtu.be/6hNXFs1fYaY" target="_blank" rel="noopener"
+&lt;h3 id="videos">Videos
+&lt;/h3>&lt;p>&lt;a class="link" href="https://youtu.be/6hNXFs1fYaY" target="_blank" rel="noopener"
 >Collecting flows in a lifecycle aware manner&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=nKCsIHWircA" target="_blank" rel="noopener"
->Untangling coroutine testing&lt;/a>&lt;/p></description></item><item><title>Swampy Refactor: Converting Otto Bus to Flows</title><link>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</link><pubDate>Mon, 17 Jul 2023 19:18:36 +0200</pubDate><guid>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</guid><description>&lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/swampyBus.png" alt="Featured image of post Swampy Refactor: Converting Otto Bus to Flows" />&lt;h2 id="the-story-starts">The story starts&lt;/h2>
-&lt;p>I was wandering around my day job&amp;rsquo;s code base and I happened on a time capsule - a pristine Java Activity studded with semi-colons, a snapshot of how we built things in 2014. All the member variables started with &lt;code>m&lt;/code> and there was plenty of logic to update the screen and dictate actions. Despite being old, it&amp;rsquo;s still used every day by users. Why would I change it?&lt;/p>
-&lt;h2 id="the-bus-disappears">The Bus disappears&lt;/h2>
-&lt;p>Well, it got its data from a subscription to the Otto Bus. Otto Bus was deprecated in 2016.
+>Untangling coroutine testing&lt;/a>&lt;/p></description></item><item><title>Swampy Refactor: Converting Otto Bus to Flows</title><link>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</link><pubDate>Mon, 17 Jul 2023 19:18:36 +0200</pubDate><guid>https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/</guid><description>&lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/swampyBus.png" alt="Featured image of post Swampy Refactor: Converting Otto Bus to Flows" />&lt;h2 id="the-story-starts">The story starts
+&lt;/h2>&lt;p>I was wandering around my day job&amp;rsquo;s code base and I happened on a time capsule - a pristine Java Activity studded with semi-colons, a snapshot of how we built things in 2014. All the member variables started with &lt;code>m&lt;/code> and there was plenty of logic to update the screen and dictate actions. Despite being old, it&amp;rsquo;s still used every day by users. Why would I change it?&lt;/p>
+&lt;h2 id="the-bus-disappears">The Bus disappears
+&lt;/h2>&lt;p>Well, it got its data from a subscription to the Otto Bus. Otto Bus was deprecated in 2016.
 &lt;img src="https://www.maiatoday.net/p/swampy-refactor-converting-otto-bus-to-flows/deprecatedOttoBus.png"
 width="2282"
 height="588"
@@ -785,8 +785,8 @@ class="gallery-image"
 data-flex-grow="47"
 data-flex-basis="113px"
 >&lt;/p>
-&lt;h2 id="how-to-tackle-the-migration---step-by-step">How to tackle the migration - step by step&lt;/h2>
-&lt;p>Here are the basic steps for this kind of migration:&lt;/p>
+&lt;h2 id="how-to-tackle-the-migration---step-by-step">How to tackle the migration - step by step
+&lt;/h2>&lt;p>Here are the basic steps for this kind of migration:&lt;/p>
 &lt;ol>
 &lt;li>Pick one &lt;strong>event&lt;/strong>&lt;/li>
 &lt;li>Find All the &lt;strong>producers&lt;/strong> of this event (hopefully, there is only one but don&amp;rsquo;t count on it)&lt;/li>
@@ -798,20 +798,20 @@ data-flex-basis="113px"
 &lt;li>&lt;strong>Celebrate!&lt;/strong>&lt;/li>
 &lt;/ol>
 &lt;p>Of course this looks deceptively simple. As simple as it is to add otto bus to a code base. It may require some architectural refactors and modifications of how the dependency injection works in your app. Also if you were using otto bus to drive navigation, a Flow is not the right solution. I suspect the swamp you find yourself in is larger, deaper and much much more tangled. To this I would say, I hold you in my thoughts and I hope you have tests.&lt;/p>
-&lt;h2 id="why-is-the-bus-in-the-app">Why is the bus in the app&lt;/h2>
-&lt;p>I do have some advice on choosing an alternative implementation. It depends on why the otto bus was introduced in the app in the first place. The thing to understand is that the event bus pattern allows multiple producers to drop events into the bus from all over the app. On the other side of the bus any number of subscribers can wait for a particular event without knowing the origin of the event. This &lt;em>extreme loose coupling&lt;/em> is handy however it means&lt;/p>
+&lt;h2 id="why-is-the-bus-in-the-app">Why is the bus in the app
+&lt;/h2>&lt;p>I do have some advice on choosing an alternative implementation. It depends on why the otto bus was introduced in the app in the first place. The thing to understand is that the event bus pattern allows multiple producers to drop events into the bus from all over the app. On the other side of the bus any number of subscribers can wait for a particular event without knowing the origin of the event. This &lt;em>extreme loose coupling&lt;/em> is handy however it means&lt;/p>
 &lt;ul>
 &lt;li>nothing is stopping you from coding up something unmaintainable&lt;/li>
 &lt;li>in large projects it is difficult to follow the logic&lt;/li>
 &lt;li>it is difficult to write tests&lt;/li>
 &lt;/ul>
 &lt;p>For each of the events in your case ask yourself these questions.&lt;/p>
-&lt;h3 id="async-observable-state">Async observable state&lt;/h3>
-&lt;p>Was the bus used to observe a state in an asynchronous way? If this is the case, you can replace the bus with an observer pattern using a StateFlow. The producer and subscriber will be more tightly coupled but you will get cognitive support from clearer architecture. You will also get some IDE support and autocomplete to help you. You will need to look at the architecture or the dependency injection to make sure the subscriber has access to the producer so it can collect the StateFlow.&lt;/p>
-&lt;h3 id="synchronous-notification">Synchronous notification&lt;/h3>
-&lt;p>Was the bus used to notify one area in the code that something happened elsewhere? If this is synchronous then a simple method call may suffice. Again you will need to look at the architecture and the dependency injection to make sure the class notifying has access to the class that provides the method. Wrapping the class that receives the notification in an interface will make testing this code easier.&lt;/p>
-&lt;h3 id="i-really-really-really-need-a-bus">I really really really need a bus&lt;/h3>
-&lt;p>If the bus was legitimately used because you have many places in the app that need to respond to an event, you can recreate the bus functionality with a singleton and a SharedFlow. Inject the Bus into all the classes that need it and provide the SharedFlow from the injected class. Then subscribers can &lt;code>collectLatest&lt;/code> on the &lt;code>SharedFlow&lt;/code> and filter for the events they are interested in. Provide a method to emit something on the bus. There is a &lt;a class="link" href="https://github.com/maiatoday/Pocket8Ball/blob/flow-bus/app/src/main/java/net/maiatoday/pocket8ball/di/BusModule.kt" target="_blank" rel="noopener"
+&lt;h3 id="async-observable-state">Async observable state
+&lt;/h3>&lt;p>Was the bus used to observe a state in an asynchronous way? If this is the case, you can replace the bus with an observer pattern using a StateFlow. The producer and subscriber will be more tightly coupled but you will get cognitive support from clearer architecture. You will also get some IDE support and autocomplete to help you. You will need to look at the architecture or the dependency injection to make sure the subscriber has access to the producer so it can collect the StateFlow.&lt;/p>
+&lt;h3 id="synchronous-notification">Synchronous notification
+&lt;/h3>&lt;p>Was the bus used to notify one area in the code that something happened elsewhere? If this is synchronous then a simple method call may suffice. Again you will need to look at the architecture and the dependency injection to make sure the class notifying has access to the class that provides the method. Wrapping the class that receives the notification in an interface will make testing this code easier.&lt;/p>
+&lt;h3 id="i-really-really-really-need-a-bus">I really really really need a bus
+&lt;/h3>&lt;p>If the bus was legitimately used because you have many places in the app that need to respond to an event, you can recreate the bus functionality with a singleton and a SharedFlow. Inject the Bus into all the classes that need it and provide the SharedFlow from the injected class. Then subscribers can &lt;code>collectLatest&lt;/code> on the &lt;code>SharedFlow&lt;/code> and filter for the events they are interested in. Provide a method to emit something on the bus. There is a &lt;a class="link" href="https://github.com/maiatoday/Pocket8Ball/blob/flow-bus/app/src/main/java/net/maiatoday/pocket8ball/di/BusModule.kt" target="_blank" rel="noopener"
 >branch in the sample repo&lt;/a> with a simple implementation of this.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">interface&lt;/span> &lt;span class="nc">FlowBus&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">bus&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">SharedFlow&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">BusEvent&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
@@ -833,11 +833,11 @@ data-flex-basis="113px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">data&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">MessageFromTheAether&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">val&lt;/span> &lt;span class="py">answer&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">BusEvent&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">object&lt;/span> &lt;span class="nc">ShakeItUp&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">BusEvent&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="none-of-this-will-work-for-me">None of this will work for me&lt;/h3>
-&lt;p>You can always resort to using a &lt;a class="link" href="https://developer.android.com/guide/components/broadcasts" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="none-of-this-will-work-for-me">None of this will work for me
+&lt;/h3>&lt;p>You can always resort to using a &lt;a class="link" href="https://developer.android.com/guide/components/broadcasts" target="_blank" rel="noopener"
 >Broadcast receiver&lt;/a> to send a message from one part of your app to another. One thing to note if you go this route is that you will only be able to use this solution in the Android app and not in shared Kotlin only modules.&lt;/p>
-&lt;h2 id="example-in-the-repo---easy-swap-to-stateflow">Example in the repo - Easy swap to StateFlow&lt;/h2>
-&lt;p>For my toy example the producer that emits data is the Magic8Ball. Instead of posting an event on the bus, make the data available in a StateFlow.&lt;/p>
+&lt;h2 id="example-in-the-repo---easy-swap-to-stateflow">Example in the repo - Easy swap to StateFlow
+&lt;/h2>&lt;p>For my toy example the producer that emits data is the Magic8Ball. Instead of posting an event on the bus, make the data available in a StateFlow.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="nc">BusModule&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">bus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">post&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">MessageFromeTheAether&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">latestMessage&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>is replaced with&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">_answer&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">MutableStateFlow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
@@ -865,8 +865,8 @@ allowfullscreen
 title="YouTube Video"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?</title><link>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</link><pubDate>Sat, 10 Jun 2023 15:12:44 +0200</pubDate><guid>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</guid><description>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/mock_and_me.jpg" alt="Featured image of post The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?" />&lt;h1 id="once-upon-a-time">Once upon a time&lt;/h1>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches.png"
+&lt;/div></description></item><item><title>The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?</title><link>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</link><pubDate>Sat, 10 Jun 2023 15:12:44 +0200</pubDate><guid>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</guid><description>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/mock_and_me.jpg" alt="Featured image of post The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?" />&lt;h1 id="once-upon-a-time">Once upon a time
+&lt;/h1>&lt;p>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches.png"
 width="620"
 height="370"
 srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu16196109654360759182.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu15098751720921809370.png 1024w"
@@ -883,14 +883,14 @@ data-flex-basis="402px"
 >Advent of Code 2022 Day 10 puzzle&lt;/a>. I had written the solution in two styles and I had the AI assistant do the same conversion and compared the code. And then I played around and generated some poetry. Follow links at your peril, there are rabbit holes, it might make you &lt;a class="link" href="https://youtu.be/ZOLpCWlsCjw?t=21" target="_blank" rel="noopener"
 >late&lt;/a> or &lt;a class="link" href="https://www.youtube.com/watch?v=pnJM_jC7j_4" target="_blank" rel="noopener"
 >change the size&lt;/a> of your free time.&lt;/p>
-&lt;h2 id="segue-the-first-of-many">Segue the first of many&lt;/h2>
-&lt;p>Oh you are still here! You didn&amp;rsquo;t jump to the &lt;a class="link" href="#code-starts-here" >&lt;strong>code starts here&lt;/strong>&lt;/a> section? Why am I doing this? A long time ago, I read a lot of Lewis Caroll, Alice in Wonderland. In one scene Alice talks to the Mock Turtle. He sings a &lt;a class="link" href="https://en.wikipedia.org/wiki/The_Mock_Turtle%27s_Song" target="_blank" rel="noopener"
+&lt;h2 id="segue-the-first-of-many">Segue the first of many
+&lt;/h2>&lt;p>Oh you are still here! You didn&amp;rsquo;t jump to the &lt;a class="link" href="#code-starts-here" >&lt;strong>code starts here&lt;/strong>&lt;/a> section? Why am I doing this? A long time ago, I read a lot of Lewis Caroll, Alice in Wonderland. In one scene Alice talks to the Mock Turtle. He sings a &lt;a class="link" href="https://en.wikipedia.org/wiki/The_Mock_Turtle%27s_Song" target="_blank" rel="noopener"
 >song about sea creatures dancing&lt;/a>. When the first language translators appeared on the scene, &lt;a class="link" href="https://www.babelfish.com" target="_blank" rel="noopener"
 >Altavisa babelfish&lt;/a> or perhaps it was the &lt;a class="link" href="https://en.wikipedia.org/wiki/Google_Translate" target="_blank" rel="noopener"
 >early Google Translate&lt;/a>, I converted passages from Alice in Wonderland to French and then back again to see what the machines could do. The &lt;em>Mock Turtle&lt;/em> was transformed into an &lt;em>Imitation Tortoise&lt;/em>. In this way the reference to the original &lt;a class="link" href="https://en.wikipedia.org/wiki/Mock_turtle_soup" target="_blank" rel="noopener"
 >mock turtle soup&lt;/a> was lost in translation. In a roundabout way I was wondering what would be uncovered or lost if I used the AI assistant for some translations in coding style.&lt;/p>
-&lt;h2 id="couplets-of-doggerel">Couplets of doggerel&lt;/h2>
-&lt;p>My trusty and non emotional assistant had no opinion on Lewis Caroll but it made this for me. A definition of &lt;strong>functional programming&lt;/strong> style in &lt;strong>rhyming couplets&lt;/strong>:&lt;/p>
+&lt;h2 id="couplets-of-doggerel">Couplets of doggerel
+&lt;/h2>&lt;p>My trusty and non emotional assistant had no opinion on Lewis Caroll but it made this for me. A definition of &lt;strong>functional programming&lt;/strong> style in &lt;strong>rhyming couplets&lt;/strong>:&lt;/p>
 &lt;blockquote>
 &lt;p>Functional programming&amp;rsquo;s way,&lt;br>
 treats functions as the play.&lt;/p>
@@ -916,8 +916,8 @@ It&amp;rsquo;s the classic style, for codes that speak.&lt;/p>
 >Pshaw!&lt;/a> verbose &lt;a class="link" href="https://www.merriam-webster.com/dictionary/doggerel" target="_blank" rel="noopener"
 >doggerel&lt;/a> you respond, ok here&amp;rsquo;s &amp;hellip; a &lt;a class="link" href="https://www.readpoetry.com/10-vivid-haikus-to-leave-you-breathless/" target="_blank" rel="noopener"
 >&lt;strong>haiku&lt;/strong>&lt;/a>&lt;/p>
-&lt;h2 id="5-7-5">5-7-5&lt;/h2>
-&lt;blockquote>
+&lt;h2 id="5-7-5">5-7-5
+&lt;/h2>&lt;blockquote>
 &lt;p>&lt;strong>Functional&lt;/strong>&lt;/p>
 &lt;p>Functions pure, combined, (5)&lt;br>
 Immutable state and grace, (7)&lt;br>
@@ -929,9 +929,9 @@ Elegance defined. (5)&lt;/p>
 Changing state and execution, (8! or is it 7?)&lt;br>
 Steps guide its progress. (5)&lt;/p>
 &lt;/blockquote>
-&lt;h1 id="code-starts-here">Code starts here&lt;/h1>
-&lt;h2 id="imperative-all-the-way---hand-crafted-by-me">Imperative all the way - hand crafted by me&lt;/h2>
-&lt;p>&lt;a class="link" href="https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt" target="_blank" rel="noopener"
+&lt;h1 id="code-starts-here">Code starts here
+&lt;/h1>&lt;h2 id="imperative-all-the-way---hand-crafted-by-me">Imperative all the way - hand crafted by me
+&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt" target="_blank" rel="noopener"
 >Here&lt;/a> is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many &lt;a class="link" href="https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd" target="_blank" rel="noopener"
 >succinct&lt;/a> and &lt;a class="link" href="https://todd.ginsberg.com/post/advent-of-code/2021/day10/" target="_blank" rel="noopener"
 >elegant&lt;/a> &lt;a class="link" href="https://github.com/topics/aoc-2022-in-kotlin" target="_blank" rel="noopener"
@@ -1001,8 +1001,8 @@ data-flex-basis="723px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">readInput&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">File&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;src/main/resources/&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">$name&lt;/span>&lt;span class="s2">.txt&amp;#34;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">readLines&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="the-recipe">The recipe&lt;/h2>
-&lt;p>You can see my conversion steps in the git repo. The recipe is:&lt;br>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="the-recipe">The recipe
+&lt;/h2>&lt;p>You can see my conversion steps in the git repo. The recipe is:&lt;br>
 &lt;strong>Ingredients:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>1 problem&lt;/li>
@@ -1019,8 +1019,8 @@ data-flex-basis="723px"
 &lt;p>&lt;strong>Build&lt;/strong> gently for a few seconds in a preheated &lt;strong>gradle&lt;/strong> command, until &lt;strong>BUILD SUCCESSFUL&lt;/strong> and serve immediately.&lt;/p>
 &lt;p>Of course this recipe is an over simplification and build times may vary depending on how big the code is and if you are doing this on a &lt;a class="link" href="https://forums.raspberrypi.com/viewtopic.php?t=183665" target="_blank" rel="noopener"
 >Rasberry PI model B&lt;/a>.&lt;/p>
-&lt;h2 id="heres-one-i-prepared-earlier---hand-written-and-functional">Here&amp;rsquo;s one I prepared earlier - hand written and functional&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">import&lt;/span> &lt;span class="nn">java.io.File&lt;/span>
+&lt;h2 id="heres-one-i-prepared-earlier---hand-written-and-functional">Here&amp;rsquo;s one I prepared earlier - hand written and functional
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">import&lt;/span> &lt;span class="nn">java.io.File&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">args&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Array&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">&amp;gt;)&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
@@ -1065,8 +1065,8 @@ data-flex-basis="723px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fun&lt;/span> &lt;span class="nf">readInput&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">File&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;src/main/resources/&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">$name&lt;/span>&lt;span class="s2">.txt&amp;#34;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">readLines&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ai-converts-to-functional">AI converts to functional&lt;/h2>
-&lt;p>AI Assistant converts my imperative version to functional&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ai-converts-to-functional">AI converts to functional
+&lt;/h2>&lt;p>AI Assistant converts my imperative version to functional&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">mport&lt;/span> &lt;span class="n">java&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">io&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">File&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">args&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Array&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">&amp;gt;)&lt;/span> &lt;span class="p">{&lt;/span>
@@ -1127,8 +1127,8 @@ data-flex-grow="518"
 data-flex-basis="1243px"
 >
 Some issue with the loop not using a downTo and getting the ranges wrong. I like the separate functions but it is mixing in some side effects.&lt;/p>
-&lt;h2 id="ai-converts-back-to-imperative">AI converts back to imperative&lt;/h2>
-&lt;p>AI assistant converts my functional version to imperative&lt;/p>
+&lt;h2 id="ai-converts-back-to-imperative">AI converts back to imperative
+&lt;/h2>&lt;p>AI assistant converts my functional version to imperative&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">import&lt;/span> &lt;span class="nn">java.io.File&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">args&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Array&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">&amp;gt;)&lt;/span> &lt;span class="p">{&lt;/span>
@@ -1187,8 +1187,8 @@ Some issue with the loop not using a downTo and getting the ranges wrong. I like
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">readInput&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">File&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;src/main/resources/&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">$name&lt;/span>&lt;span class="s2">.txt&amp;#34;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">readLines&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="the-end">The end&lt;/h1>
-&lt;p>To close I leave you with a &lt;a class="link" href="https://github.com/maiatoday/imp-fun/branches" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="the-end">The end
+&lt;/h1>&lt;p>To close I leave you with a &lt;a class="link" href="https://github.com/maiatoday/imp-fun/branches" target="_blank" rel="noopener"
 >git repo&lt;/a> and these lines of sage advice in doggerel format from the AI assistant. What can I say, I am amused!&lt;/p>
 &lt;blockquote>
 &lt;p>Functional&amp;rsquo;s not a cure-all,&lt;br>
@@ -1665,8 +1665,8 @@ class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
 >&lt;/p>
-&lt;h1 id="references">References&lt;/h1>
-&lt;p>&lt;a class="link" href="https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7" target="_blank" rel="noopener"
+&lt;h1 id="references">References
+&lt;/h1>&lt;p>&lt;a class="link" href="https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7" target="_blank" rel="noopener"
 >Kotlin Coroutines Flow in a nutshell&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://rvbsoftdev.medium.com/kotlin-flows-an-android-cheat-sheet-d71ae772030d" target="_blank" rel="noopener"
 >Kotlin Flows ~ an Android cheat sheet&lt;/a>&lt;/p>
@@ -1778,37 +1778,37 @@ title="YouTube Video"
 >
 &lt;/iframe>
 &lt;/div></description></item><item><title>Links to Learn Compose</title><link>https://www.maiatoday.net/p/links-to-learn-compose/</link><pubDate>Mon, 28 Feb 2022 21:43:48 +0200</pubDate><guid>https://www.maiatoday.net/p/links-to-learn-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/links-to-learn-compose/resources.png" alt="Featured image of post Links to Learn Compose" />&lt;p>At the moment people often ask me where to go start learning Jetpack Compose. Here is a a hand picked selection of my favourite Compose resources. These may change as I find new ones. There should be something for everyone, Official, Community, Videos, Books, Streams.&lt;/p>
-&lt;h2 id="official-docs">Official docs&lt;/h2>
-&lt;p>&lt;a class="link" href="https://developer.android.com/jetpack/compose/documentation" target="_blank" rel="noopener"
+&lt;h2 id="official-docs">Official docs
+&lt;/h2>&lt;p>&lt;a class="link" href="https://developer.android.com/jetpack/compose/documentation" target="_blank" rel="noopener"
 >Official Docs&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://developer.android.com/courses/pathways/compose" target="_blank" rel="noopener"
 >Pathway&lt;/a>&lt;/p>
-&lt;h2 id="official-apps">Official apps&lt;/h2>
-&lt;p>&lt;a class="link" href="https://cs.android.com/androidx/compose-samples" target="_blank" rel="noopener"
+&lt;h2 id="official-apps">Official apps
+&lt;/h2>&lt;p>&lt;a class="link" href="https://cs.android.com/androidx/compose-samples" target="_blank" rel="noopener"
 >Jetpack Compose Samples&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://cs.android.com/androidx/platform/frameworks/support/&amp;#43;/androidx-main:compose/material/material/samples/src/main/java/androidx/compose/material/samples/TabSamples.kt" target="_blank" rel="noopener"
 >Material Catalog&lt;/a>&lt;/p>
-&lt;h2 id="community-websites">Community websites&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.jetpackcompose.app/" target="_blank" rel="noopener"
+&lt;h2 id="community-websites">Community websites
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.jetpackcompose.app/" target="_blank" rel="noopener"
 >Jetpackcompose.app&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://compose.academy/" target="_blank" rel="noopener"
 >compose.academy&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://foso.github.io/Jetpack-Compose-Playground" target="_blank" rel="noopener"
 >Jetpack Compose Playground&lt;/a>&lt;/p>
-&lt;h2 id="videos">Videos&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC" target="_blank" rel="noopener"
+&lt;h2 id="videos">Videos
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC" target="_blank" rel="noopener"
 >Philip Lackner Compose playist&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/c/CodinginFlow" target="_blank" rel="noopener"
 >Coding in Flow&lt;/a>&lt;/p>
-&lt;h2 id="books">Books&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.packtpub.com/product/android-ui-development-with-jetpack-compose/9781801812160" target="_blank" rel="noopener"
+&lt;h2 id="books">Books
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.packtpub.com/product/android-ui-development-with-jetpack-compose/9781801812160" target="_blank" rel="noopener"
 >Android UI Development with Jetpack Compose - Thomas Künneth&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://practicaljetpackcompose.com/" target="_blank" rel="noopener"
 >Practical Jetpack Compose - Joe Birch&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://leanpub.com/composeinternals" target="_blank" rel="noopener"
 >Compose Internals - Jorge Castillo&lt;/a>&lt;/p>
-&lt;h2 id="twitch">Twitch&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.twitch.tv/codewiththeitalians" target="_blank" rel="noopener"
+&lt;h2 id="twitch">Twitch
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.twitch.tv/codewiththeitalians" target="_blank" rel="noopener"
 >Coding with the Italians&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.twitch.tv/kibethcodes" target="_blank" rel="noopener"
 >Kibeth Codes&lt;/a>&lt;/p>
@@ -1816,12 +1816,13 @@ title="YouTube Video"
 >Adam McNeilly&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://twitch.tv/florianwalther" target="_blank" rel="noopener"
 >Florian Walther&lt;/a>&lt;/p>
-&lt;h2 id="specialised-areas">Specialised areas&lt;/h2>
-&lt;h3 id="modifiers">Modifiers&lt;/h3>
-&lt;p>&lt;a class="link" href="https://jorgecastillo.dev/composed-modifiers-in-jetpack-compose?utm_campaign=onCreate%20Digest&amp;amp;utm_medium=email&amp;amp;utm_source=Revue%20newsletter" target="_blank" rel="noopener"
+&lt;h2 id="specialised-areas">Specialised areas
+&lt;/h2>&lt;h3 id="modifiers">Modifiers
+&lt;/h3>&lt;p>&lt;a class="link" href="https://jorgecastillo.dev/composed-modifiers-in-jetpack-compose?utm_campaign=onCreate%20Digest&amp;amp;utm_medium=email&amp;amp;utm_source=Revue%20newsletter" target="_blank" rel="noopener"
 >how it works&lt;/a>&lt;/p>
-&lt;h3 id="state">State&lt;/h3>
-&lt;h3 id="animation">Animation&lt;/h3></description></item><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
+&lt;h3 id="state">State
+&lt;/h3>&lt;h3 id="animation">Animation
+&lt;/h3></description></item><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
 >Jozi-JUG&lt;/a> demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
@@ -1918,8 +1919,8 @@ data-flex-basis="2288px"
 >&lt;/p>
 &lt;p>My intuition says it is preferable to sprinkle the memory with fewer smaller pieces of confetti rather than many larger ones. Still there isn&amp;rsquo;t really a way around it since Offset is immutable and Compose is built around tracking unidirectional state flow. Mutable State holder classes won&amp;rsquo;t register a change if the object that holds the state doesn&amp;rsquo;t change. This means if I keep an object that holds the position of the particle and I simply change the x and y values in he mutable state holder will not register a change. &lt;a class="link" href="https://dev.to/zachklipp/two-mutables-dont-make-a-right-2kgp" target="_blank" rel="noopener"
 >Here&lt;/a> is a detail discussion on mutable state.&lt;/p>
-&lt;h3 id="how-to-build-your-own-drawing-modifier">How to build your own drawing modifier&lt;/h3>
-&lt;p>You need a extension function on modifier like so-&lt;/p>
+&lt;h3 id="how-to-build-your-own-drawing-modifier">How to build your own drawing modifier
+&lt;/h3>&lt;p>You need a extension function on modifier like so-&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">Modifier&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">confetti&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// all your parameters to set up the modifier
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">composed&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// the composed function gives you a composition on each composable where this modifier is used

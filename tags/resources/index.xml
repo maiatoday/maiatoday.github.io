@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Resources on maiatoday</title><link>https://www.maiatoday.net/tags/resources/</link><description>Recent content in Resources on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 21:43:48 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/resources/index.xml" rel="self" type="application/rss+xml"/><item><title>Links to Learn Compose</title><link>https://www.maiatoday.net/p/links-to-learn-compose/</link><pubDate>Mon, 28 Feb 2022 21:43:48 +0200</pubDate><guid>https://www.maiatoday.net/p/links-to-learn-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/links-to-learn-compose/resources.png" alt="Featured image of post Links to Learn Compose" />&lt;p>At the moment people often ask me where to go start learning Jetpack Compose. Here is a a hand picked selection of my favourite Compose resources. These may change as I find new ones. There should be something for everyone, Official, Community, Videos, Books, Streams.&lt;/p>
-&lt;h2 id="official-docs">Official docs&lt;/h2>
-&lt;p>&lt;a class="link" href="https://developer.android.com/jetpack/compose/documentation" target="_blank" rel="noopener"
+&lt;h2 id="official-docs">Official docs
+&lt;/h2>&lt;p>&lt;a class="link" href="https://developer.android.com/jetpack/compose/documentation" target="_blank" rel="noopener"
 >Official Docs&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://developer.android.com/courses/pathways/compose" target="_blank" rel="noopener"
 >Pathway&lt;/a>&lt;/p>
-&lt;h2 id="official-apps">Official apps&lt;/h2>
-&lt;p>&lt;a class="link" href="https://cs.android.com/androidx/compose-samples" target="_blank" rel="noopener"
+&lt;h2 id="official-apps">Official apps
+&lt;/h2>&lt;p>&lt;a class="link" href="https://cs.android.com/androidx/compose-samples" target="_blank" rel="noopener"
 >Jetpack Compose Samples&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://cs.android.com/androidx/platform/frameworks/support/&amp;#43;/androidx-main:compose/material/material/samples/src/main/java/androidx/compose/material/samples/TabSamples.kt" target="_blank" rel="noopener"
 >Material Catalog&lt;/a>&lt;/p>
-&lt;h2 id="community-websites">Community websites&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.jetpackcompose.app/" target="_blank" rel="noopener"
+&lt;h2 id="community-websites">Community websites
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.jetpackcompose.app/" target="_blank" rel="noopener"
 >Jetpackcompose.app&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://compose.academy/" target="_blank" rel="noopener"
 >compose.academy&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://foso.github.io/Jetpack-Compose-Playground" target="_blank" rel="noopener"
 >Jetpack Compose Playground&lt;/a>&lt;/p>
-&lt;h2 id="videos">Videos&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC" target="_blank" rel="noopener"
+&lt;h2 id="videos">Videos
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC" target="_blank" rel="noopener"
 >Philip Lackner Compose playist&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/c/CodinginFlow" target="_blank" rel="noopener"
 >Coding in Flow&lt;/a>&lt;/p>
-&lt;h2 id="books">Books&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.packtpub.com/product/android-ui-development-with-jetpack-compose/9781801812160" target="_blank" rel="noopener"
+&lt;h2 id="books">Books
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.packtpub.com/product/android-ui-development-with-jetpack-compose/9781801812160" target="_blank" rel="noopener"
 >Android UI Development with Jetpack Compose - Thomas Künneth&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://practicaljetpackcompose.com/" target="_blank" rel="noopener"
 >Practical Jetpack Compose - Joe Birch&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://leanpub.com/composeinternals" target="_blank" rel="noopener"
 >Compose Internals - Jorge Castillo&lt;/a>&lt;/p>
-&lt;h2 id="twitch">Twitch&lt;/h2>
-&lt;p>&lt;a class="link" href="https://www.twitch.tv/codewiththeitalians" target="_blank" rel="noopener"
+&lt;h2 id="twitch">Twitch
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.twitch.tv/codewiththeitalians" target="_blank" rel="noopener"
 >Coding with the Italians&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.twitch.tv/kibethcodes" target="_blank" rel="noopener"
 >Kibeth Codes&lt;/a>&lt;/p>
@@ -37,9 +37,10 @@
 >Adam McNeilly&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://twitch.tv/florianwalther" target="_blank" rel="noopener"
 >Florian Walther&lt;/a>&lt;/p>
-&lt;h2 id="specialised-areas">Specialised areas&lt;/h2>
-&lt;h3 id="modifiers">Modifiers&lt;/h3>
-&lt;p>&lt;a class="link" href="https://jorgecastillo.dev/composed-modifiers-in-jetpack-compose?utm_campaign=onCreate%20Digest&amp;amp;utm_medium=email&amp;amp;utm_source=Revue%20newsletter" target="_blank" rel="noopener"
+&lt;h2 id="specialised-areas">Specialised areas
+&lt;/h2>&lt;h3 id="modifiers">Modifiers
+&lt;/h3>&lt;p>&lt;a class="link" href="https://jorgecastillo.dev/composed-modifiers-in-jetpack-compose?utm_campaign=onCreate%20Digest&amp;amp;utm_medium=email&amp;amp;utm_source=Revue%20newsletter" target="_blank" rel="noopener"
 >how it works&lt;/a>&lt;/p>
-&lt;h3 id="state">State&lt;/h3>
-&lt;h3 id="animation">Animation&lt;/h3></description></item></channel></rss>
+&lt;h3 id="state">State
+&lt;/h3>&lt;h3 id="animation">Animation
+&lt;/h3></description></item></channel></rss>
