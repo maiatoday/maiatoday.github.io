@@ -21,36 +21,36 @@ data-flex-basis="240px"
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Tools&lt;/th>
-&lt;th>No project&lt;/th>
-&lt;th>with project&lt;/th>
+&lt;th style="text-align: left">Tools&lt;/th>
+&lt;th style="text-align: left">No project&lt;/th>
+&lt;th style="text-align: left">with project&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Browser&lt;/td>
-&lt;td>&lt;a class="link" href="#playground" >Playground&lt;/a>&lt;/td>
-&lt;td>&lt;a class="link" href="#datalore" >Datalore&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Browser&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="#playground" >Playground&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="#datalore" >Datalore&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>CLI&lt;/td>
-&lt;td>&lt;a class="link" href="#compile-and-run" >Compile and run&lt;/a> &lt;a class="link" href="#repl" >REPL&lt;/a>&lt;/td>
-&lt;td>&lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
+&lt;td style="text-align: left">CLI&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="#compile-and-run" >Compile and run&lt;/a> &lt;a class="link" href="#repl" >REPL&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Fleet&lt;/td>
-&lt;td>👆 See CLI section&lt;/td>
-&lt;td>👆 &lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Fleet&lt;/td>
+&lt;td style="text-align: left">👆 See CLI section&lt;/td>
+&lt;td style="text-align: left">👆 &lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Intellij Community/Android Studio&lt;/td>
-&lt;td>&lt;a class="link" href="#scratch-file" >Scratch file&lt;/a>&lt;/td>
-&lt;td>&lt;a class="link" href="#wizard" >Wizard&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Intellij Community/Android Studio&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="#scratch-file" >Scratch file&lt;/a>&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="#wizard" >Wizard&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>IDE Intellij Enterprise (not free)&lt;/td>
-&lt;td>&lt;a class="link" href="#intellij-enterprise-and-notebook" >Notebook&lt;/a>&lt;/td>
-&lt;td>See Intellij Community section&lt;/td>
+&lt;td style="text-align: left">IDE Intellij Enterprise (not free)&lt;/td>
+&lt;td style="text-align: left">&lt;a class="link" href="#intellij-enterprise-and-notebook" >Notebook&lt;/a>&lt;/td>
+&lt;td style="text-align: left">See Intellij Community section&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
