@@ -29,9 +29,9 @@
 &lt;h2 id="how-do-i-get-it">How do I get it?
 &lt;/h2>&lt;p>You need:&lt;/p>
 &lt;ul>
-&lt;li>a Jetbrains IDE like Android Studio or Intellij Community edition&lt;/li>
+&lt;li>a JetBrains IDE like Android Studio or Intellij Community edition&lt;/li>
 &lt;li>the &lt;a class="link" href="https://plugins.jetbrains.com/plugin/10081-jetbrains-academy" target="_blank" rel="noopener"
->Jetbrains Acadamy plugin&lt;/a> installed&lt;/li>
+>JetBrains Acadamy plugin&lt;/a> installed&lt;/li>
 &lt;/ul>
 &lt;p>Then do the following:&lt;/p>
 &lt;ol>
