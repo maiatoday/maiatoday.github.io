@@ -10,7 +10,8 @@ lastmod: '2022-07-12'
 menu:
     main: 
         weight: -90
-        pre: user
+        params:
+            icon: user
 ---
 This site documents my projects, code snippets, notes to myself so I won't forget and other random explorations. It also records my activities as Android GDE.
 
