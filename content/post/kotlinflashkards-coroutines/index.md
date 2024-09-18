@@ -2,8 +2,8 @@
 layout: post
 title: "Flash cards for Coroutines -  KotlinFlashKards"
 image: banner.jpg
-categories: [course]
-tags: [code, coroutines, KotlinFlashKards, flash cards]
+categories: [course, Kotlin]
+tags: [code, coroutines, KotlinFlashKards, flash cards, Kotlin]
 date: 2024-09-18T19:50:02+02:00
 draft: false
 ---
