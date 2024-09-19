@@ -5,7 +5,8 @@
 &lt;p>There is a way to fix this. &lt;strong>Learn&lt;/strong> and remember the &lt;strong>key concepts&lt;/strong> you use often. One way to do this is to use flash cards. I learnt this from the book &lt;a class="link" href="https://www.manning.com/books/the-programmers-brain" target="_blank" rel="noopener"
 >The Programmers Brain by Felienne Hermans&lt;/a>&lt;/p>
 &lt;h2 id="how-does-it-work">How does it work?
-&lt;/h2>&lt;p>The deck doesn&amp;rsquo;t replace the &lt;a class="link" href="kotlinlang.org" >docs&lt;/a> or a &lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
+&lt;/h2>&lt;p>The deck doesn&amp;rsquo;t replace the &lt;a class="link" href="https://kotlinlang.org/docs/coroutines-overview.html" target="_blank" rel="noopener"
+>docs&lt;/a> or a &lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
 >good book&lt;/a>. It is an in IDE course in the form of a question, a hint that hides the answer and a code snippet with a test to explain the concept. It has four sections&lt;/p>
 &lt;ul>
 &lt;li>Basics - 18 cards&lt;/li>
