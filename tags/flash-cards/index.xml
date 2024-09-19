@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flash Cards on maiatoday</title><link>https://www.maiatoday.net/tags/flash-cards/</link><description>Recent content in Flash Cards on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 18 Sep 2024 19:50:02 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/flash-cards/index.xml" rel="self" type="application/rss+xml"/><item><title>Flash cards for Coroutines - KotlinFlashKards</title><link>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</link><pubDate>Wed, 18 Sep 2024 19:50:02 +0200</pubDate><guid>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</guid><description>&lt;img src="https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/banner.jpg" alt="Featured image of post Flash cards for Coroutines - KotlinFlashKards" />&lt;p>I made something. I made &lt;a class="link" href="https://plugins.jetbrains.com/plugin/25329-kotlinflashkards--coroutines?noRedirect=true" target="_blank" rel="noopener"
->a set of flash cards to practise and learn Kotlin coroutines&lt;/a>. I call them KotlinFlashKards (with a K of course). Here is my first set. It helps to learn coroutines&lt;/p>
+>a set of flash cards to practise and learn Kotlin coroutines&lt;/a>. I call them KotlinFlashKards (with a K of course). This is the first of a series covering different topics.&lt;/p>
 &lt;h2 id="why-create-flash-cards">Why create flash cards?
 &lt;/h2>&lt;p>Does this happen to you? You are writing some code, you know something is possible but you can&amp;rsquo;t remember exactly how to do it. By the time you have asked an AI or researched you have forgotten what it was you wanted to do in the first place.&lt;/p>
-&lt;p>There is a way to fix this. Learn and remember the key concepts you use often. One way to do this is to use flash cards. I learnt this from the book &lt;a class="link" href="https://www.manning.com/books/the-programmers-brain" target="_blank" rel="noopener"
+&lt;p>There is a way to fix this. &lt;strong>Learn&lt;/strong> and remember the &lt;strong>key concepts&lt;/strong> you use often. One way to do this is to use flash cards. I learnt this from the book &lt;a class="link" href="https://www.manning.com/books/the-programmers-brain" target="_blank" rel="noopener"
 >The Programmers Brain by Felienne Hermans&lt;/a>&lt;/p>
 &lt;h2 id="how-does-it-work">How does it work?
 &lt;/h2>&lt;p>The deck doesn&amp;rsquo;t replace the &lt;a class="link" href="kotlinlang.org" >docs&lt;/a> or a &lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
->good book&lt;/a>.It is an in IDE course in the form of a question, a hint that hides the answer and a code snippet with a test to explain the concept. It has four sections&lt;/p>
+>good book&lt;/a>. It is an in IDE course in the form of a question, a hint that hides the answer and a code snippet with a test to explain the concept. It has four sections&lt;/p>
 &lt;ul>
 &lt;li>Basics - 18 cards&lt;/li>
 &lt;li>Structured Concurrency - 12 cards&lt;/li>
@@ -35,12 +35,12 @@
 &lt;/ul>
 &lt;p>Then do the following:&lt;/p>
 &lt;ol>
-&lt;li>Before opening a project click on the Learn menu item on the left&lt;/li>
-&lt;li>Click on New course&lt;/li>
+&lt;li>Before opening a project click on the &lt;em>Learn&lt;/em> menu item on the left&lt;/li>
+&lt;li>Click on &lt;em>New course&lt;/em>&lt;/li>
 &lt;li>In the &lt;code>Marketplace&lt;/code> search for &lt;code>KotlinFlashKards&lt;/code> and start the course. This will make a local instance of the course&lt;/li>
 &lt;li>Have fun and explore, try figuring out the answers to the questions and don&amp;rsquo;t peek before you have thought a bit.&lt;/li>
-&lt;li>If you mess up the code reset it with this button.&lt;/li>
-&lt;li>If you want to skip ahead use the arrow or the numbers.&lt;/li>
+&lt;li>If you mess up the code reset it with the reset button. (see screenshot)&lt;/li>
+&lt;li>If you want to skip ahead use the arrow or the numbers. (see screenshot)&lt;/li>
 &lt;/ol>
 &lt;img src="marketplace.png" alt="Getting the flash cards" width="600"/>
 &lt;img src="kard-2.png" alt="Course interface" width="600"/>
