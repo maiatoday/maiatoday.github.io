@@ -18,7 +18,7 @@ There is a way to fix this. **Learn** and remember the **key concepts** you use 
 
 ## How does it work?
 
-The deck doesn't replace the [docs](kotlinlang.org) or a [good book](https://www.manning.com/books/kotlin-in-action-second-edition). It is an in IDE course in the form of a question, a hint that hides the answer and a code snippet with a test to explain the concept. It has four sections
+The deck doesn't replace the [docs](https://kotlinlang.org/docs/coroutines-overview.html) or a [good book](https://www.manning.com/books/kotlin-in-action-second-edition). It is an in IDE course in the form of a question, a hint that hides the answer and a code snippet with a test to explain the concept. It has four sections
 * Basics - 18 cards
 * Structured Concurrency - 12 cards
 * Error handling - 7 cards
