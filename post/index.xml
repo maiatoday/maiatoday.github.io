@@ -63,7 +63,7 @@ width="250"
 height="250"
 srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu7492807376612341061.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu429942084425830077.png 1024w"
 loading="lazy"
-alt="Let&amp;rsquo;s Go!"
+alt="Lets Go!"
 class="gallery-image"
 data-flex-grow="100"
 data-flex-basis="240px"
@@ -73,36 +73,36 @@ data-flex-basis="240px"
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Tools&lt;/th>
-&lt;th style="text-align: left">No project&lt;/th>
-&lt;th style="text-align: left">with project&lt;/th>
+&lt;th>Tools&lt;/th>
+&lt;th>No project&lt;/th>
+&lt;th>with project&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Browser&lt;/td>
-&lt;td style="text-align: left">&lt;a class="link" href="#playground" >Playground&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a class="link" href="#datalore" >Datalore&lt;/a>&lt;/td>
+&lt;td>Browser&lt;/td>
+&lt;td>&lt;a class="link" href="#playground" >Playground&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="#datalore" >Datalore&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">CLI&lt;/td>
-&lt;td style="text-align: left">&lt;a class="link" href="#compile-and-run" >Compile and run&lt;/a> &lt;a class="link" href="#repl" >REPL&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
+&lt;td>CLI&lt;/td>
+&lt;td>&lt;a class="link" href="#compile-and-run" >Compile and run&lt;/a> &lt;a class="link" href="#repl" >REPL&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Fleet&lt;/td>
-&lt;td style="text-align: left">👆 See CLI section&lt;/td>
-&lt;td style="text-align: left">👆 &lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
+&lt;td>Fleet&lt;/td>
+&lt;td>👆 See CLI section&lt;/td>
+&lt;td>👆 &lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Intellij Community/Android Studio&lt;/td>
-&lt;td style="text-align: left">&lt;a class="link" href="#scratch-file" >Scratch file&lt;/a>&lt;/td>
-&lt;td style="text-align: left">&lt;a class="link" href="#wizard" >Wizard&lt;/a>&lt;/td>
+&lt;td>Intellij Community/Android Studio&lt;/td>
+&lt;td>&lt;a class="link" href="#scratch-file" >Scratch file&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="#wizard" >Wizard&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">IDE Intellij Enterprise (not free)&lt;/td>
-&lt;td style="text-align: left">&lt;a class="link" href="#intellij-enterprise-and-notebook" >Notebook&lt;/a>&lt;/td>
-&lt;td style="text-align: left">See Intellij Community section&lt;/td>
+&lt;td>IDE Intellij Enterprise (not free)&lt;/td>
+&lt;td>&lt;a class="link" href="#intellij-enterprise-and-notebook" >Notebook&lt;/a>&lt;/td>
+&lt;td>See Intellij Community section&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
