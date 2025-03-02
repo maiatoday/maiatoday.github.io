@@ -7,7 +7,7 @@ tags: [code, compose, animate]
 date: 2025-03-02T22:02:23+01:00
 draft: false
 ---
-Sunday afternoon. Perfect time to hang out with [Junie](https://www.jetbrains.com/junie/). I want to refresh my memory on some Compose drawing techniques. I am not really in the mood for Googling. I don't need a production read app. I really just want mess around. How far can I [vibe code](https://x.com/karpathy/status/1886192184808149383) this. I'll start off by setting Junie to brave mode.
+Sunday afternoon. Perfect time to hang out with [Junie](https://www.jetbrains.com/junie/). I want to refresh my memory on some Compose drawing techniques. I am not really in the mood for Googling. I don't need a production ready app. I really just want to mess around. How far can I [vibe code](https://x.com/karpathy/status/1886192184808149383) this. I'll start off by setting Junie to brave mode.
 
 ![brave](brave.png)
 
