@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vibecodeing a Totoro tribute with Junie"
+title: "Vibecoding a Totoro tribute with Junie"
 image: topTotoro.png
 categories: [code, vibe code, junie]
 tags: [code, compose, animate]
