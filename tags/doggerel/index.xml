@@ -2,7 +2,7 @@
 &lt;/h1>&lt;p>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches.png"
 width="620"
 height="370"
-srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu16196109654360759182.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu15098751720921809370.png 1024w"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu_a78a177fc916d717.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu_98e290a7a784a5f2.png 1024w"
 loading="lazy"
 alt="branches"
 class="gallery-image"
@@ -32,8 +32,7 @@ side effects they refuse.&lt;/p>
 &lt;p>Declarative code is their choice,&lt;br>
 with functions, they rejoice.&lt;/p>
 &lt;p>Nested functions map, filter, reduce,&lt;br>
-a clean, elegant code they produce.&lt;/p>
-&lt;/blockquote>
+a clean, elegant code they produce.&lt;/p>&lt;/blockquote>
 &lt;p>Compare this with the &lt;strong>imperative&lt;/strong> version:&lt;/p>
 &lt;blockquote>
 &lt;p>Imperative code, step by step,&lt;br>
@@ -43,8 +42,7 @@ loops and branches, integrate.&lt;/p>
 &lt;p>In sequence order, let it be,&lt;br>
 line-by-line, instructions see.&lt;/p>
 &lt;p>Procedural paths and simple tweaks,&lt;br>
-It&amp;rsquo;s the classic style, for codes that speak.&lt;/p>
-&lt;/blockquote>
+It&amp;rsquo;s the classic style, for codes that speak.&lt;/p>&lt;/blockquote>
 &lt;p>&lt;a class="link" href="https://www.etymonline.com/word/pshaw" target="_blank" rel="noopener"
 >Pshaw!&lt;/a> verbose &lt;a class="link" href="https://www.merriam-webster.com/dictionary/doggerel" target="_blank" rel="noopener"
 >doggerel&lt;/a> you respond, ok here&amp;rsquo;s &amp;hellip; a &lt;a class="link" href="https://www.readpoetry.com/10-vivid-haikus-to-leave-you-breathless/" target="_blank" rel="noopener"
@@ -54,14 +52,12 @@ It&amp;rsquo;s the classic style, for codes that speak.&lt;/p>
 &lt;p>&lt;strong>Functional&lt;/strong>&lt;/p>
 &lt;p>Functions pure, combined, (5)&lt;br>
 Immutable state and grace, (7)&lt;br>
-Elegance defined. (5)&lt;/p>
-&lt;/blockquote>
+Elegance defined. (5)&lt;/p>&lt;/blockquote>
 &lt;blockquote>
 &lt;p>&lt;strong>Imperative&lt;/strong>&lt;/p>
 &lt;p>Commands in sequence, (5)&lt;br>
 Changing state and execution, (8! or is it 7?)&lt;br>
-Steps guide its progress. (5)&lt;/p>
-&lt;/blockquote>
+Steps guide its progress. (5)&lt;/p>&lt;/blockquote>
 &lt;h1 id="code-starts-here">Code starts here
 &lt;/h1>&lt;h2 id="imperative-all-the-way---hand-crafted-by-me">Imperative all the way - hand crafted by me
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt" target="_blank" rel="noopener"
@@ -72,7 +68,7 @@ Steps guide its progress. (5)&lt;/p>
 &lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl.png"
 width="1098"
 height="364"
-srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu16646297295889542392.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu6346563232570383285.png 1024w"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu_b1c29f8e8663ec09.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu_f15275dacead0aae.png 1024w"
 loading="lazy"
 alt="ELPLZGZL"
 class="gallery-image"
@@ -252,7 +248,7 @@ data-flex-basis="723px"
 &lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops.png"
 width="1596"
 height="308"
-srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu7189020701187576033.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu13531548384970467157.png 1024w"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu_923651f08faab03.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu_b65775cf705f735e.png 1024w"
 loading="lazy"
 alt="Oops"
 class="gallery-image"
@@ -329,8 +325,7 @@ For some problems, it may stall.&lt;/p>
 &lt;p>Yet, grasp its ways, and you&amp;rsquo;ll see,&lt;br>
 Cleaner code and clarity.&lt;/p>
 &lt;p>Incorporate with grace and skill,&lt;br>
-More maintainable code, you&amp;rsquo;ll build.&lt;/p>
-&lt;/blockquote>
+More maintainable code, you&amp;rsquo;ll build.&lt;/p>&lt;/blockquote>
 &lt;p>And as a bonus here&amp;rsquo;s the prompt that generated this gem.&lt;/p>
 &lt;pre tabindex="0">&lt;code>Take the coding advice in quotes and convert it to rhyming couplets
 &amp;#34;Keep in mind that functional programming may not always be the best choice

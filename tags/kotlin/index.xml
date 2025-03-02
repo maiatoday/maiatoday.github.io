@@ -61,9 +61,9 @@
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited.png"
 width="250"
 height="250"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu7492807376612341061.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu429942084425830077.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu_6e714562174f0163.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu_f00d8e6534dc2df1.png 1024w"
 loading="lazy"
-alt="Lets Go!"
+alt="Let’s Go!"
 class="gallery-image"
 data-flex-grow="100"
 data-flex-basis="240px"
@@ -113,7 +113,7 @@ data-flex-basis="240px"
 &lt;/h2>&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground.png"
 width="1218"
 height="614"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu17619968913386725222.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu10623720097698865015.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu_ae496ad5097e455c.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu_5e541ecfc1bddfbf.png 1024w"
 loading="lazy"
 alt="Playground"
 class="gallery-image"
@@ -138,7 +138,7 @@ data-flex-basis="476px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import.png"
 width="1042"
 height="516"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu8026927144904049083.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu9635977428203814149.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu_5d9a205e48056c55.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu_1c0bade3617e0bc6.png 1024w"
 loading="lazy"
 alt="Playground import"
 class="gallery-image"
@@ -150,7 +150,7 @@ data-flex-basis="484px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore.png"
 width="1324"
 height="844"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu15528936108520992446.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu12923918088485773730.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu_d4a38e2113028f0d.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu_15604f47f3b39800.png 1024w"
 loading="lazy"
 alt="Datalore"
 class="gallery-image"
@@ -180,7 +180,7 @@ data-flex-basis="376px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run.png"
 width="1392"
 height="406"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu16916617382231688584.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu9684844319567453495.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu_ec17812f721e22a7.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu_3028fa3657959e8d.png 1024w"
 loading="lazy"
 alt="Compile and Run"
 class="gallery-image"
@@ -208,7 +208,7 @@ data-flex-basis="822px"
 &lt;/h2>&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl.png"
 width="1384"
 height="434"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu389958759780755462.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu4937500661031583832.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu_b18b1565066e22d3.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu_669563e4a2451b70.png 1024w"
 loading="lazy"
 alt="REPL"
 class="gallery-image"
@@ -236,7 +236,7 @@ data-flex-basis="765px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle.png"
 width="1942"
 height="1486"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu8640306167332687155.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu14004515015913868128.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu_cbdc324da9c9f8c2.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu_15cc961e514854ab.png 1024w"
 loading="lazy"
 alt="Gradle init"
 class="gallery-image"
@@ -268,7 +268,7 @@ data-flex-basis="313px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper.png"
 width="1248"
 height="1136"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu7645449443718543720.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu666382034358010998.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu_a7dfe4b0fc40d9d9.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu_82a78ea966a0ba3a.png 1024w"
 loading="lazy"
 alt="Amper init"
 class="gallery-image"
@@ -288,7 +288,7 @@ data-flex-basis="263px"
 &lt;/h2>&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet.png"
 width="1702"
 height="1180"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu2271168381830310600.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu9079989743599176805.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu_e639ffd9c04f9096.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu_d4228287f5ffcfaf.png 1024w"
 loading="lazy"
 alt="Fleet run"
 class="gallery-image"
@@ -315,7 +315,7 @@ data-flex-basis="346px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch.png"
 width="1326"
 height="452"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu3292109826613980561.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu17000288150861323621.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu_cd817067f52665a2.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu_8654ad91a76a54e8.png 1024w"
 loading="lazy"
 alt="Scratch"
 class="gallery-image"
@@ -355,7 +355,7 @@ data-flex-basis="704px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook.png"
 width="1672"
 height="838"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu7643369559708669452.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu16508639288678114028.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu_c1a0ee11cdf4bc42.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu_b07354db9f5de4d9.png 1024w"
 loading="lazy"
 alt="Notebook"
 class="gallery-image"
@@ -370,7 +370,7 @@ data-flex-basis="478px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module.png"
 width="978"
 height="360"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu16855636725915719873.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu17896661954298364981.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu_1cb2256ea84cfe43.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu_57e56ce6c32a01fb.png 1024w"
 loading="lazy"
 alt="Notebook module"
 class="gallery-image"
@@ -397,7 +397,7 @@ data-flex-basis="652px"
 &lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard.png"
 width="1592"
 height="846"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu278655075275580216.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu9272542551474998889.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu_b86e555dde50619d.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu_404dc035b1e6b694.png 1024w"
 loading="lazy"
 alt="Wizard"
 class="gallery-image"
@@ -441,7 +441,7 @@ data-flex-basis="451px"
 &lt;/h1>&lt;p>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches.png"
 width="620"
 height="370"
-srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu16196109654360759182.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu15098751720921809370.png 1024w"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu_a78a177fc916d717.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches_hu_98e290a7a784a5f2.png 1024w"
 loading="lazy"
 alt="branches"
 class="gallery-image"
@@ -471,8 +471,7 @@ side effects they refuse.&lt;/p>
 &lt;p>Declarative code is their choice,&lt;br>
 with functions, they rejoice.&lt;/p>
 &lt;p>Nested functions map, filter, reduce,&lt;br>
-a clean, elegant code they produce.&lt;/p>
-&lt;/blockquote>
+a clean, elegant code they produce.&lt;/p>&lt;/blockquote>
 &lt;p>Compare this with the &lt;strong>imperative&lt;/strong> version:&lt;/p>
 &lt;blockquote>
 &lt;p>Imperative code, step by step,&lt;br>
@@ -482,8 +481,7 @@ loops and branches, integrate.&lt;/p>
 &lt;p>In sequence order, let it be,&lt;br>
 line-by-line, instructions see.&lt;/p>
 &lt;p>Procedural paths and simple tweaks,&lt;br>
-It&amp;rsquo;s the classic style, for codes that speak.&lt;/p>
-&lt;/blockquote>
+It&amp;rsquo;s the classic style, for codes that speak.&lt;/p>&lt;/blockquote>
 &lt;p>&lt;a class="link" href="https://www.etymonline.com/word/pshaw" target="_blank" rel="noopener"
 >Pshaw!&lt;/a> verbose &lt;a class="link" href="https://www.merriam-webster.com/dictionary/doggerel" target="_blank" rel="noopener"
 >doggerel&lt;/a> you respond, ok here&amp;rsquo;s &amp;hellip; a &lt;a class="link" href="https://www.readpoetry.com/10-vivid-haikus-to-leave-you-breathless/" target="_blank" rel="noopener"
@@ -493,14 +491,12 @@ It&amp;rsquo;s the classic style, for codes that speak.&lt;/p>
 &lt;p>&lt;strong>Functional&lt;/strong>&lt;/p>
 &lt;p>Functions pure, combined, (5)&lt;br>
 Immutable state and grace, (7)&lt;br>
-Elegance defined. (5)&lt;/p>
-&lt;/blockquote>
+Elegance defined. (5)&lt;/p>&lt;/blockquote>
 &lt;blockquote>
 &lt;p>&lt;strong>Imperative&lt;/strong>&lt;/p>
 &lt;p>Commands in sequence, (5)&lt;br>
 Changing state and execution, (8! or is it 7?)&lt;br>
-Steps guide its progress. (5)&lt;/p>
-&lt;/blockquote>
+Steps guide its progress. (5)&lt;/p>&lt;/blockquote>
 &lt;h1 id="code-starts-here">Code starts here
 &lt;/h1>&lt;h2 id="imperative-all-the-way---hand-crafted-by-me">Imperative all the way - hand crafted by me
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt" target="_blank" rel="noopener"
@@ -511,7 +507,7 @@ Steps guide its progress. (5)&lt;/p>
 &lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl.png"
 width="1098"
 height="364"
-srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu16646297295889542392.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu6346563232570383285.png 1024w"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu_b1c29f8e8663ec09.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/elplzgzl_hu_f15275dacead0aae.png 1024w"
 loading="lazy"
 alt="ELPLZGZL"
 class="gallery-image"
@@ -691,7 +687,7 @@ data-flex-basis="723px"
 &lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops.png"
 width="1596"
 height="308"
-srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu7189020701187576033.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu13531548384970467157.png 1024w"
+srcset="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu_923651f08faab03.png 480w, https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/oops_hu_b65775cf705f735e.png 1024w"
 loading="lazy"
 alt="Oops"
 class="gallery-image"
@@ -768,8 +764,7 @@ For some problems, it may stall.&lt;/p>
 &lt;p>Yet, grasp its ways, and you&amp;rsquo;ll see,&lt;br>
 Cleaner code and clarity.&lt;/p>
 &lt;p>Incorporate with grace and skill,&lt;br>
-More maintainable code, you&amp;rsquo;ll build.&lt;/p>
-&lt;/blockquote>
+More maintainable code, you&amp;rsquo;ll build.&lt;/p>&lt;/blockquote>
 &lt;p>And as a bonus here&amp;rsquo;s the prompt that generated this gem.&lt;/p>
 &lt;pre tabindex="0">&lt;code>Take the coding advice in quotes and convert it to rhyming couplets
 &amp;#34;Keep in mind that functional programming may not always be the best choice
