@@ -34,7 +34,7 @@ No explanations really what can I say I didn't read the code 🙈, but you [can]
 
 {{< rawhtml >}}
 
-<video width=25% controls autoplay>
+<video width=60% controls autoplay>
     <source src="totorotribute.webm" type="video/webm">
     Your browser does not support the video tag.
 </video>
