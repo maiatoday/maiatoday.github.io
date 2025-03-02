@@ -26,7 +26,7 @@ Let&amp;#39;s explore some visual techniques in this Kotlin multiplatform projec
 &lt;p>The only time the project didn&amp;rsquo;t run was when Junie didn&amp;rsquo;t download the new fonts but I found the instructions on where to get the fonts added to the README.md. I had no real expectations so I&amp;rsquo;m pretty happy with the final result. Animating rain and clickable wobbling Totoro.&lt;/p>
 &lt;p>No explanations really what can I say I didn&amp;rsquo;t read the code 🙈, but you &lt;a class="link" href="https://github.com/maiatoday/playdate/tree/main" target="_blank" rel="noopener"
 >can&lt;/a>. I can&amp;rsquo;t vouch for the conciseness nor the elegance. I&amp;rsquo;ll just post a selection of prompts and the final result.&lt;/p>
-&lt;video width=25% controls autoplay>
+&lt;video width=60% controls autoplay>
 &lt;source src="totorotribute.webm" type="video/webm">
 Your browser does not support the video tag.
 &lt;/video>
