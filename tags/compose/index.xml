@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Compose on maiatoday</title><link>https://www.maiatoday.net/tags/compose/</link><description>Recent content in Compose on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Jun 2025 12:52:55 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/compose/index.xml" rel="self" type="application/rss+xml"/><item><title>Is it vaporwave? - Compose Hot reload</title><link>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</link><pubDate>Mon, 09 Jun 2025 12:52:55 +0200</pubDate><guid>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</guid><description>&lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/vapor.png" alt="Featured image of post Is it vaporwave? - Compose Hot reload" />&lt;h2 id="why">Why
 &lt;/h2>&lt;p>I want to play with the recently released &lt;a class="link" href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-hot-reload.html" target="_blank" rel="noopener"
 >Compose Hot reload feature&lt;/a> by JetBrains. To do this I setup a Desktop compose project and picked a topic to draw and explore: &lt;a class="link" href="https://en.wikipedia.org/wiki/Vaporwave" target="_blank" rel="noopener"
->Vaporwave&lt;/a> Why? because Vaporwave is a curious Internet thing that has a strong visual aesthetic that I wanted to recreate. It is intriguing. It is seems to be a fleeting transient phenomena: it is in the name &lt;em>vapor&lt;/em> and &lt;em>wave&lt;/em> and yet&amp;hellip; and yet we see it &lt;a class="link" href="https://www.aesdes.org/2025/01/23/vaporwave/" target="_blank" rel="noopener"
+>Vaporwave&lt;/a> Why? because Vaporwave is a curious Internet thing. It has a strong visual aesthetic that I wanted to recreate. It is intriguing. It is seems to be a fleeting transient phenomena: it is in the name &lt;em>vapor&lt;/em> and &lt;em>wave&lt;/em> and yet&amp;hellip; and yet we see it &lt;a class="link" href="https://www.aesdes.org/2025/01/23/vaporwave/" target="_blank" rel="noopener"
 >pop&lt;/a> &lt;a class="link" href="https://www.creativeboom.com/insight/why-vaporwave-is-set-to-be-a-huge-design-trend-in-2023/" target="_blank" rel="noopener"
 >up&lt;/a> in unexpected &lt;a class="link" href="https://rausgegangen.de/en/events/vaporwave-paradise-vaporwave-fest-cologne-0/" target="_blank" rel="noopener"
 >places&lt;/a>. It is a form of &lt;a class="link" href="https://en.wikipedia.org/wiki/Hauntology#:~:text=Hauntology%20%28a%20portmanteau%20of%20haunting,if%20to%20haunt%20the%20present." target="_blank" rel="noopener"
@@ -26,10 +26,10 @@ See and &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/ho
 &lt;p>&lt;em>Wow these instructions are vague!&lt;/em> indeed things change quickly. Please follow the original repo. This post will date.&lt;/p>
 &lt;h2 id="origins-and-sound-track">Origins and Sound track
 &lt;/h2>&lt;p>Vaporwave appeared as a music genre with a strong aesthetic, some say in 2010. The iconic album &lt;a class="link" href="https://vektroid.bandcamp.com/album/floral-shoppe" target="_blank" rel="noopener"
->Floral Shoppe by Macintosh Plus&lt;/a> is still available an makes a perfect sound track for inspecting the code or reading this article.&lt;/p>
+>Floral Shoppe by Macintosh Plus&lt;/a> is still available and makes a perfect sound track for inspecting the code or reading this article.&lt;/p>
 &lt;p>&lt;em>Go ahead click the &lt;a class="link" href="https://vektroid.bandcamp.com/album/floral-shoppe" target="_blank" rel="noopener"
 >link&lt;/a> and start the music. I&amp;rsquo;ll wait.&lt;/em>&lt;/p>
-&lt;p>As we are on the cusp widespread changes in how we interact with technology, will we have nostalgia for the way we did thing in the &amp;ldquo;olden days&amp;rdquo;? Will we even remember how it really was?&lt;/p>
+&lt;p>As we are on the cusp widespread changes in how we interact with technology, will we have nostalgia for the way we did thing in the &lt;em>olden days&lt;/em>? Will we even remember how it really was?&lt;/p>
 &lt;h2 id="a-e-s-t-h-e-t-i-c">A-E-S-T-H-E-T-I-C
 &lt;/h2>&lt;p>Vaporwave is known for a strong aesthetic. Here is a jumpstart table with the technique and a note. &lt;strong>Click on the image to see the code&lt;/strong>. or scroll for more detail&lt;/p>
 &lt;table>
@@ -45,7 +45,7 @@ See and &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/ho
 &lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Triangle.kt#L26">&lt;img src="triangle.png" alt="triangle" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Triangle.kt#L26" target="_blank" rel="noopener"
 >code&lt;/a>&lt;/td>
 &lt;td>Path on Canvas, Linear gradient brush&lt;/td>
-&lt;td>Triangles are geometric shapes reminiscent of corporate logos of the eighties. An abstract shape that becomes a place holder for ambiguous concepts&lt;/td>
+&lt;td>Triangles are geometric shapes reminiscent of corporate logos of the eighties: an abstract shape that becomes a place holder for ambiguous concepts like digital consumerism&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L37">&lt;img src="floorgrid.png" alt="floorgrid" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L37" target="_blank" rel="noopener"
@@ -57,7 +57,7 @@ See and &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/ho
 &lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ImageFromPath.kt#L28">&lt;img src="colorshift.png" alt="colorshift" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ImageFromPath.kt#L28" target="_blank" rel="noopener"
 >code&lt;/a>&lt;/td>
 &lt;td>Image with a BitmapPainter, ColorFilter, colorMatrix, blur,&lt;/td>
-&lt;td>The choice of pngs, dolphins and old tech cassettes. Greek sculptures to remind us of beauty ideals. Having these elements floating makes them look surreal. Using blur and color filters changes what the look like to simulate old VHS errors. Remembering past technology imperfectly. Human and digital memory is fallable.&lt;/td>
+&lt;td>The choice of pngs, dolphins and old tech cassettes. Greek sculptures to remind us of beauty ideals. Having these elements floating makes them look surreal. Using blur and color filters change what the look like to simulate old VHS errors. Remembering past technology imperfectly. Human and digital memory is fallable.&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Sunset.kt#L25">&lt;img src="sunset.png" alt="sunset" width="100">&lt;/a>&lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Sunset.kt#L25" target="_blank" rel="noopener"
@@ -114,10 +114,10 @@ data-flex-basis="436px"
 &lt;p>&lt;em>Let&amp;rsquo;s dig into a few of the details, shall we?&lt;/em>&lt;/p>
 &lt;h3 id="vanishing-floor">Vanishing Floor
 &lt;/h3>&lt;p>&lt;img src="floorgrid.png" alt="Floorgrid" width="200"> &lt;img src="floortiles.png" alt="Floortiles" width="200">&lt;/p>
-&lt;p>To get the ghostly magenta grid or the black and white tiling my inital prompt had Junie just drawing a bunch of squares. Not what I wanted at all because as you will notice the squares are slanted because of the one point perspective. With a bit of research I found a way to do a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look/perspective.md" target="_blank" rel="noopener"
->projection&lt;/a>. So each point that starts a line or is a corner of a tile is converted into a point projected onto the canvas. The same projection &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L67" target="_blank" rel="noopener"
+&lt;p>To get the ghostly magenta grid or the black and white tiling my inital prompt had Junie just drawing a bunch of squares. Not what I wanted at all, because as you will notice, the squares are slanted because of the one point perspective. With a bit of research I found a way to do a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look/perspective.md" target="_blank" rel="noopener"
+>projection&lt;/a>. Each point that starts a line or is a corner of a tile is converted into a point projected onto the canvas. The same projection &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L67" target="_blank" rel="noopener"
 >function&lt;/a> can be used whether we are drawing squares or lines. More &lt;a class="link" href="https://www.youtube.com/watch?v=KessaP_Fu10" target="_blank" rel="noopener"
->info&lt;/a> on one point perspective&lt;/p>
+>info&lt;/a> on one point perspective.&lt;/p>
 &lt;h3 id="cassettes-dolphins-statues-and-color-shifts">Cassettes, dolphins, statues and color shifts
 &lt;/h3>&lt;p>&lt;img src="cassettes.png" alt="Cassettes" width="200"> &lt;img src="dolphin.png" alt="Dolphin" width="200">&lt;img src="colorshift.png" alt="Colorshift" width="200">&lt;/p>
 &lt;p>A selection of pngs. This is nothing new. What makes this part interesting is you can apply a filter to the image to modify any of the color or alpha channel. How it works is you provide a matrix of values. This matrix will then be applied to each pixel.&lt;/p>
@@ -169,7 +169,7 @@ A&amp;#39; = p*R + q*G + r*B + s*A + t
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="palm-tree-svg">Palm tree svg
 &lt;/h3>&lt;img src="palm.png" alt="Sunset" width="200">
-&lt;p>It is possible to extract the points of a s simple svg. Looking at the sample &lt;a class="link" href="p3.svg" >palm tree file&lt;/a> find the following line.&lt;/p>
+&lt;p>It is possible to extract the points of a simple svg. Looking at the sample &lt;a class="link" href="p3.svg" >palm tree file&lt;/a> find the following line.&lt;/p>
 &lt;img src="svg-points.png" alt="Sunset" width="500">
 &lt;p>Copy the string into the code and convert it to a Path. The problem is the points are relative to the coordinate system and size of the svg image and not the resulting composable view. It needs to be transformed. The conversion is based on the original path and the destination composable.&lt;/p>
 &lt;p>The conversion code looks like this&lt;/p>
@@ -192,7 +192,7 @@ A&amp;#39; = p*R + q*G + r*B + s*A + t
 &lt;h3 id="mesh-gradient">Mesh Gradient
 &lt;/h3>&lt;img src="mesh.png" alt="Mesh gradient" width="200">
 &lt;p>There is a really useful &lt;a class="link" href="https://gist.github.com/sinasamaki/05725557c945c5329fdba4a3494aaecb" target="_blank" rel="noopener"
->mesh gradient modifier&lt;/a> created by sinasmaki with a great &lt;a class="link" href="https://www.sinasamaki.com/mesh-gradients-in-jetpack-compose/" target="_blank" rel="noopener"
+>mesh gradient modifier&lt;/a> created by sinasamaki with a great &lt;a class="link" href="https://www.sinasamaki.com/mesh-gradients-in-jetpack-compose/" target="_blank" rel="noopener"
 >writeup&lt;/a> on how it works. Hot reload is useful for tuning the colors of the gradients. There is also a &lt;a class="link" href="https://github.com/c5inco/Mesh" target="_blank" rel="noopener"
 >visual tool&lt;/a> to set the gradient up.&lt;/p>
 &lt;img src="meshtool.png" alt="Mesh gradient" width="400">
@@ -200,9 +200,11 @@ A&amp;#39; = p*R + q*G + r*B + s*A + t
 &lt;/h3>&lt;img src="glitch.png" alt="Glitch" width="200">
 &lt;p>It is possible to use &lt;a class="link" href="https://skia.org/docs/user/sksl/" target="_blank" rel="noopener"
 >Skia Shaders&lt;/a> with Compose. The setup is easy enough and the shader is copied into a string. I found a &lt;a class="link" href="https://www.shadertoy.com/view/4dXBW2" target="_blank" rel="noopener"
->small glitch shader&lt;/a> on ShaderToy. Integration is &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L126" target="_blank" rel="noopener"
->straight forward&lt;/a> by creating a runtime Shader. Understanding shader code is something else entirely. Hot reload is a useful tool to test and experiment with shaders to learn how they work. &lt;a class="link" href="https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5" target="_blank" rel="noopener"
->This playlist&lt;/a>, on learning how to build shaders on ShaderTo,y is a good resource to get started.&lt;/p>
+>small glitch shader by Coolok&lt;/a> on ShaderToy. Integration is &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L126" target="_blank" rel="noopener"
+>straight forward&lt;/a> by creating a runtime Shader.&lt;/p>
+&lt;p>Understanding shader code is something else entirely. The core understanding is that shader code runs on every pixel, one by one. So the code has to make changes from the pixel perspective. The main entry point is &lt;code>mainImage&lt;/code>. You get the pixel coordinates in a two dimensional vector, &lt;code>fragCoord&lt;/code> and the code has to return the color of the pixel in a four dimensional vector (RGBA) in fragColor.&lt;/p>
+&lt;p>Hot reload is a useful tool to tweak and experiment with shaders to learn how they work. &lt;a class="link" href="https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5" target="_blank" rel="noopener"
+>This playlist&lt;/a>, on learning how to build shaders on ShaderToy, is a good resource to get started.&lt;/p>
 &lt;h2 id="enter-the-ais">Enter the AIs
 &lt;/h2>&lt;p>Of course I had help - &lt;a class="link" href="https://www.jetbrains.com/junie/" target="_blank" rel="noopener"
 >Junie&lt;/a> and &lt;a class="link" href="https://www.jetbrains.com/ai-assistant/" target="_blank" rel="noopener"
@@ -223,22 +225,22 @@ A&amp;#39; = p*R + q*G + r*B + s*A + t
 >docs folder&lt;/a>&lt;/li>
 &lt;li>take each of the aesthetic elements and ask Junie to &lt;em>build&lt;/em> one sample element and use it in a specific composable e.g.
 &lt;code>Build an equilateral triangle composable that draws on the Canvas and uses a gradient brush. Show and example of this composable in the SoloTriangle composable&lt;/code>&lt;/li>
-&lt;li>Commit and tag goto step 5&lt;/li>
+&lt;li>check, commit, tag and goto step 5&lt;/li>
 &lt;/ol>
 &lt;p>I didn&amp;rsquo;t let Junie just do the whole list. I prompted each element separately so that I could check it out and tweak it before I commited and tagged. I also started a fresh context and a new task for each step. This worked well because the &lt;code>guidelines.md&lt;/code> and &lt;code>docs/look&lt;/code> folder kept the continuity.&lt;/p>
 &lt;h3 id="inbetween-questions-with-ai-assistant">Inbetween questions with AI assistant
-&lt;/h3>&lt;p>While Junie was busy building things, I would use the AI assistant to research info for the next thing I wanted to build with oneshot questions. e.g.
+&lt;/h3>&lt;p>While Junie was busy building things, I use the AI assistant to research info with oneshot questions for the next task. e.g.
 &lt;code>How do I draw a perspective grid that has a single vanishing point on a flat surface&lt;/code>
-This resulted in some python code. I asked it to &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look/perspective.md" target="_blank" rel="noopener"
->explain&lt;/a> the python code. This was useful because it didn&amp;rsquo;t interfere with what Junie was doing. In my subsequent prompt to Junie, I asked it to use the research I captured in a markdown file.&lt;/p>
+The answer was python code. I asked it to &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look/perspective.md" target="_blank" rel="noopener"
+>explain&lt;/a> the python code. The chat session didn&amp;rsquo;t interfere with what Junie was doing. In my next prompt to Junie, I asked it to use the research I captured in a markdown file.&lt;/p>
 &lt;h3 id="understanding-everything-with-deepwiki">Understanding everything with DeepWiki
-&lt;/h3>&lt;p>For more detailed understanding of the whole project I fed it to &lt;a class="link" href="https://deepwiki.com/maiatoday/vapor" target="_blank" rel="noopener"
+&lt;/h3>&lt;p>For more detailed understanding of the whole project, I fed it to &lt;a class="link" href="https://deepwiki.com/maiatoday/vapor" target="_blank" rel="noopener"
 >DeepWiki&lt;/a>. This helped to make sense of some opaque parts such as the &lt;a class="link" href="https://deepwiki.com/maiatoday/vapor/5.2-glitch-effect" target="_blank" rel="noopener"
 >glitch shader code&lt;/a>.&lt;/p>
 &lt;h2 id="all-the-things">All the things
 &lt;/h2>&lt;p>The final composition of all the pieces is a quick and dirty &lt;code>Box&lt;/code> or two with everything inside.&lt;/p>
 &lt;p>A fun way to showcase hot reload is to run the app, in my case &lt;code>./gradlew runHot --mainClass MainKt --auto&lt;/code>. Then in a separate terminal run the &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/speedrun.kts" target="_blank" rel="noopener"
->speedrun&lt;/a> script. This script checks out the next tag in a series of git tags when you type enter in the terminal. Because the app is running auto updating hot reload, the changes appear progressively.&lt;/p>
+>speedrun&lt;/a> script. This script checks out a git tag in a series of git tags when you type enter in the terminal. Because the app is running auto updating hot reload, the changes appear progressively.&lt;/p>
 &lt;p>Tada!
 &lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/allthethings.png"
 width="1610"
