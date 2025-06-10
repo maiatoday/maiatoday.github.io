@@ -29,9 +29,9 @@ See and &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/ho
 >Floral Shoppe by Macintosh Plus&lt;/a> is still available and makes a perfect sound track for inspecting the code or reading this article.&lt;/p>
 &lt;p>&lt;em>Go ahead click the &lt;a class="link" href="https://vektroid.bandcamp.com/album/floral-shoppe" target="_blank" rel="noopener"
 >link&lt;/a> and start the music. I&amp;rsquo;ll wait.&lt;/em>&lt;/p>
-&lt;p>As we are on the cusp widespread changes in how we interact with technology, will we have nostalgia for the way we did thing in the &lt;em>olden days&lt;/em>? Will we even remember how it really was?&lt;/p>
+&lt;p>We are on the cusp of widespread changes in how we interact with technology. Will we have nostalgia for the way we did thing in the &lt;em>olden days&lt;/em>? Will we even remember how it really was?&lt;/p>
 &lt;h2 id="a-e-s-t-h-e-t-i-c">A-E-S-T-H-E-T-I-C
-&lt;/h2>&lt;p>Vaporwave is known for a strong aesthetic. Here is a jumpstart table with the technique and a note. &lt;strong>Click on the image to see the code&lt;/strong>. or scroll for more detail&lt;/p>
+&lt;/h2>&lt;p>Vaporwave is known for a strong aesthetic. Here is a jumpstart table with the technique and a note. &lt;strong>Click on the image to see the code&lt;/strong> or scroll for more detail&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -51,13 +51,13 @@ See and &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/ho
 &lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L37">&lt;img src="floorgrid.png" alt="floorgrid" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L37" target="_blank" rel="noopener"
 >code&lt;/a>&lt;/td>
 &lt;td>Canvas, Offset and Path, conversion of Offset to create perspective&lt;/td>
-&lt;td>a magenta grid looks like something from a pixelated game: A technology that we recognise and remember imperfectly with nostalgia. It also has a black and white tiled version.&lt;/td>
+&lt;td>a magenta grid looks like something from a pixelated game: a technology that we recognise and remember imperfectly with nostalgia. It also has a black and white tiled version.&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ImageFromPath.kt#L28">&lt;img src="colorshift.png" alt="colorshift" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ImageFromPath.kt#L28" target="_blank" rel="noopener"
 >code&lt;/a>&lt;/td>
 &lt;td>Image with a BitmapPainter, ColorFilter, colorMatrix, blur,&lt;/td>
-&lt;td>The choice of pngs, dolphins and old tech cassettes. Greek sculptures to remind us of beauty ideals. Having these elements floating makes them look surreal. Using blur and color filters change what the look like to simulate old VHS errors. Remembering past technology imperfectly. Human and digital memory is fallable.&lt;/td>
+&lt;td>The choice of pngs, dolphins and old tech cassettes. Greek sculptures to remind us of beauty ideals. Having these elements floating makes them look surreal. Using blur and color filters change what they look like to simulate old VHS errors. Remembering past technology imperfectly. Human and digital memory is fallable.&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Sunset.kt#L25">&lt;img src="sunset.png" alt="sunset" width="100">&lt;/a>&lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Sunset.kt#L25" target="_blank" rel="noopener"
@@ -70,14 +70,14 @@ See and &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/ho
 >code&lt;/a>&lt;/td>
 &lt;td>svg string converted to Path, transformation matrix to &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ScribblePath.kt#L7" target="_blank" rel="noopener"
 >convert from original points&lt;/a> to new composable&lt;/td>
-&lt;td>references to idealised worlds of palm trees. Unreleastic and rendered in Neon&lt;/td>
+&lt;td>references to idealised worlds of palm trees. Unreleastic and rendered in neon&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/MeshGradient.kt#L15">&lt;img src="mesh.png" alt="mesh" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/MeshGradient.kt#L15" target="_blank" rel="noopener"
 >code&lt;/a>&lt;/td>
 &lt;td>&lt;a class="link" href="https://gist.github.com/sinasamaki/05725557c945c5329fdba4a3494aaecb" target="_blank" rel="noopener"
 >mesh gradient by sinasamaki&lt;/a>&lt;/td>
-&lt;td>pastel colors dreamy, sureal, floaty, very vaporwave&lt;/td>
+&lt;td>pastel colors dreamy, sureal, floaty - very vaporwave-y&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L110">&lt;img src="glitch.png" alt="glitch" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L110" target="_blank" rel="noopener"
@@ -202,7 +202,7 @@ A&amp;#39; = p*R + q*G + r*B + s*A + t
 >Skia Shaders&lt;/a> with Compose. The setup is easy enough and the shader is copied into a string. I found a &lt;a class="link" href="https://www.shadertoy.com/view/4dXBW2" target="_blank" rel="noopener"
 >small glitch shader by Coolok&lt;/a> on ShaderToy. Integration is &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L126" target="_blank" rel="noopener"
 >straight forward&lt;/a> by creating a runtime Shader.&lt;/p>
-&lt;p>Understanding shader code is something else entirely. The core understanding is that shader code runs on every pixel, one by one. So the code has to make changes from the pixel perspective. The main entry point is &lt;code>mainImage&lt;/code>. You get the pixel coordinates in a two dimensional vector, &lt;code>fragCoord&lt;/code> and the code has to return the color of the pixel in a four dimensional vector (RGBA) in fragColor.&lt;/p>
+&lt;p>Understanding shader code is something else entirely. The core understanding is that shader code runs on a single pixel position not on the whole image. So the code has to make changes from the pixel perspective. The main entry point is &lt;code>mainImage&lt;/code>. You get the pixel coordinates in a two dimensional vector, &lt;code>fragCoord&lt;/code> and the code has to return the color of the pixel at that position in a four dimensional vector (RGBA) in &lt;code>fragColor&lt;/code>.&lt;/p>
 &lt;p>Hot reload is a useful tool to tweak and experiment with shaders to learn how they work. &lt;a class="link" href="https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5" target="_blank" rel="noopener"
 >This playlist&lt;/a>, on learning how to build shaders on ShaderToy, is a good resource to get started.&lt;/p>
 &lt;h2 id="enter-the-ais">Enter the AIs
@@ -212,7 +212,7 @@ A&amp;#39; = p*R + q*G + r*B + s*A + t
 >Gemini&lt;/a> for research.&lt;/p>
 &lt;h3 id="research-with-gemini">Research with Gemini
 &lt;/h3>&lt;p>To orient me and to be sure I understood vaporwave, Gemini did a deep research &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/vaporwave.md" target="_blank" rel="noopener"
->report&lt;/a> on the topic for me.&lt;/p>
+>report&lt;/a> on the topic for me. I AI-slop created the pixelated cassettes, palm outlines and the marble statue image in Gemini.&lt;/p>
 &lt;h3 id="plans-and-execution-with-junie">Plans and execution with Junie
 &lt;/h3>&lt;ol>
 &lt;li>make a list of &lt;em>compose techniques&lt;/em> to explore&lt;/li>
@@ -239,7 +239,9 @@ The answer was python code. I asked it to &lt;a class="link" href="https://githu
 >glitch shader code&lt;/a>.&lt;/p>
 &lt;h2 id="all-the-things">All the things
 &lt;/h2>&lt;p>The final composition of all the pieces is a quick and dirty &lt;code>Box&lt;/code> or two with everything inside.&lt;/p>
-&lt;p>A fun way to showcase hot reload is to run the app, in my case &lt;code>./gradlew runHot --mainClass MainKt --auto&lt;/code>. Then in a separate terminal run the &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/speedrun.kts" target="_blank" rel="noopener"
+&lt;p>A fun way to showcase hot reload is to run the app, in my case&lt;/p>
+&lt;p>&lt;code>./gradlew runHot --mainClass MainKt --auto&lt;/code>&lt;/p>
+&lt;p>Then in a separate terminal run the &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/speedrun.kts" target="_blank" rel="noopener"
 >speedrun&lt;/a> script. This script checks out a git tag in a series of git tags when you type enter in the terminal. Because the app is running auto updating hot reload, the changes appear progressively.&lt;/p>
 &lt;p>Tada!
 &lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/allthethings.png"
