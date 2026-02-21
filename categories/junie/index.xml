@@ -1,388 +1,388 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Junie on maiatoday</title><link>https://www.maiatoday.net/categories/junie/</link><description>Recent content in Junie on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Jun 2025 12:52:55 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/junie/index.xml" rel="self" type="application/rss+xml"/><item><title>Is it vaporwave? - Compose Hot reload</title><link>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</link><pubDate>Mon, 09 Jun 2025 12:52:55 +0200</pubDate><guid>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</guid><description>&lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/vapor.png" alt="Featured image of post Is it vaporwave? - Compose Hot reload" />&lt;h2 id="why">Why
-&lt;/h2>&lt;p>I want to play with the recently released &lt;a class="link" href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-hot-reload.html" target="_blank" rel="noopener"
->Compose Hot reload feature&lt;/a> by JetBrains. To do this I setup a Desktop compose project and picked a topic to draw and explore: &lt;a class="link" href="https://en.wikipedia.org/wiki/Vaporwave" target="_blank" rel="noopener"
->Vaporwave&lt;/a> Why? because Vaporwave is a curious Internet thing. It has a strong visual aesthetic that I wanted to recreate. It is intriguing. It is seems to be a fleeting transient phenomena: it is in the name &lt;em>vapor&lt;/em> and &lt;em>wave&lt;/em> and yet&amp;hellip; and yet we see it &lt;a class="link" href="https://www.aesdes.org/2025/01/23/vaporwave/" target="_blank" rel="noopener"
->pop&lt;/a> &lt;a class="link" href="https://www.creativeboom.com/insight/why-vaporwave-is-set-to-be-a-huge-design-trend-in-2023/" target="_blank" rel="noopener"
->up&lt;/a> in unexpected &lt;a class="link" href="https://rausgegangen.de/en/events/vaporwave-paradise-vaporwave-fest-cologne-0/" target="_blank" rel="noopener"
->places&lt;/a>. It is a form of &lt;a class="link" href="https://en.wikipedia.org/wiki/Hauntology#:~:text=Hauntology%20%28a%20portmanteau%20of%20haunting,if%20to%20haunt%20the%20present." target="_blank" rel="noopener"
->hauntology&lt;/a>: a cultural idea that returns from the past to haunt the present.&lt;/p>
-&lt;p>There will be ramblings interspersed and remixed with code, I will put the code at the beginning of the sections, so that you can easily skim if remix-rambling is not your thing. Yes, there is a &lt;a class="link" href="https://github.com/maiatoday/vapor" target="_blank" rel="noopener"
->matching repo&lt;/a>. Yes, it is a mix of organic hand coding and AI enhancements. I will &lt;a class="link" href="#enter-the-ais" >explain my process&lt;/a>.&lt;/p>
-&lt;p>But first&lt;/p>
-&lt;h2 id="setting-up-hot-reload">Setting up Hot Reload
-&lt;/h2>&lt;p>You need:&lt;/p>
-&lt;ol>
-&lt;li>A project that has a Compose desktop part. It can be stand alone or part of a multiplatform project&lt;/li>
-&lt;li>Use a Kotlin version 2.1.20 or later&lt;/li>
-&lt;li>Get the &lt;a class="link" href="https://github.com/JetBrains/compose-hot-reload" target="_blank" rel="noopener"
->plugin and the latest version information&lt;/a> and add it the place you keep your versions, like a toml file&lt;/li>
-&lt;li>Setup the plugin in your build.gradle.kts&lt;/li>
-&lt;li>Setup the foojay resolver&lt;/li>
-&lt;li>Run the main application from the gutter icon or command line. something like &lt;code>./gradlew runHot --mainClass MainKt --auto&lt;/code>&lt;/li>
-&lt;li>Optional extra make a run target for your particular main application if you have more than one
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Junie on maiatoday</title><link>https://www.maiatoday.net/categories/junie/</link><description>Recent content in Junie on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Jun 2025 12:52:55 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/junie/index.xml" rel="self" type="application/rss+xml"/><item><title>Is it vaporwave? - Compose Hot reload</title><link>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</link><pubDate>Mon, 09 Jun 2025 12:52:55 +0200</pubDate><guid>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</guid><description>&lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/vapor.png" alt="Featured image of post Is it vaporwave? - Compose Hot reload" /&gt;&lt;h2 id="why"&gt;Why
+&lt;/h2&gt;&lt;p&gt;I want to play with the recently released &lt;a class="link" href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-hot-reload.html" target="_blank" rel="noopener"
+&gt;Compose Hot reload feature&lt;/a&gt; by JetBrains. To do this I setup a Desktop compose project and picked a topic to draw and explore: &lt;a class="link" href="https://en.wikipedia.org/wiki/Vaporwave" target="_blank" rel="noopener"
+&gt;Vaporwave&lt;/a&gt; Why? because Vaporwave is a curious Internet thing. It has a strong visual aesthetic that I wanted to recreate. It is intriguing. It is seems to be a fleeting transient phenomena: it is in the name &lt;em&gt;vapor&lt;/em&gt; and &lt;em&gt;wave&lt;/em&gt; and yet&amp;hellip; and yet we see it &lt;a class="link" href="https://www.aesdes.org/2025/01/23/vaporwave/" target="_blank" rel="noopener"
+&gt;pop&lt;/a&gt; &lt;a class="link" href="https://www.creativeboom.com/insight/why-vaporwave-is-set-to-be-a-huge-design-trend-in-2023/" target="_blank" rel="noopener"
+&gt;up&lt;/a&gt; in unexpected &lt;a class="link" href="https://rausgegangen.de/en/events/vaporwave-paradise-vaporwave-fest-cologne-0/" target="_blank" rel="noopener"
+&gt;places&lt;/a&gt;. It is a form of &lt;a class="link" href="https://en.wikipedia.org/wiki/Hauntology#:~:text=Hauntology%20%28a%20portmanteau%20of%20haunting,if%20to%20haunt%20the%20present." target="_blank" rel="noopener"
+&gt;hauntology&lt;/a&gt;: a cultural idea that returns from the past to haunt the present.&lt;/p&gt;
+&lt;p&gt;There will be ramblings interspersed and remixed with code, I will put the code at the beginning of the sections, so that you can easily skim if remix-rambling is not your thing. Yes, there is a &lt;a class="link" href="https://github.com/maiatoday/vapor" target="_blank" rel="noopener"
+&gt;matching repo&lt;/a&gt;. Yes, it is a mix of organic hand coding and AI enhancements. I will &lt;a class="link" href="#enter-the-ais" &gt;explain my process&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But first&lt;/p&gt;
+&lt;h2 id="setting-up-hot-reload"&gt;Setting up Hot Reload
+&lt;/h2&gt;&lt;p&gt;You need:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A project that has a Compose desktop part. It can be stand alone or part of a multiplatform project&lt;/li&gt;
+&lt;li&gt;Use a Kotlin version 2.1.20 or later&lt;/li&gt;
+&lt;li&gt;Get the &lt;a class="link" href="https://github.com/JetBrains/compose-hot-reload" target="_blank" rel="noopener"
+&gt;plugin and the latest version information&lt;/a&gt; and add it the place you keep your versions, like a toml file&lt;/li&gt;
+&lt;li&gt;Setup the plugin in your build.gradle.kts&lt;/li&gt;
+&lt;li&gt;Setup the foojay resolver&lt;/li&gt;
+&lt;li&gt;Run the main application from the gutter icon or command line. something like &lt;code&gt;./gradlew runHot --mainClass MainKt --auto&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Optional extra make a run target for your particular main application if you have more than one
 See and &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/howToAddHotReload.md" target="_blank" rel="noopener"
->example&lt;/a> of each line in the sample repo&lt;/li>
-&lt;/ol>
-&lt;p>&lt;em>Wow these instructions are vague!&lt;/em> indeed things change quickly. Please follow the original repo. This post will date.&lt;/p>
-&lt;h2 id="origins-and-sound-track">Origins and Sound track
-&lt;/h2>&lt;p>Vaporwave appeared as a music genre with a strong aesthetic, some say in 2010. The iconic album &lt;a class="link" href="https://vektroid.bandcamp.com/album/floral-shoppe" target="_blank" rel="noopener"
->Floral Shoppe by Macintosh Plus&lt;/a> is still available and makes a perfect sound track for inspecting the code or reading this article.&lt;/p>
-&lt;p>&lt;em>Go ahead click the &lt;a class="link" href="https://vektroid.bandcamp.com/album/floral-shoppe" target="_blank" rel="noopener"
->link&lt;/a> and start the music. I&amp;rsquo;ll wait.&lt;/em>&lt;/p>
-&lt;p>We are on the cusp of widespread changes in how we interact with technology. Will we have nostalgia for the way we did thing in the &lt;em>olden days&lt;/em>? Will we even remember how it really was?&lt;/p>
-&lt;h2 id="a-e-s-t-h-e-t-i-c">A-E-S-T-H-E-T-I-C
-&lt;/h2>&lt;p>Vaporwave is known for a strong aesthetic. Here is a jumpstart table with the technique and a note. &lt;strong>Click on the image to see the code&lt;/strong> or scroll for more detail&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Image&lt;/th>
-&lt;th>Techniques&lt;/th>
-&lt;th>Notes&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Triangle.kt#L26">&lt;img src="triangle.png" alt="triangle" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Triangle.kt#L26" target="_blank" rel="noopener"
->code&lt;/a>&lt;/td>
-&lt;td>Path on Canvas, Linear gradient brush&lt;/td>
-&lt;td>Triangles are geometric shapes reminiscent of corporate logos of the eighties: an abstract shape that becomes a place holder for ambiguous concepts like digital consumerism&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L37">&lt;img src="floorgrid.png" alt="floorgrid" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L37" target="_blank" rel="noopener"
->code&lt;/a>&lt;/td>
-&lt;td>Canvas, Offset and Path, conversion of Offset to create perspective&lt;/td>
-&lt;td>a magenta grid looks like something from a pixelated game: a technology that we recognise and remember imperfectly with nostalgia. It also has a black and white tiled version.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ImageFromPath.kt#L28">&lt;img src="colorshift.png" alt="colorshift" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ImageFromPath.kt#L28" target="_blank" rel="noopener"
->code&lt;/a>&lt;/td>
-&lt;td>Image with a BitmapPainter, ColorFilter, colorMatrix, blur,&lt;/td>
-&lt;td>The choice of pngs, dolphins and old tech cassettes. Greek sculptures to remind us of beauty ideals. Having these elements floating makes them look surreal. Using blur and color filters change what they look like to simulate old VHS errors. Remembering past technology imperfectly. Human and digital memory is fallable.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Sunset.kt#L25">&lt;img src="sunset.png" alt="sunset" width="100">&lt;/a>&lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Sunset.kt#L25" target="_blank" rel="noopener"
->code&lt;/a>&lt;/td>
-&lt;td>drawCircle filled with gradients with color stops and Color.Transparent&lt;/td>
-&lt;td>a retro sunset in a perfect world remembered imperfectly&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/NeonPalm.kt#L20">&lt;img src="palm.png" alt="palm" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/NeonPalm.kt#L20" target="_blank" rel="noopener"
->code&lt;/a>&lt;/td>
-&lt;td>svg string converted to Path, transformation matrix to &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ScribblePath.kt#L7" target="_blank" rel="noopener"
->convert from original points&lt;/a> to new composable&lt;/td>
-&lt;td>references to idealised worlds of palm trees. Unreleastic and rendered in neon&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/MeshGradient.kt#L15">&lt;img src="mesh.png" alt="mesh" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/MeshGradient.kt#L15" target="_blank" rel="noopener"
->code&lt;/a>&lt;/td>
-&lt;td>&lt;a class="link" href="https://gist.github.com/sinasamaki/05725557c945c5329fdba4a3494aaecb" target="_blank" rel="noopener"
->mesh gradient by sinasamaki&lt;/a>&lt;/td>
-&lt;td>pastel colors dreamy, sureal, floaty - very vaporwave-y&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L110">&lt;img src="glitch.png" alt="glitch" width="100">&lt;/a> &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L110" target="_blank" rel="noopener"
->code&lt;/a>&lt;/td>
-&lt;td>Skia Shader language, RuntimeShader, composeRenderEffect in a modifier&lt;/td>
-&lt;td>digital artefacts degrade, bitrot and imperfect memories, glitches and remixes&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h3 id="fonts-and-colours">Fonts and Colours
-&lt;/h3>&lt;p>Pick some colours, not too many and stick with them. Pick some fonts, not too many and stick with them. I chose pastels for a dreamy, hazy vibe. There needs to be a pink and a teal, in my case Mulberry and RobinEggBlue.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/palette.png"
+&gt;example&lt;/a&gt; of each line in the sample repo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Wow these instructions are vague!&lt;/em&gt; indeed things change quickly. Please follow the original repo. This post will date.&lt;/p&gt;
+&lt;h2 id="origins-and-sound-track"&gt;Origins and Sound track
+&lt;/h2&gt;&lt;p&gt;Vaporwave appeared as a music genre with a strong aesthetic, some say in 2010. The iconic album &lt;a class="link" href="https://vektroid.bandcamp.com/album/floral-shoppe" target="_blank" rel="noopener"
+&gt;Floral Shoppe by Macintosh Plus&lt;/a&gt; is still available and makes a perfect sound track for inspecting the code or reading this article.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Go ahead click the &lt;a class="link" href="https://vektroid.bandcamp.com/album/floral-shoppe" target="_blank" rel="noopener"
+&gt;link&lt;/a&gt; and start the music. I&amp;rsquo;ll wait.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We are on the cusp of widespread changes in how we interact with technology. Will we have nostalgia for the way we did thing in the &lt;em&gt;olden days&lt;/em&gt;? Will we even remember how it really was?&lt;/p&gt;
+&lt;h2 id="a-e-s-t-h-e-t-i-c"&gt;A-E-S-T-H-E-T-I-C
+&lt;/h2&gt;&lt;p&gt;Vaporwave is known for a strong aesthetic. Here is a jumpstart table with the technique and a note. &lt;strong&gt;Click on the image to see the code&lt;/strong&gt; or scroll for more detail&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Image&lt;/th&gt;
+&lt;th&gt;Techniques&lt;/th&gt;
+&lt;th&gt;Notes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Triangle.kt#L26"&gt;&lt;img src="triangle.png" alt="triangle" width="100"&gt;&lt;/a&gt; &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Triangle.kt#L26" target="_blank" rel="noopener"
+&gt;code&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Path on Canvas, Linear gradient brush&lt;/td&gt;
+&lt;td&gt;Triangles are geometric shapes reminiscent of corporate logos of the eighties: an abstract shape that becomes a place holder for ambiguous concepts like digital consumerism&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L37"&gt;&lt;img src="floorgrid.png" alt="floorgrid" width="100"&gt;&lt;/a&gt; &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L37" target="_blank" rel="noopener"
+&gt;code&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Canvas, Offset and Path, conversion of Offset to create perspective&lt;/td&gt;
+&lt;td&gt;a magenta grid looks like something from a pixelated game: a technology that we recognise and remember imperfectly with nostalgia. It also has a black and white tiled version.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ImageFromPath.kt#L28"&gt;&lt;img src="colorshift.png" alt="colorshift" width="100"&gt;&lt;/a&gt; &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ImageFromPath.kt#L28" target="_blank" rel="noopener"
+&gt;code&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Image with a BitmapPainter, ColorFilter, colorMatrix, blur,&lt;/td&gt;
+&lt;td&gt;The choice of pngs, dolphins and old tech cassettes. Greek sculptures to remind us of beauty ideals. Having these elements floating makes them look surreal. Using blur and color filters change what they look like to simulate old VHS errors. Remembering past technology imperfectly. Human and digital memory is fallable.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Sunset.kt#L25"&gt;&lt;img src="sunset.png" alt="sunset" width="100"&gt;&lt;/a&gt;&lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/Sunset.kt#L25" target="_blank" rel="noopener"
+&gt;code&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;drawCircle filled with gradients with color stops and Color.Transparent&lt;/td&gt;
+&lt;td&gt;a retro sunset in a perfect world remembered imperfectly&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/NeonPalm.kt#L20"&gt;&lt;img src="palm.png" alt="palm" width="100"&gt;&lt;/a&gt; &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/NeonPalm.kt#L20" target="_blank" rel="noopener"
+&gt;code&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;svg string converted to Path, transformation matrix to &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/ScribblePath.kt#L7" target="_blank" rel="noopener"
+&gt;convert from original points&lt;/a&gt; to new composable&lt;/td&gt;
+&lt;td&gt;references to idealised worlds of palm trees. Unreleastic and rendered in neon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/MeshGradient.kt#L15"&gt;&lt;img src="mesh.png" alt="mesh" width="100"&gt;&lt;/a&gt; &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/MeshGradient.kt#L15" target="_blank" rel="noopener"
+&gt;code&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class="link" href="https://gist.github.com/sinasamaki/05725557c945c5329fdba4a3494aaecb" target="_blank" rel="noopener"
+&gt;mesh gradient by sinasamaki&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;pastel colors dreamy, sureal, floaty - very vaporwave-y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L110"&gt;&lt;img src="glitch.png" alt="glitch" width="100"&gt;&lt;/a&gt; &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L110" target="_blank" rel="noopener"
+&gt;code&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Skia Shader language, RuntimeShader, composeRenderEffect in a modifier&lt;/td&gt;
+&lt;td&gt;digital artefacts degrade, bitrot and imperfect memories, glitches and remixes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="fonts-and-colours"&gt;Fonts and Colours
+&lt;/h3&gt;&lt;p&gt;Pick some colours, not too many and stick with them. Pick some fonts, not too many and stick with them. I chose pastels for a dreamy, hazy vibe. There needs to be a pink and a teal, in my case Mulberry and RobinEggBlue.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/palette.png"
 width="300"
 height="175"
-srcset="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/palette_hu_ab0562a90fcf2244.png 480w, https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/palette_hu_ac18fd29687d289a.png 1024w"
+srcset="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/palette_hu_6e75e9d6316a2872.png 480w, https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/palette_hu_5a35f3c545c01a2.png 1024w"
 loading="lazy"
 alt="Palette"
 class="gallery-image"
 data-flex-grow="171"
 data-flex-basis="411px"
->&lt;/p>
-&lt;p>The fonts were retro, reminiscent of arcade games but also glitched and damaged because digital artefacts degrade, nothing is immune to bitrot. The fonts are found on &lt;a class="link" href="https://fonts.google.com/" target="_blank" rel="noopener"
->Google Fonts&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/fonts.png"
+&gt;&lt;/p&gt;
+&lt;p&gt;The fonts were retro, reminiscent of arcade games but also glitched and damaged because digital artefacts degrade, nothing is immune to bitrot. The fonts are found on &lt;a class="link" href="https://fonts.google.com/" target="_blank" rel="noopener"
+&gt;Google Fonts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/fonts.png"
 width="300"
 height="165"
-srcset="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/fonts_hu_254a8b3fe875ac80.png 480w, https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/fonts_hu_37acf8ac74ae2437.png 1024w"
+srcset="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/fonts_hu_85cb78cb2db42b58.png 480w, https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/fonts_hu_c537bfd05915198.png 1024w"
 loading="lazy"
 alt="Fonts"
 class="gallery-image"
 data-flex-grow="181"
 data-flex-basis="436px"
->&lt;/p>
-&lt;p>&lt;em>Let&amp;rsquo;s dig into a few of the details, shall we?&lt;/em>&lt;/p>
-&lt;h3 id="vanishing-floor">Vanishing Floor
-&lt;/h3>&lt;p>&lt;img src="floorgrid.png" alt="Floorgrid" width="200"> &lt;img src="floortiles.png" alt="Floortiles" width="200">&lt;/p>
-&lt;p>To get the ghostly magenta grid or the black and white tiling my inital prompt had Junie just drawing a bunch of squares. Not what I wanted at all, because as you will notice, the squares are slanted because of the one point perspective. With a bit of research I found a way to do a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look/perspective.md" target="_blank" rel="noopener"
->projection&lt;/a>. Each point that starts a line or is a corner of a tile is converted into a point projected onto the canvas. The same projection &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L67" target="_blank" rel="noopener"
->function&lt;/a> can be used whether we are drawing squares or lines. More &lt;a class="link" href="https://www.youtube.com/watch?v=KessaP_Fu10" target="_blank" rel="noopener"
->info&lt;/a> on one point perspective.&lt;/p>
-&lt;h3 id="cassettes-dolphins-statues-and-color-shifts">Cassettes, dolphins, statues and color shifts
-&lt;/h3>&lt;p>&lt;img src="cassettes.png" alt="Cassettes" width="200"> &lt;img src="dolphin.png" alt="Dolphin" width="200">&lt;img src="colorshift.png" alt="Colorshift" width="200">&lt;/p>
-&lt;p>A selection of pngs. This is nothing new. What makes this part interesting is you can apply a filter to the image to modify any of the color or alpha channel. How it works is you provide a matrix of values. This matrix will then be applied to each pixel.&lt;/p>
-&lt;p>The matrix looks like this:&lt;/p>
-&lt;pre tabindex="0">&lt;code>[ a, b, c, d, e,
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Let&amp;rsquo;s dig into a few of the details, shall we?&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="vanishing-floor"&gt;Vanishing Floor
+&lt;/h3&gt;&lt;p&gt;&lt;img src="floorgrid.png" alt="Floorgrid" width="200"&gt; &lt;img src="floortiles.png" alt="Floortiles" width="200"&gt;&lt;/p&gt;
+&lt;p&gt;To get the ghostly magenta grid or the black and white tiling my inital prompt had Junie just drawing a bunch of squares. Not what I wanted at all, because as you will notice, the squares are slanted because of the one point perspective. With a bit of research I found a way to do a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look/perspective.md" target="_blank" rel="noopener"
+&gt;projection&lt;/a&gt;. Each point that starts a line or is a corner of a tile is converted into a point projected onto the canvas. The same projection &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/aesthetic/VanishingFloor.kt#L67" target="_blank" rel="noopener"
+&gt;function&lt;/a&gt; can be used whether we are drawing squares or lines. More &lt;a class="link" href="https://www.youtube.com/watch?v=KessaP_Fu10" target="_blank" rel="noopener"
+&gt;info&lt;/a&gt; on one point perspective.&lt;/p&gt;
+&lt;h3 id="cassettes-dolphins-statues-and-color-shifts"&gt;Cassettes, dolphins, statues and color shifts
+&lt;/h3&gt;&lt;p&gt;&lt;img src="cassettes.png" alt="Cassettes" width="200"&gt; &lt;img src="dolphin.png" alt="Dolphin" width="200"&gt;&lt;img src="colorshift.png" alt="Colorshift" width="200"&gt;&lt;/p&gt;
+&lt;p&gt;A selection of pngs. This is nothing new. What makes this part interesting is you can apply a filter to the image to modify any of the color or alpha channel. How it works is you provide a matrix of values. This matrix will then be applied to each pixel.&lt;/p&gt;
+&lt;p&gt;The matrix looks like this:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[ a, b, c, d, e,
 f, g, h, i, j,
 k, l, m, n, o,
 p, q, r, s, t ]
-&lt;/code>&lt;/pre>&lt;p>If you take a color &lt;code>[R, G, B, A]&lt;/code> and apply the matrix you get this&lt;/p>
-&lt;pre tabindex="0">&lt;code>R&amp;#39; = a*R + b*G + c*B + d*A + e
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you take a color &lt;code&gt;[R, G, B, A]&lt;/code&gt; and apply the matrix you get this&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;R&amp;#39; = a*R + b*G + c*B + d*A + e
 G&amp;#39; = f*R + g*G + h*B + i*A + j
 B&amp;#39; = k*R + l*G + m*B + n*A + o
 A&amp;#39; = p*R + q*G + r*B + s*A + t
-&lt;/code>&lt;/pre>&lt;p>A matrix that inverse the image looks like this:&lt;/p>
-&lt;pre tabindex="0">&lt;code>[ -1, 0, 0, 0, 255,
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A matrix that inverse the image looks like this:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[ -1, 0, 0, 0, 255,
 0, -1, 0, 0, 255,
 0, 0, -1, 0, 255,
 0, 0, 0, 1, 0 ]
-&lt;/code>&lt;/pre>&lt;p>This matrix gives a lot of power to change the original image.&lt;/p>
-&lt;p>We can also add a blur modifier and flip the images horizontally or vertically. Horizontal or vertical flip is achieved by adjusting the scale.&lt;/p>
-&lt;p>More in the &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/ColorMatrix" target="_blank" rel="noopener"
->official docs&lt;/a>.&lt;/p>
-&lt;h3 id="sunset">Sunset
-&lt;/h3>&lt;img src="sunset.png" alt="Sunset" width="200">
-&lt;p>The clue to the retro sunset is in a combination of gradients with color stops and using Color.Transparent.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">val&lt;/span> &lt;span class="py">brushRetro&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nc">Brush&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">verticalGradient&lt;/span>&lt;span class="p">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">colorStops&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">arrayOf&lt;/span>&lt;span class="p">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.0f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">topColor&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.43f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">topColor&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.43f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nc">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Transparent&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.45f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nc">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Transparent&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.45f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">topColor&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.57f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">middleColor&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.57f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nc">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Transparent&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.6f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nc">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Transparent&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.6f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">middleColor&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.7f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">middleColor&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.7f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nc">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Transparent&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.74f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nc">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Transparent&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.74f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">middleColor&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.84f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">bottomColor&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.84f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nc">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Transparent&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.9f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nc">Color&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Transparent&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">0.9f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">bottomColor&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1.0f&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">bottomColor&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">),&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">startY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">0f&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">endY&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">height&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="palm-tree-svg">Palm tree svg
-&lt;/h3>&lt;img src="palm.png" alt="Sunset" width="200">
-&lt;p>It is possible to extract the points of a simple svg. Looking at the sample &lt;a class="link" href="p3.svg" >palm tree file&lt;/a> find the following line.&lt;/p>
-&lt;img src="svg-points.png" alt="Sunset" width="500">
-&lt;p>Copy the string into the code and convert it to a Path. The problem is the points are relative to the coordinate system and size of the svg image and not the resulting composable view. It needs to be transformed. The conversion is based on the original path and the destination composable.&lt;/p>
-&lt;p>The conversion code looks like this&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">fromBoundsToComposeView&lt;/span>&lt;span class="p">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">bounds&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Rect&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Rect&lt;/span>&lt;span class="p">(-&lt;/span>&lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="m">1f&lt;/span>&lt;span class="p">),&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">width&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">height&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Float&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">):&lt;/span> &lt;span class="n">Matrix&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">originalWidth&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">bounds&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">right&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="n">bounds&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">left&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">originalHeight&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">bounds&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">bottom&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="n">bounds&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">top&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">scale&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">min&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="n">originalWidth&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">height&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="n">originalHeight&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">newLeft&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">bounds&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">left&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="n">scale&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="n">originalWidth&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">newTop&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">bounds&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">top&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="n">scale&lt;/span> &lt;span class="p">-&lt;/span> &lt;span class="n">originalHeight&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">/&lt;/span> &lt;span class="m">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">matrix&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Matrix&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">matrix&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">translate&lt;/span>&lt;span class="p">(-&lt;/span>&lt;span class="n">newLeft&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="n">newTop&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">matrix&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">scale&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">scale&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">scale&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">matrix&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Apply the resulting matrix to the image. &lt;code>path.transform(matrix)&lt;/code>&lt;/p>
-&lt;h3 id="mesh-gradient">Mesh Gradient
-&lt;/h3>&lt;img src="mesh.png" alt="Mesh gradient" width="200">
-&lt;p>There is a really useful &lt;a class="link" href="https://gist.github.com/sinasamaki/05725557c945c5329fdba4a3494aaecb" target="_blank" rel="noopener"
->mesh gradient modifier&lt;/a> created by sinasamaki with a great &lt;a class="link" href="https://www.sinasamaki.com/mesh-gradients-in-jetpack-compose/" target="_blank" rel="noopener"
->writeup&lt;/a> on how it works. Hot reload is useful for tuning the colors of the gradients. There is also a &lt;a class="link" href="https://github.com/c5inco/Mesh" target="_blank" rel="noopener"
->visual tool&lt;/a> to set the gradient up.&lt;/p>
-&lt;img src="meshtool.png" alt="Mesh gradient" width="400">
-&lt;h3 id="glitches">Glitches
-&lt;/h3>&lt;img src="glitch.png" alt="Glitch" width="200">
-&lt;p>It is possible to use &lt;a class="link" href="https://skia.org/docs/user/sksl/" target="_blank" rel="noopener"
->Skia Shaders&lt;/a> with Compose. The setup is easy enough and the shader is copied into a string. I found a &lt;a class="link" href="https://www.shadertoy.com/view/4dXBW2" target="_blank" rel="noopener"
->small glitch shader by Coolok&lt;/a> on ShaderToy. Integration is &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L126" target="_blank" rel="noopener"
->straight forward&lt;/a> by creating a runtime Shader.&lt;/p>
-&lt;p>Understanding shader code is something else entirely. The core understanding is that shader code runs on a single pixel position not on the whole image. So the code has to make changes from the pixel perspective. The main entry point is &lt;code>mainImage&lt;/code>. You get the pixel coordinates in a two dimensional vector, &lt;code>fragCoord&lt;/code> and the code has to return the color of the pixel at that position in a four dimensional vector (RGBA) in &lt;code>fragColor&lt;/code>.&lt;/p>
-&lt;p>Hot reload is a useful tool to tweak and experiment with shaders to learn how they work. &lt;a class="link" href="https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5" target="_blank" rel="noopener"
->This playlist&lt;/a>, on learning how to build shaders on ShaderToy, is a good resource to get started.&lt;/p>
-&lt;h2 id="enter-the-ais">Enter the AIs
-&lt;/h2>&lt;p>Of course I had help - &lt;a class="link" href="https://www.jetbrains.com/junie/" target="_blank" rel="noopener"
->Junie&lt;/a> and &lt;a class="link" href="https://www.jetbrains.com/ai-assistant/" target="_blank" rel="noopener"
->AI assistent&lt;/a> as well as &lt;a class="link" href="https://gemini.google.com/app" target="_blank" rel="noopener"
->Gemini&lt;/a> for research.&lt;/p>
-&lt;h3 id="research-with-gemini">Research with Gemini
-&lt;/h3>&lt;p>To orient me and to be sure I understood vaporwave, Gemini did a deep research &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/vaporwave.md" target="_blank" rel="noopener"
->report&lt;/a> on the topic for me. I AI-slop created the pixelated cassettes, palm outlines and the marble statue image in Gemini.&lt;/p>
-&lt;h3 id="plans-and-execution-with-junie">Plans and execution with Junie
-&lt;/h3>&lt;ol>
-&lt;li>make a list of &lt;em>compose techniques&lt;/em> to explore&lt;/li>
-&lt;li>make a list of &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look/aesthetics.md" target="_blank" rel="noopener"
->vaporwave aesthetic elements&lt;/a>&lt;/li>
-&lt;li>create a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/README.md" target="_blank" rel="noopener"
->readme&lt;/a> and a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/.junie/guidelines.md" target="_blank" rel="noopener"
->guidelines&lt;/a> file&lt;/li>
-&lt;li>collect visual references, blog posts with code snippets, bitmaps, images, fonts and colours in a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look" target="_blank" rel="noopener"
->docs folder&lt;/a>&lt;/li>
-&lt;li>take each of the aesthetic elements and ask Junie to &lt;em>build&lt;/em> one sample element and use it in a specific composable e.g.
-&lt;code>Build an equilateral triangle composable that draws on the Canvas and uses a gradient brush. Show and example of this composable in the SoloTriangle composable&lt;/code>&lt;/li>
-&lt;li>check, commit, tag and goto step 5&lt;/li>
-&lt;/ol>
-&lt;p>I didn&amp;rsquo;t let Junie just do the whole list. I prompted each element separately so that I could check it out and tweak it before I commited and tagged. I also started a fresh context and a new task for each step. This worked well because the &lt;code>guidelines.md&lt;/code> and &lt;code>docs/look&lt;/code> folder kept the continuity.&lt;/p>
-&lt;h3 id="inbetween-questions-with-ai-assistant">Inbetween questions with AI assistant
-&lt;/h3>&lt;p>While Junie was busy building things, I use the AI assistant to research info with oneshot questions for the next task. e.g.
-&lt;code>How do I draw a perspective grid that has a single vanishing point on a flat surface&lt;/code>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This matrix gives a lot of power to change the original image.&lt;/p&gt;
+&lt;p&gt;We can also add a blur modifier and flip the images horizontally or vertically. Horizontal or vertical flip is achieved by adjusting the scale.&lt;/p&gt;
+&lt;p&gt;More in the &lt;a class="link" href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/ColorMatrix" target="_blank" rel="noopener"
+&gt;official docs&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="sunset"&gt;Sunset
+&lt;/h3&gt;&lt;img src="sunset.png" alt="Sunset" width="200"&gt;
+&lt;p&gt;The clue to the retro sunset is in a combination of gradients with color stops and using Color.Transparent.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="py"&gt;brushRetro&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nc"&gt;Brush&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;verticalGradient&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;colorStops&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;arrayOf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.0f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;topColor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.43f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;topColor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.43f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="nc"&gt;Color&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.45f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="nc"&gt;Color&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.45f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;topColor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.57f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;middleColor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.57f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="nc"&gt;Color&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.6f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="nc"&gt;Color&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.6f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;middleColor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.7f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;middleColor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.7f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="nc"&gt;Color&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.74f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="nc"&gt;Color&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.74f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;middleColor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.84f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;bottomColor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.84f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="nc"&gt;Color&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.9f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="nc"&gt;Color&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;0.9f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;bottomColor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="mf"&gt;1.0f&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;bottomColor&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;startY&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;endY&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="palm-tree-svg"&gt;Palm tree svg
+&lt;/h3&gt;&lt;img src="palm.png" alt="Sunset" width="200"&gt;
+&lt;p&gt;It is possible to extract the points of a simple svg. Looking at the sample &lt;a class="link" href="p3.svg" &gt;palm tree file&lt;/a&gt; find the following line.&lt;/p&gt;
+&lt;img src="svg-points.png" alt="Sunset" width="500"&gt;
+&lt;p&gt;Copy the string into the code and convert it to a Path. The problem is the points are relative to the coordinate system and size of the svg image and not the resulting composable view. It needs to be transformed. The conversion is based on the original path and the destination composable.&lt;/p&gt;
+&lt;p&gt;The conversion code looks like this&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-kotlin" data-lang="kotlin"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;fromBoundsToComposeView&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;bounds&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Rect&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Rect&lt;/span&gt;&lt;span class="p"&gt;(-&lt;/span&gt;&lt;span class="mf"&gt;1f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1f&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Float&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Float&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;):&lt;/span&gt; &lt;span class="n"&gt;Matrix&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="py"&gt;originalWidth&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bounds&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;right&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="n"&gt;bounds&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;left&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="py"&gt;originalHeight&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bounds&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bottom&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="n"&gt;bounds&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;top&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="py"&gt;scale&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;min&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;width&lt;/span&gt; &lt;span class="p"&gt;/&lt;/span&gt; &lt;span class="n"&gt;originalWidth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt; &lt;span class="p"&gt;/&lt;/span&gt; &lt;span class="n"&gt;originalHeight&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="py"&gt;newLeft&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bounds&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;left&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;width&lt;/span&gt; &lt;span class="p"&gt;/&lt;/span&gt; &lt;span class="n"&gt;scale&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="n"&gt;originalWidth&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="py"&gt;newTop&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bounds&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;top&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;height&lt;/span&gt; &lt;span class="p"&gt;/&lt;/span&gt; &lt;span class="n"&gt;scale&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="n"&gt;originalHeight&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="py"&gt;matrix&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Matrix&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;matrix&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;translate&lt;/span&gt;&lt;span class="p"&gt;(-&lt;/span&gt;&lt;span class="n"&gt;newLeft&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;-&lt;/span&gt;&lt;span class="n"&gt;newTop&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;matrix&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;scale&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;scale&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;scale&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;matrix&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Apply the resulting matrix to the image. &lt;code&gt;path.transform(matrix)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="mesh-gradient"&gt;Mesh Gradient
+&lt;/h3&gt;&lt;img src="mesh.png" alt="Mesh gradient" width="200"&gt;
+&lt;p&gt;There is a really useful &lt;a class="link" href="https://gist.github.com/sinasamaki/05725557c945c5329fdba4a3494aaecb" target="_blank" rel="noopener"
+&gt;mesh gradient modifier&lt;/a&gt; created by sinasamaki with a great &lt;a class="link" href="https://www.sinasamaki.com/mesh-gradients-in-jetpack-compose/" target="_blank" rel="noopener"
+&gt;writeup&lt;/a&gt; on how it works. Hot reload is useful for tuning the colors of the gradients. There is also a &lt;a class="link" href="https://github.com/c5inco/Mesh" target="_blank" rel="noopener"
+&gt;visual tool&lt;/a&gt; to set the gradient up.&lt;/p&gt;
+&lt;img src="meshtool.png" alt="Mesh gradient" width="400"&gt;
+&lt;h3 id="glitches"&gt;Glitches
+&lt;/h3&gt;&lt;img src="glitch.png" alt="Glitch" width="200"&gt;
+&lt;p&gt;It is possible to use &lt;a class="link" href="https://skia.org/docs/user/sksl/" target="_blank" rel="noopener"
+&gt;Skia Shaders&lt;/a&gt; with Compose. The setup is easy enough and the shader is copied into a string. I found a &lt;a class="link" href="https://www.shadertoy.com/view/4dXBW2" target="_blank" rel="noopener"
+&gt;small glitch shader by Coolok&lt;/a&gt; on ShaderToy. Integration is &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/62643066a19564a06507ef86a399aead1527994e/src/main/kotlin/utils/GlitchShader.kt#L126" target="_blank" rel="noopener"
+&gt;straight forward&lt;/a&gt; by creating a runtime Shader.&lt;/p&gt;
+&lt;p&gt;Understanding shader code is something else entirely. The core understanding is that shader code runs on a single pixel position not on the whole image. So the code has to make changes from the pixel perspective. The main entry point is &lt;code&gt;mainImage&lt;/code&gt;. You get the pixel coordinates in a two dimensional vector, &lt;code&gt;fragCoord&lt;/code&gt; and the code has to return the color of the pixel at that position in a four dimensional vector (RGBA) in &lt;code&gt;fragColor&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Hot reload is a useful tool to tweak and experiment with shaders to learn how they work. &lt;a class="link" href="https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5" target="_blank" rel="noopener"
+&gt;This playlist&lt;/a&gt;, on learning how to build shaders on ShaderToy, is a good resource to get started.&lt;/p&gt;
+&lt;h2 id="enter-the-ais"&gt;Enter the AIs
+&lt;/h2&gt;&lt;p&gt;Of course I had help - &lt;a class="link" href="https://www.jetbrains.com/junie/" target="_blank" rel="noopener"
+&gt;Junie&lt;/a&gt; and &lt;a class="link" href="https://www.jetbrains.com/ai-assistant/" target="_blank" rel="noopener"
+&gt;AI assistent&lt;/a&gt; as well as &lt;a class="link" href="https://gemini.google.com/app" target="_blank" rel="noopener"
+&gt;Gemini&lt;/a&gt; for research.&lt;/p&gt;
+&lt;h3 id="research-with-gemini"&gt;Research with Gemini
+&lt;/h3&gt;&lt;p&gt;To orient me and to be sure I understood vaporwave, Gemini did a deep research &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/vaporwave.md" target="_blank" rel="noopener"
+&gt;report&lt;/a&gt; on the topic for me. I AI-slop created the pixelated cassettes, palm outlines and the marble statue image in Gemini.&lt;/p&gt;
+&lt;h3 id="plans-and-execution-with-junie"&gt;Plans and execution with Junie
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;make a list of &lt;em&gt;compose techniques&lt;/em&gt; to explore&lt;/li&gt;
+&lt;li&gt;make a list of &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look/aesthetics.md" target="_blank" rel="noopener"
+&gt;vaporwave aesthetic elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;create a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/README.md" target="_blank" rel="noopener"
+&gt;readme&lt;/a&gt; and a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/.junie/guidelines.md" target="_blank" rel="noopener"
+&gt;guidelines&lt;/a&gt; file&lt;/li&gt;
+&lt;li&gt;collect visual references, blog posts with code snippets, bitmaps, images, fonts and colours in a &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look" target="_blank" rel="noopener"
+&gt;docs folder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;take each of the aesthetic elements and ask Junie to &lt;em&gt;build&lt;/em&gt; one sample element and use it in a specific composable e.g.
+&lt;code&gt;Build an equilateral triangle composable that draws on the Canvas and uses a gradient brush. Show and example of this composable in the SoloTriangle composable&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;check, commit, tag and goto step 5&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I didn&amp;rsquo;t let Junie just do the whole list. I prompted each element separately so that I could check it out and tweak it before I commited and tagged. I also started a fresh context and a new task for each step. This worked well because the &lt;code&gt;guidelines.md&lt;/code&gt; and &lt;code&gt;docs/look&lt;/code&gt; folder kept the continuity.&lt;/p&gt;
+&lt;h3 id="inbetween-questions-with-ai-assistant"&gt;Inbetween questions with AI assistant
+&lt;/h3&gt;&lt;p&gt;While Junie was busy building things, I use the AI assistant to research info with oneshot questions for the next task. e.g.
+&lt;code&gt;How do I draw a perspective grid that has a single vanishing point on a flat surface&lt;/code&gt;
 The answer was python code. I asked it to &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/docs/look/perspective.md" target="_blank" rel="noopener"
->explain&lt;/a> the python code. The chat session didn&amp;rsquo;t interfere with what Junie was doing. In my next prompt to Junie, I asked it to use the research I captured in a markdown file.&lt;/p>
-&lt;h3 id="understanding-everything-with-deepwiki">Understanding everything with DeepWiki
-&lt;/h3>&lt;p>For more detailed understanding of the whole project, I fed it to &lt;a class="link" href="https://deepwiki.com/maiatoday/vapor" target="_blank" rel="noopener"
->DeepWiki&lt;/a>. This helped to make sense of some opaque parts such as the &lt;a class="link" href="https://deepwiki.com/maiatoday/vapor/5.2-glitch-effect" target="_blank" rel="noopener"
->glitch shader code&lt;/a>.&lt;/p>
-&lt;h2 id="all-the-things">All the things
-&lt;/h2>&lt;p>The final composition of all the pieces is a quick and dirty &lt;code>Box&lt;/code> or two with everything inside.&lt;/p>
-&lt;p>A fun way to showcase hot reload is to run the app, in my case&lt;/p>
-&lt;p>&lt;code>./gradlew runHot --mainClass MainKt --auto&lt;/code>&lt;/p>
-&lt;p>Then in a separate terminal run the &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/speedrun.kts" target="_blank" rel="noopener"
->speedrun&lt;/a> script. This script checks out a git tag in a series of git tags when you type enter in the terminal. Because the app is running auto updating hot reload, the changes appear progressively.&lt;/p>
-&lt;p>Tada!
+&gt;explain&lt;/a&gt; the python code. The chat session didn&amp;rsquo;t interfere with what Junie was doing. In my next prompt to Junie, I asked it to use the research I captured in a markdown file.&lt;/p&gt;
+&lt;h3 id="understanding-everything-with-deepwiki"&gt;Understanding everything with DeepWiki
+&lt;/h3&gt;&lt;p&gt;For more detailed understanding of the whole project, I fed it to &lt;a class="link" href="https://deepwiki.com/maiatoday/vapor" target="_blank" rel="noopener"
+&gt;DeepWiki&lt;/a&gt;. This helped to make sense of some opaque parts such as the &lt;a class="link" href="https://deepwiki.com/maiatoday/vapor/5.2-glitch-effect" target="_blank" rel="noopener"
+&gt;glitch shader code&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="all-the-things"&gt;All the things
+&lt;/h2&gt;&lt;p&gt;The final composition of all the pieces is a quick and dirty &lt;code&gt;Box&lt;/code&gt; or two with everything inside.&lt;/p&gt;
+&lt;p&gt;A fun way to showcase hot reload is to run the app, in my case&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./gradlew runHot --mainClass MainKt --auto&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then in a separate terminal run the &lt;a class="link" href="https://github.com/maiatoday/vapor/blob/main/speedrun.kts" target="_blank" rel="noopener"
+&gt;speedrun&lt;/a&gt; script. This script checks out a git tag in a series of git tags when you type enter in the terminal. Because the app is running auto updating hot reload, the changes appear progressively.&lt;/p&gt;
+&lt;p&gt;Tada!
 &lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/allthethings.png"
 width="1610"
 height="1530"
-srcset="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/allthethings_hu_580f3f7377b6195d.png 480w, https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/allthethings_hu_f03deb5a38316e45.png 1024w"
+srcset="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/allthethings_hu_a80bd3430a0a5c0c.png 480w, https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/allthethings_hu_fd08b2d7a41e87e7.png 1024w"
 loading="lazy"
 alt="All the things"
 class="gallery-image"
 data-flex-grow="105"
 data-flex-basis="252px"
->&lt;/p>
-&lt;p>Live demo video coming to a browser near you soon.&lt;/p></description></item><item><title>Vibecoding a Totoro tribute with Junie</title><link>https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/</link><pubDate>Sun, 02 Mar 2025 22:02:23 +0100</pubDate><guid>https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/</guid><description>&lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/topTotoro.png" alt="Featured image of post Vibecoding a Totoro tribute with Junie" />&lt;p>Sunday afternoon. Perfect time to hang out with &lt;a class="link" href="https://www.jetbrains.com/junie/" target="_blank" rel="noopener"
->Junie&lt;/a>. I want to refresh my memory on some Compose drawing techniques. I am not really in the mood for Googling. I don&amp;rsquo;t need a production ready app. I really just want to mess around. How far can I &lt;a class="link" href="https://x.com/karpathy/status/1886192184808149383" target="_blank" rel="noopener"
->vibe code&lt;/a> this. I&amp;rsquo;ll start off by setting Junie to brave mode.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/brave.png"
+&gt;&lt;/p&gt;
+&lt;p&gt;Live demo video coming to a browser near you soon.&lt;/p&gt;</description></item><item><title>Vibecoding a Totoro tribute with Junie</title><link>https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/</link><pubDate>Sun, 02 Mar 2025 22:02:23 +0100</pubDate><guid>https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/</guid><description>&lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/topTotoro.png" alt="Featured image of post Vibecoding a Totoro tribute with Junie" /&gt;&lt;p&gt;Sunday afternoon. Perfect time to hang out with &lt;a class="link" href="https://www.jetbrains.com/junie/" target="_blank" rel="noopener"
+&gt;Junie&lt;/a&gt;. I want to refresh my memory on some Compose drawing techniques. I am not really in the mood for Googling. I don&amp;rsquo;t need a production ready app. I really just want to mess around. How far can I &lt;a class="link" href="https://x.com/karpathy/status/1886192184808149383" target="_blank" rel="noopener"
+&gt;vibe code&lt;/a&gt; this. I&amp;rsquo;ll start off by setting Junie to brave mode.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/brave.png"
 width="296"
 height="96"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/brave_hu_5b0d6ee963cf5fba.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/brave_hu_5591a08bfd7362db.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/brave_hu_dcea2aa10ac1f730.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/brave_hu_89039e42ee20abf4.png 1024w"
 loading="lazy"
 alt="brave"
 class="gallery-image"
 data-flex-grow="308"
 data-flex-basis="740px"
->&lt;/p>
-&lt;p>I added an image and some colours to the repo of a blank compose desktop project. I also put a copy of an &lt;a class="link" href="https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/" target="_blank" rel="noopener"
->older blogpost&lt;/a> of mine with some drawing techniques. I set some ground rules with the first prompt and then just keep asking Junie to add things.&lt;/p>
-&lt;pre tabindex="0">&lt;code>Create a guidelines file with the following information and update the README.md file.
+&gt;&lt;/p&gt;
+&lt;p&gt;I added an image and some colours to the repo of a blank compose desktop project. I also put a copy of an &lt;a class="link" href="https://www.maiatoday.net/p/how-to-build-wrapped-2023-in-compose-animation/" target="_blank" rel="noopener"
+&gt;older blogpost&lt;/a&gt; of mine with some drawing techniques. I set some ground rules with the first prompt and then just keep asking Junie to add things.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Create a guidelines file with the following information and update the README.md file.
 Let&amp;#39;s explore some visual techniques in this Kotlin multiplatform project. The aim is to go for variety of techniques. Feel free to use the canvas, brush, paint, gradient, lines, paths, rounded polygons, skia shaders, text, colours, shapes. Or anything that will create an interesting visual effect. Animations are not necessary but can be added. The project does not have a practical application other than to demonstrate how to create interesting visual elements and to have some fun. It is a visual tribute to the Studio Ghibli film, [My Neighbor Totoro](https://en.wikipedia.org/wiki/My_Neighbor_Totoro).
 * It does not need any tests
 * Layer all the visual techniques on the main composable screen.
 * Find the suggested fonts in the resources folder
 * Find inspiration in the docs/looks folder and in the docs/blogpost folder
-&lt;/code>&lt;/pre>&lt;p>I think Junie &lt;a class="link" href="https://github.com/maiatoday/playdate/blob/main/GUIDELINES.md" target="_blank" rel="noopener"
->got&lt;/a> what I wanted to do, I never explained what Totoro looks like but it figured out something from the included inspiration image.&lt;/p>
-&lt;p>The early experiments needed some tweaking&lt;/p>
-&lt;img src="firstTry.jpg" style="width:25%" width="{{ .Width }}" height="{{ .Height }}">
-&lt;p>The only time the project didn&amp;rsquo;t run was when Junie didn&amp;rsquo;t download the new fonts but I found the instructions on where to get the fonts added to the README.md. I had no real expectations so I&amp;rsquo;m pretty happy with the final result. Animating rain and clickable wobbling Totoro.&lt;/p>
-&lt;p>No explanations really what can I say I didn&amp;rsquo;t read the code 🙈, but you &lt;a class="link" href="https://github.com/maiatoday/playdate/tree/main" target="_blank" rel="noopener"
->can&lt;/a>. I can&amp;rsquo;t vouch for the conciseness nor the elegance. I&amp;rsquo;ll just post a selection of prompts and the final result.&lt;/p>
-&lt;video width=60% controls autoplay>
-&lt;source src="totorotribute.webm" type="video/webm">
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I think Junie &lt;a class="link" href="https://github.com/maiatoday/playdate/blob/main/GUIDELINES.md" target="_blank" rel="noopener"
+&gt;got&lt;/a&gt; what I wanted to do, I never explained what Totoro looks like but it figured out something from the included inspiration image.&lt;/p&gt;
+&lt;p&gt;The early experiments needed some tweaking&lt;/p&gt;
+&lt;img src="firstTry.jpg" style="width:25%" width="{{ .Width }}" height="{{ .Height }}"&gt;
+&lt;p&gt;The only time the project didn&amp;rsquo;t run was when Junie didn&amp;rsquo;t download the new fonts but I found the instructions on where to get the fonts added to the README.md. I had no real expectations so I&amp;rsquo;m pretty happy with the final result. Animating rain and clickable wobbling Totoro.&lt;/p&gt;
+&lt;p&gt;No explanations really what can I say I didn&amp;rsquo;t read the code 🙈, but you &lt;a class="link" href="https://github.com/maiatoday/playdate/tree/main" target="_blank" rel="noopener"
+&gt;can&lt;/a&gt;. I can&amp;rsquo;t vouch for the conciseness nor the elegance. I&amp;rsquo;ll just post a selection of prompts and the final result.&lt;/p&gt;
+&lt;video width=60% controls autoplay&gt;
+&lt;source src="totorotribute.webm" type="video/webm"&gt;
 Your browser does not support the video tag.
-&lt;/video>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s02.png"
+&lt;/video&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s02.png"
 width="1324"
 height="552"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s02_hu_20d73bf4cbb4733a.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s02_hu_ef266afd2131223a.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s02_hu_8fae8d5df460f4fc.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s02_hu_5d39c71fea7bbddf.png 1024w"
 loading="lazy"
 alt="s02"
 class="gallery-image"
 data-flex-grow="239"
 data-flex-basis="575px"
->
+&gt;
 &lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s03.png"
 width="1234"
 height="104"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s03_hu_d62bc1f134f99f97.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s03_hu_3ed733e2566e400d.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s03_hu_a5c696289d4c8460.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s03_hu_35ad39e940a287ac.png 1024w"
 loading="lazy"
 alt="s03"
 class="gallery-image"
 data-flex-grow="1186"
 data-flex-basis="2847px"
->
+&gt;
 &lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s04.png"
 width="1020"
 height="130"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s04_hu_ba2360ad1427b30b.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s04_hu_29a19493a9f49a98.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s04_hu_935ed8addd7bd027.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s04_hu_13a1a609f986b6a5.png 1024w"
 loading="lazy"
 alt="s04"
 class="gallery-image"
 data-flex-grow="784"
 data-flex-basis="1883px"
->
+&gt;
 &lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s05.png"
 width="1028"
 height="102"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s05_hu_c425fcb886fb980e.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s05_hu_120030e23d74b494.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s05_hu_808ec4bac4ddd0bc.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s05_hu_4d91959e5c39fefb.png 1024w"
 loading="lazy"
 alt="s05"
 class="gallery-image"
 data-flex-grow="1007"
 data-flex-basis="2418px"
->
+&gt;
 &lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s06.png"
 width="570"
 height="94"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s06_hu_873170c51974d2ba.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s06_hu_3dbbdb903779cc55.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s06_hu_ce02e8f3f661aca7.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s06_hu_6c6ba9ab67d07818.png 1024w"
 loading="lazy"
 alt="s06"
 class="gallery-image"
 data-flex-grow="606"
 data-flex-basis="1455px"
->
+&gt;
 &lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s07.png"
 width="1336"
 height="692"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s07_hu_f620028dcaf23fdf.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s07_hu_a26c35ca70491ec8.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s07_hu_81db1e065f310a64.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s07_hu_660a45abc5ac0f2b.png 1024w"
 loading="lazy"
 alt="s07"
 class="gallery-image"
 data-flex-grow="193"
 data-flex-basis="463px"
->
+&gt;
 &lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s08.png"
 width="1312"
 height="742"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s08_hu_f4520c08556a6cee.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s08_hu_eb6442216d453c57.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s08_hu_507861f22b0541fa.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s08_hu_fe43fd664fe38258.png 1024w"
 loading="lazy"
 alt="s08"
 class="gallery-image"
 data-flex-grow="176"
 data-flex-basis="424px"
->
+&gt;
 &lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s09.png"
 width="1314"
 height="250"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s09_hu_c7272d69f94e0630.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s09_hu_d785dc617a8d10b7.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s09_hu_767b2bab75deef4d.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s09_hu_c64d2744e994c640.png 1024w"
 loading="lazy"
 alt="s09"
 class="gallery-image"
 data-flex-grow="525"
 data-flex-basis="1261px"
->
+&gt;
 &lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s10.png"
 width="1322"
 height="612"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s10_hu_b0a44783e573bd0b.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s10_hu_61fc5373b99d7e12.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s10_hu_848b2137ffe89628.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s10_hu_78fa5017e54eff67.png 1024w"
 loading="lazy"
 alt="s10"
 class="gallery-image"
 data-flex-grow="216"
 data-flex-basis="518px"
->
+&gt;
 &lt;img src="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s12.png"
 width="1346"
 height="870"
-srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s12_hu_9b26fb7fc0021fe8.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s12_hu_1b4d0f475921691a.png 1024w"
+srcset="https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s12_hu_98c6d10e92a1e4f9.png 480w, https://www.maiatoday.net/p/vibecoding-a-totoro-tribute-with-junie/s12_hu_1207b996fe06eed8.png 1024w"
 loading="lazy"
 alt="s12"
 class="gallery-image"
 data-flex-grow="154"
 data-flex-basis="371px"
->&lt;/p></description></item></channel></rss>
+&gt;&lt;/p&gt;</description></item></channel></rss>

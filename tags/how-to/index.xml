@@ -1,388 +1,388 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>How To on maiatoday</title><link>https://www.maiatoday.net/tags/how-to/</link><description>Recent content in How To on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 11 Aug 2024 13:47:49 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/how-to/index.xml" rel="self" type="application/rss+xml"/><item><title>50 ways to run some Kotlin code</title><link>https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/</link><pubDate>Sun, 11 Aug 2024 13:47:49 +0200</pubDate><guid>https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/</guid><description>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/runKodee.png" alt="Featured image of post 50 ways to run some Kotlin code" />&lt;p>Here&amp;rsquo;s the situation. You find a snippet of Kotlin code somewhere on the Internet or in a book. You want to try it out. What is the quickest path to messing with the code? Here are some recipes for some options. I sorted them from the quickest no tools and no project all the way through to all the tools and all the projects. I&amp;rsquo;ll provide info on how to add a library as dependencies if possible in each of the solutions.&lt;/p>
-&lt;p>All of the options are free except the Intelij Enterprise IDE one.&lt;/p>
-&lt;p>&lt;em>Disclaimers:&lt;/em>&lt;/p>
-&lt;ol>
-&lt;li>This is not a complete guide, it is opinionated and it is a snapshot of the current state of the tools. Things always change and your favourite may not be listed.&lt;/li>
-&lt;li>I tested most of these on my Mac so the solutions are Mac-centric. If you want to try them on another OS, you may need to fiddle and research a bit more.&lt;/li>
-&lt;li>I usually code for myself or for mobile so no serverside or web code or docker containers.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>How To on maiatoday</title><link>https://www.maiatoday.net/tags/how-to/</link><description>Recent content in How To on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 11 Aug 2024 13:47:49 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/how-to/index.xml" rel="self" type="application/rss+xml"/><item><title>50 ways to run some Kotlin code</title><link>https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/</link><pubDate>Sun, 11 Aug 2024 13:47:49 +0200</pubDate><guid>https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/</guid><description>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/runKodee.png" alt="Featured image of post 50 ways to run some Kotlin code" /&gt;&lt;p&gt;Here&amp;rsquo;s the situation. You find a snippet of Kotlin code somewhere on the Internet or in a book. You want to try it out. What is the quickest path to messing with the code? Here are some recipes for some options. I sorted them from the quickest no tools and no project all the way through to all the tools and all the projects. I&amp;rsquo;ll provide info on how to add a library as dependencies if possible in each of the solutions.&lt;/p&gt;
+&lt;p&gt;All of the options are free except the Intelij Enterprise IDE one.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Disclaimers:&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;This is not a complete guide, it is opinionated and it is a snapshot of the current state of the tools. Things always change and your favourite may not be listed.&lt;/li&gt;
+&lt;li&gt;I tested most of these on my Mac so the solutions are Mac-centric. If you want to try them on another OS, you may need to fiddle and research a bit more.&lt;/li&gt;
+&lt;li&gt;I usually code for myself or for mobile so no serverside or web code or docker containers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited.png"
 width="250"
 height="250"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu_6e714562174f0163.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu_f00d8e6534dc2df1.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu_f025a9b5377cc6e5.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/kodee-excited_hu_3537b0b558e660a1.png 1024w"
 loading="lazy"
 alt="Let’s Go!"
 class="gallery-image"
 data-flex-grow="100"
 data-flex-basis="240px"
->&lt;/p>
-&lt;h1 id="quicklinks">Quicklinks
-&lt;/h1>&lt;p>Here is an overview with links so you can jump directly to what suits your needs&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Tools&lt;/th>
-&lt;th>No project&lt;/th>
-&lt;th>with project&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Browser&lt;/td>
-&lt;td>&lt;a class="link" href="#playground" >Playground&lt;/a>&lt;/td>
-&lt;td>&lt;a class="link" href="#datalore" >Datalore&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>CLI&lt;/td>
-&lt;td>&lt;a class="link" href="#compile-and-run" >Compile and run&lt;/a> &lt;a class="link" href="#repl" >REPL&lt;/a>&lt;/td>
-&lt;td>&lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Fleet&lt;/td>
-&lt;td>👆 See CLI section&lt;/td>
-&lt;td>👆 &lt;a class="link" href="#amper" >Amper&lt;/a> &lt;a class="link" href="#gradle" >Gradle&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Intellij Community/Android Studio&lt;/td>
-&lt;td>&lt;a class="link" href="#scratch-file" >Scratch file&lt;/a>&lt;/td>
-&lt;td>&lt;a class="link" href="#wizard" >Wizard&lt;/a>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>IDE Intellij Enterprise (not free)&lt;/td>
-&lt;td>&lt;a class="link" href="#intellij-enterprise-and-notebook" >Notebook&lt;/a>&lt;/td>
-&lt;td>See Intellij Community section&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>&lt;a class="link" href="#what-next" >Resources&lt;/a>&lt;/p>
-&lt;h1 id="browser">Browser
-&lt;/h1>&lt;p>This recipe is for when you don&amp;rsquo;t have a computer where you can install things. Maybe you are on a tablet or you are in an internet cafe in an unknown place or borrowing your neighbours laptop. It is good for code snippets that use standard java or kotlin libraries and output text.&lt;/p>
-&lt;h2 id="playground">Playground
-&lt;/h2>&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground.png"
+&gt;&lt;/p&gt;
+&lt;h1 id="quicklinks"&gt;Quicklinks
+&lt;/h1&gt;&lt;p&gt;Here is an overview with links so you can jump directly to what suits your needs&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tools&lt;/th&gt;
+&lt;th&gt;No project&lt;/th&gt;
+&lt;th&gt;with project&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Browser&lt;/td&gt;
+&lt;td&gt;&lt;a class="link" href="#playground" &gt;Playground&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class="link" href="#datalore" &gt;Datalore&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CLI&lt;/td&gt;
+&lt;td&gt;&lt;a class="link" href="#compile-and-run" &gt;Compile and run&lt;/a&gt; &lt;a class="link" href="#repl" &gt;REPL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class="link" href="#amper" &gt;Amper&lt;/a&gt; &lt;a class="link" href="#gradle" &gt;Gradle&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fleet&lt;/td&gt;
+&lt;td&gt;👆 See CLI section&lt;/td&gt;
+&lt;td&gt;👆 &lt;a class="link" href="#amper" &gt;Amper&lt;/a&gt; &lt;a class="link" href="#gradle" &gt;Gradle&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Intellij Community/Android Studio&lt;/td&gt;
+&lt;td&gt;&lt;a class="link" href="#scratch-file" &gt;Scratch file&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class="link" href="#wizard" &gt;Wizard&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;IDE Intellij Enterprise (not free)&lt;/td&gt;
+&lt;td&gt;&lt;a class="link" href="#intellij-enterprise-and-notebook" &gt;Notebook&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;See Intellij Community section&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a class="link" href="#what-next" &gt;Resources&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="browser"&gt;Browser
+&lt;/h1&gt;&lt;p&gt;This recipe is for when you don&amp;rsquo;t have a computer where you can install things. Maybe you are on a tablet or you are in an internet cafe in an unknown place or borrowing your neighbours laptop. It is good for code snippets that use standard java or kotlin libraries and output text.&lt;/p&gt;
+&lt;h2 id="playground"&gt;Playground
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground.png"
 width="1218"
 height="614"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu_ae496ad5097e455c.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu_5e541ecfc1bddfbf.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu_7bc5a0c147eb1f79.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground_hu_42bfe3955c50a2cf.png 1024w"
 loading="lazy"
 alt="Playground"
 class="gallery-image"
 data-flex-grow="198"
 data-flex-basis="476px"
->&lt;/p>
-&lt;h3 id="you-need">You need
-&lt;/h3>&lt;ul>
-&lt;li>A browser&lt;/li>
-&lt;li>A website that can run code e.g. &lt;a class="link" href="https://play.kotlinlang.org" target="_blank" rel="noopener"
->Kotlin playground&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="recipe">Recipe
-&lt;/h3>&lt;ol>
-&lt;li>open &lt;a class="link" href="https://play.kotlinlang.org" target="_blank" rel="noopener"
->this&lt;/a> website&lt;/li>
-&lt;li>paste or type some code&lt;/li>
-&lt;li>run &lt;code>Ctrl + R&lt;/code>&lt;/li>
-&lt;/ol>
-&lt;h3 id="adding-dependencies">Adding dependencies
-&lt;/h3>&lt;p>A good way to see what you can add is to autocomplete an &lt;code>import&lt;/code> statement. You have access to kotlin, kotlinx, java and javax. If you want to add other libraries you need to run your own instance of the kotlin playground with the libraries you need or you need to find an instance where this is supported. Not really recommended. I would just use an &lt;a class="link" href="#amper" >Amper&lt;/a> project if you need dependencies.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import.png"
+&gt;&lt;/p&gt;
+&lt;h3 id="you-need"&gt;You need
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A browser&lt;/li&gt;
+&lt;li&gt;A website that can run code e.g. &lt;a class="link" href="https://play.kotlinlang.org" target="_blank" rel="noopener"
+&gt;Kotlin playground&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="recipe"&gt;Recipe
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;open &lt;a class="link" href="https://play.kotlinlang.org" target="_blank" rel="noopener"
+&gt;this&lt;/a&gt; website&lt;/li&gt;
+&lt;li&gt;paste or type some code&lt;/li&gt;
+&lt;li&gt;run &lt;code&gt;Ctrl + R&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="adding-dependencies"&gt;Adding dependencies
+&lt;/h3&gt;&lt;p&gt;A good way to see what you can add is to autocomplete an &lt;code&gt;import&lt;/code&gt; statement. You have access to kotlin, kotlinx, java and javax. If you want to add other libraries you need to run your own instance of the kotlin playground with the libraries you need or you need to find an instance where this is supported. Not really recommended. I would just use an &lt;a class="link" href="#amper" &gt;Amper&lt;/a&gt; project if you need dependencies.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import.png"
 width="1042"
 height="516"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu_5d9a205e48056c55.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu_1c0bade3617e0bc6.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu_e7e23ee40a68835.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-playground-import_hu_e594b65571b16e32.png 1024w"
 loading="lazy"
 alt="Playground import"
 class="gallery-image"
 data-flex-grow="201"
 data-flex-basis="484px"
->&lt;/p>
-&lt;h2 id="datalore">Datalore
-&lt;/h2>&lt;p>This solution is still Browser based. It is useful if you want to collect a few pieces of Kotlin code and you like a Notebook interface and the supported tools. There is a free tier of Datalore available.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore.png"
+&gt;&lt;/p&gt;
+&lt;h2 id="datalore"&gt;Datalore
+&lt;/h2&gt;&lt;p&gt;This solution is still Browser based. It is useful if you want to collect a few pieces of Kotlin code and you like a Notebook interface and the supported tools. There is a free tier of Datalore available.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore.png"
 width="1324"
 height="844"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu_d4a38e2113028f0d.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu_15604f47f3b39800.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu_d3e20840af6a2562.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-datalore_hu_b4012e326cb3c262.png 1024w"
 loading="lazy"
 alt="Datalore"
 class="gallery-image"
 data-flex-grow="156"
 data-flex-basis="376px"
->&lt;/p>
-&lt;h3 id="you-need-1">You need
-&lt;/h3>&lt;ul>
-&lt;li>A browser&lt;/li>
-&lt;li>A Datalore login&lt;/li>
-&lt;/ul>
-&lt;h3 id="recipe-1">Recipe
-&lt;/h3>&lt;ol>
-&lt;li>open &lt;a class="link" href="https://datalore.jetbrains.com" target="_blank" rel="noopener"
->this&lt;/a> website and log in&lt;/li>
-&lt;li>Open a new kotlin notebook and paste or type some code in a code cell&lt;/li>
-&lt;li>click the run button&lt;/li>
-&lt;/ol>
-&lt;h3 id="adding-dependencies-1">Adding dependencies
-&lt;/h3>&lt;p>The trick with the autocomplete on import works here too. You have access to kotlin, kotlinx, java and javax. You can also add some select libraries like &lt;a class="link" href="https://kotlin.github.io/kandy/welcome.html" target="_blank" rel="noopener"
->kandy&lt;/a> with the &lt;code>%use&lt;/code> magic word.&lt;/p>
-&lt;h1 id="cli">CLI
-&lt;/h1>&lt;p>This is for people who are happy to run things on the command line. It doesn&amp;rsquo;t matter where the code is created, it could be vim or an echo command. Read more at the &lt;a class="link" href="https://kotlinlang.org/docs/command-line.html" target="_blank" rel="noopener"
->official kotlin docs&lt;/a>.&lt;/p>
-&lt;h2 id="compile-and-run">Compile and run
-&lt;/h2>&lt;p>The bare bones approach but it becomes a pain if you want to use libraries other than the standard ones or you want to split your code in more than one file.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run.png"
+&gt;&lt;/p&gt;
+&lt;h3 id="you-need-1"&gt;You need
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A browser&lt;/li&gt;
+&lt;li&gt;A Datalore login&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="recipe-1"&gt;Recipe
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;open &lt;a class="link" href="https://datalore.jetbrains.com" target="_blank" rel="noopener"
+&gt;this&lt;/a&gt; website and log in&lt;/li&gt;
+&lt;li&gt;Open a new kotlin notebook and paste or type some code in a code cell&lt;/li&gt;
+&lt;li&gt;click the run button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="adding-dependencies-1"&gt;Adding dependencies
+&lt;/h3&gt;&lt;p&gt;The trick with the autocomplete on import works here too. You have access to kotlin, kotlinx, java and javax. You can also add some select libraries like &lt;a class="link" href="https://kotlin.github.io/kandy/welcome.html" target="_blank" rel="noopener"
+&gt;kandy&lt;/a&gt; with the &lt;code&gt;%use&lt;/code&gt; magic word.&lt;/p&gt;
+&lt;h1 id="cli"&gt;CLI
+&lt;/h1&gt;&lt;p&gt;This is for people who are happy to run things on the command line. It doesn&amp;rsquo;t matter where the code is created, it could be vim or an echo command. Read more at the &lt;a class="link" href="https://kotlinlang.org/docs/command-line.html" target="_blank" rel="noopener"
+&gt;official kotlin docs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="compile-and-run"&gt;Compile and run
+&lt;/h2&gt;&lt;p&gt;The bare bones approach but it becomes a pain if you want to use libraries other than the standard ones or you want to split your code in more than one file.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run.png"
 width="1392"
 height="406"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu_ec17812f721e22a7.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu_3028fa3657959e8d.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu_66982c48e18e697.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-compile-run_hu_8952c3b838969a6d.png 1024w"
 loading="lazy"
 alt="Compile and Run"
 class="gallery-image"
 data-flex-grow="342"
 data-flex-basis="822px"
->&lt;/p>
-&lt;h3 id="you-need-2">You need
-&lt;/h3>&lt;ul>
-&lt;li>A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
->terminal&lt;/a>&lt;/li>
-&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
->Java installation&lt;/a>&lt;/li>
-&lt;li>The &lt;a class="link" href="https://formulae.brew.sh/formula/kotlin" target="_blank" rel="noopener"
->kotlin compiler&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="recipe-2">Recipe
-&lt;/h3>&lt;ol>
-&lt;li>&lt;code>echo 'fun main() { println(&amp;quot;Hello, World&amp;quot;)}' &amp;gt; hello.kt&lt;/code>&lt;/li>
-&lt;li>&lt;code>kotlinc hello.kt -include-runtime -d hello.jar&lt;/code> # compile the code and package it in a jar with a runtime&lt;/li>
-&lt;li>&lt;code>java -jar hello.jar&lt;/code> # run the jar with java&lt;/li>
-&lt;/ol>
-&lt;h3 id="adding-dependencies-2">Adding dependencies
-&lt;/h3>&lt;p>You need to add dependencies on the command line, this may be a pain as you probably need the jars to include them. (not recommended)&lt;/p>
-&lt;h2 id="repl">REPL
-&lt;/h2>&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl.png"
+&gt;&lt;/p&gt;
+&lt;h3 id="you-need-2"&gt;You need
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
+&gt;terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
+&gt;Java installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;a class="link" href="https://formulae.brew.sh/formula/kotlin" target="_blank" rel="noopener"
+&gt;kotlin compiler&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="recipe-2"&gt;Recipe
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;echo 'fun main() { println(&amp;quot;Hello, World&amp;quot;)}' &amp;gt; hello.kt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kotlinc hello.kt -include-runtime -d hello.jar&lt;/code&gt; # compile the code and package it in a jar with a runtime&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;java -jar hello.jar&lt;/code&gt; # run the jar with java&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="adding-dependencies-2"&gt;Adding dependencies
+&lt;/h3&gt;&lt;p&gt;You need to add dependencies on the command line, this may be a pain as you probably need the jars to include them. (not recommended)&lt;/p&gt;
+&lt;h2 id="repl"&gt;REPL
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl.png"
 width="1384"
 height="434"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu_b18b1565066e22d3.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu_669563e4a2451b70.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu_e510db1ac351388c.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-repl_hu_bc53a6628cd198f6.png 1024w"
 loading="lazy"
 alt="REPL"
 class="gallery-image"
 data-flex-grow="318"
 data-flex-basis="765px"
->&lt;/p>
-&lt;p>REPL stands for &lt;strong>r&lt;/strong>ead-&lt;strong>e&lt;/strong>val-&lt;strong>p&lt;/strong>rint-&lt;strong>l&lt;/strong>oop. It is an interactive environment to run code. If you have the kotlin compiler installed you can simply run &lt;code>kotlinc&lt;/code> and you will be in the REPL. &lt;code>^C&lt;/code> to kill it and exit. Use only for very transient experiments.&lt;/p>
-&lt;h2 id="gradle">Gradle
-&lt;/h2>&lt;p>This recipe uses gradle to generate a template project. You can then add all the files and dependencies to the project.&lt;/p>
-&lt;h3 id="you-need-3">You need
-&lt;/h3>&lt;ul>
-&lt;li>A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
->terminal&lt;/a>&lt;/li>
-&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
->Java installation&lt;/a>&lt;/li>
-&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/gradle" target="_blank" rel="noopener"
->gradle installation&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="recipe-3">Recipe
-&lt;/h3>&lt;ol>
-&lt;li>&lt;code>mkdir myNewProject; cd myNewProject&lt;/code>&lt;/li>
-&lt;li>&lt;code>gradle init&lt;/code> # follow the prompts choosing application and kotlin and mostly defaults. See the screenshot for my choices. Every thing should be setup with the files in the &lt;code>app/src&lt;/code> folder and &lt;code>gradlew&lt;/code> script in the root of the project&lt;/li>
-&lt;li>&lt;code>./gradlew run&lt;/code> # runs the project - on Mac/Linux or &lt;code>./gradlew test&lt;/code> to run tests&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle.png"
+&gt;&lt;/p&gt;
+&lt;p&gt;REPL stands for &lt;strong&gt;r&lt;/strong&gt;ead-&lt;strong&gt;e&lt;/strong&gt;val-&lt;strong&gt;p&lt;/strong&gt;rint-&lt;strong&gt;l&lt;/strong&gt;oop. It is an interactive environment to run code. If you have the kotlin compiler installed you can simply run &lt;code&gt;kotlinc&lt;/code&gt; and you will be in the REPL. &lt;code&gt;^C&lt;/code&gt; to kill it and exit. Use only for very transient experiments.&lt;/p&gt;
+&lt;h2 id="gradle"&gt;Gradle
+&lt;/h2&gt;&lt;p&gt;This recipe uses gradle to generate a template project. You can then add all the files and dependencies to the project.&lt;/p&gt;
+&lt;h3 id="you-need-3"&gt;You need
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
+&gt;terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
+&gt;Java installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A &lt;a class="link" href="https://formulae.brew.sh/formula/gradle" target="_blank" rel="noopener"
+&gt;gradle installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="recipe-3"&gt;Recipe
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;mkdir myNewProject; cd myNewProject&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gradle init&lt;/code&gt; # follow the prompts choosing application and kotlin and mostly defaults. See the screenshot for my choices. Every thing should be setup with the files in the &lt;code&gt;app/src&lt;/code&gt; folder and &lt;code&gt;gradlew&lt;/code&gt; script in the root of the project&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;./gradlew run&lt;/code&gt; # runs the project - on Mac/Linux or &lt;code&gt;./gradlew test&lt;/code&gt; to run tests&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle.png"
 width="1942"
 height="1486"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu_cbdc324da9c9f8c2.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu_15cc961e514854ab.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu_64a158041a676946.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-gradle_hu_fac651d1c67712e0.png 1024w"
 loading="lazy"
 alt="Gradle init"
 class="gallery-image"
 data-flex-grow="130"
 data-flex-basis="313px"
->&lt;/p>
-&lt;h3 id="adding-dependencies-3">Adding dependencies
-&lt;/h3>&lt;p>You can add dependencies in the &lt;code>app/build.gradle.kts&lt;/code> file in the dependencies section. You need to explicitly add a dependency for stdlib and kotlinx libraries&lt;/p>
-&lt;h2 id="amper">Amper
-&lt;/h2>&lt;p>Same as the gradle solution but using Amper. It gives a simpler more streamlined project. It can use gradle under the hood.&lt;/p>
-&lt;h3 id="you-need-4">You need
-&lt;/h3>&lt;ul>
-&lt;li>A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
->terminal&lt;/a>&lt;/li>
-&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
->Java installation&lt;/a>&lt;/li>
-&lt;li>A &lt;a class="link" href="https://formulae.brew.sh/formula/gradle" target="_blank" rel="noopener"
->gradle installation&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="recipe-4">Recipe
-&lt;/h3>&lt;ol>
-&lt;li>&lt;code>mkdir myNewProject; cd myNewProject&lt;/code>&lt;/li>
-&lt;li>Pull a version of the &lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/Usage.md#using-the-standalone-amper-version-from-the-command-line" target="_blank" rel="noopener"
->amper cli&lt;/a> with this command. Note the version number may change if you read this in the future.
-&lt;code>curl -fsSL -o amper &amp;quot;https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/cli/0.4.0/cli-0.4.0-wrapper?download=true&amp;quot; &amp;amp;&amp;amp; chmod +x amper&lt;/code>&lt;/li>
-&lt;li>&lt;code>./amper init jvm-cli&lt;/code> # to create a fresh jvm command line project&lt;/li>
-&lt;li>&lt;code>./amper run&lt;/code> # to run the project&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper.png"
+&gt;&lt;/p&gt;
+&lt;h3 id="adding-dependencies-3"&gt;Adding dependencies
+&lt;/h3&gt;&lt;p&gt;You can add dependencies in the &lt;code&gt;app/build.gradle.kts&lt;/code&gt; file in the dependencies section. You need to explicitly add a dependency for stdlib and kotlinx libraries&lt;/p&gt;
+&lt;h2 id="amper"&gt;Amper
+&lt;/h2&gt;&lt;p&gt;Same as the gradle solution but using Amper. It gives a simpler more streamlined project. It can use gradle under the hood.&lt;/p&gt;
+&lt;h3 id="you-need-4"&gt;You need
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A &lt;a class="link" href="https://iterm2.com/" target="_blank" rel="noopener"
+&gt;terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A &lt;a class="link" href="https://formulae.brew.sh/formula/openjdk" target="_blank" rel="noopener"
+&gt;Java installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A &lt;a class="link" href="https://formulae.brew.sh/formula/gradle" target="_blank" rel="noopener"
+&gt;gradle installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="recipe-4"&gt;Recipe
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;mkdir myNewProject; cd myNewProject&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Pull a version of the &lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/Usage.md#using-the-standalone-amper-version-from-the-command-line" target="_blank" rel="noopener"
+&gt;amper cli&lt;/a&gt; with this command. Note the version number may change if you read this in the future.
+&lt;code&gt;curl -fsSL -o amper &amp;quot;https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/cli/0.4.0/cli-0.4.0-wrapper?download=true&amp;quot; &amp;amp;&amp;amp; chmod +x amper&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;./amper init jvm-cli&lt;/code&gt; # to create a fresh jvm command line project&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;./amper run&lt;/code&gt; # to run the project&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper.png"
 width="1248"
 height="1136"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu_a7dfe4b0fc40d9d9.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu_82a78ea966a0ba3a.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu_a68b737fc3f04240.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-amper_hu_7996df92d2df8884.png 1024w"
 loading="lazy"
 alt="Amper init"
 class="gallery-image"
 data-flex-grow="109"
 data-flex-basis="263px"
->&lt;/p>
-&lt;p>The source is in src directly. It is a much shallower project structure.&lt;/p>
-&lt;h3 id="adding-dependencies-4">Adding dependencies
-&lt;/h3>&lt;p>You can add dependencies in the &lt;code>module.yaml&lt;/code> file in the &lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/DSLReference.md#dependencies-and-test-dependencies" target="_blank" rel="noopener"
->dependencies&lt;/a> section. The syntax is like this:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">dependencies&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">groupId:artifactId:version&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You need to explicitly add a dependency but you have access to stdlib and kotlinx libraries.&lt;/p>
-&lt;h1 id="ide-with-a-project-or-without">IDE with a project or without
-&lt;/h1>&lt;p>This solution is for when you have the luxury of a computer where you can install tools such as Intellij, Fleet or Android Studio. These tools will come with prepackaged JDKs and wizards to get you going. You can of course use these tools with the CLI projects you created. They do offer a way to run code without having a project.&lt;/p>
-&lt;h2 id="fleet">Fleet
-&lt;/h2>&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet.png"
+&gt;&lt;/p&gt;
+&lt;p&gt;The source is in src directly. It is a much shallower project structure.&lt;/p&gt;
+&lt;h3 id="adding-dependencies-4"&gt;Adding dependencies
+&lt;/h3&gt;&lt;p&gt;You can add dependencies in the &lt;code&gt;module.yaml&lt;/code&gt; file in the &lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/DSLReference.md#dependencies-and-test-dependencies" target="_blank" rel="noopener"
+&gt;dependencies&lt;/a&gt; section. The syntax is like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;dependencies&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="l"&gt;groupId:artifactId:version&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You need to explicitly add a dependency but you have access to stdlib and kotlinx libraries.&lt;/p&gt;
+&lt;h1 id="ide-with-a-project-or-without"&gt;IDE with a project or without
+&lt;/h1&gt;&lt;p&gt;This solution is for when you have the luxury of a computer where you can install tools such as Intellij, Fleet or Android Studio. These tools will come with prepackaged JDKs and wizards to get you going. You can of course use these tools with the CLI projects you created. They do offer a way to run code without having a project.&lt;/p&gt;
+&lt;h2 id="fleet"&gt;Fleet
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet.png"
 width="1702"
 height="1180"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu_e639ffd9c04f9096.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu_d4228287f5ffcfaf.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu_31a5565e2b9459b9.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-fleet_hu_1a8be4e2905b42d2.png 1024w"
 loading="lazy"
 alt="Fleet run"
 class="gallery-image"
 data-flex-grow="144"
 data-flex-basis="346px"
->&lt;/p>
-&lt;p>&lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/Usage.md#using-amper-in-fleet" target="_blank" rel="noopener"
->Fleet supports Amper and Gradle&lt;/a>. Making new projects are still simplest with the command line instructions above. Then you can open the project in Fleet. The Fleet integration gives convenient run buttons in the gutter so you don&amp;rsquo;t need to any run configuration setup.&lt;/p>
-&lt;h3 id="you-need-5">You need
-&lt;/h3>&lt;ul>
-&lt;li>A project created on the CLI as in the &lt;a class="link" href="#Amper" >previous step for Amper&lt;/a> or &lt;a class="link" href="#Gradle" >Gradle&lt;/a>&lt;/li>
-&lt;li>A Fleet installation from Jetbrains Toolbox&lt;/li>
-&lt;/ul>
-&lt;h3 id="recipe-5">Recipe
-&lt;/h3>&lt;ol>
-&lt;li>Open the root folder of the project in Fleet&lt;/li>
-&lt;li>Navigate to the &lt;code>main&lt;/code> method and use the gutter icon to run&lt;/li>
-&lt;/ol>
-&lt;h3 id="adding-dependencies-5">Adding dependencies
-&lt;/h3>&lt;p>Add libraries in the same way as the CLI projects.&lt;/p>
-&lt;h2 id="scratch-file">Scratch file
-&lt;/h2>&lt;p>&lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html" target="_blank" rel="noopener"
->Scratch files&lt;/a> are usefull for transient code. They live in a folder that is independent of the project that you are in and so can be seen from any project you open. They are only supported in Intellij and Android studio.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch.png"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/JetBrains/amper/blob/release/0.4/docs/Usage.md#using-amper-in-fleet" target="_blank" rel="noopener"
+&gt;Fleet supports Amper and Gradle&lt;/a&gt;. Making new projects are still simplest with the command line instructions above. Then you can open the project in Fleet. The Fleet integration gives convenient run buttons in the gutter so you don&amp;rsquo;t need to any run configuration setup.&lt;/p&gt;
+&lt;h3 id="you-need-5"&gt;You need
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A project created on the CLI as in the &lt;a class="link" href="#Amper" &gt;previous step for Amper&lt;/a&gt; or &lt;a class="link" href="#Gradle" &gt;Gradle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A Fleet installation from Jetbrains Toolbox&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="recipe-5"&gt;Recipe
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Open the root folder of the project in Fleet&lt;/li&gt;
+&lt;li&gt;Navigate to the &lt;code&gt;main&lt;/code&gt; method and use the gutter icon to run&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="adding-dependencies-5"&gt;Adding dependencies
+&lt;/h3&gt;&lt;p&gt;Add libraries in the same way as the CLI projects.&lt;/p&gt;
+&lt;h2 id="scratch-file"&gt;Scratch file
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html" target="_blank" rel="noopener"
+&gt;Scratch files&lt;/a&gt; are usefull for transient code. They live in a folder that is independent of the project that you are in and so can be seen from any project you open. They are only supported in Intellij and Android studio.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch.png"
 width="1326"
 height="452"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu_cd817067f52665a2.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu_8654ad91a76a54e8.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu_72e0abb322559f22.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-scratch_hu_131aa007c1476e0c.png 1024w"
 loading="lazy"
 alt="Scratch"
 class="gallery-image"
 data-flex-grow="293"
 data-flex-basis="704px"
->&lt;/p>
-&lt;h3 id="you-need-6">You need
-&lt;/h3>&lt;ul>
-&lt;li>Intellij Community/Android Studio, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
->Jetbrains toolbox app&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="recipe-6">Recipe
-&lt;/h3>&lt;ol>
-&lt;li>Open the IDE and open any project or create a new kotlin one, this will setup a project but we won&amp;rsquo;t use it.&lt;/li>
-&lt;li>Press &lt;code>Shift-Cmd-N&lt;/code> to open a new scratch file, choose Kotlin&lt;/li>
-&lt;li>Paste the code press &lt;code>Ctrl + R&lt;/code> or the run button. See the screenshot.&lt;/li>
-&lt;/ol>
-&lt;h3 id="adding-dependencies-6">Adding dependencies
-&lt;/h3>&lt;p>It is &lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html#use-dependency-in-scratch-file" target="_blank" rel="noopener"
->possible to add dependencies&lt;/a> but you need to add it to the module in the project and then update the run configuration of the scratch file. This is probably more useful if you have a project setup.&lt;/p>
-&lt;h2 id="intellij-enterprise-and-notebook">Intellij Enterprise and Notebook
-&lt;/h2>&lt;p>Intellij Enterprise supports the Kotlin Notebook plugin. It is a similar experience as the &lt;a class="link" href="#Datalore" >Datalore&lt;/a> experience. The useful thing about a Notebook in Intellij is that you can also access code you may have in the project.&lt;/p>
-&lt;h3 id="you-need-7">You need
-&lt;/h3>&lt;ul>
-&lt;li>Intellij Enterprise, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
->Jetbrains toolbox app&lt;/a>&lt;/li>
-&lt;li>The &lt;a class="link" href="https://plugins.jetbrains.com/plugin/16340-kotlin-notebook" target="_blank" rel="noopener"
->Kotlin Notebook plugin&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="recipe-7">Recipe
-&lt;/h3>&lt;ol>
-&lt;li>Open the IDE and open any project or create a new kotlin one, this will setup a project but we won&amp;rsquo;t use it.&lt;/li>
-&lt;li>Press &lt;code>Cmd Shift A&lt;/code> and choose &lt;code>Kotlin Notebook&lt;/code>&lt;/li>
-&lt;li>Paste the code in a new code cell&lt;/li>
-&lt;li>press &lt;code>Shift +Enter&lt;/code> or the run button. See the screenshot.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook.png"
+&gt;&lt;/p&gt;
+&lt;h3 id="you-need-6"&gt;You need
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Intellij Community/Android Studio, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
+&gt;Jetbrains toolbox app&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="recipe-6"&gt;Recipe
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Open the IDE and open any project or create a new kotlin one, this will setup a project but we won&amp;rsquo;t use it.&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;Shift-Cmd-N&lt;/code&gt; to open a new scratch file, choose Kotlin&lt;/li&gt;
+&lt;li&gt;Paste the code press &lt;code&gt;Ctrl + R&lt;/code&gt; or the run button. See the screenshot.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="adding-dependencies-6"&gt;Adding dependencies
+&lt;/h3&gt;&lt;p&gt;It is &lt;a class="link" href="https://www.jetbrains.com/help/idea/scratches.html#use-dependency-in-scratch-file" target="_blank" rel="noopener"
+&gt;possible to add dependencies&lt;/a&gt; but you need to add it to the module in the project and then update the run configuration of the scratch file. This is probably more useful if you have a project setup.&lt;/p&gt;
+&lt;h2 id="intellij-enterprise-and-notebook"&gt;Intellij Enterprise and Notebook
+&lt;/h2&gt;&lt;p&gt;Intellij Enterprise supports the Kotlin Notebook plugin. It is a similar experience as the &lt;a class="link" href="#Datalore" &gt;Datalore&lt;/a&gt; experience. The useful thing about a Notebook in Intellij is that you can also access code you may have in the project.&lt;/p&gt;
+&lt;h3 id="you-need-7"&gt;You need
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Intellij Enterprise, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
+&gt;Jetbrains toolbox app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;a class="link" href="https://plugins.jetbrains.com/plugin/16340-kotlin-notebook" target="_blank" rel="noopener"
+&gt;Kotlin Notebook plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="recipe-7"&gt;Recipe
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Open the IDE and open any project or create a new kotlin one, this will setup a project but we won&amp;rsquo;t use it.&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;Cmd Shift A&lt;/code&gt; and choose &lt;code&gt;Kotlin Notebook&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Paste the code in a new code cell&lt;/li&gt;
+&lt;li&gt;press &lt;code&gt;Shift +Enter&lt;/code&gt; or the run button. See the screenshot.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook.png"
 width="1672"
 height="838"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu_c1a0ee11cdf4bc42.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu_b07354db9f5de4d9.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu_a1ad5d40eaeb2765.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook_hu_5a3dea9c981a794d.png 1024w"
 loading="lazy"
 alt="Notebook"
 class="gallery-image"
 data-flex-grow="199"
 data-flex-basis="478px"
->&lt;/p>
-&lt;h3 id="adding-dependencies-7">Adding dependencies
-&lt;/h3>&lt;p>You can add &lt;a class="link" href="https://github.com/Kotlin/kotlin-jupyter#dependencies-resolving" target="_blank" rel="noopener"
->dependencies&lt;/a> like this:
-&lt;code>@file:DependsOn(&amp;quot;groupId:artifactId:version&amp;quot;)&lt;/code>&lt;/p>
-&lt;p>You can use your own project files in the Notebook by adding the project files to the notebook.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module.png"
+&gt;&lt;/p&gt;
+&lt;h3 id="adding-dependencies-7"&gt;Adding dependencies
+&lt;/h3&gt;&lt;p&gt;You can add &lt;a class="link" href="https://github.com/Kotlin/kotlin-jupyter#dependencies-resolving" target="_blank" rel="noopener"
+&gt;dependencies&lt;/a&gt; like this:
+&lt;code&gt;@file:DependsOn(&amp;quot;groupId:artifactId:version&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can use your own project files in the Notebook by adding the project files to the notebook.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module.png"
 width="978"
 height="360"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu_1cb2256ea84cfe43.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu_57e56ce6c32a01fb.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu_bbb81dbed99dda35.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-notebook-module_hu_dce866085b4ecac2.png 1024w"
 loading="lazy"
 alt="Notebook module"
 class="gallery-image"
 data-flex-grow="271"
 data-flex-basis="652px"
->&lt;/p>
-&lt;p>You can include some dependencies like &lt;a class="link" href="https://kotlin.github.io/kandy/welcome.html" target="_blank" rel="noopener"
->kandy&lt;/a> by using the &lt;code>%use&lt;/code> magic keyword.&lt;/p>
-&lt;h1 id="ide-all-the-way">IDE all the way
-&lt;/h1>&lt;p>This is the gui-est and most complete solution. Also the solution if you want to build a project that you want to work on. Of course you can use the CLI options but you can let the wizard create a template for you.&lt;/p>
-&lt;h2 id="wizard">Wizard
-&lt;/h2>&lt;p>The recipe is deceptively simple but I refer to the &lt;a class="link" href="https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html#create-project" target="_blank" rel="noopener"
->official docs for finer details&lt;/a>. I suspect no-one reads this far anyway. The wizard makes a gradle project and but if you would like to use Amper you need a plugin.&lt;/p>
-&lt;h3 id="you-need-8">You need
-&lt;/h3>&lt;ul>
-&lt;li>Intellij /Android Studio, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
->Jetbrains toolbox app&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="recipe-8">Recipe
-&lt;/h3>&lt;ol>
-&lt;li>Open the IDE and open any project or create a new kotlin one&lt;/li>
-&lt;li>Code and run&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard.png"
+&gt;&lt;/p&gt;
+&lt;p&gt;You can include some dependencies like &lt;a class="link" href="https://kotlin.github.io/kandy/welcome.html" target="_blank" rel="noopener"
+&gt;kandy&lt;/a&gt; by using the &lt;code&gt;%use&lt;/code&gt; magic keyword.&lt;/p&gt;
+&lt;h1 id="ide-all-the-way"&gt;IDE all the way
+&lt;/h1&gt;&lt;p&gt;This is the gui-est and most complete solution. Also the solution if you want to build a project that you want to work on. Of course you can use the CLI options but you can let the wizard create a template for you.&lt;/p&gt;
+&lt;h2 id="wizard"&gt;Wizard
+&lt;/h2&gt;&lt;p&gt;The recipe is deceptively simple but I refer to the &lt;a class="link" href="https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html#create-project" target="_blank" rel="noopener"
+&gt;official docs for finer details&lt;/a&gt;. I suspect no-one reads this far anyway. The wizard makes a gradle project and but if you would like to use Amper you need a plugin.&lt;/p&gt;
+&lt;h3 id="you-need-8"&gt;You need
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Intellij /Android Studio, I use the &lt;a class="link" href="https://www.jetbrains.com/toolbox-app/" target="_blank" rel="noopener"
+&gt;Jetbrains toolbox app&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="recipe-8"&gt;Recipe
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Open the IDE and open any project or create a new kotlin one&lt;/li&gt;
+&lt;li&gt;Code and run&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard.png"
 width="1592"
 height="846"
-srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu_b86e555dde50619d.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu_404dc035b1e6b694.png 1024w"
+srcset="https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu_7485c7c14cf59fd6.png 480w, https://www.maiatoday.net/p/50-ways-to-run-some-kotlin-code/screenshot-wizard_hu_9e8b1f8b07208ec6.png 1024w"
 loading="lazy"
 alt="Wizard"
 class="gallery-image"
 data-flex-grow="188"
 data-flex-basis="451px"
->&lt;/p>
-&lt;p>Dependencies work the same way as the CLI projects. There is also a project view to add them&lt;/p>
-&lt;h1 id="what-next">What next?
-&lt;/h1>&lt;p>Hmm I hear you say &amp;ldquo;But I want to draw pictures or graphs - no more ascii for me&amp;rdquo;&lt;/p>
-&lt;p>You&amp;rsquo;ll have to wait for another blog post for more on that. This one is far too long already.&lt;/p>
-&lt;p>In the meantime you have all these places to run your code. Now you can can go learn more Kotlin at these resources:&lt;/p>
-&lt;h2 id="official-documentation">Official documentation
-&lt;/h2>&lt;p>&lt;a class="link" href="https://kotlinlang.org/docs/home.html" target="_blank" rel="noopener"
->kotlinlang.org&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://www.youtube.com/c/kotlin" target="_blank" rel="noopener"
->kotlin youtube&lt;/a>&lt;/p>
-&lt;h2 id="books">Books
-&lt;/h2>&lt;p>&lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
->Kotlin In Action, second edition&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://www.atomickotlin.com/atomickotlin/" target="_blank" rel="noopener"
->Atomic Kotlin&lt;/a> with matching &lt;a class="link" href="https://plugins.jetbrains.com/plugin/17654-atomickotlin?_gl=1*kliojt*_gcl_au*MTc2MDkwMjU0MC4xNzE5NjcwMzI3*_ga*MTk0MzI1MDcwOS4xNjk0OTgzMDA4*_ga_9J976DJZ68*MTcyMzM4Mzc3Ni45Mi4xLjE3MjMzODU0NzIuNTguMC4w" target="_blank" rel="noopener"
->training in the IDE&lt;/a>&lt;/p>
-&lt;h2 id="free-courses">Free courses
-&lt;/h2>&lt;p>&lt;a class="link" href="https://developer.android.com/codelabs/kotlin-bootcamp-welcome#0" target="_blank" rel="noopener"
->Kotlin Bootcamp&lt;/a>&lt;/p>
-&lt;h2 id="practise-puzzles-koans-and-katas">Practise: Puzzles, Koans and Katas
-&lt;/h2>&lt;p>&lt;a class="link" href="https://exercism.org/tracks/kotlin" target="_blank" rel="noopener"
->Exercism Kotlin track&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://adventofcode.com/" target="_blank" rel="noopener"
->Advent of code&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://kotlinlang.org/docs/koans.html" target="_blank" rel="noopener"
->Kotlin Koans&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/Kotlin" target="_blank" rel="noopener"
->Gilded Rose in Kotlin&lt;/a>&lt;/p>
-&lt;h2 id="newsletters">Newsletters
-&lt;/h2>&lt;p>&lt;a class="link" href="https://kotlinweekly.net/#latest" target="_blank" rel="noopener"
->Kotlin Weekly&lt;/a>&lt;/p>
-&lt;h2 id="more-on-notebooks">More on Notebooks
-&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=WdeCsUzv0c8&amp;amp;t=1026s" target="_blank" rel="noopener"
->Notebook Demo&lt;/a>&lt;/p></description></item></channel></rss>
+&gt;&lt;/p&gt;
+&lt;p&gt;Dependencies work the same way as the CLI projects. There is also a project view to add them&lt;/p&gt;
+&lt;h1 id="what-next"&gt;What next?
+&lt;/h1&gt;&lt;p&gt;Hmm I hear you say &amp;ldquo;But I want to draw pictures or graphs - no more ascii for me&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll have to wait for another blog post for more on that. This one is far too long already.&lt;/p&gt;
+&lt;p&gt;In the meantime you have all these places to run your code. Now you can can go learn more Kotlin at these resources:&lt;/p&gt;
+&lt;h2 id="official-documentation"&gt;Official documentation
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://kotlinlang.org/docs/home.html" target="_blank" rel="noopener"
+&gt;kotlinlang.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://www.youtube.com/c/kotlin" target="_blank" rel="noopener"
+&gt;kotlin youtube&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="books"&gt;Books
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
+&gt;Kotlin In Action, second edition&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://www.atomickotlin.com/atomickotlin/" target="_blank" rel="noopener"
+&gt;Atomic Kotlin&lt;/a&gt; with matching &lt;a class="link" href="https://plugins.jetbrains.com/plugin/17654-atomickotlin?_gl=1*kliojt*_gcl_au*MTc2MDkwMjU0MC4xNzE5NjcwMzI3*_ga*MTk0MzI1MDcwOS4xNjk0OTgzMDA4*_ga_9J976DJZ68*MTcyMzM4Mzc3Ni45Mi4xLjE3MjMzODU0NzIuNTguMC4w" target="_blank" rel="noopener"
+&gt;training in the IDE&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="free-courses"&gt;Free courses
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://developer.android.com/codelabs/kotlin-bootcamp-welcome#0" target="_blank" rel="noopener"
+&gt;Kotlin Bootcamp&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="practise-puzzles-koans-and-katas"&gt;Practise: Puzzles, Koans and Katas
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://exercism.org/tracks/kotlin" target="_blank" rel="noopener"
+&gt;Exercism Kotlin track&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://adventofcode.com/" target="_blank" rel="noopener"
+&gt;Advent of code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://kotlinlang.org/docs/koans.html" target="_blank" rel="noopener"
+&gt;Kotlin Koans&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/Kotlin" target="_blank" rel="noopener"
+&gt;Gilded Rose in Kotlin&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="newsletters"&gt;Newsletters
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://kotlinweekly.net/#latest" target="_blank" rel="noopener"
+&gt;Kotlin Weekly&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="more-on-notebooks"&gt;More on Notebooks
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://www.youtube.com/watch?v=WdeCsUzv0c8&amp;amp;t=1026s" target="_blank" rel="noopener"
+&gt;Notebook Demo&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,78 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Live Code on maiatoday</title><link>https://www.maiatoday.net/categories/live-code/</link><description>Recent content in Live Code on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 02 Mar 2022 21:38:36 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/live-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Kibeth Codes twitch highlights 1</title><link>https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/</link><pubDate>Wed, 02 Mar 2022 21:38:36 +0200</pubDate><guid>https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/</guid><description>&lt;img src="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/blank.jpeg" alt="Featured image of post Kibeth Codes twitch highlights 1" />&lt;p>To practise for live speaking and to explore how to add Jetpack Compose to an existing open source app, I start a twitch stream as &lt;a class="link" href="https://twitch.com/kibethcodes" target="_blank" rel="noopener"
->kibethcodes&lt;/a>. The app I chose to work on is &lt;a class="link" href="https://github.com/HabitRPG/habitica" target="_blank" rel="noopener"
->Habitica&lt;/a>, a habit tracking/ToDo app that saw it&amp;rsquo;s first commit in 2015.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Live Code on maiatoday</title><link>https://www.maiatoday.net/categories/live-code/</link><description>Recent content in Live Code on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 02 Mar 2022 21:38:36 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/categories/live-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Kibeth Codes twitch highlights 1</title><link>https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/</link><pubDate>Wed, 02 Mar 2022 21:38:36 +0200</pubDate><guid>https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/</guid><description>&lt;img src="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/blank.jpeg" alt="Featured image of post Kibeth Codes twitch highlights 1" /&gt;&lt;p&gt;To practise for live speaking and to explore how to add Jetpack Compose to an existing open source app, I start a twitch stream as &lt;a class="link" href="https://twitch.com/kibethcodes" target="_blank" rel="noopener"
+&gt;kibethcodes&lt;/a&gt;. The app I chose to work on is &lt;a class="link" href="https://github.com/HabitRPG/habitica" target="_blank" rel="noopener"
+&gt;Habitica&lt;/a&gt;, a habit tracking/ToDo app that saw it&amp;rsquo;s first commit in 2015.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6.png"
 width="1000"
 height="330"
-srcset="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu_afc65317e71a9b80.png 480w, https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu_2e9bbd19fb905014.png 1024w"
+srcset="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu_bf67f656ebe64721.png 480w, https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu_19e4757d2feb1813.png 1024w"
 loading="lazy"
 alt="KibethCodes level 6"
 class="gallery-image"
 data-flex-grow="303"
 data-flex-basis="727px"
->&lt;/p>
-&lt;p>Streaming Tuesdays at 19:00 UTC+2&lt;/p>
-&lt;p>Here are a selection of highlights of the twitch stream.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;&lt;/p&gt;
+&lt;p&gt;Streaming Tuesdays at 19:00 UTC+2&lt;/p&gt;
+&lt;p&gt;Here are a selection of highlights of the twitch stream.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/PeB7da1jUKE"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/o5LO-kl71Ck"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/sb5wkStL9FM"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
->Jozi-JUG&lt;/a> demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" /&gt;&lt;p&gt;A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
+&gt;Jozi-JUG&lt;/a&gt; demonstrating Compose animation and demo on mobile and desktop.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/Vo3iIWJvu5k"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/132iJ50ZoMZJwaFzmHWiEk6YsEMrS0rb0TTZ7KeM7MI4/edit?usp=sharing" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item><item><title>Intro to Compose - Live code</title><link>https://www.maiatoday.net/p/intro-to-compose-live-code/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://www.maiatoday.net/p/intro-to-compose-live-code/</guid><description>&lt;img src="https://www.maiatoday.net/p/intro-to-compose-live-code/introBroadStrokes.png" alt="Featured image of post Intro to Compose - Live code" />&lt;p>A broad strokes intro to Jetpack Compose followed by a live code demo taster of what it is like to use this framework. The demo ranges from basic use, a bit of Material components and one small animation. Hosted by &lt;a class="link" href="https://www.meetup.com/DeveloperUG/" target="_blank" rel="noopener"
->DevUG&lt;/a>. In the second part of the event, &lt;a class="link" href="https://twitter.com/tkuenneth" target="_blank" rel="noopener"
->Thomas&lt;/a> gives us a summary of what&amp;rsquo;s new in Jetpack Compose 1.1&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/132iJ50ZoMZJwaFzmHWiEk6YsEMrS0rb0TTZ7KeM7MI4/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;slides&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Intro to Compose - Live code</title><link>https://www.maiatoday.net/p/intro-to-compose-live-code/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://www.maiatoday.net/p/intro-to-compose-live-code/</guid><description>&lt;img src="https://www.maiatoday.net/p/intro-to-compose-live-code/introBroadStrokes.png" alt="Featured image of post Intro to Compose - Live code" /&gt;&lt;p&gt;A broad strokes intro to Jetpack Compose followed by a live code demo taster of what it is like to use this framework. The demo ranges from basic use, a bit of Material components and one small animation. Hosted by &lt;a class="link" href="https://www.meetup.com/DeveloperUG/" target="_blank" rel="noopener"
+&gt;DevUG&lt;/a&gt;. In the second part of the event, &lt;a class="link" href="https://twitter.com/tkuenneth" target="_blank" rel="noopener"
+&gt;Thomas&lt;/a&gt; gives us a summary of what&amp;rsquo;s new in Jetpack Compose 1.1&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/EsA5FSmN_3Q"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/1QfDTnRArUA1lW_13DNZyn7T4HV53FQjWStU6ygw_Zqk/edit?usp=sharing" target="_blank" rel="noopener"
->Slides&lt;/a>&lt;/p></description></item><item><title>Intro to Jetpack Compose</title><link>https://www.maiatoday.net/p/intro-to-jetpack-compose/</link><pubDate>Tue, 30 Nov 2021 16:36:23 +0200</pubDate><guid>https://www.maiatoday.net/p/intro-to-jetpack-compose/</guid><description>&lt;p>Introduction to Jetpack Compose technical talk to embeded, mobile and flutter developers. This talk gives an intro to Jetpack Compose and shows how to get started with a simple code lab.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/1QfDTnRArUA1lW_13DNZyn7T4HV53FQjWStU6ygw_Zqk/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;Slides&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Intro to Jetpack Compose</title><link>https://www.maiatoday.net/p/intro-to-jetpack-compose/</link><pubDate>Tue, 30 Nov 2021 16:36:23 +0200</pubDate><guid>https://www.maiatoday.net/p/intro-to-jetpack-compose/</guid><description>&lt;p&gt;Introduction to Jetpack Compose technical talk to embeded, mobile and flutter developers. This talk gives an intro to Jetpack Compose and shows how to get started with a simple code lab.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/mIYecX389Ck"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>International Womens Day Codelab - Getting started with Compose</title><link>https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/</link><pubDate>Sat, 27 Mar 2021 15:44:02 +0200</pubDate><guid>https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/iwd_compose.png" alt="Featured image of post International Womens Day Codelab - Getting started with Compose" />&lt;p>Getting started with Jetpack compose Codelab and talk for International Women&amp;rsquo;s Day event with Women Techmakers and GDGs in Southern Africa&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>International Womens Day Codelab - Getting started with Compose</title><link>https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/</link><pubDate>Sat, 27 Mar 2021 15:44:02 +0200</pubDate><guid>https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/iwd_compose.png" alt="Featured image of post International Womens Day Codelab - Getting started with Compose" /&gt;&lt;p&gt;Getting started with Jetpack compose Codelab and talk for International Women&amp;rsquo;s Day event with Women Techmakers and GDGs in Southern Africa&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/RKVh45KYd94"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item></channel></rss>
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item></channel></rss>

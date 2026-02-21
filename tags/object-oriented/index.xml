@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Object Oriented on maiatoday</title><link>https://www.maiatoday.net/tags/object-oriented/</link><description>Recent content in Object Oriented on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 14 Oct 2022 10:30:41 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/object-oriented/index.xml" rel="self" type="application/rss+xml"/><item><title>Four of a Kotlin Kind at I code Java 2022 conference</title><link>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</link><pubDate>Fri, 14 Oct 2022 10:30:41 +0200</pubDate><guid>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</guid><description>&lt;img src="https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/icj2022.jpg" alt="Featured image of post Four of a Kotlin Kind at I code Java 2022 conference" />&lt;p>I shared my talk titled Imperative, Declarative, Object oriented, functional: Four of a Kotlin Kind at the &lt;a class="link" href="https://j-sa.co/schedule-java/" target="_blank" rel="noopener"
->I code Java conference&lt;/a>.&lt;/p>
-&lt;p>The abstract:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Object Oriented on maiatoday</title><link>https://www.maiatoday.net/tags/object-oriented/</link><description>Recent content in Object Oriented on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 14 Oct 2022 10:30:41 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/object-oriented/index.xml" rel="self" type="application/rss+xml"/><item><title>Four of a Kotlin Kind at I code Java 2022 conference</title><link>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</link><pubDate>Fri, 14 Oct 2022 10:30:41 +0200</pubDate><guid>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</guid><description>&lt;img src="https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/icj2022.jpg" alt="Featured image of post Four of a Kotlin Kind at I code Java 2022 conference" /&gt;&lt;p&gt;I shared my talk titled Imperative, Declarative, Object oriented, functional: Four of a Kotlin Kind at the &lt;a class="link" href="https://j-sa.co/schedule-java/" target="_blank" rel="noopener"
+&gt;I code Java conference&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The abstract:
 Is Kotlin a functional language? Yes, but&amp;hellip; Is it object oriented? Yes, but&amp;hellip;
 Looking at four concepts: imperative, declarative, functional and object oriented
-How does Kotlin make it easy to use either or all at the same time. This talk contains: Some useful Kotlin tips, some guidelines and pitfalls for the four concepts, traces of definitions and software history. After listening to this talk you will understand what these concepts are, what each is good for and how they are supported by the Kotlin language.&lt;/p>
-&lt;p>You can see the talk here&lt;/p>
-&lt;div class="video-wrapper">
+How does Kotlin make it easy to use either or all at the same time. This talk contains: Some useful Kotlin tips, some guidelines and pitfalls for the four concepts, traces of definitions and software history. After listening to this talk you will understand what these concepts are, what each is good for and how they are supported by the Kotlin language.&lt;/p&gt;
+&lt;p&gt;You can see the talk here&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/GY3ImFPfaRI"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item></channel></rss>
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item></channel></rss>

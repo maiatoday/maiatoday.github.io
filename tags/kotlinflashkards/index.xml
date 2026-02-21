@@ -1,53 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KotlinFlashKards on maiatoday</title><link>https://www.maiatoday.net/tags/kotlinflashkards/</link><description>Recent content in KotlinFlashKards on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 18 Sep 2024 19:50:02 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/kotlinflashkards/index.xml" rel="self" type="application/rss+xml"/><item><title>Flash cards for Coroutines - KotlinFlashKards</title><link>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</link><pubDate>Wed, 18 Sep 2024 19:50:02 +0200</pubDate><guid>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</guid><description>&lt;img src="https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/banner.jpg" alt="Featured image of post Flash cards for Coroutines - KotlinFlashKards" />&lt;p>I made something. I made &lt;a class="link" href="https://plugins.jetbrains.com/plugin/25329-kotlinflashkards--coroutines?noRedirect=true" target="_blank" rel="noopener"
->a set of flash cards to practise and learn Kotlin coroutines&lt;/a>. I call them KotlinFlashKards (with a K of course). This is the first of a series covering different topics.&lt;/p>
-&lt;h2 id="why-create-flash-cards">Why create flash cards?
-&lt;/h2>&lt;p>Does this happen to you? You are writing some code, you know something is possible but you can&amp;rsquo;t remember exactly how to do it. By the time you have asked an AI or researched you have forgotten what it was you wanted to do in the first place.&lt;/p>
-&lt;p>There is a way to fix this. &lt;strong>Learn&lt;/strong> and remember the &lt;strong>key concepts&lt;/strong> you use often. One way to do this is to use flash cards. I learnt this from the book &lt;a class="link" href="https://www.manning.com/books/the-programmers-brain" target="_blank" rel="noopener"
->The Programmers Brain by Felienne Hermans&lt;/a>&lt;/p>
-&lt;h2 id="how-does-it-work">How does it work?
-&lt;/h2>&lt;p>The deck doesn&amp;rsquo;t replace the &lt;a class="link" href="https://kotlinlang.org/docs/coroutines-overview.html" target="_blank" rel="noopener"
->docs&lt;/a> or a &lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
->good book&lt;/a>. It is an in IDE course in the form of a question, a hint that hides the answer and a code snippet with a test to explain the concept. It has four sections&lt;/p>
-&lt;ul>
-&lt;li>Basics - 18 cards&lt;/li>
-&lt;li>Structured Concurrency - 12 cards&lt;/li>
-&lt;li>Error handling - 7 cards&lt;/li>
-&lt;li>Testing - 6 cards&lt;/li>
-&lt;/ul>
-&lt;p>You can explore the sections in order or dip in and try tasks at random.&lt;/p>
-&lt;h2 id="strategies-to-get-the-best-out-of-the-course">Strategies to get the best out of the course?
-&lt;/h2>&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Repeat at regular intervals&lt;/strong> - Memories are built up if you &lt;strong>repeat&lt;/strong> the flash cards at &lt;strong>regular intervals&lt;/strong>. It is better to do a few lessons more often than to do many lessons in one sitting. You can do the course many times or choose which areas to practise.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Recall the answer before peeking&lt;/strong> - It is important to try to recall the syntax first before looking at the hints or letting the IDE help you. This means you practise your &lt;strong>recall&lt;/strong> of the memory.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Think about the solution&lt;/strong> - For each question and answer you will remember it better too if you think of a practical place where you could use similar code.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="how-do-i-get-it">How do I get it?
-&lt;/h2>&lt;p>You need:&lt;/p>
-&lt;ul>
-&lt;li>a JetBrains IDE like Android Studio or Intellij Community edition&lt;/li>
-&lt;li>the &lt;a class="link" href="https://plugins.jetbrains.com/plugin/10081-jetbrains-academy" target="_blank" rel="noopener"
->JetBrains Acadamy plugin&lt;/a> installed&lt;/li>
-&lt;/ul>
-&lt;p>Then do the following:&lt;/p>
-&lt;ol>
-&lt;li>Before opening a project click on the &lt;em>Learn&lt;/em> menu item on the left&lt;/li>
-&lt;li>Click on &lt;em>New course&lt;/em>&lt;/li>
-&lt;li>In the &lt;code>Marketplace&lt;/code> search for &lt;code>KotlinFlashKards&lt;/code> and start the course. This will make a local instance of the course&lt;/li>
-&lt;li>Have fun and explore, try figuring out the answers to the questions and don&amp;rsquo;t peek before you have thought a bit.&lt;/li>
-&lt;li>If you mess up the code reset it with the reset button. (see screenshot)&lt;/li>
-&lt;li>If you want to skip ahead use the arrow or the numbers. (see screenshot)&lt;/li>
-&lt;/ol>
-&lt;img src="marketplace.png" alt="Getting the flash cards" width="600"/>
-&lt;img src="kard-2.png" alt="Course interface" width="600"/>
-&lt;h2 id="what-else-can-i-do">What else can I do?
-&lt;/h2>&lt;ul>
-&lt;li>Rate the course&lt;/li>
-&lt;li>Give feedback&lt;/li>
-&lt;li>Tell me if there are other topics you want flash cards on, I have a flows one coming out soon&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KotlinFlashKards on maiatoday</title><link>https://www.maiatoday.net/tags/kotlinflashkards/</link><description>Recent content in KotlinFlashKards on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 18 Sep 2024 19:50:02 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/kotlinflashkards/index.xml" rel="self" type="application/rss+xml"/><item><title>Flash cards for Coroutines - KotlinFlashKards</title><link>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</link><pubDate>Wed, 18 Sep 2024 19:50:02 +0200</pubDate><guid>https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/</guid><description>&lt;img src="https://www.maiatoday.net/p/flash-cards-for-coroutines-kotlinflashkards/banner.jpg" alt="Featured image of post Flash cards for Coroutines - KotlinFlashKards" /&gt;&lt;p&gt;I made something. I made &lt;a class="link" href="https://plugins.jetbrains.com/plugin/25329-kotlinflashkards--coroutines?noRedirect=true" target="_blank" rel="noopener"
+&gt;a set of flash cards to practise and learn Kotlin coroutines&lt;/a&gt;. I call them KotlinFlashKards (with a K of course). This is the first of a series covering different topics.&lt;/p&gt;
+&lt;h2 id="why-create-flash-cards"&gt;Why create flash cards?
+&lt;/h2&gt;&lt;p&gt;Does this happen to you? You are writing some code, you know something is possible but you can&amp;rsquo;t remember exactly how to do it. By the time you have asked an AI or researched you have forgotten what it was you wanted to do in the first place.&lt;/p&gt;
+&lt;p&gt;There is a way to fix this. &lt;strong&gt;Learn&lt;/strong&gt; and remember the &lt;strong&gt;key concepts&lt;/strong&gt; you use often. One way to do this is to use flash cards. I learnt this from the book &lt;a class="link" href="https://www.manning.com/books/the-programmers-brain" target="_blank" rel="noopener"
+&gt;The Programmers Brain by Felienne Hermans&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="how-does-it-work"&gt;How does it work?
+&lt;/h2&gt;&lt;p&gt;The deck doesn&amp;rsquo;t replace the &lt;a class="link" href="https://kotlinlang.org/docs/coroutines-overview.html" target="_blank" rel="noopener"
+&gt;docs&lt;/a&gt; or a &lt;a class="link" href="https://www.manning.com/books/kotlin-in-action-second-edition" target="_blank" rel="noopener"
+&gt;good book&lt;/a&gt;. It is an in IDE course in the form of a question, a hint that hides the answer and a code snippet with a test to explain the concept. It has four sections&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basics - 18 cards&lt;/li&gt;
+&lt;li&gt;Structured Concurrency - 12 cards&lt;/li&gt;
+&lt;li&gt;Error handling - 7 cards&lt;/li&gt;
+&lt;li&gt;Testing - 6 cards&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can explore the sections in order or dip in and try tasks at random.&lt;/p&gt;
+&lt;h2 id="strategies-to-get-the-best-out-of-the-course"&gt;Strategies to get the best out of the course?
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Repeat at regular intervals&lt;/strong&gt; - Memories are built up if you &lt;strong&gt;repeat&lt;/strong&gt; the flash cards at &lt;strong&gt;regular intervals&lt;/strong&gt;. It is better to do a few lessons more often than to do many lessons in one sitting. You can do the course many times or choose which areas to practise.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Recall the answer before peeking&lt;/strong&gt; - It is important to try to recall the syntax first before looking at the hints or letting the IDE help you. This means you practise your &lt;strong&gt;recall&lt;/strong&gt; of the memory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Think about the solution&lt;/strong&gt; - For each question and answer you will remember it better too if you think of a practical place where you could use similar code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="how-do-i-get-it"&gt;How do I get it?
+&lt;/h2&gt;&lt;p&gt;You need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a JetBrains IDE like Android Studio or Intellij Community edition&lt;/li&gt;
+&lt;li&gt;the &lt;a class="link" href="https://plugins.jetbrains.com/plugin/10081-jetbrains-academy" target="_blank" rel="noopener"
+&gt;JetBrains Acadamy plugin&lt;/a&gt; installed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Before opening a project click on the &lt;em&gt;Learn&lt;/em&gt; menu item on the left&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;New course&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;In the &lt;code&gt;Marketplace&lt;/code&gt; search for &lt;code&gt;KotlinFlashKards&lt;/code&gt; and start the course. This will make a local instance of the course&lt;/li&gt;
+&lt;li&gt;Have fun and explore, try figuring out the answers to the questions and don&amp;rsquo;t peek before you have thought a bit.&lt;/li&gt;
+&lt;li&gt;If you mess up the code reset it with the reset button. (see screenshot)&lt;/li&gt;
+&lt;li&gt;If you want to skip ahead use the arrow or the numbers. (see screenshot)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src="marketplace.png" alt="Getting the flash cards" width="600"/&gt;
+&lt;img src="kard-2.png" alt="Course interface" width="600"/&gt;
+&lt;h2 id="what-else-can-i-do"&gt;What else can I do?
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Rate the course&lt;/li&gt;
+&lt;li&gt;Give feedback&lt;/li&gt;
+&lt;li&gt;Tell me if there are other topics you want flash cards on, I have a flows one coming out soon&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

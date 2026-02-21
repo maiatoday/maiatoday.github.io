@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Di on maiatoday</title><link>https://www.maiatoday.net/tags/di/</link><description>Recent content in Di on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 05 Aug 2020 15:02:01 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/di/index.xml" rel="self" type="application/rss+xml"/><item><title>Dagger, Hilt, Koin - a comparison</title><link>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</link><pubDate>Wed, 05 Aug 2020 15:02:01 +0200</pubDate><guid>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</guid><description>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/dagger_hilt_koin.png" alt="Featured image of post Dagger, Hilt, Koin - a comparison" />&lt;p>Talk presented for GDG Johannesburg comparing dependency injection technologies.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Di on maiatoday</title><link>https://www.maiatoday.net/tags/di/</link><description>Recent content in Di on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 05 Aug 2020 15:02:01 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/di/index.xml" rel="self" type="application/rss+xml"/><item><title>Dagger, Hilt, Koin - a comparison</title><link>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</link><pubDate>Wed, 05 Aug 2020 15:02:01 +0200</pubDate><guid>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</guid><description>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/dagger_hilt_koin.png" alt="Featured image of post Dagger, Hilt, Koin - a comparison" /&gt;&lt;p&gt;Talk presented for GDG Johannesburg comparing dependency injection technologies.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one.png"
 width="2268"
 height="1276"
-srcset="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_d6531e74560f4846.png 480w, https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_a521466d6c7283ce.png 1024w"
+srcset="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_8d82c432398e4b9c.png 480w, https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_401d5ae6ae5e6655.png 1024w"
 loading="lazy"
 alt="which one to choose"
 class="gallery-image"
 data-flex-grow="177"
 data-flex-basis="426px"
->&lt;/p>
-&lt;div class="video-wrapper">
+&gt;&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/-MJm4UGoh5I"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/137QItxqOKWpACPdrx-pOc2ry7sVNi0kXnZCjZsmmfiI/edit?usp=sharing" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item></channel></rss>
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/137QItxqOKWpACPdrx-pOc2ry7sVNi0kXnZCjZsmmfiI/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;slides&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

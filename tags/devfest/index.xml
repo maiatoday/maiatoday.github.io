@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Devfest on maiatoday</title><link>https://www.maiatoday.net/tags/devfest/</link><description>Recent content in Devfest on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 29 Jan 2022 12:53:10 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/devfest/index.xml" rel="self" type="application/rss+xml"/><item><title>Magic Sprinkles at DevFest UK Ireland</title><link>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</link><pubDate>Sat, 29 Jan 2022 12:53:10 +0200</pubDate><guid>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</guid><description>&lt;img src="https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/devfestBanner.jpg" alt="Featured image of post Magic Sprinkles at DevFest UK Ireland" />&lt;p>A shorter version of my Magic Sprinkles talk presented at &lt;a class="link" href="https://www.devfest-uki.com/schedule" target="_blank" rel="noopener"
->DevFest UK Ireland&lt;/a>&lt;/p>
-&lt;p>Magic Sprinkles: Adding animations to your app with Jetpack Compose&lt;/p>
-&lt;p>I have some Jetpack Compose UI components in my app and now I want to add animations, where do I start?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Devfest on maiatoday</title><link>https://www.maiatoday.net/tags/devfest/</link><description>Recent content in Devfest on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 29 Jan 2022 12:53:10 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/devfest/index.xml" rel="self" type="application/rss+xml"/><item><title>Magic Sprinkles at DevFest UK Ireland</title><link>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</link><pubDate>Sat, 29 Jan 2022 12:53:10 +0200</pubDate><guid>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</guid><description>&lt;img src="https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/devfestBanner.jpg" alt="Featured image of post Magic Sprinkles at DevFest UK Ireland" /&gt;&lt;p&gt;A shorter version of my Magic Sprinkles talk presented at &lt;a class="link" href="https://www.devfest-uki.com/schedule" target="_blank" rel="noopener"
+&gt;DevFest UK Ireland&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Magic Sprinkles: Adding animations to your app with Jetpack Compose&lt;/p&gt;
+&lt;p&gt;I have some Jetpack Compose UI components in my app and now I want to add animations, where do I start?
 In this presentation I will look briefly at the Jetpack Compose animation api to get an overview of the animation system. Then I will look at a few quick win simple animations that can add some magic to your app. I will dive into more complex and custom animations to see what is possible. All of these experiments will be illustrated in a sample app provided in a companion repo.
-At the end of this talk you will:&lt;/p>
-&lt;ul>
-&lt;li>have an overview of how animation works in Jetpack Compose&lt;/li>
-&lt;li>have some practical animation examples that you can add to your app immediately&lt;/li>
-&lt;li>have an idea of what is possible with complex and custom animations&lt;/li>
-&lt;li>have a code repo of examples&lt;/li>
-&lt;/ul>
-&lt;p>&lt;a class="link" href="https://gitlab.com/maiatoday/esw" target="_blank" rel="noopener"
->Repo&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/1KFfMNqm6GhorZxzhd-n_URsTHq_bOEApWTgOfJoc_to/edit?usp=sharing" target="_blank" rel="noopener"
->Slides&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://youtu.be/MmrFEo-3acs?t=8157" target="_blank" rel="noopener"
->Video&lt;/a>&lt;/p></description></item><item><title>Copy Paste Compose</title><link>https://www.maiatoday.net/p/copy-paste-compose/</link><pubDate>Sun, 14 Nov 2021 16:27:39 +0200</pubDate><guid>https://www.maiatoday.net/p/copy-paste-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/copy-paste-compose/scissor.png" alt="Featured image of post Copy Paste Compose" />&lt;p>Devfest 2021 West Sweden lighting talk about Copy Paste Jetpack Compose. CopyPaste is often the first attempt at re-using code, but it has its pitfalls. Some musing on why it seemed easier to copy and paste snippets of code in a Jetpack Compose project. It seems to relate to the composable architecture. Composables can be transplanted easily and modifiers can be grafted from one Composeable to another.&lt;/p>
-&lt;p>Some pitfalls and things to watch out for and some good places to find code snippets.&lt;/p>
-&lt;div class="video-wrapper">
+At the end of this talk you will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;have an overview of how animation works in Jetpack Compose&lt;/li&gt;
+&lt;li&gt;have some practical animation examples that you can add to your app immediately&lt;/li&gt;
+&lt;li&gt;have an idea of what is possible with complex and custom animations&lt;/li&gt;
+&lt;li&gt;have a code repo of examples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="link" href="https://gitlab.com/maiatoday/esw" target="_blank" rel="noopener"
+&gt;Repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/1KFfMNqm6GhorZxzhd-n_URsTHq_bOEApWTgOfJoc_to/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://youtu.be/MmrFEo-3acs?t=8157" target="_blank" rel="noopener"
+&gt;Video&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Copy Paste Compose</title><link>https://www.maiatoday.net/p/copy-paste-compose/</link><pubDate>Sun, 14 Nov 2021 16:27:39 +0200</pubDate><guid>https://www.maiatoday.net/p/copy-paste-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/copy-paste-compose/scissor.png" alt="Featured image of post Copy Paste Compose" /&gt;&lt;p&gt;Devfest 2021 West Sweden lighting talk about Copy Paste Jetpack Compose. CopyPaste is often the first attempt at re-using code, but it has its pitfalls. Some musing on why it seemed easier to copy and paste snippets of code in a Jetpack Compose project. It seems to relate to the composable architecture. Composables can be transplanted easily and modifiers can be grafted from one Composeable to another.&lt;/p&gt;
+&lt;p&gt;Some pitfalls and things to watch out for and some good places to find code snippets.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/iIO2HaGcLpI"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Testing Kotlin Coroutines</title><link>https://www.maiatoday.net/p/testing-kotlin-coroutines/</link><pubDate>Sun, 08 Dec 2019 06:47:30 +0200</pubDate><guid>https://www.maiatoday.net/p/testing-kotlin-coroutines/</guid><description>&lt;img src="https://www.maiatoday.net/p/testing-kotlin-coroutines/timeMachine.png" alt="Featured image of post Testing Kotlin Coroutines" />&lt;p>How to test kotlin coroutines by injecting dispatchers and using the testing apis. No one wants flakey tests and I want a time machine.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Testing Kotlin Coroutines</title><link>https://www.maiatoday.net/p/testing-kotlin-coroutines/</link><pubDate>Sun, 08 Dec 2019 06:47:30 +0200</pubDate><guid>https://www.maiatoday.net/p/testing-kotlin-coroutines/</guid><description>&lt;img src="https://www.maiatoday.net/p/testing-kotlin-coroutines/timeMachine.png" alt="Featured image of post Testing Kotlin Coroutines" /&gt;&lt;p&gt;How to test kotlin coroutines by injecting dispatchers and using the testing apis. No one wants flakey tests and I want a time machine.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/E-1n_AmlVjE"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item></channel></rss>
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item></channel></rss>

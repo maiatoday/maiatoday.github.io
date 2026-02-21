@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Live Code on maiatoday</title><link>https://www.maiatoday.net/tags/live-code/</link><description>Recent content in Live Code on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 Feb 2022 20:51:01 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/live-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to Compose - Live code</title><link>https://www.maiatoday.net/p/intro-to-compose-live-code/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://www.maiatoday.net/p/intro-to-compose-live-code/</guid><description>&lt;img src="https://www.maiatoday.net/p/intro-to-compose-live-code/introBroadStrokes.png" alt="Featured image of post Intro to Compose - Live code" />&lt;p>A broad strokes intro to Jetpack Compose followed by a live code demo taster of what it is like to use this framework. The demo ranges from basic use, a bit of Material components and one small animation. Hosted by &lt;a class="link" href="https://www.meetup.com/DeveloperUG/" target="_blank" rel="noopener"
->DevUG&lt;/a>. In the second part of the event, &lt;a class="link" href="https://twitter.com/tkuenneth" target="_blank" rel="noopener"
->Thomas&lt;/a> gives us a summary of what&amp;rsquo;s new in Jetpack Compose 1.1&lt;/p>
-&lt;div class="video-wrapper">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Live Code on maiatoday</title><link>https://www.maiatoday.net/tags/live-code/</link><description>Recent content in Live Code on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 Feb 2022 20:51:01 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/live-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to Compose - Live code</title><link>https://www.maiatoday.net/p/intro-to-compose-live-code/</link><pubDate>Wed, 16 Feb 2022 20:51:01 +0200</pubDate><guid>https://www.maiatoday.net/p/intro-to-compose-live-code/</guid><description>&lt;img src="https://www.maiatoday.net/p/intro-to-compose-live-code/introBroadStrokes.png" alt="Featured image of post Intro to Compose - Live code" /&gt;&lt;p&gt;A broad strokes intro to Jetpack Compose followed by a live code demo taster of what it is like to use this framework. The demo ranges from basic use, a bit of Material components and one small animation. Hosted by &lt;a class="link" href="https://www.meetup.com/DeveloperUG/" target="_blank" rel="noopener"
+&gt;DevUG&lt;/a&gt;. In the second part of the event, &lt;a class="link" href="https://twitter.com/tkuenneth" target="_blank" rel="noopener"
+&gt;Thomas&lt;/a&gt; gives us a summary of what&amp;rsquo;s new in Jetpack Compose 1.1&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/EsA5FSmN_3Q"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/1QfDTnRArUA1lW_13DNZyn7T4HV53FQjWStU6ygw_Zqk/edit?usp=sharing" target="_blank" rel="noopener"
->Slides&lt;/a>&lt;/p></description></item></channel></rss>
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/1QfDTnRArUA1lW_13DNZyn7T4HV53FQjWStU6ygw_Zqk/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;Slides&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

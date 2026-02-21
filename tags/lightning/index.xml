@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lightning on maiatoday</title><link>https://www.maiatoday.net/tags/lightning/</link><description>Recent content in Lightning on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 21:13:06 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/lightning/index.xml" rel="self" type="application/rss+xml"/><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
->Jozi-JUG&lt;/a> demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
-&lt;div class="video-wrapper">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lightning on maiatoday</title><link>https://www.maiatoday.net/tags/lightning/</link><description>Recent content in Lightning on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 21:13:06 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/lightning/index.xml" rel="self" type="application/rss+xml"/><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" /&gt;&lt;p&gt;A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
+&gt;Jozi-JUG&lt;/a&gt; demonstrating Compose animation and demo on mobile and desktop.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/Vo3iIWJvu5k"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/132iJ50ZoMZJwaFzmHWiEk6YsEMrS0rb0TTZ7KeM7MI4/edit?usp=sharing" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item></channel></rss>
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/132iJ50ZoMZJwaFzmHWiEk6YsEMrS0rb0TTZ7KeM7MI4/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;slides&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

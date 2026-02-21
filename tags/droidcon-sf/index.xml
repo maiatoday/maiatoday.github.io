@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Droidcon SF on maiatoday</title><link>https://www.maiatoday.net/tags/droidcon-sf/</link><description>Recent content in Droidcon SF on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 02 Jun 2022 15:07:56 -0500</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/droidcon-sf/index.xml" rel="self" type="application/rss+xml"/><item><title>Droidcon SF 22</title><link>https://www.maiatoday.net/p/droidcon-sf-22/</link><pubDate>Thu, 02 Jun 2022 15:07:56 -0500</pubDate><guid>https://www.maiatoday.net/p/droidcon-sf-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/droidconSF2022.jpg" alt="Featured image of post Droidcon SF 22" />&lt;p>&lt;a class="link" href="https://www.sf.droidcon.com/" target="_blank" rel="noopener"
->Droidcon SF 2022&lt;/a>, first conference outside of South Africa after the lockdown years. I was so happy to be part of the speakers for my talk titled &lt;code>Something old, something new - adding Jetpack Compose to a large open source app&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia.jpg"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Droidcon SF on maiatoday</title><link>https://www.maiatoday.net/tags/droidcon-sf/</link><description>Recent content in Droidcon SF on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 02 Jun 2022 15:07:56 -0500</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/droidcon-sf/index.xml" rel="self" type="application/rss+xml"/><item><title>Droidcon SF 22</title><link>https://www.maiatoday.net/p/droidcon-sf-22/</link><pubDate>Thu, 02 Jun 2022 15:07:56 -0500</pubDate><guid>https://www.maiatoday.net/p/droidcon-sf-22/</guid><description>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/droidconSF2022.jpg" alt="Featured image of post Droidcon SF 22" /&gt;&lt;p&gt;&lt;a class="link" href="https://www.sf.droidcon.com/" target="_blank" rel="noopener"
+&gt;Droidcon SF 2022&lt;/a&gt;, first conference outside of South Africa after the lockdown years. I was so happy to be part of the speakers for my talk titled &lt;code&gt;Something old, something new - adding Jetpack Compose to a large open source app&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia.jpg"
 width="2048"
 height="1536"
-srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu_77f2f8870ea2a202.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu_4f8781d9bd4d2972.jpg 1024w"
+srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu_aeb2aab0ccf8a600.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_maia_hu_377a773778b4ee7c.jpg 1024w"
 loading="lazy"
 alt="On stage"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
->&lt;/p>
-&lt;p>Here&amp;rsquo;s the abstract:&lt;/p>
-&lt;p>Jetpack Compose is the new UI framework for Android from Google. Can I take an existing large open source Android app and get the benefit of what compose offers? This talk is a practical report of adding the new UI framework to an existing consumer app. The app I have chosen is Habitica the very popular habit tracking app.&lt;/p>
-&lt;p>I am presenting this exploration as a travel diary of sorts. It will include:&lt;/p>
-&lt;ul>
-&lt;li>Lay of the land: looking at the existing code architecture and assessing where best to add the new framework&lt;/li>
-&lt;li>A map and a plan: opinions on architectural choices that make migration easier&lt;/li>
-&lt;li>Lists and Columns: a practical demonstration of how to port existing UI&lt;/li>
-&lt;li>Here be monsters: recounts of trials and tribulations of working with the existing code and the new framework&lt;/li>
-&lt;li>Home again: a demo&lt;/li>
-&lt;/ul>
-&lt;p>I made some lovely new friends, thanks Tasha for the photo.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends.jpg"
+&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the abstract:&lt;/p&gt;
+&lt;p&gt;Jetpack Compose is the new UI framework for Android from Google. Can I take an existing large open source Android app and get the benefit of what compose offers? This talk is a practical report of adding the new UI framework to an existing consumer app. The app I have chosen is Habitica the very popular habit tracking app.&lt;/p&gt;
+&lt;p&gt;I am presenting this exploration as a travel diary of sorts. It will include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lay of the land: looking at the existing code architecture and assessing where best to add the new framework&lt;/li&gt;
+&lt;li&gt;A map and a plan: opinions on architectural choices that make migration easier&lt;/li&gt;
+&lt;li&gt;Lists and Columns: a practical demonstration of how to port existing UI&lt;/li&gt;
+&lt;li&gt;Here be monsters: recounts of trials and tribulations of working with the existing code and the new framework&lt;/li&gt;
+&lt;li&gt;Home again: a demo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I made some lovely new friends, thanks Tasha for the photo.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends.jpg"
 width="2048"
 height="1277"
-srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu_142168dbaa5e7b41.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu_d915c87416f4a0c0.jpg 1024w"
+srcset="https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu_eda41eb438335854.jpg 480w, https://www.maiatoday.net/p/droidcon-sf-22/dcsf22_newfriends_hu_cdf7f0b96b6e4eba.jpg 1024w"
 loading="lazy"
 alt="Friends"
 class="gallery-image"
 data-flex-grow="160"
 data-flex-basis="384px"
->&lt;/p>
-&lt;p>Also the &lt;a class="link" href="https://www.droidcon.com/2022/06/28/something-old-something-new-adding-jetpack-compose-to-a-large-open-source-android-app/" target="_blank" rel="noopener"
->video&lt;/a> and the &lt;a class="link" href="https://www.slideshare.net/MaiaGrotepass1/something-old-something-newpdf-251915366" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item></channel></rss>
+&gt;&lt;/p&gt;
+&lt;p&gt;Also the &lt;a class="link" href="https://www.droidcon.com/2022/06/28/something-old-something-new-adding-jetpack-compose-to-a-large-open-source-android-app/" target="_blank" rel="noopener"
+&gt;video&lt;/a&gt; and the &lt;a class="link" href="https://www.slideshare.net/MaiaGrotepass1/something-old-something-newpdf-251915366" target="_blank" rel="noopener"
+&gt;slides&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

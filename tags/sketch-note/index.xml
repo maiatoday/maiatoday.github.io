@@ -1,134 +1,134 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sketch Note on maiatoday</title><link>https://www.maiatoday.net/tags/sketch-note/</link><description>Recent content in Sketch Note on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2022 18:16:06 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/sketch-note/index.xml" rel="self" type="application/rss+xml"/><item><title>Flow Notes</title><link>https://www.maiatoday.net/p/flow-notes/</link><pubDate>Wed, 27 Apr 2022 18:16:06 +0200</pubDate><guid>https://www.maiatoday.net/p/flow-notes/</guid><description>&lt;img src="https://www.maiatoday.net/p/flow-notes/flowNotes.jpg" alt="Featured image of post Flow Notes" />&lt;p>This post is my companion sketch notes for all the resources I consumed on the topic of flows. It is not meant to replace the info that I found on the internet but rather supplement it. Nor is it complete or should it be a standalone guide. In fact you can find an excellent list of my favourite resources at the end of the article. It is a document that helps me make sense of the topic. With that disclaimer out of the way&amp;hellip;&lt;/p>
-&lt;p>Let&amp;rsquo;s take a step back and look at the suspend function. If your coroutine knowledge is rusty, &lt;a class="link" href="https://kotlinlang.org/docs/coroutines-overview.html" target="_blank" rel="noopener"
->freshen&lt;/a> that up &lt;a class="link" href="https://www.youtube.com/watch?v=_hfBv0a09Jc" target="_blank" rel="noopener"
->first&lt;/a>.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/suspend.jpg"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sketch Note on maiatoday</title><link>https://www.maiatoday.net/tags/sketch-note/</link><description>Recent content in Sketch Note on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2022 18:16:06 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/sketch-note/index.xml" rel="self" type="application/rss+xml"/><item><title>Flow Notes</title><link>https://www.maiatoday.net/p/flow-notes/</link><pubDate>Wed, 27 Apr 2022 18:16:06 +0200</pubDate><guid>https://www.maiatoday.net/p/flow-notes/</guid><description>&lt;img src="https://www.maiatoday.net/p/flow-notes/flowNotes.jpg" alt="Featured image of post Flow Notes" /&gt;&lt;p&gt;This post is my companion sketch notes for all the resources I consumed on the topic of flows. It is not meant to replace the info that I found on the internet but rather supplement it. Nor is it complete or should it be a standalone guide. In fact you can find an excellent list of my favourite resources at the end of the article. It is a document that helps me make sense of the topic. With that disclaimer out of the way&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take a step back and look at the suspend function. If your coroutine knowledge is rusty, &lt;a class="link" href="https://kotlinlang.org/docs/coroutines-overview.html" target="_blank" rel="noopener"
+&gt;freshen&lt;/a&gt; that up &lt;a class="link" href="https://www.youtube.com/watch?v=_hfBv0a09Jc" target="_blank" rel="noopener"
+&gt;first&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/suspend.jpg"
 width="1200"
 height="2000"
-srcset="https://www.maiatoday.net/p/flow-notes/suspend_hu_51093c099003a67c.jpg 480w, https://www.maiatoday.net/p/flow-notes/suspend_hu_98356e90dcb38abd.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/suspend_hu_b645682e9027660.jpg 480w, https://www.maiatoday.net/p/flow-notes/suspend_hu_8ea14a6401403400.jpg 1024w"
 loading="lazy"
 alt="Coroutines suspend"
 class="gallery-image"
 data-flex-grow="60"
 data-flex-basis="144px"
->&lt;/p>
-&lt;p>What if we want to provide multiple values? A stream of values that can be observed? Enter flows. At their most basic, flows have a &lt;strong>producer&lt;/strong> and a &lt;strong>consumer&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/produceConsume.jpg"
+&gt;&lt;/p&gt;
+&lt;p&gt;What if we want to provide multiple values? A stream of values that can be observed? Enter flows. At their most basic, flows have a &lt;strong&gt;producer&lt;/strong&gt; and a &lt;strong&gt;consumer&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/produceConsume.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/produceConsume_hu_208d872427d9761c.jpg 480w, https://www.maiatoday.net/p/flow-notes/produceConsume_hu_17f4eebf1de9d510.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/produceConsume_hu_6432d56e791b9ec7.jpg 480w, https://www.maiatoday.net/p/flow-notes/produceConsume_hu_14da12c592e0bf47.jpg 1024w"
 loading="lazy"
 alt="Producers and Consumers"
 class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
->&lt;/p>
-&lt;p>The interface looks like this (spoiler it&amp;rsquo;s just &lt;strong>suspend&lt;/strong> functions under the hood)&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/romanSaysSuspend.png"
+&gt;&lt;/p&gt;
+&lt;p&gt;The interface looks like this (spoiler it&amp;rsquo;s just &lt;strong&gt;suspend&lt;/strong&gt; functions under the hood)&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/romanSaysSuspend.png"
 width="2194"
 height="1048"
-srcset="https://www.maiatoday.net/p/flow-notes/romanSaysSuspend_hu_420ef1d71a592c87.png 480w, https://www.maiatoday.net/p/flow-notes/romanSaysSuspend_hu_5e456dde3d4f10b4.png 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/romanSaysSuspend_hu_cacd4f9d84b7a1bc.png 480w, https://www.maiatoday.net/p/flow-notes/romanSaysSuspend_hu_cca59520f957a672.png 1024w"
 loading="lazy"
 alt="Flow Interface: Roman says no magic only suspend functions"
 class="gallery-image"
 data-flex-grow="209"
 data-flex-basis="502px"
->&lt;/p>
-&lt;p>The consumer gets the &lt;strong>multiple values&lt;/strong> by using a &lt;strong>terminal operator&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/terminal.jpg"
+&gt;&lt;/p&gt;
+&lt;p&gt;The consumer gets the &lt;strong&gt;multiple values&lt;/strong&gt; by using a &lt;strong&gt;terminal operator&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/terminal.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/terminal_hu_bee7b891e19c8ad1.jpg 480w, https://www.maiatoday.net/p/flow-notes/terminal_hu_ab039e59da90df51.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/terminal_hu_d4c27caf24c7c027.jpg 480w, https://www.maiatoday.net/p/flow-notes/terminal_hu_d749d73f1799295a.jpg 1024w"
 loading="lazy"
 alt="Terminal operators"
 class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
->&lt;/p>
-&lt;p>If I need to change the produced values along the way before consuming them, there are &lt;strong>transform&lt;/strong> operators.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/transform.jpg"
+&gt;&lt;/p&gt;
+&lt;p&gt;If I need to change the produced values along the way before consuming them, there are &lt;strong&gt;transform&lt;/strong&gt; operators.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/transform.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/transform_hu_6d1f9e0f4dde1145.jpg 480w, https://www.maiatoday.net/p/flow-notes/transform_hu_de4dfcd3894a853d.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/transform_hu_df78b6a180c4eaf5.jpg 480w, https://www.maiatoday.net/p/flow-notes/transform_hu_524d25c43a13fb49.jpg 1024w"
 loading="lazy"
 alt="Transform operators"
 class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
->&lt;/p>
-&lt;p>How do I switch from main to io context?&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/context.jpg"
+&gt;&lt;/p&gt;
+&lt;p&gt;How do I switch from main to io context?&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/context.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/context_hu_d9be45b7ca50ede9.jpg 480w, https://www.maiatoday.net/p/flow-notes/context_hu_5c623006af3d3109.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/context_hu_cc9055baa5a18fd4.jpg 480w, https://www.maiatoday.net/p/flow-notes/context_hu_be9301a645bfa4e1.jpg 1024w"
 loading="lazy"
 alt="Context preserve"
 class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
->&lt;/p>
-&lt;p>What&amp;rsquo;s with the hot and cold flows? How do I remember which is which?&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/coldHot.jpg"
+&gt;&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s with the hot and cold flows? How do I remember which is which?&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/coldHot.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/coldHot_hu_28900ba6f26f2080.jpg 480w, https://www.maiatoday.net/p/flow-notes/coldHot_hu_d54815763894838c.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/coldHot_hu_3d1b5218f0b7ba5.jpg 480w, https://www.maiatoday.net/p/flow-notes/coldHot_hu_ab486a56de2d63f0.jpg 1024w"
 loading="lazy"
 alt="Hot and Cold flows"
 class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
->&lt;/p>
-&lt;p>Some practical hot flows.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/hotFlow.jpg"
+&gt;&lt;/p&gt;
+&lt;p&gt;Some practical hot flows.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/hotFlow.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/hotFlow_hu_243b3f5f550d9ac.jpg 480w, https://www.maiatoday.net/p/flow-notes/hotFlow_hu_ae05eed5b88db1da.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/hotFlow_hu_19af5cc14d2ade1b.jpg 480w, https://www.maiatoday.net/p/flow-notes/hotFlow_hu_e193d3d11aaabad2.jpg 1024w"
 loading="lazy"
 alt="state and shared flows"
 class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
->&lt;/p>
-&lt;p>Flows on Android&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/slowAndroid.jpg"
+&gt;&lt;/p&gt;
+&lt;p&gt;Flows on Android&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/slowAndroid.jpg"
 width="2000"
 height="1200"
-srcset="https://www.maiatoday.net/p/flow-notes/slowAndroid_hu_257d772fa20ebe0c.jpg 480w, https://www.maiatoday.net/p/flow-notes/slowAndroid_hu_e252b4ea322ffedb.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/slowAndroid_hu_a28b7a16bcdb8d06.jpg 480w, https://www.maiatoday.net/p/flow-notes/slowAndroid_hu_5ae52e82dd96650a.jpg 1024w"
 loading="lazy"
 alt="flows on Android"
 class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
->&lt;/p>
-&lt;h1 id="references">References
-&lt;/h1>&lt;p>&lt;a class="link" href="https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7" target="_blank" rel="noopener"
->Kotlin Coroutines Flow in a nutshell&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://rvbsoftdev.medium.com/kotlin-flows-an-android-cheat-sheet-d71ae772030d" target="_blank" rel="noopener"
->Kotlin Flows ~ an Android cheat sheet&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://proandroiddev.com/kotlin-flows-in-android-summary-8e092040fb3a" target="_blank" rel="noopener"
->Kotlin Flows in Android summary&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://developer.android.com/kotlin/flow" target="_blank" rel="noopener"
->Android flow&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://kotlinlang.org/docs/flow.html#flows" target="_blank" rel="noopener"
->Asynchronous Flow | Kotlin&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://kt.academy/article/how-flow-works" target="_blank" rel="noopener"
->Flow under the hood: how does it really work&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=tYcqn48SMT8" target="_blank" rel="noopener"
->KotlinConf 2019: Asynchronous Data Streams with Kotlin Flow by Roman Elizarov&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=B_3iTVJT8Zs" target="_blank" rel="noopener"
->Kotlin Flows in a Nutshell&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://flowmarbles.com/" target="_blank" rel="noopener"
->FlowMarbles&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://developer.android.com/kotlin/flow/stateflow-and-sharedflow" target="_blank" rel="noopener"
->Android StateFlow and SharedFlow&lt;/a>&lt;/p>
-&lt;p>If you are reading this far I will reward you with an Android portait.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/flow-notes/android.jpg"
+&gt;&lt;/p&gt;
+&lt;h1 id="references"&gt;References
+&lt;/h1&gt;&lt;p&gt;&lt;a class="link" href="https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7" target="_blank" rel="noopener"
+&gt;Kotlin Coroutines Flow in a nutshell&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://rvbsoftdev.medium.com/kotlin-flows-an-android-cheat-sheet-d71ae772030d" target="_blank" rel="noopener"
+&gt;Kotlin Flows ~ an Android cheat sheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://proandroiddev.com/kotlin-flows-in-android-summary-8e092040fb3a" target="_blank" rel="noopener"
+&gt;Kotlin Flows in Android summary&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://developer.android.com/kotlin/flow" target="_blank" rel="noopener"
+&gt;Android flow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://kotlinlang.org/docs/flow.html#flows" target="_blank" rel="noopener"
+&gt;Asynchronous Flow | Kotlin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://kt.academy/article/how-flow-works" target="_blank" rel="noopener"
+&gt;Flow under the hood: how does it really work&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://www.youtube.com/watch?v=tYcqn48SMT8" target="_blank" rel="noopener"
+&gt;KotlinConf 2019: Asynchronous Data Streams with Kotlin Flow by Roman Elizarov&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://www.youtube.com/watch?v=B_3iTVJT8Zs" target="_blank" rel="noopener"
+&gt;Kotlin Flows in a Nutshell&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://flowmarbles.com/" target="_blank" rel="noopener"
+&gt;FlowMarbles&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://developer.android.com/kotlin/flow/stateflow-and-sharedflow" target="_blank" rel="noopener"
+&gt;Android StateFlow and SharedFlow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you are reading this far I will reward you with an Android portait.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/flow-notes/android.jpg"
 width="724"
 height="857"
-srcset="https://www.maiatoday.net/p/flow-notes/android_hu_2075b941edd659e1.jpg 480w, https://www.maiatoday.net/p/flow-notes/android_hu_7f486130e30ad024.jpg 1024w"
+srcset="https://www.maiatoday.net/p/flow-notes/android_hu_e5e01751a682ef83.jpg 480w, https://www.maiatoday.net/p/flow-notes/android_hu_e0bda85df4e265ee.jpg 1024w"
 loading="lazy"
 alt="Android"
 class="gallery-image"
 data-flex-grow="84"
 data-flex-basis="202px"
->&lt;/p></description></item></channel></rss>
+&gt;&lt;/p&gt;</description></item></channel></rss>

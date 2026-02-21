@@ -1,213 +1,213 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Talk on maiatoday</title><link>https://www.maiatoday.net/tags/talk/</link><description>Recent content in Talk on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 14 Oct 2022 10:30:41 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/talk/index.xml" rel="self" type="application/rss+xml"/><item><title>Four of a Kotlin Kind at I code Java 2022 conference</title><link>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</link><pubDate>Fri, 14 Oct 2022 10:30:41 +0200</pubDate><guid>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</guid><description>&lt;img src="https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/icj2022.jpg" alt="Featured image of post Four of a Kotlin Kind at I code Java 2022 conference" />&lt;p>I shared my talk titled Imperative, Declarative, Object oriented, functional: Four of a Kotlin Kind at the &lt;a class="link" href="https://j-sa.co/schedule-java/" target="_blank" rel="noopener"
->I code Java conference&lt;/a>.&lt;/p>
-&lt;p>The abstract:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Talk on maiatoday</title><link>https://www.maiatoday.net/tags/talk/</link><description>Recent content in Talk on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 14 Oct 2022 10:30:41 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/talk/index.xml" rel="self" type="application/rss+xml"/><item><title>Four of a Kotlin Kind at I code Java 2022 conference</title><link>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</link><pubDate>Fri, 14 Oct 2022 10:30:41 +0200</pubDate><guid>https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/</guid><description>&lt;img src="https://www.maiatoday.net/p/four-of-a-kotlin-kind-at-i-code-java-2022-conference/icj2022.jpg" alt="Featured image of post Four of a Kotlin Kind at I code Java 2022 conference" /&gt;&lt;p&gt;I shared my talk titled Imperative, Declarative, Object oriented, functional: Four of a Kotlin Kind at the &lt;a class="link" href="https://j-sa.co/schedule-java/" target="_blank" rel="noopener"
+&gt;I code Java conference&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The abstract:
 Is Kotlin a functional language? Yes, but&amp;hellip; Is it object oriented? Yes, but&amp;hellip;
 Looking at four concepts: imperative, declarative, functional and object oriented
-How does Kotlin make it easy to use either or all at the same time. This talk contains: Some useful Kotlin tips, some guidelines and pitfalls for the four concepts, traces of definitions and software history. After listening to this talk you will understand what these concepts are, what each is good for and how they are supported by the Kotlin language.&lt;/p>
-&lt;p>You can see the talk here&lt;/p>
-&lt;div class="video-wrapper">
+How does Kotlin make it easy to use either or all at the same time. This talk contains: Some useful Kotlin tips, some guidelines and pitfalls for the four concepts, traces of definitions and software history. After listening to this talk you will understand what these concepts are, what each is good for and how they are supported by the Kotlin language.&lt;/p&gt;
+&lt;p&gt;You can see the talk here&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/GY3ImFPfaRI"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Kibeth Codes twitch highlights 1</title><link>https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/</link><pubDate>Wed, 02 Mar 2022 21:38:36 +0200</pubDate><guid>https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/</guid><description>&lt;img src="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/blank.jpeg" alt="Featured image of post Kibeth Codes twitch highlights 1" />&lt;p>To practise for live speaking and to explore how to add Jetpack Compose to an existing open source app, I start a twitch stream as &lt;a class="link" href="https://twitch.com/kibethcodes" target="_blank" rel="noopener"
->kibethcodes&lt;/a>. The app I chose to work on is &lt;a class="link" href="https://github.com/HabitRPG/habitica" target="_blank" rel="noopener"
->Habitica&lt;/a>, a habit tracking/ToDo app that saw it&amp;rsquo;s first commit in 2015.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6.png"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Kibeth Codes twitch highlights 1</title><link>https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/</link><pubDate>Wed, 02 Mar 2022 21:38:36 +0200</pubDate><guid>https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/</guid><description>&lt;img src="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/blank.jpeg" alt="Featured image of post Kibeth Codes twitch highlights 1" /&gt;&lt;p&gt;To practise for live speaking and to explore how to add Jetpack Compose to an existing open source app, I start a twitch stream as &lt;a class="link" href="https://twitch.com/kibethcodes" target="_blank" rel="noopener"
+&gt;kibethcodes&lt;/a&gt;. The app I chose to work on is &lt;a class="link" href="https://github.com/HabitRPG/habitica" target="_blank" rel="noopener"
+&gt;Habitica&lt;/a&gt;, a habit tracking/ToDo app that saw it&amp;rsquo;s first commit in 2015.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6.png"
 width="1000"
 height="330"
-srcset="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu_afc65317e71a9b80.png 480w, https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu_2e9bbd19fb905014.png 1024w"
+srcset="https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu_bf67f656ebe64721.png 480w, https://www.maiatoday.net/p/kibeth-codes-twitch-highlights-1/kibethLevel6_hu_19e4757d2feb1813.png 1024w"
 loading="lazy"
 alt="KibethCodes level 6"
 class="gallery-image"
 data-flex-grow="303"
 data-flex-basis="727px"
->&lt;/p>
-&lt;p>Streaming Tuesdays at 19:00 UTC+2&lt;/p>
-&lt;p>Here are a selection of highlights of the twitch stream.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;&lt;/p&gt;
+&lt;p&gt;Streaming Tuesdays at 19:00 UTC+2&lt;/p&gt;
+&lt;p&gt;Here are a selection of highlights of the twitch stream.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/PeB7da1jUKE"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/o5LO-kl71Ck"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/sb5wkStL9FM"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" />&lt;p>A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
->Jozi-JUG&lt;/a> demonstrating Compose animation and demo on mobile and desktop.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Lightning Demo of Compose animation</title><link>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</link><pubDate>Mon, 28 Feb 2022 21:13:06 +0200</pubDate><guid>https://www.maiatoday.net/p/lightning-demo-of-compose-animation/</guid><description>&lt;img src="https://www.maiatoday.net/p/lightning-demo-of-compose-animation/introBunny.png" alt="Featured image of post Lightning Demo of Compose animation" /&gt;&lt;p&gt;A lighting talk for &lt;a class="link" href="https://twitter.com/jozijug" target="_blank" rel="noopener"
+&gt;Jozi-JUG&lt;/a&gt; demonstrating Compose animation and demo on mobile and desktop.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/Vo3iIWJvu5k"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/132iJ50ZoMZJwaFzmHWiEk6YsEMrS0rb0TTZ7KeM7MI4/edit?usp=sharing" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item><item><title>Panel talk on Deep dive into compose</title><link>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" />&lt;p>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/132iJ50ZoMZJwaFzmHWiEk6YsEMrS0rb0TTZ7KeM7MI4/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;slides&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Panel talk on Deep dive into compose</title><link>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" /&gt;&lt;p&gt;Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/ued3Zb2YbCo"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</guid><description>&lt;img src="https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/animateCompare.png" alt="Featured image of post Comparing Declarative Animation frameworks" />&lt;p>A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter. Hosted by &lt;a class="link" href="https://gdg.community.dev/gdg-nuremberg/" target="_blank" rel="noopener"
->GDG Nuremberg&lt;/a> We discovered many similarites, all the systems have some way to control the animation graph, with somewhat confusing differences in naming. A tween in compose is not the same as a tween in Flutter. Flutter &lt;code>Tween&lt;/code> is an &lt;code>animationSpec&lt;/code> in Compose. Compose &lt;code>tween&lt;/code> is a specific kind of &lt;code>Curve&lt;/code> in Flutter that does a linear interpolation. Oh and its a function in Compose and an object in Flutter.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</guid><description>&lt;img src="https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/animateCompare.png" alt="Featured image of post Comparing Declarative Animation frameworks" /&gt;&lt;p&gt;A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter. Hosted by &lt;a class="link" href="https://gdg.community.dev/gdg-nuremberg/" target="_blank" rel="noopener"
+&gt;GDG Nuremberg&lt;/a&gt; We discovered many similarites, all the systems have some way to control the animation graph, with somewhat confusing differences in naming. A tween in compose is not the same as a tween in Flutter. Flutter &lt;code&gt;Tween&lt;/code&gt; is an &lt;code&gt;animationSpec&lt;/code&gt; in Compose. Compose &lt;code&gt;tween&lt;/code&gt; is a specific kind of &lt;code&gt;Curve&lt;/code&gt; in Flutter that does a linear interpolation. Oh and its a function in Compose and an object in Flutter.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/-OByq0ob_P4"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/18oxYA3cj31nYBfDStghSDwMC3s-5uNHy8-ItBihXTGI/edit?usp=sharing" target="_blank" rel="noopener"
->Slides&lt;/a>&lt;/p></description></item><item><title>Magic Sprinkles at DevFest UK Ireland</title><link>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</link><pubDate>Sat, 29 Jan 2022 12:53:10 +0200</pubDate><guid>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</guid><description>&lt;img src="https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/devfestBanner.jpg" alt="Featured image of post Magic Sprinkles at DevFest UK Ireland" />&lt;p>A shorter version of my Magic Sprinkles talk presented at &lt;a class="link" href="https://www.devfest-uki.com/schedule" target="_blank" rel="noopener"
->DevFest UK Ireland&lt;/a>&lt;/p>
-&lt;p>Magic Sprinkles: Adding animations to your app with Jetpack Compose&lt;/p>
-&lt;p>I have some Jetpack Compose UI components in my app and now I want to add animations, where do I start?
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/18oxYA3cj31nYBfDStghSDwMC3s-5uNHy8-ItBihXTGI/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;Slides&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Magic Sprinkles at DevFest UK Ireland</title><link>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</link><pubDate>Sat, 29 Jan 2022 12:53:10 +0200</pubDate><guid>https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/</guid><description>&lt;img src="https://www.maiatoday.net/p/magic-sprinkles-at-devfest-uk-ireland/devfestBanner.jpg" alt="Featured image of post Magic Sprinkles at DevFest UK Ireland" /&gt;&lt;p&gt;A shorter version of my Magic Sprinkles talk presented at &lt;a class="link" href="https://www.devfest-uki.com/schedule" target="_blank" rel="noopener"
+&gt;DevFest UK Ireland&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Magic Sprinkles: Adding animations to your app with Jetpack Compose&lt;/p&gt;
+&lt;p&gt;I have some Jetpack Compose UI components in my app and now I want to add animations, where do I start?
 In this presentation I will look briefly at the Jetpack Compose animation api to get an overview of the animation system. Then I will look at a few quick win simple animations that can add some magic to your app. I will dive into more complex and custom animations to see what is possible. All of these experiments will be illustrated in a sample app provided in a companion repo.
-At the end of this talk you will:&lt;/p>
-&lt;ul>
-&lt;li>have an overview of how animation works in Jetpack Compose&lt;/li>
-&lt;li>have some practical animation examples that you can add to your app immediately&lt;/li>
-&lt;li>have an idea of what is possible with complex and custom animations&lt;/li>
-&lt;li>have a code repo of examples&lt;/li>
-&lt;/ul>
-&lt;p>&lt;a class="link" href="https://gitlab.com/maiatoday/esw" target="_blank" rel="noopener"
->Repo&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/1KFfMNqm6GhorZxzhd-n_URsTHq_bOEApWTgOfJoc_to/edit?usp=sharing" target="_blank" rel="noopener"
->Slides&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://youtu.be/MmrFEo-3acs?t=8157" target="_blank" rel="noopener"
->Video&lt;/a>&lt;/p></description></item><item><title>Intro to Jetpack Compose</title><link>https://www.maiatoday.net/p/intro-to-jetpack-compose/</link><pubDate>Tue, 30 Nov 2021 16:36:23 +0200</pubDate><guid>https://www.maiatoday.net/p/intro-to-jetpack-compose/</guid><description>&lt;p>Introduction to Jetpack Compose technical talk to embeded, mobile and flutter developers. This talk gives an intro to Jetpack Compose and shows how to get started with a simple code lab.&lt;/p>
-&lt;div class="video-wrapper">
+At the end of this talk you will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;have an overview of how animation works in Jetpack Compose&lt;/li&gt;
+&lt;li&gt;have some practical animation examples that you can add to your app immediately&lt;/li&gt;
+&lt;li&gt;have an idea of what is possible with complex and custom animations&lt;/li&gt;
+&lt;li&gt;have a code repo of examples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="link" href="https://gitlab.com/maiatoday/esw" target="_blank" rel="noopener"
+&gt;Repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/1KFfMNqm6GhorZxzhd-n_URsTHq_bOEApWTgOfJoc_to/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://youtu.be/MmrFEo-3acs?t=8157" target="_blank" rel="noopener"
+&gt;Video&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Intro to Jetpack Compose</title><link>https://www.maiatoday.net/p/intro-to-jetpack-compose/</link><pubDate>Tue, 30 Nov 2021 16:36:23 +0200</pubDate><guid>https://www.maiatoday.net/p/intro-to-jetpack-compose/</guid><description>&lt;p&gt;Introduction to Jetpack Compose technical talk to embeded, mobile and flutter developers. This talk gives an intro to Jetpack Compose and shows how to get started with a simple code lab.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/mIYecX389Ck"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Copy Paste Compose</title><link>https://www.maiatoday.net/p/copy-paste-compose/</link><pubDate>Sun, 14 Nov 2021 16:27:39 +0200</pubDate><guid>https://www.maiatoday.net/p/copy-paste-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/copy-paste-compose/scissor.png" alt="Featured image of post Copy Paste Compose" />&lt;p>Devfest 2021 West Sweden lighting talk about Copy Paste Jetpack Compose. CopyPaste is often the first attempt at re-using code, but it has its pitfalls. Some musing on why it seemed easier to copy and paste snippets of code in a Jetpack Compose project. It seems to relate to the composable architecture. Composables can be transplanted easily and modifiers can be grafted from one Composeable to another.&lt;/p>
-&lt;p>Some pitfalls and things to watch out for and some good places to find code snippets.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Copy Paste Compose</title><link>https://www.maiatoday.net/p/copy-paste-compose/</link><pubDate>Sun, 14 Nov 2021 16:27:39 +0200</pubDate><guid>https://www.maiatoday.net/p/copy-paste-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/copy-paste-compose/scissor.png" alt="Featured image of post Copy Paste Compose" /&gt;&lt;p&gt;Devfest 2021 West Sweden lighting talk about Copy Paste Jetpack Compose. CopyPaste is often the first attempt at re-using code, but it has its pitfalls. Some musing on why it seemed easier to copy and paste snippets of code in a Jetpack Compose project. It seems to relate to the composable architecture. Composables can be transplanted easily and modifiers can be grafted from one Composeable to another.&lt;/p&gt;
+&lt;p&gt;Some pitfalls and things to watch out for and some good places to find code snippets.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/iIO2HaGcLpI"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Rust vs Kotlin panel discussion</title><link>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</link><pubDate>Thu, 28 Oct 2021 16:21:43 +0200</pubDate><guid>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</guid><description>&lt;p>Panel discussion on Rust and Kotlin for GDG Cape Town&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Rust vs Kotlin panel discussion</title><link>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</link><pubDate>Thu, 28 Oct 2021 16:21:43 +0200</pubDate><guid>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</guid><description>&lt;p&gt;Panel discussion on Rust and Kotlin for GDG Cape Town&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/Xr1TtmUxcOI"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app</title><link>https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</link><pubDate>Tue, 28 Sep 2021 16:10:24 +0200</pubDate><guid>https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</guid><description>&lt;img src="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/magic_sprinkles.png" alt="Featured image of post Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app" />&lt;p>I presented a talk for Chicago Roboto 2021 and for GDG Cape Town titled Magic Sprinkles: Adding animations to and existing app. Below are the videos of both talks and the slides&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021.png"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app</title><link>https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</link><pubDate>Tue, 28 Sep 2021 16:10:24 +0200</pubDate><guid>https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/</guid><description>&lt;img src="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/magic_sprinkles.png" alt="Featured image of post Two Talks - Magic Sprinkles: adding animations to a Jetpack Compose app" /&gt;&lt;p&gt;I presented a talk for Chicago Roboto 2021 and for GDG Cape Town titled Magic Sprinkles: Adding animations to and existing app. Below are the videos of both talks and the slides&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021.png"
 width="1300"
 height="738"
-srcset="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu_a58fb7de9025d3c4.png 480w, https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu_1af2b974d1bdd303.png 1024w"
+srcset="https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu_92b2d65d75a09cde.png 480w, https://www.maiatoday.net/p/two-talks-magic-sprinkles-adding-animations-to-a-jetpack-compose-app/chicagoRoboto2021_hu_789be85d772679c.png 1024w"
 loading="lazy"
 alt="Chicago Roboto"
 class="gallery-image"
 data-flex-grow="176"
 data-flex-basis="422px"
->&lt;/p>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/1wEeHTF5JRftnaMAf4_xARfA5zIKCn5Vfy9W4JVtfggY/edit#slide=id.p" target="_blank" rel="noopener"
->Slides&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://chicagoroboto.com/session-videos/?vimeography_gallery=5&amp;amp;vimeography_video=627636211" target="_blank" rel="noopener"
->Chicago Robot video&lt;/a>&lt;/p>
-&lt;p>GDG Cape Town video&lt;/p>
-&lt;div class="video-wrapper">
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/1wEeHTF5JRftnaMAf4_xARfA5zIKCn5Vfy9W4JVtfggY/edit#slide=id.p" target="_blank" rel="noopener"
+&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://chicagoroboto.com/session-videos/?vimeography_gallery=5&amp;amp;vimeography_video=627636211" target="_blank" rel="noopener"
+&gt;Chicago Robot video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GDG Cape Town video&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/oYcNVGTmI-k"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Compose meets CameraX</title><link>https://www.maiatoday.net/p/compose-meets-camerax/</link><pubDate>Thu, 29 Jul 2021 15:57:58 +0200</pubDate><guid>https://www.maiatoday.net/p/compose-meets-camerax/</guid><description>&lt;img src="https://www.maiatoday.net/p/compose-meets-camerax/compose_meets_camerax.png" alt="Featured image of post Compose meets CameraX" />&lt;p>Co presented a talk with Ishmael about CameraX and integration with Jetpack Compose for GDG Cape Town.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Compose meets CameraX</title><link>https://www.maiatoday.net/p/compose-meets-camerax/</link><pubDate>Thu, 29 Jul 2021 15:57:58 +0200</pubDate><guid>https://www.maiatoday.net/p/compose-meets-camerax/</guid><description>&lt;img src="https://www.maiatoday.net/p/compose-meets-camerax/compose_meets_camerax.png" alt="Featured image of post Compose meets CameraX" /&gt;&lt;p&gt;Co presented a talk with Ishmael about CameraX and integration with Jetpack Compose for GDG Cape Town.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/oykdnh7oSiw"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>She Can Do Panel discussion: Collaboration between designers and developers</title><link>https://www.maiatoday.net/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</link><pubDate>Wed, 02 Jun 2021 15:51:17 +0200</pubDate><guid>https://www.maiatoday.net/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</guid><description>&lt;p>Panel discussion with GDG Johannesburg and She Can Do&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>She Can Do Panel discussion: Collaboration between designers and developers</title><link>https://www.maiatoday.net/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</link><pubDate>Wed, 02 Jun 2021 15:51:17 +0200</pubDate><guid>https://www.maiatoday.net/p/she-can-do-panel-discussion-collaboration-between-designers-and-developers/</guid><description>&lt;p&gt;Panel discussion with GDG Johannesburg and She Can Do&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/viEIn7y1Meo"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>International Womens Day Codelab - Getting started with Compose</title><link>https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/</link><pubDate>Sat, 27 Mar 2021 15:44:02 +0200</pubDate><guid>https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/iwd_compose.png" alt="Featured image of post International Womens Day Codelab - Getting started with Compose" />&lt;p>Getting started with Jetpack compose Codelab and talk for International Women&amp;rsquo;s Day event with Women Techmakers and GDGs in Southern Africa&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>International Womens Day Codelab - Getting started with Compose</title><link>https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/</link><pubDate>Sat, 27 Mar 2021 15:44:02 +0200</pubDate><guid>https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/international-womens-day-codelab-getting-started-with-compose/iwd_compose.png" alt="Featured image of post International Womens Day Codelab - Getting started with Compose" /&gt;&lt;p&gt;Getting started with Jetpack compose Codelab and talk for International Women&amp;rsquo;s Day event with Women Techmakers and GDGs in Southern Africa&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/RKVh45KYd94"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Jetpack Compose - As good as the hype?</title><link>https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/</link><pubDate>Thu, 04 Mar 2021 15:36:17 +0200</pubDate><guid>https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/</guid><description>&lt;img src="https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/compose_hype.png" alt="Featured image of post Jetpack Compose - As good as the hype?" />&lt;p>Co presented with Charles Okot an first look at Jetpack and how we could use it.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Jetpack Compose - As good as the hype?</title><link>https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/</link><pubDate>Thu, 04 Mar 2021 15:36:17 +0200</pubDate><guid>https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/</guid><description>&lt;img src="https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/compose_hype.png" alt="Featured image of post Jetpack Compose - As good as the hype?" /&gt;&lt;p&gt;Co presented with Charles Okot an first look at Jetpack and how we could use it.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/q8H_YFxVI_0"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Refresh, Renew, Refactor - modernising a large Android app with many users</title><link>https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/</link><pubDate>Fri, 09 Oct 2020 15:19:42 +0200</pubDate><guid>https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/</guid><description>&lt;img src="https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/droidcon2020.png" alt="Featured image of post Refresh, Renew, Refactor - modernising a large Android app with many users" />&lt;p>Co presenting a talk at Droidcon EMEA 2020&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new.png"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Refresh, Renew, Refactor - modernising a large Android app with many users</title><link>https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/</link><pubDate>Fri, 09 Oct 2020 15:19:42 +0200</pubDate><guid>https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/</guid><description>&lt;img src="https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/droidcon2020.png" alt="Featured image of post Refresh, Renew, Refactor - modernising a large Android app with many users" /&gt;&lt;p&gt;Co presenting a talk at Droidcon EMEA 2020&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new.png"
 width="2272"
 height="1278"
-srcset="https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hu_5cf04ad4cf67e431.png 480w, https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hu_36c360f33d93d738.png 1024w"
+srcset="https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hu_c0a6576907b7d53d.png 480w, https://www.maiatoday.net/p/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/old_new_hu_60b93ea355e9eb15.png 1024w"
 loading="lazy"
 alt="old vs new"
 class="gallery-image"
 data-flex-grow="177"
 data-flex-basis="426px"
->&lt;/p>
-&lt;p>&lt;a class="link" href="https://www.droidcon.com/2020/10/09/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/?video=470196512" target="_blank" rel="noopener"
->video&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="Refresh,%20renew,%20refactor.pdf" >slides&lt;/a>&lt;/p></description></item><item><title>Dagger, Hilt, Koin - a comparison</title><link>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</link><pubDate>Wed, 05 Aug 2020 15:02:01 +0200</pubDate><guid>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</guid><description>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/dagger_hilt_koin.png" alt="Featured image of post Dagger, Hilt, Koin - a comparison" />&lt;p>Talk presented for GDG Johannesburg comparing dependency injection technologies.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one.png"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://www.droidcon.com/2020/10/09/refresh-renew-refactor-modernising-a-large-android-app-with-many-users/?video=470196512" target="_blank" rel="noopener"
+&gt;video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="Refresh,%20renew,%20refactor.pdf" &gt;slides&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Dagger, Hilt, Koin - a comparison</title><link>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</link><pubDate>Wed, 05 Aug 2020 15:02:01 +0200</pubDate><guid>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</guid><description>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/dagger_hilt_koin.png" alt="Featured image of post Dagger, Hilt, Koin - a comparison" /&gt;&lt;p&gt;Talk presented for GDG Johannesburg comparing dependency injection technologies.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one.png"
 width="2268"
 height="1276"
-srcset="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_d6531e74560f4846.png 480w, https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_a521466d6c7283ce.png 1024w"
+srcset="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_8d82c432398e4b9c.png 480w, https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_401d5ae6ae5e6655.png 1024w"
 loading="lazy"
 alt="which one to choose"
 class="gallery-image"
 data-flex-grow="177"
 data-flex-basis="426px"
->&lt;/p>
-&lt;div class="video-wrapper">
+&gt;&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/-MJm4UGoh5I"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/137QItxqOKWpACPdrx-pOc2ry7sVNi0kXnZCjZsmmfiI/edit?usp=sharing" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item></channel></rss>
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/137QItxqOKWpACPdrx-pOc2ry7sVNi0kXnZCjZsmmfiI/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;slides&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

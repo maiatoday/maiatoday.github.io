@@ -1,56 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GDG on maiatoday</title><link>https://www.maiatoday.net/tags/gdg/</link><description>Recent content in GDG on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 24 Feb 2022 20:34:09 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/gdg/index.xml" rel="self" type="application/rss+xml"/><item><title>Panel talk on Deep dive into compose</title><link>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" />&lt;p>Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p>
-&lt;div class="video-wrapper">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gdg on maiatoday</title><link>https://www.maiatoday.net/tags/gdg/</link><description>Recent content in Gdg on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 24 Feb 2022 20:34:09 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/gdg/index.xml" rel="self" type="application/rss+xml"/><item><title>Panel talk on Deep dive into compose</title><link>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</link><pubDate>Thu, 24 Feb 2022 20:34:09 +0200</pubDate><guid>https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/</guid><description>&lt;img src="https://www.maiatoday.net/p/panel-talk-on-deep-dive-into-compose/bannerPanel.png" alt="Featured image of post Panel talk on Deep dive into compose" /&gt;&lt;p&gt;Panel discussion hosted by GDG Cape Town. Interesting discussion at the end of the presentations by Nick and Thomas. Some topics that we discussed was ideas round structuring existing apps and where to put the compose parts, integrating with an existing theme and discussions about Thomas&amp;rsquo;s book.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/ued3Zb2YbCo"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</guid><description>&lt;img src="https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/animateCompare.png" alt="Featured image of post Comparing Declarative Animation frameworks" />&lt;p>A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter. Hosted by &lt;a class="link" href="https://gdg.community.dev/gdg-nuremberg/" target="_blank" rel="noopener"
->GDG Nuremberg&lt;/a> We discovered many similarites, all the systems have some way to control the animation graph, with somewhat confusing differences in naming. A tween in compose is not the same as a tween in Flutter. Flutter &lt;code>Tween&lt;/code> is an &lt;code>animationSpec&lt;/code> in Compose. Compose &lt;code>tween&lt;/code> is a specific kind of &lt;code>Curve&lt;/code> in Flutter that does a linear interpolation. Oh and its a function in Compose and an object in Flutter.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Comparing Declarative Animation frameworks</title><link>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</link><pubDate>Tue, 22 Feb 2022 20:41:06 +0200</pubDate><guid>https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/</guid><description>&lt;img src="https://www.maiatoday.net/p/comparing-declarative-animation-frameworks/animateCompare.png" alt="Featured image of post Comparing Declarative Animation frameworks" /&gt;&lt;p&gt;A evening of comparing animation in declarative frameworks. A speedrun of the animation system in Jetpack Compose as a comparison agains SwiftUI and Flutter. Hosted by &lt;a class="link" href="https://gdg.community.dev/gdg-nuremberg/" target="_blank" rel="noopener"
+&gt;GDG Nuremberg&lt;/a&gt; We discovered many similarites, all the systems have some way to control the animation graph, with somewhat confusing differences in naming. A tween in compose is not the same as a tween in Flutter. Flutter &lt;code&gt;Tween&lt;/code&gt; is an &lt;code&gt;animationSpec&lt;/code&gt; in Compose. Compose &lt;code&gt;tween&lt;/code&gt; is a specific kind of &lt;code&gt;Curve&lt;/code&gt; in Flutter that does a linear interpolation. Oh and its a function in Compose and an object in Flutter.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/-OByq0ob_P4"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/18oxYA3cj31nYBfDStghSDwMC3s-5uNHy8-ItBihXTGI/edit?usp=sharing" target="_blank" rel="noopener"
->Slides&lt;/a>&lt;/p></description></item><item><title>Compose meets CameraX</title><link>https://www.maiatoday.net/p/compose-meets-camerax/</link><pubDate>Thu, 29 Jul 2021 15:57:58 +0200</pubDate><guid>https://www.maiatoday.net/p/compose-meets-camerax/</guid><description>&lt;img src="https://www.maiatoday.net/p/compose-meets-camerax/compose_meets_camerax.png" alt="Featured image of post Compose meets CameraX" />&lt;p>Co presented a talk with Ishmael about CameraX and integration with Jetpack Compose for GDG Cape Town.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/18oxYA3cj31nYBfDStghSDwMC3s-5uNHy8-ItBihXTGI/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;Slides&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Compose meets CameraX</title><link>https://www.maiatoday.net/p/compose-meets-camerax/</link><pubDate>Thu, 29 Jul 2021 15:57:58 +0200</pubDate><guid>https://www.maiatoday.net/p/compose-meets-camerax/</guid><description>&lt;img src="https://www.maiatoday.net/p/compose-meets-camerax/compose_meets_camerax.png" alt="Featured image of post Compose meets CameraX" /&gt;&lt;p&gt;Co presented a talk with Ishmael about CameraX and integration with Jetpack Compose for GDG Cape Town.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/oykdnh7oSiw"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Jetpack Compose - As good as the hype?</title><link>https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/</link><pubDate>Thu, 04 Mar 2021 15:36:17 +0200</pubDate><guid>https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/</guid><description>&lt;img src="https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/compose_hype.png" alt="Featured image of post Jetpack Compose - As good as the hype?" />&lt;p>Co presented with Charles Okot an first look at Jetpack and how we could use it.&lt;/p>
-&lt;div class="video-wrapper">
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Jetpack Compose - As good as the hype?</title><link>https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/</link><pubDate>Thu, 04 Mar 2021 15:36:17 +0200</pubDate><guid>https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/</guid><description>&lt;img src="https://www.maiatoday.net/p/jetpack-compose-as-good-as-the-hype/compose_hype.png" alt="Featured image of post Jetpack Compose - As good as the hype?" /&gt;&lt;p&gt;Co presented with Charles Okot an first look at Jetpack and how we could use it.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/q8H_YFxVI_0"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Dagger, Hilt, Koin - a comparison</title><link>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</link><pubDate>Wed, 05 Aug 2020 15:02:01 +0200</pubDate><guid>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</guid><description>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/dagger_hilt_koin.png" alt="Featured image of post Dagger, Hilt, Koin - a comparison" />&lt;p>Talk presented for GDG Johannesburg comparing dependency injection technologies.&lt;/p>
-&lt;p>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one.png"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Dagger, Hilt, Koin - a comparison</title><link>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</link><pubDate>Wed, 05 Aug 2020 15:02:01 +0200</pubDate><guid>https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/</guid><description>&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/dagger_hilt_koin.png" alt="Featured image of post Dagger, Hilt, Koin - a comparison" /&gt;&lt;p&gt;Talk presented for GDG Johannesburg comparing dependency injection technologies.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one.png"
 width="2268"
 height="1276"
-srcset="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_d6531e74560f4846.png 480w, https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_a521466d6c7283ce.png 1024w"
+srcset="https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_8d82c432398e4b9c.png 480w, https://www.maiatoday.net/p/dagger-hilt-koin-a-comparison/which_one_hu_401d5ae6ae5e6655.png 1024w"
 loading="lazy"
 alt="which one to choose"
 class="gallery-image"
 data-flex-grow="177"
 data-flex-basis="426px"
->&lt;/p>
-&lt;div class="video-wrapper">
+&gt;&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/-MJm4UGoh5I"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://docs.google.com/presentation/d/137QItxqOKWpACPdrx-pOc2ry7sVNi0kXnZCjZsmmfiI/edit?usp=sharing" target="_blank" rel="noopener"
->slides&lt;/a>&lt;/p></description></item></channel></rss>
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.google.com/presentation/d/137QItxqOKWpACPdrx-pOc2ry7sVNi0kXnZCjZsmmfiI/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;slides&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on maiatoday</title><link>https://www.maiatoday.net/tags/rust/</link><description>Recent content in Rust on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 Oct 2021 16:21:43 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust vs Kotlin panel discussion</title><link>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</link><pubDate>Thu, 28 Oct 2021 16:21:43 +0200</pubDate><guid>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</guid><description>&lt;p>Panel discussion on Rust and Kotlin for GDG Cape Town&lt;/p>
-&lt;div class="video-wrapper">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on maiatoday</title><link>https://www.maiatoday.net/tags/rust/</link><description>Recent content in Rust on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 Oct 2021 16:21:43 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust vs Kotlin panel discussion</title><link>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</link><pubDate>Thu, 28 Oct 2021 16:21:43 +0200</pubDate><guid>https://www.maiatoday.net/p/rust-vs-kotlin-panel-discussion/</guid><description>&lt;p&gt;Panel discussion on Rust and Kotlin for GDG Cape Town&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/Xr1TtmUxcOI"
 allowfullscreen
 title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item></channel></rss>
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item></channel></rss>
