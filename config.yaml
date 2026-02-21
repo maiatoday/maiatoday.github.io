@@ -1,14 +1,17 @@
 baseurl: https://www.maiatoday.net
 languageCode: en-us
 theme: hugo-theme-stack
-pagination.pagerSize.: 5
+pagination:
+  pagerSize: 5
 title: maiatoday
 
 # Change it to your Disqus shortname before using
 disqusShortname: 
 
 # GA Tracking ID
-googleAnalytics: G-1K04GCNEKX
+services:
+  googleAnalytics:
+    id: G-1K04GCNEKX
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, es, de, nl
