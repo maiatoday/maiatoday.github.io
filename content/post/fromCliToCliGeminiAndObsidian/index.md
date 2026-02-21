@@ -27,7 +27,7 @@ For my experiments, I called in [Gemini CLI](https://geminicli.com/). I basicall
 Here’s the "Metadata Makeover":
 
 ### 1. The Status Cleanup
-I had Gemini pull every single `Status` property from every note in my vault to analyze them for consistency. It detected patterns I didn't even know I had (like my habit of using `doing-it` when I was tired instead of `in-progress`). We cleaned up the mess, documented the new "Golden Rules" for statuses, and Gemini wrote a validation script that I can run that will clean things up or highlight inconsistencies.
+I had Gemini pull every single `Status` property from every note in my vault to analyze them for consistency. It detected patterns I didn't even know I had (like all the versions of `Idea` `Ideas` `Research` `researching`). We cleaned up the mess, documented the new "Golden Rules" for statuses, and Gemini wrote a validation script that I can run that will clean things up or highlight inconsistencies.
 
 ### 2. The "Type" vs. "ContentType" Tangle
 We did the same for `Type` and `ContentType`. It turns out I was using them interchangeably like a chaotic neutral character. Gemini helped me settle on a single source of truth, updated my docs, and tweaked the validation script to keep things tidy.
@@ -38,7 +38,7 @@ We looked at everything—frontmatter tags, in-document hashtags, you name it. G
 ### 4. Let the Scripts Do the Walking
 The output wasn't the cleanup but a way to spot patterns, check and cleanup in future.
 
-The main takeaway? Since this Obsidian CLI release, I can finally stop worrying about whether my metadata is "right." I have a system that checks itself, so I can get back to the fun part: just writing. If the system evolves in future which it inevetably will, I can just re-analyse everything, update the docs and the script and clean everything up again.
+The main takeaway? Since this Obsidian CLI release, I can finally stop worrying about whether my metadata is "right." I have a system that checks itself, so I can get back to the fun part: just writing. If the system evolves in future which it inevetably will, I can just re-analyse everything, detect the patternsm update the docs and the script and clean everything up again.
 
 If it is this easy to figure out the real system and fix everything then it doesn't matter if I am inconsistent for a bit.
 
