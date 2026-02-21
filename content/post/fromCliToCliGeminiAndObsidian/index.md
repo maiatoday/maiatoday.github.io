@@ -38,7 +38,9 @@ We looked at everything—frontmatter tags, in-document hashtags, you name it. G
 ### 4. Let the Scripts Do the Walking
 The output wasn't the cleanup but a way to spot patterns, check and cleanup in future.
 
-The main takeaway? Since this Obsidian CLI release, I can finally stop worrying about whether my metadata is "right." I have a system that checks itself, so I can get back to the fun part: just writing. If the system evolves in future which it inevetably will, I can just re-analyse everything, detect the patternsm update the docs and the script and clean everything up again.
+The main takeaway? Since this Obsidian CLI release, I can finally stop worrying about whether my metadata is "right." I have a system that checks itself, so I can get back to the fun part: just writing. If the system evolves in future which it inevetably will, I can just re-analyse everything, detect the patterns  update the docs and the script and clean everything up again.
 
 If it is this easy to figure out the real system and fix everything then it doesn't matter if I am inconsistent for a bit.
+
+Next project: Let's cleanup the old hugo installs and refresh the themes on my website.
 
