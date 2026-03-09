@@ -202,12 +202,12 @@ data-flex-basis="692px"
 &lt;li&gt;Search: Browse the &lt;a class="link" href="https://geminicli.com/extensions/" target="_blank" rel="noopener"
 &gt;Gemini CLI Extension Gallery&lt;/a&gt; or use the
 &lt;code&gt;/extensions explore&lt;/code&gt; command in an interactive session to open it in your browser.&lt;/li&gt;
-&lt;li&gt;Install: Use the terminal command gemini extensions install &lt;github-url-or-path&gt;. (Note: This must be
+&lt;li&gt;Install: Use the terminal command &lt;code&gt;gemini extensions install &amp;lt;github-url-or-path&amp;gt;&lt;/code&gt; (Note: This must be
 done from your standard terminal, not inside the CLI&amp;rsquo;s interactive mode).&lt;/li&gt;
-&lt;li&gt;List: Run /extensions list within the CLI to see active extensions or gemini extensions list in your
+&lt;li&gt;List: Run &lt;code&gt;/extensions list within the CLI to see active extensions or &lt;/code&gt;gemini extensions list` in your
 terminal.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="one-gemini-cli-plugin-for-android"&gt;One Gemini CLI plugin for android
+&lt;h3 id="gemini-cli-plugin-for-android"&gt;Gemini CLI plugin for android
 &lt;/h3&gt;&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/android-%EF%B8%8F-gemini-cli-tech-debt-detection-code-maat-skill/marketplace.png"
 width="1318"
 height="434"
