@@ -188,12 +188,12 @@ While there are a myriad of MCP services available both in Android Studio as par
 ### Managing Extensions
    * Search: Browse the [Gemini CLI Extension Gallery](https://geminicli.com/extensions/) or use the
      `/extensions explore` command in an interactive session to open it in your browser.
-   * Install: Use the terminal command gemini extensions install <github-url-or-path>. (Note: This must be
+   * Install: Use the terminal command `gemini extensions install <github-url-or-path>` (Note: This must be
      done from your standard terminal, not inside the CLI's interactive mode).
-   * List: Run /extensions list within the CLI to see active extensions or gemini extensions list in your
+   * List: Run `/extensions list within the CLI to see active extensions or `gemini extensions list` in your
      terminal.
 
-### One Gemini CLI plugin for android
+### Gemini CLI plugin for android
 
 ![Plugin in marketplace](marketplace.png)
 
