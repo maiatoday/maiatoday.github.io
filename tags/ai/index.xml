@@ -204,7 +204,7 @@ data-flex-basis="692px"
 &lt;code&gt;/extensions explore&lt;/code&gt; command in an interactive session to open it in your browser.&lt;/li&gt;
 &lt;li&gt;Install: Use the terminal command &lt;code&gt;gemini extensions install &amp;lt;github-url-or-path&amp;gt;&lt;/code&gt; (Note: This must be
 done from your standard terminal, not inside the CLI&amp;rsquo;s interactive mode).&lt;/li&gt;
-&lt;li&gt;List: Run &lt;code&gt;/extensions list within the CLI to see active extensions or &lt;/code&gt;gemini extensions list` in your
+&lt;li&gt;List: Run &lt;code&gt;/extensions list&lt;/code&gt; within the CLI to see active extensions or &lt;code&gt;gemini extensions list&lt;/code&gt; in your
 terminal.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="gemini-cli-plugin-for-android"&gt;Gemini CLI plugin for android
@@ -232,8 +232,11 @@ data-flex-basis="891px"
 &lt;h3 id="adb-connections-in-gemini-cli"&gt;ADB connections in Gemini CLI
 &lt;/h3&gt;&lt;p&gt;A useful extension for Android development in Gemini CLI is &lt;code&gt;adb-control-gemini&lt;/code&gt; installed with this command&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;gemini extensions install https://github.com/tiendung2k03/adb-control-gemini&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;To use it, prompt like this:
-&lt;code&gt;inspect the ui on the running emulator&lt;/code&gt; or &lt;code&gt;start the emulator xxx and run the app on the emulator&lt;/code&gt; You may need to make sure that adb is in your path.&lt;/p&gt;
+&lt;p&gt;To use it, prompt like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;inspect the ui on the running emulator&lt;/code&gt;
+or
+&lt;code&gt;start the emulator and run the app on the emulator&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You may need to make sure that adb is in your path.&lt;/p&gt;
 &lt;p&gt;And that&amp;rsquo;s it for now, this is already a long read.&lt;/p&gt;</description></item><item><title>The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?</title><link>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</link><pubDate>Sat, 10 Jun 2023 15:12:44 +0200</pubDate><guid>https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/</guid><description>&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/mock_and_me.jpg" alt="Featured image of post The Imitation Tortoise's song - a fleety conversion from imperative to functional - Will you join the dance?" /&gt;&lt;h1 id="once-upon-a-time"&gt;Once upon a time
 &lt;/h1&gt;&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/the-imitation-tortoises-song-a-fleety-conversion-from-imperative-to-functional-will-you-join-the-dance/branches.png"
 width="620"
