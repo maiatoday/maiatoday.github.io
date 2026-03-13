@@ -190,7 +190,7 @@ While there are a myriad of MCP services available both in Android Studio as par
      `/extensions explore` command in an interactive session to open it in your browser.
    * Install: Use the terminal command `gemini extensions install <github-url-or-path>` (Note: This must be
      done from your standard terminal, not inside the CLI's interactive mode).
-   * List: Run `/extensions list within the CLI to see active extensions or `gemini extensions list` in your
+   * List: Run `/extensions list` within the CLI to see active extensions or `gemini extensions list` in your
      terminal.
 
 ### Gemini CLI plugin for android
@@ -207,6 +207,11 @@ A useful extension for Android development in Gemini CLI is `adb-control-gemini`
 `gemini extensions install https://github.com/tiendung2k03/adb-control-gemini`
 
 To use it, prompt like this:
-`inspect the ui on the running emulator` or `start the emulator xxx and run the app on the emulator` You may need to make sure that adb is in your path.
+
+`inspect the ui on the running emulator`
+ or
+ `start the emulator and run the app on the emulator`
+
+ You may need to make sure that adb is in your path.
 
 And that's it for now, this is already a long read.
