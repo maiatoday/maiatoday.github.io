@@ -10,3 +10,5 @@ _site
 /resources/_gen/
 
 .vscode/
+
+.env
