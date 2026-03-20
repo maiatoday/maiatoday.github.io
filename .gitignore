@@ -12,3 +12,5 @@ _site
 .vscode/
 
 .env
+
+.junie/memory

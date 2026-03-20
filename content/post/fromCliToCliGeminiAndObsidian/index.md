@@ -2,8 +2,8 @@
 layout: post
 title: "From CLI to CLI - Gemini and Obsidian"
 image: geminiObsidian.png
-categories: [code]
-tags: [gemini-cli, obsidian, knowledge management systems metadata]
+categories: [code, AI]
+tags: [gemini-cli, obsidian, knowledge management systems metadata, ai-agents, automation, cli, gemini]
 date: 2026-02-21T21:33:17+01:00
 draft: false
 ---

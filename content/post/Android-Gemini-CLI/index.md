@@ -2,8 +2,8 @@
 layout: post
 title: "Android ❤️ Gemini CLI - tech debt detection Code Maat skill"
 image: geminiCLIMaatAndy.png
-categories: [code]
-tags: [android, gemini, cli, ai, adb]
+categories: [code, AI]
+tags: [android, gemini, cli, ai, adb, code-maat, tech-debt]
 date: 2026-03-08
 draft: false
 ---
