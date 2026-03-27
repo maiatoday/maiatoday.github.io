@@ -14,3 +14,5 @@ _site
 .env
 
 .junie/memory
+
+.obsidian/
