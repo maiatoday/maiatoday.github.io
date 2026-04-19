@@ -24,8 +24,7 @@ data-flex-basis="402px"
 &gt;mock turtle soup&lt;/a&gt; was lost in translation. In a roundabout way I was wondering what would be uncovered or lost if I used the AI assistant for some translations in coding style.&lt;/p&gt;
 &lt;h2 id="couplets-of-doggerel"&gt;Couplets of doggerel
 &lt;/h2&gt;&lt;p&gt;My trusty and non emotional assistant had no opinion on Lewis Caroll but it made this for me. A definition of &lt;strong&gt;functional programming&lt;/strong&gt; style in &lt;strong&gt;rhyming couplets&lt;/strong&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Functional programming&amp;rsquo;s way,&lt;br&gt;
+&lt;blockquote &gt;&lt;p&gt;Functional programming&amp;rsquo;s way,&lt;br&gt;
 treats functions as the play.&lt;/p&gt;
 &lt;p&gt;Immutable states they use,&lt;br&gt;
 side effects they refuse.&lt;/p&gt;
@@ -33,10 +32,8 @@ side effects they refuse.&lt;/p&gt;
 with functions, they rejoice.&lt;/p&gt;
 &lt;p&gt;Nested functions map, filter, reduce,&lt;br&gt;
 a clean, elegant code they produce.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Compare this with the &lt;strong&gt;imperative&lt;/strong&gt; version:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Imperative code, step by step,&lt;br&gt;
+&lt;/blockquote&gt;&lt;p&gt;Compare this with the &lt;strong&gt;imperative&lt;/strong&gt; version:&lt;/p&gt;
+&lt;blockquote &gt;&lt;p&gt;Imperative code, step by step,&lt;br&gt;
 commands the flow, with every rep.&lt;/p&gt;
 &lt;p&gt;Variables mutate, tracking state,&lt;br&gt;
 loops and branches, integrate.&lt;/p&gt;
@@ -44,25 +41,20 @@ loops and branches, integrate.&lt;/p&gt;
 line-by-line, instructions see.&lt;/p&gt;
 &lt;p&gt;Procedural paths and simple tweaks,&lt;br&gt;
 It&amp;rsquo;s the classic style, for codes that speak.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a class="link" href="https://www.etymonline.com/word/pshaw" target="_blank" rel="noopener"
+&lt;/blockquote&gt;&lt;p&gt;&lt;a class="link" href="https://www.etymonline.com/word/pshaw" target="_blank" rel="noopener"
 &gt;Pshaw!&lt;/a&gt; verbose &lt;a class="link" href="https://www.merriam-webster.com/dictionary/doggerel" target="_blank" rel="noopener"
 &gt;doggerel&lt;/a&gt; you respond, ok here&amp;rsquo;s &amp;hellip; a &lt;a class="link" href="https://www.readpoetry.com/10-vivid-haikus-to-leave-you-breathless/" target="_blank" rel="noopener"
 &gt;&lt;strong&gt;haiku&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="5-7-5"&gt;5-7-5
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Functional&lt;/strong&gt;&lt;/p&gt;
+&lt;/h2&gt;&lt;blockquote &gt;&lt;p&gt;&lt;strong&gt;Functional&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Functions pure, combined, (5)&lt;br&gt;
 Immutable state and grace, (7)&lt;br&gt;
 Elegance defined. (5)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Imperative&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;blockquote &gt;&lt;p&gt;&lt;strong&gt;Imperative&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Commands in sequence, (5)&lt;br&gt;
 Changing state and execution, (8! or is it 7?)&lt;br&gt;
 Steps guide its progress. (5)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="code-starts-here"&gt;Code starts here
+&lt;/blockquote&gt;&lt;h1 id="code-starts-here"&gt;Code starts here
 &lt;/h1&gt;&lt;h2 id="imperative-all-the-way---hand-crafted-by-me"&gt;Imperative all the way - hand crafted by me
 &lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://github.com/maiatoday/imp-fun/blob/imperativeByMe/src/main/kotlin/Main.kt" target="_blank" rel="noopener"
 &gt;Here&lt;/a&gt; is my initial hand written imperative solution to the AoC 2022 Day 10 CRT problem. There are many &lt;a class="link" href="https://github.com/elizarov/AdventOfCode2022/commit/9353b60158a9690c8517acd40fefe29ccee7f0bd" target="_blank" rel="noopener"
@@ -323,15 +315,13 @@ Some issue with the loop not using a downTo and getting the ranges wrong. I like
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id="the-end"&gt;The end
 &lt;/h1&gt;&lt;p&gt;To close I leave you with a &lt;a class="link" href="https://github.com/maiatoday/imp-fun/branches" target="_blank" rel="noopener"
 &gt;git repo&lt;/a&gt; and these lines of sage advice in doggerel format from the AI assistant. What can I say, I am amused!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Functional&amp;rsquo;s not a cure-all,&lt;br&gt;
+&lt;blockquote &gt;&lt;p&gt;Functional&amp;rsquo;s not a cure-all,&lt;br&gt;
 For some problems, it may stall.&lt;/p&gt;
 &lt;p&gt;Yet, grasp its ways, and you&amp;rsquo;ll see,&lt;br&gt;
 Cleaner code and clarity.&lt;/p&gt;
 &lt;p&gt;Incorporate with grace and skill,&lt;br&gt;
 More maintainable code, you&amp;rsquo;ll build.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;And as a bonus here&amp;rsquo;s the prompt that generated this gem.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;And as a bonus here&amp;rsquo;s the prompt that generated this gem.&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;Take the coding advice in quotes and convert it to rhyming couplets
 &amp;#34;Keep in mind that functional programming may not always be the best choice
 for every problem or coding style, but understanding and

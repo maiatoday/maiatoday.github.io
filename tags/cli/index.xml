@@ -1,4 +1,141 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cli on maiatoday</title><link>https://www.maiatoday.net/tags/cli/</link><description>Recent content in Cli on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>Android ❤️ Gemini CLI - tech debt detection Code Maat skill</title><link>https://www.maiatoday.net/p/android-%EF%B8%8F-gemini-cli-tech-debt-detection-code-maat-skill/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://www.maiatoday.net/p/android-%EF%B8%8F-gemini-cli-tech-debt-detection-code-maat-skill/</guid><description>&lt;img src="https://www.maiatoday.net/p/android-%EF%B8%8F-gemini-cli-tech-debt-detection-code-maat-skill/geminiCLIMaatAndy.png" alt="Featured image of post Android ❤️ Gemini CLI - tech debt detection Code Maat skill" /&gt;&lt;h2 id="introduction"&gt;Introduction
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cli on maiatoday</title><link>https://www.maiatoday.net/tags/cli/</link><description>Recent content in Cli on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 18 Apr 2026 21:20:59 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>Android CLI meet Gemini CLI</title><link>https://www.maiatoday.net/p/android-cli-meet-gemini-cli/</link><pubDate>Sat, 18 Apr 2026 21:20:59 +0200</pubDate><guid>https://www.maiatoday.net/p/android-cli-meet-gemini-cli/</guid><description>&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/androidGeminiCLI.png" alt="Featured image of post Android CLI meet Gemini CLI" /&gt;&lt;p&gt;In recent Android AI experiments I always felt I missed something. If I was in the IDE using an agent with Gemini in Android Studio, I loved the access to the knowledge base and the special tools but I could only spin up one instance. If I was in my &lt;code&gt;&amp;lt;insert favourite CLI agent tool&amp;gt;&lt;/code&gt; let&amp;rsquo;s say &lt;code&gt;gemini-cli&lt;/code&gt;, I missed the quality of life improvements that made me have to jump back into the IDE.&lt;/p&gt;
+&lt;p&gt;Yes I could install an &lt;code&gt;adb&lt;/code&gt; extension into &lt;code&gt;gemini-cli&lt;/code&gt; or write some custom skill to try to achieve what I wanted or paste a bunch of Android official urls into the prompt. It was always fiddly to open the IDE from a worktree or test from an orchestrator session. As of last week there is a new tool and a bunch of matching skills that solve this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Android CLI&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="markdown-alert markdown-alert-note"&gt;
+&lt;p class="markdown-alert-title"&gt;NOTE&lt;/p&gt;&lt;p&gt;I see 2 main benefits of using &lt;code&gt;android-cli&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;easy access to &lt;strong&gt;accurate android knowledge base&lt;/strong&gt; that is agent friendly and will &lt;strong&gt;reduce token use&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;easy &lt;strong&gt;emulator interaction&lt;/strong&gt; and improved testing and iteration with screenshots and interactions&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;h2 id="how-do-i-get-it"&gt;How do I get it
+&lt;/h2&gt;&lt;p&gt;The installation is pretty simple, follow the &lt;a class="link" href="https://developer.android.com/tools/agents/android-cli?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
+&gt;Android cli docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TLDR;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class="link" href="https://developer.android.com/tools/agents?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
+&gt;Download and install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;make sure you are using the new &lt;code&gt;android&lt;/code&gt; executable not the old one, type &lt;code&gt;which android&lt;/code&gt; and you are looking for something like &lt;code&gt;/usr/local/bin/android&lt;/code&gt; If not then check your path setup. Or ask an agent to do it with this prompt.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;read the file that sets up my path and modify it such that the android sdk paths are not added in the the beginning but at the end of the path. I need this because the path `/usr/local/bin` is in the path before the android sdk and it needs to be first
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start="3"&gt;
+&lt;li&gt;run &lt;code&gt;android init&lt;/code&gt; to make sure all agents on your system will use this tool. It sets up a skill for &lt;code&gt;claude&lt;/code&gt;, &lt;code&gt;gemini&lt;/code&gt; and more&lt;/li&gt;
+&lt;li&gt;optionally install all the skills created for this tool &lt;code&gt;android skills add --all&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="show-me-some-cools-things-i-can-do-with-it"&gt;Show me some cools things I can do with it
+&lt;/h2&gt;&lt;p&gt;I am going to use a &lt;a class="link" href="https://github.com/maiatoday/mood-snap" target="_blank" rel="noopener"
+&gt;repo&lt;/a&gt; with a demo app I built with Gemini in Android Studio to take it for a spin. This app is a simple mood tracking app. You don&amp;rsquo;t need to try it on my app, feel free to try it on your own apps.&lt;/p&gt;
+&lt;h3 id="knowledge-base-demo"&gt;Knowledge base demo
+&lt;/h3&gt;&lt;p&gt;What if I need to update my app to Android 17. This requires a combination of specific Android knowledge and knowledge about my app.&lt;/p&gt;
+&lt;p&gt;In the repo with gemini cli and the android-cli skill setup ask the following question:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Look at this app and use the android cli tool to get documentation to make a detailed plan of what I need to do to
+upgrade to Android 17. Include code changes, things I should test and sequence of steps I should take.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/Android17Check.png"
+width="1562"
+height="1030"
+srcset="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/Android17Check_hu_c44d220e88d767a0.png 480w, https://www.maiatoday.net/p/android-cli-meet-gemini-cli/Android17Check_hu_e3592a37c4b17a19.png 1024w"
+loading="lazy"
+alt="Android 17"
+class="gallery-image"
+data-flex-grow="151"
+data-flex-basis="363px"
+&gt;
+This results in a whole plan that combines the latest Android 17 info from the knowledge base and specificities of my app.
+&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/Android17Results.png"
+width="1574"
+height="692"
+srcset="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/Android17Results_hu_2213ea3b9de2c33d.png 480w, https://www.maiatoday.net/p/android-cli-meet-gemini-cli/Android17Results_hu_4759028ee5ece879.png 1024w"
+loading="lazy"
+alt="Android 17 plan"
+class="gallery-image"
+data-flex-grow="227"
+data-flex-basis="545px"
+&gt;
+Now I can continue and use the agent to clean up some some screens to make them responsive as they will be required for Android 17.&lt;/p&gt;
+&lt;h3 id="testing-demo"&gt;Testing demo
+&lt;/h3&gt;&lt;p&gt;My project has a journeys test defined. Journeys lets you explain your test in human language. To run these tests in Android Studio it runs the &lt;code&gt; :app:testJourneysTestDefaultDebugTestSuite&lt;/code&gt; gradle tasks. Sometimes this gives me weird session errors.
+&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/journeysTest.png"
+width="1126"
+height="950"
+srcset="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/journeysTest_hu_9f46740ceebc0006.png 480w, https://www.maiatoday.net/p/android-cli-meet-gemini-cli/journeysTest_hu_47e9f51cdcf01040.png 1024w"
+loading="lazy"
+alt="journeys test in Android Studio"
+class="gallery-image"
+data-flex-grow="118"
+data-flex-basis="284px"
+&gt;
+With the &lt;code&gt;android-cli&lt;/code&gt; you can start up an emulator and run the tests from the xml file. Because the android-cli can take screenshots and see what is on the screen, it can test from your prompts. It doesn&amp;rsquo;t run the gradle task. It figures out what it has to do from the xml and takes screenshots and clicks on the screen.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestRun.png"
+width="2386"
+height="1724"
+srcset="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestRun_hu_f4c91f0c4af765a4.png 480w, https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestRun_hu_7166902c52722dc9.png 1024w"
+loading="lazy"
+alt="Running the test"
+class="gallery-image"
+data-flex-grow="138"
+data-flex-basis="332px"
+&gt;&lt;/p&gt;
+&lt;p&gt;It can easily iterate, and improve the tests.
+&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestFails.png"
+width="1522"
+height="754"
+srcset="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestFails_hu_51589069e046e3c2.png 480w, https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestFails_hu_82fd3a831e120c5e.png 1024w"
+loading="lazy"
+alt="Test fails"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+&gt;
+&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/FixTests.png"
+width="1550"
+height="948"
+srcset="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/FixTests_hu_aa6a5f8442d0c7a4.png 480w, https://www.maiatoday.net/p/android-cli-meet-gemini-cli/FixTests_hu_8f3bde1fab0a946b.png 1024w"
+loading="lazy"
+alt="Test Fix"
+class="gallery-image"
+data-flex-grow="163"
+data-flex-basis="392px"
+&gt;
+&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestUpdated.png"
+width="2380"
+height="1782"
+srcset="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestUpdated_hu_696a19a452f7b442.png 480w, https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestUpdated_hu_e3e971483a08c740.png 1024w"
+loading="lazy"
+alt="Test Updated"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+&gt;
+&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestPassed.png"
+width="1574"
+height="846"
+srcset="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestPassed_hu_6c474bf44b60a58c.png 480w, https://www.maiatoday.net/p/android-cli-meet-gemini-cli/TestPassed_hu_6c71c9096440ad9a.png 1024w"
+loading="lazy"
+alt="Test Pass"
+class="gallery-image"
+data-flex-grow="186"
+data-flex-basis="446px"
+&gt;&lt;/p&gt;
+&lt;h3 id="tweaking-ux"&gt;Tweaking UX
+&lt;/h3&gt;&lt;p&gt;The example that was the most interesting to watch: I had something odd in the way I coded up a dialog to add tags. I wasn&amp;rsquo;t sure what the problem was. Because the &lt;code&gt;android&lt;/code&gt; tool can take screenshots, click on the screen and see what is being displayed and read the code it could iteratively figure out the problem.
+The prompt
+&lt;code&gt;there is something weird with the UX of adding the tag. I think it either needs the plus icon or the save button could you investigate?&lt;/code&gt;
+After trying a few things with minimal intervention from me it found a solution.
+&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/UXfix.png"
+width="1574"
+height="444"
+srcset="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/UXfix_hu_14f0f8705c907e52.png 480w, https://www.maiatoday.net/p/android-cli-meet-gemini-cli/UXfix_hu_f69cf621141b1a39.png 1024w"
+loading="lazy"
+alt="UX fix"
+class="gallery-image"
+data-flex-grow="354"
+data-flex-basis="850px"
+&gt;&lt;/p&gt;
+&lt;h2 id="what-next"&gt;What next
+&lt;/h2&gt;&lt;p&gt;This is definitely a game changer in my work flow. The CLI tool integrates smoothly with other tools I use daily and simplifies tedious tasks in a way that can be handed over to an agent to do. I can see myself doing much more exploratory testing. There are a bunch of other skills too like an AGP 9 check and an R8 keep rule check and I&amp;rsquo;m sure the community will build some extra skills too so watch this space.&lt;/p&gt;
+&lt;h2 id="references"&gt;References
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://developer.android.com/tools/agents/android-cli?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
+&gt;Android cli docs&lt;/a&gt;
+&lt;a class="link" href="https://geminicli.com/docs?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
+&gt;Gemini cli info&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Android ❤️ Gemini CLI - tech debt detection Code Maat skill</title><link>https://www.maiatoday.net/p/android-%EF%B8%8F-gemini-cli-tech-debt-detection-code-maat-skill/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://www.maiatoday.net/p/android-%EF%B8%8F-gemini-cli-tech-debt-detection-code-maat-skill/</guid><description>&lt;img src="https://www.maiatoday.net/p/android-%EF%B8%8F-gemini-cli-tech-debt-detection-code-maat-skill/geminiCLIMaatAndy.png" alt="Featured image of post Android ❤️ Gemini CLI - tech debt detection Code Maat skill" /&gt;&lt;h2 id="introduction"&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;What AI tools work for building Android apps? I am exploring some variations. In this post I will look at &lt;em&gt;Gemini CLI&lt;/em&gt;, tech debt detection with a skill using Code Maat and how this compares with the Agent of Gemini in Android Studio.&lt;/p&gt;
 &lt;p&gt;I am not starting with a new project. What if you have an &lt;em&gt;existing codebase&lt;/em&gt; and you want to find the best place to tackle some &lt;em&gt;tech debt&lt;/em&gt; that will make a difference for everyone. The sample codebase is the &lt;a class="link" href="https://github.com/HabitRPG/habitica-android" target="_blank" rel="noopener"
 &gt;Habitica app&lt;/a&gt;, which had its first commit in 2015. Rather than poking at the code in a random or an &lt;strong&gt;&amp;ldquo;intuitive&amp;rdquo;&lt;/strong&gt; way or asking the AI questions, let&amp;rsquo;s look at a more deterministic way to answer this question. Or rather, let&amp;rsquo;s teach the agent to use some scripts to answer this question. The benefit of packaging this functionality in a skill is that you can create this specialisation and script usage in a skill that will be loaded lazily only when you need it.&lt;/p&gt;
