@@ -1,0 +1,6 @@
+<details class="collapsible-section">
+    <summary>{{ .Get 0 | default "Details" }}</summary>
+    <div class="collapsible-content">
+        {{ .Inner | markdownify }}
+    </div>
+</details>

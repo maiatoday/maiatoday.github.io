@@ -1,0 +1,16 @@
+{{- if eq .Type "alert" -}}
+<div class="markdown-alert markdown-alert-{{ .AlertType }}">
+    <p class="markdown-alert-title">
+        {{- with .AlertTitle -}}
+            {{- . -}}
+        {{- else -}}
+            {{- .AlertType | upper -}}
+        {{- end -}}
+    </p>
+    {{- .Text -}}
+</div>
+{{- else -}}
+<blockquote {{ with .Attributes }}{{ range $k, $v := . }} {{ $k }}="{{ $v }}"{{ end }}{{ end }}>
+    {{- .Text -}}
+</blockquote>
+{{- end -}}

@@ -16,3 +16,5 @@ _site
 .junie/memory
 
 .obsidian/
+
+hugo_server.log
