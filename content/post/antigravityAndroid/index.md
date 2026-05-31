@@ -19,23 +19,23 @@ image: antigravityAndroidStudio2.png
 ---
 # How does Antigravity and Android Studio work together? What do I do where?
 
-There are as many workflows and preferences as there are Android engineers starting with light mode vs dark mode. This is not an attempt to provoke a holy war. What I have noticed is that in the the days BA (Before Agents) I used to open Android Studio and do most things in there, edit, debug, preview, git and do CLI things. Now its not like that anymore.
+There are as many workflows and preferences as there are Android engineers starting with light mode vs dark mode. This is not an attempt to provoke a holy war. What I have noticed is that in the days BA (Before Agents) I used to open Android Studio and do most things in there, edit, debug, preview, git and do CLI things. Now its not like that anymore.
 
 [Click here](#take-antigravity-20-for-a-spin---build-me-an-app-make-it-not-suck-or-you-go-to-jail--tagspotter) if you want to skip the rant 😤 and just jump to Antigravity experiment
 
-Today in Android Studio I can run 1 agent, or 2 if one is on a command line max 3 if the third is just the Ask/chat tab. Or I can have a ton of terminals open with multiple agents juggling work trees. Or I can use one of the many multi agent solutions like Conductor, superset or Antigravity 2.0 that are popping up like mushrooms.  Then I could open multiple Android Studio versions in the worktrees I spun up with the agents. 
+Today in Android Studio I can run 1 agent or 2 if one is on a command line, max 3 if the third is just the Ask/chat tab. Or I can have a ton of terminals open with multiple agents juggling work trees. Or I can use one of the many multi agent solutions like Conductor, Superset or [Antigravity 2.0](https://antigravity.google/download?utm_campaign=deveco_gdemembers&utm_source=deveco) that are popping up like mushrooms.  Then I could open multiple Android Studio versions in the worktrees I spun up with the agents. 
 
 If I am in full agent mode and I just quickly want to edit something, I can do it in a small editor in the orchestrator tool but very soon I miss the creature comforts of Android Studio. But opening multiple instances of Android Studio is super slow (looking at you gradle sync and indexing). If my orchestrator environment is Antigravity 2.0 I can either jump back into Antigravity IDE or open the project in AndroidStudio. 
 
 ## The problem
 
-Arrgh so many these chat boxes everywhere with agents waiting to eat my tokens! So many tool combos all fighting for RAM on my machine!
+Arrgh so many chat boxes everywhere with agents waiting to eat my tokens! So many tool combos all fighting for RAM and CPU cycles on my machine!
 
-I just want to add a setting to a file, let me open it in vi.
+I just want to add a setting to a file, I might as well edit it in **vi**.
 
 ## ok deep breath. 
 
-I don't have a solution and I'm sure the internet has many suggestions so let me just figure out what is Antigravity 2.0 good at and what do I  do in Android Studio.
+I don't have a solution and I'm sure the internet has many suggestions so let me just figure out whre Antigravity 2.0 shines and what is better to do in Android Studio.
 
 ## Use Antigravity
 ### The mindset - broad, explore, plan, hands off, chatty, parallel work
@@ -76,7 +76,10 @@ You could run `agy` in the terminal in Android Studio. The question is what can 
 🚧 AI generated content end
 
 ## Take Antigravity 2.0 for a spin - build me an app, make it not suck or you go to jail = TagSpotter
-[Get it here](https://antigravity.google/download?utm_campaign=deveco_gdemembers&utm_source=deveco)
+
+[Get it antigravity here](https://antigravity.google/download?utm_campaign=deveco_gdemembers&utm_source=deveco)
+
+[Get it TagSppotter repo here](https://github.com/maiatoday/tag-spotter)
 
 Make a project and jump in with this prompt.
 
@@ -90,7 +93,7 @@ description, a time and date, and some more tags to the image. Write me the file
 brief to build this project. Then use the grill me feature to explore what needs to happen. 
 ```
 
-This resulted in a detailed plan and within an hour I had an [MVP](https://github.com/maiatoday/tag-spotter). Not gonna lie it was blazingly fast. A woolly request, maybe, but there are ways to crisp things up before generating the code. I used the Gemini 3.5 Medium model.
+Can you tell I was rambling and talking to antigravity in that prompt. Nevertheless this resulted in a detailed plan and within an hour I had an [MVP](https://github.com/maiatoday/tag-spotter). Not gonna lie it was **blazingly fast**. A woolly request, maybe, but there are ways to crisp things up before generating the code. I used the Gemini 3.5 Medium model.
 
 <img src="antigravityModelChoice.png" style="width:50%">
 
@@ -116,7 +119,7 @@ This is what I did that made the implementation smooth.
 * I could see the plan all the time and it gave good walkthroughs of what it did to help me load a mental model
 * There was a place to ask questions without a project
 * The built in skills like `/grill-me` and `/goal` were useful
-* I had this I can dream again because anything is possible and quick feeling
+* I had this inspiring  "I can dream again because anything is possible and quick" feeling which I haven't had for a long time. 
 
 ### What confused me
 * It wasn't so easy to see which of my conversations were happening in a worktree
@@ -133,6 +136,7 @@ This is what I did that made the implementation smooth.
 
 ### Top tips
 * Add a section of future features so that the design can be led into the right direction from the start
+* Use `/grill-me` multiple times. 
 * Ask it to look at what it built and assess it critically, It found a bunch of improvements. It will do that without you threatening it
 
 ```
@@ -152,6 +156,7 @@ From the [assessment](https://github.com/maiatoday/tag-spotter/blob/main/project
 2. Test a bit more and smooth out the UX
 3. Figure out a way to share a selection of spots 
 4. Build some of the future features
-5. Convert to KMP?
+5. Add notifications so that I can [wander around aimlessly](https://en.wikipedia.org/wiki/Fl%C3%A2neur) without having my phone out and and be notified on the watch if I am near something interesting
+6. Convert to KMP?
 
- I am inspired to build try out apps again because the time needed to get going has been slashed.  I can now test and idea before deciding which ones I want to spend more time on. It took longer to write this post than to build the MVP because I stubbornly write all posts by hand to avoid the entsloppification of my blog. Who knows what the future holds.
+ I am inspired to build and try out apps again because the time needed to get going has been slashed.  I can now test and idea before deciding which ones I want to spend more time on. It took longer to write this post than to build the MVP because I stubbornly write all posts by hand to avoid the entsloppification of my blog. Who knows what the future holds.
