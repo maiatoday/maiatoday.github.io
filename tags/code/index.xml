@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Code on maiatoday</title><link>https://www.maiatoday.net/tags/code/</link><description>Recent content in Code on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2026 10:21:45 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/code/index.xml" rel="self" type="application/rss+xml"/><item><title>Antigravity 2.0 vs Android Studio - making TagSpotter</title><link>https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/</link><pubDate>Sun, 31 May 2026 10:21:45 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/antigravityAndroidStudio2.png" alt="Featured image of post Antigravity 2.0 vs Android Studio - making TagSpotter" /&gt;&lt;h1 id="how-does-antigravity-and-android-studio-work-together-what-do-i-do-where"&gt;How does Antigravity and Android Studio work together? What do I do where?
-&lt;/h1&gt;&lt;p&gt;There are as many workflows and preferences as there are Android engineers starting with light mode vs dark mode. This is not an attempt to provoke a holy war. What I have noticed is that in the the days BA (Before Agents) I used to open Android Studio and do most things in there, edit, debug, preview, git and do CLI things. Now its not like that anymore.&lt;/p&gt;
+&lt;/h1&gt;&lt;p&gt;There are as many workflows and preferences as there are Android engineers starting with light mode vs dark mode. This is not an attempt to provoke a holy war. What I have noticed is that in the days BA (Before Agents) I used to open Android Studio and do most things in there, edit, debug, preview, git and do CLI things. Now its not like that anymore.&lt;/p&gt;
 &lt;p&gt;&lt;a class="link" href="#take-antigravity-20-for-a-spin---build-me-an-app-make-it-not-suck-or-you-go-to-jail--tagspotter" &gt;Click here&lt;/a&gt; if you want to skip the rant 😤 and just jump to Antigravity experiment&lt;/p&gt;
-&lt;p&gt;Today in Android Studio I can run 1 agent, or 2 if one is on a command line max 3 if the third is just the Ask/chat tab. Or I can have a ton of terminals open with multiple agents juggling work trees. Or I can use one of the many multi agent solutions like Conductor, superset or Antigravity 2.0 that are popping up like mushrooms. Then I could open multiple Android Studio versions in the worktrees I spun up with the agents.&lt;/p&gt;
+&lt;p&gt;Today in Android Studio I can run 1 agent or 2 if one is on a command line, max 3 if the third is just the Ask/chat tab. Or I can have a ton of terminals open with multiple agents juggling work trees. Or I can use one of the many multi agent solutions like Conductor, Superset or &lt;a class="link" href="https://antigravity.google/download?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
+&gt;Antigravity 2.0&lt;/a&gt; that are popping up like mushrooms. Then I could open multiple Android Studio versions in the worktrees I spun up with the agents.&lt;/p&gt;
 &lt;p&gt;If I am in full agent mode and I just quickly want to edit something, I can do it in a small editor in the orchestrator tool but very soon I miss the creature comforts of Android Studio. But opening multiple instances of Android Studio is super slow (looking at you gradle sync and indexing). If my orchestrator environment is Antigravity 2.0 I can either jump back into Antigravity IDE or open the project in AndroidStudio.&lt;/p&gt;
 &lt;h2 id="the-problem"&gt;The problem
-&lt;/h2&gt;&lt;p&gt;Arrgh so many these chat boxes everywhere with agents waiting to eat my tokens! So many tool combos all fighting for RAM on my machine!&lt;/p&gt;
-&lt;p&gt;I just want to add a setting to a file, let me open it in vi.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Arrgh so many chat boxes everywhere with agents waiting to eat my tokens! So many tool combos all fighting for RAM and CPU cycles on my machine!&lt;/p&gt;
+&lt;p&gt;I just want to add a setting to a file, I might as well edit it in &lt;strong&gt;vi&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id="ok-deep-breath"&gt;ok deep breath.
-&lt;/h2&gt;&lt;p&gt;I don&amp;rsquo;t have a solution and I&amp;rsquo;m sure the internet has many suggestions so let me just figure out what is Antigravity 2.0 good at and what do I do in Android Studio.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;I don&amp;rsquo;t have a solution and I&amp;rsquo;m sure the internet has many suggestions so let me just figure out whre Antigravity 2.0 shines and what is better to do in Android Studio.&lt;/p&gt;
 &lt;h2 id="use-antigravity"&gt;Use Antigravity
 &lt;/h2&gt;&lt;h3 id="the-mindset---broad-explore-plan-hands-off-chatty-parallel-work"&gt;The mindset - broad, explore, plan, hands off, chatty, parallel work
 &lt;/h3&gt;&lt;p&gt;In Antigravity it is broader picture, start an app. Exploration and planning. Multiple agents doing things in worktrees. Agents are editing. Build with gradle and run on the emulator using &lt;code&gt;android&lt;/code&gt; command line and skill integration. Agents come first. Less clicking and keyboard shortcuts more human/agent conversations and agent status watching. It can load as much of your codebase into the context as it can find with its tools.&lt;/p&gt;
@@ -74,7 +75,9 @@
 &lt;p&gt;🚧 AI generated content end&lt;/p&gt;
 &lt;h2 id="take-antigravity-20-for-a-spin---build-me-an-app-make-it-not-suck-or-you-go-to-jail--tagspotter"&gt;Take Antigravity 2.0 for a spin - build me an app, make it not suck or you go to jail = TagSpotter
 &lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://antigravity.google/download?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
-&gt;Get it here&lt;/a&gt;&lt;/p&gt;
+&gt;Get it antigravity here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/maiatoday/tag-spotter" target="_blank" rel="noopener"
+&gt;Get it TagSppotter repo here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Make a project and jump in with this prompt.&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;Create a file where I can plan what needs to be included in my new project. It needs to be a
 markdown file so that we can get an overview. This app is an Android app that is used to tag
@@ -83,8 +86,8 @@ of a photo and tag the geolocation. I need to have a way to save all of my tagge
 to have a way to delete images that I don&amp;#39;t want anymore. I need to have a way to add a
 description, a time and date, and some more tags to the image. Write me the file that would be a
 brief to build this project. Then use the grill me feature to explore what needs to happen.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This resulted in a detailed plan and within an hour I had an &lt;a class="link" href="https://github.com/maiatoday/tag-spotter" target="_blank" rel="noopener"
-&gt;MVP&lt;/a&gt;. Not gonna lie it was blazingly fast. A woolly request, maybe, but there are ways to crisp things up before generating the code. I used the Gemini 3.5 Medium model.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Can you tell I was rambling and talking to antigravity in that prompt. Nevertheless this resulted in a detailed plan and within an hour I had an &lt;a class="link" href="https://github.com/maiatoday/tag-spotter" target="_blank" rel="noopener"
+&gt;MVP&lt;/a&gt;. Not gonna lie it was &lt;strong&gt;blazingly fast&lt;/strong&gt;. A woolly request, maybe, but there are ways to crisp things up before generating the code. I used the Gemini 3.5 Medium model.&lt;/p&gt;
 &lt;img src="antigravityModelChoice.png" style="width:50%"&gt;
 &lt;p&gt;This is what I did that made the implementation smooth.&lt;/p&gt;
 &lt;ol&gt;
@@ -108,7 +111,7 @@ brief to build this project. Then use the grill me feature to explore what needs
 &lt;li&gt;I could see the plan all the time and it gave good walkthroughs of what it did to help me load a mental model&lt;/li&gt;
 &lt;li&gt;There was a place to ask questions without a project&lt;/li&gt;
 &lt;li&gt;The built in skills like &lt;code&gt;/grill-me&lt;/code&gt; and &lt;code&gt;/goal&lt;/code&gt; were useful&lt;/li&gt;
-&lt;li&gt;I had this I can dream again because anything is possible and quick feeling&lt;/li&gt;
+&lt;li&gt;I had this inspiring &amp;ldquo;I can dream again because anything is possible and quick&amp;rdquo; feeling which I haven&amp;rsquo;t had for a long time.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="what-confused-me"&gt;What confused me
 &lt;/h3&gt;&lt;ul&gt;
@@ -128,6 +131,7 @@ brief to build this project. Then use the grill me feature to explore what needs
 &lt;h3 id="top-tips"&gt;Top tips
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Add a section of future features so that the design can be led into the right direction from the start&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;/grill-me&lt;/code&gt; multiple times.&lt;/li&gt;
 &lt;li&gt;Ask it to look at what it built and assess it critically, It found a bunch of improvements. It will do that without you threatening it&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;Read the code for this app. Do a thorough assessment if good coding standards and architecure
@@ -143,9 +147,11 @@ project-score-card.md file
 &lt;li&gt;Test a bit more and smooth out the UX&lt;/li&gt;
 &lt;li&gt;Figure out a way to share a selection of spots&lt;/li&gt;
 &lt;li&gt;Build some of the future features&lt;/li&gt;
+&lt;li&gt;Add notifications so that I can &lt;a class="link" href="https://en.wikipedia.org/wiki/Fl%C3%A2neur" target="_blank" rel="noopener"
+&gt;wander around aimlessly&lt;/a&gt; without having my phone out and and be notified on the watch if I am near something interesting&lt;/li&gt;
 &lt;li&gt;Convert to KMP?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;I am inspired to build try out apps again because the time needed to get going has been slashed. I can now test and idea before deciding which ones I want to spend more time on. It took longer to write this post than to build the MVP because I stubbornly write all posts by hand to avoid the entsloppification of my blog. Who knows what the future holds.&lt;/p&gt;</description></item><item><title>Is it vaporwave? - Compose Hot reload</title><link>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</link><pubDate>Mon, 09 Jun 2025 12:52:55 +0200</pubDate><guid>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</guid><description>&lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/vapor.png" alt="Featured image of post Is it vaporwave? - Compose Hot reload" /&gt;&lt;h2 id="why"&gt;Why
+&lt;p&gt;I am inspired to build and try out apps again because the time needed to get going has been slashed. I can now test and idea before deciding which ones I want to spend more time on. It took longer to write this post than to build the MVP because I stubbornly write all posts by hand to avoid the entsloppification of my blog. Who knows what the future holds.&lt;/p&gt;</description></item><item><title>Is it vaporwave? - Compose Hot reload</title><link>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</link><pubDate>Mon, 09 Jun 2025 12:52:55 +0200</pubDate><guid>https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/</guid><description>&lt;img src="https://www.maiatoday.net/p/is-it-vaporwave-compose-hot-reload/vapor.png" alt="Featured image of post Is it vaporwave? - Compose Hot reload" /&gt;&lt;h2 id="why"&gt;Why
 &lt;/h2&gt;&lt;p&gt;I want to play with the recently released &lt;a class="link" href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-hot-reload.html" target="_blank" rel="noopener"
 &gt;Compose Hot reload feature&lt;/a&gt; by JetBrains. To do this I setup a Desktop compose project and picked a topic to draw and explore: &lt;a class="link" href="https://en.wikipedia.org/wiki/Vaporwave" target="_blank" rel="noopener"
 &gt;Vaporwave&lt;/a&gt; Why? because Vaporwave is a curious Internet thing. It has a strong visual aesthetic that I wanted to recreate. It is intriguing. It is seems to be a fleeting transient phenomena: it is in the name &lt;em&gt;vapor&lt;/em&gt; and &lt;em&gt;wave&lt;/em&gt; and yet&amp;hellip; and yet we see it &lt;a class="link" href="https://www.aesdes.org/2025/01/23/vaporwave/" target="_blank" rel="noopener"
