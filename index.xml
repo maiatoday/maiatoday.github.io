@@ -1,4 +1,151 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://www.maiatoday.net/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 18 Apr 2026 21:20:59 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Android CLI meet Gemini CLI</title><link>https://www.maiatoday.net/p/android-cli-meet-gemini-cli/</link><pubDate>Sat, 18 Apr 2026 21:20:59 +0200</pubDate><guid>https://www.maiatoday.net/p/android-cli-meet-gemini-cli/</guid><description>&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/androidGeminiCLI.png" alt="Featured image of post Android CLI meet Gemini CLI" /&gt;&lt;p&gt;In recent Android AI experiments I always felt I missed something. If I was in the IDE using an agent with Gemini in Android Studio, I loved the access to the knowledge base and the special tools but I could only spin up one instance. If I was in my &lt;code&gt;&amp;lt;insert favourite CLI agent tool&amp;gt;&lt;/code&gt; let&amp;rsquo;s say &lt;code&gt;gemini-cli&lt;/code&gt;, I missed the quality of life improvements that made me have to jump back into the IDE.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maiatoday</title><link>https://www.maiatoday.net/</link><description>Recent content on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2026 10:21:45 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Antigravity 2.0 vs Android Studio - making TagSpotter</title><link>https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/</link><pubDate>Sun, 31 May 2026 10:21:45 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/antigravityAndroidStudio2.png" alt="Featured image of post Antigravity 2.0 vs Android Studio - making TagSpotter" /&gt;&lt;h1 id="how-does-antigravity-and-android-studio-work-together-what-do-i-do-where"&gt;How does Antigravity and Android Studio work together? What do I do where?
+&lt;/h1&gt;&lt;p&gt;There are as many workflows and preferences as there are Android engineers starting with light mode vs dark mode. This is not an attempt to provoke a holy war. What I have noticed is that in the the days BA (Before Agents) I used to open Android Studio and do most things in there, edit, debug, preview, git and do CLI things. Now its not like that anymore.&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="#take-antigravity-20-for-a-spin---build-me-an-app-make-it-not-suck-or-you-go-to-jail--tagspotter" &gt;Click here&lt;/a&gt; if you want to skip the rant 😤 and just jump to Antigravity experiment&lt;/p&gt;
+&lt;p&gt;Today in Android Studio I can run 1 agent, or 2 if one is on a command line max 3 if the third is just the Ask/chat tab. Or I can have a ton of terminals open with multiple agents juggling work trees. Or I can use one of the many multi agent solutions like Conductor, superset or Antigravity 2.0 that are popping up like mushrooms. Then I could open multiple Android Studio versions in the worktrees I spun up with the agents.&lt;/p&gt;
+&lt;p&gt;If I am in full agent mode and I just quickly want to edit something, I can do it in a small editor in the orchestrator tool but very soon I miss the creature comforts of Android Studio. But opening multiple instances of Android Studio is super slow (looking at you gradle sync and indexing). If my orchestrator environment is Antigravity 2.0 I can either jump back into Antigravity IDE or open the project in AndroidStudio.&lt;/p&gt;
+&lt;h2 id="the-problem"&gt;The problem
+&lt;/h2&gt;&lt;p&gt;Arrgh so many these chat boxes everywhere with agents waiting to eat my tokens! So many tool combos all fighting for RAM on my machine!&lt;/p&gt;
+&lt;p&gt;I just want to add a setting to a file, let me open it in vi.&lt;/p&gt;
+&lt;h2 id="ok-deep-breath"&gt;ok deep breath.
+&lt;/h2&gt;&lt;p&gt;I don&amp;rsquo;t have a solution and I&amp;rsquo;m sure the internet has many suggestions so let me just figure out what is Antigravity 2.0 good at and what do I do in Android Studio.&lt;/p&gt;
+&lt;h2 id="use-antigravity"&gt;Use Antigravity
+&lt;/h2&gt;&lt;h3 id="the-mindset---broad-explore-plan-hands-off-chatty-parallel-work"&gt;The mindset - broad, explore, plan, hands off, chatty, parallel work
+&lt;/h3&gt;&lt;p&gt;In Antigravity it is broader picture, start an app. Exploration and planning. Multiple agents doing things in worktrees. Agents are editing. Build with gradle and run on the emulator using &lt;code&gt;android&lt;/code&gt; command line and skill integration. Agents come first. Less clicking and keyboard shortcuts more human/agent conversations and agent status watching. It can load as much of your codebase into the context as it can find with its tools.&lt;/p&gt;
+&lt;h3 id="the-downside---no-editor-do-simple-things-with-chat"&gt;The downside - no editor, do simple things with chat
+&lt;/h3&gt;&lt;p&gt;You have to type a verbose sentence to change something small in a file. Chances are in future we may forget all those small things and only be able to remember vague verbose sentences anyway.&lt;/p&gt;
+&lt;h2 id="use-android-studio"&gt;Use Android Studio
+&lt;/h2&gt;&lt;h3 id="the-mindset---plumbing-easy-code-access-logcat-preview-debug-hands-in-code"&gt;The mindset - plumbing, easy code access, logcat, preview, debug, hands in code
+&lt;/h3&gt;&lt;p&gt;In Android Studio you dig into the plumbing. Check crashes. Look at previews. Hand code. Sure there is Gemini in Android studio in multiple places integrated and ready to chat and act. But you are much closer to putting your hands in the code, literally. The tools in the agents and the integrated skills are very Android aware, grounded in official documentation and understanding the Android studio integration. You tell the agent exactly which files are in the context. It doesn&amp;rsquo;t load your whole project.&lt;/p&gt;
+&lt;h3 id="the-downside---one-instance-per-worktree-agents-everywhere-memory-and-cpu-hog-slow-at-times"&gt;The downside - one instance per worktree, agents everywhere, memory and cpu hog, slow at times
+&lt;/h3&gt;&lt;p&gt;Probably the biggest downside is the wait for the beast to gradle sync and index for every worktree you have open. The AI integrations could feel scattered, with right click options and fix with AI everywhere. Ultimately you only have one agent and one Ask/chat window running, unless you add more in the command line.&lt;/p&gt;
+&lt;h2 id="what-about-antigravity-cli---agy---in-android-studio"&gt;What about Antigravity CLI - &lt;code&gt;agy&lt;/code&gt; - in Android Studio
+&lt;/h2&gt;&lt;p&gt;You could run &lt;code&gt;agy&lt;/code&gt; in the terminal in Android Studio. The question is what can you do in &lt;code&gt;agy&lt;/code&gt; that you can&amp;rsquo;t do in either the Agent or Ask/chat pane? The instance of Android studio is still in one folder ie one worktree. So any multi-agent workflow needs to be able to run in the same folder without interfering with each other.&lt;/p&gt;
+&lt;h2 id="tell-me-again-but-in-a-table"&gt;Tell me again but in a table
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="#take-antigravity-20-for-a-spin---build-me-an-app-make-it-not-suck-or-you-go-to-jail--tagspotter" &gt;Click here&lt;/a&gt; if you want to jump ahead to the Antigravity demo part and skip the AI summary.&lt;/p&gt;
+&lt;p&gt;🚧 AI generated content ahead&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;Comparison Dimension&lt;/th&gt;
+&lt;th style="text-align: left"&gt;&lt;strong&gt;Antigravity 2.0&lt;/strong&gt; &lt;em&gt;(Standalone App)&lt;/em&gt;&lt;/th&gt;
+&lt;th style="text-align: left"&gt;&lt;strong&gt;Android Studio&lt;/strong&gt; &lt;em&gt;(Traditional IDE)&lt;/em&gt;&lt;/th&gt;
+&lt;th style="text-align: left"&gt;&lt;strong&gt;Antigravity CLI&lt;/strong&gt; &lt;em&gt;(Terminal Interface)&lt;/em&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Developer Approach / Mindset&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;The Conductor (Agent-First):&lt;/strong&gt; Focuses on orchestrating, planning, and delegating multiple autonomous tasks simultaneously. Developers shift from active coding (&amp;ldquo;vibecoding&amp;rdquo;) to high-level project management, utilizing a &amp;ldquo;fire-and-forget&amp;rdquo; asynchronous workflow.&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;The Builder (Code-First):&lt;/strong&gt; Human-centric, synchronous, and precise. The developer is deeply involved in writing code line-by-line, manual step-debugging, UI layout tweaking, and micro-managing the deterministic execution of the build system.&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;The Speedrunner (Terminal-First):&lt;/strong&gt; Lightweight, minimalist, and automation-driven. Favors lightning-fast keyboard execution, text-based repository parsing, and DevOps scripting without the rendering overhead of a graphical UI.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Core Intent / Primary Surface&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Multi-agent orchestration, planning, and asynchronous background execution across multi-repo projects.&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Full-suite Android application design, compilation, emulation, profiling, and direct source-code refactoring.&lt;/td&gt;
+&lt;td style="text-align: left"&gt;High-velocity command execution, quick script generation, and triggering local agent pipelines from within the terminal.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Key Features&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;• Parallel multi-agent execution&lt;br&gt;• Dynamic subagents for focused subtasks&lt;br&gt;• Scheduled/cron automated tasks&lt;br&gt;• Non-blocking asynchronous task management&lt;br&gt;• Multi-repo project grouping&lt;br&gt;• Live voice transcription input&lt;/td&gt;
+&lt;td style="text-align: left"&gt;• Native Android Gradle build system&lt;br&gt;• Layout Editor (XML / Jetpack Compose Preview)&lt;br&gt;• Advanced CPU/Memory Profilers&lt;br&gt;• Android Device Emulator&lt;br&gt;• Logcat debugging &amp;amp; APK Analyzer&lt;br&gt;• Deep Git / VCS native integration&lt;/td&gt;
+&lt;td style="text-align: left"&gt;• Instant agent instantiation via terminal&lt;br&gt;• Shared authentication/context with Antigravity 2.0&lt;br&gt;• Compact, text-based repo analysis&lt;br&gt;• Lightweight footprint with zero GUI overhead&lt;br&gt;• Easily scriptable in bash/zsh pipelines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Unique Capabilities&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;• &lt;strong&gt;Artifact System:&lt;/strong&gt; Generates structured walkthroughs, plans, and multi-modal feedback loops (Google-doc style commenting on screenshots/text).&lt;br&gt;• &lt;strong&gt;Context Isolation:&lt;/strong&gt; Subagents split tasks into distinct context windows to maximize intelligence limits.&lt;/td&gt;
+&lt;td style="text-align: left"&gt;• &lt;strong&gt;Deterministic Tooling:&lt;/strong&gt; Features a pixel-perfect layout editor, hardware-level device emulation, and deep static code analysis (Linting) purpose-built for mobile applications.&lt;/td&gt;
+&lt;td style="text-align: left"&gt;• &lt;strong&gt;High-Velocity Automation:&lt;/strong&gt; Full access to the Antigravity agent harness directly via terminal commands, enabling immediate, headless repository processing.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Limitations&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;• &lt;strong&gt;No Built-in Code Editor:&lt;/strong&gt; Stripped of its legacy IDE core; relies entirely on external local IDEs or &amp;ldquo;dual-wielding&amp;rdquo; with text editors.&lt;br&gt;• Requires high-token-budget subscriptions (such as the new $100/mo AI Ultra tier for expanded limits).&lt;/td&gt;
+&lt;td style="text-align: left"&gt;• &lt;strong&gt;High Resource Overhead:&lt;/strong&gt; Notoriously resource-heavy (RAM/CPU intensive).&lt;br&gt;• &lt;strong&gt;Strictly Synchronous:&lt;/strong&gt; AI capabilities (like Gemini code assist) function primarily as passive inline autocompletion rather than autonomous agents.&lt;/td&gt;
+&lt;td style="text-align: left"&gt;• &lt;strong&gt;No Multimodal/Visual UI:&lt;/strong&gt; Lacks the ability to parse or interact with visual artifacts like screenshots, browser test recordings, or interactive charts.&lt;br&gt;• Requires typing exact syntax and file pointers manually via text flags.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Ecosystem Integration&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Seamlessly pulls complete context from Google AI Studio mobile/web apps, connects to Google Cloud (Gemini Enterprise Agent Platform), Firebase, and Google Workspace APIs.&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Deeply tied into the Android SDK, Google Play Console test tracks, Kotlin Multiplatform, and the Gradle ecosystem.&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Direct successor to the legacy Gemini CLI; shares configuration, skills registries, and authorization tokens with Antigravity 2.0.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;🚧 AI generated content end&lt;/p&gt;
+&lt;h2 id="take-antigravity-20-for-a-spin---build-me-an-app-make-it-not-suck-or-you-go-to-jail--tagspotter"&gt;Take Antigravity 2.0 for a spin - build me an app, make it not suck or you go to jail = TagSpotter
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://antigravity.google/download?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
+&gt;Get it here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Make a project and jump in with this prompt.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Create a file where I can plan what needs to be included in my new project. It needs to be a
+markdown file so that we can get an overview. This app is an Android app that is used to tag
+graffiti and geolocation in a city while walking. I need to have a screen where I can take a picture
+of a photo and tag the geolocation. I need to have a way to save all of my tagged images. I need
+to have a way to delete images that I don&amp;#39;t want anymore. I need to have a way to add a
+description, a time and date, and some more tags to the image. Write me the file that would be a
+brief to build this project. Then use the grill me feature to explore what needs to happen.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This resulted in a detailed plan and within an hour I had an &lt;a class="link" href="https://github.com/maiatoday/tag-spotter" target="_blank" rel="noopener"
+&gt;MVP&lt;/a&gt;. Not gonna lie it was blazingly fast. A woolly request, maybe, but there are ways to crisp things up before generating the code. I used the Gemini 3.5 Medium model.&lt;/p&gt;
+&lt;img src="antigravityModelChoice.png" style="width:50%"&gt;
+&lt;p&gt;This is what I did that made the implementation smooth.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I created the plan and then had about 2 rounds of &lt;code&gt;/grill-me&lt;/code&gt; to make sure I thought of everything.&lt;/li&gt;
+&lt;li&gt;Then I made a &lt;strong&gt;separate section in the plan of possible future features&lt;/strong&gt; and asked Antigravity to make sure the implementation would support the future features.&lt;/li&gt;
+&lt;li&gt;Let it run, messed around, tested and fixed a bunch of stuff in &lt;strong&gt;small increments&lt;/strong&gt; and separate conversations&lt;/li&gt;
+&lt;li&gt;Ask Antigravity to &lt;strong&gt;analyse the whole project and check for smells&lt;/strong&gt; and give it a score&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="tada-"&gt;Tada 🎉
+&lt;/h3&gt;&lt;img src="tagSpotterGallery.png" style="width:30%"&gt;
+&lt;img src="tagSpotterMap.png" style="width:30%"&gt;
+&lt;img src="tagSpotterDetail.png" style="width:30%"&gt;
+&lt;img src="tagSpotterDetail2.png" style="width:50%"&gt;
+&lt;h3 id="what-i-liked"&gt;What I liked
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;It is &lt;strong&gt;blazingly fast&lt;/strong&gt; approaching 300 tokens/s as per the &lt;a class="link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/#frontier-intelligence" target="_blank" rel="noopener"
+&gt;Google self reporting&lt;/a&gt;. I seemed to context switch less because the responses came in quickly.&lt;/li&gt;
+&lt;li&gt;It knows about Android documents and the android cli and skill integration works well&lt;/li&gt;
+&lt;li&gt;It automatically checks its work on the emulator&lt;/li&gt;
+&lt;li&gt;The voice mode is integrated and works well, no lag and no third party tool&lt;/li&gt;
+&lt;li&gt;I could see the plan all the time and it gave good walkthroughs of what it did to help me load a mental model&lt;/li&gt;
+&lt;li&gt;There was a place to ask questions without a project&lt;/li&gt;
+&lt;li&gt;The built in skills like &lt;code&gt;/grill-me&lt;/code&gt; and &lt;code&gt;/goal&lt;/code&gt; were useful&lt;/li&gt;
+&lt;li&gt;I had this I can dream again because anything is possible and quick feeling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="what-confused-me"&gt;What confused me
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;It wasn&amp;rsquo;t so easy to see which of my conversations were happening in a worktree&lt;/li&gt;
+&lt;li&gt;I still had to go to another tool to see what was happening with git commits&lt;/li&gt;
+&lt;li&gt;The right side panel got quite cluttered with all the tracking and checking and diffs&lt;/li&gt;
+&lt;li&gt;I had a bunch of conversations and I lost track of which ones I still wanted and which ones were complete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="what-surprised-me"&gt;What surprised me
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;I never went into the Antigravity IDE mode&lt;/li&gt;
+&lt;li&gt;I didn&amp;rsquo;t miss the editor in Antigravity that much. Because it is so fast I was ok to do the simple changes via chat especially since I could use voice&lt;/li&gt;
+&lt;li&gt;I did open Android Studio because I was curious about what it created&lt;/li&gt;
+&lt;li&gt;I did an awesome job of making the layouts support landscape mode when I asked it&lt;/li&gt;
+&lt;li&gt;I was using the Gemini 3.5 Flash Medium model and I am on a AI Pro and I &lt;strong&gt;didn&amp;rsquo;t&lt;/strong&gt; run out of tokens for this project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="top-tips"&gt;Top tips
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Add a section of future features so that the design can be led into the right direction from the start&lt;/li&gt;
+&lt;li&gt;Ask it to look at what it built and assess it critically, It found a bunch of improvements. It will do that without you threatening it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Read the code for this app. Do a thorough assessment if good coding standards and architecure
+were followed as described in the Android documentation. Give a summary of the database
+schema. Assess the project for test coverage. Don&amp;#39;t change anything but write it in a
+project-score-card.md file
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;From the &lt;a class="link" href="https://github.com/maiatoday/tag-spotter/blob/main/project-score-card.md" target="_blank" rel="noopener"
+&gt;assessment&lt;/a&gt;, the code has a pretty bad score, there are memory leaks and no tests but the MVP is usable and now I can decide if I want to spend more time on it.&lt;/p&gt;
+&lt;img src="appScore.png" style="width:80%"&gt;
+&lt;h2 id="what-next"&gt;What next
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Fix all the bad things in the scorecard report&lt;/li&gt;
+&lt;li&gt;Test a bit more and smooth out the UX&lt;/li&gt;
+&lt;li&gt;Figure out a way to share a selection of spots&lt;/li&gt;
+&lt;li&gt;Build some of the future features&lt;/li&gt;
+&lt;li&gt;Convert to KMP?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I am inspired to build try out apps again because the time needed to get going has been slashed. I can now test and idea before deciding which ones I want to spend more time on. It took longer to write this post than to build the MVP because I stubbornly write all posts by hand to avoid the entsloppification of my blog. Who knows what the future holds.&lt;/p&gt;</description></item><item><title>Android CLI meet Gemini CLI</title><link>https://www.maiatoday.net/p/android-cli-meet-gemini-cli/</link><pubDate>Sat, 18 Apr 2026 21:20:59 +0200</pubDate><guid>https://www.maiatoday.net/p/android-cli-meet-gemini-cli/</guid><description>&lt;img src="https://www.maiatoday.net/p/android-cli-meet-gemini-cli/androidGeminiCLI.png" alt="Featured image of post Android CLI meet Gemini CLI" /&gt;&lt;p&gt;In recent Android AI experiments I always felt I missed something. If I was in the IDE using an agent with Gemini in Android Studio, I loved the access to the knowledge base and the special tools but I could only spin up one instance. If I was in my &lt;code&gt;&amp;lt;insert favourite CLI agent tool&amp;gt;&lt;/code&gt; let&amp;rsquo;s say &lt;code&gt;gemini-cli&lt;/code&gt;, I missed the quality of life improvements that made me have to jump back into the IDE.&lt;/p&gt;
 &lt;p&gt;Yes I could install an &lt;code&gt;adb&lt;/code&gt; extension into &lt;code&gt;gemini-cli&lt;/code&gt; or write some custom skill to try to achieve what I wanted or paste a bunch of Android official urls into the prompt. It was always fiddly to open the IDE from a worktree or test from an orchestrator session. As of last week there is a new tool and a bunch of matching skills that solve this.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Android CLI&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="markdown-alert markdown-alert-note"&gt;
