@@ -1,4 +1,233 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on maiatoday</title><link>https://www.maiatoday.net/post/</link><description>Recent content in Posts on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2026 10:21:45 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Antigravity 2.0 vs Android Studio - making TagSpotter</title><link>https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/</link><pubDate>Sun, 31 May 2026 10:21:45 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/antigravityAndroidStudio2.png" alt="Featured image of post Antigravity 2.0 vs Android Studio - making TagSpotter" /&gt;&lt;h1 id="how-does-antigravity-and-android-studio-work-together-what-do-i-do-where"&gt;How does Antigravity and Android Studio work together? What do I do where?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on maiatoday</title><link>https://www.maiatoday.net/post/</link><description>Recent content in Posts on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Jun 2026 21:10:33 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Antigravity TagSpotter - KotlinMultiPlatform evolve</title><link>https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/</link><pubDate>Sun, 14 Jun 2026 21:10:33 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/banner.png" alt="Featured image of post Antigravity TagSpotter - KotlinMultiPlatform evolve" /&gt;&lt;h1 id="the-challenge"&gt;The Challenge
+&lt;/h1&gt;&lt;p&gt;Can I make my TagSpotter Android app be multi-platform in a weekend using &lt;a class="link" href="https://antigravity.google/docs/getting-started?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
+&gt;Antigravity 2.0&lt;/a&gt;? Can I do this even though I don&amp;rsquo;t know how to use Xcode and I don&amp;rsquo;t want to break my existing app. This was the question I had.&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/maiatoday/tag-spotter" target="_blank" rel="noopener"
+&gt;TagSpotter&lt;/a&gt; is medium featured Android app &lt;a class="link" href="https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/" target="_blank" rel="noopener"
+&gt;I built two weeks ago&lt;/a&gt;. I use it to capture interesting and favourite spots in the city like unusual graffiti or yarn bombed sculptures.
+&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/yarn-bombSmall.png"
+width="800"
+height="602"
+srcset="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/yarn-bombSmall_hu_133d64adb71ee418.png 480w, https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/yarn-bombSmall_hu_243ed381ff914158.png 1024w"
+loading="lazy"
+alt="yarn bomb"
+class="gallery-image"
+data-flex-grow="132"
+data-flex-basis="318px"
+&gt;&lt;/p&gt;
+&lt;p&gt;It has a fair few features including:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Capture the places by camera with location&lt;/li&gt;
+&lt;li&gt;Upload a photo&lt;/li&gt;
+&lt;li&gt;AI lookup to find info on the internet from the photo, links, title, artist and suggested tags&lt;/li&gt;
+&lt;li&gt;Export the spots in a zip file and import them again. This is how I share my favourite spots with friends.&lt;/li&gt;
+&lt;li&gt;Make field notes by typing or speaking&lt;/li&gt;
+&lt;li&gt;Share my favourites to Google maps for easy navigation&lt;/li&gt;
+&lt;li&gt;Good category and location based filtering&lt;/li&gt;
+&lt;li&gt;Wear app that can list started spots and navigate to a spot on the watch&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/wear.png"
+width="456"
+height="456"
+srcset="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/wear_hu_f11f7889f8f28af8.png 480w, https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/wear_hu_be9fbfef9c96f8a5.png 1024w"
+loading="lazy"
+alt="wear"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;&lt;/p&gt;
+&lt;p&gt;A good challenge because it isn&amp;rsquo;t just a hello world app.&lt;/p&gt;
+&lt;h1 id="the-prep"&gt;The prep
+&lt;/h1&gt;&lt;p&gt;Because the clock would be ticking, I did a little bit of prep to make sure I had everything ready.&lt;/p&gt;
+&lt;h2 id="prep-the-codebase"&gt;Prep the codebase
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Clean up the app&lt;/em&gt;, no warnings, lint issues or unused imports&lt;/li&gt;
+&lt;li&gt;Make sure the &lt;em&gt;screens work in landscape&lt;/em&gt;, desktop mode will need this&lt;/li&gt;
+&lt;li&gt;Split the app into &lt;em&gt;feature based and pure kotlin modules&lt;/em&gt;. I know Compose multiplatform and pure kotlin modules can easily be re-used.&lt;/li&gt;
+&lt;li&gt;Put some &lt;em&gt;tests&lt;/em&gt; in place&lt;/li&gt;
+&lt;li&gt;Checked everything works and &lt;em&gt;make a tag&lt;/em&gt; in git incase Antigravity borked the project.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="light-research"&gt;Light research
+&lt;/h2&gt;&lt;p&gt;I collected a few salient links about KMP migration. A &lt;a class="link" href="https://kotlinlang.org/docs/multiplatform/migrate-from-android.html" target="_blank" rel="noopener"
+&gt;good blog post&lt;/a&gt;, some info on &lt;a class="link" href="https://blog.jetbrains.com/kotlin/2026/05/new-kmp-default-structure/" target="_blank" rel="noopener"
+&gt;project structure&lt;/a&gt; and a link to the &lt;a class="link" href="https://klibs.io/" target="_blank" rel="noopener"
+&gt;open source kmp libraries&lt;/a&gt; I might need.&lt;/p&gt;
+&lt;h1 id="nitty-gritty"&gt;Nitty Gritty
+&lt;/h1&gt;&lt;p&gt;Friday evening, let&amp;rsquo;s go.&lt;/p&gt;
+&lt;h2 id="make-a-plan"&gt;Make a plan
+&lt;/h2&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;I want to convert this app to a KMP app that supports
+iOS, Android, Desktop and Web. The other platforms do not
+have to support all features, e.g. the wear app. But Android still
+has to support this feature. I want to share as much code as possible.
+Prepare a report with the following sections:
+1. What needs to change in the current architecture to
+make the transition easy
+2. Evaluate a strategy to do the change and suggest
+approaches and open source libraries to achieve the goal
+3. Plan a series of practical steps to achieve this with
+clear steps that can be performed by subagents in parallel if possible.
+Remember to identify tasks that need to happen first
+before parallel work can begin
+4. Highlight any special things to watchout for or features
+that need to change or will work differently
+Refer to these documents:
+https://kotlinlang.org/docs/multiplatform/migrate-from-android.html and https://klibs.io/ and https://blog.jetbrains.com/kotlin/2026/05/new-kmp-default-structure/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And then used &lt;code&gt;/grill-me&lt;/code&gt; a few times until there were no more unanswered questions.
+This process created the &lt;a class="link" href="https://github.com/maiatoday/tag-spotter/blob/main/docs/kmp_migration_plan.md" target="_blank" rel="noopener"
+&gt;migration plan&lt;/a&gt; that I referred to through the entire journey. With this in hand I knew if any of my sessions lost their way I can restart from a known point.&lt;/p&gt;
+&lt;p&gt;This was what we wanted to do:&lt;/p&gt;
+&lt;pre class="mermaid"&gt;
+graph TD
+A[1. Setup Build &amp;amp; Versions] --&amp;gt; B[2. Migrate :core:model]
+B --&amp;gt; C1[3.1 Migrate :core:settings]
+B --&amp;gt; C2[3.2 Migrate :core:location]
+B --&amp;gt; C3[3.3 Migrate :core:photo]
+C2 --&amp;gt; D1[4.1 Migrate :core:database]
+C3 --&amp;gt; D1
+C3 --&amp;gt; D2[4.2 Migrate :core:ai]
+D1 --&amp;gt; E[5. Migrate :core:ui &amp;amp; Maps]
+C1 --&amp;gt; E
+E --&amp;gt; F1[6.1 Migrate :feature:gallery]
+E --&amp;gt; F2[6.2 Migrate :feature:map]
+E --&amp;gt; F3[6.3 Migrate :feature:detail]
+E --&amp;gt; F4[6.4 Migrate :feature:settings]
+F1 --&amp;gt; G[7. Setup Platform Application Runners]
+F2 --&amp;gt; G
+F3 --&amp;gt; G
+F4 --&amp;gt; G
+&lt;/pre&gt;
+&lt;h2 id="the-big-multi-agent-token-eating-step"&gt;The big multi agent token eating step
+&lt;/h2&gt;&lt;p&gt;In the first part Phase A and B in the plan it created the build files and moved the core files into the right place and updated all the gradle files. It ran tests. I was clicking apply and eating through tokens. Because there were multiple agents and worktrees involved, things were flying.&lt;/p&gt;
+&lt;p&gt;Hey settings migration agent! What are you doing?!
+&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/settingsLoop.png"
+width="750"
+height="442"
+srcset="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/settingsLoop_hu_bb54def499f20c12.png 480w, https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/settingsLoop_hu_84e5dfe649698329.png 1024w"
+loading="lazy"
+alt="settings loop"
+class="gallery-image"
+data-flex-grow="169"
+data-flex-basis="407px"
+&gt;&lt;/p&gt;
+&lt;p&gt;By the time my tokens ran out on Friday night, I had the core modules migrated. Things weren&amp;rsquo;t really compiling though.
+&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/NopeENotDone.png"
+width="772"
+height="886"
+srcset="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/NopeENotDone_hu_68502cd9294c123.png 480w, https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/NopeENotDone_hu_bb9ef00d5a203c28.png 1024w"
+loading="lazy"
+alt="nope not done"
+class="gallery-image"
+data-flex-grow="87"
+data-flex-basis="209px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Saturday. Get the previous session to summarise where it got to. &lt;strong&gt;Start a fresh conversation&lt;/strong&gt; with the &lt;a class="link" href="https://github.com/maiatoday/tag-spotter/blob/main/docs/mid-session.md" target="_blank" rel="noopener"
+&gt;progress markdown&lt;/a&gt; and the &lt;a class="link" href="https://github.com/maiatoday/tag-spotter/blob/main/docs/kmp_migration_plan.md" target="_blank" rel="noopener"
+&gt;migration plan&lt;/a&gt;. Before doing anything cleanup and merge all the worktrees so that main had all the latest changes again. Proceed to migrate the feature modules.
+&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/featureAgents.png"
+width="808"
+height="788"
+srcset="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/featureAgents_hu_af26f5ba68453bfb.png 480w, https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/featureAgents_hu_5aaab9d16d6bd911.png 1024w"
+loading="lazy"
+alt="feature agents"
+class="gallery-image"
+data-flex-grow="102"
+data-flex-basis="246px"
+&gt;&lt;/p&gt;
+&lt;p&gt;At this point everything compiled, Android was still working but the other platforms weren&amp;rsquo;t there. I was missing step 7.&lt;/p&gt;
+&lt;h2 id="adding-ios-and-desktop"&gt;Adding iOS and Desktop
+&lt;/h2&gt;&lt;p&gt;For this phase I instructed Antigravity to not go into parallel mode but rather stop and ask me to test manually. I wanted to make sure all the platforms were working at each step.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Since this job needs manual intervention, prefer staying
+in the main orchestrator so I can track progress
+and test alongside you
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When it got to the iOS app creation, Antigravity gave me step by step instructions on how to set everything up in xcode rather fiddling with the iOS project files
+&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/xcodesetup2.png"
+width="1344"
+height="870"
+srcset="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/xcodesetup2_hu_5496b7f89252f32f.png 480w, https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/xcodesetup2_hu_da56be8eb3cfcf11.png 1024w"
+loading="lazy"
+alt="go to xcode"
+class="gallery-image"
+data-flex-grow="154"
+data-flex-basis="370px"
+&gt;&lt;/p&gt;
+&lt;h2 id="images-and-file-system-access"&gt;Images and file system access
+&lt;/h2&gt;&lt;p&gt;Once the apps were running, I could start fixing specific things. Why was the dialog for loading files not opening on desktop? How do I save and restore the zip file on iOS, and so on. It was a bit tedious because if you fixed something on one platform it sometimes broke on the others. Quite a bit of manual testing.&lt;/p&gt;
+&lt;p&gt;I can automate the tests to some extent with Android but it was quicker and less token heavy to do things manually.&lt;/p&gt;
+&lt;p&gt;You can see the &lt;a class="link" href="https://github.com/maiatoday/tag-spotter/commits/main/" target="_blank" rel="noopener"
+&gt;entire journey in commits&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="did-i-make-it"&gt;Did I make it?
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Yes and No&lt;/strong&gt; This is the state of the app on Sunday evening&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/allGallery.png"
+width="2618"
+height="1666"
+srcset="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/allGallery_hu_4f75e7cd560d7327.png 480w, https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/allGallery_hu_7ae91bda99ac63dd.png 1024w"
+loading="lazy"
+alt="all platforms gallery"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="377px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/detailCompare.png"
+width="2656"
+height="1672"
+srcset="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/detailCompare_hu_7d0bb89d895da949.png 480w, https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/detailCompare_hu_f40fcfc9323908ef.png 1024w"
+loading="lazy"
+alt="detail"
+class="gallery-image"
+data-flex-grow="158"
+data-flex-basis="381px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/desktopDetail.png"
+width="1600"
+height="1190"
+srcset="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/desktopDetail_hu_79025b616fdea3b3.png 480w, https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/desktopDetail_hu_90bc40bb27308f89.png 1024w"
+loading="lazy"
+alt="desktop detail"
+class="gallery-image"
+data-flex-grow="134"
+data-flex-basis="322px"
+&gt;&lt;/p&gt;
+&lt;h2 id="what-is-working"&gt;What is working
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;I have a running app on Android, Desktop and iOS&lt;/li&gt;
+&lt;li&gt;Android app has all features intact including wear&lt;/li&gt;
+&lt;li&gt;Desktop and iOS apps have:
+&lt;ul&gt;
+&lt;li&gt;complete UI,&lt;/li&gt;
+&lt;li&gt;show images&lt;/li&gt;
+&lt;li&gt;load photos&lt;/li&gt;
+&lt;li&gt;export and import backups.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="what-is-broken"&gt;What is broken
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Wasm is missing&lt;/li&gt;
+&lt;li&gt;Desktop and iOS are missing features:
+&lt;ul&gt;
+&lt;li&gt;Camera integration&lt;/li&gt;
+&lt;li&gt;Maps integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="observations"&gt;Observations
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;A migration like this is &lt;em&gt;less daunting because of AI&lt;/em&gt; assistance especially for platforms that I don&amp;rsquo;t know.&lt;/li&gt;
+&lt;li&gt;I only had to &lt;em&gt;open Xcode once initially&lt;/em&gt; and after that I could do everything with Antigravity or Android Studio&lt;/li&gt;
+&lt;li&gt;Hot reload was awesome on desktop but closed the desktop app if Antigravity was doing a bunch of changes&lt;/li&gt;
+&lt;li&gt;I was using my own tokens on AI Pro. I could do the whole migration without buying more, even though I hit the limits a few times.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="tips"&gt;Tips
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;The better the prep and planning the easier the journey&lt;/li&gt;
+&lt;li&gt;Keep a solid migration guide so that you can start on a clean slate when the context gets messy&lt;/li&gt;
+&lt;li&gt;Antigravity &lt;code&gt;/grill-me&lt;/code&gt; isn&amp;rsquo;t very relentless, run it multiple times&lt;/li&gt;
+&lt;li&gt;Keep an eye on multiple agents incase they start chasing their tail: look out for &amp;ldquo;this is extremely simple, let&amp;rsquo;s write it&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Some action like on device testing or committing and merging can be done by the agent but they are easy enough for me to do and use way less tokens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="whats-next"&gt;What&amp;rsquo;s next?
+&lt;/h1&gt;&lt;p&gt;Fix the things that are still broken&lt;/p&gt;
+&lt;p&gt;Change the AI augmentation part to use Firebase SDKs so the API key is safe.&lt;/p&gt;
+&lt;p&gt;Add User login and data backup so I can share data per user accross platforms.&lt;/p&gt;</description></item><item><title>Antigravity 2.0 vs Android Studio - making TagSpotter</title><link>https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/</link><pubDate>Sun, 31 May 2026 10:21:45 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/antigravityAndroidStudio2.png" alt="Featured image of post Antigravity 2.0 vs Android Studio - making TagSpotter" /&gt;&lt;h1 id="how-does-antigravity-and-android-studio-work-together-what-do-i-do-where"&gt;How does Antigravity and Android Studio work together? What do I do where?
 &lt;/h1&gt;&lt;p&gt;There are as many workflows and preferences as there are Android engineers starting with light mode vs dark mode. This is not an attempt to provoke a holy war. What I have noticed is that in the days BA (Before Agents) I used to open Android Studio and do most things in there, edit, debug, preview, git and do CLI things. Now its not like that anymore.&lt;/p&gt;
 &lt;p&gt;&lt;a class="link" href="#take-antigravity-20-for-a-spin---build-me-an-app-make-it-not-suck-or-you-go-to-jail--tagspotter" &gt;Click here&lt;/a&gt; if you want to skip the rant 😤 and just jump to Antigravity experiment&lt;/p&gt;
 &lt;p&gt;Today in Android Studio I can run 1 agent or 2 if one is on a command line, max 3 if the third is just the Ask/chat tab. Or I can have a ton of terminals open with multiple agents juggling work trees. Or I can use one of the many multi agent solutions like Conductor, Superset or &lt;a class="link" href="https://antigravity.google/download?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
