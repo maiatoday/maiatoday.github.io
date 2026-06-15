@@ -129,7 +129,7 @@ Since this job needs manual intervention, prefer staying
 in the main orchestrator so I can track progress 
 and test alongside you
 ```
-When it got to the iOS app creation, Antigravity gave me step by step instructions on how to set everything up in xcode rather fiddling with the iOS project files
+When it got to the iOS app creation, Antigravity gave me step by step instructions on how to set everything up in xcode rather than fiddling with the iOS project files
 ![go to xcode](xcodesetup2.png)
 
 ## Images and file system access
@@ -164,15 +164,15 @@ You can see the [entire journey in commits](https://github.com/maiatoday/tag-spo
 	* Maps integration
 
 ## Observations
-* A migration like this is *less daunting because of AI* assistance especially for platforms that I don't know. 
+* A migration like this is *less daunting because of AI* assistance especially for platforms that I don't know
 * I only had to *open Xcode once initially* and after that I could do everything with Antigravity or Android Studio
-* Hot reload was awesome on desktop but closed the desktop app if Antigravity was doing a bunch of changes
-* I was using my own tokens on AI Pro. I could do the whole migration without buying more, even though I hit the limits a few times.
+* Hot reload was awesome on desktop but I closed the desktop app if Antigravity was doing a bunch of changes. No need to have parallel builds running
+* I was using my own tokens on AI Pro Plan. I could do the whole migration without buying more, even though I hit the limits a few times
 ## Tips
 * The better the prep and planning the easier the journey
 * Keep a solid migration guide so that you can start on a clean slate when the context gets messy
 * Antigravity `/grill-me` isn't very relentless, run it multiple times
-* Keep an eye on multiple agents incase they start chasing their tail: look out for "this is extremely simple, let's write it"
+* Keep an eye on multiple agents incase they start chasing their tail: look out for "this is extremely simple, let's write it" loops
 * Some action like on device testing or committing and merging can be done by the agent but they are easy enough for me to do and use way less tokens
 
 # What's next?
