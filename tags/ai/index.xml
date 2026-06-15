@@ -138,7 +138,7 @@ data-flex-basis="246px"
 &lt;pre tabindex="0"&gt;&lt;code&gt;Since this job needs manual intervention, prefer staying
 in the main orchestrator so I can track progress
 and test alongside you
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When it got to the iOS app creation, Antigravity gave me step by step instructions on how to set everything up in xcode rather fiddling with the iOS project files
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When it got to the iOS app creation, Antigravity gave me step by step instructions on how to set everything up in xcode rather than fiddling with the iOS project files
 &lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/xcodesetup2.png"
 width="1344"
 height="870"
@@ -211,17 +211,17 @@ data-flex-basis="322px"
 &lt;/ul&gt;
 &lt;h2 id="observations"&gt;Observations
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;A migration like this is &lt;em&gt;less daunting because of AI&lt;/em&gt; assistance especially for platforms that I don&amp;rsquo;t know.&lt;/li&gt;
+&lt;li&gt;A migration like this is &lt;em&gt;less daunting because of AI&lt;/em&gt; assistance especially for platforms that I don&amp;rsquo;t know&lt;/li&gt;
 &lt;li&gt;I only had to &lt;em&gt;open Xcode once initially&lt;/em&gt; and after that I could do everything with Antigravity or Android Studio&lt;/li&gt;
-&lt;li&gt;Hot reload was awesome on desktop but closed the desktop app if Antigravity was doing a bunch of changes&lt;/li&gt;
-&lt;li&gt;I was using my own tokens on AI Pro. I could do the whole migration without buying more, even though I hit the limits a few times.&lt;/li&gt;
+&lt;li&gt;Hot reload was awesome on desktop but I closed the desktop app if Antigravity was doing a bunch of changes. No need to have parallel builds running&lt;/li&gt;
+&lt;li&gt;I was using my own tokens on AI Pro Plan. I could do the whole migration without buying more, even though I hit the limits a few times&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="tips"&gt;Tips
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;The better the prep and planning the easier the journey&lt;/li&gt;
 &lt;li&gt;Keep a solid migration guide so that you can start on a clean slate when the context gets messy&lt;/li&gt;
 &lt;li&gt;Antigravity &lt;code&gt;/grill-me&lt;/code&gt; isn&amp;rsquo;t very relentless, run it multiple times&lt;/li&gt;
-&lt;li&gt;Keep an eye on multiple agents incase they start chasing their tail: look out for &amp;ldquo;this is extremely simple, let&amp;rsquo;s write it&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Keep an eye on multiple agents incase they start chasing their tail: look out for &amp;ldquo;this is extremely simple, let&amp;rsquo;s write it&amp;rdquo; loops&lt;/li&gt;
 &lt;li&gt;Some action like on device testing or committing and merging can be done by the agent but they are easy enough for me to do and use way less tokens&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="whats-next"&gt;What&amp;rsquo;s next?
