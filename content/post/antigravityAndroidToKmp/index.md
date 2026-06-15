@@ -18,9 +18,9 @@ date: 2026-06-14T21:10:33+02:00
 draft: false
 image: banner.png
 ---
-# The Challenge
+# The Challenge - bring on the subagents
 
-Can I make my TagSpotter Android app be multi-platform in a weekend using [Antigravity 2.0](https://antigravity.google/docs/getting-started?utm_campaign=deveco_gdemembers&utm_source=deveco)?  Can I do this even though I don't know how to use Xcode and I don't want to break my existing app. This was the question I had. 
+Can I make my TagSpotter Android app be multi-platform in a weekend using [Antigravity 2.0](https://antigravity.google/docs/getting-started?utm_campaign=deveco_gdemembers&utm_source=deveco) and a swarm of agents running in parallel?  Can I do this even though I don't know how to use Xcode and I don't want to break my existing app. This was the question I had. 
 
 [TagSpotter](https://github.com/maiatoday/tag-spotter) is medium featured Android app [I built two weeks ago](https://www.maiatoday.net/p/antigravity-2.0-vs-android-studio-making-tagspotter/). I use it to capture interesting and favourite spots in the city like unusual graffiti or yarn bombed sculptures.
 ![yarn bomb](yarn-bombSmall.png)
