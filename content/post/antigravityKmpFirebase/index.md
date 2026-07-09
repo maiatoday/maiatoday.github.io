@@ -14,7 +14,7 @@ tags:
   - firebase
   - kmp
 date: 2026-07-09T22:34:04+02:00
-draft: true
+draft: false
 image: antigravityFirebase.png
 ---
 # The challenge - Firebase with Google Plugins
