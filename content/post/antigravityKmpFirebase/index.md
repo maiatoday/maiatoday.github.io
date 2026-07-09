@@ -153,10 +153,10 @@ Somewhat, the basics were there but there were still many small niggly things to
 
 # Learnings
 
-* Thinking what I wanted and **thinking about my intention wasn't trivial**. It took longer than the implementation. But Antigravity is useful for this too.
+* Thinking what I wanted and **thinking about my intention wasn't trivial**. It took longer than the implementation. But Antigravity is useful for this too
 * I had to work sequentially and could not automate the tests because I was still uncovering edge cases
 * Large complex implementations benefit from good **phased implementation and clean context** at each phase
-* **Good skills make all the difference**. At one point I tried one of the phases in another harness tool using the same model and it could complete the work 
+* **Good skills make all the difference**. At one point I tried one of the phases in another harness tool using the same model and it could not complete the work 
 
 ## How much did it cost? 
 
