@@ -111,10 +111,10 @@ and provide a prompt for the next step in a clean context
 &lt;img src="SharePack.png" style="width:30%"&gt;
 &lt;h1 id="learnings"&gt;Learnings
 &lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Thinking what I wanted and &lt;strong&gt;thinking about my intention wasn&amp;rsquo;t trivial&lt;/strong&gt;. It took longer than the implementation. But Antigravity is useful for this too.&lt;/li&gt;
+&lt;li&gt;Thinking what I wanted and &lt;strong&gt;thinking about my intention wasn&amp;rsquo;t trivial&lt;/strong&gt;. It took longer than the implementation. But Antigravity is useful for this too&lt;/li&gt;
 &lt;li&gt;I had to work sequentially and could not automate the tests because I was still uncovering edge cases&lt;/li&gt;
 &lt;li&gt;Large complex implementations benefit from good &lt;strong&gt;phased implementation and clean context&lt;/strong&gt; at each phase&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Good skills make all the difference&lt;/strong&gt;. At one point I tried one of the phases in another harness tool using the same model and it could complete the work&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Good skills make all the difference&lt;/strong&gt;. At one point I tried one of the phases in another harness tool using the same model and it could not complete the work&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="how-much-did-it-cost"&gt;How much did it cost?
 &lt;/h2&gt;&lt;p&gt;Google graciously gave credits for this project. I only used the credits to do the &lt;a class="link" href="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/" target="_blank" rel="noopener"
