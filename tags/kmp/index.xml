@@ -1,4 +1,129 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kmp on maiatoday</title><link>https://www.maiatoday.net/tags/kmp/</link><description>Recent content in Kmp on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Jun 2026 21:10:33 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/kmp/index.xml" rel="self" type="application/rss+xml"/><item><title>Antigravity TagSpotter - KotlinMultiPlatform evolve</title><link>https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/</link><pubDate>Sun, 14 Jun 2026 21:10:33 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/banner.png" alt="Featured image of post Antigravity TagSpotter - KotlinMultiPlatform evolve" /&gt;&lt;h1 id="the-challenge---bring-on-the-subagents"&gt;The Challenge - bring on the subagents
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kmp on maiatoday</title><link>https://www.maiatoday.net/tags/kmp/</link><description>Recent content in Kmp on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 09 Jul 2026 22:34:04 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/kmp/index.xml" rel="self" type="application/rss+xml"/><item><title>Antigravity TagSpotter - Share data with Firebase</title><link>https://www.maiatoday.net/p/antigravity-tagspotter-share-data-with-firebase/</link><pubDate>Thu, 09 Jul 2026 22:34:04 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-tagspotter-share-data-with-firebase/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-share-data-with-firebase/antigravityFirebase.png" alt="Featured image of post Antigravity TagSpotter - Share data with Firebase" /&gt;&lt;h1 id="the-challenge---firebase-with-google-plugins"&gt;The challenge - Firebase with Google Plugins
+&lt;/h1&gt;&lt;p&gt;Now that I can &lt;a class="link" href="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/" target="_blank" rel="noopener"
+&gt;see my graffiti spots on multiple platforms&lt;/a&gt; the obvious next step is I want to keep the data in the cloud so that I can capture spots when I&amp;rsquo;m out and about and then look at them and edit them on the laptop later. For this I need some kind of auth and data storage - like Firebase. Like before, can I do the implementation on a weekend.&lt;/p&gt;
+&lt;p&gt;Easy enough? Well &lt;a class="link" href="https://antigravity.google/docs/getting-started?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
+&gt;Antigravity 2.0&lt;/a&gt; has firebase super powers in the form of Google shipped plugins but figuring out what I really want and what the edge cases are was not trivial.&lt;/p&gt;
+&lt;img src="GooglePlugins.png" style="width:80%"&gt;
+&lt;h1 id="the-prep-grill-me-grill-me-grill-me"&gt;The prep grill-me grill-me grill-me
+&lt;/h1&gt;&lt;p&gt;For this exercise I was pretty confident antigravity could code up my solution. Just look at all these built in firebase skills.&lt;/p&gt;
+&lt;img src="firebaseSkills.png" style="width:80%"&gt;
+What I wasn't sure of was what I actually wanted. Let's get some ideas. I wanted users that didn't want to log in, not to be forced to do this. So there was the idea of an offline mode. Then when I do log in and I happen to change something on my phone and then on the desktop it should take the latest edit. I wanted it to update in the background but realistically only when I finish editing a spot.
+&lt;ul&gt;
+&lt;li&gt;What happens when I delete a spot?&lt;/li&gt;
+&lt;li&gt;How will it work when I import a pack?&lt;/li&gt;
+&lt;li&gt;What happens when the photographer name is the same but the email differs?&lt;/li&gt;
+&lt;li&gt;Can I have a way to save a pack of spots and just share a code to see it?&lt;/li&gt;
+&lt;li&gt;What then, will I be able to change them?&lt;/li&gt;
+&lt;li&gt;How does the db schema change?&lt;/li&gt;
+&lt;li&gt;What migrations are needed?&lt;/li&gt;
+&lt;li&gt;Will the old share packs work?&lt;/li&gt;
+&lt;li&gt;How do I even set things up properly on firebase?&lt;/li&gt;
+&lt;li&gt;What about desktop, there isn&amp;rsquo;t an SDK for desktop?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And so on and so on. I was clearly better at asking questions than building especially since I didn&amp;rsquo;t know how to integrate the SDK on iOS.&lt;/p&gt;
+&lt;p&gt;I spent about two evenings planning and changing my mind to come up with &lt;a class="link" href="https://github.com/maiatoday/tag-spotter/blob/main/docs/firebase-optional-backup-plan.md" target="_blank" rel="noopener"
+&gt;this plan&lt;/a&gt; It required multiple rounds of &lt;code&gt;/grill-me&lt;/code&gt; and also asking antigravity for some suggestions on how things could work and picking the options I liked best.&lt;/p&gt;
+&lt;p&gt;The plan had important sections.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;UX&lt;/li&gt;
+&lt;li&gt;Syncing strategy&lt;/li&gt;
+&lt;li&gt;Architecture&lt;/li&gt;
+&lt;li&gt;Everything broken into implementation phases&lt;/li&gt;
+&lt;li&gt;Aligned Design decisions&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The architecture looked like this:&lt;/p&gt;
+&lt;pre class="mermaid"&gt;
+graph TD
+subgraph UI Feature Modules
+A[Gallery/Settings UI] --&amp;gt;|Sign In / Toggle Sync| B[SyncController / ViewModel]
+end
+subgraph Core Modules
+B --&amp;gt;|Check Sync State| C[LocalSpotRepository]
+B --&amp;gt;|Authenticate| D[AuthService]
+B --&amp;gt;|Queue Background Job| E[SyncManager]
+end
+subgraph Local Databases
+C --&amp;gt;|SQLite Room| F[(Room DB non-web)]
+C --&amp;gt;|IndexDB &amp;amp; localStorage| G[(Wasm Storage web)]
+end
+subgraph Firebase Cloud
+E --&amp;gt;|Upload Metadata| H[(Cloud Firestore)]
+E --&amp;gt;|Upload Thumbnails ONLY| I[(Cloud Storage)]
+D --&amp;gt;|User JWT Tokens| J[Firebase Auth]
+end
+E -.-&amp;gt;|Bidirectional Sync| C
+&lt;/pre&gt;
+&lt;h1 id="let-the-implementation-begin"&gt;Let the implementation begin
+&lt;/h1&gt;&lt;h2 id="friday"&gt;Friday
+&lt;/h2&gt;&lt;p&gt;If you look at the &lt;a class="link" href="https://github.com/maiatoday/tag-spotter/commits/main/" target="_blank" rel="noopener"
+&gt;commits&lt;/a&gt; starting on July 3, you can see how I implemented the phases. I knew since this was a big implementation the context could get messy. I wanted to use a clean context for each phase. Antigravity stores details of what it does in the artifacts folder. Thats what you see in the right hand panel in overview and what you can look at with the &lt;code&gt;/artifact&lt;/code&gt; command with the CLI so each phase I started in a new conversation and prompted it something like this.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Please resume our Optional Firebase Login &amp;amp; Cloud Sync implementation at Phase 3: Firebase Platform Configs &amp;amp; SDK Dependency Setup.
+Review the completed work in task.md and walkthrough.md in the artifacts folder, and the architectural design in docs/firebase-optional-backup-plan.md for reference.
+For Phase 3, please implement:
+1. Adding the required versions and library entries for the GitLive Firebase Kotlin SDK in gradle/libs.versions.toml.
+2. Initializing and configuring the common :core:sync multiplatform library module gradle builds.
+3. Injecting the Google Play Services gradle plugin and config setups on Android.
+4. Setting up Apple CocoaPods or Swift Package dependencies in the Xcode project for iOS.
+5. Setting up JS/Wasm script links and Firebase initialization inside the webApp&amp;#39;s index.html.
+Guidelines for this phase:
+- Show me your proposed changes for Phase 3 before executing them.
+- Once Phase 3 is completed, please STOP and do not proceed to Phase 4.
+- Provide a concise summary of the changes made.
+- Tell me exactly what I can do to manually verify that the Firebase platform links are correctly configured and compiling on each target.
+- Finally, provide me with a pre-configured copy-paste prompt to start Phase 4 in a subsequent clean context.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;How did I get this prompt? At the end of Phase 2 I asked it&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;to help me run the next steps, what would the prompt be to continue in a
+clean context. Add to the prompt that I want it to stop at the end of
+the next phase, give me a summary and tell me how to test manually
+and provide a prompt for the next step in a clean context
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="saturday"&gt;Saturday
+&lt;/h2&gt;&lt;p&gt;By Saturday morning the 5 implementation steps were done. I got antigravity to either use its tools or by giving me clear instructions on how to set things up on Firebase console. Firebase setup was smooth if manual in places.&lt;/p&gt;
+&lt;p&gt;However in the process I discovered there were too many unaddressed edge cases. On desktop antigravity had simply dropped in a bunch of mock implementation. To cover the gaps I had another round of planning resulting in an &lt;a class="link" href="https://github.com/maiatoday/tag-spotter/blob/main/docs/follow-up-firebase-optional-backup-plan.md" target="_blank" rel="noopener"
+&gt;additional implementation plan&lt;/a&gt; This time I included asking for the prompts in the planning phase.&lt;/p&gt;
+&lt;h2 id="sunday"&gt;Sunday
+&lt;/h2&gt;&lt;p&gt;Implementation round 2, another 5 phases. done&lt;/p&gt;
+&lt;h2 id="a-neat-trick-to-handle-secrets"&gt;A neat trick to handle secrets
+&lt;/h2&gt;&lt;p&gt;In the past I would have a template file that people can copy and then add the real file that contain api keys in the .gitignore with instructions on how to copy the template file in the README.md. I learnt from the antigravity session to do this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create the file that should contain the secrets e.g. &lt;code&gt;google-services.json&lt;/code&gt; with fake api keys.&lt;/li&gt;
+&lt;li&gt;Check in the this version and push to git. Safe because there aren&amp;rsquo;t api keys in the file&lt;/li&gt;
+&lt;li&gt;Tell git not to track future changes to this file e.g. &lt;code&gt;git update-index --assume-unchanged androidApp/google-services.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Download the real file with the api keys. Since git will assume the file is unchanged it won&amp;rsquo;t suggest that you commit it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I like this for open source projects because people don&amp;rsquo;t need to fiddle with copying template files just to compile the project.&lt;/p&gt;
+&lt;h1 id="did-i-make-it"&gt;Did I make it?
+&lt;/h1&gt;&lt;p&gt;Somewhat, the basics were there but there were still many small niggly things to test and fix. It is going to take me a few more days to polish and get everything smooth.&lt;/p&gt;
+&lt;img src="desktop.png" style="width:80%"&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Android&lt;/th&gt;
+&lt;th&gt;iOS&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src="loginGoogle.png" style="width:100%"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="iOSLogin.png" style="width:100%"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;img src="SharePack.png" style="width:30%"&gt;
+&lt;h1 id="learnings"&gt;Learnings
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Thinking what I wanted and &lt;strong&gt;thinking about my intention wasn&amp;rsquo;t trivial&lt;/strong&gt;. It took longer than the implementation. But Antigravity is useful for this too.&lt;/li&gt;
+&lt;li&gt;I had to work sequentially and could not automate the tests because I was still uncovering edge cases&lt;/li&gt;
+&lt;li&gt;Large complex implementations benefit from good &lt;strong&gt;phased implementation and clean context&lt;/strong&gt; at each phase&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Good skills make all the difference&lt;/strong&gt;. At one point I tried one of the phases in another harness tool using the same model and it could complete the work&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="how-much-did-it-cost"&gt;How much did it cost?
+&lt;/h2&gt;&lt;p&gt;Google graciously gave credits for this project. I only used the credits to do the &lt;a class="link" href="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/" target="_blank" rel="noopener"
+&gt;kmp migration&lt;/a&gt; and the firebase integration. I used 109 USD of the credits to complete this work. I&amp;rsquo;d say two weekends part time and 109 USD isn&amp;rsquo;t bad to get a mid sized app on iOS, Android, desktop and Wasm with login and a full backend support on Firebase. I used a mix of models, choosing the newest models only for complex planning and debugging.&lt;/p&gt;
+&lt;h1 id="whats-next"&gt;What&amp;rsquo;s next
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;I asked the &lt;code&gt;use /firebase-security-rules-auditor and check my firebase rules&lt;/code&gt; and there are a bunch of things I need to fix.&lt;/li&gt;
+&lt;li&gt;As I test I am logging issues on github. I&amp;rsquo;ll use &lt;code&gt;gh&lt;/code&gt; command line tool to fix all of the issues eventually.&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Antigravity TagSpotter - KotlinMultiPlatform evolve</title><link>https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/</link><pubDate>Sun, 14 Jun 2026 21:10:33 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/banner.png" alt="Featured image of post Antigravity TagSpotter - KotlinMultiPlatform evolve" /&gt;&lt;h1 id="the-challenge---bring-on-the-subagents"&gt;The Challenge - bring on the subagents
 &lt;/h1&gt;&lt;p&gt;Can I make my TagSpotter Android app be multi-platform in a weekend using &lt;a class="link" href="https://antigravity.google/docs/getting-started?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
 &gt;Antigravity 2.0&lt;/a&gt; and a swarm of agents running in parallel? Can I do this even though I don&amp;rsquo;t know how to use Xcode and I don&amp;rsquo;t want to break my existing app. This was the question I had.&lt;/p&gt;
 &lt;p&gt;&lt;a class="link" href="https://github.com/maiatoday/tag-spotter" target="_blank" rel="noopener"
