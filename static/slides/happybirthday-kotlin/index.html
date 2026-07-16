@@ -209,6 +209,7 @@
                 <h2>Word Cloud</h2>
                 
                 <div class="timer-display" id="timer">02:00</div>
+                <span class="fragment" id="start-timer-trigger"></span>
                 <button onclick="startTimer()">Start Timer</button>
                 <button onclick="resetTimer()">Reset</button>
             </section>
@@ -217,6 +218,7 @@
             <section id="finale-slide">
                 <h1>Happy Birthday Kotlin!</h1>
                 <img src="Kodee_Assets_Digital_Kodee-in-love.png" alt="Kodee in love" style="width: 300px; border: none; background: transparent; box-shadow: none; margin: 20px auto; display: block;" />
+                <span class="fragment" id="start-confetti-trigger"></span>
             </section>
         </div>
     </div>
@@ -278,47 +280,59 @@
 
         // Confetti Logic for Finale
         let confettiInterval;
+        function startConfetti() {
+            if (!confettiInterval) {
+                // Start endless confetti
+                const duration = 15 * 1000;
+                const animationEnd = Date.now() + duration;
+                let skew = 1;
+
+                function randomInRange(min, max) {
+                    return Math.random() * (max - min) + min;
+                }
+
+                (function frame() {
+                    const timeLeft = animationEnd - Date.now();
+                    const ticks = Math.max(200, 500 * (timeLeft / duration));
+                    skew = Math.max(0.8, skew - 0.001);
+
+                    const allColors = ['#7F52FF', '#E54857', '#F88909', '#ffffff'];
+                    
+                    confetti({
+                        particleCount: 1,
+                        startVelocity: 0,
+                        ticks: ticks,
+                        origin: {
+                            x: Math.random(),
+                            y: (Math.random() * skew) - 0.2
+                        },
+                        colors: [allColors[Math.floor(Math.random() * allColors.length)]],
+                        gravity: randomInRange(0.4, 0.6),
+                        scalar: randomInRange(1, 2.5),
+                        drift: randomInRange(-0.4, 0.4)
+                    });
+
+                    confettiInterval = requestAnimationFrame(frame);
+                }());
+            }
+        }
+
+        // Trigger actions via clicker (Reveal fragments)
+        Reveal.on('fragmentshown', event => {
+            if (event.fragment.id === 'start-timer-trigger') {
+                startTimer();
+            } else if (event.fragment.id === 'start-confetti-trigger') {
+                startConfetti();
+            }
+        });
+
         document.addEventListener('keydown', function(event) {
             if (event.code === 'Space') {
                 // Check if current slide is the finale slide
                 const currentSlide = Reveal.getCurrentSlide();
                 if (currentSlide && currentSlide.id === 'finale-slide') {
                     event.preventDefault(); // Prevent default spacebar action (scroll/next)
-                    
-                    if (!confettiInterval) {
-                        // Start endless confetti
-                        const duration = 15 * 1000;
-                        const animationEnd = Date.now() + duration;
-                        let skew = 1;
-
-                        function randomInRange(min, max) {
-                            return Math.random() * (max - min) + min;
-                        }
-
-                        (function frame() {
-                            const timeLeft = animationEnd - Date.now();
-                            const ticks = Math.max(200, 500 * (timeLeft / duration));
-                            skew = Math.max(0.8, skew - 0.001);
-
-                            const allColors = ['#7F52FF', '#E54857', '#F88909', '#ffffff'];
-                            
-                            confetti({
-                                particleCount: 1,
-                                startVelocity: 0,
-                                ticks: ticks,
-                                origin: {
-                                    x: Math.random(),
-                                    y: (Math.random() * skew) - 0.2
-                                },
-                                colors: [allColors[Math.floor(Math.random() * allColors.length)]],
-                                gravity: randomInRange(0.4, 0.6),
-                                scalar: randomInRange(1, 2.5),
-                                drift: randomInRange(-0.4, 0.4)
-                            });
-
-                            confettiInterval = requestAnimationFrame(frame);
-                        }());
-                    }
+                    startConfetti();
                 }
             }
         });
