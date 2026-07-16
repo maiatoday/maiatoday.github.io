@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Kotlin!</title>
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <!-- Google Fonts for non-serif font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .reveal {
+            font-family: 'Inter', sans-serif;
+        }
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+            font-family: 'Inter', sans-serif;
+            text-transform: none;
+            background: -webkit-linear-gradient(45deg, #7F52FF, #E54857, #F88909);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .reveal p, .reveal ul, .reveal li {
+            font-size: 1.2em; /* Bigger text */
+            line-height: 1.4;
+        }
+        .timer-display {
+            font-size: 3em;
+            font-family: monospace;
+            margin-top: 20px;
+            color: #F88909; /* Kotlin orange */
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 0.6em;
+            font-weight: bold;
+            font-family: 'Inter', sans-serif;
+            background-color: #7F52FF; /* Kotlin purple */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+            transition: transform 0.1s, background-color 0.1s;
+        }
+        button:hover {
+            transform: scale(1.05);
+            background-color: #683cd4; /* slightly darker purple on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Happy Birthday Kotlin!</h1>
+                <button onclick="toggleTheme()" id="theme-toggle">☀️ Light Mode</button>
+            </section>
+
+            <!-- Category 1: Nostalgia -->
+            <section>
+                <section>
+                    <h2>Nostalgia</h2>
+                    <p>Let's take a trip down memory lane...</p>
+                </section>
+                <section>
+                    <h3>Where were you when...</h3>
+                    <p>...Kotlin was created in 2011?</p>
+                </section>
+                <section>
+                    <h3>Where were you when...</h3>
+                    <p>...Google announced first class Android support in 2017?</p>
+                </section>
+                <section>
+                    <h3>Where were you when...</h3>
+                    <p>...JetBrains announced stable native compilation in Nov 2023?</p>
+                </section>
+                <section>
+                    <h3>Where were you when...</h3>
+                    <p>...Kotlin 2.0 was released at KotlinConf 2024?</p>
+                </section>
+            </section>
+
+            <!-- Category 2: Where are you now -->
+            <section>
+                <section>
+                    <h2>Where are you now?</h2>
+                    <p>Present day Kotlin</p>
+                </section>
+                <section>
+                    <h3>The "Platform Wars" Warm-Up</h3>
+                    <p>If your production Kotlin code was suddenly banned from running on the JVM, how much of your daily work survives?</p>
+                </section>
+                <section>
+                    <h3>The "Platform Wars" Warm-Up</h3>
+                    <ul style="font-size: 0.7em; list-style-type: none; margin-left: 0; padding-left: 0;">
+                        <li style="margin-bottom: 15px;">A) 100% — I live entirely in Kotlin Multiplatform (KMP), Native, or Wasm!</li>
+                        <li style="margin-bottom: 15px;">B) About 50% — I write shared KMP logic but still rely heavily on JVM backends.</li>
+                        <li style="margin-bottom: 15px;">C) Under 10% — I'm a traditional Android or Spring Boot dev, please don't take my JVM away.</li>
+                        <li style="margin-bottom: 15px;">D) None — I just write Kotlin in Scratch files to feel alive.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>The Concurrency "Confession"</h3>
+                    <p>How do you honestly feel when you have to debug a complex chain of Kotlin Coroutines?</p>
+                </section>
+                <section>
+                    <h3>The Concurrency "Confession"</h3>
+                    <ul style="font-size: 0.7em; list-style-type: none; margin-left: 0; padding-left: 0;">
+                        <li style="margin-bottom: 15px;">A) "I am a Concurrency God." Flows and Channels make perfect sense to me.</li>
+                        <li style="margin-bottom: 15px;">B) "Copy, Paste, and Pray." I ask the AI agent of my choice, paste withContext(Dispatchers.IO), and hope the race condition goes away.</li>
+                        <li style="margin-bottom: 15px;">C) "The Legacy Safe-Haven." I secretly miss RxJava or standard Java threads.</li>
+                        <li style="margin-bottom: 15px;">D) "The Android UI Special." I just wrap everything in lifecycleScope.launch and hope for the best.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>The "AI vs. Brain" Reality Check</h3>
+                    <p>What is your relationship status with AI coding assistants when writing Kotlin?</p>
+                </section>
+                <section>
+                    <h3>The "AI vs. Brain" Reality Check</h3>
+                    <ul style="font-size: 0.7em; list-style-type: none; margin-left: 0; padding-left: 0;">
+                        <li style="margin-bottom: 15px;">A) Married. It writes my boilerplate, my tests, and sometimes my entire data class.</li>
+                        <li style="margin-bottom: 15px;">B) It's complicated. It's great for basic syntax, but as soon as generics or context receivers get involved, it panics.</li>
+                        <li style="margin-bottom: 15px;">C) Single. I disable it because nothing matches the raw typing speed of my own hands.</li>
+                        <li style="margin-bottom: 15px;">D) The Enemy. I spend more time fixing its hallucinated apply block scopes than I would have spent writing it myself.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>The "Java Legacy" Sentiment</h3>
+                    <p>You are assigned to a legacy project that is 100% Java 8. What is your immediate reaction?</p>
+                </section>
+                <section>
+                    <h3>The "Java Legacy" Sentiment</h3>
+                    <ul style="font-size: 0.7em; list-style-type: none; margin-left: 0; padding-left: 0;">
+                        <li style="margin-bottom: 15px;">A) Immediate resignation. I am not writing semicolons or public static void ever again.</li>
+                        <li style="margin-bottom: 15px;">B) The "Trojan Horse." I will quietly install the Kotlin plugin and sneakily convert .java files to .kt when no one is looking.</li>
+                        <li style="margin-bottom: 15px;">C) Acceptance. Java has modern records and pattern matching now, it's not that bad... right?</li>
+                        <li style="margin-bottom: 15px;">D) Nostalgia. I actually miss the safety of explicit, verbose boilerplate.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>The "Product Domain" Identity</h3>
+                    <p>Your non-tech friends ask what you do. Based on the product you build with Kotlin, how do you explain it?</p>
+                </section>
+                <section>
+                    <h3>The "Product Domain" Identity</h3>
+                    <ul style="font-size: 0.7em; list-style-type: none; margin-left: 0; padding-left: 0;">
+                        <li style="margin-bottom: 15px;">A) "I move money." (Fintech, Banking, Transaction systems)</li>
+                        <li style="margin-bottom: 15px;">B) "I make the buttons on your phone work." (Consumer Apps, E-commerce, Social Media)</li>
+                        <li style="margin-bottom: 15px;">C) "I feed the robots." (AI Agents, Data Pipelines, ML Orchestration)</li>
+                        <li style="margin-bottom: 15px;">D) "I make sure the server doesn't crash when everyone logs in at 9 AM." (Enterprise Backend, SaaS, Cloud Infrastructure)</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Category 3: Hot takes and pet peeves -->
+            <section>
+                <section>
+                    <h2>Hot takes & Pet peeves</h2>
+                    <p>Time to be honest...</p>
+                    <p><strong>Take 3</strong></p>
+                </section>
+                <section>
+                    <h3>What's your hottest Kotlin take?</h3>
+                    <p>e.g., "Companion objects were a mistake!"</p>
+                </section>
+                <section>
+                    <h3>What's your biggest pet peeve?</h3>
+                    <p>e.g., "build.gradle.kts is still too slow!"</p>
+                </section>
+                <section>
+                    <h3>What was your wildest bug?</h3>
+                </section>
+            </section>
+
+            <!-- Category 4: Kotlin in numbers -->
+            <section>
+                <section>
+                    <h2>Kotlin in Numbers</h2>
+                    <p>Shout out the answer!</p>
+                </section>
+                <section>
+                    <h3>How old is Kotlin?</h3>
+                    <p class="fragment">Answer: Unveiled in 2011, version 1.0 released in 2016!</p>
+                </section>
+                <section>
+                    <h3>How many keywords does the language have?</h3>
+                    <p class="fragment">Answer: 81 keywords across 4 categories<br><small>(Hard keywords, Soft keywords, Modifier keywords, and Special identifiers)</small></p>
+                </section>
+                <section>
+                    <h3>How many visibility modifiers does Kotlin have?</h3>
+                    <p class="fragment">Answer: 4<br><small>(public, private, protected, and internal)</small></p>
+                </section>
+                <section>
+                    <h3>How many standard helper methods does the compiler generate for a data class?</h3>
+                    <p><small>(Excluding component functions like component1())</small></p>
+                    <p class="fragment">Answer: 3<br><small>(equals(), hashCode(), and toString())</small></p>
+                </section>
+                <section>
+                    <h3>What is the maximum number of abstract methods a functional interface can declare?</h3>
+                    <p class="fragment">Answer: 1<br><small>(It must have exactly one abstract method, though it can have multiple non-abstract/default methods)</small></p>
+                </section>
+            </section>
+
+            <!-- Category 5: Word cloud -->
+            <section id="word-cloud-slide">
+                <h2>Word Cloud</h2>
+                
+                <div class="timer-display" id="timer">02:00</div>
+                <button onclick="startTimer()">Start Timer</button>
+                <button onclick="resetTimer()">Reset</button>
+            </section>
+
+            <!-- Finale -->
+            <section id="finale-slide">
+                <h1>Happy Birthday Kotlin!</h1>
+                <img src="Kodee_Assets_Digital_Kodee-in-love.png" alt="Kodee in love" style="width: 300px; border: none; background: transparent; box-shadow: none; margin: 20px auto; display: block;" />
+            </section>
+        </div>
+    </div>
+
+    <!-- Reveal.js and Confetti Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        // Initialize Reveal.js
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide' // none/fade/slide/convex/concave/zoom
+        });
+
+        // Theme Toggle Logic
+        function toggleTheme() {
+            const themeLink = document.getElementById('theme');
+            const toggleBtn = document.getElementById('theme-toggle');
+            
+            if (themeLink.getAttribute('href').includes('black.min.css')) {
+                themeLink.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css');
+                toggleBtn.innerText = '🌙 Dark Mode';
+            } else {
+                themeLink.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css');
+                toggleBtn.innerText = '☀️ Light Mode';
+            }
+        }
+
+        // Timer Logic for Category 5
+        let timerInterval;
+        let timeLeft = 120; // 2 minutes in seconds
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            document.getElementById('timer').innerText = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        function startTimer() {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                if (timeLeft > 0) {
+                    timeLeft--;
+                    updateTimerDisplay();
+                } else {
+                    clearInterval(timerInterval);
+                    document.getElementById('timer').innerText = "TIME'S UP!";
+                }
+            }, 1000);
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            timeLeft = 120;
+            updateTimerDisplay();
+        }
+
+        // Confetti Logic for Finale
+        let confettiInterval;
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space') {
+                // Check if current slide is the finale slide
+                const currentSlide = Reveal.getCurrentSlide();
+                if (currentSlide && currentSlide.id === 'finale-slide') {
+                    event.preventDefault(); // Prevent default spacebar action (scroll/next)
+                    
+                    if (!confettiInterval) {
+                        // Start endless confetti
+                        const duration = 15 * 1000;
+                        const animationEnd = Date.now() + duration;
+                        let skew = 1;
+
+                        function randomInRange(min, max) {
+                            return Math.random() * (max - min) + min;
+                        }
+
+                        (function frame() {
+                            const timeLeft = animationEnd - Date.now();
+                            const ticks = Math.max(200, 500 * (timeLeft / duration));
+                            skew = Math.max(0.8, skew - 0.001);
+
+                            confetti({
+                                particleCount: 1,
+                                startVelocity: 0,
+                                ticks: ticks,
+                                origin: {
+                                    x: Math.random(),
+                                    y: (Math.random() * skew) - 0.2
+                                },
+                                colors: ['#7F52FF', '#E54857', '#F88909', '#ffffff'],
+                                gravity: randomInRange(0.4, 0.6),
+                                scalar: randomInRange(0.4, 1),
+                                drift: randomInRange(-0.4, 0.4)
+                            });
+
+                            confettiInterval = requestAnimationFrame(frame);
+                        }());
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
