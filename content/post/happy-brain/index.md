@@ -15,7 +15,7 @@ image: brain.png
 A page of resources matching the talk AI workways for a happy brain
 ## Slides
 
-[Slides for AI workways for a happy brain](AI_workways_happy_brain.pdf)
+[Slides for AI workways for a happy brain](happyBrain.pdf)
 ## Resources
 Short reads on different neuroscience topics with practical tips how to improve long term memory and short term memory
 [Science-based methods to improve your memory](https://nesslabs.com/improve-memory)
