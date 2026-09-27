@@ -16,6 +16,9 @@ Here are the resources matching the unconference round table session presented a
 
 How to design your career thoughtfully, what kind of support (mentorship/sponsorship) is available and how to ask for it, how and what to learn next, and why your voice is needed and important in the field of computer science and beyond.
 
+### Transition
+[Bridges Transition model - the neutral zone](https://wmbridges.com/about/what-is-transition)
+
 ### Pivot
 
 [https://www.squigglycareers.com/listen/career-changers-how-to-pivot-and-create-new-possibilities/](https://www.squigglycareers.com/listen/career-changers-how-to-pivot-and-create-new-possibilities/)
@@ -31,3 +34,6 @@ How to design your career thoughtfully, what kind of support (mentorship/sponsor
 [https://www.squigglycareers.com/listen/how-to-find-a-career-sponsor/](https://www.squigglycareers.com/listen/how-to-find-a-career-sponsor/)
 
 [https://www.squigglycareers.com/how-to-identify-who-you-need-in-your-career-community/](https://www.squigglycareers.com/how-to-identify-who-you-need-in-your-career-community/)
+
+### Books
+[Squiggly career books, Learn like a lobster and You coach you](https://www.squigglycareers.com/books/)
