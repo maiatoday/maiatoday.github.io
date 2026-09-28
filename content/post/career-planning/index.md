@@ -29,6 +29,10 @@ How to design your career thoughtfully, what kind of support (mentorship/sponsor
 
 ### Sponsor/Mentor
 
+https://dev.to/jcsmileyjr/how-to-find-a-mentor-3b39
+
+https://goinswriter.com/find-mentor/
+
 [https://www.squigglycareers.com/listen/how-to-get-a-sponsor/](https://www.squigglycareers.com/listen/how-to-get-a-sponsor/)
 
 [https://www.squigglycareers.com/listen/how-to-find-a-career-sponsor/](https://www.squigglycareers.com/listen/how-to-find-a-career-sponsor/)
@@ -36,4 +40,5 @@ How to design your career thoughtfully, what kind of support (mentorship/sponsor
 [https://www.squigglycareers.com/how-to-identify-who-you-need-in-your-career-community/](https://www.squigglycareers.com/how-to-identify-who-you-need-in-your-career-community/)
 
 ### Books
+
 [Squiggly career books, Learn like a lobster and You coach you](https://www.squigglycareers.com/books/)
