@@ -18,6 +18,9 @@ How to design your career thoughtfully, what kind of support (mentorship/sponsor
 
 ### Transition
 [Bridges Transition model - the neutral zone](https://wmbridges.com/about/what-is-transition)
+[Ambition matrix](https://www.squigglycareers.com/listen/how-to-understand-and-take-action-with-your-ambition/)
+[Career scanning and scoping](https://www.squigglycareers.com/squiggly-career-summer-school-possibilities/)
+[Progression possibilitites](https://www.squigglycareers.com/listen/how-to-explore-your-progression-possibilities/)
 
 ### Pivot
 
