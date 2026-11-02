@@ -19,7 +19,7 @@ image: evals.png
 
 When I create an important skill for me or my team it is useful to know if it works. To do this I also create an eval that contains what prompt is used to trigger the skill and what the outcome should be. The eval can also contain fixtures and sample code snippets to work on. 
 
-This workflow isn't specific to antigravity but I tested it out there. 
+This workflow isn't specific to antigravity but I tested it there. 
 
 ## Why
 
@@ -42,12 +42,11 @@ A good [tutorial](https://academy.claude.com/tutorials/how-to-create-a-skill-wit
 
 [General skills documentaion](https://agentskills.io/home)
 
-
 ## Demo
 
 ### Creating a skill and an eval
 
-Use the skill creator to create a new skill. The detail of what the skill does doesn't matter. How you ask for it and checking that the evals are created is the most important part of this workflow. For our example I am creating a skill to pull the history on a repo after I come back from some time away touching grass. 
+Use the `skill-creator` to create a new skill. The detail of what the skill does doesn't matter. How you ask for it and checking that the evals are created is the most important part of this workflow. For our example I am creating a skill to pull the history on a repo after I come back from some time away touching grass. 
 
 The prompt is this
 ```
