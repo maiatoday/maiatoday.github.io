@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Antigravity on maiatoday</title><link>https://www.maiatoday.net/tags/antigravity/</link><description>Recent content in Antigravity on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 09 Jul 2026 22:34:04 +0200</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/antigravity/index.xml" rel="self" type="application/rss+xml"/><item><title>Antigravity TagSpotter - Share data with Firebase</title><link>https://www.maiatoday.net/p/antigravity-tagspotter-share-data-with-firebase/</link><pubDate>Thu, 09 Jul 2026 22:34:04 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-tagspotter-share-data-with-firebase/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-share-data-with-firebase/antigravityFirebase.png" alt="Featured image of post Antigravity TagSpotter - Share data with Firebase" /&gt;&lt;h1 id="the-challenge---firebase-with-google-plugins"&gt;The challenge - Firebase with Google Plugins
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Antigravity on maiatoday</title><link>https://www.maiatoday.net/tags/antigravity/</link><description>Recent content in Antigravity on maiatoday</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 01 Nov 2026 18:01:30 +0100</lastBuildDate><atom:link href="https://www.maiatoday.net/tags/antigravity/index.xml" rel="self" type="application/rss+xml"/><item><title>AI workflow demo - create a skill with evals in antigravity</title><link>https://www.maiatoday.net/p/ai-workflow-skills-evals/</link><pubDate>Sun, 01 Nov 2026 18:01:30 +0100</pubDate><guid>https://www.maiatoday.net/p/ai-workflow-skills-evals/</guid><description>&lt;img src="https://www.maiatoday.net/p/ai-workflow-skills-evals/evals.png" alt="Featured image of post AI workflow demo - create a skill with evals in antigravity" /&gt;&lt;h2 id="what"&gt;What
+&lt;/h2&gt;&lt;p&gt;When I create an important skill for me or my team it is useful to know if it works. To do this I also create an eval that contains what prompt is used to trigger the skill and what the outcome should be. The eval can also contain fixtures and sample code snippets to work on.&lt;/p&gt;
+&lt;p&gt;This workflow isn&amp;rsquo;t specific to antigravity but I tested it out there.&lt;/p&gt;
+&lt;h2 id="why"&gt;Why
+&lt;/h2&gt;&lt;h3 id="sharing"&gt;Sharing
+&lt;/h3&gt;&lt;p&gt;If I am sharing skills with other people I want to make sure they work as expected. Initially I would test them by hand a few time but I would have to rely on my memory to know if the work. Also this manual testing takes a long time. With evals I can automate these steps.&lt;/p&gt;
+&lt;h3 id="model-changes"&gt;Model changes
+&lt;/h3&gt;&lt;p&gt;Models become more powerful and sometimes the skills become obsolete because newer models know how to do the tasks. With an eval I can see if the model can perform better than the skill. If it does then the skill can be deleted and the context freed up.&lt;/p&gt;
+&lt;h3 id="future-me"&gt;Future me
+&lt;/h3&gt;&lt;p&gt;If I come back to a skill after some time, sometimes I can&amp;rsquo;t remember how it worked. If I read the eval I can see what I expected it to do&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources
+&lt;/h2&gt;&lt;p&gt;A useful open source skill that you can use to create skills and evals and run evals is &lt;a class="link" href="https://github.com/anthropics/skills/tree/main/skills/skill-creator" target="_blank" rel="noopener"
+&gt;skill-creator&lt;/a&gt; from anthropic.&lt;/p&gt;
+&lt;p&gt;A good &lt;a class="link" href="https://academy.claude.com/tutorials/how-to-create-a-skill-with-claude-through-conversation" target="_blank" rel="noopener"
+&gt;tutorial&lt;/a&gt; explaining how to create a skill including the evals.&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://agentskills.io/home" target="_blank" rel="noopener"
+&gt;General skills documentaion&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="demo"&gt;Demo
+&lt;/h2&gt;&lt;h3 id="creating-a-skill-and-an-eval"&gt;Creating a skill and an eval
+&lt;/h3&gt;&lt;p&gt;Use the skill creator to create a new skill. The detail of what the skill does doesn&amp;rsquo;t matter. How you ask for it and checking that the evals are created is the most important part of this workflow. For our example I am creating a skill to pull the history on a repo after I come back from some time away touching grass.&lt;/p&gt;
+&lt;p&gt;The prompt is this&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;use skill creator to create a user level skill that will pull the history
+of a git repo and give me a summary of what happened while I was away.
+The time period could be anything but typically 6 weeks.
+Summarise by type of tasks, features, chores and show who did the work.
+Also group related tasks. I want to use this to get a scanable
+overview of what happened. Ask me questions one by one if
+you need more info.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After answering some questions it creates the skill and the evals. If for some reason it didn&amp;rsquo;t create the evals you can ask explicitly. At this point it is useful to read, check and update the evals. The human touch on the evals does a lot to ensure the quality of the skill.&lt;/p&gt;
+&lt;p&gt;You will find the eval in the folder where the skill is created. An example of the eval for this sample skill&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;skill_name&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;git-catchup&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;evals&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;prompt&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Catch me up on what happened in this repository over the last 4 weeks.&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;expected_output&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;A scannable markdown summary with executive overview, categorized tasks (features, chores, fixes), and a contributor summary table for the last 4 weeks of git history.&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;files&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;prompt&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Summarize the git history for the last 6 weeks by task types and show who worked on what.&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;expected_output&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;A detailed git catchup summary grouped by task types with contributor breakdown for the last 6 weeks.&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;files&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It is pretty simple and you can see some a place to add files that the eval might need.&lt;/p&gt;
+&lt;p&gt;Run the evals with the prompt &lt;code&gt;run the evals&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This will spin up an AI agent that runs the evals with and without the skill and produce some results. It will use the same model as what is loaded when you create the skill&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Metric&lt;/th&gt;
+&lt;th&gt;with skill&lt;/th&gt;
+&lt;th&gt;without skill&lt;/th&gt;
+&lt;th&gt;Delta&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Pass rate&lt;/td&gt;
+&lt;td&gt;100% (8/8 assertions)&lt;/td&gt;
+&lt;td&gt;12.5% (1/8 assertions)&lt;/td&gt;
+&lt;td&gt;+0.88 (+88%)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Avg time&lt;/td&gt;
+&lt;td&gt;~3.6s&lt;/td&gt;
+&lt;td&gt;~2.4s+&lt;/td&gt;
+&lt;td&gt;1.2s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Avg token&lt;/td&gt;
+&lt;td&gt;1,385&lt;/td&gt;
+&lt;td&gt;450&lt;/td&gt;
+&lt;td&gt;+935&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In this scenario it seems that the skill definitely helps.&lt;/p&gt;
+&lt;h3 id="adding-and-eval-to-an-existing-skill"&gt;Adding and eval to an existing skill
+&lt;/h3&gt;&lt;p&gt;If you already have a skill but it doesn&amp;rsquo;t have an eval it is easy enough to use &lt;code&gt;skill-creator&lt;/code&gt; to add some.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Look at the skill &amp;lt;insert your skill name&amp;gt; and then use skill-creator
+to add evals
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then you can run the evals when you need to check the skill.&lt;/p&gt;
+&lt;h2 id="troubleshooting-and-gotchas"&gt;Troubleshooting and Gotchas
+&lt;/h2&gt;&lt;h3 id="where-to-save-the-skills"&gt;Where to save the skills
+&lt;/h3&gt;&lt;p&gt;You can save project specific skills inside the project but for multi purpose skills that can be used across projects, Antigravity wants the skills to be in &lt;code&gt;~/.gemini/config/skills&lt;/code&gt; The problem is if I put the skills in there then none of the other agents e.g. Pi can see them. Since skills are re-usable across eco-systems I opted for putting my skills somewhere neutral in &lt;code&gt;~/.agents/skills&lt;/code&gt; Then I created a symbolic link to all the places where all the agents I use wanted to see the skills.&lt;/p&gt;
+&lt;h3 id="where-to-find-the-evals-and-the-results"&gt;Where to find the evals and the results
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;skill-creator&lt;/code&gt; will create the evals inside the skill folder, but where are the eval results stored? If you use the anthropic version of the skill at the time of writing it will store the results in a folder &lt;code&gt;&amp;lt;skill-name&amp;gt;-workspace&lt;/code&gt; as a sibling folder. The problem with this is claude code will ignore it but some other agents may give and error. I opted for changing the &lt;code&gt;skill-creator&lt;/code&gt; to store the results as a sibling folder to the evals themselves.&lt;/p&gt;
+&lt;h2 id="slides"&gt;Slides
+&lt;/h2&gt;&lt;iframe src="https://www.maiatoday.net/slides/ai-workflow-evals/index.html" width="100%" height="500px" style="border:none;" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Antigravity TagSpotter - Share data with Firebase</title><link>https://www.maiatoday.net/p/antigravity-tagspotter-share-data-with-firebase/</link><pubDate>Thu, 09 Jul 2026 22:34:04 +0200</pubDate><guid>https://www.maiatoday.net/p/antigravity-tagspotter-share-data-with-firebase/</guid><description>&lt;img src="https://www.maiatoday.net/p/antigravity-tagspotter-share-data-with-firebase/antigravityFirebase.png" alt="Featured image of post Antigravity TagSpotter - Share data with Firebase" /&gt;&lt;h1 id="the-challenge---firebase-with-google-plugins"&gt;The challenge - Firebase with Google Plugins
 &lt;/h1&gt;&lt;p&gt;Now that I can &lt;a class="link" href="https://www.maiatoday.net/p/antigravity-tagspotter-kotlinmultiplatform-evolve/" target="_blank" rel="noopener"
 &gt;see my graffiti spots on multiple platforms&lt;/a&gt; the obvious next step is I want to keep the data in the cloud so that I can capture spots when I&amp;rsquo;m out and about and then look at them and edit them on the laptop later. For this I need some kind of auth and data storage - like Firebase. Like before, can I do the implementation on a weekend.&lt;/p&gt;
 &lt;p&gt;Easy enough? Well &lt;a class="link" href="https://antigravity.google/docs/getting-started?utm_campaign=deveco_gdemembers&amp;amp;utm_source=deveco" target="_blank" rel="noopener"
