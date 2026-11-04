@@ -101,12 +101,19 @@ In this scenario it seems that the skill definitely helps.
 ### Adding and eval to an existing skill
 
 If you already have a skill but it doesn't have an eval it is easy enough to use `skill-creator` to add some. 
-```
-Look at the skill <insert your skill name> and then use skill-creator 
-to add evals
-```
+![comples evals](newEvals2.png)
+
+![eval outputs](evalsOutput.png)
+
+
+Here is a more complex example that also uses files. It is an extract of sample eval for a review skill. You can see the format and the fixtures.
+
+![evals](complexEvals.png)
 
 Then you can run the evals when you need to check the skill.
+
+![complex results](complexResults.png)
+
 
 ## Troubleshooting and Gotchas
 
