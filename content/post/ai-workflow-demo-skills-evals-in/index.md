@@ -15,16 +15,16 @@ draft: false
 slug: ai-workflow-skills-evals
 image: evals.png
 ---
-## What
+## What - Does my skill (still) work?
 
-When I create an important skill for me or my team it is useful to know if it works. To do this I also create an eval that contains what prompt is used to trigger the skill and what the outcome should be. The eval can also contain fixtures and sample code snippets to work on. 
+When I create an important skill for me or my team it is useful to know if it works. To do this I also create an eval that contains what prompt is used to trigger the skill and what the outcome should be. The eval can contain fixtures and sample code snippets to work on. 
 
 This workflow isn't specific to antigravity but I tested it there. 
 
 ## Why
 
 ### Sharing
-If I am sharing skills with other people I want to make sure they work as expected. Initially I would test them by hand a few time but I would have to rely on my memory to know if the work. Also this manual testing takes a long time. With evals I can automate these steps.
+If I am sharing skills with other people I want to make sure they work as expected. Initially I would test them by hand a few time but I would have to rely on my memory to know if they work. Manual testing takes a long time. With evals I can automate these steps.
 
 ### Model changes
 
@@ -40,7 +40,7 @@ A useful open source skill that you can use to create skills and evals and run e
 
 A good [tutorial](https://academy.claude.com/tutorials/how-to-create-a-skill-with-claude-through-conversation) explaining how to create a skill including the evals.
 
-[General skills documentaion](https://agentskills.io/home)
+[General skills documentation](https://agentskills.io/home)
 
 ## Demo
 
