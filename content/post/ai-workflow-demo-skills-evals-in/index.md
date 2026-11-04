@@ -128,4 +128,4 @@ You can save project specific skills inside the project but for multi purpose sk
 
 ## Slides
 
-{{< slideframe src="/slides/ai-workflow-evals/index.html" >}}
+{{< slideframe src="/slides/ai-workflow-evals/index.html" height="800px" >}}
