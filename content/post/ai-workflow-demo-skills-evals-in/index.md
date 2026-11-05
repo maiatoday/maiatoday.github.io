@@ -15,11 +15,11 @@ draft: false
 slug: ai-workflow-skills-evals
 image: evals.png
 ---
-## What - Does my skill (still) work?
+## Does my skill (still) work?
 
 When I create an important skill for me or my team it is useful to know if it works. To do this I also create an eval that contains what prompt is used to trigger the skill and what the outcome should be. The eval can contain fixtures and sample code snippets to work on. 
 
-This workflow isn't specific to antigravity but I tested it there. 
+This workflow isn't specific to antigravity. It will work in any agent that uses skills. I demknstrate it in antigravity.
 
 ## Why
 
@@ -123,7 +123,7 @@ You can save project specific skills inside the project but for multi purpose sk
 
 ### Where to find the evals and the results
 
-`skill-creator` will create the evals inside the skill folder, but where are the eval results stored? If you use the anthropic version of the skill at the time of writing it will store the results in a folder `<skill-name>-workspace` as a sibling folder. The problem with this is claude code will ignore it but some other agents may give and error. I opted for changing the `skill-creator` to store the results as a sibling folder to the evals themselves.
+`skill-creator` will create the evals inside the skill folder, but where are the eval results stored? If you use the anthropic version of the skill at the time of writing it will store the results in a folder `<skill-name>-workspace` as a sibling folder. The problem with this is claude code will ignore it but some other agents may give and error. I opted for changing the `skill-creator` to store the results as a sibling folder to the evals themselves inside the folder of the skill.
 
 
 ## Slides
