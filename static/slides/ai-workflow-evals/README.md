@@ -20,7 +20,7 @@ Lightweight, zero-dependency HTML presentation deck for Skills Evaluations.
 
 ## Viewing & Running
 
-Open [index.html](file:///index.html) directly in any browser:
+Open [index.html](file:///Users/maia/workspace/maiatoday/slidesSkillsEvals/index.html) directly in any browser:
 
 ```bash
 open index.html
