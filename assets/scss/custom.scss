@@ -105,3 +105,23 @@ details.collapsible-section {
         box-shadow: var(--shadow-l1);
     }
 }
+
+/* Particles animation container */
+.sidebar-particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Let clicks pass through to menu items */
+    z-index: 50; /* Ensure it floats above the picture, buttons, and text */
+}
+
+#particles-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
