@@ -19,7 +19,7 @@ image: evals.png
 
 When I create an important skill for me or my team it is useful to know if it works. To do this I also create an eval that contains what prompt is used to trigger the skill and what the outcome should be. The eval can contain fixtures and sample code snippets to work on. 
 
-This workflow isn't specific to antigravity. It will work in any agent that uses skills. I demknstrate it in antigravity.
+This workflow isn't specific to antigravity. It will work in any agent that uses skills. I demonstrate it in antigravity.
 
 ## Why
 
