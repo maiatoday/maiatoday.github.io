@@ -146,7 +146,7 @@ schema. Assess the project for test coverage. Don't change anything but write it
 project-score-card.md file
 ```
 
-From the [assessment](https://github.com/maiatoday/tag-spotter/blob/main/project-score-card.md), the code has a pretty bad score, there are memory leaks and no tests but the MVP is usable and now I can decide if I want to spend more time on it.
+From the [assessment](https://github.com/maiatoday/tag-spotter/blob/main/docs/2025-05-30-project-score-card.md), the code has a pretty bad score, there are memory leaks and no tests but the MVP is usable and now I can decide if I want to spend more time on it.
 
 <img src="appScore.png" style="width:80%">
 

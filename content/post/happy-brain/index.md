@@ -13,6 +13,8 @@ draft: false
 image: brain.png
 ---
 A page of resources matching the talk AI workways for a happy brain
+{{< youtube xZ1l8tu43YU >}}
+
 ## Slides
 
 [Slides for AI workways for a happy brain](happyBrain.pdf)
