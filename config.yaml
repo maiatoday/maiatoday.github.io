@@ -24,7 +24,6 @@ permalinks:
 params:
     mainSections:
         - post
-    featuredImageField: image
     rssFullContent: true
     favicon: favicon/favicon.ico
 
@@ -39,9 +38,7 @@ params:
     sidebar:
 #        emoji: 🐶
         subtitle: Android dev ❤️ Kotlin 🐶
-        avatar:
-            local: true
-            src: img/MaiaGrotepassGDE.png
+        avatar: img/MaiaGrotepassGDE.png
 
     article:
         math: false
@@ -86,12 +83,6 @@ params:
 
         # Available values: auto, light, dark
         default: auto
-
-    imageProcessing:
-        cover:
-            enabled: true
-        content:
-            enabled: true
 
 ### Custom menu
 ### See https://docs.stack.jimmycai.com/configuration/custom-menu
